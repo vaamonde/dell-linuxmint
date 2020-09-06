@@ -10,14 +10,14 @@ Instalação do Linux Mint 20 Ulyana 64 Bits no Dell Inspiron 1440 (2009)
 	_ de Modo de Compatibilidade, recomendado para equipamentos legados.
 
 #03_ Driver da Placa de Rede Sem-Fio (Wi-Fi)<br>
-	_ Modelo Broadcom BCM-4312, por padrão, não é reconhecida no Linux Mint<br>
+	_ Modelo Broadcom BCM-4312, por padrão não é reconhecido no Linux Mint<br>
 	_ sendo necessário instalar o Driver Proprietário pelo Gerenciador de<br>
 	_ Drivers do Linux Mint (ou por linha de comando, recomendo pelo GUI).
 
 #04_ Hard Disk SATA SSD 60GB e 500GB<br>
 	_ Modelo Corsair Force 3, Hard Disk para a instalação do Linux Mint, sem<br>
 	_ necessidade de particionamento (instalação padrão), Hard Disk WD usado<br>
-	_ para armazenamento de arquivos e backup (case akasa AK-OA2SSA-BKV2 2,5").
+	_ para armazenamento de arquivos e backup (case Akasa AK-OA2SSA-BKV2 2,5").
 	
 #05_ Pós-Instalação do Linux Mint 20 Ulyana<br>
 	_ Atualização do sistema utilizando o MintUpdate;<br>
@@ -36,7 +36,7 @@ Instalação do Linux Mint 20 Ulyana 64 Bits no Dell Inspiron 1440 (2009)
 	_ sudo apt install ttf-mscorefonts-installer cheese cairo-dock vim<br>
 	_ sudo apt install htop nmon i8kutils psensor tlp cpufrequtils cputool
 
-#08_ Instalação dos Aplicativos que utilizo no Dia-a-Dia<br>
+#08_ Instalação dos Aplicativos do meu Dia-a-Dia<br>
 	_ VirtualBOX: https://www.virtualbox.org/<br>
 	_ NotepadQQ: https://notepadqq.com/s/<br>
 	_ Packet Tracer: https://www.packettracernetwork.com/<br>
