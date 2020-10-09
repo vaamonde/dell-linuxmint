@@ -7,12 +7,13 @@ Instalação do Linux Mint 20 Ulyana 64 Bits no Dell Inspiron 1440 (2009)
 	
 #02_ Inicialização da Instalação<br>
 	_ Para não ter falhas de inicialização da instalação, utilizei o recurso<br>
-	_ de Modo de Compatibilidade, recomendado para equipamentos legados.
+	_ de Modo de Compatibilidade, recomendado para equipamentos legados.<br>
+		(inicialização em modo de compatibilidade e mais lento no Dell Inspiron 1440)
 
 #03_ Driver da Placa de Rede Sem-Fio (Wi-Fi)<br>
 	_ Modelo Broadcom BCM-4312, por padrão não é reconhecido no Linux Mint<br>
 	_ sendo necessário instalar o Driver Proprietário pelo Gerenciador de<br>
-	_ Drivers do Linux Mint (ou por linha de comando, recomendo pelo GUI).
+	_ Drivers do Linux Mint (ou por linha de comando, recomendado pelo GUI).
 
 #04_ Hard Disk SATA SSD 60GB e 500GB<br>
 	_ Modelo Corsair Force 3, Hard Disk para a instalação do Linux Mint, sem<br>
@@ -24,11 +25,12 @@ Instalação do Linux Mint 20 Ulyana 64 Bits no Dell Inspiron 1440 (2009)
 	_ Atualização do sistema utilizando o Apt;<br>
 		(apt update && apt upgrade && apt full-upgrade && apt dist-upgrade)<br>
 	_ Instalação do Driver Broadcom BCM-4312.<br>
-		(utilização do Gerenciador de Drivers)
+		(recomendado utilizar o Gerenciador de Drivers MintDrivers)
 	
 #06_ Atualização dos Drivers VGA Intel<br>
 	_ sudo apt update<br>
-	_ sudo apt install vainfo intel-gpu-tool intel-media-va-driver-non-free
+	_ sudo apt install vainfo intel-gpu-tool intel-media-va-driver-non-free<br>
+	_ sudo apt install intel-microcode inteltool mesa-utils xserver-xorg-video-intel
 	  
 #07_ Instalação dos Aplicativos Básicos<br>
 	_ sudo apt update<br>
@@ -52,3 +54,4 @@ Instalação do Linux Mint 20 Ulyana 64 Bits no Dell Inspiron 1440 (2009)
 	_ Mega: https://mega.nz/<br>
 	_ Teams: https://www.microsoft.com/pt-br/microsoft-365/microsoft-teams/download-app<br>
 	_ VLC: https://www.videolan.org/vlc/index.pt-BR.html<br>
+	_ Skype: https://www.skype.com/pt-br/
