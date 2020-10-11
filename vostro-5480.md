@@ -1,49 +1,51 @@
 
-Instalação do Linux Mint 20 Ulyana 64 Bits no Dell Inspiron 1440 (2009)
+Instalação do Linux Mint 20 Ulyana 64 Bits no Dell Vostro 5480 (2015)
 
-#00_ Hardware: CPU Intel Core 2 Duo P8700 2.5Ghz, 3.0GB DDR-2 800Mhz, SSD Corsair 60GB<br>
-	_ HD WD 500GB, LCD 14", Webcam, VGA, Ethernet Realtek RTL-8101, Wireless Broadcom<br>
-	_ BCM-4312, Intel HD Graphics GM45, Audio Intel 82801L
+#00_ Hardware: CPU Intel i7 5500U 2.4Ghz, 8.0GB DDR-3 1600Mhz, SSD Kingston 240GB<br>
+	_ LCD 14", Biometria, Webcam, HDMI, Ethernet Realtek RTL-8168, Wireless Intel<br>
+	_ 7265, Intel HD Graphics 5500, NVIDIA GM108M GeForce 830M, Audio Intel 
 
-#01_ Configuração da BIOS (versão A07)<br>
+#01_ Configuração da BIOS UEFI (versão A03)<br>
 	_ Configuração Padrão de Fábrica, Hard Disk SATA em AHCI, VT-x habilitado<br>
-	_ Audio, Wireless e Bluetooth habilitados.
+	_ Audio, Wireless e Bluetooth habilitados, segurança UEFI desabilitado
 	
 #02_ Inicialização da Instalação<br>
-	_ Para não ter falhas de inicialização da instalação, utilizei o recurso<br>
-	_ de Modo de Compatibilidade, recomendado para equipamentos legados.<br>
-		(inicialização em modo de compatibilidade e mais lento no Dell Inspiron 1440)
+	_ Inicialização padrão, nesse notebook não acontece a falha de resolução devido<br>
+	_ ao suporte de altas resoluções do LCD
 
 #03_ Driver da Placa de Rede Sem-Fio (Wi-Fi)<br>
-	_ Modelo Broadcom BCM-4312, por padrão não é reconhecido no Linux Mint<br>
-	_ sendo necessário instalar o Driver Proprietário pelo Gerenciador de<br>
-	_ Drivers do Linux Mint (ou por linha de comando, recomendado pelo GUI).
+	_ Já é reconhecida no Live-CD do Mint, depois de instalado ela já está habilitada.
 
-#04_ Hard Disk SATA SSD 60GB e 500GB<br>
-	_ Modelo Corsair Force 3, Hard Disk para a instalação do Linux Mint, sem<br>
-	_ necessidade de particionamento (instalação padrão), Hard Disk WD usado<br>
-	_ para armazenamento de arquivos e backup (case Akasa AK-OA2SSA-BKV2 2,5").
+#04_ Hard Disk SATA SSD 240<br>
+	_ Modelo Kingston, Hard Disk para a instalação do Linux Mint, sem necessidade<br>
+	_ de particionamento (instalação padrão).
 	
 #05_ Pós-Instalação do Linux Mint 20 Ulyana<br>
 	_ Atualização do sistema utilizando o MintUpdate;<br>
 	_ Atualização do sistema utilizando o Apt;<br>
 		(apt update && apt upgrade && apt full-upgrade && apt dist-upgrade)<br>
-	_ Instalação do Driver Broadcom BCM-4312.<br>
-		(recomendado utilizar o Gerenciador de Drivers MintDrivers)
 	
-#06_ Atualização dos Drivers VGA Intel<br>
+#06_ Atualização dos Drivers NVIDIA e Intel Graphics<br>
+	_ Recomendado utilizar o Gerenciador de Drivers do Linux Mint (ou por linha de<br>
+	_ comando, recomendado pelo GUI).
 	_ sudo apt update<br>
 	_ sudo apt install vainfo intel-gpu-tools intel-media-va-driver<br>
 	_ sudo apt install intel-microcode mesa-utils xserver-xorg-video-intel
 	  
 #07_ Instalação dos Aplicativos Básicos<br>
 	_ sudo apt update<br>
-	_ sudo apt install software-properties-common build-essential dkms<br>
+	_ sudo apt install software-properties-common build-essential<br>
 	_ sudo apt install ttf-mscorefonts-installer cheese cairo-dock vim git<br>
 	_ sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool
 	_ sudo reboot
 
-#08_ Instalação dos Aplicativos do meu Dia-a-Dia<br>
+#08_ Instalação do Leitor de Biometria<br>
+	_ lsusb<br>
+	_ sudo add-apt-repository ppa:fingerprint/fingerprint-gui<br>
+	_ sudo apt update<br>
+	_ sudo apt-get install libbsapi policykit-1-fingerprint-gui fingerprint-gui
+
+#09_ Instalação dos Aplicativos do meu Dia-a-Dia<br>
 	_ VirtualBOX: https://www.virtualbox.org/<br>
 	_ NotepadQQ: https://notepadqq.com/s/<br>
 	_ Packet Tracer: https://www.packettracernetwork.com/<br>
