@@ -33,8 +33,9 @@ Instalação do Linux Mint 20 Ulyana 64 Bits no Dell Inspiron 1440 (2009)
 	
 #06_ Atualização dos Drivers VGA Intel<br>
 	_ sudo apt update<br>
-	_ sudo apt install vainfo intel-gpu-tools intel-media-va-driver<br>
-	_ sudo apt install intel-microcode mesa-utils xserver-xorg-video-intel
+	_ sudo apt install vainfo intel-gpu-tools intel-media-va-driver intel-microcode xserver-xorg-video-intel<br>
+    _ sudo apt install mesa-vulkan-drivers mesa-vdpau-drivers mesa-va-drivers mesa-utils mesa-opencl-icd mesa-utils-extra
+    _ sudo apt install libegl1-mesa libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa libgles2-mesa libassimp5 beignet-opencl-icd<br>
 	  
 #07_ Instalação dos Aplicativos Básicos<br>
 	_ sudo apt update<br>
