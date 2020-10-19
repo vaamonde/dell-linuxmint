@@ -1,4 +1,3 @@
-
 Instalação do Linux Mint 20 Ulyana 64 Bits no Dell Vostro 5480 (2015)
 
 #00_ Hardware: CPU Intel i7 5500U 2.4Ghz, 8.0GB DDR-3 1600Mhz, SSD Kingston 240GB<br>
@@ -24,18 +23,27 @@ Instalação do Linux Mint 20 Ulyana 64 Bits no Dell Vostro 5480 (2015)
 	_ Atualização do sistema utilizando o MintUpdate;<br>
 	_ Atualização do sistema utilizando o Apt;<br>
 		(apt update && apt upgrade && apt full-upgrade && apt dist-upgrade)<br>
-	
+	_ Atualização do Kernel utilizando o MintUpdate.<br>
+		(versão do kernel instalada >= 5.8)<br>
+	_ Reinicializar o Sistema
+
 #06_ Atualização dos Drivers NVIDIA e Intel Graphics<br>
-	_ Recomendado utilizar o Gerenciador de Drivers do Linux Mint (ou por linha de<br>
-	_ comando, recomendado pelo GUI).
+	_ Recomendado utilizar o Gerenciador de Drivers do Linux Mint (ou por linha de comando)<br>.
+	_ Reinicializar o Sistema
 	_ sudo apt update<br>
 	_ sudo apt install vainfo intel-gpu-tools intel-media-va-driver<br>
-	_ sudo apt install intel-microcode mesa-utils xserver-xorg-video-intel
+	_ sudo apt install intel-microcode mesa-utils xserver-xorg-video-intel<br>
+	_ Reinicializar o Sistema<br>
+	_ sudo update-pciids
+	_ sudo lspci | grep -i nvidia
+	_ sudo nvidia-smi | grep -i cuda
+	_ sudo apt instal nvidia-cuda-toolkit
+	_ sudo nvcc --version
 	  
 #07_ Instalação dos Aplicativos Básicos<br>
 	_ sudo apt update<br>
-	_ sudo apt install software-properties-common build-essential<br>
-	_ sudo apt install ttf-mscorefonts-installer cheese cairo-dock vim git<br>
+	_ sudo apt install software-properties-common build-essential dkms<br>
+	_ sudo apt install ttf-mscorefonts-installer mint-meta-codecs cheese cairo-dock vim git<br>
 	_ sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool
 	_ sudo reboot
 

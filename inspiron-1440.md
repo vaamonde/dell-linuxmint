@@ -1,4 +1,3 @@
-
 Instalação do Linux Mint 20 Ulyana 64 Bits no Dell Inspiron 1440 (2009)
 
 #00_ Hardware: CPU Intel Core 2 Duo P8700 2.5Ghz, 3.0GB DDR-2 800Mhz, SSD Corsair 60GB<br>
@@ -28,19 +27,22 @@ Instalação do Linux Mint 20 Ulyana 64 Bits no Dell Inspiron 1440 (2009)
 	_ Atualização do sistema utilizando o MintUpdate;<br>
 	_ Atualização do sistema utilizando o Apt;<br>
 		(apt update && apt upgrade && apt full-upgrade && apt dist-upgrade)<br>
+	_ Atualização do Kernel utilizando o MintUpdate;<br>
+		(versão do kernel instalada >= 5.8)<br>
 	_ Instalação do Driver Broadcom BCM-4312.<br>
 		(recomendado utilizar o Gerenciador de Drivers MintDrivers)
+	_ Reinicializar o Sistema
 	
 #06_ Atualização dos Drivers VGA Intel<br>
 	_ sudo apt update<br>
 	_ sudo apt install vainfo intel-gpu-tools intel-media-va-driver intel-microcode xserver-xorg-video-intel<br>
-    _ sudo apt install mesa-vulkan-drivers mesa-vdpau-drivers mesa-va-drivers mesa-utils mesa-opencl-icd mesa-utils-extra
+    _ sudo apt install mesa-vulkan-drivers mesa-vdpau-drivers mesa-va-drivers mesa-utils mesa-opencl-icd mesa-utils-extra<br>
     _ sudo apt install libegl1-mesa libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa libgles2-mesa libassimp5 beignet-opencl-icd<br>
 	  
 #07_ Instalação dos Aplicativos Básicos<br>
 	_ sudo apt update<br>
 	_ sudo apt install software-properties-common build-essential dkms<br>
-	_ sudo apt install ttf-mscorefonts-installer cheese cairo-dock vim git<br>
+	_ sudo apt install ttf-mscorefonts-installer mint-meta-codecs cheese cairo-dock vim git<br>
 	_ sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool
 	_ sudo reboot
 
