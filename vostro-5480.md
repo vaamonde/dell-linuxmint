@@ -34,10 +34,10 @@ Instalação do Linux Mint 20 Ulyana 64 Bits no Dell Vostro 5480 (2015)
 	_ sudo apt install vainfo intel-gpu-tools intel-media-va-driver<br>
 	_ sudo apt install intel-microcode mesa-utils xserver-xorg-video-intel<br>
 	_ Reinicializar o Sistema<br>
-	_ sudo update-pciids
-	_ sudo lspci | grep -i nvidia
-	_ sudo nvidia-smi | grep -i cuda
-	_ sudo apt instal nvidia-cuda-toolkit
+	_ sudo update-pciids<br>
+	_ sudo lspci | grep -i nvidia<br>
+	_ sudo nvidia-smi | grep -i cuda<br>
+	_ sudo apt instal nvidia-cuda-toolkit<br>
 	_ sudo nvcc --version
 	  
 #07_ Instalação dos Aplicativos Básicos<br>
