@@ -26,15 +26,15 @@ Instalação do Linux Mint 20 Ulyana 64 Bits no Dell XPS L502X (2011)
 		(apt update && apt upgrade && apt full-upgrade && apt dist-upgrade)<br>
 	_ Atualização do Kernel utilizando o MintUpdate.<br>
 		(versão do kernel instalada >= 5.8)<br>
-	_ Reinicializar o Sistema
+	_ Reinicializar o Sistema (Menu, Sair, Reiniciar)
 	
 #06_ Atualização dos Drivers NVIDIA e Intel Graphics<br>
 	_ Recomendado utilizar o Gerenciador de Drivers do Linux Mint (ou por linha de comando)<br>.
-	_ Reinicializar o Sistema<br>
+	_ Reinicializar o Sistema (Menu, Sair, Reiniciar)
 	_ sudo apt update<br>
 	_ sudo apt install vainfo intel-gpu-tools intel-media-va-driver<br>
 	_ sudo apt install intel-microcode mesa-utils xserver-xorg-video-intel<br>
-	_ Reinicializar o Sistema<br>
+	_ Reinicializar o Sistema (sudo reboot)<br>
 	_ sudo update-pciids<br>
 	_ sudo lspci | grep -i nvidia<br>
 	_ sudo nvidia-smi | grep -i cuda<br>
@@ -43,10 +43,10 @@ Instalação do Linux Mint 20 Ulyana 64 Bits no Dell XPS L502X (2011)
 	  
 #07_ Instalação dos Aplicativos Básicos<br>
 	_ sudo apt update<br>
-	_ sudo apt install software-properties-common build-essential dkms<br>
+	_ sudo apt install software-properties-common build-essential dkms lsb-core<br>
 	_ sudo apt install ttf-mscorefonts-installer mint-meta-codecs cheese cairo-dock vim git<br>
 	_ sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool
-	_ sudo reboot
+	_ Reinicializar o Sistema (sudo reboot)<br>
 
 #08_ Instalação dos Aplicativos do meu Dia-a-Dia<br>
 	_ VirtualBOX: https://www.virtualbox.org/<br>

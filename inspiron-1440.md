@@ -31,7 +31,7 @@ Instalação do Linux Mint 20 Ulyana 64 Bits no Dell Inspiron 1440 (2009)
 		(versão do kernel instalada >= 5.8)<br>
 	_ Instalação do Driver Broadcom BCM-4312.<br>
 		(recomendado utilizar o Gerenciador de Drivers MintDrivers)
-	_ Reinicializar o Sistema
+	_ Reinicializar o Sistema (Menu, Sair, Reiniciar)
 	
 #06_ Atualização dos Drivers VGA Intel<br>
 	_ sudo apt update<br>
@@ -41,10 +41,10 @@ Instalação do Linux Mint 20 Ulyana 64 Bits no Dell Inspiron 1440 (2009)
 	  
 #07_ Instalação dos Aplicativos Básicos<br>
 	_ sudo apt update<br>
-	_ sudo apt install software-properties-common build-essential dkms<br>
+	_ sudo apt install software-properties-common build-essential dkms lsb-core<br>
 	_ sudo apt install ttf-mscorefonts-installer mint-meta-codecs cheese cairo-dock vim git<br>
 	_ sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool
-	_ sudo reboot
+	_ Reinicializar o Sistema (sudo reboot)<br>
 
 #08_ Instalação dos Aplicativos do meu Dia-a-Dia<br>
 	_ VirtualBOX: https://www.virtualbox.org/<br>
