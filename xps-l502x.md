@@ -1,16 +1,16 @@
 Instalação do Linux Mint 20 Ulyana 64 Bits no Dell XPS L502X (2011)
 
 #00_ Hardware: CPU Intel i7 2670QM 3.1Ghz, 16.0GB DDR-3 1600Mhz, SSD Corsair 240GB<br>
-	_ HD Seagate 500GB 7200rpm, LCD 15", Webcam, HDMI, Ethernet Realtek RTL-8168, <br>
-	_ Wireless Intel Centrino 1030, Intel HD Graphics, NVIDIA GeForce GT 525M, Audio Intel 
+	_ HD Seagate 500GB 7200rpm, LCD 15", Webcam, HDMI, Ethernet Realtek RTL-8168,<br>
+	_ Wireless Intel Centrino 1030, Intel HD Graphics, NVIDIA GeForce GT 525M, Audio Intel. 
 
 #01_ Configuração da BIOS (versão A12)<br>
 	_ Configuração Padrão de Fábrica, Hard Disk SATA em AHCI, VT-x habilitado<br>
-	_ Audio, Wireless e Bluetooth habilitados
+	_ Audio, Wireless e Bluetooth habilitados.
 	
 #02_ Inicialização da Instalação<br>
 	_ Inicialização padrão, nesse notebook não acontece a falha de resolução devido<br>
-	_ ao suporte de altas resoluções do LCD
+	_ ao suporte de altas resoluções do LCD.
 
 #03_ Driver da Placa de Rede Sem-Fio (Wi-Fi)<br>
 	_ Já é reconhecida no Live-CD do Mint, depois de instalado ela já está habilitada.
@@ -23,29 +23,31 @@ Instalação do Linux Mint 20 Ulyana 64 Bits no Dell XPS L502X (2011)
 #05_ Pós-Instalação do Linux Mint 20 Ulyana<br>
 	_ Atualização do sistema utilizando o MintUpdate;<br>
 	_ Atualização do sistema utilizando o Apt;<br>
-		(apt update && apt upgrade && apt full-upgrade && apt dist-upgrade)<br>
-	_ Atualização do Kernel utilizando o MintUpdate.<br>
-		(versão do kernel instalada >= 5.8)<br>
-	_ Reinicializar o Sistema (Menu, Sair, Reiniciar)
+		(apt update && apt upgrade && apt full-upgrade && apt dist-upgrade && apt autoremove)<br>
+	_ Reinicializar o Sistema (Menu, Sair, Reiniciar).
+
+#06_ Instalação do Linux Kernel OEM<br>
+    _ sudo apt update<br>
+    _ sudo apt install linux-oem linux-oem-20.04<br>
+		(versão do Kernel instalada >= 5.6.x suportado até 2025)<br>
+   	_ Reinicializar o Sistema (sudo reboot)<br>
 	
 #06_ Atualização dos Drivers NVIDIA e Intel Graphics<br>
-	_ Recomendado utilizar o Gerenciador de Drivers do Linux Mint (ou por linha de comando)<br>.
-	_ Reinicializar o Sistema (Menu, Sair, Reiniciar)
+	_ Recomendado utilizar o Gerenciador de Drivers do Linux Mint (ou por linha de comando);<br>
+	_ Reinicializar o Sistema (Menu, Sair, Reiniciar)<br>
 	_ sudo apt update<br>
-	_ sudo apt install vainfo intel-gpu-tools intel-media-va-driver<br>
+	_ sudo apt install vainfo intel-gpu-tools<br>
 	_ sudo apt install intel-microcode mesa-utils xserver-xorg-video-intel<br>
-	_ Reinicializar o Sistema (sudo reboot)<br>
+	_ Reinicializar o Sistema (sudo reboot);<br>
 	_ sudo update-pciids<br>
 	_ sudo lspci | grep -i nvidia<br>
-	_ sudo nvidia-smi | grep -i cuda<br>
-	_ sudo apt instal nvidia-cuda-toolkit<br>
-	_ sudo nvcc --version
+	_ sudo nvidia-smi
 	  
 #07_ Instalação dos Aplicativos Básicos<br>
 	_ sudo apt update<br>
-	_ sudo apt install software-properties-common build-essential dkms lsb-core<br>
-	_ sudo apt install ttf-mscorefonts-installer mint-meta-codecs cheese cairo-dock vim git<br>
-	_ sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool
+	_ sudo apt install software-properties-common build-essential lsb-core<br>
+	_ sudo apt install ttf-mscorefonts-installer cheese cairo-dock vim git<br>
+	_ sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool<br>
 	_ Reinicializar o Sistema (sudo reboot)<br>
 
 #08_ Instalação dos Aplicativos do meu Dia-a-Dia<br>
