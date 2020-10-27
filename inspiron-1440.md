@@ -14,7 +14,7 @@ Instalação do Linux Mint 20 Ulyana 64 Bits no Dell Inspiron 1440 (2009)
 		(inicialização em modo de compatibilidade e mais lento no Dell Inspiron 1440)
 
 #03_ Driver da Placa de Rede Sem-Fio (Wi-Fi)<br>
-	_ Modelo Broadcom BCM-4312, por padrão não é reconhecido no Linux Mint<br>
+	_ Modelo Broadcom BCM-4312, por padrão não é reconhecida no Linux Mint<br>
 	_ sendo necessário instalar o Driver Proprietário pelo Gerenciador de<br>
 	_ Drivers do Linux Mint (ou por linha de comando, recomendado pelo GUI).
 
@@ -26,27 +26,33 @@ Instalação do Linux Mint 20 Ulyana 64 Bits no Dell Inspiron 1440 (2009)
 #05_ Pós-Instalação do Linux Mint 20 Ulyana<br>
 	_ Atualização do sistema utilizando o MintUpdate;<br>
 	_ Atualização do sistema utilizando o Apt;<br>
-		(apt update && apt upgrade && apt full-upgrade && apt dist-upgrade)<br>
-	_ Atualização do Kernel utilizando o MintUpdate;<br>
-		(versão do kernel instalada >= 5.8)<br>
+		(apt update && apt upgrade && apt full-upgrade && apt dist-upgrade && apt autoremove)<br>
+	_ Reinicializar o Sistema (Menu, Sair, Reiniciar).
+
+#06_ Instalação do Linux Kernel OEM<br>
+    _ sudo apt update<br>
+    _ sudo apt install linux-oem linux-oem-20.04<br>
+		(versão do Kernel instalada >= 5.6.x suportado até 2025)<br>
+   	_ Reinicializar o Sistema (sudo reboot)<br>
+
+#07_ Atualização dos Drivers BROADCOM <br>
+	_ Recomendado utilizar o Gerenciador de Drivers do Linux Mint (ou por linha de comando);<br>
 	_ Instalação do Driver Broadcom BCM-4312.<br>
-		(recomendado utilizar o Gerenciador de Drivers MintDrivers)
 	_ Reinicializar o Sistema (Menu, Sair, Reiniciar)
 	
-#06_ Atualização dos Drivers VGA Intel<br>
+#08_ Atualização dos Drivers VGA Intel<br>
 	_ sudo apt update<br>
-	_ sudo apt install vainfo intel-gpu-tools intel-media-va-driver intel-microcode xserver-xorg-video-intel<br>
-    _ sudo apt install mesa-vulkan-drivers mesa-vdpau-drivers mesa-va-drivers mesa-utils mesa-opencl-icd mesa-utils-extra<br>
-    _ sudo apt install libegl1-mesa libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa libgles2-mesa libassimp5 beignet-opencl-icd<br>
+	_ sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra<br>
+    _ sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5 beignet-opencl-icd<br>
 	  
-#07_ Instalação dos Aplicativos Básicos<br>
+#09_ Instalação dos Aplicativos Básicos<br>
 	_ sudo apt update<br>
-	_ sudo apt install software-properties-common build-essential dkms lsb-core<br>
+	_ sudo apt install software-properties-common build-essential lsb-core<br>
 	_ sudo apt install ttf-mscorefonts-installer mint-meta-codecs cheese cairo-dock vim git<br>
-	_ sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool
+	_ sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool<br>
 	_ Reinicializar o Sistema (sudo reboot)<br>
 
-#08_ Instalação dos Aplicativos do meu Dia-a-Dia<br>
+#10_ Instalação dos Aplicativos do meu Dia-a-Dia<br>
 	_ VirtualBOX: https://www.virtualbox.org/<br>
 	_ NotepadQQ: https://notepadqq.com/s/<br>
 	_ Packet Tracer: https://www.packettracernetwork.com/<br>

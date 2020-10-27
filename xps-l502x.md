@@ -32,7 +32,7 @@ Instalação do Linux Mint 20 Ulyana 64 Bits no Dell XPS L502X (2011)
 		(versão do Kernel instalada >= 5.6.x suportado até 2025)<br>
    	_ Reinicializar o Sistema (sudo reboot)<br>
 	
-#06_ Atualização dos Drivers NVIDIA e Intel Graphics<br>
+#07_ Atualização dos Drivers NVIDIA e Intel Graphics<br>
 	_ Recomendado utilizar o Gerenciador de Drivers do Linux Mint (ou por linha de comando);<br>
 	_ Reinicializar o Sistema (Menu, Sair, Reiniciar)<br>
 	_ sudo apt update<br>
@@ -43,14 +43,14 @@ Instalação do Linux Mint 20 Ulyana 64 Bits no Dell XPS L502X (2011)
 	_ sudo lspci | grep -i nvidia<br>
 	_ sudo nvidia-smi
 	  
-#07_ Instalação dos Aplicativos Básicos<br>
+#08_ Instalação dos Aplicativos Básicos<br>
 	_ sudo apt update<br>
 	_ sudo apt install software-properties-common build-essential lsb-core<br>
 	_ sudo apt install ttf-mscorefonts-installer cheese cairo-dock vim git<br>
 	_ sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool<br>
 	_ Reinicializar o Sistema (sudo reboot)<br>
 
-#08_ Instalação dos Aplicativos do meu Dia-a-Dia<br>
+#09_ Instalação dos Aplicativos do meu Dia-a-Dia<br>
 	_ VirtualBOX: https://www.virtualbox.org/<br>
 	_ NotepadQQ: https://notepadqq.com/s/<br>
 	_ Packet Tracer: https://www.packettracernetwork.com/<br>
