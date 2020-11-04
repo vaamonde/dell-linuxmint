@@ -1,14 +1,14 @@
-#Autor: Robson Vaamonde
-#Procedimentos em TI: http://procedimentosemti.com.br
-#Bora para Prática: http://boraparapratica.com.br
-#Robson Vaamonde: http://vaamonde.com.br
-#Facebook Procedimentos em TI: https://www.facebook.com/ProcedimentosEmTi
-#Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica
-#Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
-#YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
-#Data de criação: 01/10/2020
-#Data de atualização: 04/11/2020
-#Versão: 0.01
+#Autor: Robson Vaamonde<br>
+#Procedimentos em TI: http://procedimentosemti.com.br<br>
+#Bora para Prática: http://boraparapratica.com.br<br>
+#Robson Vaamonde: http://vaamonde.com.br<br>
+#Facebook Procedimentos em TI: https://www.facebook.com/ProcedimentosEmTi<br>
+#Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica<br>
+#Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
+#YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
+#Data de criação: 01/10/2020<br>
+#Data de atualização: 04/11/2020<br>
+#Versão: 0.01<br>
 #Testado e homologado no Linux Mint 20 e 20.1
 
 #Instalação do Linux Mint 20 Ulyana 20.1 Ulyssa 64 Bits no Dell XPS L502X (2011)
@@ -36,14 +36,14 @@
 #05_ Pós-Instalação do Linux Mint 20 Ulyana 20.1 Ulyssa<br>
 	_ Atualização do sistema utilizando o MintUpdate;<br>
 	_ Atualização do sistema utilizando o Apt;<br>
-		apt update<br>
-        apt upgrade<br>
-        apt full-upgrade<br>
-        apt dist-upgrade<br>
-        apt autoremove<br>
-        apt autoclean<br>
-        apt clean<br>
-	_ Reinicializar o Sistema (Menu, Sair, Reiniciar ou sudo reboot).
+	_ sudo apt update<br>
+	_ sudo apt upgrade<br>
+	_ sudo apt full-upgrade<br>
+	_ sudo apt dist-upgrade<br>
+	_ sudo apt autoremove<br>
+	_ sudo apt autoclean<br>
+	_ sudo apt clean<br>
+	_ Reinicializar o Sistema (sudo reboot).
 
 #06_ Instalação do Linux Kernel OEM<br>
     _ sudo apt update<br>
@@ -58,8 +58,8 @@
 	_ sudo apt install ttf-mscorefonts-installer cheese cairo-dock vim git<br>
 	_ Reinicializar o Sistema (sudo reboot)
 	
-#07_ Atualização dos Drivers NVIDIA e Intel Graphics<br>
-	_ Recomendado utilizar o Gerenciador de Drivers do Linux Mint (ou por linha de comando);<br>
+#07_ Atualização dos Drives NVIDIA e Intel Graphics<br>
+	_ Recomendado utilizar o Gerenciador de Drives do Linux Mint (ou por linha de comando);<br>
 	_ Reinicializar o Sistema (Menu, Sair, Reiniciar)<br>
 	_ sudo apt update<br>
 	_ sudo apt install vainfo intel-gpu-tools<br>
@@ -78,20 +78,41 @@
 
 #09_ Instalação dos Aplicativos do meu Dia-a-Dia<br>
 	_ VirtualBOX: https://www.virtualbox.org/<br>
+        (link: https://github.com/vaamonde/dell-linuxmint/blob/master/virtualbox.md)<br>
 	_ NotepadQQ: https://notepadqq.com/s/<br>
+        (sudo apt update && sudo apt install notepadqq)<br>
 	_ Packet Tracer: https://www.packettracernetwork.com/<br>
+        (link: https://mega.nz/folder/Co9GHIyK#2kzNnN7XzImP01M1SyRm2g/folder/vll2iSDI)<br>
 	_ GNS3: https://www.gns3.com/<br>
+        (link: https://github.com/vaamonde/dell-linuxmint/blob/master/gns3.md)<br>
 	_ WPS Office: http://linux.wps.com/<br>
+        (versão >= 11.1.0.9719)<br>
+    _ Pacotes de Tradução e Dicionário do WPS Office<br>
+        (link: https://github.com/vaamonde/dell-linuxmint/blob/master/wpsoffice.md)<br>
 	_ KolourPaint: https://kde.org/applications/en/graphics/org.kde.kolourpaint<br>
+        (sudo apt update && sudo apt install kolourpaint)
 	_ VS Code: https://code.visualstudio.com/<br>
+        (versão >= 1.50.1)<br>
+        (extensions: Bash Beautify, BATS for VSCode, Brazilian Portuguese - Code Spell Checker<br>
+        Pacote de Idioma Português Brasileiro para VS Code, Shell-Format e Shell)<br>
 	_ Google Chrome: https://www.google.com/intl/pt-BR/chrome/<br>
+        (versão >= 86.0.4240.183)<br>
 	_ Genymotion: https://www.genymotion.com/download/<br>
 	_ Kazam: https://launchpad.net/kazam<br>
+        (sudo apt update && sudo apt install kazam)<br>
 	_ Kdenlive: https://kdenlive.org/en/<br>
+        (link da versão AppImage >=20.08.2: https://kdenlive.org/en/download/)<br> 
 	_ Audacity: https://www.audacityteam.org/<br>
+        (sudo apt update && sudo apt install audacity)<br>
 	_ Mega: https://mega.nz/<br>
+        (link da versão >=: https://mega.nz/sync)<br>
 	_ Teams: https://www.microsoft.com/pt-br/microsoft-365/microsoft-teams/download-app<br>
+        (link da versão >=1.3.00: https://www.microsoft.com/pt-br/microsoft-365/microsoft-teams/download-app#desktopAppDownloadregion)<br>
 	_ VLC: https://www.videolan.org/vlc/index.pt-BR.html<br>
+        (sudo apt update && sudo apt install vlc)<br>
 	_ Skype: https://www.skype.com/pt-br/<br>
+        (link da versão >=8.66.0.74: https://www.skype.com/pt-br/get-skype/)<br>
     _ Redshift: http://jonls.dk/redshift/<br>
-    _ Timeshift: https://github.com/teejee2008/timeshift
+        (nativo no Linux Mint, versão >= 1.12)<br>
+    _ Timeshift: https://github.com/teejee2008/timeshift<br>
+        (nativo no Linux Mint, versão >= 20.03)
