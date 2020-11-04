@@ -49,8 +49,7 @@
     _ sudo apt update<br>
     _ sudo apt install linux-oem linux-oem-20.04<br>
 		(versão do Kernel instalada >= 5.6.x suportado até 2025)<br>
-   	_ Reinicializar o Sistema (sudo reboot)<br>
-<<<<<<< HEAD
+   	_ Reinicializar o Sistema (sudo reboot)
 
 #07_ Instalação dos Aplicativos Básicos<br>
 	_ sudo apt update<br>
@@ -58,12 +57,8 @@
 	_ sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool<br>
 	_ sudo apt install ttf-mscorefonts-installer cheese cairo-dock vim git<br>
 	_ Reinicializar o Sistema (sudo reboot)
-
-#08_ Instalação dos Drivers da NVIDIA e Intel Graphics<br>
-=======
 	
 #07_ Atualização dos Drivers NVIDIA e Intel Graphics<br>
->>>>>>> 3585f446274729a966f1fe6535ac6ce67af9e3cd
 	_ Recomendado utilizar o Gerenciador de Drivers do Linux Mint (ou por linha de comando);<br>
 	_ Reinicializar o Sistema (Menu, Sair, Reiniciar)<br>
 	_ sudo apt update<br>
@@ -73,10 +68,6 @@
 	_ sudo update-pciids<br>
 	_ sudo lspci | grep -i nvidia<br>
 	_ sudo nvidia-smi
-<<<<<<< HEAD
-
-#09_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
-=======
 	  
 #08_ Instalação dos Aplicativos Básicos<br>
 	_ sudo apt update<br>
@@ -86,7 +77,6 @@
 	_ Reinicializar o Sistema (sudo reboot)<br>
 
 #09_ Instalação dos Aplicativos do meu Dia-a-Dia<br>
->>>>>>> 3585f446274729a966f1fe6535ac6ce67af9e3cd
 	_ VirtualBOX: https://www.virtualbox.org/<br>
 	_ NotepadQQ: https://notepadqq.com/s/<br>
 	_ Packet Tracer: https://www.packettracernetwork.com/<br>
