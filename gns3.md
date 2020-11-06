@@ -15,12 +15,12 @@
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 
-    sudo apt update<br>
-    sudo apt upgrade<br>
-    sudo apt full-upgrade<br>
-    sudo apt dist-upgrade<br>
-    sudo apt autoremove<br>
-    sudo apt autoclean<br>
+    sudo apt update
+    sudo apt upgrade
+    sudo apt full-upgrade
+    sudo apt dist-upgrade
+    sudo apt autoremove
+    sudo apt autoclean
     sudo apt clean
 
 #02_ Adicionando o Suporte da Arquitetura i386 no Linux Mint<br>
