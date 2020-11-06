@@ -11,27 +11,26 @@
 #Versão: 0.01<br>
 #Testado e homologado no Linux Mint 20 e 20.1
 
-#Instalação do Linux Mint 20 Ulyana 20.1 Ulyssa 64 Bits no Dell G3 3590 (2011)
+#Instalação do Linux Mint 20 Ulyana 20.1 Ulyssa 64 Bits no Dell Vostro 5480 (2015)
 
-#00_ Hardware: CPU Intel i5 9300H 4.1Ghz, 32.0GB DDR-4 2666Mhz, SSD Samsung 970 EVO Plus 500GB<br>
-	_ SSHD Seagate 1.0TB 8GB 5400rpm, LCD 15", Webcam, HDMI, Ethernet Realtek RTL-8168,<br>
-	_ Qualcomm Atheros QCA9377, Intel UHD Graphics 630, NVIDIA GeForce 1050 Max-Q e Audio Nvidia.
+#00_ Hardware: CPU Intel i7 5500U 2.4Ghz, 8.0GB DDR-3 1600Mhz, SSD Kingston 240GB<br>
+	_ LCD 14", Biometria, Webcam, HDMI, Ethernet Realtek RTL-8168, Wireless Intel<br>
+	_ 7265, Intel HD Graphics 5500, NVIDIA GM108M GeForce 830M, Audio Intel 
 
-#01_ Configuração da BIOS (versão A12)<br>
+#01_ Configuração da BIOS UEFI (versão A03)<br>
 	_ Configuração Padrão de Fábrica, Hard Disk SATA em AHCI, VT-x habilitado, Audio,<br>
-	_ Wireless e Bluetooth habilitados.
+	_ Wireless e Bluetooth habilitados, segurança UEFI desabilitado
 	
-#02_ Inicialização da Instalação<br>
+#02_ Inicialização da Instalação do Linux Mint 20 Ulyana 20.1 Ulyssa<br>
 	_ Inicialização padrão, nesse notebook não acontece a falha de resolução devido<br>
-	_ ao suporte de altas resoluções do LCD.
+	_ ao suporte a altas resoluções do LCD
 
 #03_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless)<br>
-	_ Já é reconhecida no Live-CD do Mint, depois de instalado o Mint ela já está habilitada.
+	_ Já é reconhecida no Live-CD do Mint, depois de nstalado o Mint ela já está habilitada.
 
-#04_ Hard Disk M.2 SSD 500GB e 1.0TB<br>
-	_ Modelo SSD Samsung 970 EVO Plus, Hard Disk para a instalação do Linux Mint, sem<br>
-	_ necessidade de particionamento (instalação padrão), SSHD Seagate 1.0TB 8GB 5400rpm<br>
-	_ usado para armazenamento de arquivos e backup.
+#04_ Hard Disk SATA SSD 240<br>
+	_ Modelo Kingston, Hard Disk para a instalação do Linux Mint, sem necessidade<br>
+	_ de particionamento (instalação padrão).
 	
 #05_ Pós-Instalação do Linux Mint 20 Ulyana 20.1 Ulyssa<br>
 	_ Atualização do sistema utilizando o MintUpdate;<br>
@@ -58,8 +57,8 @@
 	_ sudo apt install ttf-mscorefonts-installer cheese cairo-dock vim git<br>
 	_ Reinicializar o Sistema (sudo reboot)
 
-#08_ Instalação dos Drives da NVIDIA, CUDA e Intel Graphics<br>
-	_ Recomendado utilizar o Gerenciador de Drives do Linux Mint (ou por linha de comando)<br>.
+#08_ Instalação dos Drivers da NVIDIA, CUDA e Intel Graphics<br>
+	_ Recomendado utilizar o Gerenciador de Drivers do Linux Mint (ou por linha de comando)<br>.
 	_ Reinicializar o Sistema (Menu, Sair, Reiniciar)
 	_ sudo apt update<br>
 	_ sudo apt install vainfo intel-gpu-tools intel-media-va-driver<br>
@@ -71,7 +70,13 @@
 	_ sudo apt install nvidia-cuda-toolkit<br>
 	_ sudo nvcc --version
 
-#09_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
+#09_ Instalação do Leitor de Biometria<br>
+	_ lsusb<br>
+	_ sudo add-apt-repository ppa:fingerprint/fingerprint-gui<br>
+	_ sudo apt update<br>
+	_ sudo apt-get install libbsapi policykit-1-fingerprint-gui fingerprint-gui
+
+#10_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
 	_ VirtualBOX: https://www.virtualbox.org/<br>
         (link: https://github.com/vaamonde/dell-linuxmint/blob/master/virtualbox.md)<br>
 	_ NotepadQQ: https://notepadqq.com/s/<br>
