@@ -33,6 +33,7 @@
 	_ pelo Gerenciador de Drivers do Linux Mint (ou por linha de comando, recomendado pelo GUI).
 
 #04_ Hard Disk SATA SSD 60GB e 500GB<br>
+
 	_ Modelo Corsair Force 3, Hard Disk para a instalação do Linux Mint, sem necessidade de particionamento 
 	_ (instalação padrão), Hard Disk WD usado para armazenamento de arquivos e backup (case Akasa AK-OA2SSA-BKV2 2,5").
 
@@ -49,11 +50,10 @@
 		sudo apt clean
 		sudo reboot (Reinicializar o Sistema)
 
-#06_ Instalação do Linux Kernel OEM<br>
+#06_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.6.x suportado até 2025)<br>
 
 		sudo apt update
 		sudo apt install linux-oem linux-oem-20.04
-		(versão do Kernel instalada >= 5.6.x suportado até 2025)
 		sudo reboot (Reinicializar o Sistema)
 
 #07_ Instalação dos Aplicativos Básicos<br>
@@ -61,12 +61,12 @@
 		sudo apt update
 		sudo apt install software-properties-common build-essential lsb-core
 		sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool
-		sudo apt install ttf-mscorefonts-installer cheese cairo-dock vim git
+		sudo apt install ttf-mscorefonts-installer cheese cairo-dock vim git p7zip-full p7zip-rar
 		sudo reboot (Reinicializar o Sistema)
 
 #08_ Instalação dos Drivers VGA Intel Graphics<br>
 
-		sudo apt update<br>
+		sudo apt update
 		sudo apt install vainfo intel-gpu-tools intel-media-va-driver intel-microcode xserver-xorg-video-intel
 		sudo apt install mesa-vulkan-drivers mesa-vdpau-drivers mesa-va-drivers mesa-utils mesa-opencl-icd mesa-utils-extra
 		sudo apt install libegl1-mesa libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa libgles2-mesa libassimp5 beignet-opencl-icd
@@ -83,7 +83,7 @@
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/virtualbox.md)
 
 	_ NotepadQQ: https://notepadqq.com/s/
-		(sudo apt update && sudo apt install notepadqq)
+		sudo apt update && sudo apt install notepadqq
 
 	_ Packet Tracer: https://www.packettracernetwork.com/
 		(link: https://mega.nz/folder/Co9GHIyK#2kzNnN7XzImP01M1SyRm2g/folder/vll2iSDI)
@@ -98,7 +98,7 @@
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/wpsoffice.md)
 
 	_ KolourPaint: https://kde.org/applications/en/graphics/org.kde.kolourpaint
-		(sudo apt update && sudo apt install kolourpaint)
+		sudo apt update && sudo apt install kolourpaint
 
 	_ VS Code: https://code.visualstudio.com/
 		(versão >= 1.50.1)
@@ -111,13 +111,13 @@
 	_ Genymotion: https://www.genymotion.com/download/
 
 	_ Kazam: https://launchpad.net/kazam
-		(sudo apt update && sudo apt install kazam)
+		sudo apt update && sudo apt install kazam
 
 	_ Kdenlive: https://kdenlive.org/en/
 		(link da versão AppImage >=20.08.2: https://kdenlive.org/en/download/)
 
 	_ Audacity: https://www.audacityteam.org/
-		(sudo apt update && sudo apt install audacity)
+		sudo apt update && sudo apt install audacity
 
 	_ Mega: https://mega.nz/
 		(link da versão >=: https://mega.nz/sync)
@@ -126,7 +126,7 @@
 		(link da versão >=1.3.00: https://www.microsoft.com/pt-br/microsoft-365/microsoft-teams/download-app#desktopAppDownloadregion)
 
 	_ VLC: https://www.videolan.org/vlc/index.pt-BR.html
-		(sudo apt update && sudo apt install vlc)
+		sudo apt update && sudo apt install vlc
 
 	_ Skype: https://www.skype.com/pt-br/
 		(link da versão >=8.66.0.74: https://www.skype.com/pt-br/get-skype/)<br>
