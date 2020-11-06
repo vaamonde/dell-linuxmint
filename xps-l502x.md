@@ -66,60 +66,60 @@ _ sudo nvidia-smi
 
 #09_ Instalação dos Aplicativos utilizados no meu Dia-a-Dia
 
-_ VirtualBOX: https://www.virtualbox.org/<br>
-	(link: https://github.com/vaamonde/dell-linuxmint/blob/master/virtualbox.md)
+	_ VirtualBOX: https://www.virtualbox.org/<br>
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/virtualbox.md)
 
-_ NotepadQQ: https://notepadqq.com/s/<br>
-	(sudo apt update && sudo apt install notepadqq)
+	_ NotepadQQ: https://notepadqq.com/s/<br>
+		(sudo apt update && sudo apt install notepadqq)
 
-_ Packet Tracer: https://www.packettracernetwork.com/<br>
-	(link: https://mega.nz/folder/Co9GHIyK#2kzNnN7XzImP01M1SyRm2g/folder/vll2iSDI)
+	_ Packet Tracer: https://www.packettracernetwork.com/<br>
+		(link: https://mega.nz/folder/Co9GHIyK#2kzNnN7XzImP01M1SyRm2g/folder/vll2iSDI)
 
-_ GNS3: https://www.gns3.com/<br>
-	(link: https://github.com/vaamonde/dell-linuxmint/blob/master/gns3.md)
+	_ GNS3: https://www.gns3.com/<br>
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/gns3.md)
 
-_ WPS Office: http://linux.wps.com/<br>
-	(versão >= 11.1.0.9719)
+	_ WPS Office: http://linux.wps.com/<br>
+		(versão >= 11.1.0.9719)
 
-_ Pacotes de Tradução e Dicionário do WPS Office<br>
-	(link: https://github.com/vaamonde/dell-linuxmint/blob/master/wpsoffice.md)
+	_ Pacotes de Tradução e Dicionário do WPS Office<br>
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/wpsoffice.md)
 
-_ KolourPaint: https://kde.org/applications/en/graphics/org.kde.kolourpaint<br>
-	(sudo apt update && sudo apt install kolourpaint)
+	_ KolourPaint: https://kde.org/applications/en/graphics/org.kde.kolourpaint<br>
+		(sudo apt update && sudo apt install kolourpaint)
 
-_ VS Code: https://code.visualstudio.com/<br>
-	(versão >= 1.50.1)<br>
-	(extensions: Bash Beautify, BATS for VSCode, Brazilian Portuguese - Code Spell Checker Pacote de Idioma Português Brasileiro para<br>
-	VS Code Shell-Format e Shell)
+	_ VS Code: https://code.visualstudio.com/<br>
+		(versão >= 1.50.1)<br>
+		(extensions: Bash Beautify, BATS for VSCode, Brazilian Portuguese - Code Spell Checker Pacote de Idioma Português Brasileiro para<br>
+		VS Code Shell-Format e Shell)
 
-_ Google Chrome: https://www.google.com/intl/pt-BR/chrome/<br>
-	(versão >= 86.0.4240.183)
+	_ Google Chrome: https://www.google.com/intl/pt-BR/chrome/<br>
+		(versão >= 86.0.4240.183)
 
-_ Genymotion: https://www.genymotion.com/download/<br>
+	_ Genymotion: https://www.genymotion.com/download/<br>
 
-_ Kazam: https://launchpad.net/kazam<br>
-	(sudo apt update && sudo apt install kazam)
+	_ Kazam: https://launchpad.net/kazam<br>
+		(sudo apt update && sudo apt install kazam)
 
-_ Kdenlive: https://kdenlive.org/en/<br>
-	(link da versão AppImage >=20.08.2: https://kdenlive.org/en/download/)
+	_ Kdenlive: https://kdenlive.org/en/<br>
+		(link da versão AppImage >=20.08.2: https://kdenlive.org/en/download/)
 
-_ Audacity: https://www.audacityteam.org/<br>
-	(sudo apt update && sudo apt install audacity)
+	_ Audacity: https://www.audacityteam.org/<br>
+		(sudo apt update && sudo apt install audacity)
 
-_ Mega: https://mega.nz/<br>
-	(link da versão >=: https://mega.nz/sync)
+	_ Mega: https://mega.nz/<br>
+		(link da versão >=: https://mega.nz/sync)
 
-_ Teams: https://www.microsoft.com/pt-br/microsoft-365/microsoft-teams/download-app<br>
-	(link da versão >=1.3.00: https://www.microsoft.com/pt-br/microsoft-365/microsoft-teams/download-app#desktopAppDownloadregion)
+	_ Teams: https://www.microsoft.com/pt-br/microsoft-365/microsoft-teams/download-app<br>
+		(link da versão >=1.3.00: https://www.microsoft.com/pt-br/microsoft-365/microsoft-teams/download-app#desktopAppDownloadregion)
 
-_ VLC: https://www.videolan.org/vlc/index.pt-BR.html<br>
-	(sudo apt update && sudo apt install vlc)
+	_ VLC: https://www.videolan.org/vlc/index.pt-BR.html<br>
+		(sudo apt update && sudo apt install vlc)
 
-_ Skype: https://www.skype.com/pt-br/<br>
-	(link da versão >=8.66.0.74: https://www.skype.com/pt-br/get-skype/)<br>
+	_ Skype: https://www.skype.com/pt-br/<br>
+		(link da versão >=8.66.0.74: https://www.skype.com/pt-br/get-skype/)<br>
 
-_ Redshift: http://jonls.dk/redshift/<br>
-	(nativo no Linux Mint, versão >= 1.12)
+	_ Redshift: http://jonls.dk/redshift/<br>
+		(nativo no Linux Mint, versão >= 1.12)
 
-_ Timeshift: https://github.com/teejee2008/timeshift<br>
-	(nativo no Linux Mint, versão >= 20.03)
+	_ Timeshift: https://github.com/teejee2008/timeshift<br>
+		(nativo no Linux Mint, versão >= 20.03)
