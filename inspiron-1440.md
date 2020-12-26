@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 06/11/2020<br>
-#Versão: 0.02<br>
+#Data de atualização: 26/12/2020<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20 e 20.1
 
 #Instalação do Linux Mint 20 Ulyana 20.1 Ulyssa 64 Bits no Dell Inspiron 1440 (2009)
@@ -30,7 +30,7 @@
 #03_ Driver da Placa de Rede Sem-Fio (Wi-Fi)<br>
 
 	_ Modelo Broadcom BCM-4312, por padrão não é reconhecida no Linux Mint sendo necessário instalar o Driver Proprietário
-	_ pelo Gerenciador de Drivers do Linux Mint (ou por linha de comando, recomendado pelo GUI).
+	_ pelo Gerenciador de Drivers do Linux Mint ou por linha de comando.
 
 #04_ Hard Disk SATA SSD 60GB e 500GB<br>
 
@@ -53,15 +53,16 @@
 #06_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.6.x suportado até 2025)<br>
 
 		sudo apt update
-		sudo apt install linux-oem linux-oem-20.04
+		sudo apt install linux-oem-20.04 fdutils
 		sudo reboot (Reinicializar o Sistema)
+        sudo uname -a
 
 #07_ Instalação dos Aplicativos Básicos<br>
 
 		sudo apt update
 		sudo apt install software-properties-common build-essential lsb-core
 		sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool
-		sudo apt install ttf-mscorefonts-installer cheese cairo-dock vim git p7zip-full p7zip-rar
+		sudo apt install ttf-mscorefonts-installer cheese guvcview cairo-dock vim git p7zip-full p7zip-rar
 		sudo reboot (Reinicializar o Sistema)
 
 #08_ Instalação dos Drivers VGA Intel Graphics<br>
@@ -72,10 +73,11 @@
 		sudo apt install libegl1-mesa libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa libgles2-mesa libassimp5 beignet-opencl-icd
 		sudo reboot (Reinicializar o Sistema)
 
-#09_ Instalação dos Drivers WIRELESS Broadcom<br>
+#09_ Instalação dos Drivers WIRELESS Broadcom BCM-4312<br>
 
-	_ Recomendado utilizar o Gerenciador de Drives do Linux Mint (ou por linha de comando)
-	_ Reinicializar o Sistema após a instalação (Menu, Sair, Reiniciar)
+	    sudo apt update
+        sudo apt install firmware-b43-installer firmware-b43legacy-installer dkms
+	    sudo reboot (Reinicializar o Sistema)
 
 #10_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
 

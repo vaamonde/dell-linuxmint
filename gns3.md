@@ -37,7 +37,10 @@
 
 #05_ Instalando o GNS3 e suas Dependências no Linux Mint<br>
 
-    sudo apt install gns3-gui gns3-iou gns3-server gns3-webclient-pack dynamips iouyap vpcs xterm ubridge iptraf-ng iperf3 ipcalc git vim uml-utilities bridge-utils wireshark wireshark-common wireshark-dev cpulimit qemu qemu-utils qemu-kvm qemu-user qemu-system-x86 libvirt-bin python3 python3-pyqt5 telnet vinagre virt-viewer
+    sudo apt install gns3-gui gns3-iou gns3-server gns3-webclient-pack dynamips iouyap vpcs xterm ubridge \
+    iptraf-ng iperf3 ipcalc git vim uml-utilities bridge-utils wireshark wireshark-common wireshark-dev \
+    cpulimit qemu qemu-utils qemu-kvm qemu-user qemu-system-x86 libvirt-bin python3 python3-pyqt5 telnet \
+    vinagre virt-viewer
 
 #06_ Corrigindo a falha de permissão do uBridge em clientes VPCS no GNS3<br>
 
