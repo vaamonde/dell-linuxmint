@@ -31,8 +31,8 @@
 
 	_ Modelo Broadcom BCM-4312, por padrão não é reconhecida no Linux Mint sendo necessário instalar o Driver Proprietário
 	_ pelo Gerenciador de Drivers do Linux Mint ou por linha de comando.
-    _ OBS: se utilizar o Kernel OEM >= 5.6 a instalação do Driver da Broadcom via Gerenciador de Driver não funciona corretamente
-    _ sendo necessário instalar o Firmware e Driver manualmente 
+	_ OBS: se utilizar o Kernel OEM >= 5.6 a instalação do Driver da Broadcom via Gerenciador de Driver não funciona corretamente
+	_ sendo necessário instalar o Firmware e Driver manualmente 
 
 #04_ Hard Disk SATA SSD 60GB e 500GB<br>
 
@@ -57,7 +57,7 @@
 		sudo apt update
 		sudo apt install linux-oem-20.04 fdutils
 		sudo reboot (Reinicializar o Sistema)
-        sudo uname -a
+		sudo uname -a
 
 #07_ Instalação dos Aplicativos Básicos<br>
 
@@ -77,9 +77,9 @@
 
 #09_ Instalação dos Drivers WIRELESS Broadcom BCM-4312<br>
 
-	    sudo apt update
-        sudo apt install firmware-b43-installer firmware-b43legacy-installer dkms
-	    sudo reboot (Reinicializar o Sistema)
+		sudo apt update
+		sudo apt install firmware-b43-installer firmware-b43legacy-installer dkms
+		sudo reboot (Reinicializar o Sistema)
 
 #10_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
 
