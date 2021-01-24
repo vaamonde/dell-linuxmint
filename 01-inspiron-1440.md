@@ -96,7 +96,7 @@
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/gns3.md)
 
 	_ WPS Office: http://linux.wps.com/
-		(versão >= 11.1.0.9719)
+		(link: https://linux.wps.com/)
 
 	_ Pacotes de Tradução e Dicionário do WPS Office
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/wpsoffice.md)
@@ -105,12 +105,10 @@
 		sudo apt update && sudo apt install kolourpaint
 
 	_ VS Code: https://code.visualstudio.com/
-		(versão >= 1.50.1)
 		(extensions: Bash Beautify, BATS for VSCode, Brazilian Portuguese - Code Spell Checker 
 		Pacote de Idioma Português Brasileiro para VS Code Shell-Format e Shell)
 
 	_ Google Chrome: https://www.google.com/intl/pt-BR/chrome/
-		(versão >= 86.0.4240.183)
 
 	_ Genymotion: https://www.genymotion.com/download/
 
