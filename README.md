@@ -11,7 +11,7 @@ Facebook Bora para Prática: https://www.facebook.com/boraparapratica<br>
 Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 
-## **Links Oficiais do Ubiquiti Unifi Brasil:**
+## **Links Oficiais do Linux Mint:**
 Site do Linux Mint: https://www.linuxmint.com/​<br>
 Blog do Linux Mint: https://blog.linuxmint.com/​<br>
 FTP  do Linux Mint: https://ftp.heanet.ie/mirrors/linuxmint.com/stable/<br>
@@ -19,11 +19,11 @@ FTP  do Linux Mint: https://ftp.heanet.ie/mirrors/linuxmint.com/stable/<br>
 ## **Playlist do YouTUBE com todos os Vídeos do Linux Mint 20.x:**
 Link da Playlist: https://www.youtube.com/playlist?list=PLozhsZB1lLUOKXT6TIhjwPWBNpUoExsNF
 
-## **Lançamento Oficial do Linux Mint 20.1 Ulyssa - Instalação o Oracle VirtualBOX**
+## **Lançamento Oficial do Linux Mint 20.1 Ulyssa - Instalação no Oracle VirtualBOX**
 
 Vídeo mostrando os procedimentos básicos para instalar o Linux Mint 20.1 Ulyssa no Oracle VirtualBOX
 
-No dia 03/01/2021 a equipe de desenvolvimento do Linux Mint disponibilizou nos seus Mirros (espelhos) as versões "OFICIAL" do Linux Mint Cinnamon, Mate e XFCE 64bits e uma nova versão chamada "Edge", será que essas ISO's são as Oficiais?
+No dia 03/01/2021 a equipe de desenvolvimento do Linux Mint disponibilizou nos seus Mirrors (espelhos) as versões "OFICIAL" do Linux Mint Cinnamon, Mate e XFCE 64bits e uma nova versão chamada "Edge", será que essas ISO's são as Oficiais?
 
 No dia 31/12/2020 os desenvolvedores do Linux Mint comentaram que ainda não tem uma data para o lançamento oficial do Linux Mint 20.1, pois o seu lançamento só aconteceria depois de corrigir todas as falhas reportadas no Github em relação a versão "BETA".
 

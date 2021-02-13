@@ -120,6 +120,9 @@ if [ "$(sudo lsusb -v | grep Arduino &>> $LOG ; echo $?)" == "0" ]
 		# opção do comando lsusb: -v (verbose)
 		# opção do redirecionar |: Conecta a saída padrão com a entrada padrão de outro comando
 		sudo lsusb -v | grep Arduino
+		echo
+		echo -e "Pressione <Enter> para continuar o script."
+		read
 		sleep 5
 	else
 		echo -e "Arduino não está conectado na Porta USB, conecte o Arduino ou verifique a porta"
@@ -142,13 +145,14 @@ if [ "$(sudo ls -lh /dev/ttyA* &>> $LOG ; echo $?)" == "0" ]
 		# opção do caracter curinga *: Qualquer coisa
 		sudo ls -lh /dev/ttyACM*
 		echo
-		sleep 5
 		echo -e "Alterando as permissões da Porta Dialout para todos os usuários.\n"
 		# opção do comando chmod: -v (verbose) a (all users), + (added), r (read), w (write)
 		# opção do caracter curinga *: Qualquer coisa
 		sudo chmod -v a+rw /dev/ttyACM*
 		sudo ls -lh /dev/ttyACM*
 		echo
+		echo -e "Pressione <Enter> para continuar o script."
+		read
 		sleep 5
 	else
 		echo -e "Conexão com a Porta Dialout do Arduino não está disponível, verifique se você conectou"
@@ -171,19 +175,26 @@ if [ "$(sudo cat /etc/group | grep dialout &>> $LOG ; echo $?)" == "0" ]
 		# opção do redirecionar |: Conecta a saída padrão com a entrada padrão de outro comando
 		sudo cat /etc/group | grep dialout
 		echo
-		sleep 5
-		echo -e "Verificando os Membros efetivos do grupo Dialout.\n"
+		echo -e "Verificando os Membros efetivos dos grupos Dialout e Plugdev.\n"
 		# opção do comando members: -a (all)
 		sudo members -a dialout
+		sudo members -a plugdev
 		echo
-		sleep 5
 		echo -e "Adicionando o usuário local: $USUARIO ou Grupo do Dialout.\n"
 		# opção do comando usermod: -a (append), -G (groups)
 		# opção do comando members: -a (all)
 		sudo usermod -a -G dialout $USUARIO
+		sudo usermod -a -G plugdev $USUARIO
+		sudo usermod -a -G tty $USUARIO
+		sudo usermod -a -G uucp $USUARIO
 		sudo members -a dialout
+		sudo members -a plugdev
+		sudo members -a tty
+		sudo members -a uucp
 		id
 		echo
+		echo -e "Pressione <Enter> para continuar o script."
+		read
 		sleep 5
 	else
 		echo -e "Grupo de Dialout do Arduino não está disponível, verifique se você conectou corretamente o"
