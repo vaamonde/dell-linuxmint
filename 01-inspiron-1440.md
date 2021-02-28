@@ -7,16 +7,16 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 26/12/2020<br>
-#Versão: 0.03<br>
+#Data de atualização: 28/02/2021<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1
 
 #Instalação do Linux Mint 20.1 Ulyssa 64 Bits no Dell Inspiron 1440 (2009)
 
-#00_ Hardware: CPU Intel Core 2 Duo P8700 2.5Ghz, 3.0GB DDR-2 800Mhz, SSD Corsair 60GB<br>
+#00_ Configurações do Hardware do Dell Inspiron 1440<br>
 
-	_ HD WD 500GB, LCD 14", Webcam, VGA, Ethernet Realtek RTL-8101, Wireless Broadcom BCM-4312, Intel HD Graphics GM45, 
-	Audio Intel 82801L
+	_ CPU Intel Core 2 Duo P8700 2.5Ghz, 3.0GB DDR-2 800Mhz, SSD Corsair 60GB, HD WD 500GB, LCD 14", Webcam, VGA, 
+	_ Ethernet Realtek RTL-8101, Wireless Broadcom BCM-4312, Intel HD Graphics GM45, Audio Intel 82801L
 
 #01_ Configuração da BIOS (versão A07)<br>
 
@@ -27,16 +27,16 @@
 	_ Para não ter falhas de inicialização da instalação, utilizei o recurso de Modo de Compatibilidade, recomendado 
 	para equipamentos legados (inicialização em modo de compatibilidade e mais lento no Dell Inspiron 1440)
 
-#03_ Driver da Placa de Rede Sem-Fio (Wi-Fi)<br>
+#03_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless)<br>
 
 	_ Modelo Broadcom BCM-4312, por padrão não é reconhecida no Linux Mint sendo necessário instalar o Driver Proprietário
 	_ pelo Gerenciador de Drivers do Linux Mint ou por linha de comando.
-	_ OBS: se utilizar o Kernel OEM >= 5.6 a instalação do Driver da Broadcom via Gerenciador de Driver não funciona corretamente
-	_ sendo necessário instalar o Firmware e Driver manualmente 
+	_ OBS: se você utilizar o Kernel OEM >= 5.6 a instalação do Driver da Broadcom via Gerenciador de Driver não funciona
+	_ corretamente, sendo necessário instalar o Firmware e Driver manualmente por linha de comando
 
-#04_ Hard Disk SATA SSD 60GB e 500GB<br>
+#04_ Hard Disk SATA SSD 60GB e SATA 500GB 7200rpm<br>
 
-	_ Modelo Corsair Force 3, Hard Disk para a instalação do Linux Mint, sem necessidade de particionamento 
+	_ Modelo Corsair Force 3, Hard Disk utilizado para a instalação do Linux Mint, sem necessidade de particionamento 
 	_ (instalação padrão), Hard Disk WD usado para armazenamento de arquivos e backup (case Akasa AK-OA2SSA-BKV2 2,5").
 
 #05_ Pós-Instalação do Linux Mint 20.1 Ulyssa<br>
@@ -62,7 +62,7 @@
 #07_ Instalação dos Aplicativos Básicos<br>
 
 		sudo apt update
-		sudo apt install software-properties-common build-essential lsb-core
+		sudo apt install software-properties-common build-essential lsb-core dkms
 		sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool
 		sudo apt install ttf-mscorefonts-installer cheese guvcview cairo-dock vim git p7zip-full p7zip-rar
 		sudo reboot (Reinicializar o Sistema)
@@ -75,10 +75,10 @@
 		sudo apt install libegl1-mesa libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa libgles2-mesa libassimp5 beignet-opencl-icd
 		sudo reboot (Reinicializar o Sistema)
 
-#09_ Instalação dos Drivers WIRELESS Broadcom BCM-4312<br>
+#09_ Instalação dos Drivers Sem-Fio (Wi-Fi/Wireless) Broadcom BCM-4312<br>
 
 		sudo apt update
-		sudo apt install firmware-b43-installer firmware-b43legacy-installer dkms
+		sudo apt install firmware-b43-installer firmware-b43legacy-installer
 		sudo reboot (Reinicializar o Sistema)
 
 #10_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>

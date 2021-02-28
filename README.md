@@ -33,4 +33,4 @@ No dia 08/01/2021 o site foi atualizado para a nova versão.
 
 Link da vídeo aula: https://www.youtube.com/watch?v=jhqmvgMQypo
 
-Link da apresentação utilizado nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
