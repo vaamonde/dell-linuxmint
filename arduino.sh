@@ -5,8 +5,8 @@
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 23/01/2021
-# Data de atualização: 23/01/2021
-# Versão: 0.01
+# Data de atualização: 28/02/2021
+# Versão: 0.02
 # Testado e homologado para a versão do Linux Mint 20.1 Ulyssa x64
 # Testado e homologado para a versão do Arduino IDE 1.8.x e BlockDuino
 #
@@ -205,7 +205,7 @@ fi
 echo -e "Fazendo o download do Arduino IDE do site Oficial, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando wget: -v (verbose), -O (output-document)
-	wget -v -O /tmp/arduino.tar.xz https://downloads.arduino.cc/$ARDUINO &>> $LOG
+	sudo wget -v -O /tmp/arduino.tar.xz https://downloads.arduino.cc/$ARDUINO &>> $LOG
 echo -e "Download do Arduino IDE do site Oficial feito com sucesso, continuando com o script..."
 sleep 5
 echo
@@ -234,7 +234,7 @@ echo
 #
 echo -e "Adicionando o BlocklyDuino nas ferramentas do Arduino IDE, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
-	sudo mv -v /tmp/blocklyduino/BlocklyDuinoPlugin/tool/* /opt/arduino/tool/
+	sudo mv -v /tmp/blocklyduino/BlocklyDuinoPlugin/tool/* /opt/arduino/tool/ &>> $LOG
 echo -e "BlocklyDuino adicionado com sucesso no Arduino IDE, continuando com o script..."
 sleep 5
 echo
