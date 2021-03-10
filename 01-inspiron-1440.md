@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 28/02/2021<br>
-#Versão: 0.04<br>
+#Data de atualização: 10/03/2021<br>
+#Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20.1
 
 #Instalação do Linux Mint 20.1 Ulyssa 64 Bits no Dell Inspiron 1440 (2009)
@@ -55,6 +55,7 @@
 #06_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.6.x suportado até 2025)<br>
 
 		sudo apt update
+		sudo uname -a
 		sudo apt install linux-oem-20.04 fdutils
 		sudo reboot (Reinicializar o Sistema)
 		sudo uname -a
