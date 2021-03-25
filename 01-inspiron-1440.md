@@ -71,9 +71,8 @@
 #08_ Instalação dos Drivers VGA Intel Graphics<br>
 
 		sudo apt update
-		sudo apt install vainfo intel-gpu-tools intel-media-va-driver intel-microcode xserver-xorg-video-intel
-		sudo apt install mesa-vulkan-drivers mesa-vdpau-drivers mesa-va-drivers mesa-utils mesa-opencl-icd mesa-utils-extra
-		sudo apt install libegl1-mesa libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa libgles2-mesa libassimp5 beignet-opencl-icd
+		sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
+		sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5 beignet-opencl-icd
 		sudo reboot (Reinicializar o Sistema)
 
 #09_ Instalação dos Drivers Sem-Fio (Wi-Fi/Wireless) Broadcom BCM-4312<br>
