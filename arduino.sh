@@ -50,7 +50,7 @@ USUARIO=$(echo $USER)
 LOG="$HOME/$(echo $0 | cut -d'/' -f2)"
 #
 # Declarando as variáveis de download do Arduino IDE, BlocklyDuino e do Fritzing (Links atualizados no dia 23/01/2021)
-ARDUINO="arduino-1.8.13-linux64.tar.xz"
+ARDUINO="https://downloads.arduino.cc/arduino-1.8.13-linux64.tar.xz"
 BLOCKLYDUINO="https://github.com/BlocklyDuino/BlocklyDuino_IDE_plugin"
 FRITZING="https://github.com/fritzing/fritzing-parts.git"
 #
@@ -142,12 +142,12 @@ if [ "$(sudo ls -lh /dev/ttyA* &>> $LOG ; echo $?)" == "0" ]
 	then
 		echo -e "Conexão com a Porta Dialout do Arduino verificada com sucesso.\n"
 		# opção do comando ls: -l (listing), -h (human-readable)
-		# opção do caracter curinga *: Qualquer coisa
+		# opção do caractere curinga *: Qualquer coisa
 		sudo ls -lh /dev/ttyACM*
 		echo
 		echo -e "Alterando as permissões da Porta Dialout para todos os usuários.\n"
 		# opção do comando chmod: -v (verbose) a (all users), + (added), r (read), w (write)
-		# opção do caracter curinga *: Qualquer coisa
+		# opção do caractere curinga *: Qualquer coisa
 		sudo chmod -v a+rw /dev/ttyACM*
 		sudo ls -lh /dev/ttyACM*
 		echo
@@ -205,7 +205,7 @@ fi
 echo -e "Fazendo o download do Arduino IDE do site Oficial, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando wget: -v (verbose), -O (output-document)
-	sudo wget -v -O /tmp/arduino.tar.xz https://downloads.arduino.cc/$ARDUINO &>> $LOG
+	sudo wget -v -O /tmp/arduino.tar.xz $ARDUINO &>> $LOG
 echo -e "Download do Arduino IDE do site Oficial feito com sucesso, continuando com o script..."
 sleep 5
 echo
