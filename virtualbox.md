@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 06/11/2020<br>
-#Versão: 0.02<br>
+#Data de atualização: 17/06/2021<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20 e 20.1
 
 #Instalação do VirtualBOX no Linux Mint 20 Ulyana 20.1 Ulyssa 64 Bits
@@ -39,6 +39,6 @@
 
 #05_ Baixando e Instalando o Pacote de Extensões do VirtualBOX<br>
 
-    wget https://download.virtualbox.org/virtualbox/6.1.16/Oracle_VM_VirtualBox_Extension_Pack-6.1.16.vbox-extpack
+    wget https://download.virtualbox.org/virtualbox/6.1.22/Oracle_VM_VirtualBox_Extension_Pack-6.1.22.vbox-extpack
     virtualbox Oracle*
     rm Oracle*
