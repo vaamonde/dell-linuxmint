@@ -2,6 +2,7 @@
 #Procedimentos em TI: http://procedimentosemti.com.br<br>
 #Bora para Prática: http://boraparapratica.com.br<br>
 #Robson Vaamonde: http://vaamonde.com.br<br>
+#Linkedin Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/<br>
 #Facebook Procedimentos em TI: https://www.facebook.com/ProcedimentosEmTi<br>
 #Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica<br>
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
@@ -22,8 +23,6 @@
 	_ Ventoy: https://www.ventoy.net/en/index.html
 	_ Linux Live USC Creator: https://www.linuxliveusb.com/
 
-
-
 #02_ Configurações do Hardware do Dell Inspiron 1440<br>
 
 	_ CPU Intel Core 2 Duo P8700 2.5Ghz, 3.0GB DDR-2 800Mhz, SSD Corsair 60GB, HD WD 500GB, LCD 14", Webcam, VGA, 
@@ -33,7 +32,7 @@
 
 	_ Configuração Padrão de Fábrica, Hard Disk SATA em AHCI, VT-x habilitado, Audio, Wireless e Bluetooth habilitados.
 	
-#04_ Inicialização da Instalação do Linux Mint 20.1 Ulyssa<br>
+#04_ Inicialização da Instalação do Linux Mint 20.1 e 20.2<br>
 
 	_ Para não ter falhas de inicialização da instalação, utilizei o recurso de Modo de Compatibilidade, recomendado 
 	para equipamentos legados (inicialização em modo de compatibilidade e mais lento no Dell Inspiron 1440)
@@ -50,7 +49,7 @@
 	_ Modelo Corsair Force 3, Hard Disk utilizado para a instalação do Linux Mint, sem necessidade de particionamento 
 	_ (instalação padrão), Hard Disk WD usado para armazenamento de arquivos e backup (case Akasa AK-OA2SSA-BKV2 2,5").
 
-#07_ Pós-Instalação do Linux Mint 20.1 Ulyssa<br>
+#07_ Pós-Instalação do Linux Mint 20.1 e 20.2<br>
 
 	_ Atualização do sistema utilizando o MintUpdate;
 	_ Atualização do sistema utilizando o Apt;
