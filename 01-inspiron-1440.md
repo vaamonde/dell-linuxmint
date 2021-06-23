@@ -11,7 +11,10 @@
 #Versão: 0.07<br>
 #Testado e homologado no Linux Mint 20.1 e 20.2
 
-#Software para criação de Pen Drive Bootavel
+#Instalação do Linux Mint 64 Bits no Dell Inspiron 1440 (2009)
+
+#01_ Software para criação de Pen Drive Bootavel<br>
+
 	_ Rufus: https://rufus.ie/pt_BR/
 	_ YUMI: https://www.pendrivelinux.com/yumi-multiboot-usb-creator/
 	_ Etcher: https://www.balena.io/etcher/
@@ -19,35 +22,35 @@
 	_ Ventoy: https://www.ventoy.net/en/index.html
 	_ Linux Live USC Creator: https://www.linuxliveusb.com/
 
-#Instalação do Linux Mint 64 Bits no Dell Inspiron 1440 (2009)
 
-#00_ Configurações do Hardware do Dell Inspiron 1440<br>
+
+#02_ Configurações do Hardware do Dell Inspiron 1440<br>
 
 	_ CPU Intel Core 2 Duo P8700 2.5Ghz, 3.0GB DDR-2 800Mhz, SSD Corsair 60GB, HD WD 500GB, LCD 14", Webcam, VGA, 
 	_ Ethernet Realtek RTL-8101, Wireless Broadcom BCM-4312, Intel HD Graphics GM45, Audio Intel 82801L
 
-#01_ Configuração da BIOS (versão A07)<br>
+#03_ Configuração da BIOS (versão A07)<br>
 
 	_ Configuração Padrão de Fábrica, Hard Disk SATA em AHCI, VT-x habilitado, Audio, Wireless e Bluetooth habilitados.
 	
-#02_ Inicialização da Instalação do Linux Mint 20.1 Ulyssa<br>
+#04_ Inicialização da Instalação do Linux Mint 20.1 Ulyssa<br>
 
 	_ Para não ter falhas de inicialização da instalação, utilizei o recurso de Modo de Compatibilidade, recomendado 
 	para equipamentos legados (inicialização em modo de compatibilidade e mais lento no Dell Inspiron 1440)
 
-#03_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless)<br>
+#05_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless)<br>
 
 	_ Modelo Broadcom BCM-4312, por padrão não é reconhecida no Linux Mint sendo necessário instalar o Driver Proprietário
 	_ pelo Gerenciador de Drivers do Linux Mint ou por linha de comando.
 	_ OBS: se você utilizar o Kernel OEM >= 5.6 a instalação do Driver da Broadcom via Gerenciador de Driver não funciona
 	_ corretamente, sendo necessário instalar o Firmware e Driver manualmente por linha de comando
 
-#04_ Hard Disk SATA SSD 60GB e SATA 500GB 7200rpm<br>
+#06_ Hard Disk SATA SSD 60GB e SATA 500GB 7200rpm<br>
 
 	_ Modelo Corsair Force 3, Hard Disk utilizado para a instalação do Linux Mint, sem necessidade de particionamento 
 	_ (instalação padrão), Hard Disk WD usado para armazenamento de arquivos e backup (case Akasa AK-OA2SSA-BKV2 2,5").
 
-#05_ Pós-Instalação do Linux Mint 20.1 Ulyssa<br>
+#07_ Pós-Instalação do Linux Mint 20.1 Ulyssa<br>
 
 	_ Atualização do sistema utilizando o MintUpdate;
 	_ Atualização do sistema utilizando o Apt;
@@ -60,7 +63,7 @@
 		sudo apt clean
 		sudo reboot (Reinicializar o Sistema)
 
-#06_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.6.x suportado até 2025)<br>
+#08_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.6.x suportado até 2025)<br>
 
 		sudo apt update
 		sudo uname -a
@@ -68,7 +71,7 @@
 		sudo reboot (Reinicializar o Sistema)
 		sudo uname -a
 
-#07_ Instalação dos Aplicativos Básicos<br>
+#09_ Instalação dos Aplicativos Básicos<br>
 
 		sudo apt update
 		sudo apt install software-properties-common build-essential lsb-core dkms
@@ -76,20 +79,20 @@
 		sudo apt install ttf-mscorefonts-installer cheese guvcview cairo-dock vim git p7zip-full p7zip-rar
 		sudo reboot (Reinicializar o Sistema)
 
-#08_ Instalação dos Drivers VGA Intel Graphics<br>
+#10_ Instalação dos Drivers VGA Intel Graphics<br>
 
 		sudo apt update
 		sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
 		sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5 beignet-opencl-icd
 		sudo reboot (Reinicializar o Sistema)
 
-#09_ Instalação dos Drivers Sem-Fio (Wi-Fi/Wireless) Broadcom BCM-4312<br>
+#11_ Instalação dos Drivers Sem-Fio (Wi-Fi/Wireless) Broadcom BCM-4312<br>
 
 		sudo apt update
 		sudo apt install firmware-b43-installer firmware-b43legacy-installer
 		sudo reboot (Reinicializar o Sistema)
 
-#10_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
+#12_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
 
 	_ VirtualBOX: https://www.virtualbox.org/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/virtualbox.md)
