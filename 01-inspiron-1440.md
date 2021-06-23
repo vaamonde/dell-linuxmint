@@ -12,12 +12,12 @@
 #Testado e homologado no Linux Mint 20.1 e 20.2
 
 #Software para criação de Pen Drive Bootavel
-	01_ Rufus: https://rufus.ie/pt_BR/
-	02_ YUMI: https://www.pendrivelinux.com/yumi-multiboot-usb-creator/
-	03_ Etcher: https://www.balena.io/etcher/
-	04_ UNetbootin: https://unetbootin.github.io/
-	05_ Ventoy: https://www.ventoy.net/en/index.html
-	06_ Linux Live USC Creator: https://www.linuxliveusb.com/
+	_ Rufus: https://rufus.ie/pt_BR/
+	_ YUMI: https://www.pendrivelinux.com/yumi-multiboot-usb-creator/
+	_ Etcher: https://www.balena.io/etcher/
+	_ UNetbootin: https://unetbootin.github.io/
+	_ Ventoy: https://www.ventoy.net/en/index.html
+	_ Linux Live USC Creator: https://www.linuxliveusb.com/
 
 #Instalação do Linux Mint 64 Bits no Dell Inspiron 1440 (2009)
 
