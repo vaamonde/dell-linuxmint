@@ -25,7 +25,7 @@
 
 #02_ Adicionando o Repositório do VirtualBOX<br>
 
-    sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian focal contrib" >> /etc/apt/<br> sources.list.d/virtualbox.list'
+    sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian focal contrib" >> /etc/apt/sources.list.d/virtualbox.list'
 
 #03_ Baixando e Instalando as Chaves de Autenticação do VirtualBOX<br>
 
