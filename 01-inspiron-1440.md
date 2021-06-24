@@ -8,13 +8,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 23/06/2021<br>
-#Versão: 0.07<br>
-#Testado e homologado no Linux Mint 20.1 e 20.2
+#Data de atualização: 24/06/2021<br>
+#Versão: 0.08<br>
+#Testado e homologado no Linux Mint 20.1 Ulyssa e 20.2 Uma x64
 
 #Instalação do Linux Mint 64 Bits no Dell Inspiron 1440 (2009)
 
-#01_ Software para criação de Pen Drive Bootavel<br>
+#01_ Software para criação de Pen Drive Bootável<br>
 
 	_ Rufus: https://rufus.ie/pt_BR/
 	_ YUMI: https://www.pendrivelinux.com/yumi-multiboot-usb-creator/
@@ -62,7 +62,7 @@
 		sudo apt clean
 		sudo reboot (Reinicializar o Sistema)
 
-#08_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.6.x suportado até 2025)<br>
+#08_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.10.x suportado até 2025)<br>
 
 		sudo apt update
 		sudo uname -a
@@ -87,6 +87,12 @@
 
 #11_ Instalação dos Drivers Sem-Fio (Wi-Fi/Wireless) Broadcom BCM-4312<br>
 
+		OBSERVAÇÃO IMPORTANTE: Na versão do Linux Mint 20.2 Uma, ele reconhece a Placa de Rede Sem-Fio
+		no Gerenciador de Driver, mais o Driver padrão: bcmwl-kernel-source não funciona corretamente
+		no Kernel padrão e no Kernel OEM, no vídeo fiz a remoção do driver depois de instalar os novos,
+		recomendo marcar a opção: Não usar esse dispositivo primeiro, Aplicar as Mudanças, reiniciar o
+		Desktop/Notebook e depois instalar os Drivers abaixo.
+
 		sudo apt update
 		sudo apt install firmware-b43-installer firmware-b43legacy-installer
 		sudo reboot (Reinicializar o Sistema)
@@ -94,7 +100,7 @@
 #12_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
 
 	_ VirtualBOX: https://www.virtualbox.org/
-		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/virtualbox.md)
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/virtualbox.md)
 
 	_ NotepadQQ: https://notepadqq.com/s/
 		sudo apt update && sudo apt install notepadqq
@@ -103,13 +109,13 @@
 		(link: https://mega.nz/folder/Co9GHIyK#2kzNnN7XzImP01M1SyRm2g/folder/vll2iSDI)
 
 	_ GNS3: https://www.gns3.com/
-		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/gns3.md)
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/gns3.md)
 
 	_ WPS Office: http://linux.wps.com/
 		(link: https://linux.wps.com/)
 
 	_ Pacotes de Tradução e Dicionário do WPS Office
-		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/wpsoffice.md)
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/wpsoffice.md)
 
 	_ KolourPaint: https://kde.org/applications/en/graphics/org.kde.kolourpaint
 		sudo apt update && sudo apt install kolourpaint
