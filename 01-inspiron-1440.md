@@ -114,9 +114,6 @@
 	_ WPS Office: http://linux.wps.com/
 		(link: https://linux.wps.com/)
 
-	_ Pacotes de Tradução e Dicionário do WPS Office
-		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/wpsoffice.md)
-
 	_ KolourPaint: https://kde.org/applications/en/graphics/org.kde.kolourpaint
 		sudo apt update && sudo apt install kolourpaint
 

@@ -7,11 +7,11 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 06/11/2020<br>
-#Versão: 0.02<br>
-#Testado e homologado no Linux Mint 20 e 20.1
+#Data de atualização: 24/06/2021<br>
+#Versão: 0.03<br>
+#Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa e 20.2 Uma
 
-#Instalação do Pacote de Tradução e Dicionário do WPS no Linux Mint 20 Ulyana 20.1 Ulyssa 64 Bits
+#Instalação do Pacote de Tradução e Dicionário do WPS no Linux Mint 20 Ulyana 20.1 Ulyssa e 20.2 Uma 64 Bits
 
 #01_ Download dos Pacotes de Tradução e Dicionário do WPS Office<br>
 
