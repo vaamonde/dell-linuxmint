@@ -37,3 +37,37 @@ No dia 08/01/2021 o site foi atualizado para a nova versão.
 Link da vídeo aula: https://www.youtube.com/watch?v=jhqmvgMQypo
 
 Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
+
+## **💻 Dell Inspiron 1440 🐧🐧 Instalação do Linux Mint 20.2 Uma (Primeira Parte) 🐧🐧**
+
+Vídeo mostrando os procedimentos básicos para instalar a versão "BETA" do Novo Linux Mint 20.2 Uma no Notebook Dell Inspiron 1440 de 2009
+
+No dia 18/06/2021 a comunidade do Linux Mint disponibilizou as informações da versão BETA do Linux Mint 20.2 Uma também os links para download, previsto para o seu lançamento oficial em Julho/2021.
+
+Primeiro vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para criar o Pen Drive Bootável do Linux Mint, acessar a BIOS do Dell Inspiron 1440, inicializar o Boot em Modo de Compatibilidade e fazer a instalação do Linux Mint no Hard Disk SSD de 60GB.
+
+Mais informações acesse: https://blog.linuxmint.com/?p=4077
+
+[![Dell Inspirion 1440](http://img.youtube.com/vi/iDvxKv0ib8M/0.jpg)](https://www.youtube.com/watch?v=iDvxKv0ib8M "Dell Inspirion 1440")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=iDvxKv0ib8M
+
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
+
+Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/01-inspiron-1440.md
+
+## **💻 Dell Inspiron 1440 🐧🐧 Configuração do Linux Mint 20.2 Uma (Segunda Parte) 🐧🐧**
+
+Vídeo mostrando os procedimentos básicos para configurar a versão "BETA" do Novo Linux Mint 20.2 Uma no Notebook Dell Inspiron 1440 de 2009
+
+Segundo vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para configurar e instalar os principais aplicativos, drivers e configurações da Nova versão BETA do Linux Mint 20.2 no Notebook Dell Inspiron 1440 de 2009.
+
+Mais informações acesse: https://blog.linuxmint.com/?p=4077
+
+[![Dell Inspirion 1440](http://img.youtube.com/vi//0.jpg)]( "Dell Inspirion 1440")
+
+Link da vídeo aula: 
+
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
+
+Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/01-inspiron-1440.md
