@@ -8,8 +8,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 24/06/2021<br>
-#Versão: 0.08<br>
+#Data de atualização: 28/06/2021<br>
+#Versão: 0.09<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa e 20.2 Uma x64
 
 #Instalação do Linux Mint 64 Bits no Dell Inspiron 1440 (2009)
@@ -49,7 +49,7 @@
 	_ Modelo Corsair Force 3, Hard Disk utilizado para a instalação do Linux Mint, sem necessidade de particionamento 
 	_ (instalação padrão), Hard Disk WD usado para armazenamento de arquivos e backup (case Akasa AK-OA2SSA-BKV2 2,5").
 
-#07_ Pós-Instalação do Linux Mint 20.1 e 20.2<br>
+#07_ Pós-Instalação do Linux Mint 20.1 Ulyssa e 20.2 Uma<br>
 
 	_ Atualização do sistema utilizando o MintUpdate;
 	_ Atualização do sistema utilizando o Apt;
