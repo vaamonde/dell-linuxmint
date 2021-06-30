@@ -64,10 +64,42 @@ Segundo vídeo da série de atualização do meu Curso de Linux Mint, nesse víd
 
 Mais informações acesse: https://blog.linuxmint.com/?p=4077
 
-[![Dell Inspirion 1440](http://img.youtube.com/vi//0.jpg)]( "Dell Inspirion 1440")
+[![Dell Inspirion 1440](http://img.youtube.com/vi/VHtb30NCN4I/0.jpg)](https://www.youtube.com/watch?v=VHtb30NCN4I "Dell Inspirion 1440")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=VHtb30NCN4I
 
 Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/01-inspiron-1440.md
+
+## **💻 Dell XPS L502X 🐧🐧 Instalação do Linux Mint 20.2 Uma (Primeira Parte) 🐧🐧**
+
+Vídeo mostrando os procedimentos básicos para instalar a versão "BETA" do Novo Linux Mint 20.2 Uma no Notebook Dell XPS L502X de 2011
+
+Terceiro vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para acessar a BIOS do Dell XPS L502X, inicializar o Boot em Modo Normal e fazer a instalação do Linux Mint no Hard Disk SSD de 240GB.
+
+Mais informações acesse: https://blog.linuxmint.com/?p=4077
+
+[![Dell XPS L502X](http://img.youtube.com/vi/67xQKa8PyZc/0.jpg)](hhttps://www.youtube.com/watch?v=67xQKa8PyZc "Dell XPS L502X")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=67xQKa8PyZc
+
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
+
+Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/02-xps-l502x.md
+
+## **💻 Dell XPS L502X 🐧🐧 Instalação do Linux Mint 20.2 Uma (Segunda Parte) 🐧🐧**
+
+Vídeo mostrando os procedimentos básicos para configurar a versão "BETA" do Novo Linux Mint 20.2 Uma no Notebook Dell XPS L502X de 2011
+
+Quarto vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para configurar e instalar os principais aplicativos, drivers e configurações da Nova versão BETA do Linux Mint 20.2 no Notebook Dell XPS L502X de 2011.
+
+Mais informações acesse: https://blog.linuxmint.com/?p=4077
+
+[![Dell XPS L502X](http://img.youtube.com/vi/-zXv9V_0d5c/0.jpg)](https://www.youtube.com/watch?v=-zXv9V_0d5c "Dell XPS L502X")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=-zXv9V_0d5c
+
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
+
+Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/02-xps-l502x.md
