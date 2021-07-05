@@ -88,7 +88,7 @@ Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/02-xps-l502x.md
 
-## **💻 Dell XPS L502X 🐧🐧 Instalação do Linux Mint 20.2 Uma (Segunda Parte) 🐧🐧**
+## **💻 Dell XPS L502X 🐧🐧 Configuração do Linux Mint 20.2 Uma (Segunda Parte) 🐧🐧**
 
 Vídeo mostrando os procedimentos básicos para configurar a versão "BETA" do Novo Linux Mint 20.2 Uma no Notebook Dell XPS L502X de 2011
 
@@ -103,3 +103,19 @@ Link da vídeo aula: https://www.youtube.com/watch?v=-zXv9V_0d5c
 Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/02-xps-l502x.md
+
+## **💻 Dell Vostro 5480 🐧🐧 Instalação do Linux Mint 20.2 Uma (Primeira Parte) 🐧🐧**
+
+Vídeo mostrando os procedimentos básicos para instalar a versão "BETA" do Novo Linux Mint 20.2 Uma no Notebook Dell Vostro 5480 de 2015
+
+Quinto vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para acessar a BIOS do Dell Vostro 5480, inicializar o Boot em Modo Normal e fazer a instalação do Linux Mint no Hard Disk SSD de 240GB.
+
+Mais informações acesse: https://blog.linuxmint.com/?p=4077
+
+[![Dell Vostro 5480](http://img.youtube.com/vi/QnTDe9nLBYs/0.jpg)](https://www.youtube.com/watch?v=QnTDe9nLBYs "Dell Vostro 5480")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=QnTDe9nLBYs
+
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
+
+Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/03-vostro-5480.md
