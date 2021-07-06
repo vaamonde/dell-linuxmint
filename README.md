@@ -39,10 +39,10 @@ Link da vídeo aula: https://www.youtube.com/watch?v=jhqmvgMQypo
 Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
 
 ## **💻 Notebooks utilizados: Dell Inspiron 1440, XPS L502, Vostro 5480 e G3 3590 🐧🐧**
-[![Notebook Dell](dell.png)]
+![Notebook Dell](dell.png)
 
 ## **💻 Desktop utilizado: Xeon E5-2678 V3, MB Huananzhi X99-F8, 32GB RAM DDR-4, NVMe e SSD 🐧🐧**
-[![Notebook Dell](xeon.png)]
+![Notebook Dell](xeon.png)
 
 ## **💻 Dell Inspiron 1440 🐧🐧 Instalação do Linux Mint 20.2 Uma (Primeira Parte) 🐧🐧**
 
