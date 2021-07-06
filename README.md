@@ -125,3 +125,19 @@ Link da vídeo aula: https://www.youtube.com/watch?v=QnTDe9nLBYs
 Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/03-vostro-5480.md
+
+## **💻 Dell Vostro 5480 🐧🐧 Configuração do Linux Mint 20.2 Uma (Segunda Parte) 🐧🐧**
+
+Vídeo mostrando os procedimentos básicos para configurar a versão "BETA" do Novo Linux Mint 20.2 Uma no Notebook Dell Vostro 5480 de 2015
+
+Sexto vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para configurar e instalar os principais aplicativos, drivers e configurações da Nova versão BETA do Linux Mint 20.2 no Notebook Dell Vostro 5480 2015.
+
+Mais informações acesse: https://blog.linuxmint.com/?p=4077
+
+[![Dell Vostro 5480](http://img.youtube.com/vi//0.jpg)]( "Dell Vostro 5480")
+
+Link da vídeo aula: 
+
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
+
+Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/03-vostro-5480.md
