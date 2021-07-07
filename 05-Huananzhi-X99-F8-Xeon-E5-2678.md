@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 02/07/2021<br>
-#Data de atualização: 02/07/2021<br>
-#Versão: 0.01<br>
+#Data de atualização: 07/07/2021<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa e 20.2 Uma x64
 
 #Instalação do Linux Mint 64 Bits no Desktop Huananzhi X99-F8 Xeon E5-2678 V3
@@ -28,9 +28,9 @@
 	_ Monitor 17", Ethernet Realtek RTL-8168, Intel UHD Graphics 630, Asus Strix AMD Radeon RX Vega64, Power Supply Silver
 	_ Stone ET750, Water Cooler Lian Li Galahad AIO 360mm RGB, Kit Fan Resi Mode Fan Galaxy, Gabinete Lian Li Lancool 215
 
-#03_ Configuração da BIOS (versão A12)<br>
+#03_ Configuração da BIOS (versão )<br>
 
-	_ Configuração Padrão de Fábrica, Hard Disk SATA em AHCI, VT-x habilitado, Audio, Wireless e Bluetooth habilitados.
+	_ Configuração Padrão de Fábrica, Hard Disk SATA em AHCI, VT-x habilitado e Audio habilitados.
 	
 #04_ Inicialização da Instalação<br>
 
@@ -85,9 +85,15 @@
 		sudo apt update
 		sudo apt install mesa-vulkan-drivers vulkan-utils vulkan-tools libassimp5 libvulkan1
 		sudo reboot
-		vulkaninfo
-		glxinfo
-		glxgears
+	_ Testando o suporte ao Vulkan do Driver da AMD Radeon
+		sudo vulkaninfo | less
+		sudo glxinfo | less
+		sudo glxgears
+	_ Software de Benchmark para GNU/Linux
+		_ PassMark: https://www.passmark.com/products/pt_linux/index.php
+		_ Hardinfo: https://github.com/lpereira/hardinfo
+		_ Unigine: https://benchmark.unigine.com/
+		_ GpuTest: https://www.geeks3d.com/gputest/
 
 #10_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
 
@@ -125,6 +131,9 @@
 
 	_ Audacity: https://www.audacityteam.org/
 		sudo apt update && sudo apt install audacity
+
+	_ OBS Studio: https://obsproject.com/pt-br
+		(link da versão para Linux: https://obsproject.com/pt-br/download)
 
 	_ Mega: https://mega.nz/
 		(link da versão >=: https://mega.nz/sync)

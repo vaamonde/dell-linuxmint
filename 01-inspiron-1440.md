@@ -8,8 +8,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 28/06/2021<br>
-#Versão: 0.09<br>
+#Data de atualização: 07/07/2021<br>
+#Versão: 0.10<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa e 20.2 Uma x64
 
 #Instalação do Linux Mint 64 Bits no Dell Inspiron 1440 (2009)
@@ -134,6 +134,9 @@
 	_ Audacity: https://www.audacityteam.org/
 		sudo apt update && sudo apt install audacity
 
+	_ OBS Studio: https://obsproject.com/pt-br
+		(link da versão para Linux: https://obsproject.com/pt-br/download)
+		
 	_ Mega: https://mega.nz/
 		(link da versão >=: https://mega.nz/sync)
 
