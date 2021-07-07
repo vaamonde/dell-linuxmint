@@ -134,10 +134,54 @@ Sexto vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo
 
 Mais informações acesse: https://blog.linuxmint.com/?p=4077
 
-[![Dell Vostro 5480](http://img.youtube.com/vi//0.jpg)]( "Dell Vostro 5480")
+[![Dell Vostro 5480](http://img.youtube.com/vi/F6btA-Eo4ZY/0.jpg)](https://www.youtube.com/watch?v=F6btA-Eo4ZY "Dell Vostro 5480")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=F6btA-Eo4ZY
 
 Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/03-vostro-5480.md
+
+## **🖥😍 Apresentação do Hardware utilizado no Curso de Hypervisor (Virtualização) Open Source 😍🖥e**
+
+Vídeo mostrando o Hardware utilizado nas aulas do Curso GRÁTIS de Hypervisor Open Source (Free Software) utilizando os Appliances: Proxmox-VE, XCP-NG e o VMware ESXi.
+
+Agradecimento especial para o Prof. Leandro Ramos do Site http://professorramos.com/ e do Canal do YouTUBE: ProfessorRamos https://www.youtube.com/professorramos que forneceu o Hardware de Desktop para a preparação desse curso, sem esse equipamento eu não teria a possibilidade de montar o conteúdo para esse curso e nem gravar as aulas, novamente: MUITO OBRIGADO.
+
+O Proxmox Virtual Environment é uma plataforma de gerenciamento de virtualização de servidor de código aberto. É uma distribuição Linux baseada em Debian com um Kernel Ubuntu LTS modificado que permite a implantação e gerenciamento de máquinas virtuais e contêineres.
+
+O XCP-ng significa Xen Cloud Platform - New Generation. É uma distribuição turnkey do Xen Project Hypervisor, contando principalmente com o Xen Hypervisor e o projeto Xen API (XAPI). O projeto nasceu em 2018, seguindo a bifurcação do projeto open source Xen Server (agora Citrix Hypervisor).
+
+VMware ESXi é um Hypervisor de nível empresarial tipo 1 desenvolvido pela VMware para implantar e prover maquinas virtuais. Como hypervisor tipo 1, o ESXi não é um software aplicativo instalado em um sistema operacional; em vez disso, inclui e integra componentes vitais do sistema operacional e um unico núcleo.
+
+Informações detalhes do Review do Hardware utilizado no Curso:
+
+🐲 COMO MONTAR UM PC XEON 2678 V3 + Gabinete Gamer Lian Li Lancool 215 + Water Cooler Lian Li Galahad<br>
+https://www.youtube.com/watch?v=VSI9VsKOhWo
+
+🐲 Como Fazer o Turbo Unlock Fácil no seu XEON V3 X99 e Undervoltage PT-BR + Testes Antes e depois<br>
+https://www.youtube.com/watch?v=d_KtZfNG4RY
+
+💥 SSD NVME LEXAR NM700 Professional M.2 2280 PCIE - Instalação e Testes<br>
+https://www.youtube.com/watch?v=68F5zm6c7Qg
+
+Quer Fluxo de AR ??? Então TOMA !!! Gabinete Gamer Lian Li Lancool 215 Mesh ARGB com 2 FAN de 200 mm<br>
+https://www.youtube.com/watch?v=7UgIm3kDXAQ
+
+🥇 Fonte 80 Plus Gold com Precinho de Bronze ou White - Fonte SilverStone ET750-G 750W 80 Plus Gold<br>
+https://www.youtube.com/watch?v=F1xOp8dRS_0
+
+⚡ SSD Muito Bom e Barato 💥 Review e Testes do SSD ADATA SU630 com 3 anos de Garantia no Brasil<br>
+https://www.youtube.com/watch?v=1WmyQGr9MDg
+
+Memoria GLOWAY DDR4 é BOA ??? Review + Testes + Overclock da Memória RAM mais Barata do Mundo !!!<br>
+https://www.youtube.com/watch?v=EaQwTN3l0nU&t
+
+👉 Memória OLOy é boa ??? 🔥 RAM DDR4 OLOy WarHawk Alta Frequência com Preço Justo !!!<br>
+https://www.youtube.com/watch?v=J3Or0bcr1PM
+
+[![Apresentação do Hardware](http://img.youtube.com/vi/vS3SVAzp3QU/0.jpg)](https://www.youtube.com/watch?v=vS3SVAzp3QU "Apresentação do Hardware")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=vS3SVAzp3QU
+
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/main/00-Projeto-Hypervisor-Hardware.pdf
