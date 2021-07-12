@@ -50,6 +50,8 @@ Vídeo mostrando os procedimentos básicos para instalar a versão "BETA" do Nov
 
 No dia 18/06/2021 a comunidade do Linux Mint disponibilizou as informações da versão BETA do Linux Mint 20.2 Uma também os links para download, previsto para o seu lançamento oficial em Julho/2021.
 
+No dia 08/07/2021 a comunidade do Linux Mint disponibilizou as versões Oficiais do Linux Mint 20.2 Uma também os links para download dos sabores de ambiente gráficos: Cinnamon, Mate e XFCE.
+
 Primeiro vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para criar o Pen Drive Bootável do Linux Mint, acessar a BIOS do Dell Inspiron 1440, inicializar o Boot em Modo de Compatibilidade e fazer a instalação do Linux Mint no Hard Disk SSD de 60GB.
 
 Mais informações acesse: https://blog.linuxmint.com/?p=4077
