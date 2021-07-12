@@ -144,7 +144,7 @@ Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/03-vostro-5480.md
 
-## **🖥😍 Apresentação do Hardware utilizado no Curso de Hypervisor (Virtualização) Open Source 😍🖥e**
+## **🖥😍 Apresentação do Hardware utilizado no Curso de Hypervisor (Virtualização) Open Source 😍🖥**
 
 Vídeo mostrando o Hardware utilizado nas aulas do Curso GRÁTIS de Hypervisor Open Source (Free Software) utilizando os Appliances: Proxmox-VE, XCP-NG e o VMware ESXi.
 
@@ -187,3 +187,23 @@ https://www.youtube.com/watch?v=J3Or0bcr1PM
 Link da vídeo aula: https://www.youtube.com/watch?v=vS3SVAzp3QU
 
 Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/main/00-Projeto-Hypervisor-Hardware.pdf
+
+## **💻 Desktop Gamer Xeon E5-2678 V3 🐧🐧 Instalação do Linux Mint 20.2 Uma (Primeira Parte) 🐧🐧**
+
+Vídeo mostrando os procedimentos básicos para instalar a versão "OFICIAL" do Novo Linux Mint 20.2 Uma no Desktop Gamer Xeon E5-2678 V3 2.5Ghz de 2021
+
+Nono vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu mostrar os procedimentos para instalar a versão "OFICIAL"do Linux Mint 20.2 Uma no Desktop Gamer Xeon E5-2678 V3 2.5Ghz de 2021 fornecido pelo Prof. Ramos (Leandro Ramos) do Canal Professorramos do YouTUBE (https://www.youtube.com/professorramos).
+
+Mais informações acesse:
+08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released!: https://blog.linuxmint.com/?p=4102
+08/07/2021 - How to upgrade to Linux Mint 20.2: https://blog.linuxmint.com/?p=4111
+New features in Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_cinnamon_whatsnew.php
+Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_cinnamon.php
+
+[![Desktop Gamer Xeon](http://img.youtube.com/vi/BOgTCW2EcBI/0.jpg)](https://www.youtube.com/watch?v=BOgTCW2EcBI "Desktop Gamer Xeon")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=BOgTCW2EcBI
+
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/main/00-Projeto-Hypervisor-Hardware.pdf
+
+Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/05-Huananzhi-X99-F8-Xeon-E5-2678.md

@@ -8,7 +8,7 @@
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 02/07/2021<br>
 #Data de atualização: 12/07/2021<br>
-#Versão: 0.03<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa e 20.2 Uma x64
 
 08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released!: https://blog.linuxmint.com/?p=4102
@@ -71,7 +71,7 @@ Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_ci
 		sudo apt update
 		sudo apt install software-properties-common build-essential lsb-core dkms
 		sudo apt install htop nmon psensor cpufrequtils cputool
-		sudo apt install ttf-mscorefonts-installer cheese guvcview cairo-dock vim git p7zip-full p7zip-rar
+		sudo apt install ttf-mscorefonts-installer cairo-dock vim git p7zip-full p7zip-rar
 		sudo reboot (Reinicializar o Sistema)
 
 #09_ Instalação dos Drives da AMD Radeon e Suporte ao Vulkan<br>
