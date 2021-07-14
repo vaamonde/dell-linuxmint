@@ -33,9 +33,11 @@ Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_ci
 	_ Monitor 17", Ethernet Realtek RTL-8168, Intel UHD Graphics 630, Asus Strix AMD Radeon RX Vega64, Power Supply Silver
 	_ Stone ET750, Water Cooler Lian Li Galahad AIO 360mm RGB, Kit Fan Resi Mode Fan Galaxy, Gabinete Lian Li Lancool 215
 
-#03_ Configuração da BIOS (versão )<br>
+#03_ Configuração da BIOS (versão 5.11)<br>
 
-	_ Configuração Padrão de Fábrica, Hard Disk SATA em AHCI, VT-x habilitado e Audio habilitados.
+	_ Bios já atualizada pelo Professorramos (Leandro Ramos) possibilitando trabalhar com Turbo Unlock X99, mais informações
+	_ acesse o vídeo de Upgrade da Bios: https://www.youtube.com/watch?v=d_KtZfNG4RY
+	_ Hard Disk SATA em AHCI, VT-x habilitado e Audio habilitados.
 	
 #04_ Inicialização da Instalação<br>
 

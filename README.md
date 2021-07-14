@@ -1,4 +1,4 @@
-# Curso GRÁTIS de Linux Mint 20.x em Notebook Dell (Inspiron, XPS, Vostro e G3)
+# Curso GRÁTIS de Linux Mint 20.x em Notebook Dell (Inspiron, XPS, Vostro e G3) e Desktop Gamer Xeon
 
 ## 💰 Ajude o projeto Bora para Prática a continuar fazendo vídeos gratuitos para o Canal, acessando o link de doação do PagSeguro: https://pag.ae/bjlSJcH
 
@@ -194,10 +194,10 @@ Vídeo mostrando os procedimentos básicos para instalar a versão "OFICIAL" do 
 
 Nono vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu mostrar os procedimentos para instalar a versão "OFICIAL"do Linux Mint 20.2 Uma no Desktop Gamer Xeon E5-2678 V3 2.5Ghz de 2021 fornecido pelo Prof. Ramos (Leandro Ramos) do Canal Professorramos do YouTUBE (https://www.youtube.com/professorramos).
 
-Mais informações acesse:
-08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released!: https://blog.linuxmint.com/?p=4102
-08/07/2021 - How to upgrade to Linux Mint 20.2: https://blog.linuxmint.com/?p=4111
-New features in Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_cinnamon_whatsnew.php
+Mais informações acesse:<br>
+08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released!: https://blog.linuxmint.com/?p=4102<br>
+08/07/2021 - How to upgrade to Linux Mint 20.2: https://blog.linuxmint.com/?p=4111<br>
+New features in Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_cinnamon_whatsnew.php<br>
 Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_cinnamon.php
 
 [![Desktop Gamer Xeon](http://img.youtube.com/vi/BOgTCW2EcBI/0.jpg)](https://www.youtube.com/watch?v=BOgTCW2EcBI "Desktop Gamer Xeon")
