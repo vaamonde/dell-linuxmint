@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 02/07/2021<br>
-#Data de atualização: 12/07/2021<br>
-#Versão: 0.04<br>
+#Data de atualização: 16/07/2021<br>
+#Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa e 20.2 Uma x64
 
 08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released!: https://blog.linuxmint.com/?p=4102
@@ -47,8 +47,13 @@ Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_ci
 
 	_ Modelo SSD NVMe Lexar NM700, Hard Disk para a instalação do Linux Mint, sem necessidade de particionamento 
 	_ (instalação padrão), SSD Adata SU630 usado para armazenamento de arquivos, backup e jogos.
-	
-#06_ Pós-Instalação do Linux Mint 20.1 Ulyssa ou 20.2 Uma<br>
+
+#06_ Placa de Rede Sem-Fio (Wi-Fi/Wireless)
+
+	_ Utilização do Adaptador Sem-Fio TP-Link 300Mbps Modelo TL-WN821N, já reconhecido no Linux Mint
+	_ sem necessidade de instalação de Driver/Módulos para o seu funcionamento.
+
+#07_ Pós-Instalação do Linux Mint 20.1 Ulyssa ou 20.2 Uma<br>
 
 	_ Atualização do sistema utilizando o MintUpdate;
 	_ Atualização do sistema utilizando o Apt;
@@ -61,14 +66,14 @@ Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_ci
 		sudo apt clean
 		sudo reboot (Reinicializar o Sistema)
 
-#07_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.10.x suportado até 2025)<br>
+#08_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.10.x suportado até 2025)<br>
 
 		sudo apt update
-		sudo apt uname -a
+		sudo uname -a
 		sudo apt install linux-oem-20.04 fdutils
 		sudo reboot (Reinicializar o Sistema)
 
-#08_ Instalação dos Aplicativos Básicos<br>
+#09_ Instalação dos Aplicativos Básicos<br>
 
 		sudo apt update
 		sudo apt install software-properties-common build-essential lsb-core dkms
@@ -76,7 +81,7 @@ Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_ci
 		sudo apt install ttf-mscorefonts-installer cairo-dock vim git p7zip-full p7zip-rar
 		sudo reboot (Reinicializar o Sistema)
 
-#09_ Instalação dos Drives da AMD Radeon e Suporte ao Vulkan<br>
+#10_ Instalação dos Drives da AMD Radeon e Suporte ao Vulkan<br>
 
 	_ Recomendado baixar o Driver mais novo do site da AMD: https://www.amd.com/pt/support
 		_ Download AMD Radeon RX Vega 64: https://www.amd.com/pt/support/graphics/radeon-rx-vega-series/radeon-rx-vega-series/radeon-rx-vega-64
