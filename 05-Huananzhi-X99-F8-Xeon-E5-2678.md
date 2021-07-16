@@ -50,8 +50,8 @@ Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_ci
 
 #06_ Placa de Rede Sem-Fio (Wi-Fi/Wireless)
 
-	_ Utilização do Adaptador Sem-Fio TP-Link 300Mbps Modelo TL-WN821N, já reconhecido no Linux Mint
-	_ sem necessidade de instalação de Driver/Módulos para o seu funcionamento.
+	_ Utilização do Adaptador Sem-Fio TP-Link 300Mbps Modelo TL-WN821N, já reconhecido no Linux Mint sem necessidade de 
+	_ instalação de Driver/Módulos para o seu funcionamento.
 
 #07_ Pós-Instalação do Linux Mint 20.1 Ulyssa ou 20.2 Uma<br>
 
@@ -107,7 +107,7 @@ Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_ci
 		_ Unigine: https://benchmark.unigine.com/
 		_ GpuTest: https://www.geeks3d.com/gputest/
 
-#10_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
+#11_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
 
 	_ VirtualBOX: https://www.virtualbox.org/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/virtualbox.md)

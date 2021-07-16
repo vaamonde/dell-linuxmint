@@ -207,3 +207,17 @@ Link da vídeo aula: https://www.youtube.com/watch?v=BOgTCW2EcBI
 Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/main/00-Projeto-Hypervisor-Hardware.pdf
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/05-Huananzhi-X99-F8-Xeon-E5-2678.md
+
+## **💻 Desktop Gamer Xeon E5-2678 V3 🐧🐧 Instalação do Linux Mint 20.2 Uma (Segunda Parte) 🐧🐧**
+
+Vídeo mostrando os procedimentos básicos para configurar a versão "OFICIAL" do Novo Linux Mint 20.2 Uma no Desktop Gamer Xeon E5-2678 V3 2.5Ghz de 2021
+
+Décimo vídeo da série de atualização do meu Curso de Linux Mint, os procedimentos para configurar e instalar os principais aplicativos, drives e configurações da Nova versão  "OFICIAL"do Linux Mint 20.2 Uma no Desktop Gamer Xeon E5-2678 V3 2.5Ghz de 2021 fornecido pelo Prof. Ramos (Leandro Ramos) do Canal Professorramos do YouTUBE (https://www.youtube.com/professorramos).
+
+[![Desktop Gamer Xeon](http://img.youtube.com/vi/sXDqOccf1qw/0.jpg)](https://www.youtube.com/watch?v=sXDqOccf1qw "Desktop Gamer Xeon")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=sXDqOccf1qw
+
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/main/00-Projeto-Hypervisor-Hardware.pdf
+
+Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/05-Huananzhi-X99-F8-Xeon-E5-2678.md
