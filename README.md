@@ -208,7 +208,7 @@ Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/05-Huananzhi-X99-F8-Xeon-E5-2678.md
 
-## **💻 Desktop Gamer Xeon E5-2678 V3 🐧🐧 Instalação do Linux Mint 20.2 Uma (Segunda Parte) 🐧🐧**
+## **💻 Desktop Gamer Xeon E5-2678 V3 🐧🐧 Configuração do Linux Mint 20.2 Uma (Segunda Parte) 🐧🐧**
 
 Vídeo mostrando os procedimentos básicos para configurar a versão "OFICIAL" do Novo Linux Mint 20.2 Uma no Desktop Gamer Xeon E5-2678 V3 2.5Ghz de 2021
 

@@ -5,8 +5,8 @@
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 23/01/2021
-# Data de atualização: 28/02/2021
-# Versão: 0.02
+# Data de atualização: 17/07/2021
+# Versão: 0.03
 # Testado e homologado para a versão do Linux Mint 20.1 Ulyssa x64
 # Testado e homologado para a versão do Arduino IDE 1.8.x e BlockDuino
 #
@@ -50,7 +50,7 @@ USUARIO=$(echo $USER)
 LOG="$HOME/$(echo $0 | cut -d'/' -f2)"
 #
 # Declarando as variáveis de download do Arduino IDE, BlocklyDuino e do Fritzing (Links atualizados no dia 23/01/2021)
-ARDUINO="https://downloads.arduino.cc/arduino-1.8.13-linux64.tar.xz"
+ARDUINO="https://downloads.arduino.cc/arduino-1.8.15-linux64.tar.xz"
 BLOCKLYDUINO="https://github.com/BlocklyDuino/BlocklyDuino_IDE_plugin"
 FRITZING="https://github.com/fritzing/fritzing-parts.git"
 #
