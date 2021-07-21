@@ -48,11 +48,11 @@ Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-
 
 Vídeo mostrando os procedimentos básicos para instalar a versão "BETA" do Novo Linux Mint 20.2 Uma no Notebook Dell Inspiron 1440 de 2009
 
-No dia 18/06/2021 a comunidade do Linux Mint disponibilizou as informações da versão BETA do Linux Mint 20.2 Uma também os links para download, previsto para o seu lançamento oficial em Julho/2021.
+No dia 18/06/2021 a comunidade do Linux Mint disponibilizou as informações da versão "BETA" do Linux Mint 20.2 Uma e também os links para download de todas as versões Cinnamon, Mate e Xfce, está previsto o seu lançamento oficial em Julho/2021.
 
-No dia 08/07/2021 a comunidade do Linux Mint disponibilizou as versões Oficiais do Linux Mint 20.2 Uma também os links para download dos sabores de ambiente gráficos: Cinnamon, Mate e XFCE.
+No dia 08/07/2021 a comunidade do Linux Mint disponibilizou as versões "OFICIAIS" do Linux Mint 20.2 Uma e todos os links para fazer o download dos sabores de ambiente gráficos: Cinnamon, Mate e Xfce.
 
-Primeiro vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para criar o Pen Drive Bootável do Linux Mint, acessar a BIOS do Dell Inspiron 1440, inicializar o Boot em Modo de Compatibilidade e fazer a instalação do Linux Mint no Hard Disk SSD de 60GB.
+Primeiro vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para criar o Pen Drive Bootável do Linux Mint 20.2 Uma "BETA" utilizando o próprio sistema do Linux Mint para criação de Pen Drive, acessar a BIOS do Dell Inspiron 1440, inicializar o Boot em Modo de Compatibilidade e fazer a instalação do Linux Mint no Hard Disk SSD de 60GB.
 
 Mais informações acesse: https://blog.linuxmint.com/?p=4077
 
@@ -68,7 +68,7 @@ Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell
 
 Vídeo mostrando os procedimentos básicos para configurar a versão "BETA" do Novo Linux Mint 20.2 Uma no Notebook Dell Inspiron 1440 de 2009
 
-Segundo vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para configurar e instalar os principais aplicativos, drivers e configurações da Nova versão BETA do Linux Mint 20.2 no Notebook Dell Inspiron 1440 de 2009.
+Segundo vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para configurar e instalar os principais aplicativos, drivers e configurações da Nova versão "BETA" do Linux Mint 20.2 no Notebook Dell Inspiron 1440 de 2009.
 
 Mais informações acesse: https://blog.linuxmint.com/?p=4077
 
@@ -100,7 +100,7 @@ Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell
 
 Vídeo mostrando os procedimentos básicos para configurar a versão "BETA" do Novo Linux Mint 20.2 Uma no Notebook Dell XPS L502X de 2011
 
-Quarto vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para configurar e instalar os principais aplicativos, drivers e configurações da Nova versão BETA do Linux Mint 20.2 no Notebook Dell XPS L502X de 2011.
+Quarto vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para configurar e instalar os principais aplicativos, drivers e configurações da Nova versão "BETA" do Linux Mint 20.2 no Notebook Dell XPS L502X de 2011.
 
 Mais informações acesse: https://blog.linuxmint.com/?p=4077
 
@@ -132,7 +132,7 @@ Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell
 
 Vídeo mostrando os procedimentos básicos para configurar a versão "BETA" do Novo Linux Mint 20.2 Uma no Notebook Dell Vostro 5480 de 2015
 
-Sexto vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para configurar e instalar os principais aplicativos, drivers e configurações da Nova versão BETA do Linux Mint 20.2 no Notebook Dell Vostro 5480 2015.
+Sexto vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para configurar e instalar os principais aplicativos, drivers e configurações da Nova versão "BETA" do Linux Mint 20.2 no Notebook Dell Vostro 5480 de 2015.
 
 Mais informações acesse: https://blog.linuxmint.com/?p=4077
 
@@ -143,6 +143,38 @@ Link da vídeo aula: https://www.youtube.com/watch?v=F6btA-Eo4ZY
 Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/03-vostro-5480.md
+
+## **💻 Dell G3 3590 🐧🐧 Instalação do Linux Mint 20.2 Uma (Primeira Parte) 🐧🐧**
+
+Vídeo mostrando os procedimentos básicos para instalar a versão "OFICIAL" do Novo Linux Mint 20.2 Uma no Notebook Dell G3 3590 de 2019
+
+Sétimo vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para acessar a BIOS do Dell G3 3590, inicializar o Boot em Modo Normal e fazer a instalação do Linux Mint no Hard Disk SSD NVMe de 512GB.
+
+Mais informações acesse: https://blog.linuxmint.com/?p=4077
+
+[![Dell G3 3590](http://img.youtube.com/vi//0.jpg)]("Dell G3 3590")
+
+Link da vídeo aula: 
+
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
+
+Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/04-g3-3590.md
+
+## **💻 Dell G3 3590 🐧🐧 Configuração do Linux Mint 20.2 Uma (Segunda Parte) 🐧🐧**
+
+Vídeo mostrando os procedimentos básicos para configurar a versão "OFICIAL" do Novo Linux Mint 20.2 Uma no Notebook Dell G3 3590 de 2019
+
+Oitavo vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para configurar e instalar os principais aplicativos, drivers e configurações da Nova versão OFICIAL do Linux Mint 20.2 no Notebook Dell G3 3590 de 2019.
+
+Mais informações acesse: https://blog.linuxmint.com/?p=4077
+
+[![Dell G3 3590](http://img.youtube.com/vi//0.jpg)]( "Dell G3 3590")
+
+Link da vídeo aula: 
+
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
+
+Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/04-g3-3590.md
 
 ## **🖥😍 Apresentação do Hardware utilizado no Curso de Hypervisor (Virtualização) Open Source 😍🖥**
 

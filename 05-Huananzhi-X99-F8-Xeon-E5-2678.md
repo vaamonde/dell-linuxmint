@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 02/07/2021<br>
-#Data de atualização: 16/07/2021<br>
-#Versão: 0.05<br>
+#Data de atualização: 21/07/2021<br>
+#Versão: 0.06<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa e 20.2 Uma x64
 
 08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released!: https://blog.linuxmint.com/?p=4102
@@ -52,6 +52,8 @@ Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_ci
 
 	_ Utilização do Adaptador Sem-Fio TP-Link 300Mbps Modelo TL-WN821N, já reconhecido no Linux Mint sem necessidade de 
 	_ instalação de Driver/Módulos para o seu funcionamento.
+	_ Teste feito com o Adaptador Sem-Fio TP-Link 150Mbps Modelo TL-WN721N, já reconhecido no Linux Mint sem necessidade de
+	_ instalação de Driver/Módulos para o seu funcionamento.
 
 #07_ Pós-Instalação do Linux Mint 20.1 Ulyssa ou 20.2 Uma<br>
 
@@ -91,7 +93,7 @@ Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_ci
 		_ Acessar o diretório: amdgpu-pro-21.20-1271047-ubuntu-20.04
 		_ Acessar o diretório como Root: Botão direito do Mouse, selecionar: Abrir como Root
 		_ Acessar o terminal como Root: Botão direito do Mouse, selecionar: Abrir no Terminal
-		_ Digitar o comando para instalação do Driver: ./amdgpu-install
+		_ Digitar o comando para a instalação do Driver: ./amdgpu-install
 		_ Finalizar a instalação reinicializando o sistema: reboot
 	_ Instalação do suporte ao Vulkan do Driver da AMD Radeon
 		sudo apt update
