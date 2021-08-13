@@ -47,7 +47,7 @@ Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_ci
 
 #06_ Hard Disk SATA SSD M.2 256<br>
 
-	_ Modelo KCVB-8D256, Hard Disk para a instalação do Linux Mint, sem necessidade de particionamento (instalação padrão).
+	_ Modelo CVB-8D256, Hard Disk para a instalação do Linux Mint, sem necessidade de particionamento (instalação padrão).
 
 #07_ Pós-Instalação do Linux Mint 20.1 Ulyssa ou 20.2 Uma<br>
 
