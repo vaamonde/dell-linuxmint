@@ -5,30 +5,33 @@
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 23/01/2021
-# Data de atualização: 17/07/2021
-# Versão: 0.03
-# Testado e homologado para a versão do Linux Mint 20.1 Ulyssa x64
+# Data de atualização: 21/07/2021
+# Versão: 0.05
+# Testado e homologado para a versão do Linux Mint 20.1 Ulyssa e 20.2 Uma x64
 # Testado e homologado para a versão do Arduino IDE 1.8.x e BlockDuino
 #
-# Arduino é uma plataforma de prototipagem eletrônica de hardware livre e de placa única, projetada com um 
-# microcontrolador Atmel AVR com suporte de entrada/saída embutido, uma linguagem de programação padrão, a 
-# qual tem origem em Wiring, e é essencialmente C/C++.
+# Arduino é uma plataforma de prototipagem eletrônica de hardware livre e de placa única, 
+# projetada com um microcontrolador Atmel AVR com suporte de entrada/saída embutido, uma 
+# linguagem de programação padrão, a qual tem origem em Wiring, e é essencialmente C/C++.
 #
-# Arduino Integrated Development Environment IDE é uma aplicação de plataforma cruzada, escrito em funções 
-# de C e C ++. É usado para escrever e fazer upload de programas em placas compatíveis com Arduino, mas também, 
-# com a ajuda de núcleos de terceiros, outras placas de desenvolvimento de fornecedores.
+# Arduino Integrated Development Environment IDE é uma aplicação de plataforma cruzada, 
+# escrito em funções de C e C ++. É usado para escrever e fazer upload de programas em 
+# placas compatíveis com Arduino, mas também, com a ajuda de núcleos de terceiros, outras 
+# placas de desenvolvimento de fornecedores.
 #
-# O BlocklyDuino é um editor de programação visual baseado na web para Arduino. BlocklyDuino é baseado no Blockly, 
-# o editor de programação gráfica baseado na web. Fornece blocos de linguagem de tipo estático e geradores de
-# código para programação em Arduino. O BlocklyDuino também oferece suporte aos blocos Grove para iniciar facilmente
-# a experimentação e o aprendizado baseados em microcontroladores.
+# O BlocklyDuino é um editor de programação visual baseado na web para Arduino. BlocklyDuino 
+# é baseado no Blockly, o editor de programação gráfica baseado na web. Fornece blocos de 
+# linguagem de tipo estático e geradores de código para programação em Arduino. O BlocklyDuino 
+# também oferece suporte aos blocos Grove para iniciar facilmente a experimentação e o 
+# aprendizado baseados em microcontroladores.
 #
-# O Fritzing é uma iniciativa de código aberto para desenvolver um software tipo CAD amador para design de hardware 
-# eletrônico, para apoiar designers e artistas prontos para deixar de experimentar um protótipo e construir um 
-# circuito mais permanente com uma Placa de Circuito Impresso. 
+# O Fritzing é uma iniciativa de código aberto para desenvolver um software tipo CAD amador 
+# para design de hardware eletrônico, para apoiar designers e artistas prontos para deixar 
+# de experimentar um protótipo e construir um circuito mais permanente com uma Placa de 
+# Circuito Impresso. 
 #
 # Site Oficial do Arduino IDE: https://www.arduino.cc/
-# Site Oficial do BlockDuino IDE Plugin: https://github.com/BlocklyDuino/BlocklyDuino_IDE_plugin
+# Site Oficial do BlocklyDuino IDE Plugin: https://github.com/BlocklyDuino/BlocklyDuino_IDE_plugin
 # Site Oficial do Fritzing: https://fritzing.org/
 #
 # Vídeo de instalação do Linux Mint 20.1 Ulyssa: https://www.youtube.com/watch?v=jhqmvgMQypo
@@ -54,16 +57,16 @@ ARDUINO="https://downloads.arduino.cc/arduino-1.8.15-linux64.tar.xz"
 BLOCKLYDUINO="https://github.com/BlocklyDuino/BlocklyDuino_IDE_plugin"
 FRITZING="https://github.com/fritzing/fritzing-parts.git"
 #
-# Script de instalação do Arduino IDE, BlocklyDuino e do Fritzing no Linux Mint 20.1 Ulyssa
+# Script de instalação do Arduino IDE, BlocklyDuino e do Fritzing no Linux Mint 20.1 Ulyssa e 20.2 Uma 
 # opção do comando echo: -e (enable interpretation of backslash escapes), \n (new line)
 # $0 (variável de ambiente do nome do comando)
 # opção do comando date: + (format), %d (day), %m (month), %Y (year 1970), %H (hour 24), %M (minute 60)
 # opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
-echo -e "Início do script $0 em: `date +%d/%m/%Y-"("%H:%M")"`\n" &>> $LOG
+echo -e "Início do script $0 em: $(date +%d/%m/%Y-"("%H:%M")")\n" &>> $LOG
 clear
 #
 echo
-echo -e "Instalação do Arduino IDE, BlocklyDuino e do Fritzing no Linux Mint 20.1 Ulyssa\n"
+echo -e "Instalação do Arduino IDE, BlocklyDuino e do Fritzing no Linux Mint 20.x\n"
 echo -e "Após a instalação do Arduino IDE digitar no console ou localizar na busca indexada por: arduino.\n"
 echo -e "Após a instalação do Fritzing digitar no console ou localizar na busca indexada por: fritzing.\n"
 echo -e "Aguarde, esse processo demora um pouco dependendo do seu Link de Internet...\n"
@@ -73,40 +76,36 @@ sleep 5
 echo -e "Atualizando o Sources List do Apt, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	sudo apt update &>> $LOG
-echo -e "Listas atualizadas com sucesso!!!, continuando com o script..."
+echo -e "Listas atualizadas com sucesso!!!, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Atualizando todo o sistema operacional do Linux Mint, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando apt: -y (yes)
 	sudo apt -y upgrade &>> $LOG
-    sudo apt -y full-upgrade &>> $LOG
-    sudo apt -y dist-upgrade &>> $LOG
-echo -e "Sistema atualizado com sucesso!!!, continuando com o script..."
+	sudo apt -y full-upgrade &>> $LOG
+	sudo apt -y dist-upgrade &>> $LOG
+echo -e "Sistema atualizado com sucesso!!!, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Instalando as dependências desse script do Arduino, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando apt: -y (yes)
 	sudo apt -y install members git vim &>> $LOG
-echo -e "Dependências instaladas com sucesso!!!, continuando com o script..."
+echo -e "Dependências instaladas com sucesso!!!, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Removendo os software desnecessários, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando apt: -y (yes)
 	sudo apt -y autoremove &>> $LOG
-    sudo apt -y autoclean &>> $LOG
-echo -e "Software desnecessários removidos com sucesso!!!, continuando com o script..."
+	sudo apt -y autoclean &>> $LOG
+echo -e "Software desnecessários removidos com sucesso!!!, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Instalando o Arduino IDE, BlocklyDuino e o Fritzing, aguarde...\n"
 #
-echo -e "Verificando a conexão com a Porta TTY (USB) do Arduino, aguarde..."
+echo -e "Verificando a conexão com a Porta TTY (USB) do Arduino, aguarde...\n"
 # opção do bloco de agrupamento "": Protege uma string, mas reconhece $, \ e ` como especiais
 # opção do bloco de agrupamento $(): Executa comandos numa subshell, retornando o resultado
 # opção do comando lsusb: -v (verbose)
@@ -121,7 +120,7 @@ if [ "$(sudo lsusb -v | grep Arduino &>> $LOG ; echo $?)" == "0" ]
 		# opção do redirecionar |: Conecta a saída padrão com a entrada padrão de outro comando
 		sudo lsusb -v | grep Arduino
 		echo
-		echo -e "Pressione <Enter> para continuar o script."
+		echo -e "Pressione <Enter> para continuar o script.\n"
 		read
 		sleep 5
 	else
@@ -130,7 +129,7 @@ if [ "$(sudo lsusb -v | grep Arduino &>> $LOG ; echo $?)" == "0" ]
 		exit 1
 fi
 #
-echo -e "Verificando a conexão com a Porta Dialout do Arduino, aguarde..."
+echo -e "Verificando a conexão com a Porta Dialout do Arduino, aguarde...\n"
 # opção do bloco de agrupamento "": Protege uma string, mas reconhece $, \ e ` como especiais
 # opção do bloco de agrupamento $(): Executa comandos numa subshell, retornando o resultado
 # opção do comando ls: -l (listing), -h (human-readable)
@@ -147,11 +146,12 @@ if [ "$(sudo ls -lh /dev/ttyA* &>> $LOG ; echo $?)" == "0" ]
 		echo
 		echo -e "Alterando as permissões da Porta Dialout para todos os usuários.\n"
 		# opção do comando chmod: -v (verbose) a (all users), + (added), r (read), w (write)
+		# opção do comando ls: -l (listing), -h (human-readable)
 		# opção do caractere curinga *: Qualquer coisa
 		sudo chmod -v a+rw /dev/ttyACM*
 		sudo ls -lh /dev/ttyACM*
 		echo
-		echo -e "Pressione <Enter> para continuar o script."
+		echo -e "Pressione <Enter> para continuar o script.\n"
 		read
 		sleep 5
 	else
@@ -161,7 +161,7 @@ if [ "$(sudo ls -lh /dev/ttyA* &>> $LOG ; echo $?)" == "0" ]
 		exit 1
 fi
 #
-echo -e "Verificando o grupo de acesso ao Dialout do Arduino, aguarde..."
+echo -e "Verificando o grupo de acesso ao Dialout do Arduino, aguarde...\n"
 # opção do bloco de agrupamento "": Protege uma string, mas reconhece $, \ e ` como especiais
 # opção do bloco de agrupamento $(): Executa comandos numa subshell, retornando o resultado
 # opção do redirecionar |: Conecta a saída padrão com a entrada padrão de outro comando
@@ -193,7 +193,7 @@ if [ "$(sudo cat /etc/group | grep dialout &>> $LOG ; echo $?)" == "0" ]
 		sudo members -a uucp
 		id
 		echo
-		echo -e "Pressione <Enter> para continuar o script."
+		echo -e "Pressione <Enter> para continuar o script.\n"
 		read
 		sleep 5
 	else
@@ -206,67 +206,62 @@ echo -e "Fazendo o download do Arduino IDE do site Oficial, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando wget: -v (verbose), -O (output-document)
 	sudo wget -v -O /tmp/arduino.tar.xz $ARDUINO &>> $LOG
-echo -e "Download do Arduino IDE do site Oficial feito com sucesso, continuando com o script..."
+echo -e "Download do Arduino IDE do site Oficial feito com sucesso, continuando com o script...\n"
 sleep 5
-echo
 #
-echo -e "Descompactando o Arduino IDE no diretório: /opt/, aguarde..."
+echo -e "Descompactando o Arduino IDE no diretório: /opt/arduino, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando tar: -J (xz), -x (extract), v (verbose), -f (file), -C (directory)
 	sudo tar -Jxvf /tmp/arduino.tar.xz -C /opt/arduino &>> $LOG
-echo -e "Descompactação do Arduino IDE no diretório /opt/ feito com sucesso, continuando com o script..."
+echo -e "Descompactação do Arduino IDE no diretório /opt/ feito com sucesso, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Instalando o Arduino IDE utilizando o script do próprio Arduino, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	sudo /opt/arduino/install.sh
-echo -e "Instalação do Arduino IDE feito com sucesso, continuando com o script..."
+echo -e "Instalação do Arduino IDE feito com sucesso, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Clonando o projeto do BlocklyDuino do Github, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	sudo git clone $BLOCKLYDUINO /tmp/blocklyduino &>> $LOG
-echo -e "Projeto do BlocklyDuino clonado com sucesso do Github, continuando com o script..."
+echo -e "Projeto do BlocklyDuino clonado com sucesso do Github, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Adicionando o BlocklyDuino nas ferramentas do Arduino IDE, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
+	# opção do comando mv: -v (verbose)
+	# opção do caractere curinga *: Qualquer coisa
 	sudo mv -v /tmp/blocklyduino/BlocklyDuinoPlugin/tool/* /opt/arduino/tool/ &>> $LOG
-echo -e "BlocklyDuino adicionado com sucesso no Arduino IDE, continuando com o script..."
+echo -e "BlocklyDuino adicionado com sucesso no Arduino IDE, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Instalando o Fritzing, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando apt: -y (yes)
 	sudo apt -y install fritzing &>> $LOG
-echo -e "Instalação do Fritzing feito com sucesso, continuando com o script..."
+echo -e "Instalação do Fritzing feito com sucesso, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Clonando o projeto do Fritzing Parts do Github, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	sudo git clone $FRITZING /usr/share/fritzing/parts &>> $LOG
-echo -e "Projeto do Fritzing Parts clonado com sucesso do Github, continuando com o script..."
+echo -e "Projeto do Fritzing Parts clonado com sucesso do Github, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Instalação do Arduino IDE, BlocklyDuino e do Fritzing feita com Sucesso!!!."
 	# script para calcular o tempo gasto (SCRIPT MELHORADO, CORRIGIDO FALHA DE HORA:MINUTO:SEGUNDOS)
 	# opção do comando date: +%T (Time)
-	HORAFINAL=`date +%T`
+	HORAFINAL=$(date +%T)
 	# opção do comando date: -u (utc), -d (date), +%s (second since 1970)
 	HORAINICIAL01=$(date -u -d "$HORAINICIAL" +"%s")
 	HORAFINAL01=$(date -u -d "$HORAFINAL" +"%s")
 	# opção do comando date: -u (utc), -d (date), 0 (string command), sec (force second), +%H (hour), %M (minute), %S (second), 
-	TEMPO=`date -u -d "0 $HORAFINAL01 sec - $HORAINICIAL01 sec" +"%H:%M:%S"`
+	TEMPO=$(date -u -d "0 $HORAFINAL01 sec - $HORAINICIAL01 sec" +"%H:%M:%S")
 	# $0 (variável de ambiente do nome do comando)
 	echo -e "Tempo gasto para execução do script $0: $TEMPO"
 echo -e "Pressione <Enter> para concluir o processo."
 # opção do comando date: + (format), %d (day), %m (month), %Y (year 1970), %H (hour 24), %M (minute 60)
-echo -e "Fim do script $0 em: `date +%d/%m/%Y-"("%H:%M")"`\n" &>> $LOG
+echo -e "Fim do script $0 em: $(date +%d/%m/%Y-"("%H:%M")")\n" &>> $LOG
 read
 exit 1
