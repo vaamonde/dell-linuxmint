@@ -11,9 +11,9 @@
 #Versão: 0.01<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa e 20.2 Uma x64
 
-08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released!: https://blog.linuxmint.com/?p=4102
-08/07/2021 - How to upgrade to Linux Mint 20.2: https://blog.linuxmint.com/?p=4111
-New features in Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_cinnamon_whatsnew.php
+08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released!: https://blog.linuxmint.com/?p=4102<br>
+08/07/2021 - How to upgrade to Linux Mint 20.2: https://blog.linuxmint.com/?p=4111<br>
+New features in Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_cinnamon_whatsnew.php<br>
 Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_cinnamon.php
 
 #Instalação do Linux Mint 64 Bits no Notebook Positivo N4340
