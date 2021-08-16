@@ -8,7 +8,7 @@
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 13/08/2021<br>
 #Data de atualização: 16/08/2021<br>
-#Versão: 0.02<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa e 20.2 Uma x64
 
 08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released!: https://blog.linuxmint.com/?p=4102<br>
@@ -83,6 +83,15 @@ Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_ci
 		sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
 		sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5 beignet-opencl-icd
 		sudo reboot (Reinicializar o Sistema)
+	_ Testando o suporte ao Vulkan do Driver da AMD Radeon
+		sudo vulkaninfo | less
+		sudo glxinfo | less
+		sudo glxgears
+	_ Software de Benchmark para GNU/Linux
+		_ PassMark: https://www.passmark.com/products/pt_linux/index.php
+		_ Hardinfo: https://github.com/lpereira/hardinfo
+		_ Unigine: https://benchmark.unigine.com/
+		_ GpuTest: https://www.geeks3d.com/gputest/
 
 #11_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
 
