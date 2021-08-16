@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 13/08/2021<br>
-#Data de atualização: 13/08/2021<br>
-#Versão: 0.01<br>
+#Data de atualização: 16/08/2021<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa e 20.2 Uma x64
 
 08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released!: https://blog.linuxmint.com/?p=4102<br>
@@ -45,7 +45,7 @@ Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_ci
 
 	_ Já é reconhecida no Live-CD do Mint, depois de instalado o Mint ela já está habilitada.
 
-#06_ Hard Disk SATA SSD M.2 256<br>
+#06_ Hard Disk SATA SSD M.2 256GB<br>
 
 	_ Modelo CVB-8D256, Hard Disk para a instalação do Linux Mint, sem necessidade de particionamento (instalação padrão).
 
