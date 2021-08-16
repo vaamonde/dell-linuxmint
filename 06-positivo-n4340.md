@@ -83,8 +83,7 @@ Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_ci
 		sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
 		sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5 beignet-opencl-icd
 		sudo reboot (Reinicializar o Sistema)
-	_ Testando o suporte ao Vulkan do Driver da AMD Radeon
-		sudo vulkaninfo | less
+	_ Testando o suporte ao Driver da Intel Mesa
 		sudo glxinfo | less
 		sudo glxgears
 	_ Software de Benchmark para GNU/Linux
