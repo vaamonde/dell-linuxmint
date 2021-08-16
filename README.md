@@ -272,8 +272,8 @@ Vídeo mostrando os procedimentos básicos para configurar a versão "OFICIAL" d
 
 Décimo segunda vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para configurar e instalar os principais aplicativos, drivers e configurações da Nova versão OFICIAL do Linux Mint 20.2 no Notebook Positivo N4340 de 2021.
 
-[![Positivo Master N4340](http://img.youtube.com/vi//0.jpg)]( "Positivo Master N4340")
+[![Positivo Master N4340](http://img.youtube.com/vi/v28ycVnVwRs/0.jpg)](https://www.youtube.com/watch?v=v28ycVnVwRs "Positivo Master N4340")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=v28ycVnVwRs
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/06-positivo-n4340.md
