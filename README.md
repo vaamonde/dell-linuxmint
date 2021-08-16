@@ -253,3 +253,27 @@ Link da vídeo aula: https://www.youtube.com/watch?v=sXDqOccf1qw
 Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/main/00-Projeto-Hypervisor-Hardware.pdf
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/05-Huananzhi-X99-F8-Xeon-E5-2678.md
+
+## **💻 Positivo Master N4340 🐧🐧 Instalação do Linux Mint 20.2 Uma (Primeira Parte) 🐧🐧**
+
+Vídeo mostrando os procedimentos básicos para instalar a versão "OFICIAL" do Novo Linux Mint 20.2 Uma no Notebook Positivo N4340 de 2021.
+
+Décimo primeiro vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu mostrar os procedimentos para instalar a versão "OFICIAL" do Linux Mint 20.2 no Notebook Positivo N4340 de 2021.
+
+[![Positivo Master N4340](http://img.youtube.com/vi/BfmDbHepmXY/0.jpg)](https://www.youtube.com/watch?v=BfmDbHepmXY "Positivo Master N4340")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=BfmDbHepmXY
+
+Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/06-positivo-n4340.md
+
+## **💻 Positivo Master N4340 🐧🐧 Instalação do Linux Mint 20.2 Uma (Segunda Parte) 🐧🐧**
+
+Vídeo mostrando os procedimentos básicos para configurar a versão "OFICIAL" do Novo Linux Mint 20.2 Uma no Notebook Positivo N4340 de 2021.
+
+Décimo segunda vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para configurar e instalar os principais aplicativos, drivers e configurações da Nova versão OFICIAL do Linux Mint 20.2 no Notebook Positivo N4340 de 2021.
+
+[![Positivo Master N4340](http://img.youtube.com/vi//0.jpg)]( "Positivo Master N4340")
+
+Link da vídeo aula: 
+
+Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/06-positivo-n4340.md
