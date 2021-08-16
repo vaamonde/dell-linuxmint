@@ -73,7 +73,7 @@ Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_ci
 
 		sudo apt update
 		sudo apt install software-properties-common build-essential lsb-core dkms
-		sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool
+		sudo apt install htop nmon psensor tlp tlp-rdw cpufrequtils cputool
 		sudo apt install ttf-mscorefonts-installer cheese guvcview cairo-dock vim git p7zip-full p7zip-rar
 		sudo reboot (Reinicializar o Sistema)
 
