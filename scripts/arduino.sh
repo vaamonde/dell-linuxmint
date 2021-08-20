@@ -5,10 +5,10 @@
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 23/01/2021
-# Data de atualização: 21/07/2021
-# Versão: 0.05
+# Data de atualização: 20/08/2021
+# Versão: 0.06
 # Testado e homologado para a versão do Linux Mint 20.1 Ulyssa e 20.2 Uma x64
-# Testado e homologado para a versão do Arduino IDE 1.8.x e BlockDuino
+# Testado e homologado para a versão do Arduino IDE v1.8.x, BlockDuino e Fritzing v0.9.x
 #
 # Arduino é uma plataforma de prototipagem eletrônica de hardware livre e de placa única, 
 # projetada com um microcontrolador Atmel AVR com suporte de entrada/saída embutido, uma 
@@ -108,18 +108,15 @@ echo -e "Instalando o Arduino IDE, BlocklyDuino e o Fritzing, aguarde...\n"
 echo -e "Verificando a conexão com a Porta TTY (USB) do Arduino, aguarde...\n"
 # opção do bloco de agrupamento "": Protege uma string, mas reconhece $, \ e ` como especiais
 # opção do bloco de agrupamento $(): Executa comandos numa subshell, retornando o resultado
-# opção do comando lsusb: -v (verbose)
 # opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
+# opção do redirecionar |: Conecta a saída padrão com a entrada padrão de outro comando
 # opção do operador ; (ponto e vírgula): operador que executa vários comandos em sucessão
 # opção da variável de ambiente $?: Código de retorno do último comando executado
 # opção do operador relacional ==: Igual
-if [ "$(sudo lsusb -v | grep Arduino &>> $LOG ; echo $?)" == "0" ]
+if [ "$(sudo lsusb | grep Arduino &>> $LOG ; echo $?)" == "0" ]
 	then
+		sudo lsusb | grep Arduino
 		echo -e "Arduino está conectado na Porta USB do seu computador.\n"
-		# opção do comando lsusb: -v (verbose)
-		# opção do redirecionar |: Conecta a saída padrão com a entrada padrão de outro comando
-		sudo lsusb -v | grep Arduino
-		echo
 		echo -e "Pressione <Enter> para continuar o script.\n"
 		read
 		sleep 5
@@ -137,13 +134,11 @@ echo -e "Verificando a conexão com a Porta Dialout do Arduino, aguarde...\n"
 # opção do operador ; (ponto e vírgula): operador que executa vários comandos em sucessão
 # opção da variável de ambiente $?: Código de retorno do último comando executado
 # opção do operador relacional ==: Igual
+# opção do caractere curinga *: Qualquer coisa
 if [ "$(sudo ls -lh /dev/ttyA* &>> $LOG ; echo $?)" == "0" ]
 	then
-		echo -e "Conexão com a Porta Dialout do Arduino verificada com sucesso.\n"
-		# opção do comando ls: -l (listing), -h (human-readable)
-		# opção do caractere curinga *: Qualquer coisa
 		sudo ls -lh /dev/ttyACM*
-		echo
+		echo -e "Conexão com a Porta Dialout do Arduino verificada com sucesso.\n"
 		echo -e "Alterando as permissões da Porta Dialout para todos os usuários.\n"
 		# opção do comando chmod: -v (verbose) a (all users), + (added), r (read), w (write)
 		# opção do comando ls: -l (listing), -h (human-readable)
@@ -171,10 +166,8 @@ echo -e "Verificando o grupo de acesso ao Dialout do Arduino, aguarde...\n"
 # opção do operador relacional ==: Igual
 if [ "$(sudo cat /etc/group | grep dialout &>> $LOG ; echo $?)" == "0" ]
 	then
-		echo -e "Grupo de acesso ao Dialout do Arduino verificado com sucesso.\n"
-		# opção do redirecionar |: Conecta a saída padrão com a entrada padrão de outro comando
 		sudo cat /etc/group | grep dialout
-		echo
+		echo -e "Grupo de acesso ao Dialout do Arduino verificado com sucesso.\n"
 		echo -e "Verificando os Membros efetivos dos grupos Dialout e Plugdev.\n"
 		# opção do comando members: -a (all)
 		sudo members -a dialout
@@ -211,14 +204,18 @@ sleep 5
 #
 echo -e "Descompactando o Arduino IDE no diretório: /opt/arduino, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
-	# opção do comando tar: -J (xz), -x (extract), v (verbose), -f (file), -C (directory)
-	sudo tar -Jxvf /tmp/arduino.tar.xz -C /opt/arduino &>> $LOG
+	# opção do comando tar: -J (xz), -x (extract), v (verbose), -f (file)
+	# opção do comando mv: -v (verbose)
+	cd /tmp
+	sudo tar -Jxvf arduino.tar.xz &>> $LOG
+	sudo mv -v arduino-*/ /opt/arduino &>> $LOG
+	cd -
 echo -e "Descompactação do Arduino IDE no diretório /opt/ feito com sucesso, continuando com o script...\n"
 sleep 5
 #
 echo -e "Instalando o Arduino IDE utilizando o script do próprio Arduino, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
-	sudo /opt/arduino/install.sh
+	sudo bash /opt/arduino/install.sh
 echo -e "Instalação do Arduino IDE feito com sucesso, continuando com o script...\n"
 sleep 5
 #
@@ -232,7 +229,7 @@ echo -e "Adicionando o BlocklyDuino nas ferramentas do Arduino IDE, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando mv: -v (verbose)
 	# opção do caractere curinga *: Qualquer coisa
-	sudo mv -v /tmp/blocklyduino/BlocklyDuinoPlugin/tool/* /opt/arduino/tool/ &>> $LOG
+	sudo mv -v /tmp/blocklyduino/BlocklyDuinoPlugin/tool/* /opt/arduino/tools/ &>> $LOG
 echo -e "BlocklyDuino adicionado com sucesso no Arduino IDE, continuando com o script...\n"
 sleep 5
 #
