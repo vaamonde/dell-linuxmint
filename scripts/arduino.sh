@@ -170,8 +170,8 @@ if [ "$(sudo cat /etc/group | grep dialout &>> $LOG ; echo $?)" == "0" ]
 		echo -e "Grupo de acesso ao Dialout do Arduino verificado com sucesso.\n"
 		echo -e "Verificando os Membros efetivos dos grupos Dialout e Plugdev.\n"
 		# opção do comando members: -a (all)
-		sudo members -a dialout
-		sudo members -a plugdev
+		echo -e "Grupo Dialout: $(sudo members -a dialout)"
+		echo -e "Grupo Plugdev: $(sudo members -a plugdev)"
 		echo
 		echo -e "Adicionando o usuário local: $USUARIO ou Grupo do Dialout.\n"
 		# opção do comando usermod: -a (append), -G (groups)
@@ -180,11 +180,11 @@ if [ "$(sudo cat /etc/group | grep dialout &>> $LOG ; echo $?)" == "0" ]
 		sudo usermod -a -G plugdev $USUARIO
 		sudo usermod -a -G tty $USUARIO
 		sudo usermod -a -G uucp $USUARIO
-		sudo members -a dialout
-		sudo members -a plugdev
-		sudo members -a tty
-		sudo members -a uucp
-		id
+		echo -e "Grupo Dialout: $(sudo members -a dialout)"
+		echo -e "Grupo Plugdev: $(sudo members -a plugdev)"
+		echo -e "Grupo TTY: $(sudo members -a tty)"
+		echo -e "Grupo UUCP: $(sudo members -a uucp)"
+		echo -e "Usuário $USUARIO: $(id)"
 		echo
 		echo -e "Pressione <Enter> para continuar o script.\n"
 		read
@@ -199,7 +199,7 @@ echo -e "Fazendo o download do Arduino IDE do site Oficial, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando wget: -v (verbose), -O (output-document)
 	sudo wget -v -O /tmp/arduino.tar.xz $ARDUINO &>> $LOG
-echo -e "Download do Arduino IDE do site Oficial feito com sucesso, continuando com o script...\n"
+echo -e "Download do Arduino IDE do site Oficial feito com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
 echo -e "Descompactando o Arduino IDE no diretório: /opt/arduino, aguarde..."
@@ -209,20 +209,20 @@ echo -e "Descompactando o Arduino IDE no diretório: /opt/arduino, aguarde..."
 	cd /tmp
 	sudo tar -Jxvf arduino.tar.xz &>> $LOG
 	sudo mv -v arduino-*/ /opt/arduino &>> $LOG
-	cd -
-echo -e "Descompactação do Arduino IDE no diretório /opt/ feito com sucesso, continuando com o script...\n"
+	cd - &>> $LOG
+echo -e "Descompactação do Arduino IDE no diretório /opt/arduino feito com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
 echo -e "Instalando o Arduino IDE utilizando o script do próprio Arduino, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	sudo bash /opt/arduino/install.sh
-echo -e "Instalação do Arduino IDE feito com sucesso, continuando com o script...\n"
+echo -e "Instalação do Arduino IDE feito com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
 echo -e "Clonando o projeto do BlocklyDuino do Github, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	sudo git clone $BLOCKLYDUINO /tmp/blocklyduino &>> $LOG
-echo -e "Projeto do BlocklyDuino clonado com sucesso do Github, continuando com o script...\n"
+echo -e "Projeto do BlocklyDuino clonado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
 echo -e "Adicionando o BlocklyDuino nas ferramentas do Arduino IDE, aguarde..."
@@ -230,20 +230,20 @@ echo -e "Adicionando o BlocklyDuino nas ferramentas do Arduino IDE, aguarde..."
 	# opção do comando mv: -v (verbose)
 	# opção do caractere curinga *: Qualquer coisa
 	sudo mv -v /tmp/blocklyduino/BlocklyDuinoPlugin/tool/* /opt/arduino/tools/ &>> $LOG
-echo -e "BlocklyDuino adicionado com sucesso no Arduino IDE, continuando com o script...\n"
+echo -e "BlocklyDuino adicionado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
 echo -e "Instalando o Fritzing, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando apt: -y (yes)
 	sudo apt -y install fritzing &>> $LOG
-echo -e "Instalação do Fritzing feito com sucesso, continuando com o script...\n"
+echo -e "Instalação do Fritzing feito com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
 echo -e "Clonando o projeto do Fritzing Parts do Github, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	sudo git clone $FRITZING /usr/share/fritzing/parts &>> $LOG
-echo -e "Projeto do Fritzing Parts clonado com sucesso do Github, continuando com o script...\n"
+echo -e "Projeto do Fritzing Parts clonado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
 echo -e "Instalação do Arduino IDE, BlocklyDuino e do Fritzing feita com Sucesso!!!."
