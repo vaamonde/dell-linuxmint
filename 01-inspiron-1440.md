@@ -8,8 +8,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 19/01/2022<br>
-#Versão: 0.13<br>
+#Data de atualização: 02/02/2022<br>
+#Versão: 0.14<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released!: https://blog.linuxmint.com/?p=4102<br>
@@ -32,31 +32,40 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 #02_ Configurações do Hardware do Dell Inspiron 1440<br>
 
-	_ CPU Intel Core 2 Duo P8700 2.5Ghz, 3.0GB DDR-2 800Mhz, SSD Corsair 60GB, HD WD 500GB, LCD 14", Webcam, VGA, 
-	_ Ethernet Realtek RTL-8101, Wireless Broadcom BCM-4312, Intel HD Graphics GM45, Audio Intel 82801L
+	_ CPU Intel Core 2 Duo P8700 2.5Ghz, 3.0GB DDR-2 800Mhz, SSD Corsair 60GB, HD WD 500GB, 
+	_ LCD 14", Webcam, VGA, Ethernet Realtek RTL-8101, Wireless Broadcom BCM-4312, Intel HD 
+	_ Graphics GM45, Audio Intel 82801L
 
 #03_ Configuração da BIOS (versão A07)<br>
 
-	_ Configuração Padrão de Fábrica, Hard Disk SATA em AHCI, VT-x habilitado, Audio, Wireless e Bluetooth habilitados.
+	_ Configuração Padrão de Fábrica, Hard Disk SATA em AHCI, VT-x habilitado, Audio, Wireless 
+	_ e Bluetooth habilitados.
 	
 #04_ Inicialização da Instalação do Linux Mint 20.1, 20.2 e 20.3<br>
 
-	_ Para não ter falhas de inicialização da instalação, utilizei o recurso de Modo de Compatibilidade, recomendado 
-	para equipamentos legados (inicialização em modo de compatibilidade e mais lento no Dell Inspiron 1440)
+	_ Para não ter falhas de inicialização da instalação, utilizei o recurso de Modo de 
+	_ Compatibilidade, recomendado para equipamentos legados (inicialização em modo de 
+	_ compatibilidade e mais lento no Dell Inspiron 1440)
 
 #05_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless)<br>
 
-	_ Modelo Broadcom BCM-4312, por padrão não é reconhecida no Linux Mint sendo necessário instalar o Driver Proprietário
-	_ pelo Gerenciador de Drivers do Linux Mint ou por linha de comando.
-	_ OBS: se você utilizar o Kernel OEM >= 5.6 a instalação do Driver da Broadcom via Gerenciador de Driver não funciona
-	_ corretamente, sendo necessário instalar o Firmware e Driver manualmente por linha de comando
+	_ Modelo Broadcom BCM-4312, por padrão não é reconhecida no Linux Mint 20 sendo necessário 
+	_ instalar o Driver Proprietário pelo Gerenciador de Drivers do Linux Mint ou por linha de 
+	_ comando.
+	_ OBS: se você utilizar o Kernel OEM >= 5.6 a instalação do Driver da Broadcom via Gerenciador 
+	_ de Driver não funciona corretamente, sendo necessário instalar o Firmware e Driver manualmente 
+	_ por linha de comando.
+	_ OBSERVAÇÃO IMPORTANTE: na versão do Linux Mint 20.3 Una não e mais necessário instalar o
+	_ Driver da Placa de Rede Sem-Fio Broadcom, ele e reconhecido no Live-CD, depois de instalado
+	_ já está funcionando, mesmo depois de instalar o Kernel OEM >= 5.10.
 
 #06_ Hard Disk SATA SSD 60GB e SATA 500GB 7200rpm<br>
 
-	_ Modelo Corsair Force 3, Hard Disk utilizado para a instalação do Linux Mint, sem necessidade de particionamento 
-	_ (instalação padrão), Hard Disk WD usado para armazenamento de arquivos e backup (case Akasa AK-OA2SSA-BKV2 2,5").
+	_ Modelo Corsair Force 3, Hard Disk utilizado para a instalação do Linux Mint, sem necessidade 
+	_ de particionamento (instalação padrão), Hard Disk WD usado para armazenamento de arquivos e 
+	_ backup (case Akasa AK-OA2SSA-BKV2 2,5").
 
-#07_ Pós-Instalação do Linux Mint 20.1 Ulyssa, 20.2 Uma 20.3 Una<br>
+#07_ Pós-Instalação do Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64 Bits<br>
 
 	_ Atualização do sistema utilizando o MintUpdate;
 	_ Atualização do sistema utilizando o Apt;
@@ -100,6 +109,11 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		recomendo marcar a opção: Não usar esse dispositivo primeiro, Aplicar as Mudanças, reiniciar o
 		Desktop/Notebook e depois instalar os Drivers abaixo.
 
+		OBSERVAÇÃO IMPORTANTE: Na versão do Linux Mint 20.3 Una, ele reconhece a Placa de Rede Sem-Fio
+		no Gerenciador de Driver, o Driver já está funcionando Perfeitamente mesmo depois de instalar
+		o Kernel OEM.
+
+		OBS: só usar esses comando se for realmente necessário.
 		sudo apt update
 		sudo apt install firmware-b43-installer firmware-b43legacy-installer
 		sudo reboot (Reinicializar o Sistema)

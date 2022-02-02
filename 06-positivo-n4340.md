@@ -7,9 +7,9 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 13/08/2021<br>
-#Data de atualização: 19/01/2022<br>
-#Versão: 0.13<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Data de atualização: 02/02/2022<br>
+#Versão: 0.14<br>
+#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64 Bits
 
 08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released!: https://blog.linuxmint.com/?p=4102<br>
 08/07/2021 - How to upgrade to Linux Mint 20.2: https://blog.linuxmint.com/?p=4111<br>
@@ -31,17 +31,19 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 #02_ Configurações do Hardware do Notebook Positivo N4340<br>
 
-	_ CPU Intel i3 10110U 2.10Ghz 2/4 L2 4MB, 8GB DDR-4 2666Mhz, SSD M.2 CVB-8D256 - 256GB, LCD 14", Webcam, VGA,
-	_ Ethernet Realtek RTL-8111, Wireless Intel AC 9462, Intel UHD Graphics CLEVO/KAPOK, Audio Intel CLEVO/KAPOK
+	_ CPU Intel i3 10110U 2.10Ghz 2/4 L2 4MB, 8GB DDR-4 2666Mhz, SSD M.2 CVB-8D256 - 256GB, 
+	_ LCD 14", Webcam, VGA, Ethernet Realtek RTL-8111, Wireless Intel AC 9462, Intel UHD Graphics 
+	_ CLEVO/KAPOK, Audio Intel CLEVO/KAPOK
 
 #03_ Configuração da BIOS UEFI insyde 0111.x<br>
 
-	_ Configuração Padrão de Fábrica, Hard Disk SSD em AHCI, VT-x habilitado, Audio, Wireless e Bluetooth habilitados
-	_ segurança UEFI habilitada
+	_ Configuração Padrão de Fábrica, Hard Disk SSD em AHCI, VT-x habilitado, Audio, Wireless e 
+	_ Bluetooth habilitados segurança UEFI habilitada
 	
 #04_ Inicialização da Instalação do Linux Mint 20.1 Ulyssa ou 20.2 Uma<br>
 
-	_ Inicialização padrão, nesse notebook não acontece a falha de resolução devido ao suporte a altas resoluções do LCD
+	_ Inicialização padrão, a falha de resolução de vídeo não acontece nesse modelo de notebook 
+	_ da Positivo N4340 devido o monitor ser de 14" e atingir altas resoluções.
 
 #05_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless)<br>
 
@@ -49,9 +51,10 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 #06_ Hard Disk SATA SSD M.2 256GB<br>
 
-	_ Modelo CVB-8D256, Hard Disk para a instalação do Linux Mint, sem necessidade de particionamento (instalação padrão).
+	_ Modelo CVB-8D256, Hard Disk para a instalação do Linux Mint, sem necessidade de particionamento
+	_ (instalação padrão).
 
-#07_ Pós-Instalação do Linux Mint 20.1 Ulyssa ou 20.2 Uma<br>
+#07_ Pós-Instalação do Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64 Bits<br>
 
 	_ Atualização do sistema utilizando o MintUpdate;
 	_ Atualização do sistema utilizando o Apt;
@@ -85,9 +88,11 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
 		sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5 beignet-opencl-icd
 		sudo reboot (Reinicializar o Sistema)
+	
 	_ Testando o suporte ao Driver da Intel Mesa
 		sudo glxinfo | less
 		sudo glxgears
+	
 	_ Software de Benchmark para GNU/Linux
 		_ PassMark: https://www.passmark.com/products/pt_linux/index.php
 		_ Hardinfo: https://github.com/lpereira/hardinfo
