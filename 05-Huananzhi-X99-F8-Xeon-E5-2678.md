@@ -102,7 +102,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		_ Ubuntu 20.04.3 (Revision Number 21.40.2, Release Date 19/01/2022)
 		_ Fazer o download do arquivo: amdgpu-install_21.40.2.40502-1_all.deb
 		_ Fazer a instalação utilizando o Gerenciador Gráfico do Linux Mint GDEB (recomendado)
-		_	(clicar duas vezes no instalado selecionar Instalar Pacote)
+		_ (clicar duas vezes no instalador e selecionar: Instalar Pacote)
 		_ Acessar o terminal pressionando: Ctrl+Alt+T
 		_ Atualizar as Lista da Apt com o novo Source: sudo apt update
 		_ Instalar os Drivers da AMD Radeon: sudo apt install amdgpu-install
