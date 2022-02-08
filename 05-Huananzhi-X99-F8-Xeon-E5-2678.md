@@ -123,6 +123,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		_ Hardinfo: https://github.com/lpereira/hardinfo
 		_ Unigine: https://benchmark.unigine.com/
 		_ GpuTest: https://www.geeks3d.com/gputest/
+		_ Basemark: https://www.basemark.com/benchmarks/basemark-gpu/
 
 #11_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
 
