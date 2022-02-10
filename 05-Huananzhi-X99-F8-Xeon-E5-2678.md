@@ -111,6 +111,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	_ Instalação do suporte ao Vulkan do Driver da AMD Radeon
 		sudo apt update
 		sudo apt install mesa-vulkan-drivers vulkan-utils vulkan-tools libassimp5 libvulkan1
+		sudo amdgpu-install --usecase=graphics,opencl --opencl=rocr,legacy --vulkan=amdvlk,pro
 		sudo reboot
 	
 	_ Testando o suporte ao Vulkan do Driver da AMD Radeon
