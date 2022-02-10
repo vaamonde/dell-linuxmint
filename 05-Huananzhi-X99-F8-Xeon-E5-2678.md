@@ -105,7 +105,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		_ (clicar duas vezes no instalador e selecionar: Instalar Pacote)
 		_ Acessar o terminal pressionando: Ctrl+Alt+T
 		_ Atualizar as Lista da Apt com o novo Source: sudo apt update
-		_ Instalar os Drivers da AMD Radeon: sudo apt install amdgpu-install
+		_ Instalar os Drivers da AMD Radeon: sudo amdgpu-install
 		_ Finalizar a instalação reinicializando o sistema: reboot
 	
 	_ Instalação do suporte ao Vulkan do Driver da AMD Radeon
