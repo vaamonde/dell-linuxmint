@@ -256,6 +256,14 @@ Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/05-Huananzhi-X99-F8-Xeon-E5-2678.md
 
+## **🖥 COMO instalar o Driver de Vídeo AMD Radeon no Linux Mint 20.3 🐧🐧**
+
+Vídeo mostrando os procedimentos para instalar e configurar o novo Driver de Vídeo da AMD Radeon utilizando uma placa da Asus Republic of Gamers RX Vega 64 no Linux Mint 20.3 Una x64 Bits.
+
+[![Driver AMD](http://img.youtube.com/vi/AL-hNUAthT8&t/0.jpg)]( "Driver AMD")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=AL-hNUAthT8&t
+
 ## **💻 Positivo Master N4340 🐧🐧 Instalação do Linux Mint 20.2 Uma (Primeira Parte) 🐧🐧**
 
 Vídeo mostrando os procedimentos básicos para instalar a versão "OFICIAL" do Novo Linux Mint 20.2 Uma no Notebook Positivo N4340 de 2021.

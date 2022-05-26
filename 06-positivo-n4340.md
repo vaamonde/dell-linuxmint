@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 13/08/2021<br>
-#Data de atualização: 05/02/2022<br>
-#Versão: 0.15<br>
+#Data de atualização: 25/05/2022<br>
+#Versão: 0.16<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64 Bits
 
 08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released!: https://blog.linuxmint.com/?p=4102<br>
@@ -67,7 +67,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		sudo apt clean
 		sudo reboot (Reinicializar o Sistema)
 
-#08_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.10.x suportado até 2025)<br>
+#08_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.14.x suportado até 2025)<br>
 
 		sudo apt update
 		sudo uname -a
