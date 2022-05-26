@@ -148,15 +148,15 @@ Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell
 
 ## **💻 Dell G3 3590 🐧🐧 Instalação do Linux Mint 20.2 Uma (Primeira Parte) 🐧🐧**
 
-Vídeo mostrando os procedimentos básicos para instalar a versão "OFICIAL" do Novo Linux Mint 20.2 Uma no Notebook Dell G3 3590 de 2019
+Vídeo mostrando os procedimentos básicos para instalar a versão "OFICIAL" do Novo Linux Mint 20.3 Una no Notebook Dell G3 3590 de 2019
 
 Sétimo vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para acessar a BIOS do Dell G3 3590, inicializar o Boot em Modo Normal e fazer a instalação do Linux Mint no Hard Disk SSD NVMe de 512GB.
 
-Mais informações acesse: https://blog.linuxmint.com/?p=4077
+Mais informações acesse: https://blog.linuxmint.com/?p=4220
 
-[![Dell G3 3590](http://img.youtube.com/vi//0.jpg)]("Dell G3 3590")
+[![Dell G3 3590](http://img.youtube.com/vi/npQ0kjuxz9c/0.jpg)](https://www.youtube.com/watch?v=npQ0kjuxz9c "Dell G3 3590")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=npQ0kjuxz9c
 
 Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
 
@@ -164,19 +164,27 @@ Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell
 
 ## **💻 Dell G3 3590 🐧🐧 Configuração do Linux Mint 20.2 Uma (Segunda Parte) 🐧🐧**
 
-Vídeo mostrando os procedimentos básicos para configurar a versão "OFICIAL" do Novo Linux Mint 20.2 Uma no Notebook Dell G3 3590 de 2019
+Vídeo mostrando os procedimentos básicos para configurar a versão "OFICIAL" do Novo Linux Mint 20.3 Una no Notebook Dell G3 3590 de 2019
 
-Oitavo vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para configurar e instalar os principais aplicativos, drivers e configurações da Nova versão OFICIAL do Linux Mint 20.2 no Notebook Dell G3 3590 de 2019.
+Oitavo vídeo da série de atualização do meu Curso de Linux Mint, nesse vídeo eu vou mostrar os procedimentos básicos para configurar e instalar os principais aplicativos, drivers e configurações da Nova versão OFICIAL do Linux Mint 20.3 no Notebook Dell G3 3590 de 2019.
 
-Mais informações acesse: https://blog.linuxmint.com/?p=4077
+Mais informações acesse: https://blog.linuxmint.com/?p=4220
 
-[![Dell G3 3590](http://img.youtube.com/vi//0.jpg)]( "Dell G3 3590")
+[![Dell G3 3590](http://img.youtube.com/vi/faTRvAzAsnI/0.jpg)](https://www.youtube.com/watch?v=faTRvAzAsnI "Dell G3 3590")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=faTRvAzAsnI
 
 Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/04-g3-3590.md
+
+## **🖥 COMO instalar o Driver de Vídeo NVIDIA GeForce GTX no Linux Mint 20.3 Una 🐧🐧**
+
+Vídeo mostrando os procedimentos para instalar e configurar o novo Driver de Vídeo da NVIDIA GeForce GTX utilizando uma placa modelo GTX 1050 (ti) 3GB Max-Q no Linux Mint 20.3 Una x64 Bits.
+
+[![Driver NVIDIA](http://img.youtube.com/vi/gu58I77hkHw/0.jpg)](https://www.youtube.com/watch?v=gu58I77hkHw "Driver NVIDIA")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=gu58I77hkHw
 
 ## **🖥😍 Apresentação do Hardware utilizado no Curso de Hypervisor (Virtualização) Open Source 😍🖥**
 

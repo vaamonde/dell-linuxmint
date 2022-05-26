@@ -126,6 +126,12 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		_ GpuTest: https://www.geeks3d.com/gputest/
 		_ Basemark: https://www.basemark.com/benchmarks/basemark-gpu/
 
+	_ Testar o Screen Tearing no Firefox e no Google Chrome
+		Screen Tearing Test: https://www.youtube.com/watch?v=MfL_JkcEFbE (Qualidade 1080p - Full Screen)
+		Tearing test @60fps: https://www.youtube.com/watch?v=0RvIbVmCOxg (Qualidade 1080p - Full Screen)
+		Vsync Tearing Test: https://www.youtube.com/watch?v=9hIRq5HTh5s (Qualidade 1080p - Full Screen)
+		Test Your Video Playback: https://www.youtube.com/watch?v=2wVC-ZLhIHI (Qualidade 1080p - Full Screen)
+
 #11_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
 
 	_ VirtualBOX: https://www.virtualbox.org/
