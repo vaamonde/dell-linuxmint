@@ -260,7 +260,7 @@ Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell
 
 Vídeo mostrando os procedimentos para instalar e configurar o novo Driver de Vídeo da AMD Radeon utilizando uma placa da Asus Republic of Gamers RX Vega 64 no Linux Mint 20.3 Una x64 Bits.
 
-[![Driver AMD](http://img.youtube.com/vi/AL-hNUAthT8&t/0.jpg)]( "Driver AMD")
+[![Driver AMD](http://img.youtube.com/vi/AL-hNUAthT8&t/0.jpg)](https://www.youtube.com/watch?v=AL-hNUAthT8&t "Driver AMD")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=AL-hNUAthT8&t
 
