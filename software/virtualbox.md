@@ -9,9 +9,9 @@
 #Data de criação: 01/10/2020<br>
 #Data de atualização: 24/06/2021<br>
 #Versão: 0.04<br>
-#Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa e 20.2 Uma
+#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
-#Instalação do VirtualBOX no Linux Mint 20 Ulyana, 20.1 Ulyssa e 20.2 Uma 64 Bits
+#Instalação do VirtualBOX no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
  
