@@ -1,8 +1,9 @@
 # Curso GRÁTIS de Linux Mint 20.x em Notebook Dell (Inspiron, XPS, Vostro e G3) e Desktop Gamer Xeon
 
-## 💰 Ajude o projeto Bora para Prática a continuar fazendo vídeos e materiais gratuitos para o Canal
+## 💰 Ajude o projeto Bora para Prática a continuar fazendo vídeos e materiais gratuitos para o Canal do YouTUBE
 ## 💰 Chave PIX do projeto: robsonvaamonde@gmail.com
 ## 💰 Link de doação do PagSeguro: https://pag.ae/bjlSJcH
+## 💰 Link de doação do Paypal: https://www.paypal.com/donate/?hosted_button_id=EALLB7DQ3U6H2
 
 Robson Vaamonde<br>
 Procedimentos em TI: http://procedimentosemti.com.br<br>
@@ -12,7 +13,18 @@ Facebook Procedimentos em TI: https://www.facebook.com/ProcedimentosEmTi<br>
 Facebook Bora para Prática: https://www.facebook.com/boraparapratica<br>
 Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
-LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/<br>
+Linkedin Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/<br>
+Github Procedimentos em TI: https://github.com/vaamonde<br>
+
+<div align="center">
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/vaamonde/dell-linuxmint?style=plastic">
+<a href="https://github.com/vaamonde/dell-linuxmint/stargazers"><img src="https://img.shields.io/github/stars/vaamonde/dell-linuxmint" alt="Stars Badge"/></a>
+<a href="https://github.com/vaamonde/dell-linuxmint/network/members"><img src="https://img.shields.io/github/forks/vaamonde/dell-linuxmint" alt="Forks Badge"/></a>
+<a href="https://github.com/vaamonde/dell-linuxmint/pulls"><img src="https://img.shields.io/github/issues-pr/vaamonde/dell-linuxmint" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/vaamonde/dell-linuxmint/issues"><img src="https://img.shields.io/github/issues/vaamonde/dell-linuxmint" alt="Issues Badge"/></a>
+<a href="https://github.com/vaamonde/dell-linuxmint/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/vaamonde/dell-linuxmint?color=2b9348"></a>
+<a href="https://github.com/vaamonde/dell-linuxmint/blob/master/LICENSE"><img src="https://img.shields.io/github/license/vaamonde/dell-linuxmint?color=2b9348" alt="License Badge"/></a>
+</div>
 
 ## **Links Oficiais do Linux Mint:**
 Site do Linux Mint: https://www.linuxmint.com/​<br>

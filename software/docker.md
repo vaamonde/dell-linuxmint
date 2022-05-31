@@ -53,4 +53,5 @@
 	sudo systemctl status docker
 	docker version
 	docker info
+	docker-compose
 
