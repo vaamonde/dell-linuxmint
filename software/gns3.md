@@ -42,7 +42,7 @@
 	cpulimit qemu qemu-utils qemu-kvm qemu-user qemu-system-x86 python3 python3-pyqt5 telnet kvmtool \
 	vinagre virt-viewer python
 
-	Configuration wireshark-common
+	Configuration wireshark-common e do uBridge
 		Should non-superusers be able to capture packets? <Sim>
 		Should non-superusers be able to run GNS3? <Sim>
 

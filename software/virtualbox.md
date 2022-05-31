@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 24/06/2021<br>
-#Versão: 0.04<br>
+#Data de atualização: 31/05/2022<br>
+#Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Instalação do VirtualBOX no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
@@ -25,20 +25,18 @@
 
 #02_ Adicionando o Repositório do VirtualBOX<br>
 
-    sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian focal contrib" >> /etc/apt/sources.list.d/virtualbox.list'
+	sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian focal contrib" >> /etc/apt/sources.list.d/virtualbox.list'
 
 #03_ Baixando e Instalando as Chaves de Autenticação do VirtualBOX<br>
 
-    wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
-    wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+	wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+	wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
 
 #04_ Instalando o VirtualBOX<br>
 
-    sudo apt update
-    sudo apt install virtualbox-6.1 cpu-checker libvirt-clients
+	sudo apt update
+	sudo apt install virtualbox-6.1 cpu-checker libvirt-clients
 
 #05_ Baixando e Instalando o Pacote de Extensões do VirtualBOX<br>
 
-    wget https://download.virtualbox.org/virtualbox/6.1.22/Oracle_VM_VirtualBox_Extension_Pack-6.1.22.vbox-extpack
-    virtualbox Oracle*
-    rm Oracle*
+	*Recomendo fazer via site do Oracle VirtualBOX
