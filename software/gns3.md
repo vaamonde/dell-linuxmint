@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 28/05/2022<br>
-#Versão: 0.02<br>
+#Data de atualização: 30/05/2022<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Instalação do GNS3 no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
@@ -37,14 +37,18 @@
 
 #05_ Instalando o GNS3 e suas Dependências no Linux Mint<br>
 
-	sudo apt install gns3-gui gns3-iou gns3-server gns3-webclient-pack dynamips iouyap vpcs xterm ubridge \
+	sudo apt install gns3-gui gns3-iou gns3-server gns3-webclient-pack dynamips vpcs xterm ubridge nmap \
 	iptraf-ng iperf3 ipcalc git vim uml-utilities bridge-utils wireshark wireshark-common wireshark-dev \
-	cpulimit qemu qemu-utils qemu-kvm qemu-user qemu-system-x86 libvirt-bin python3 python3-pyqt5 telnet \
-	vinagre virt-viewer
+	cpulimit qemu qemu-utils qemu-kvm qemu-user qemu-system-x86 python3 python3-pyqt5 telnet kvmtool \
+	vinagre virt-viewer python
+
+	Configuration wireshark-common
+		Should non-superusers be able to capture packets? <Sim>
+		Should non-superusers be able to run GNS3? <Sim>
 
 #06_ Corrigindo a falha de permissão do uBridge em clientes VPCS no GNS3<br>
 
-	sudo chmod 777 /usr/bin/ubridge
+	sudo chmod -v 777 /usr/bin/ubridge
 
 #07_ Verificando a versão do GNS3 instalado<br>
 
@@ -52,20 +56,20 @@
 
 #08_ Configurando o Wireshark para Capturar Pacotes no Computador Local<br>
 
-	sudo groupadd wireshark
 	sudo usermod -a -G wireshark vaamonde
-	sudo chgrp wireshark /usr/bin/dumpcap
-	sudo chmod 750 /usr/bin/dumpcap
+	sudo chgrp -v wireshark /usr/bin/dumpcap
+	sudo chmod -v 750 /usr/bin/dumpcap
 	sudo setcap cap_net_raw,cap_net_admin=eip /usr/bin/dumpcap
 	sudo getcap /usr/bin/dumpcap
-	sudo dpkg-reconfigure wireshark-common
 	sudo gpasswd -a vaamonde wireshark
 	newgrp
+	sudo reboot
 
-#08_ Iniciando o GNS3-GUI por Linha de Comando<br>
+#09_ Configuração da Licença do IOU L2 e L3<br>
+
+	python CiscoIOUKeygen.py
+	vim .config/GNS3/2.2/iourc
+
+#09_ Iniciando o GNS3-GUI por Linha de Comando<br>
 
 	gns3
-
-#09_ Iniciando o GNS3 Webclient por Linha de Comando<br> 
-
-	gns3-webclient-config
