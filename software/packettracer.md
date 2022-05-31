@@ -22,22 +22,13 @@
 	sudo apt autoremove
 	sudo apt autoclean
 
-#02_ Download do VMware Workstation Pro 16 (Build 16.2.3)<br>
+#02_ Download do Cisco Packet Tracer 8.1.1<br>
 
-	Link: https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html
-	Versão: Workstation 16 Pro for Linux
+	Link Oficial Netacad: https://www.netacad.com/pt-br/courses/packet-tracer
+	Link Oficial Packet Tracer Network: https://www.packettracernetwork.com/
+	Mega.NZ Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7XzImP01M1SyRm2g/folder/vll2iSDI
 
-#03_ Alterando as Permissões de Execução do Binário do VMware Workstation Por<br>
+#03_ Instalando o Cisco Packet Tracer 8.1.1 no Linux Mint<br>
 
-	01_ Acessar o diretório de download;
-	02_ Botão direito do mouse no binário do VMware;
-	03_ Selecionar o opção: Propriedade;
-	04_ Acessar a aba: Permissões;
-	05_ Clicar na opção: Permitir execução do arquivo como um programa.
-	<Fechar>
-
-#04_ Instalando o VMware Workstation Pro no Linux Mint<br>
-
-	01_ Na pasta de Download, clicar com o botão esquerdo do mouse e selecionar: Abrir no Terminal;
-	02_ Digitar o comando: sudo ./VMware-Workstation-Full-16.2.3-19376536.x86_64.bundle
-	03_ Digitar a senha do seu usuário e aguardar a finalização da instalação.
+	01_ Na pasta de Download, clicar duas vezes no Instalador do Cisco Packet Tracer;
+	02_ Seguir os procedimentos na tela.

@@ -28,10 +28,11 @@
 
 #03_ Adicionando o PPA Oficial do Ansible no Linux Mint<br>
 
-	sudo add-apt-repository --yes --update ppa:ansible/ansible
+	sudo add-apt-repository ppa:ansible/ansible
 
 #04_ Instalando o Ansible no Linux Mint
 
+	sudo apt update
 	sudo apt install ansible
 
 #03_ Verificando a Versão do Ansible<br>
