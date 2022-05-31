@@ -22,37 +22,22 @@
 	sudo apt autoremove
 	sudo apt autoclean
 
-#02_ Instalando as Dependências do Ansible no Linux Mint<br>
+#02_ Download do VMware Workstation Pro 16 (Build 16.2.3)<br>
 
-	sudo apt install software-properties-common
+	Link: https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html
+	Versão: Workstation 16 Pro for Linux
 
-#03_ Adicionando o PPA Oficial do Ansible no Linux Mint<br>
+#03_ Alterando as Permissões de Execução do Binário do VMware Workstation Por<br>
 
-	sudo add-apt-repository --yes --update ppa:ansible/ansible
+	01_ Acessar o diretório de download;
+	02_ Botão direito do mouse no binário do VMware;
+	03_ Selecionar o opção: Propriedade;
+	04_ Acessar a aba: Permissões;
+	05_ Clicar na opção: Permitir execução do arquivo como um programa.
+	<Fechar>
 
-#04_ Instalando o Ansible no Linux Mint
+#04_ Instalando o VMware Workstation Pro no Linux Mint<br>
 
-	sudo apt install ansible
-
-#03_ Verificando a Versão do Ansible<br>
-
-	ansible --version
-
-#04_ Criando o Arquivo de Inventário dos Hosts do Ansible
-
-	sudo vim /etc/ansible/hosts
-		[servers]
-		ptispo01ws01 ansible_host=172.16.1.20
-
-		[all:vars]
-		ansible_python_interpreter=/usr/bin/python3
-	ansible-inventory --list -y
-
-#5_ Testando a conexão do Ansible com o Host Remoto<br>
-
-	ansible all -m ping -u vaamonde
-
-#06_ Executando um comando no Host Remoto<br>
-
-	ansible all -a "df -h" -u vaamonde
-
+	01_ Nas pasta de download, clicar com o botão esquerdo do mouse e selecionar: Abrir no Terminal;
+	02_ Digitar o comando: sudo ./VMware-Workstation-Full-16.2.3-19376536.x86_64.bundle
+	03_ Digitar a senha do seu usuário e aguardar a finalização da instalação.
