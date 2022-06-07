@@ -13,34 +13,34 @@
 
 #Instalação do VirtualBOX no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
-#Tecnologias de Virtualização de Processadores AMD e Intel
-vmx – Intel VT-x, suporte a virtualização ativada na BIOS.
+#Tecnologias de Virtualização de Processadores AMD e Intel<br>
+vmx – Intel VT-x, suporte a virtualização ativada na BIOS.<br>
 svm – AMD SVM, suporte a virtualização ativada na BIOS.
 
-#AES dos Processadores da AMD e Intel
-aes – Aplicativos que executam criptografia e descriptografia usando o Advanced 
+#AES dos Processadores da AMD e Intel<br>
+aes – Aplicativos que executam criptografia e descriptografia usando o Advanced<br> 
 Encryption Standard em processadores Intel e AMD.
 
-#Flags dos Processadores da Intel
-ept – Suporte de tabela de páginas estendidas da Intel habilitado para tornar 
-mais rápida a emulação de tabelas de páginas de convidados.
-vpid – ID do processador virtual da Intel. Faça descargas de TLB caras 
-desnecessárias quando alternar o contexto entre os convidados.
-tpr_shadow e flexpriority – Recurso da Intel que reduz as chamadas para o 
-hypervisor ao acessar o Registro de prioridade de tarefas, o que ajuda na execução 
-de determinados tipos de convidados do SMP.
+#Flags dos Processadores da Intel<br>
+ept – Suporte de tabela de páginas estendidas da Intel habilitado para tornar<br>
+mais rápida a emulação de tabelas de páginas de convidados.<br>
+vpid – ID do processador virtual da Intel. Faça descargas de TLB caras<br> 
+desnecessárias quando alternar o contexto entre os convidados.<br>
+tpr_shadow e flexpriority – Recurso da Intel que reduz as chamadas para o<br> 
+hypervisor ao acessar o Registro de prioridade de tarefas, o que ajuda na execução<br>
+de determinados tipos de convidados do SMP.<br>
 vnmi – O Intel Virtual NMI ajuda com eventos de interrupção selecionados em convidados.
 
-#Flags dos Processadores da AMD
-npt – Tabelas de Páginas Aninhadas AMD, semelhantes ao Intel EPT.
-lbrv – Suporte de virtualização da AMD LBR.
-svm_lock – MSR de bloqueio AMD SVM.
-nrip_save – AMD SVM next_rip salvar.
-tsc_scale – Suporte de dimensionamento do AMD TSC.
-vmcb_clean – Suporte para bits limpos AMD VMCB.
-flushbyasid – Suporte para AMD flush-by-ASID.
-decodeassists – AMD Decode Assistir ao suporte.
-pausefilter – Interrupção de pausa filtrada AMD.
+#Flags dos Processadores da AMD<br>
+npt – Tabelas de Páginas Aninhadas AMD, semelhantes ao Intel EPT.<br>
+lbrv – Suporte de virtualização da AMD LBR.<br>
+svm_lock – MSR de bloqueio AMD SVM.<br>
+nrip_save – AMD SVM next_rip salvar.<br>
+tsc_scale – Suporte de dimensionamento do AMD TSC.<br>
+vmcb_clean – Suporte para bits limpos AMD VMCB.<br>
+flushbyasid – Suporte para AMD flush-by-ASID.<br>
+decodeassists – AMD Decode Assistir ao suporte.<br>
+pausefilter – Interrupção de pausa filtrada AMD.<br>
 pfthreshold – AMD pausa o limite do filtro.
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
