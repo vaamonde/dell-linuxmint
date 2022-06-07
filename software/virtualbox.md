@@ -14,22 +14,25 @@
 #Instalação do VirtualBOX no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Tecnologias de Virtualização de Processadores AMD e Intel<br>
-vmx – Intel VT-x, suporte a virtualização ativada na BIOS.<br>
-svm – AMD SVM, suporte a virtualização ativada na BIOS.
+
+	vmx – Intel VT-x, suporte a virtualização ativada na BIOS.
+	svm – AMD SVM, suporte a virtualização ativada na BIOS.
 
 #AES dos Processadores da AMD e Intel<br>
-aes – Aplicativos que executam criptografia e descriptografia usando o Advanced<br> 
-Encryption Standard em processadores Intel e AMD.
+
+	aes – Aplicativos que executam criptografia e descriptografia usando o Advanced
+	Encryption Standard em processadores Intel e AMD.
 
 #Flags dos Processadores da Intel<br>
-ept – Suporte de tabela de páginas estendidas da Intel habilitado para tornar<br>
-mais rápida a emulação de tabelas de páginas de convidados.<br>
-vpid – ID do processador virtual da Intel. Faça descargas de TLB caras<br> 
-desnecessárias quando alternar o contexto entre os convidados.<br>
-tpr_shadow e flexpriority – Recurso da Intel que reduz as chamadas para o<br> 
-hypervisor ao acessar o Registro de prioridade de tarefas, o que ajuda na execução<br>
-de determinados tipos de convidados do SMP.<br>
-vnmi – O Intel Virtual NMI ajuda com eventos de interrupção selecionados em convidados.
+
+	ept – Suporte de tabela de páginas estendidas da Intel habilitado para tornar
+	mais rápida a emulação de tabelas de páginas de convidados.
+	vpid – ID do processador virtual da Intel. Faça descargas de TLB caras
+	desnecessárias quando alternar o contexto entre os convidados.
+	tpr_shadow e flexpriority – Recurso da Intel que reduz as chamadas para o
+	hypervisor ao acessar o Registro de prioridade de tarefas, o que ajuda na execução
+	de determinados tipos de convidados do SMP.
+	vnmi – O Intel Virtual NMI ajuda com eventos de interrupção selecionados em convidados.
 
 #Flags dos Processadores da AMD<br>
 
