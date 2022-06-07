@@ -11,7 +11,11 @@
 #Versão: 0.01<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
-#Instalação do Docker no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Instalação do Docker CE no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+
+#00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
+
+	sudo cat /etc/os-release
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 
@@ -54,4 +58,3 @@
 	docker version
 	docker info
 	docker-compose
-

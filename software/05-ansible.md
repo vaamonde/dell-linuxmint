@@ -7,11 +7,15 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 31/05/2022<br>
-#Versão: 0.01<br>
+#Data de atualização: 07/06/2022<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
-#Instalação do Docker no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Instalação do Ansible no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+
+#00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
+
+	sudo cat /etc/os-release
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 
@@ -35,11 +39,11 @@
 	sudo apt update
 	sudo apt install ansible
 
-#03_ Verificando a Versão do Ansible<br>
+#05_ Verificando a Versão do Ansible<br>
 
 	ansible --version
 
-#04_ Criando o Arquivo de Inventário dos Hosts do Ansible
+#06_ Criando o Arquivo de Inventário dos Hosts do Ansible
 
 	sudo vim /etc/ansible/hosts
 		[servers]
@@ -47,13 +51,14 @@
 
 		[all:vars]
 		ansible_python_interpreter=/usr/bin/python3
+	
 	ansible-inventory --list -y
 
-#5_ Testando a conexão do Ansible com o Host Remoto<br>
+#07_ Testando a conexão do Ansible com o Host Remoto<br>
 
 	ansible all -m ping -u vaamonde
 
-#06_ Executando um comando no Host Remoto<br>
+#08_ Executando um comando no Host Remoto<br>
 
 	ansible all -a "df -h" -u vaamonde
 
