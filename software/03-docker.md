@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 31/05/2022<br>
-#Versão: 0.01<br>
+#Data de atualização: 07/06/2022<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Instalação do Docker CE no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
@@ -49,6 +49,7 @@
 
 #07_ Adicionando o Usuário Local no Grupo do Docker CE<br>
 
+	#opções do comando usermod: -a (append), -G (groups)
 	sudo usermod -a -G docker vaamonde
 	newgrp
 	sudo reboot
@@ -58,4 +59,17 @@
 	sudo systemctl status docker
 	docker version
 	docker info
-	docker-compose
+	docker-compose version
+
+#09_ Iniciando um Container de Teste do Docker CE<br>
+
+	docker run hello-world
+
+#10_ Iniciando um Container de Teste do Ubuntu no Docker CE<br>
+
+	#opções do comando docker: run (Run a command in a new container), -i (interactive), -t (tty)
+	docker run -it ubuntu bash
+
+#11_ Verificando as Imagens dos Container no Docker CE<br>
+
+	docker images
