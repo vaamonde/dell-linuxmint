@@ -15,6 +15,7 @@
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
 	sudo cat /etc/os-release
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
