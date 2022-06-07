@@ -32,16 +32,17 @@ de determinados tipos de convidados do SMP.<br>
 vnmi – O Intel Virtual NMI ajuda com eventos de interrupção selecionados em convidados.
 
 #Flags dos Processadores da AMD<br>
-npt – Tabelas de Páginas Aninhadas AMD, semelhantes ao Intel EPT.<br>
-lbrv – Suporte de virtualização da AMD LBR.<br>
-svm_lock – MSR de bloqueio AMD SVM.<br>
-nrip_save – AMD SVM next_rip salvar.<br>
-tsc_scale – Suporte de dimensionamento do AMD TSC.<br>
-vmcb_clean – Suporte para bits limpos AMD VMCB.<br>
-flushbyasid – Suporte para AMD flush-by-ASID.<br>
-decodeassists – AMD Decode Assistir ao suporte.<br>
-pausefilter – Interrupção de pausa filtrada AMD.<br>
-pfthreshold – AMD pausa o limite do filtro.
+
+	npt – Tabelas de Páginas Aninhadas AMD, semelhantes ao Intel EPT.
+	lbrv – Suporte de virtualização da AMD LBR.
+	svm_lock – MSR de bloqueio AMD SVM.
+	nrip_save – AMD SVM next_rip salvar.
+	tsc_scale – Suporte de dimensionamento do AMD TSC.
+	vmcb_clean – Suporte para bits limpos AMD VMCB.
+	flushbyasid – Suporte para AMD flush-by-ASID.
+	decodeassists – AMD Decode Assistir ao suporte.
+	pausefilter – Interrupção de pausa filtrada AMD.
+	pfthreshold – AMD pausa o limite do filtro.
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
