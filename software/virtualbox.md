@@ -81,5 +81,4 @@
 
 #05_ Baixando e Instalando o Pacote de Extensões do VirtualBOX<br>
 
-	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX
-	via download do site Oficial.
+	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
