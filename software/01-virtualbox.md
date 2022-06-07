@@ -51,6 +51,8 @@
 
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
 	sudo cat /etc/os-release
+	
+	#opções docomando inxi: -C (cpu), -M (machine), -S (system), -f (flags), -xxx (extra 3)
 	sudo inxi -CMSfxxx
 	sudo lscpu
 
@@ -66,7 +68,7 @@
 
 #02_ Adicionando o Repositório do VirtualBOX<br>
 
-	#opção do comando sh: -c ( Read commands from the command_string operand in‐stead of from the standard input.)
+	#opção do comando sh: -c (Read commands from the command_string operand in‐stead of from the standard input.)
 	sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian focal contrib" >> /etc/apt/sources.list.d/virtualbox.list'
 
 #03_ Baixando e Instalando as Chaves de Autenticação do VirtualBOX<br>
