@@ -113,7 +113,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		no Gerenciador de Driver, o Driver já está funcionando Perfeitamente mesmo depois de instalar
 		o Kernel OEM.
 
-		OBS: só usar esses comando se for realmente necessário.
+		OBS: só usar esse comando se for realmente necessário.
 		sudo apt update
 		sudo apt install firmware-b43-installer firmware-b43legacy-installer
 		sudo reboot (Reinicializar o Sistema)
