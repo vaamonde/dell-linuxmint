@@ -51,8 +51,10 @@
 
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
 	sudo cat /etc/os-release
+	
+	#opções docomando inxi: -C (cpu), -M (machine), -S (system), -f (flags), -xxx (extra 3)
 	sudo inxi -CMSfxxx
-	sudo lscpu
+	sudo lscpupu
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 
