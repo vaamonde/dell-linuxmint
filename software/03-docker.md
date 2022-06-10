@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 07/06/2022<br>
-#Versão: 0.02<br>
+#Data de atualização: 10/06/2022<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Instalação do Docker CE no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
@@ -51,8 +51,9 @@
 #07_ Adicionando o Usuário Local no Grupo do Docker CE<br>
 
 	#opções do comando usermod: -a (append), -G (groups)
-	sudo usermod -a -G docker vaamonde
-	newgrp
+	sudo usermod -a -G docker $USER	
+	newgrp docker
+	id
 	sudo reboot
 
 #08_ Verificando o serviço do Docker CE e Versão<br>
@@ -61,16 +62,30 @@
 	docker version
 	docker info
 	docker-compose version
+	docker system info
 
 #09_ Iniciando um Container de Teste do Docker CE<br>
 
+	#opção do comando docker: run (Run a command in a new container)
 	docker run hello-world
 
 #10_ Iniciando um Container de Teste do Ubuntu no Docker CE<br>
 
 	#opções do comando docker: run (Run a command in a new container), -i (interactive), -t (tty)
 	docker run -it ubuntu bash
+		cat /etc/os-release
+		apt update
+		apt install net-tools iputils-ping
+		exit
 
 #11_ Verificando as Imagens dos Container no Docker CE<br>
 
+	#opção do comando docker: images (List images container on system)
 	docker images
+
+#12_ Limpando todas as Imagens, Contêineres, Volumes e Redes no Docker CE<br>
+
+	#opção do comando docker: prune (Remove unused data), rmi (Remove one or more images)
+	docker system prune
+	docker rmi hello-world:latest
+	docker rmi ubuntu:latest
