@@ -57,9 +57,11 @@
 
 #07_ Testando a conexão do Ansible com o Host Remoto<br>
 
+	#opções do comando ansible: -a (), -u ()
 	ansible all -m ping -u vaamonde
 
 #08_ Executando um comando no Host Remoto<br>
 
+	#opções do comando ansible: -a (), -u ()
 	ansible all -a "df -h" -u vaamonde
 

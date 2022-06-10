@@ -5,8 +5,8 @@
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 25/08/2021
-# Data de atualização: 30/08/2021
-# Versão: 0.03
+# Data de atualização: 10/06/2022
+# Versão: 0.04
 # Testado e homologado para a versão do Linux Mint 20.1 Ulyssa e 20.2 Uma x64
 # Testado e homologado para a versão do Arduino IDE v2.0.x BETA e Fritzing v0.9.x
 #
@@ -75,8 +75,8 @@ USUARIO=$(echo $USER)
 # opção da variável de ambiente $0: nome do comando ou script digitado
 LOG="$HOME/$(echo $0 | cut -d'/' -f2)"
 #
-# Declarando as variáveis de download do Arduino IDE e do Fritzing (Links atualizados no dia 25/08/2021)
-ARDUINO="https://downloads.arduino.cc/arduino-ide/arduino-ide_2.0.0-beta.11_Linux_64bit.zip"
+# Declarando as variáveis de download do Arduino IDE e do Fritzing (Links atualizados no dia 10/06/2022)
+ARDUINO="https://downloads.arduino.cc/arduino-ide/arduino-ide_2.0.0-rc7_Linux_64bit.zip"
 FRITZING="https://github.com/fritzing/fritzing-parts.git"
 #
 # Script de instalação do Arduino IDE 2.0.x e do Fritzing no Linux Mint 20.1 Ulyssa ou 20.2 Uma 

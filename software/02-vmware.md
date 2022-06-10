@@ -52,7 +52,7 @@
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
 	sudo cat /etc/os-release
 	
-	#opções docomando inxi: -C (cpu), -M (machine), -S (system), -f (flags), -xxx (extra 3)
+	#opções do comando inxi: -C (cpu), -M (machine), -S (system), -f (flags), -xxx (extra 3)
 	sudo inxi -CMSfxxx
 	sudo lscpupu
 
@@ -82,5 +82,5 @@
 #04_ Instalando o VMware Workstation Pro no Linux Mint<br>
 
 	01_ Na pasta de Download, clicar com o botão esquerdo do mouse e selecionar: Abrir no Terminal;
-	02_ Digitar o comando: sudo ./VMware-Workstation-Full-16.2.3-19376536.x86_64.bundle
+	02_ Digitar o comando: sudo ./VMware-Workstation-Full-*.bundle
 	03_ Digitar a senha do seu usuário e aguardar a finalização da instalação.

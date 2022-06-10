@@ -33,6 +33,7 @@
 
 #03_Adicionando a Chave GPG do Docker CE no Linux Mint<br>
 
+	#opções do comando curl: -f (fail), -s (silent), -S (show-error), -L (location)
 	curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 #04_ Adicionando o Repositório do Docker CE no Linux Mint<br>
