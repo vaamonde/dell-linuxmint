@@ -31,7 +31,7 @@
 
 	sudo apt install apt-transport-https ca-certificates curl software-properties-common
 
-#03_Adicionando a Chave GPG do Docker CE no Linux Mint<br>
+#03_ Adicionando a Chave GPG do Docker CE no Linux Mint<br>
 
 	#opções do comando curl: -f (fail), -s (silent), -S (show-error), -L (location)
 	curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -85,9 +85,10 @@
 	#opção do comando docker: images (List images container on system)
 	docker images
 
-#12_ Limpando todas as Imagens, Contêineres, Volumes e Redes no Docker CE<br>
+#12_ Limpando todas as Imagens, Container, Volumes e Redes no Docker CE<br>
 
 	#opção do comando docker: prune (Remove unused data), rmi (Remove one or more images)
 	docker system prune
 	docker rmi hello-world:latest
 	docker rmi ubuntu:latest
+	docker images

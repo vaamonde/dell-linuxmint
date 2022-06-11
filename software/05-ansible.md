@@ -48,7 +48,7 @@
 
 	sudo vim /etc/ansible/hosts
 		[servers]
-		ptispo01ws01 ansible_host=172.16.1.20
+		ubuntu2204 ansible_host=192.168.0.250
 
 		[all:vars]
 		ansible_python_interpreter=/usr/bin/python3
@@ -58,18 +58,19 @@
 
 #07_ Criando o par de chaves Pública/Privada do Host Remoto<br>
 
+	ssh vaamonde@192.168.0.250
 	ssh-keygen
 		Enter file in which to save the key (/home/vaamonde/.ssh/id_rsa): <Enter>
 		Enter passphrase (empty for no passphrase): <Enter>
 		Enter same passphrase again: <Enter>
-	ssh-copy-id 192.168.1.131
+	ssh-copy-id 192.168.0.250
 
 #08_ Testando a conexão do Ansible com o Host Remoto<br>
 
 	#opções do comando ansible: all (all hosts inventory), -m (module-name), -u (user)
 	ansible all -m ping -u vaamonde
 
-#19_ Executando um comando no Host Remoto com o Módulo Shell<br>
+#19_ Executando comandos no Host Remoto com o Módulo Shell<br>
 
 	#opções do comando ansible: all (all hosts inventory), -m (module-name), -a (args), -u (user)
 	ansible all -m shell -a "cat /etc/os-release" -u vaamonde
