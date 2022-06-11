@@ -54,6 +54,8 @@
 	sudo usermod -a -G docker $USER	
 	newgrp docker
 	id
+	
+	#recomendado reinicializar a máquina para aplicar as permissões
 	sudo reboot
 
 #08_ Verificando o serviço do Docker CE e Versão<br>

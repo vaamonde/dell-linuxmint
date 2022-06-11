@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 07/06/2022<br>
-#Versão: 0.02<br>
+#Data de atualização: 10/06/2022<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Instalação do Ansible no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
@@ -38,7 +38,7 @@
 #04_ Instalando o Ansible no Linux Mint
 
 	sudo apt update
-	sudo apt install ansible
+	sudo apt install ansible vim git
 
 #05_ Verificando a Versão do Ansible<br>
 
@@ -53,15 +53,25 @@
 		[all:vars]
 		ansible_python_interpreter=/usr/bin/python3
 	
+	#opção do comando ansible-inventory: list ( Output all hosts info, works as inventory script), y (yaml)
 	ansible-inventory --list -y
 
-#07_ Testando a conexão do Ansible com o Host Remoto<br>
+#07_ Criando o par de chaves Pública/Privada do Host Remoto<br>
 
-	#opções do comando ansible: -a (), -u ()
+	ssh-keygen
+		Enter file in which to save the key (/home/vaamonde/.ssh/id_rsa): <Enter>
+		Enter passphrase (empty for no passphrase): <Enter>
+		Enter same passphrase again: <Enter>
+	ssh-copy-id 192.168.1.131
+
+#08_ Testando a conexão do Ansible com o Host Remoto<br>
+
+	#opções do comando ansible: all (all hosts inventory), -m (module-name), -u (user)
 	ansible all -m ping -u vaamonde
 
-#08_ Executando um comando no Host Remoto<br>
+#19_ Executando um comando no Host Remoto com o Módulo Shell<br>
 
-	#opções do comando ansible: -a (), -u ()
-	ansible all -a "df -h" -u vaamonde
-
+	#opções do comando ansible: all (all hosts inventory), -m (module-name), -a (args), -u (user)
+	ansible all -m shell -a "cat /etc/os-release" -u vaamonde
+	ansible all -m shell -a "free -h" -u vaamonde
+	ansible all -m shell -a "df -h" -u vaamonde
