@@ -70,3 +70,32 @@ Vagrant Cloud Box: https://app.vagrantup.com/boxes/search
 
 	#opção do comando vagrant: ssh (connects to machine via SSH)
 	vagrant ssh
+
+#10_ Verificando as informações da VM criada com o Vagrant<br>
+
+	#opção do comando vagrant: global-status (outputs status Vagrant environments for this user)
+	vagrant global-status
+
+#11_ Desligando a VM criada com o Vagrant<br>
+
+	#opção do comando vagrant: halt (stops the vagrant machine), status (outputs status of the vagrant machine)
+	vagrant halt 3160b44
+	vagrant status 3160b44
+
+#12_ Removendo uma VM criada no Vagrant<br>
+
+	#opção do comando vagrant: destroy (stops and deletes all traces of the vagrant machine)
+	vagrant destroy 3160b44
+		default: Are you sure you want to destroy the 'default' VM? [y/N]
+	vagrant global-status
+
+#13_ Listando todas as BOXES (Imagens) baixadas do Vagrant<br>
+
+	#opção do comando vagrant: box (manages boxes: installation, removal, etc.), list (boxes list)
+	vagrant box list
+
+#14_ Removendo a BOXES (Imagens) baixada do Ubuntu no Vagrant<br>
+
+	#opção do comando vagrant: box (manages boxes: installation, removal, etc.), remove (boxes remove)
+	vagrant box remove generic/ubuntu2004
+	vagrant box list
