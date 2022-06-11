@@ -54,7 +54,7 @@ Vagrant Cloud Box: https://app.vagrantup.com/boxes/search
 
 #07_ Criando o arquivo de configuração da VM Vagrantfile do nosso projeto<br>
 
-	#opção do comando vagrant: init ()
+	#opção do comando vagrant: init (initializes a new Vagrant environment by creating a Vagrantfile)
 	vagrant init generic/ubuntu2004
 	
 	#opções do comando ls: -l (long listing), -h (human-readable)
@@ -63,11 +63,10 @@ Vagrant Cloud Box: https://app.vagrantup.com/boxes/search
 
 #08_ Iniciando o Projeto da VM do Ubuntu no VirtualBOX utilizando o Vagrant<br>
 
-	#opção do comando vagrant: up ()
+	#opção do comando vagrant: up (starts and provisions the vagrant environment)
 	vagrant up
-
 
 #09_ Acessando a VM utilizando o SSH do Vagrant<br>
 
-	#opção do comando vagrant: ssh ()
+	#opção do comando vagrant: ssh (connects to machine via SSH)
 	vagrant ssh
