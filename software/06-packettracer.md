@@ -37,3 +37,7 @@
 
 	01_ Na pasta de Download, clicar duas vezes no Instalador do Cisco Packet Tracer;
 	02_ Seguir os procedimentos na tela.
+
+#04_ Verificando se todas as Bibliotecas do Cisco Packet foram instaladas no Linux Mint<br>
+
+	sudo ldd /op/pt/bin/PacketTracer8

@@ -35,7 +35,7 @@
 
 	sudo add-apt-repository ppa:ansible/ansible
 
-#04_ Instalando o Ansible no Linux Mint
+#04_ Instalando o Ansible no Linux Mint<br>
 
 	sudo apt update
 	sudo apt install ansible vim git
@@ -44,7 +44,7 @@
 
 	ansible --version
 
-#06_ Criando o Arquivo de Inventário dos Hosts do Ansible
+#06_ Criando o Arquivo de Inventário dos Hosts do Ansible no Linux Mint<br>
 
 	sudo vim /etc/ansible/hosts
 		[servers]
@@ -56,7 +56,7 @@
 	#opção do comando ansible-inventory: list ( Output all hosts info, works as inventory script), y (yaml)
 	ansible-inventory --list -y
 
-#07_ Criando o par de chaves Pública/Privada do Host Remoto<br>
+#07_ Criando o par de chaves Pública/Privada do Host Remoto no Linux Mint<br>
 
 	ssh vaamonde@192.168.0.250
 	ssh-keygen
@@ -65,12 +65,12 @@
 		Enter same passphrase again: <Enter>
 	ssh-copy-id 192.168.0.250
 
-#08_ Testando a conexão do Ansible com o Host Remoto<br>
+#08_ Testando a conexão do Ansible com o Host Remoto no Linux Mint<br>
 
 	#opções do comando ansible: all (all hosts inventory), -m (module-name), -u (user)
 	ansible all -m ping -u vaamonde
 
-#09_ Executando comandos no Host Remoto com o Módulo Shell<br>
+#09_ Executando comandos no Host Remoto com o Módulo Shell do Ansible no Linux Mint<br>
 
 	#opções do comando ansible: all (all hosts inventory), -m (module-name), -a (args), -u (user)
 	ansible all -m shell -a "cat /etc/os-release" -u vaamonde

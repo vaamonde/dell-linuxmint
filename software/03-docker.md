@@ -40,7 +40,7 @@
 
 	sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 
-#05_ Atualizando as Lista do Apt com o novo Repositório do Docker CE<br>
+#05_ Atualizando as Lista do Apt com o novo Repositório do Docker CE no Linux Mint<br>
 
 	sudo apt update
 
@@ -48,7 +48,7 @@
 
 	sudo apt install docker-ce docker-compose
 
-#07_ Adicionando o Usuário Local no Grupo do Docker CE<br>
+#07_ Adicionando o Usuário Local no Grupo do Docker CE no Linux Mint<br>
 
 	#opções do comando usermod: -a (append), -G (groups)
 	sudo usermod -a -G docker $USER	

@@ -35,34 +35,34 @@ Link do .NET SDK e Runtime: https://docs.microsoft.com/pt-br/dotnet/core/install
 	sudo apt autoremove
 	sudo apt autoclean
 
-#02_ Instalando as Dependências do PowerShell e do .NET SDK e Runtime
+#02_ Instalando as Dependências do PowerShell e do .NET SDK e Runtime no Linux Mint<br>
 
 	sudo apt install apt-transport-https software-properties-common libc6 libgcc1 \
 	libgssapi-krb5-2 libicu66 libssl1.1 libstdc++6 zlib1g
 
-#03_ Baixando o repositório oficial do PowerShell e do .NET SDK e Runtime
+#03_ Baixando o repositório oficial do PowerShell e do .NET SDK e Runtime no Linux Mint<br>
 	
 	#opção do comando wget: -q (quiet)
 	wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb
 
-#04_ Instalando o repositório oficial do PowerShell e do .NET SDK e Runtime
+#04_ Instalando o repositório oficial do PowerShell e do .NET SDK e Runtime no Linux Mint<br>
 	
 	#opção do comando dpkg: -i (install packet)
 	sudo dpkg -i packages-microsoft-prod.deb
 
-#05_ Atualizando as Lista do Apt com os novos repositórios do Powershell
+#05_ Atualizando as Lista do Apt com os novos repositórios do Powershell no Linux Mint<br>
 	
 	sudo apt update
 
-#06_ Instalando o PowerShell, .NET SDK e Runtime
+#06_ Instalando o PowerShell, .NET SDK e Runtime no Linux Mint<br>
 	
 	sudo apt install powershell dotnet-sdk-6.0 aspnetcore-runtime-6.0
 
-#07_ Rodando o PowerShell no Linux Mint
+#07_ Rodando o PowerShell no Linux Mint<br>
 	
 	pwsh
 
-#08_ Utilizando o PowerShell no Linux Mint
+#08_ Utilizando os comandos Básicos do PowerShell no Linux Mint<br>
 
 	Get-Host		- informações detalhadas do PowerShell
 	Get-Process		- informações de processos

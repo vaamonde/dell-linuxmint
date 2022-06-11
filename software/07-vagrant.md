@@ -46,13 +46,13 @@ Vagrant Cloud Box: https://app.vagrantup.com/boxes/search
 
 	sudo apt vagrant
 
-#06_ Criando o diretório de Projetos do Vagrant<br>
+#06_ Criando o diretório de Projetos do Vagrantno Linux Mint<br>
 
 	#opções do comando mkdir: -p (parents), -v (verbose), ~ (til: alias home directory)
 	mkdir -pv ~/Projetos/Ubuntu2004
 	cd ~/Projetos/Ubuntu2004
 
-#07_ Criando o arquivo de configuração da VM Vagrantfile do nosso projeto<br>
+#07_ Criando o arquivo de configuração da VM Vagrantfile do nosso projeto no Linux Mint<br>
 
 	#opção do comando vagrant: init (initializes a new Vagrant environment by creating a Vagrantfile)
 	vagrant init generic/ubuntu2004
@@ -66,23 +66,23 @@ Vagrant Cloud Box: https://app.vagrantup.com/boxes/search
 	#opção do comando vagrant: up (starts and provisions the vagrant environment)
 	vagrant up
 
-#09_ Acessando a VM utilizando o SSH do Vagrant<br>
+#09_ Acessando a VM do Ubuntu no VirtualBOX utilizando o SSH do Vagrant<br>
 
 	#opção do comando vagrant: ssh (connects to machine via SSH)
 	vagrant ssh
 
-#10_ Verificando as informações da VM criada com o Vagrant<br>
+#10_ Verificando as informações da VM do Ubuntu no VirtualBOX criada com o Vagrant<br>
 
 	#opção do comando vagrant: global-status (outputs status Vagrant environments for this user)
 	vagrant global-status
 
-#11_ Desligando a VM criada com o Vagrant<br>
+#11_ Desligando a VM do Ubuntu no VirtualBOX criada com o Vagrant<br>
 
 	#opção do comando vagrant: halt (stops the vagrant machine), status (outputs status of the vagrant machine)
 	vagrant halt 3160b44
 	vagrant status 3160b44
 
-#12_ Removendo uma VM criada no Vagrant<br>
+#12_ Removendo uma VM do Ubuntu no VirtualBOX criada com o Vagrant<br>
 
 	#opção do comando vagrant: destroy (stops and deletes all traces of the vagrant machine)
 	vagrant destroy 3160b44

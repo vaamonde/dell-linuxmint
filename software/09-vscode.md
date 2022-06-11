@@ -30,17 +30,17 @@ Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 	sudo apt autoremove
 	sudo apt autoclean
 
-#02_ Instalando as Dependências do Microsoft Visual Studio Code VSCode
+#02_ Instalando as Dependências do Microsoft Visual Studio Code VSCode no Linux Mint<br>
 
 	sudo apt install vim git python2 python3 cloc
 
-#03_ Baixando o Microsoft Visual Studio Code VSCode para o Linux Mint
+#03_ Baixando o Microsoft Visual Studio Code VSCode para o Linux Mint<br>
 
 	https://code.visualstudio.com/download
 		Versão: .deb (Debian, Ubuntu 64 Bits)
 			Salvar aquivo
 
-#04_ Instalando o Microsoft Visual Studio Code VSCode utilizando o Gdebi-Gtk do Linux Mint
+#04_ Instalando o Microsoft Visual Studio Code VSCode utilizando o Gdebi-Gtk no Linux Mint<br>
 
 	Arquivos
 		Download
@@ -48,7 +48,7 @@ Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 				Instalar Pacote
 			Fechar
 
-#05_ Verificando o novo repositório do Microsoft Visual Studio Code VSCode no MintUpdate
+#05_ Verificando o novo repositório do Microsoft Visual Studio Code VSCode no MintUpdate<br>
 
 	Menu
 		MintUpdate
@@ -62,7 +62,7 @@ Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 				Fechar
 		Fechar
 
-#06_ Iniciando o Microsoft Visual Studio Code VSCode no Linux Mint
+#06_ Iniciando o Microsoft Visual Studio Code VSCode no Linux Mint<br>
 
 	Menu
 		Busca Indexada
@@ -71,7 +71,7 @@ Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 				Notifications: Pacote PT-BR
 				Disable: Mostrar página inicial na inicialização
 
-#07_ Configurando o Microsoft Visual Studio Code VSCode como Aplicativo de Preferência no Linux Mint
+#07_ Configurando o Microsoft Visual Studio Code VSCode como Aplicativo de Preferência no Linux Mint<br>
 
 	Menu
 		Busca Indexada
@@ -79,7 +79,7 @@ Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 				Texto puro: Visual Studio Code
 				Código fonte: Visual Studio Code
 
-#08_ Instalando e Configurando as Principais Extensões que utilizo no Meu Dia a Dia
+#08_ Instalando e Configurando as Principais Extensões que utilizo no Meu Dia a Dia<br>
 
 	Portuguese (Brazil) Language Pack for Visual Studio Code
 		(Sem necessidade de configuração)
@@ -129,7 +129,7 @@ Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 	Powershell
 		(Sem necessidade de configuração)
 
-#09_ Configurações principais do Microsoft Visual Studio Code VSCode para funcionar perfeitamente no Linux Mint
+#09_ Configurações principais do Microsoft Visual Studio Code VSCode para funcionar perfeitamente no Linux Mint<br>
 
 	Gerenciar
 		Configurações

@@ -66,24 +66,24 @@
     sudo apt autoclean
     sudo apt clean
 
-#02_ Adicionando o Repositório do VirtualBOX<br>
+#02_ Adicionando o Repositório do Oracle VirtualBOX no Linux Mint<br>
 
-	#opção do comando sh: -c (Read commands from the command_string operand in‐stead of from the standard input.)
+	#opção do comando sh: -c (Read commands from the command_string operand in‐stead of from the standard input)
 	sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian focal contrib" >> /etc/apt/sources.list.d/virtualbox.list'
 
-#03_ Baixando e Instalando as Chaves de Autenticação do VirtualBOX<br>
+#03_ Baixando e Instalando as Chaves de Autenticação GPG do Oracle VirtualBOX no Linux Mint<br>
 
 	#opções do comando wget: -q (quiet), -O (output-document)
 	wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 	wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
 
-#04_ Instalando o VirtualBOX<br>
+#04_ Instalando o Oracle VirtualBOX no Linux Mint<br>
 
 	sudo apt update
 	sudo apt install virtualbox-6.1 cpu-checker libvirt-clients
 	sudo kvm-ok
 	sudo virt-host-validate
 
-#05_ Baixando e Instalando o Pacote de Extensões do VirtualBOX<br>
+#05_ Baixando e Instalando o Pacote de Extensões do Oracle VirtualBOX<br>
 
 	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.

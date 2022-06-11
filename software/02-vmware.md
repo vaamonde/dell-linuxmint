@@ -72,15 +72,15 @@
 
 #03_ Alterando as Permissões de Execução do Binário do VMware Workstation Pro<br>
 
-	01_ Acessar o diretório de download;
-	02_ Botão direito do mouse no binário do VMware;
-	03_ Selecionar o opção: Propriedade;
+	01_ Acessar o diretório de Download;
+	02_ Clicar com o Botão direito do mouse no binário do VMware-Workstation-Full-*.bundle;
+	03_ No Menu selecionar o opção: Propriedade;
 	04_ Acessar a aba: Permissões;
 	05_ Clicar na opção: Permitir execução do arquivo como um programa.
 	<Fechar>
 
 #04_ Instalando o VMware Workstation Pro no Linux Mint<br>
 
-	01_ Na pasta de Download, clicar com o botão esquerdo do mouse e selecionar: Abrir no Terminal;
+	01_ Na pasta de Download, clicar com o botão direito do mouse e selecionar: Abrir no Terminal;
 	02_ Digitar o comando: sudo ./VMware-Workstation-Full-*.bundle
 	03_ Digitar a senha do seu usuário e aguardar a finalização da instalação.
