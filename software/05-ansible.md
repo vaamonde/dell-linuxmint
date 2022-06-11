@@ -70,7 +70,7 @@
 	#opções do comando ansible: all (all hosts inventory), -m (module-name), -u (user)
 	ansible all -m ping -u vaamonde
 
-#19_ Executando comandos no Host Remoto com o Módulo Shell<br>
+#09_ Executando comandos no Host Remoto com o Módulo Shell<br>
 
 	#opções do comando ansible: all (all hosts inventory), -m (module-name), -a (args), -u (user)
 	ansible all -m shell -a "cat /etc/os-release" -u vaamonde
