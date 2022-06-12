@@ -87,10 +87,11 @@
 #08_ Testando a conexão do Ansible com os Hosts Remotos no Linux Mint<br>
 
 	#opções do comando ansible: all (all hosts inventory), -m (module-name), -u (user)
+	ansible localhost -m ping
 	ansible ubuntu2204 -m ping -u vaamonde
 	ansible webserver -m ping
 
-#09_ Executando comandos no Host Remoto com o Módulo Shell do Ansible no Linux Mint<br>
+#09_ Executando comandos no Host Remoto AD-HOC com o Módulo Shell do Ansible no Linux Mint<br>
 
 	#opções do comando ansible: all (all hosts inventory), -m (module-name), -a (args), -u (user)
 	ansible ubuntu2204 -m shell -a "cat /etc/os-release" -u vaamonde
@@ -101,23 +102,35 @@
 
 	sudo vim /etc/ansible/update.yaml
 
+	#Iniciando a Playbook do Ansible, obrigatório iniciar com --- (três traços)
+	#OBSERVAÇÃO IMPORTANTE: Recuo adequado usando ESPAÇO e NÃO TABS (tabulador)
     ---
-    - hosts: webserver
-      become: yes
+	#Nome do Playbook de atualização do Servidor Ubuntu.
+    - name: Atualização do Servidor Ubuntu
+	  #Os hosts gerenciados para executar as tasks.
+	  hosts: webserver
+      #Escalação de privilégios nos Playbooks
+	  become: yes
       become_user: root
-      tasks:
-              - name: Atualizando o Cache do Sources.List do Apt
-                apt:
+      #As operações a serem executadas chamando os módulos e passando as opções necessárias.
+	  tasks:
+              #Nome da ação de atualizar as listas do Apt
+			  - name: Atualizando o Cache do Sources.List do Apt
+                #Utilização do módulos Apt igual ao comando: apt update
+				apt:
                   update_cache: yes
                   force_apt_get: yes
                   cache_valid_time: 3600
 
-              - name: Atualizando todos os Software do Servidor
-                apt:
+              #Nome da ação de atualizar os software do Servidor
+			  - name: Atualizando todos os Software do Servidor
+                #Utilização do módulos Apt igual ao comando: apt upgrade
+				apt:
                   upgrade: dist
                   force_apt_get: yes
 
 	#opção do comando ansible-playbook: -i (inventory), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
+	ansible-playbook -i hosts update.yaml --syntax-check
 	ansible-playbook -i hosts update.yaml
 	ansible-playbook -i hosts update.yaml -vvv
 
@@ -136,8 +149,12 @@
                   name: apache2
 
 	#opção do comando ansible-playbook: -i (inventory), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
+	ansible-playbook -i hosts apache2.yaml --syntax-check
 	ansible-playbook -i hosts apache2.yaml
 	ansible-playbook -i hosts apache2.yaml -vvv
+, -u (user)
+	#opções do comando ansible: all (all hosts inventory), -m (module-name), -a (args)
+	ansible webserver -m shell -a "apt list apache2"
 
 	#testando o acesso remoto ao servidor Apache2 instalado no Ubuntu Server 22.04	
 	http://192.168.0.250
