@@ -102,30 +102,30 @@
 
 	sudo vim /etc/ansible/update.yaml
 
-	#Iniciando a Playbook do Ansible, obrigatório iniciar com --- (três traços)
-	#OBSERVAÇÃO IMPORTANTE: Recuo adequado usando ESPAÇO e NÃO TABS (tabulador)
+    #Iniciando a Playbook do Ansible, obrigatório iniciar com --- (três traços)
+    #OBSERVAÇÃO IMPORTANTE: Recuo adequado usando ESPAÇO e NÃO TABS (tabulador)
     ---
-	#Nome do Playbook de atualização do Servidor Ubuntu.
+    #Nome do Playbook de atualização do Servidor Ubuntu.
     - name: Atualização do Servidor Ubuntu
-	  #Os hosts gerenciados para executar as tasks.
-	  hosts: webserver
+      #Os hosts gerenciados para executar as tasks.
+      hosts: webserver
       #Escalação de privilégios nos Playbooks
-	  become: yes
+      become: yes
       become_user: root
       #As operações a serem executadas chamando os módulos e passando as opções necessárias.
-	  tasks:
+      tasks:
               #Nome da ação de atualizar as listas do Apt
-			  - name: Atualizando o Cache do Sources.List do Apt
+              - name: Atualizando o Cache do Sources.List do Apt
                 #Utilização do módulos Apt igual ao comando: apt update
-				apt:
+                apt:
                   update_cache: yes
                   force_apt_get: yes
                   cache_valid_time: 3600
 
               #Nome da ação de atualizar os software do Servidor
-			  - name: Atualizando todos os Software do Servidor
+              - name: Atualizando todos os Software do Servidor
                 #Utilização do módulos Apt igual ao comando: apt upgrade
-				apt:
+                apt:
                   upgrade: dist
                   force_apt_get: yes
 
@@ -152,7 +152,7 @@
 	ansible-playbook -i hosts apache2.yaml --syntax-check
 	ansible-playbook -i hosts apache2.yaml
 	ansible-playbook -i hosts apache2.yaml -vvv
-	
+
 	#opções do comando ansible: all (all hosts inventory), -m (module-name), -a (args)
 	ansible webserver -m shell -a "apt list apache2"
 
