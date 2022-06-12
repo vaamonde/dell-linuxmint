@@ -152,7 +152,7 @@
 	ansible-playbook -i hosts apache2.yaml --syntax-check
 	ansible-playbook -i hosts apache2.yaml
 	ansible-playbook -i hosts apache2.yaml -vvv
-, -u (user)
+	
 	#opções do comando ansible: all (all hosts inventory), -m (module-name), -a (args)
 	ansible webserver -m shell -a "apt list apache2"
 
