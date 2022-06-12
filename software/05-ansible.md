@@ -44,7 +44,7 @@
 
 	ansible --version
 
-#06_ Criando o Arquivo de Inventário dos Hosts do Ansible no Linux Mint<br>
+#06_ Criando o Arquivo de Inventário dos Hosts e Log do Ansible no Linux Mint<br>
 
 	sudo vim /etc/ansible/hosts
 
@@ -60,7 +60,18 @@
 	#opção do comando ansible-inventory: list (Output all hosts info, works as inventory script), y (yaml)
 	ansible-inventory --list -y
 
-#07_ Criando o par de chaves Pública/Privada do Host Remoto no Linux Mint<br>
+	sudo vim /etc/ansible/ansible.cfg
+
+	#Configuração do Bloco Padrão Global do Ansible
+	[defaults]
+	log_path=/var/log/ansible.log
+
+	#Criação do arquivo de Log do Ansible
+	sudo touch /var/log/ansible.log
+	#opção do comando chmod: -v (verbose), 666 (User=RW-,Group=RW-Other=RW-)
+	sudo chmod -v 666 /var/log/ansible.log
+
+#07_ Criando o Par de chaves Pública/Privada do Host Remoto no Linux Mint<br>
 
 	#Acessando remotamente o servidor Ubuntu
 	ssh vaamonde@192.168.0.250
