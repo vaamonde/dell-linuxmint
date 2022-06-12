@@ -38,7 +38,7 @@
 #04_ Instalando o Ansible no Linux Mint<br>
 
 	sudo apt update
-	sudo apt install ansible vim git
+	sudo apt install ansible vim git python2 python3
 
 #05_ Verificando a Versão do Ansible<br>
 
@@ -47,32 +47,94 @@
 #06_ Criando o Arquivo de Inventário dos Hosts do Ansible no Linux Mint<br>
 
 	sudo vim /etc/ansible/hosts
+		#Bloco de configuração dos Hosts pertencentes ao grupo 'servers'
 		[servers]
 		ubuntu2204 ansible_host=192.168.0.250
+		webserver ansible_host=192.168.0.250 ansible_user=root
 
+		#Bloco de configuração das Variáveis de todos os Hosts
 		[all:vars]
 		ansible_python_interpreter=/usr/bin/python3
 	
-	#opção do comando ansible-inventory: list ( Output all hosts info, works as inventory script), y (yaml)
+	#opção do comando ansible-inventory: list (Output all hosts info, works as inventory script), y (yaml)
 	ansible-inventory --list -y
 
 #07_ Criando o par de chaves Pública/Privada do Host Remoto no Linux Mint<br>
 
+	#Acessando remotamente o servidor Ubuntu
 	ssh vaamonde@192.168.0.250
+		Are you sure you want to continue connecting (yes/no/[fingerprint])? yes <Enter>
+	
+	#Permitindo o usuário Root se logar remotamente via SSH
+	sudo vim /etc/ssh/sshd_config
+		PermitiRootLogin yes
+	sudo systemctl restart ssh
+	
+	#Habilitando o usuário Root se logar via Terminal e Remotamente via SSH
+	sudo passwd root
+
+	#Gerando o par de chaves Públicas/Privadas no Linux Mint
 	ssh-keygen
 		Enter file in which to save the key (/home/vaamonde/.ssh/id_rsa): <Enter>
 		Enter passphrase (empty for no passphrase): <Enter>
 		Enter same passphrase again: <Enter>
-	ssh-copy-id 192.168.0.250
+	
+	#Copiando a Chave Pública para os Usuário do Ubuntu Server
+	ssh-copy-id vaamonde@192.168.0.250
+	ssh-copy-id root@192.168.0.250
 
 #08_ Testando a conexão do Ansible com o Host Remoto no Linux Mint<br>
 
 	#opções do comando ansible: all (all hosts inventory), -m (module-name), -u (user)
-	ansible all -m ping -u vaamonde
+	ansible ubuntu2204 -m ping -u vaamonde
+	ansible webserver -m ping
 
 #09_ Executando comandos no Host Remoto com o Módulo Shell do Ansible no Linux Mint<br>
 
 	#opções do comando ansible: all (all hosts inventory), -m (module-name), -a (args), -u (user)
-	ansible all -m shell -a "cat /etc/os-release" -u vaamonde
-	ansible all -m shell -a "free -h" -u vaamonde
-	ansible all -m shell -a "df -h" -u vaamonde
+	ansible ubuntu2204 -m shell -a "cat /etc/os-release" -u vaamonde
+	ansible ubuntu2204 -m shell -a "free -h" -u vaamonde
+	ansible ubuntu2204 -m shell -a "df -h" -u vaamonde
+
+#10_ Criando um Playbook básico para Atualizar o Ubuntu Server 22.04<br>
+
+	sudo vim /etc/ansible/update.yaml
+---
+- hosts: webserver
+  become: yes
+  become_user: root
+  tasks:
+          - name: Atualizando o Cache do Sources.List do Apt
+            apt:
+              update_cache: yes
+              force_apt_get: yes
+              cache_valid_time: 3600
+
+          - name: Atualizando todos os Software do Servidor
+            apt:
+              upgrade: dist
+              force_apt_get: yes
+
+	#opção do comando ansible-playbook: -i (inventory), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
+	ansible-playbook -i hosts update.yaml
+	ansible-playbook -i hosts update.yaml -vvv
+
+#11_ Criando um Playbook básico para Instalar o Apache2 no ubuntu Server 22.04<br>
+
+	sudo vim /etc/ansible/apache2.yaml
+---
+- hosts: webserver
+  become: yes
+  become_user: root
+  tasks:
+          - name: Instalando o Apache2 via Ansible no Ubuntu Server 22.04
+            apt:
+              update_cache: yes
+              name: apache2
+
+	#opção do comando ansible-playbook: -i (inventory), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
+	ansible-playbook -i hosts apache2.yaml
+	ansible-playbook -i hosts apache2.yaml -vvv
+
+	#testando o acesso ao servidor Apache2
+	http://192.168.0.250
