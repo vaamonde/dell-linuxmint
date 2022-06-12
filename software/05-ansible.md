@@ -47,14 +47,15 @@
 #06_ Criando o Arquivo de Inventário dos Hosts do Ansible no Linux Mint<br>
 
 	sudo vim /etc/ansible/hosts
-		#Bloco de configuração dos Hosts pertencentes ao grupo 'servers'
-		[servers]
-		ubuntu2204 ansible_host=192.168.0.250
-		webserver ansible_host=192.168.0.250 ansible_user=root
 
-		#Bloco de configuração das Variáveis de todos os Hosts
-		[all:vars]
-		ansible_python_interpreter=/usr/bin/python3
+	#Bloco de configuração dos Hosts pertencentes ao grupo 'servers'
+	[servers]
+	ubuntu2204 ansible_host=192.168.0.250
+	webserver ansible_host=192.168.0.250 ansible_user=root
+
+	#Bloco de configuração das Variáveis de todos os Hosts
+	[all:vars]
+	ansible_python_interpreter=/usr/bin/python3
 	
 	#opção do comando ansible-inventory: list (Output all hosts info, works as inventory script), y (yaml)
 	ansible-inventory --list -y
@@ -70,7 +71,7 @@
 		PermitiRootLogin yes
 	sudo systemctl restart ssh
 	
-	#Habilitando o usuário Root se logar via Terminal e Remotamente via SSH
+	#Permitindo o usuário Root se logar via Terminal e Remotamente via SSH
 	sudo passwd root
 
 	#Gerando o par de chaves Públicas/Privadas no Linux Mint
@@ -79,11 +80,11 @@
 		Enter passphrase (empty for no passphrase): <Enter>
 		Enter same passphrase again: <Enter>
 	
-	#Copiando a Chave Pública para os Usuário do Ubuntu Server
+	#Copiando a Chave Pública para os Usuários do Ubuntu Server
 	ssh-copy-id vaamonde@192.168.0.250
 	ssh-copy-id root@192.168.0.250
 
-#08_ Testando a conexão do Ansible com o Host Remoto no Linux Mint<br>
+#08_ Testando a conexão do Ansible com os Hosts Remotos no Linux Mint<br>
 
 	#opções do comando ansible: all (all hosts inventory), -m (module-name), -u (user)
 	ansible ubuntu2204 -m ping -u vaamonde
@@ -99,11 +100,12 @@
 #10_ Criando um Playbook básico para Atualizar o Ubuntu Server 22.04<br>
 
 	sudo vim /etc/ansible/update.yaml
+
     ---
     - hosts: webserver
-    become: yes
-    become_user: root
-    tasks:
+      become: yes
+      become_user: root
+      tasks:
               - name: Atualizando o Cache do Sources.List do Apt
                 apt:
                   update_cache: yes
@@ -122,11 +124,12 @@
 #11_ Criando um Playbook básico para Instalar o Apache2 no ubuntu Server 22.04<br>
 
 	sudo vim /etc/ansible/apache2.yaml
+
     ---
     - hosts: webserver
-    become: yes
-    become_user: root
-    tasks:
+      become: yes
+      become_user: root
+      tasks:
               - name: Instalando o Apache2 via Ansible no Ubuntu Server 22.04
                 apt:
                   update_cache: yes
@@ -136,5 +139,5 @@
 	ansible-playbook -i hosts apache2.yaml
 	ansible-playbook -i hosts apache2.yaml -vvv
 
-	#testando o acesso ao servidor Apache2
+	#testando o acesso remoto ao servidor Apache2 instalado no Ubuntu Server 22.04	
 	http://192.168.0.250
