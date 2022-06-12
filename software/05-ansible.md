@@ -99,21 +99,21 @@
 #10_ Criando um Playbook básico para Atualizar o Ubuntu Server 22.04<br>
 
 	sudo vim /etc/ansible/update.yaml
----
-- hosts: webserver
-  become: yes
-  become_user: root
-  tasks:
-          - name: Atualizando o Cache do Sources.List do Apt
-            apt:
-              update_cache: yes
-              force_apt_get: yes
-              cache_valid_time: 3600
+    ---
+    - hosts: webserver
+    become: yes
+    become_user: root
+    tasks:
+              - name: Atualizando o Cache do Sources.List do Apt
+                apt:
+                  update_cache: yes
+                  force_apt_get: yes
+                  cache_valid_time: 3600
 
-          - name: Atualizando todos os Software do Servidor
-            apt:
-              upgrade: dist
-              force_apt_get: yes
+              - name: Atualizando todos os Software do Servidor
+                apt:
+                  upgrade: dist
+                  force_apt_get: yes
 
 	#opção do comando ansible-playbook: -i (inventory), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
 	ansible-playbook -i hosts update.yaml
@@ -122,15 +122,15 @@
 #11_ Criando um Playbook básico para Instalar o Apache2 no ubuntu Server 22.04<br>
 
 	sudo vim /etc/ansible/apache2.yaml
----
-- hosts: webserver
-  become: yes
-  become_user: root
-  tasks:
-          - name: Instalando o Apache2 via Ansible no Ubuntu Server 22.04
-            apt:
-              update_cache: yes
-              name: apache2
+    ---
+    - hosts: webserver
+    become: yes
+    become_user: root
+    tasks:
+              - name: Instalando o Apache2 via Ansible no Ubuntu Server 22.04
+                apt:
+                  update_cache: yes
+                  name: apache2
 
 	#opção do comando ansible-playbook: -i (inventory), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
 	ansible-playbook -i hosts apache2.yaml
