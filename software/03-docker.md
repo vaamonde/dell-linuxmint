@@ -68,12 +68,14 @@
 
 #09_ Iniciando um Container de Teste do Docker CE<br>
 
-	#opção do comando docker: run (Run a command in a new container)
+	#opção do comando docker: search (Search the Docker Hub for images), run (Run a command in a new container)
+	docker search hello-world
 	docker run hello-world
 
 #10_ Iniciando um Container de Teste do Ubuntu no Docker CE<br>
 
-	#opções do comando docker: run (Run a command in a new container), -i (interactive), -t (tty)
+	#opções do comando docker: search (Search the Docker Hub for images), run (Run a command in a new container), -i (interactive), -t (tty)
+	docker search ubuntu
 	docker run -it ubuntu bash
 		cat /etc/os-release
 		apt update
@@ -82,8 +84,9 @@
 
 #11_ Verificando as Imagens dos Container no Docker CE<br>
 
-	#opção do comando docker: images (List images container on system)
+	#opção do comando docker: images (List images container on system), ps (List containers)
 	docker images
+	docker ps
 
 #12_ Limpando todas as Imagens, Container, Volumes e Redes no Docker CE<br>
 
