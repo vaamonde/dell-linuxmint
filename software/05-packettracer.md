@@ -46,3 +46,13 @@ Site Oficial do Dev do Cisco Packet Tracer: https://www.packettracernetwork.com/
 
 	#opção do comando ldd: -v (verbose)
 	sudo ldd -v /op/pt/bin/PacketTracer8
+
+	#opção do comando ldd: -v (verbose)
+	sudo ldd /op/pt/bin/PacketTracer8 | grep "not found"
+
+	#instalação das dependências do Cisco Packet Tracer
+	sudo apt install libqt5networkauth5 libqt5script5 libqt5scripttools5
+
+	OBSERVAÇÃO IMPORTANTE: as dependências: libQt5QmlModels.so.5 e o erro: lib/x86_64-linux-gnu/libQt5Core.so.5: 
+	version `Qt_5.15' not found não interfere diretamente no funcionamento do Cisco Packet Tracer no Linux Mint
+	20.3 pois essas dependências fazem referência a versão do Ubuntu >= 21.10: locate libQt5Core
