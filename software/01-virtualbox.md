@@ -83,9 +83,12 @@ Site Oficial do VirtualBOX: https://www.virtualbox.org/
 
 	sudo apt update
 	sudo apt install virtualbox-6.1 cpu-checker libvirt-clients
+
+#05_ Verificando as Informações do suporte a Virtualização no Linux Mint<br>
+	
 	sudo kvm-ok
 	sudo virt-host-validate
 
-#05_ Baixando e Instalando o Pacote de Extensões do Oracle VirtualBOX<br>
+#06_ Baixando e Instalando o Pacote de Extensões do Oracle VirtualBOX<br>
 
 	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
