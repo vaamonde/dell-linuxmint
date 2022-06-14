@@ -129,6 +129,9 @@ Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 	Powershell
 		(Sem necessidade de configuração)
 
+	Ansible
+		(Sem necessidade de configuração)
+
 #09_ Configurações principais do Microsoft Visual Studio Code VSCode para funcionar perfeitamente no Linux Mint<br>
 
 	Gerenciar
