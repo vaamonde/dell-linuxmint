@@ -44,9 +44,9 @@ Vagrant Cloud Box: https://app.vagrantup.com/boxes/search
 
 #05_ Instalando o Vagrant no Linux Mint<br>
 
-	sudo apt vagrant
+	sudo apt install vagrant
 
-#06_ Criando o diretório de Projetos do Vagrantno Linux Mint<br>
+#06_ Criando o diretório de Projetos do Vagrant no Linux Mint<br>
 
 	#opções do comando mkdir: -p (parents), -v (verbose), ~ (til: alias home directory)
 	mkdir -pv ~/Projetos/Ubuntu2004
