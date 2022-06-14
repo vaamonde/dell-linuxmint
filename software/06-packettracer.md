@@ -13,6 +13,10 @@
 
 #Instalação do Cisco Packet Tracer no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
+Site Oficial do Netacad: https://www.netacad.com/pt-br<br>
+Cursos Oficiais do Cisco Packet Tracer: https://www.netacad.com/pt-br/courses/packet-tracer<br>
+Site Oficial do Dev do Cisco Packet Tracer: https://www.packettracernetwork.com/
+
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
@@ -40,4 +44,5 @@
 
 #04_ Verificando se todas as Bibliotecas do Cisco Packet foram instaladas no Linux Mint<br>
 
-	sudo ldd /op/pt/bin/PacketTracer8
+	#opção do comando ldd: -v (verbose)
+	sudo ldd -v /op/pt/bin/PacketTracer8

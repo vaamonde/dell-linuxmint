@@ -13,6 +13,8 @@
 
 #Instalação do VirtualBOX no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
+Site Oficial do VirtualBOX: https://www.virtualbox.org/
+
 #Tecnologias de Virtualização de Processadores AMD e Intel<br>
 
 	vmx – Intel VT-x, suporte a virtualização ativada na BIOS.

@@ -13,6 +13,9 @@
 
 #Instalação do Docker CE no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
+Site Oficial do Docker: https://www.docker.com/<br>
+Site Oficial do Docker Hub: https://hub.docker.com/search?q=
+
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
@@ -50,15 +53,15 @@
 
 #07_ Adicionando o Usuário Local no Grupo do Docker CE no Linux Mint<br>
 
-	#opções do comando usermod: -a (append), -G (groups)
-	sudo usermod -a -G docker $USER	
+	#opções do comando usermod: -a (append), -G (groups), $USER (environment variable)
+	sudo usermod -a -G docker $USER
 	newgrp docker
 	id
 	
 	#recomendado reinicializar a máquina para aplicar as permissões
 	sudo reboot
 
-#08_ Verificando o serviço do Docker CE e Versão<br>
+#08_ Verificando o serviço do Docker CE, Docker Compose e Versão<br>
 
 	sudo systemctl status docker
 	docker version
@@ -72,7 +75,7 @@
 	docker search hello-world
 	docker run hello-world
 
-#10_ Iniciando um Container de Teste do Ubuntu no Docker CE<br>
+#10_ Iniciando um Container de Teste do Ubuntu Bash no Docker CE<br>
 
 	#opções do comando docker: search (Search the Docker Hub for images), run (Run a command in a new container), -i (interactive), -t (tty)
 	docker search ubuntu

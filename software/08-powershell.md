@@ -13,13 +13,13 @@
 
 #Instalação do Microsoft Powershell no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
-Link do PowerShell: https://docs.microsoft.com/pt-br/powershell/scripting/overview?view=powershell-7.2<br>
-Link do .NET SDK: https://docs.microsoft.com/pt-br/dotnet/core/sdk<br>
-Link do .NET Runtime: https://docs.microsoft.com/pt-br/dotnet/framework/get-started/
+Site Oficial do PowerShell: https://docs.microsoft.com/pt-br/powershell/scripting/overview?view=powershell-7.2<br>
+Site Oficial do .NET SDK: https://docs.microsoft.com/pt-br/dotnet/core/sdk<br>
+Site Oficial do .NET Runtime: https://docs.microsoft.com/pt-br/dotnet/framework/get-started/
 
 
-Link do PowerShell: https://docs.microsoft.com/pt-br/powershell/scripting/install/install-ubuntu?view=powershell-7.2<br>
-Link do .NET SDK e Runtime: https://docs.microsoft.com/pt-br/dotnet/core/install/linux-ubuntu#2004-
+Documentação do PowerShell: https://docs.microsoft.com/pt-br/powershell/scripting/install/install-ubuntu?view=powershell-7.2<br>
+Documentação do .NET SDK e Runtime: https://docs.microsoft.com/pt-br/dotnet/core/install/linux-ubuntu#2004-
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 

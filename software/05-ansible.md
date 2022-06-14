@@ -13,6 +13,8 @@
 
 #Instalação do Ansible no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
+Site Oficial do Ansible: https://www.ansible.com/
+
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
@@ -68,6 +70,7 @@
 
 	#Criação do arquivo de Log do Ansible
 	sudo touch /var/log/ansible.log
+	
 	#opção do comando chmod: -v (verbose), 666 (User=RW-,Group=RW-Other=RW-)
 	sudo chmod -v 666 /var/log/ansible.log
 
@@ -109,7 +112,7 @@
 	ansible ubuntu2204 -m shell -a "free -h" -u vaamonde
 	ansible ubuntu2204 -m shell -a "df -h" -u vaamonde
 
-#10_ Criando um Playbook básico para Atualizar o Ubuntu Server 22.04<br>
+#10_ Criando um Playbook Básico para Atualizar o Ubuntu Server 22.04<br>
 
 	sudo vim /etc/ansible/update.yaml
 
@@ -145,7 +148,7 @@
 	ansible-playbook -i hosts update.yaml
 	ansible-playbook -i hosts update.yaml -vvv
 
-#11_ Criando um Playbook básico para Instalar o Apache2 no ubuntu Server 22.04<br>
+#11_ Criando um Playbook Básico para Instalar o Apache2 no Ubuntu Server 22.04<br>
 
 	sudo vim /etc/ansible/apache2.yaml
 

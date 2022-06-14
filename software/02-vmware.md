@@ -13,6 +13,8 @@
 
 #Instalação do VMware Workstation no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
+Site Oficial do VMware Workstation: https://www.vmware.com/br/products/workstation-pro.html
+
 #Tecnologias de Virtualização de Processadores AMD e Intel<br>
 
 	vmx – Intel VT-x, suporte a virtualização ativada na BIOS.

@@ -13,7 +13,7 @@
 
 #Instalação do Microsoft Visual Studio Code VSCode no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
-Link do Visual Studio Code: https://code.visualstudio.com/<br>
+Site Oficial do Visual Studio Code: https://code.visualstudio.com/<br>
 Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
