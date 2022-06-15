@@ -22,6 +22,7 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
 	sudo cat /etc/os-release
+	sudo cinnamon --version
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 
@@ -57,4 +58,4 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 
 	OBSERVAÇÃO IMPORTANTE: as dependências: libQt5QmlModels.so.5 e o erro: lib/x86_64-linux-gnu/libQt5Core.so.5: 
 	version `Qt_5.15' not found não interfere diretamente no funcionamento do Cisco Packet Tracer no Linux Mint
-	20.3 pois essas dependências fazem parte da versão do Ubuntu >= 21.10: sudo locate libQt5Core
+	20.3 pois essas dependências fazem parte da versão do Ubuntu >= 21.04: sudo locate libQt5Core
