@@ -17,7 +17,6 @@ Site Oficial do PowerShell: https://docs.microsoft.com/pt-br/powershell/scriptin
 Site Oficial do .NET SDK: https://docs.microsoft.com/pt-br/dotnet/core/sdk<br>
 Site Oficial do .NET Runtime: https://docs.microsoft.com/pt-br/dotnet/framework/get-started/
 
-
 Documentação do PowerShell: https://docs.microsoft.com/pt-br/powershell/scripting/install/install-ubuntu?view=powershell-7.2<br>
 Documentação do .NET SDK e Runtime: https://docs.microsoft.com/pt-br/dotnet/core/install/linux-ubuntu#2004-
 

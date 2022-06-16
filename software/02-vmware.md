@@ -13,7 +13,8 @@
 
 #Instalação do VMware Workstation no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
-Site Oficial do VMware Workstation: https://www.vmware.com/br/products/workstation-pro.html
+Site Oficial do VMware Workstation: https://www.vmware.com/br/products/workstation-pro.html<br>
+Site Oficial do VMware Store: https://store-us.vmware.com/vmware-workstation-16-pro-5424176500.html
 
 #Tecnologias de Virtualização de Processadores AMD e Intel<br>
 
@@ -86,3 +87,12 @@ Site Oficial do VMware Workstation: https://www.vmware.com/br/products/workstati
 	01_ Na pasta de Download, clicar com o botão direito do mouse e selecionar: Abrir no Terminal;
 	02_ Digitar o comando: sudo ./VMware-Workstation-Full-*.bundle
 	03_ Digitar a senha do seu usuário e aguardar a finalização da instalação.
+
+#05_ Configuração básica do VMware Workstation Pro no Linux Mint<br>
+
+	01_ Na tela de License do VMware Workstation marque a opção: I accept the terms in the license agreement. <Next>
+	02_ Na tela de License do VMware Workstation marque a opção: I accept the terms in the license agreement. <Next>
+	03_ Na tela de Update marque a opção: Yes <Next>
+	04_ Na tela de Experience marque a opção: Yes <next>
+	05_ Na tela de License Key marque a opção: I want to try VMware Workstation 16 for 30 days: <Finish>
+	06_ Na tela de autenticação, digite a senha do usuário e clique em: <Autenticar>
