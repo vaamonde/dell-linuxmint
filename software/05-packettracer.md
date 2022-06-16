@@ -15,12 +15,15 @@
 
 Site Oficial do Netacad: https://www.netacad.com/pt-br<br>
 Cursos Oficiais do Cisco Packet Tracer: https://www.netacad.com/pt-br/courses/packet-tracer<br>
-Site Oficial do Dev do Cisco Packet Tracer: https://www.packettracernetwork.com/
+Site Oficial do Dev do Cisco Packet Tracer: https://www.packettracernetwork.com/<br>
 MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7XzImP01M1SyRm2g/folder/vll2iSDI
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa, outro detalhe
+	muito importante do Linux Mint com o Ambiente Gráfico Cinnamon é que ele possui a maioria das dependência do
+	Qt e GTK por causo disso que o Cisco Packet Tracer funciona muito bem no Mint com o ambiente gráfico Cinnamon, 
+	isso não acontece nos Ambientes Gráficos MATE ou XFCE ou na versão LMDE que não possui essas dependências.
 	sudo cat /etc/os-release
 	sudo cinnamon --version
 
