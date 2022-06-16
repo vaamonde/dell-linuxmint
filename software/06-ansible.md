@@ -74,7 +74,7 @@ Site Oficial do Ansible: https://www.ansible.com/
 	#opção do comando chmod: -v (verbose), 666 (User=RW-,Group=RW-Other=RW-)
 	sudo chmod -v 666 /var/log/ansible.log
 
-#07_ Criando o Par de chaves Pública/Privada do Host Remoto no Linux Mint<br>
+#07_ Criando o Par de Chaves Pública/Privada do Host Remoto no Linux Mint<br>
 
 	#Acessando remotamente o servidor Ubuntu
 	ssh vaamonde@192.168.0.250
@@ -88,15 +88,21 @@ Site Oficial do Ansible: https://www.ansible.com/
 	#Permitindo o usuário Root se logar via Terminal e Remotamente via SSH
 	sudo passwd root
 
-	#Gerando o par de chaves Públicas/Privadas no Linux Mint
+	exit
+
+	#Gerando o Par de Chaves Públicas/Privadas no Linux Mint
 	ssh-keygen
 		Enter file in which to save the key (/home/vaamonde/.ssh/id_rsa): <Enter>
 		Enter passphrase (empty for no passphrase): <Enter>
 		Enter same passphrase again: <Enter>
 	
-	#Copiando a Chave Pública para os Usuários do Ubuntu Server
+	#Copiando a Chave Pública para os Usuários Vaamonde e Root do Ubuntu Server
 	ssh-copy-id vaamonde@192.168.0.250
 	ssh-copy-id root@192.168.0.250
+
+	#Testando a conexão remota via SSH com a Chave Pública dos Usuários
+	ssh vaamonde@192.168.0.250
+	ssh root@192.168.0.250
 
 #08_ Testando a conexão do Ansible com os Hosts Remotos no Linux Mint<br>
 
@@ -117,7 +123,7 @@ Site Oficial do Ansible: https://www.ansible.com/
 	sudo vim /etc/ansible/update.yaml
 
     #Iniciando a Playbook do Ansible, obrigatório iniciar com --- (três traços)
-    #OBSERVAÇÃO IMPORTANTE: Recuo adequado usando ESPAÇO e NÃO TABS (tabulador)
+    #OBSERVAÇÃO IMPORTANTE: Recuo padrão do Ansible SEMPRE utilizar ESPAÇO e NÃO TABS (tabulador)
     ---
     #Nome do Playbook de atualização do Servidor Ubuntu.
     - name: Atualização do Servidor Ubuntu
