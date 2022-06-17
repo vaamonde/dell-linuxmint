@@ -76,18 +76,17 @@ Site Oficial do Ansible: https://www.ansible.com/
 
 #07_ Criando o Par de Chaves Pública/Privada do Host Remoto no Linux Mint<br>
 
-	#Acessando remotamente o servidor Ubuntu
+	#Acessando remotamente o servidor Ubuntu Server 22.04
 	ssh vaamonde@192.168.0.250
 		Are you sure you want to continue connecting (yes/no/[fingerprint])? yes <Enter>
 	
-	#Permitindo o usuário Root se logar remotamente via SSH
+	#Permitindo o usuário Root se logar remotamente via SSH no Ubuntu Server 22.04
 	sudo vim /etc/ssh/sshd_config
 		PermitiRootLogin yes
 	sudo systemctl restart ssh
 	
-	#Permitindo o usuário Root se logar via Terminal e Remotamente via SSH
+	#Permitindo o usuário Root se logar via Terminal e Remotamente via SSH Ubuntu Server 22.04
 	sudo passwd root
-
 	exit
 
 	#Gerando o Par de Chaves Públicas/Privadas no Linux Mint
@@ -96,11 +95,11 @@ Site Oficial do Ansible: https://www.ansible.com/
 		Enter passphrase (empty for no passphrase): <Enter>
 		Enter same passphrase again: <Enter>
 	
-	#Copiando a Chave Pública para os Usuários Vaamonde e Root do Ubuntu Server
+	#Copiando a Chave Pública para os Usuários Vaamonde e Root do Ubuntu Server 22.04
 	ssh-copy-id vaamonde@192.168.0.250
 	ssh-copy-id root@192.168.0.250
 
-	#Testando a conexão remota via SSH com a Chave Pública dos Usuários
+	#Testando a conexão remota via SSH com a Chave Pública dos Usuários no Ubuntu Server 22.04
 	ssh vaamonde@192.168.0.250
 	ssh root@192.168.0.250
 
@@ -126,7 +125,7 @@ Site Oficial do Ansible: https://www.ansible.com/
     #OBSERVAÇÃO IMPORTANTE: Recuo padrão do Ansible SEMPRE utilizar ESPAÇO e NÃO TABS (tabulador)
     ---
     #Nome do Playbook de atualização do Servidor Ubuntu.
-    - name: Atualização do Servidor Ubuntu
+    - name: Atualização do Servidor Ubuntu Server 22.04
       #Os hosts gerenciados para executar as tasks.
       hosts: webserver
       #Escalação de privilégios nos Playbooks
@@ -136,7 +135,7 @@ Site Oficial do Ansible: https://www.ansible.com/
       tasks:
               #Nome da ação de atualizar as listas do Apt
               - name: Atualizando o Cache do Sources.List do Apt
-                #Utilização do módulos Apt igual ao comando: apt update
+                #Utilização do módulo Apt igual ao comando: apt update
                 apt:
                   update_cache: yes
                   force_apt_get: yes
@@ -144,7 +143,7 @@ Site Oficial do Ansible: https://www.ansible.com/
 
               #Nome da ação de atualizar os software do Servidor
               - name: Atualizando todos os Software do Servidor
-                #Utilização do módulos Apt igual ao comando: apt upgrade
+                #Utilização do módulo Apt igual ao comando: apt upgrade
                 apt:
                   upgrade: dist
                   force_apt_get: yes
