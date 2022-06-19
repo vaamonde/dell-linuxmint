@@ -14,7 +14,8 @@
 #Instalação do HashiCorp Vagrant no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 Site Oficial do Vagrant: https://www.vagrantup.com/<br>
-Vagrant Cloud Box: https://app.vagrantup.com/boxes/search
+Vagrant Cloud Box: https://app.vagrantup.com/boxes/search<br>
+Images Oficiais do Ubuntu: https://cloud-images.ubuntu.com/
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
