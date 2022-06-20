@@ -51,6 +51,19 @@ Site Oficial do Docker Hub: https://hub.docker.com/search?q=
 
 	sudo apt install docker-ce docker-compose
 
+	OBSERVAÇÃO IMPORTANTE: a versão do Docker-Compose utilizando o Source List do Docker-CE está
+	desatualizada em relação ao projeto do Github: https://github.com/docker/compose, é recomendado
+	baixar o Binário do projeto e atualizar a versão no Linux Mint com o procedimento abaixo (NÃO
+	COMENTADO NO VÍDEO)
+
+	sudo apt purgue docker-copose
+	
+	#opção do comando curl: -S (show-error), -L (location), -o (output)
+	sudo curl -SL https://github.com/docker/compose/releases/download/v2.6.0/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
+	
+	#opção do comando chmod: -v (verbose), 755 (User=RWX,Group-R-X,Other-R-X)
+	sudo chmod -v 755 /usr/bin/docker-compose
+
 #07_ Adicionando o Usuário Local no Grupo do Docker CE no Linux Mint<br>
 
 	#opções do comando usermod: -a (append), -G (groups), $USER (environment variable)
