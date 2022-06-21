@@ -52,7 +52,7 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 	#opção do comando ldd: -v (verbose)
 	sudo ldd -v /opt/pt/bin/PacketTracer
 
-	#opção do comando ldd: -v (verbose)
+	#opção do comando ldd: -v (verbose), | (piper = Conecta a saída padrão com a entrada padrão de outro comando)
 	sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
 
 	#instalação das dependências do Cisco Packet Tracer
