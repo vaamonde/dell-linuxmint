@@ -49,6 +49,8 @@ Site Oficial do Ansible: https://www.ansible.com/
 #06_ Criando o Arquivo de Inventário dos Hosts e Log do Ansible no Linux Mint<br>
 
 	sudo vim /etc/ansible/hosts
+	ESC dG (d=delete | G=end of file)
+	INSERT
 
 	#Bloco de configuração dos Hosts pertencentes ao grupo 'servers'
 	[servers]
@@ -63,6 +65,8 @@ Site Oficial do Ansible: https://www.ansible.com/
 	ansible-inventory --list -y
 
 	sudo vim /etc/ansible/ansible.cfg
+	ESC dG (d=delete | G=end of file)
+	INSERT
 
 	#Configuração do Bloco Padrão Global do Ansible
 	[defaults]
@@ -76,56 +80,72 @@ Site Oficial do Ansible: https://www.ansible.com/
 
 #07_ Criando o Par de Chaves Pública/Privada do Host Remoto no Linux Mint<br>
 
-	#Acessando remotamente o servidor Ubuntu Server 22.04
+	#Acessando remotamente o servidor Ubuntu
 	ssh vaamonde@192.168.0.250
 		Are you sure you want to continue connecting (yes/no/[fingerprint])? yes <Enter>
 	
-	#Permitindo o usuário Root se logar remotamente via SSH no Ubuntu Server 22.04
+	#Permitindo o usuário Root se logar remotamente via SSH
 	sudo vim /etc/ssh/sshd_config
 		PermitiRootLogin yes
 	sudo systemctl restart ssh
 	
-	#Permitindo o usuário Root se logar via Terminal e Remotamente via SSH Ubuntu Server 22.04
+	#Permitindo o usuário Root se logar via Terminal e Remotamente via SSH
 	sudo passwd root
-	exit
+		New password: pti@2018
+		Retype new password: pti@2018 
 
-	#Gerando o Par de Chaves Públicas/Privadas no Linux Mint
+	#Gerando o Par de Chaves Pública/Privada no Linux Mint
 	ssh-keygen
 		Enter file in which to save the key (/home/vaamonde/.ssh/id_rsa): <Enter>
 		Enter passphrase (empty for no passphrase): <Enter>
 		Enter same passphrase again: <Enter>
 	
-	#Copiando a Chave Pública para os Usuários Vaamonde e Root do Ubuntu Server 22.04
+	#Copiando a Chave Pública para os Usuários do Ubuntu Server
 	ssh-copy-id vaamonde@192.168.0.250
 	ssh-copy-id root@192.168.0.250
 
-	#Testando a conexão remota via SSH com a Chave Pública dos Usuários no Ubuntu Server 22.04
-	ssh vaamonde@192.168.0.250
-	ssh root@192.168.0.250
-
 #08_ Testando a conexão do Ansible com os Hosts Remotos no Linux Mint<br>
 
-	#opções do comando ansible: all (all hosts inventory), -m (module-name), -u (user)
+	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/ping_module.html
+	#opções do comando ansible: -i (inventory), all (all hosts inventory), -m (module-name), -u (user), -k (ask-pass)
 	ansible localhost -m ping
-	ansible ubuntu2204 -m ping -u vaamonde
-	ansible webserver -m ping
+	ansible -i hosts all -m ping
+	ansible -i hosts ubuntu2204 -m ping -u vaamonde -k
+	ansible -i hosts webserver -m ping
 
 #09_ Executando comandos no Host Remoto AD-HOC com o Módulo Shell do Ansible no Linux Mint<br>
 
-	#opções do comando ansible: all (all hosts inventory), -m (module-name), -a (args), -u (user)
-	ansible ubuntu2204 -m shell -a "cat /etc/os-release" -u vaamonde
-	ansible ubuntu2204 -m shell -a "free -h" -u vaamonde
-	ansible ubuntu2204 -m shell -a "df -h" -u vaamonde
+	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/shell_module.html
+	#opções do comando ansible: -i (inventory), -m (module-name), -a (args), -u (user), -k (ask-pass)
+	ansible -i hosts ubuntu2204 -m shell -a "cat /etc/os-release" -u vaamonde -k
+	ansible -i hosts ubuntu2204 -m shell -a "free -h" -u vaamonde -k
+	ansible -i hosts ubuntu2204 -m shell -a "df -h" -u vaamonde -k
 
-#10_ Criando um Playbook Básico para Atualizar o Ubuntu Server 22.04<br>
+#10_ Executando comandos no Host Remoto Ad-HOC com o Módulo Apt do Ansible no Linux Mint<br>
+
+	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html
+	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/shell_module.html
+	#opções do comando ansible: -i hosts, -m (module-name), -a (args), update_cache (equivalent of apt-get update) name (package names), state (package state), -b (become), -u (user), -k (ask-become-pass)
+	ansible -i hosts ubuntu2204 -m apt -a "update_cache=yes name=python2 state=present" -b -u vaamonde -K
+	ansible -i hosts webserver -m shell -a "apt list python2"
+
+#11_ Executando comandos no Host Remoto Ad-HOC com o Módulo Git do Ansible no Linux Mint<br>
+
+	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/git_module.html
+	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/shell_module.html
+	#opções do comando ansible: -i hosts, -m (module-name), -a (args), update_cache (equivalent of apt-get update) name (package names), state (package state), -b (become)
+	ansible -i hosts webserver -m git -a "repo=https://github.com/vaamonde/dell-linuxmint /home/vaamonde/linuxmint" -b
+	ansible -i hosts webserver -m shell -a "ls -lh /home/vaamonde"
+
+#11_ Criando um Playbook Básico para Atualizar o Ubuntu Server 22.04<br>
 
 	sudo vim /etc/ansible/update.yaml
 
     #Iniciando a Playbook do Ansible, obrigatório iniciar com --- (três traços)
-    #OBSERVAÇÃO IMPORTANTE: Recuo padrão do Ansible SEMPRE utilizar ESPAÇO e NÃO TABS (tabulador)
+    #OBSERVAÇÃO IMPORTANTE: Recuo adequado usando ESPAÇO e NÃO TABS (tabulador)
     ---
     #Nome do Playbook de atualização do Servidor Ubuntu.
-    - name: Atualização do Servidor Ubuntu Server 22.04
+    - name: Atualização do Servidor Ubuntu
       #Os hosts gerenciados para executar as tasks.
       hosts: webserver
       #Escalação de privilégios nos Playbooks
@@ -135,7 +155,7 @@ Site Oficial do Ansible: https://www.ansible.com/
       tasks:
               #Nome da ação de atualizar as listas do Apt
               - name: Atualizando o Cache do Sources.List do Apt
-                #Utilização do módulo Apt igual ao comando: apt update
+                #Utilização do módulos Apt igual ao comando: apt update
                 apt:
                   update_cache: yes
                   force_apt_get: yes
@@ -143,7 +163,7 @@ Site Oficial do Ansible: https://www.ansible.com/
 
               #Nome da ação de atualizar os software do Servidor
               - name: Atualizando todos os Software do Servidor
-                #Utilização do módulo Apt igual ao comando: apt upgrade
+                #Utilização do módulos Apt igual ao comando: apt upgrade
                 apt:
                   upgrade: dist
                   force_apt_get: yes
@@ -172,8 +192,8 @@ Site Oficial do Ansible: https://www.ansible.com/
 	ansible-playbook -i hosts apache2.yaml
 	ansible-playbook -i hosts apache2.yaml -vvv
 
-	#opções do comando ansible: all (all hosts inventory), -m (module-name), -a (args)
-	ansible webserver -m shell -a "apt list apache2"
+	#opções do comando ansible: -i (inventory), -m (module-name), -a (args)
+	ansible -i hosts webserver -m shell -a "apt list apache2"
 
-	#testando o acesso remoto ao servidor Apache2 instalado no Ubuntu Server 22.04	
+	#Testando o acesso remoto ao servidor Apache2 instalado no Ubuntu Server 22.04	
 	http://192.168.0.250
