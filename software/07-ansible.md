@@ -54,6 +54,7 @@ Site Oficial do Ansible: https://www.ansible.com/
 
 	#Bloco de configuração dos Hosts pertencentes ao grupo 'servers'
 	[servers]
+	192.168.0.250
 	ubuntu2204 ansible_host=192.168.0.250
 	webserver ansible_host=192.168.0.250 ansible_user=root
 
@@ -125,7 +126,8 @@ Site Oficial do Ansible: https://www.ansible.com/
 
 	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html
 	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/shell_module.html
-	#opções do comando ansible: -i hosts, -m (module-name), -a (args), update_cache (equivalent of apt-get update) name (package names), state (package state), -b (become), -u (user), -k (ask-become-pass)
+	#opções do comando ansible: -i hosts, -m (module-name), -a (args), update_cache (equivalent of apt-get update),
+	#name (package names), state (package state), -b (become), -u (user), -k (ask-become-pass)
 	ansible -i hosts ubuntu2204 -m apt -a "update_cache=yes name=python2 state=present" -b -u vaamonde -K
 	ansible -i hosts webserver -m shell -a "apt list python2"
 
@@ -133,7 +135,8 @@ Site Oficial do Ansible: https://www.ansible.com/
 
 	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/git_module.html
 	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/shell_module.html
-	#opções do comando ansible: -i hosts, -m (module-name), -a (args), update_cache (equivalent of apt-get update) name (package names), state (package state), -b (become)
+	#opções do comando ansible: -i hosts, -m (module-name), -a (args), update_cache (equivalent of apt-get update), 
+	#name (package names), state (package state), -b (become)
 	ansible -i hosts webserver -m git -a "repo=https://github.com/vaamonde/dell-linuxmint /home/vaamonde/linuxmint" -b
 	ansible -i hosts webserver -m shell -a "ls -lh /home/vaamonde"
 
