@@ -101,8 +101,7 @@ Site Oficial do Ansible: https://www.ansible.com/
 		Enter passphrase (empty for no passphrase): <Enter>
 		Enter same passphrase again: <Enter>
 	
-	#Copiando a Chave Pública para os Usuários do Ubuntu Server
-	ssh-copy-id vaamonde@192.168.0.250
+	#Copiando a Chave Pública para o Usuário Root do Ubuntu Server
 	ssh-copy-id root@192.168.0.250
 
 #08_ Testando a conexão do Ansible com os Hosts Remotos no Linux Mint<br>
@@ -137,7 +136,8 @@ Site Oficial do Ansible: https://www.ansible.com/
 	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/shell_module.html
 	#opções do comando ansible: -i hosts, -m (module-name), -a (args), update_cache (equivalent of apt-get update), 
 	#name (package names), state (package state), -b (become)
-	ansible -i hosts webserver -m git -a "repo=https://github.com/vaamonde/dell-linuxmint /home/vaamonde/linuxmint" -b
+	ansible -i hosts webserver -m apt -a "update_cache=yes name=git state=present"
+	ansible -i hosts webserver -m git -a "repo=https://github.com/vaamonde/dell-linuxmint dest=/home/vaamonde/linuxmint"
 	ansible -i hosts webserver -m shell -a "ls -lh /home/vaamonde"
 
 #11_ Criando um Playbook Básico para Atualizar o Ubuntu Server 22.04<br>
