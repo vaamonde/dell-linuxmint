@@ -76,13 +76,15 @@ Images Oficiais do Ubuntu: https://cloud-images.ubuntu.com/
 #10_ Verificando as informações da VM do Ubuntu no VirtualBOX criada com o Vagrant<br>
 
 	#opção do comando vagrant: global-status (outputs status Vagrant environments for this user)
+	vagrant status
 	vagrant global-status
 
 #11_ Desligando a VM do Ubuntu no VirtualBOX criada com o Vagrant<br>
 
 	#opção do comando vagrant: halt (stops the vagrant machine), status (outputs status of the vagrant machine)
-	vagrant halt 3160b44
-	vagrant status 3160b44
+	vagrant halt
+	vagrant status
+	vagrant global-status
 
 #12_ Removendo uma VM do Ubuntu no VirtualBOX criada com o Vagrant<br>
 
