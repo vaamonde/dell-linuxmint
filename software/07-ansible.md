@@ -22,14 +22,12 @@ Site Oficial do Ansible: https://www.ansible.com/
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 
-	```bash
 	sudo apt update
 	sudo apt upgrade
 	sudo apt full-upgrade
 	sudo apt dist-upgrade
 	sudo apt autoremove
 	sudo apt autoclean
-	```
 
 #02_ Instalando as Dependências do Ansible no Linux Mint<br>
 
@@ -54,6 +52,7 @@ Site Oficial do Ansible: https://www.ansible.com/
 	ESC dG (d=delete | G=end of file)
 	INSERT
 
+	```ruby
 	#Bloco de configuração dos Hosts pertencentes ao grupo 'servers'
 	[servers]
 	192.168.0.250
@@ -63,7 +62,8 @@ Site Oficial do Ansible: https://www.ansible.com/
 	#Bloco de configuração das Variáveis de todos os Hosts do Inventário
 	[all:vars]
 	ansible_python_interpreter=/usr/bin/python3
-	
+	```
+
 	#opção do comando ansible-inventory: list (Output all hosts info, works as inventory script), y (yaml)
 	ansible-inventory --list -y
 
@@ -71,9 +71,11 @@ Site Oficial do Ansible: https://www.ansible.com/
 	ESC dG (d=delete | G=end of file)
 	INSERT
 
+	```ruby
 	#Configuração do Bloco Padrão Global do Ansible
 	[defaults]
 	log_path=/var/log/ansible.log
+	```
 
 	#Criação do arquivo de Log do Ansible
 	sudo touch /var/log/ansible.log
@@ -89,7 +91,9 @@ Site Oficial do Ansible: https://www.ansible.com/
 	
 	#Permitindo o usuário Root se logar remotamente via SSH no Ubuntu Server 22.04
 	sudo vim /etc/ssh/sshd_config
+		```vim
 		PermitiRootLogin yes
+		```
 	sudo systemctl restart ssh
 	
 	#Permitindo o usuário Root se logar via Terminal e Remotamente via SSH no Ubuntu Server 22.04
