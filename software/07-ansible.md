@@ -191,17 +191,17 @@ Site Oficial do Ansible: https://www.ansible.com/
 
 	sudo vim /etc/ansible/apache2.yaml
 
-	```ruby
-    ---
-    - hosts: webserver
-      become: yes
-      become_user: root
-      tasks:
-        - name: Instalando o Apache2 via Ansible no Ubuntu Server 22.04
-          apt:
-            update_cache: yes
-            name: apache2
-	```
+```ruby
+---
+- hosts: webserver
+  become: yes
+  become_user: root
+  tasks:
+  - name: Instalando o Apache2 via Ansible no Ubuntu Server 22.04
+    apt:
+      update_cache: yes
+      name: apache2
+```
 
 	#opção do comando ansible-playbook: -i (inventory-file), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
 	ansible-playbook -i hosts apache2.yaml --syntax-check
