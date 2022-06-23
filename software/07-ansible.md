@@ -164,20 +164,20 @@ Site Oficial do Ansible: https://www.ansible.com/
 	  become_user: root
       #As operações a serem executadas chamando os módulos e passando as opções necessárias.
       tasks:
-              #Nome da lista de atualização do Sources List do Apt
-              - name: Atualizando o Cache do Sources.List do Apt
-                #Utilização do módulo do Apt igual ao comando: apt update
-                apt:
-                  update_cache: yes
-                  force_apt_get: yes
-                  cache_valid_time: 3600
+        #Nome da lista de atualização do Sources List do Apt
+        - name: Atualizando o Cache do Sources.List do Apt
+          #Utilização do módulo do Apt igual ao comando: apt update
+          apt:
+            update_cache: yes
+            force_apt_get: yes
+            cache_valid_time: 3600
 
-              #Nome da lista de atualização de todos os software do Servidor
-              - name: Atualizando todos os Software do Servidor
-                #Utilização do módulo do Apt igual ao comando: apt upgrade
-                apt:
-                  upgrade: dist
-                  force_apt_get: yes
+        #Nome da lista de atualização de todos os software do Servidor
+        - name: Atualizando todos os Software do Servidor
+          #Utilização do módulo do Apt igual ao comando: apt upgrade
+          apt:
+            upgrade: dist
+            force_apt_get: yes
 
 	#opção do comando ansible-playbook: -i (inventory-file), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
 	ansible-playbook -i hosts update.yaml --syntax-check
