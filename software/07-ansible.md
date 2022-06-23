@@ -91,10 +91,7 @@ log_path=/var/log/ansible.log
 	
 	#Permitindo o usuário Root se logar remotamente via SSH no Ubuntu Server 22.04
 	sudo vim /etc/ssh/sshd_config
-
-```vim
-PermitiRootLogin yes
-```
+		PermitiRootLogin yes
 	sudo systemctl restart ssh
 	
 	#Permitindo o usuário Root se logar via Terminal e Remotamente via SSH no Ubuntu Server 22.04
