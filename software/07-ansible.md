@@ -58,7 +58,7 @@ Site Oficial do Ansible: https://www.ansible.com/
 	ubuntu2204 ansible_host=192.168.0.250
 	webserver ansible_host=192.168.0.250 ansible_user=root
 
-	#Bloco de configuração das Variáveis de todos os Hosts
+	#Bloco de configuração das Variáveis de todos os Hosts do Inventário
 	[all:vars]
 	ansible_python_interpreter=/usr/bin/python3
 	
@@ -81,16 +81,16 @@ Site Oficial do Ansible: https://www.ansible.com/
 
 #07_ Criando o Par de Chaves Pública/Privada do Host Remoto no Linux Mint<br>
 
-	#Acessando remotamente o servidor Ubuntu
+	#Acessando remotamente o servidor Ubuntu Server 22.04
 	ssh vaamonde@192.168.0.250
 		Are you sure you want to continue connecting (yes/no/[fingerprint])? yes <Enter>
 	
-	#Permitindo o usuário Root se logar remotamente via SSH
+	#Permitindo o usuário Root se logar remotamente via SSH no Ubuntu Server 22.04
 	sudo vim /etc/ssh/sshd_config
 		PermitiRootLogin yes
 	sudo systemctl restart ssh
 	
-	#Permitindo o usuário Root se logar via Terminal e Remotamente via SSH
+	#Permitindo o usuário Root se logar via Terminal e Remotamente via SSH no Ubuntu Server 22.04
 	sudo passwd root
 		New password: pti@2018
 		Retype new password: pti@2018 
@@ -101,7 +101,7 @@ Site Oficial do Ansible: https://www.ansible.com/
 		Enter passphrase (empty for no passphrase): <Enter>
 		Enter same passphrase again: <Enter>
 	
-	#Copiando a Chave Pública para o Usuário Root do Ubuntu Server
+	#Copiando a Chave Pública para o Usuário Root do Ubuntu Server 22.04
 	ssh-copy-id root@192.168.0.250
 
 #08_ Testando a conexão do Ansible com os Hosts Remotos no Linux Mint<br>
@@ -140,8 +140,10 @@ Site Oficial do Ansible: https://www.ansible.com/
 	ansible -i hosts webserver -m git -a "repo=https://github.com/vaamonde/dell-linuxmint dest=/home/vaamonde/linuxmint"
 	ansible -i hosts webserver -m shell -a "ls -lh /home/vaamonde"
 
-#12_ 
+#12_ Listando todas as Variáveis Mágicas (magic variables) do Ansible no Host Remoto do Ubuntu Server 22.04<br>
+
 	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/setup_module.html
+	#Link de referência: https://docs.ansible.com/ansible/latest/user_guide/playbooks_vars_facts.html
 	#opções do comando ansible: -i (inventory-file), -m (module-name)
 	ansible -i hosts webserver -m setup
 
@@ -150,28 +152,29 @@ Site Oficial do Ansible: https://www.ansible.com/
 	sudo vim /etc/ansible/update.yaml
 
     #Iniciando a Playbook do Ansible, obrigatório iniciar com --- (três traços)
-    #OBSERVAÇÃO IMPORTANTE: Recuo adequado usando ESPAÇO e NÃO TABS (tabulador)
+    #OBSERVAÇÃO IMPORTANTE: Recuo PADRÃO adequado SEMPRE usar ESPAÇO e NÃO TABS (tabulador) - 2(dois) ESPAÇOS
     ---
     #Nome do Playbook de atualização do Servidor Ubuntu.
     - name: Atualização do Servidor Ubuntu
       #Os hosts gerenciados para executar as tasks.
       hosts: webserver
-      #Escalação de privilégios nos Playbooks
+      #Escalação de privilégios no Playbook
       become: yes
-      become_user: root
+      #Usuário para a execução do Playbook
+	  become_user: root
       #As operações a serem executadas chamando os módulos e passando as opções necessárias.
       tasks:
-              #Nome da ação de atualizar as listas do Apt
+              #Nome da lista de atualização do Sources List do Apt
               - name: Atualizando o Cache do Sources.List do Apt
-                #Utilização do módulos Apt igual ao comando: apt update
+                #Utilização do módulo do Apt igual ao comando: apt update
                 apt:
                   update_cache: yes
                   force_apt_get: yes
                   cache_valid_time: 3600
 
-              #Nome da ação de atualizar os software do Servidor
+              #Nome da lista de atualização de todos os software do Servidor
               - name: Atualizando todos os Software do Servidor
-                #Utilização do módulos Apt igual ao comando: apt upgrade
+                #Utilização do módulo do Apt igual ao comando: apt upgrade
                 apt:
                   upgrade: dist
                   force_apt_get: yes
