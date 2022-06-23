@@ -107,40 +107,45 @@ Site Oficial do Ansible: https://www.ansible.com/
 #08_ Testando a conexão do Ansible com os Hosts Remotos no Linux Mint<br>
 
 	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/ping_module.html
-	#opções do comando ansible: -i (inventory), all (all hosts inventory), -m (module-name), -u (user), -k (ask-pass)
+	#opções do comando ansible: -i (inventory-file), all (all hosts inventory), -m (module-name), -u (user), -k (ask-pass)
 	ansible localhost -m ping
 	ansible -i hosts all -m ping
 	ansible -i hosts ubuntu2204 -m ping -u vaamonde -k
 	ansible -i hosts webserver -m ping
 
-#09_ Executando comandos no Host Remoto AD-HOC com o Módulo Shell do Ansible no Linux Mint<br>
+#09_ Executando comandos no Host Remoto AD HOC com o Módulo Shell do Ansible no Linux Mint<br>
 
 	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/shell_module.html
-	#opções do comando ansible: -i (inventory), -m (module-name), -a (args), -u (user), -k (ask-pass)
+	#opções do comando ansible: -i (inventory-file), -m (module-name), -a (args), -u (user), -k (ask-pass)
 	ansible -i hosts ubuntu2204 -m shell -a "cat /etc/os-release" -u vaamonde -k
 	ansible -i hosts ubuntu2204 -m shell -a "free -h" -u vaamonde -k
 	ansible -i hosts ubuntu2204 -m shell -a "df -h" -u vaamonde -k
 
-#10_ Executando comandos no Host Remoto Ad-HOC com o Módulo Apt do Ansible no Linux Mint<br>
+#10_ Executando comandos no Host Remoto AD HOC com o Módulo Apt do Ansible no Linux Mint<br>
 
 	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html
 	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/shell_module.html
-	#opções do comando ansible: -i hosts, -m (module-name), -a (args), update_cache (equivalent of apt-get update),
+	#opções do comando ansible: -i (inventory-file), -m (module-name), -a (args), update_cache (equivalent of apt-get update),
 	#name (package names), state (package state), -b (become), -u (user), -k (ask-become-pass)
 	ansible -i hosts ubuntu2204 -m apt -a "update_cache=yes name=python2 state=present" -b -u vaamonde -K
 	ansible -i hosts webserver -m shell -a "apt list python2"
 
-#11_ Executando comandos no Host Remoto Ad-HOC com o Módulo Git do Ansible no Linux Mint<br>
+#11_ Executando comandos no Host Remoto AD HOC com o Módulo Git do Ansible no Linux Mint<br>
 
 	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/git_module.html
 	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/shell_module.html
-	#opções do comando ansible: -i hosts, -m (module-name), -a (args), update_cache (equivalent of apt-get update), 
+	#opções do comando ansible: -i (inventory-file), -m (module-name), -a (args), update_cache (equivalent of apt-get update), 
 	#name (package names), state (package state), -b (become)
 	ansible -i hosts webserver -m apt -a "update_cache=yes name=git state=present"
 	ansible -i hosts webserver -m git -a "repo=https://github.com/vaamonde/dell-linuxmint dest=/home/vaamonde/linuxmint"
 	ansible -i hosts webserver -m shell -a "ls -lh /home/vaamonde"
 
-#11_ Criando um Playbook Básico para Atualizar o Ubuntu Server 22.04<br>
+#12_ 
+	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/setup_module.html
+	#opções do comando ansible: -i (inventory-file), -m (module-name)
+	ansible -i hosts webserver -m setup
+
+#13_ Criando um Playbook Básico para Atualizar o Ubuntu Server 22.04<br>
 
 	sudo vim /etc/ansible/update.yaml
 
@@ -171,12 +176,12 @@ Site Oficial do Ansible: https://www.ansible.com/
                   upgrade: dist
                   force_apt_get: yes
 
-	#opção do comando ansible-playbook: -i (inventory), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
+	#opção do comando ansible-playbook: -i (inventory-file), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
 	ansible-playbook -i hosts update.yaml --syntax-check
 	ansible-playbook -i hosts update.yaml
 	ansible-playbook -i hosts update.yaml -vvv
 
-#11_ Criando um Playbook Básico para Instalar o Apache2 no Ubuntu Server 22.04<br>
+#14_ Criando um Playbook Básico para Instalar o Apache2 no Ubuntu Server 22.04<br>
 
 	sudo vim /etc/ansible/apache2.yaml
 
@@ -190,12 +195,12 @@ Site Oficial do Ansible: https://www.ansible.com/
                   update_cache: yes
                   name: apache2
 
-	#opção do comando ansible-playbook: -i (inventory), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
+	#opção do comando ansible-playbook: -i (inventory-file), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
 	ansible-playbook -i hosts apache2.yaml --syntax-check
 	ansible-playbook -i hosts apache2.yaml
 	ansible-playbook -i hosts apache2.yaml -vvv
 
-	#opções do comando ansible: -i (inventory), -m (module-name), -a (args)
+	#opções do comando ansible: -i (inventory-file), -m (module-name), -a (args)
 	ansible -i hosts webserver -m shell -a "apt list apache2"
 
 	#Testando o acesso remoto ao servidor Apache2 instalado no Ubuntu Server 22.04	
