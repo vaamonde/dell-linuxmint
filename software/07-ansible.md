@@ -151,6 +151,7 @@ Site Oficial do Ansible: https://www.ansible.com/
 
 	sudo vim /etc/ansible/update.yaml
 
+	```ruby
     #Iniciando a Playbook do Ansible, obrigatório iniciar com --- (três traços)
     #OBSERVAÇÃO IMPORTANTE: Recuo PADRÃO adequado SEMPRE usar ESPAÇO e NÃO TABS (tabulador) - 2(dois) ESPAÇOS
 	#SITE PARA TESTAR E OTIMIZAR A VALIDAÇÃO DO ARQUIVO YAML: http://www.yamllint.com/
@@ -179,7 +180,8 @@ Site Oficial do Ansible: https://www.ansible.com/
           apt:
             upgrade: dist
             force_apt_get: yes
-
+	```
+	
 	#opção do comando ansible-playbook: -i (inventory-file), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
 	ansible-playbook -i hosts update.yaml --syntax-check
 	ansible-playbook -i hosts update.yaml
@@ -189,6 +191,7 @@ Site Oficial do Ansible: https://www.ansible.com/
 
 	sudo vim /etc/ansible/apache2.yaml
 
+	```ruby
     ---
     - hosts: webserver
       become: yes
@@ -198,6 +201,7 @@ Site Oficial do Ansible: https://www.ansible.com/
           apt:
             update_cache: yes
             name: apache2
+	```
 
 	#opção do comando ansible-playbook: -i (inventory-file), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
 	ansible-playbook -i hosts apache2.yaml --syntax-check
