@@ -153,6 +153,7 @@ Site Oficial do Ansible: https://www.ansible.com/
 
     #Iniciando a Playbook do Ansible, obrigatório iniciar com --- (três traços)
     #OBSERVAÇÃO IMPORTANTE: Recuo PADRÃO adequado SEMPRE usar ESPAÇO e NÃO TABS (tabulador) - 2(dois) ESPAÇOS
+	#SITE PARA TESTAR E OTIMIZAR A VALIDAÇÃO DO ARQUIVO YAML: http://www.yamllint.com/
     ---
     #Nome do Playbook de atualização do Servidor Ubuntu.
     - name: Atualização do Servidor Ubuntu
@@ -193,10 +194,10 @@ Site Oficial do Ansible: https://www.ansible.com/
       become: yes
       become_user: root
       tasks:
-              - name: Instalando o Apache2 via Ansible no Ubuntu Server 22.04
-                apt:
-                  update_cache: yes
-                  name: apache2
+        - name: Instalando o Apache2 via Ansible no Ubuntu Server 22.04
+          apt:
+            update_cache: yes
+            name: apache2
 
 	#opção do comando ansible-playbook: -i (inventory-file), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
 	ansible-playbook -i hosts apache2.yaml --syntax-check
