@@ -201,7 +201,8 @@ log_path=/var/log/ansible.log
 
 ```ruby
 ---
-- hosts: webserver
+- name: Instalação do Apache2 no Webserver
+  hosts: webserver
   become: yes
   become_user: root
   tasks:
