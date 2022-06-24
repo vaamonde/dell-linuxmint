@@ -103,3 +103,25 @@ Images Oficiais do Ubuntu: https://cloud-images.ubuntu.com/
 	#opção do comando vagrant: box (manages boxes: installation, removal, etc.), remove (boxes remove)
 	vagrant box remove generic/ubuntu2004
 	vagrant box list
+
+#15_ Criando um novo projeto utilizando um BOX (Imagem) Oficial do Ubuntu<br>
+
+	#opções do comando mkdir: -v (verbose)
+	cd ..
+	mkdir -v Ubuntu2204
+	cd Ubuntu2204
+
+	#criando o arquivo Vagrantfile
+	vim Vagrantfile
+	INSERT
+
+```ruby
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu-server-22-04"
+  config.vm.box_url = "https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64-vagrant.box"
+end
+```
+
+	#opção do comando vagrant: up (starts and provisions the vagrant environment)
+	vagrant up
+	
