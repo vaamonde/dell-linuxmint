@@ -124,4 +124,6 @@ end
 
 	#opção do comando vagrant: up (starts and provisions the vagrant environment)
 	vagrant up
-	
+
+	#opção do comando vagrant: ssh (connects to machine via SSH)
+	vagrant ssh
