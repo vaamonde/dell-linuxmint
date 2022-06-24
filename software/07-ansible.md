@@ -65,7 +65,8 @@ ansible_python_interpreter=/usr/bin/python3
 ```
 
 	#opção do comando ansible-inventory: list (Output all hosts info, works as inventory script), y (yaml)
-	ansible-inventory --list -y
+	ansible-inventory --list
+	ansible-inventory --list --yaml
 
 	sudo vim /etc/ansible/ansible.cfg
 	ESC dG (d=delete | G=end of file)
@@ -93,11 +94,14 @@ log_path=/var/log/ansible.log
 	sudo vim /etc/ssh/sshd_config
 		PermitiRootLogin yes
 	sudo systemctl restart ssh
+	sudo systemctl status ssh
 	
 	#Permitindo o usuário Root se logar via Terminal e Remotamente via SSH no Ubuntu Server 22.04
 	sudo passwd root
 		New password: pti@2018
-		Retype new password: pti@2018 
+		Retype new password: pti@2018
+	su root
+		Password: pti@2018
 
 	#Gerando o Par de Chaves Pública/Privada no Linux Mint
 	ssh-keygen
@@ -113,9 +117,9 @@ log_path=/var/log/ansible.log
 	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/ping_module.html
 	#opções do comando ansible: -i (inventory-file), all (all hosts inventory), -m (module-name), -u (user), -k (ask-pass)
 	ansible localhost -m ping
-	ansible -i hosts all -m ping
 	ansible -i hosts ubuntu2204 -m ping -u vaamonde -k
 	ansible -i hosts webserver -m ping
+	ansible -i hosts all -m ping
 
 #09_ Executando comandos no Host Remoto AD HOC com o Módulo Shell do Ansible no Linux Mint<br>
 
