@@ -191,8 +191,8 @@ log_path=/var/log/ansible.log
 ```
 
 	#opção do comando ansible-playbook: -i (inventory-file), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
-	ansible-playbook -i hosts update.yaml --syntax-check
-	ansible-playbook -i hosts update.yaml
+	ansible-playbook -i hosts update.yaml --syntax-check -vv
+	ansible-playbook -i hosts update.yaml -v
 	ansible-playbook -i hosts update.yaml -vvv
 
 #14_ Criando um Playbook Básico para Instalar o Apache2 no Ubuntu Server 22.04<br>
@@ -212,12 +212,12 @@ log_path=/var/log/ansible.log
 ```
 
 	#opção do comando ansible-playbook: -i (inventory-file), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
-	ansible-playbook -i hosts apache2.yaml --syntax-check
-	ansible-playbook -i hosts apache2.yaml
+	ansible-playbook -i hosts apache2.yaml --syntax-check -vv
+	ansible-playbook -i hosts apache2.yaml -v
 	ansible-playbook -i hosts apache2.yaml -vvv
 
 	#opções do comando ansible: -i (inventory-file), -m (module-name), -a (args)
 	ansible -i hosts webserver -m shell -a "apt list apache2"
 
 	#Testando o acesso remoto ao servidor Apache2 instalado no Ubuntu Server 22.04	
-	http://192.168.0.250
+	firefox http://192.168.0.250
