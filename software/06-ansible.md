@@ -219,7 +219,7 @@ log_path=/var/log/ansible.log
     apt:
       update_cache: yes
       name: apache2
-	  state: present
+      state: present
 ```
 
 	#opção do comando ansible-playbook: -i (inventory-file), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
