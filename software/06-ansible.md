@@ -64,7 +64,7 @@ webserver ansible_host=192.168.0.250 ansible_user=root
 ansible_python_interpreter=/usr/bin/python3
 ```
 
-	#opção do comando ansible-inventory: list (Output all hosts info, works as inventory script), y (yaml)
+	#opção do comando ansible-inventory: list (Output all hosts info, works as inventory script), yaml (yaml)
 	ansible-inventory --list
 	ansible-inventory --list --yaml
 
@@ -140,6 +140,7 @@ log_path=/var/log/ansible.log
 
 #11_ Executando comandos no Host Remoto AD HOC com o Módulo Git do Ansible no Linux Mint<br>
 
+	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html
 	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/git_module.html
 	#Link de referência: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/shell_module.html
 	#opções do comando ansible: -i (inventory-file), -m (module-name), -a (args), update_cache (equivalent of apt-get update), 
@@ -157,11 +158,13 @@ log_path=/var/log/ansible.log
 
 #13_ Criando um Playbook Básico para Atualizar o Ubuntu Server 22.04<br>
 
+	#Link de referência: https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
+	#Link de referência: https://docs.ansible.com/ansible/latest/reference_appendices/playbooks_keywords.html
 	sudo vim /etc/ansible/update.yaml
 
 ```ruby
 #Iniciando a Playbook do Ansible, obrigatório iniciar com --- (três traços)
-#OBSERVAÇÃO IMPORTANTE: Recuo PADRÃO adequado SEMPRE usar ESPAÇO e NÃO TABS (tabulador) - 2(dois) ESPAÇOS
+#OBSERVAÇÃO IMPORTANTE: Recuo PADRÃO adequado SEMPRE usar ESPAÇO e NÃO TAB (tabulador) - 2(dois) ESPAÇOS
 #SITE PARA TESTAR E OTIMIZAR A VALIDAÇÃO DO ARQUIVO YAML: http://www.yamllint.com/
 ---
 #Nome do Playbook de atualização do Servidor Ubuntu.
@@ -174,19 +177,25 @@ log_path=/var/log/ansible.log
   become_user: root
   #As operações a serem executadas chamando os módulos e passando as opções necessárias.
   tasks:
+
     #Nome da lista de atualização do Sources List do Apt
     - name: Atualizando o Cache do Sources.List do Apt
       #Utilização do módulo do Apt igual ao comando: apt update
       apt:
+        #Atualizando as listas do Apt igual ao comando apt update
         update_cache: yes
+        #Força o uso de Apt em vez de Aptitude (descontinuado)
         force_apt_get: yes
+        #Atualize o cache do Apt se for mais antigo que o tempo cache_valid_time em segundos
         cache_valid_time: 3600
 
     #Nome da lista de atualização de todos os software do Servidor
     - name: Atualizando todos os Software do Servidor
       #Utilização do módulo do Apt igual ao comando: apt upgrade
       apt:
+        #Atualizando todos os software igual ao comando apt dist-upgrade
         upgrade: dist
+        #Força o uso de Apt em vez de Aptitude (descontinuado)
         force_apt_get: yes
 ```
 
@@ -201,7 +210,7 @@ log_path=/var/log/ansible.log
 
 ```ruby
 ---
-- name: Instalação do Apache2 no Webserver
+- name: Instalação do Apache2 no Webserver Ubuntu
   hosts: webserver
   become: yes
   become_user: root
@@ -210,6 +219,7 @@ log_path=/var/log/ansible.log
     apt:
       update_cache: yes
       name: apache2
+	  state: present
 ```
 
 	#opção do comando ansible-playbook: -i (inventory-file), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
