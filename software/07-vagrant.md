@@ -104,7 +104,7 @@ Images Oficiais do Ubuntu: https://cloud-images.ubuntu.com/
 	#Link de referência: https://www.vagrantup.com/docs/cli/destroy
 	#Link de referência: https://www.vagrantup.com/docs/cli/global-status
 	#opção do comando vagrant: destroy (stops and deletes all traces of the vagrant machine)
-	vagrant destroy 3160b44
+	vagrant destroy
 		default: Are you sure you want to destroy the 'default' VM? [y/N]
 	vagrant global-status
 
@@ -134,23 +134,41 @@ Images Oficiais do Ubuntu: https://cloud-images.ubuntu.com/
 	vagrant init -m
 	
 	vim Vagrantfile
+	ESC dG (d=delete | G=end of file)
 	INSERT
 
 ```ruby
-#Início da configuração do Vagrant indicando a maior versão 
+#Início da configuração do BOX do Vagrant indicando a maior versão ("2")
+#OBSERVAÇÃO IMPORTANTE: Recuo PADRÃO adequado SEMPRE usar ESPAÇO e NÃO TAB (tabulador) - 2(dois) ESPAÇOS
 Vagrant.configure("2") do |config|
-  #Configuração do nome da Máquina Virtual
-  config.vm.box = "ubuntu-server-22-04"
-  #Link de download da Imagem do Ubuntu Server 22.04 Oficial
-  config.vm.box_url = "https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64-vagrant.box"
-  #Configuração da quantidade de Memória RAM da Máquina Virtual
-  config.vm.memory = "1024"
-  #Configuração da quantidade de vCPU's da Máquina Virtual
-  config.vm.cpus = "2"
-  #Configuração do endereçamento IPv4 da Máquina Virtual
-  config.vm.network "private_network", ip: "192.168.0.251"
-  #Configuração do nome do servidor da Máquina Virtual
-  config.vm.hostname = "webserver.local"
+  #Configuração das Definições do Nome do BOX Local do Vagrant para Multi-VM
+  #OBSERVAÇÃO IMPORTANTE: caso não use a opção define será criado uma BOX com
+  #o nome Padrão: default
+  config.vm.define "webserver" do |web|
+    #Configuração do nome do BOX Local do Vagrant
+    web.vm.box = "ubuntu2204"
+    #Link de download da Imagem do Ubuntu Server 22.04 Oficial
+    web.vm.box_url = "https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64-vagrant.box"
+    #Configuração do Hostname do BOX do Ubuntu Server no Vagrant
+    web.vm.hostname = "webserver"
+    #Configuração do Endereçamento Público IPv4 do BOX do Ubuntu Server do Vagrant
+    #OBSERVAÇÃO IMPORTANTE: por padrão o Vagrant utiliza a primeira Interface de Rede em Modo NAT
+    #para acessar via SSH o BOX do Ubuntu Server, quando configurado a Interface Pública o Vagrant
+    #ele habilita a segunda Interface do Virtual em Modo Bridge e configura o Endereço IPv4 Estático
+    web.vm.network "public_network", ip: "192.168.0.251", bridge: "enp6s0"
+    #Configuração da Máquina Virtual do BOX do Ubuntu Server no VirtualBOX do Vagrant
+    web.vm.provider "virtualbox" do |vb|
+      #Configuração do nome da Máquina Virtual no VirtualBOX do Vagrant
+      vb.name = "ubuntu-server-22-04"
+      #Configuração da quantidade de Memória RAM da Máquina Virtual no VirtualBOX do Vagrant
+      vb.memory = "1024"
+      #Configuração da quantidade de vCPU's da Máquina Virtual no VirtualBOX do Vagrant
+      vb.cpus = "2"
+    #Fim do Bloco de Configuração: Provider (virtualbox |vb|)
+    end
+  #Fim do Bloco de Configuração: Define (webserver |web|)
+  end
+#Fim do Bloco de Configuração: Configure (|config|)
 end
 ```
 
