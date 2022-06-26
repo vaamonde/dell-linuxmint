@@ -49,7 +49,7 @@ Site Oficial do Docker Hub: https://hub.docker.com/search?q=
 
 #06_ Instalando o Docker CE e suas Dependências no Linux Mint<br>
 
-	sudo apt install docker-ce docker-compose
+	sudo apt install docker-ce docker-compose git vim python2 python3
 
 	OBSERVAÇÃO IMPORTANTE: a versão do Docker-Compose utilizando o Source List do Docker-CE está
 	desatualizada em relação ao projeto do Github: https://github.com/docker/compose, é recomendado

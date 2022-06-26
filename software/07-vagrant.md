@@ -118,6 +118,8 @@ Images Oficiais do Ubuntu: https://cloud-images.ubuntu.com/
 
 	#Link de referência: https://www.vagrantup.com/docs/cli/box
 	#opção do comando vagrant: box (manages boxes: installation, removal, etc.), remove (boxes remove)
+	#opção do comando tree: -a (all), ~ (til: alias home directory)
+	tree -a ~/.vagrant.d/
 	vagrant box remove generic/ubuntu2004
 	vagrant box list
 
@@ -179,3 +181,10 @@ end
 
 	#opção do comando ssh: -p (port), -i (identity_file)
 	ssh -p 22 -i .vagrant/machines/webserver/virtualbox/private_key vagrant@192.168.0.251
+
+	#opção do comando vagrant: halt (stops the vagrant machine), status (outputs status of the vagrant machine)
+	vagrant halt
+	vagrant status
+
+	#opção do comando vagrant: box (manages boxes: installation, removal, etc.), list (boxes list)
+	vagrant box list

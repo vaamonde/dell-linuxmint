@@ -37,7 +37,7 @@ Documentação do .NET SDK e Runtime: https://docs.microsoft.com/pt-br/dotnet/co
 #02_ Instalando as Dependências do PowerShell e do .NET SDK e Runtime no Linux Mint<br>
 
 	sudo apt install apt-transport-https software-properties-common libc6 libgcc1 \
-	libgssapi-krb5-2 libicu66 libssl1.1 libstdc++6 zlib1g
+	libgssapi-krb5-2 libicu66 libssl1.1 libstdc++6 zlib1g vim git python2 python3
 
 #03_ Baixando o repositório oficial do PowerShell e do .NET SDK e Runtime no Linux Mint<br>
 	
