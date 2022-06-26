@@ -177,3 +177,6 @@ end
 
 	#opção do comando vagrant: ssh (connects to machine via SSH)
 	vagrant ssh
+
+	#opção do comando ssh: -p (port), -i (identity_file)
+	ssh -p 22 -i .vagrant/machines/webserver/virtualbox/private_key vagrant@192.168.0.251
