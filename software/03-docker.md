@@ -56,6 +56,7 @@ Site Oficial do Docker Hub: https://hub.docker.com/search?q=
 	baixar o Binário do projeto e atualizar a versão no Linux Mint com o procedimento abaixo (NÃO
 	COMENTADO NO VÍDEO)
 
+	#opção do comando apt: purgue (remove --purge packages)
 	sudo apt purgue docker-copose
 	
 	#opção do comando curl: -S (show-error), -L (location), -o (output)
@@ -90,7 +91,8 @@ Site Oficial do Docker Hub: https://hub.docker.com/search?q=
 
 #10_ Iniciando um Container de Teste do Ubuntu Bash no Docker CE<br>
 
-	#opções do comando docker: search (Search the Docker Hub for images), run (Run a command in a new container), -i (interactive), -t (tty)
+	#opções do comando docker: search (Search the Docker Hub for images), run (Run a command in a new container), 
+	#-i (interactive), -t (tty)
 	docker search ubuntu
 	docker run -it ubuntu bash
 		cat /etc/os-release
