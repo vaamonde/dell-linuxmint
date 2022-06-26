@@ -142,8 +142,7 @@ Images Oficiais do Ubuntu: https://cloud-images.ubuntu.com/
 #OBSERVAÇÃO IMPORTANTE: Recuo PADRÃO adequado SEMPRE usar ESPAÇO e NÃO TAB (tabulador) - 2(dois) ESPAÇOS
 Vagrant.configure("2") do |config|
   #Configuração das Definições do Nome do BOX Local do Vagrant para Multi-VM
-  #OBSERVAÇÃO IMPORTANTE: caso não use a opção define será criado uma BOX com
-  #o nome Padrão: default
+  #OBSERVAÇÃO IMPORTANTE: caso não use a opção define será criado uma BOX com o nome Padrão: default
   config.vm.define "webserver" do |web|
     #Configuração do nome do BOX Local do Vagrant
     web.vm.box = "ubuntu2204"
@@ -153,8 +152,8 @@ Vagrant.configure("2") do |config|
     web.vm.hostname = "webserver"
     #Configuração do Endereçamento Público IPv4 do BOX do Ubuntu Server do Vagrant
     #OBSERVAÇÃO IMPORTANTE: por padrão o Vagrant utiliza a primeira Interface de Rede em Modo NAT
-    #para acessar via SSH o BOX do Ubuntu Server, quando configurado a Interface Pública o Vagrant
-    #ele habilita a segunda Interface do Virtual em Modo Bridge e configura o Endereço IPv4 Estático
+    #para acessar via SSH o BOX do Ubuntu Server, quando configurado a Interface Pública do Vagrant
+    #ele habilita a segunda Interface do VirtualBOX em Modo Bridge e configura o Endereço IPv4 Estático
     web.vm.network "public_network", ip: "192.168.0.251", bridge: "enp6s0"
     #Configuração da Máquina Virtual do BOX do Ubuntu Server no VirtualBOX do Vagrant
     web.vm.provider "virtualbox" do |vb|
