@@ -44,10 +44,12 @@ Site Oficial do Ansible: https://www.ansible.com/
 
 #05_ Verificando a Versão do Ansible<br>
 
+	#Link de referência: https://docs.ansible.com/ansible/2.4/ansible.html
 	ansible --version
 
 #06_ Criando o Arquivo de Inventário dos Hosts e Log do Ansible no Linux Mint<br>
 
+	#Link de referência: https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html
 	sudo vim /etc/ansible/hosts
 	ESC dG (d=delete | G=end of file)
 	INSERT
@@ -64,10 +66,12 @@ webserver ansible_host=192.168.0.250 ansible_user=root
 ansible_python_interpreter=/usr/bin/python3
 ```
 
+	#Link de referência: https://docs.ansible.com/ansible/latest/cli/ansible-inventory.html
 	#opção do comando ansible-inventory: list (Output all hosts info, works as inventory script), yaml (yaml)
 	ansible-inventory --list
 	ansible-inventory --list --yaml
 
+	#Link de referência: https://docs.ansible.com/ansible/latest/reference_appendices/config.html
 	sudo vim /etc/ansible/ansible.cfg
 	ESC dG (d=delete | G=end of file)
 	INSERT
@@ -164,12 +168,12 @@ log_path=/var/log/ansible.log
 
 ```ruby
 #Iniciando a Playbook do Ansible, obrigatório iniciar com --- (três traços)
-#OBSERVAÇÃO IMPORTANTE: Recuo PADRÃO adequado SEMPRE usar ESPAÇO e NÃO TAB (tabulador) - 2(dois) ESPAÇOS
+#OBSERVAÇÃO IMPORTANTE: Recuo PADRÃO adequado SEMPRE usar ESPAÇO e NÃO TAB (tabulador) - 2 (dois) ESPAÇOS
 #SITE PARA TESTAR E OTIMIZAR A VALIDAÇÃO DO ARQUIVO YAML: http://www.yamllint.com/
 ---
-#Nome do Playbook de atualização do Servidor Ubuntu.
+#Nome da Playbook de atualização do Servidor Ubuntu.
 - name: Atualização do Servidor Ubuntu
-  #Os hosts gerenciados para executar as tasks.
+  #Hosts gerenciados para executar as tasks.
   hosts: webserver
   #Escalação de privilégios no Playbook
   become: yes
@@ -186,7 +190,7 @@ log_path=/var/log/ansible.log
         update_cache: yes
         #Força o uso de Apt em vez de Aptitude (descontinuado)
         force_apt_get: yes
-        #Atualize o cache do Apt se for mais antigo que o tempo cache_valid_time em segundos
+        #Atualize o cache do Apt se for mais antigo que o tempo de cache_valid_time em segundos
         cache_valid_time: 3600
 
     #Nome da lista de atualização de todos os software do Servidor
@@ -199,6 +203,7 @@ log_path=/var/log/ansible.log
         force_apt_get: yes
 ```
 
+	#Link de referência: https://docs.ansible.com/ansible/2.4/ansible-playbook.html
 	#opção do comando ansible-playbook: -i (inventory-file), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
 	ansible-playbook -i hosts update.yaml --syntax-check -vv
 	ansible-playbook -i hosts update.yaml -v
