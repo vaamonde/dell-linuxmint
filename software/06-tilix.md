@@ -33,13 +33,13 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 #02_ Instalando o Tilix no Linux Mint<br>
 
-	sudo apt install tilix
+	sudo apt install tilix unzip git vim
 
 #03_ Instalando a Fonte Hack Nerd Fonts no Linux Mint<Br>
 
-	#opção do comando mkdir: -v (verbose), ~ ()
+	#opção do comando mkdir: -v (verbose), -p (parents), ~ (til: alias home directory)
 	#opção do comando fc-cache: -f (Force up-to-date cache files), -v (Display status)
-	mkdir -v ~/.local/share/fonts/Hack
+	mkdir -pv ~/.local/share/fonts/Hack
 	cd  ~/.local/share/fonts/Hack
 	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip
 	unzip Hack.zip
@@ -75,8 +75,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 	sudo apt install zsh
 	zsh
-		2
-		exit
+		Type one of the keys in parentheses: 2
 
 	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 		Do you want to change your default shell to zsh? [Y/n] Y <Enter>
@@ -119,7 +118,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 			k
 		)
 
-#10_ Personalizando o Tema Powerlevel10k
+#10_ Personalizando o Tema Powerlevel10k no Linux Mint<br>
 
 	#abrir um novo terminal para iniciar as configurações
 	Ctrl+Alt+t
@@ -131,7 +130,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 			Choice [ynq]: y
 		Do all these icons fit between the crosses?
 			Choice [ynq]: y
-		(2) Classic
+		Prompt Style: (2) Classic
 			Choice [1234rq]: 2
 		Character Set: (1) Unicode
 			Choice [1234rq]: 1
@@ -159,10 +158,18 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 			Choice [123rq]: 2
 		Enable Transient Prompt? (n)  No.
 			Choice [n]: n
-
+		Instant Prompt Mode: (1)  Verbose (recommended).
+			Choice [123rq]: 1
+		 Apply changes to ~/.zshrc?: (y)  Yes (recommended).
+		 	Choice [ynrq]: y
+			
 #11_ Configurando o Visual Studio Code com suporte a Fonte Hack Nerd Font<br>
 
 	Gerenciar
 		Configurações
 			terminal.integrated.fontFamily
 				Hack Nerd Font
+
+	Ctrl + Shift + P
+		Termial: Selecione o Perfil Padrão
+			zsh
