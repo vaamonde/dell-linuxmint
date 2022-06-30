@@ -102,23 +102,23 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 	#Instalação do Plugin K do ZSH
 	git clone https://github.com/supercrabtree/k $ZSH_CUSTOM/plugins/k
 	
-	#Instalação do Tema PowerLevel10
+	#Instalação do Tema PowerLevel10K
 	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 
 09_ Editando o arquivo de configuração do ZSHRC no Linux Mint<br>
 
 	vim ~/.zshrc
-		ZSH_THEME="powerlevel10k/powerlevel10k"
-		POWERLEVEL10K_MODE="nerdfont-complete"
-		plugins=(
-			git
-			zsh-syntax-highlighting
-			fzf
-			zsh-autosuggestions
-			k
-		)
+	ZSH_THEME="powerlevel10k/powerlevel10k"
+	POWERLEVEL10K_MODE="nerdfont-complete"
+	plugins=(
+		git
+		zsh-syntax-highlighting
+		fzf
+		zsh-autosuggestions
+		k
+	)
 
-#10_ Personalizando o Tema Powerlevel10k no Linux Mint<br>
+#10_ Personalizando o Tema PowerLevel10K no Linux Mint<br>
 
 	#abrir um novo terminal para iniciar as configurações
 	Ctrl+Alt+t
@@ -171,5 +171,5 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 				Hack Nerd Font
 
 	Ctrl + Shift + P
-		Termial: Selecione o Perfil Padrão
+		Terminal: Selecione o Perfil Padrão
 			zsh
