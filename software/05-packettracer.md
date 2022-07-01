@@ -55,11 +55,11 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 	#opção do comando ldd: -v (verbose), | (piper = Conecta a saída padrão com a entrada padrão de outro comando)
 	sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
 
-	#instalação das dependências do Cisco Packet Tracer
+	#Instalação das dependências do Cisco Packet Tracer
 	sudo apt install libqt5networkauth5 libqt5script5 libqt5scripttools5
 	sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
 
 	OBSERVAÇÃO IMPORTANTE: as dependências: libQt5QmlModels.so.5 e o erro: /lib/x86_64-linux-gnu/libQt5Core.so.5: 
-	version `Qt_5.15' not found não interfere diretamente no funcionamento do Cisco Packet Tracer no Linux Mint
-	20.3, essas dependências fazem parte da versão do Ubuntu >= 21.04, verificando a versão do Qt5Core instalado
-	no Linux Mint 20.3: sudo locate libQt5Core
+	version `Qt_5.15' not found não interfere diretamente no funcionamento do Cisco Packet Tracer 8.1.1 no Linux 
+	Mint 20.3, essas dependências fazem parte da versão do Ubuntu >= 21.04, verifique a versão do Qt5Core instalada
+	no Linux Mint 20.3 com o comando: sudo locate libQt5Core
