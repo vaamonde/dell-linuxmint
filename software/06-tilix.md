@@ -81,7 +81,9 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 		Do you want to change your default shell to zsh? [Y/n] Y <Enter>
 		Password: <Enter>
 
-#08_ Instalação dos Plugins e Temas do ZSH e do On My Zsh no Linux Mint<br>
+	#recomendo fechar o Terminal Tilix e abrir novamente para verificar se tudo está funcionando
+
+#08_ Instalação dos Plugins e Temas do ZSH e do Oh My Zsh no Linux Mint<br>
 
 	Link de referência: https://github.com/zsh-users/zsh-syntax-highlighting
 	Link de referência FZF: https://github.com/junegunn/fzf.git
@@ -108,8 +110,11 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 09_ Editando o arquivo de configuração do ZSHRC no Linux Mint<br>
 
 	vim ~/.zshrc
+	#Variáveis de configuração do Tema PowerLevel10K
 	ZSH_THEME="powerlevel10k/powerlevel10k"
 	POWERLEVEL10K_MODE="nerdfont-complete"
+	
+	#Variável de configuração dos Plugins do ZSH
 	plugins=(
 		git
 		zsh-syntax-highlighting
@@ -118,10 +123,14 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 		k
 	)
 
+	#recomendo fechar o Terminal Tilix e abrir novamente para verificar se tudo está funcionando
+	#e começar a customizar o Tema PowerLevel10K
+
 #10_ Personalizando o Tema PowerLevel10K no Linux Mint<br>
 
 	#abrir um novo terminal para iniciar as configurações
 	Ctrl+Alt+t
+
 		Does this look like a diamond (rotated square)?
 			Choice [ynq]: y
 		Does this look like a lock?
@@ -163,7 +172,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 		 Apply changes to ~/.zshrc?: (y)  Yes (recommended).
 		 	Choice [ynrq]: y
 			
-#11_ Configurando o Visual Studio Code com suporte a Fonte Hack Nerd Font<br>
+#11_ Configurando o Visual Studio Code com suporte a Fonte Hack Nerd Font e Terminal ZSH<br>
 
 	Gerenciar
 		Configurações
