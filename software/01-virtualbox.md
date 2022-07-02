@@ -92,3 +92,4 @@ Site Oficial do VirtualBOX: https://www.virtualbox.org/
 #06_ Baixando e Instalando o Pacote de Extensões do Oracle VirtualBOX<br>
 
 	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
+	*Seguir os procedimentos na tela.

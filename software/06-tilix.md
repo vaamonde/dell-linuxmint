@@ -54,7 +54,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 #05_ Executando o Tilix no Linux Mint<br>
 
-	Atalho: Ctrl+Alt+T
+	Atalho: Ctrl + Alt + T
 
 #06_ Customização Básica do Tilix no Linux Mint<br>
 
@@ -74,9 +74,12 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 #07_ Instalando o Zsh (Z Shell) e Oh My Zsh no Linux Mint<br>
 
 	sudo apt install zsh
+	
 	zsh
 		Type one of the keys in parentheses: 2
 
+	#opção do comando sh: -c (Read commands from the command_string operand in‐stead of from the standard input)
+	#opções do comando curl: -f (fail), -s (silent), -S (show-error), -L (location) 
 	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 		Do you want to change your default shell to zsh? [Y/n] Y <Enter>
 		Password: <Enter>
@@ -110,6 +113,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 09_ Editando o arquivo de configuração do ZSHRC no Linux Mint<br>
 
 	vim ~/.zshrc
+	
 	#Variáveis de configuração do Tema PowerLevel10K
 	ZSH_THEME="powerlevel10k/powerlevel10k"
 	POWERLEVEL10K_MODE="nerdfont-complete"
@@ -124,12 +128,12 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 	)
 
 	#recomendo fechar o Terminal Tilix e abrir novamente para verificar se tudo está funcionando
-	#e começar a customizar o Tema PowerLevel10K
+	#e começar a customizar o Tema PowerLevel10K utilizando o Wizard padrão.
 
 #10_ Personalizando o Tema PowerLevel10K no Linux Mint<br>
 
-	#abrir um novo terminal para iniciar as configurações
-	Ctrl+Alt+t
+	#abrir um novo terminal para iniciar as configurações do PowerLevel10K
+	Ctrl + Alt + T
 
 		Does this look like a diamond (rotated square)?
 			Choice [ynq]: y
@@ -172,7 +176,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 		 Apply changes to ~/.zshrc?: (y)  Yes (recommended).
 		 	Choice [ynrq]: y
 
-	#caso queira reconfigurar o PowerLevel10K novamente
+	#caso queira reconfigurar o PowerLevel10K novamente digite o comando abaixo.
 	p10k configure
 				
 #11_ Configurando o Visual Studio Code com suporte a Fonte Hack Nerd Font e Terminal ZSH<br>
