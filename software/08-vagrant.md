@@ -18,6 +18,9 @@ Site Oficial do Packer: https://www.packer.io/<br>
 Vagrant Cloud Box: https://app.vagrantup.com/boxes/search<br>
 Images Oficiais do Ubuntu: https://cloud-images.ubuntu.com/
 
+Providers Vagrant: https://www.vagrantup.com/docs/providers<br>
+Providers (Provedores) padrão do Vagrant: VirtualBOX, Hyper-V, Docker, VMware, Virt-Manager.
+
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
@@ -172,6 +175,9 @@ Vagrant.configure("2") do |config|
 #Fim do Bloco de Configuração: Configure (|config|)
 end
 ```
+
+	#opção do comando vagrant: validade (validates your Vagrantfile)
+	vagrant validate
 
 	#opção do comando vagrant: up (starts and provisions the vagrant environment)
 	vagrant up

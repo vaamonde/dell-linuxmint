@@ -171,7 +171,10 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 			Choice [123rq]: 1
 		 Apply changes to ~/.zshrc?: (y)  Yes (recommended).
 		 	Choice [ynrq]: y
-			
+
+	#caso queira reconfigurar o PowerLevel10K novamente
+	p10k configure
+				
 #11_ Configurando o Visual Studio Code com suporte a Fonte Hack Nerd Font e Terminal ZSH<br>
 
 	Gerenciar
