@@ -96,6 +96,9 @@ Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 					File Types and Programming Languages
 						shellscript, python, markdown, etc...
 
+	Code Spell Checker
+		(Sem necessidade de configuração)
+
 	Bats (Bash Automated Testing System)
 		(Sem necessidade de configuração)
 
@@ -130,6 +133,9 @@ Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 		(Sem necessidade de configuração)
 
 	Ansible
+		(Sem necessidade de configuração)
+
+	YAML
 		(Sem necessidade de configuração)
 
 #09_ Configurações principais do Microsoft Visual Studio Code VSCode para funcionar perfeitamente no Linux Mint<br>
