@@ -70,6 +70,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 				Color
 					Esquemas de Cores: Monokai Dark
 					Transparência: Aumentar um Pouco
+	Fechar
 
 #07_ Instalando o Zsh (Z Shell) e Oh My Zsh no Linux Mint<br>
 
@@ -82,11 +83,14 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 	#opções do comando curl: -f (fail), -s (silent), -S (show-error), -L (location) 
 	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 		Do you want to change your default shell to zsh? [Y/n] Y <Enter>
-		Password: <Enter>
+		[sudo] senha para usuário: <Enter>
 
 	#recomendo fechar o Terminal Tilix e abrir novamente para verificar se tudo está funcionando
+	exit (Atalho: Ctrl + D)
 
 #08_ Instalação dos Plugins e Temas do ZSH e do Oh My Zsh no Linux Mint<br>
+
+	Atalho: Ctrl + Alt + T
 
 	Link de referência: https://github.com/zsh-users/zsh-syntax-highlighting
 	Link de referência FZF: https://github.com/junegunn/fzf.git
@@ -163,8 +167,8 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 			Choice [123rq]: 1
 		Prompt Frame: (1)  No frame.
 			Choice [123rq]: 1
-		Prompt Spacing: 1)  Compact.
-			Choice [123rq]: 1
+		Prompt Spacing: 1)  Space.
+			Choice [123rq]: 2
 		Icons: (2)  Many icons.
 			Choice [123rq]: 2
 		Prompt Flow: (2)  Fluent.
@@ -187,5 +191,5 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 				Hack Nerd Font
 
 	Ctrl + Shift + P
-		Terminal: Selecione o Perfil Padrão
+		Terminal: Selecionar o Perfil Padrão
 			zsh
