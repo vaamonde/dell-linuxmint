@@ -154,3 +154,14 @@ Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 				Editor: Insert Spaces: False (Off)
 			Files
 				Files: Eol: \n (LF)
+
+			#OBSERVAÇÃO IMPORTANTE: executar essa configuração somente se você fez a instalação
+			#do ZSH, das Fontes Hack e do Oh My ZSH.
+			Font
+				Integrated: Font Family
+					Hack Nerd Font
+			
+			#Configuração do Terminal Padrão do VSCODE
+			Ctrl + Shift + P
+				Terminal: Selecionar o Perfil Padrão
+					zsh
