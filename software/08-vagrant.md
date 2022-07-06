@@ -102,7 +102,7 @@ Providers (Provedores) padrão do Vagrant: VirtualBOX, Hyper-V, Docker, VMware, 
 	vagrant status
 	vagrant global-status
 
-#12_ Removendo uma VM do Ubuntu no VirtualBOX criada com o Vagrant<br>
+#12_ Removendo a VM do Ubuntu no VirtualBOX criada com o Vagrant<br>
 
 	#Link de referência: https://www.vagrantup.com/docs/cli/destroy
 	#Link de referência: https://www.vagrantup.com/docs/cli/global-status
