@@ -33,7 +33,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 #02_ Instalando o Tilix no Linux Mint<br>
 
-	sudo apt install tilix unzip git vim
+	sudo apt install tilix unzip git vim python2 python3
 
 #03_ Instalando a Fonte Hack Nerd Fonts no Linux Mint<Br>
 
