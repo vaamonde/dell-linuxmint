@@ -37,13 +37,15 @@ Github do Pacote de Tradução: https://github.com/vaamonde/pt_br-wpsoffice
 
 #02_ Download do WPS Office 2019 no Linux Mint<br>
 
-	Site: https://www.wps.com/
+	Site: https://www.wps.com/office/linux/
 		Pacote: .DEB
 
 #03_ Instalando o WPS Office 2019 no Linux Mint<br>
 
 	01_ Na pasta de Download, clicar duas vezes no Instalador do WPS Office 2019;
-	02_ Seguir os procedimentos na tela.
+	02_ Seguir os procedimentos na tela;
+	03_ Menu, WPS Office
+	04_ End User License Agreement for WPS Office: Have read and agreed to Kingsoft Office Software: YES <I Confirm>
 
 #04_ Instalando o pacote de Tradução e Dicionário PT-BR do WPS Office 2019 no Linux Mint<br>
 
