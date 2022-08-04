@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 07/06/2022<br>
-#Versão: 0.02<br>
+#Data de atualização: 04/08/2022<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Instalação do Cisco Packet Tracer no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
@@ -63,3 +63,7 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 	version `Qt_5.15' not found não interfere diretamente no funcionamento do Cisco Packet Tracer 8.1.1 no Linux 
 	Mint 20.3, essas dependências fazem parte da versão do Ubuntu >= 21.04, verifique a versão do Qt5Core instalada
 	no Linux Mint 20.3 com o comando: sudo locate libQt5Core
+
+#05_ Atualização para a Versão 8.2.0 do Cico Packet Tracer
+
+	Atualização feita em Julho/2022 - procedimento no Linux Mint versões 20.x continua a mesma coisa
