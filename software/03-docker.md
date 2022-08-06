@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 10/06/2022<br>
-#Versão: 0.03<br>
+#Data de atualização: 05/08/2022<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Instalação do Docker CE no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
@@ -57,7 +57,7 @@ Site Oficial do Docker Hub: https://hub.docker.com/search?q=
 	COMENTADO NO VÍDEO)
 
 	#opção do comando apt: purgue (remove --purge packages)
-	sudo apt purgue docker-copose
+	sudo apt purgue docker-compose
 	
 	#opção do comando curl: -S (show-error), -L (location), -o (output)
 	sudo curl -SL https://github.com/docker/compose/releases/download/v2.6.0/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
