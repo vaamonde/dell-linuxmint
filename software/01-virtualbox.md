@@ -60,13 +60,13 @@ Site Oficial do VirtualBOX: https://www.virtualbox.org/
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
  
-    sudo apt update
-    sudo apt upgrade
-    sudo apt full-upgrade
-    sudo apt dist-upgrade
-    sudo apt autoremove
-    sudo apt autoclean
-    sudo apt clean
+	sudo apt update
+	sudo apt upgrade
+	sudo apt full-upgrade
+	sudo apt dist-upgrade
+	sudo apt autoremove
+	sudo apt autoclean
+	sudo apt clean
 
 #02_ Adicionando o Repositório do Oracle VirtualBOX no Linux Mint<br>
 
