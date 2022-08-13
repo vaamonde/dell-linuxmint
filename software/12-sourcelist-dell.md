@@ -7,11 +7,15 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 04/07/2021<br>
-#Data de atualização: 04/07/2021<br>
-#Versão: 0.01<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa e 20.2 Uma x64
+#Data de atualização: 13/08/2022<br>
+#Versão: 0.02<br>
+#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Adicionando os Repositórios do Dell no Linux Mint 64 Bits
+
+#Link de Drivers e downloads: https://www.dell.com/support/home/pt-br?app=drivers
+#Link de Imagem de recuperação: https://www.dell.com/support/home/pt-br/drivers/OSISO
+#Verificar o Service TAG no Linux: sudo dmidecode -s system-serial-number
 
 #01_ Adicionando o repositório da Dell<br>
 	_ sudo vim /etc/apt/sources.list.d/focal-dell.list
@@ -21,3 +25,4 @@
 		deb http://dell.archive.canonical.com/updates/ focal-somerville-melisa public
 	_ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F9FDA6BED73CDC22
 	_ sudo apt update
+	_ sudo apt install oem-somerville-melisa-meta libfprint-2-tod1-goodix oem-somerville-meta tlp-config
