@@ -64,6 +64,6 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 	Mint 20.3, essas dependências fazem parte da versão do Ubuntu >= 21.04, verifique a versão do Qt5Core instalada
 	no Linux Mint 20.3 com o comando: sudo locate libQt5Core
 
-#05_ Atualização para a Versão 8.2.0 do Cico Packet Tracer
+#05_ Atualização para a Versão 8.2.0 do Cisco Packet Tracer
 
-	Atualização feita em Julho/2022 - procedimento no Linux Mint versões 20.x continua a mesma coisa
+	Atualização feita em Julho/2022 - procedimento no Linux Mint versões 20.x continua a mesma coisa.
