@@ -120,7 +120,9 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 OBSERVAÇÃO IMPORTANTE: NO VÍDEO DE CONFIGURAÇÃO DO DELL INSPIRON 1440 EU NÃO FIZ MENÇÃO AO SWAPFILE
 QUE É CRIADO AUTOMATICAMENTE NA INSTALAÇÃO DO LINUX MINT, QUANDO VOCÊ ESTÁ UTILIZANDO SSD, M.2 OU 
-NVME É RECOMENDADO DESATIVAR O SUPORTE AO SWAPFILE PARA AUMENTAR O TEMPO DE VIDA DO SSD.
+NVME É RECOMENDADO DESATIVAR O SUPORTE AO SWAPFILE PARA AUMENTAR O TEMPO DE VIDA DO SSD. TRIM É UM 
+COMANDO QUE INFORMA QUAIS PÁGINAS OU BLOCOS ESTÃO REALMENTE EM USO EM SEU SSD. ESSA FUNÇÃO AUMENTA 
+O DESEMPENHO DO DISPOSITIVO, GERA MAIS ESPAÇO LIVRE E AINDA AUXILIA A PROLONGAR SUA VIDA ÚTIL.
 
 	_ Executar os procedimentos no Terminal (Ctrl + Alt + T)
 		sudo swapon --show
@@ -130,6 +132,11 @@ NVME É RECOMENDADO DESATIVAR O SUPORTE AO SWAPFILE PARA AUMENTAR O TEMPO DE VID
 			#swapfile	none	swap	sw	0	0
 		sudo rm /swapfile
 		sudo reboot
+
+	_ Executar os procedimentos no Terminal (Ctrl + Alt + T)
+		sudo swapon --show
+		sudo systemctl status fstrim.service
+		sudo systemctl status fstrim.timer
 
 #12_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
 
