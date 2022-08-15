@@ -5,10 +5,10 @@
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 25/08/2021
-# Data de atualização: 10/06/2022
-# Versão: 0.04
-# Testado e homologado para a versão do Linux Mint 20.1 Ulyssa e 20.2 Uma x64
-# Testado e homologado para a versão do Arduino IDE v2.0.x BETA e Fritzing v0.9.x
+# Data de atualização: 15/08/2022
+# Versão: 0.05
+# Testado e homologado para a versão do Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+# Testado e homologado para a versão do Arduino IDE v2.0.x e Fritzing v0.9.x
 #
 # Arduino é uma plataforma de prototipagem eletrônica de hardware livre e de placa única, 
 # projetada com um microcontrolador Atmel AVR com suporte de entrada/saída embutido, uma 
@@ -29,6 +29,7 @@
 # Circuito Impresso. 
 #
 # Site Oficial do Arduino IDE: https://www.arduino.cc/
+# Projeto do Github do Arduino IDE 2.x: https://github.com/arduino/arduino-ide
 # Site Oficial do Fritzing: https://fritzing.org/
 #
 # Vídeo de instalação da versão do Arduino IDE 1.8.x: https://www.youtube.com/watch?v=n9cRUE3io-Q
@@ -42,12 +43,12 @@
 # Terminal
 #		arduino-20
 #
-# Arduino IDE 2.0.0 BETA 11
+# Arduino IDE 2.0.x
 #	no board selected
 #		Arduino Uno at /dev/ttyACM0
 # 			Arduino AVR Boards [v1.8.3] - (Yes)
 #
-# Arduino IDE 2.0.0 BETA 11
+# Arduino IDE 2.0.x
 #	Tools
 #		Board "Arduino Uno"
 #		Port: "/dev/ttyACM0"
@@ -75,11 +76,11 @@ USUARIO=$(echo $USER)
 # opção da variável de ambiente $0: nome do comando ou script digitado
 LOG="$HOME/$(echo $0 | cut -d'/' -f2)"
 #
-# Declarando as variáveis de download do Arduino IDE e do Fritzing (Links atualizados no dia 10/06/2022)
-ARDUINO="https://downloads.arduino.cc/arduino-ide/arduino-ide_2.0.0-rc7_Linux_64bit.zip"
+# Declarando as variáveis de download do Arduino IDE e do Fritzing (Links atualizados no dia 15/08/2022)
+ARDUINO="https://downloads.arduino.cc/arduino-ide/arduino-ide_2.0.0-rc9.2_Linux_64bit.zip"
 FRITZING="https://github.com/fritzing/fritzing-parts.git"
 #
-# Script de instalação do Arduino IDE 2.0.x e do Fritzing no Linux Mint 20.1 Ulyssa ou 20.2 Uma 
+# Script de instalação do Arduino IDE 2.0.x e do Fritzing no Linux Mint 20.1 Ulyssa, 20.2 Uma ou 20.3 Una 
 # opção do comando echo: -e (enable interpretation of backslash escapes), \n (new line)
 # $0 (variável de ambiente do nome do comando)
 # opção do comando date: + (format), %d (day), %m (month), %Y (year 1970), %H (hour 24), %M (minute 60)
@@ -88,7 +89,7 @@ echo -e "Início do script $0 em: $(date +%d/%m/%Y-"("%H:%M")")\n" &>> $LOG
 clear
 #
 echo
-echo -e "Instalação do Arduino IDE 2.0 BETA e do Fritzing no Linux Mint 20.x\n"
+echo -e "Instalação do Arduino IDE 2.x e do Fritzing no Linux Mint 20.x\n"
 echo -e "Após a instalação do Arduino IDE digitar no console: arduino-20"
 echo -e "Após a instalação do Fritzing localizar na busca indexada por: Fritzing.\n"
 echo -e "Aguarde, esse processo demora um pouco dependendo do seu Link de Internet...\n"
@@ -125,7 +126,7 @@ echo -e "Removendo os software desnecessários, aguarde..."
 echo -e "Software desnecessários removidos com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Instalando o Arduino IDE 2.0 e do Fritzing, aguarde...\n"
+echo -e "Instalando o Arduino IDE 2.x e do Fritzing, aguarde...\n"
 #
 echo -e "Verificando a conexão com a Porta TTY (USB) do Arduino, aguarde..."
 # opção do bloco de agrupamento "": Protege uma string, mas reconhece $, \ e ` como especiais
@@ -218,30 +219,30 @@ if [ "$(sudo cat /etc/group | grep dialout &>> $LOG ; echo $?)" == "0" ]
 		exit 1
 fi
 #
-echo -e "Fazendo o download do Arduino IDE 2.0 BETA do site Oficial, aguarde..."
+echo -e "Fazendo o download do Arduino IDE 2.x do site Oficial, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando wget: -v (verbose), -O (output-document)
 	sudo wget -v -O /tmp/arduino20.zip $ARDUINO &>> $LOG
-echo -e "Download do Arduino IDE do site Oficial feito com sucesso!!!, continuando com o script...\n"
+echo -e "Download do Arduino IDE 2.x do site Oficial feito com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Descompactando o Arduino IDE 2.0 BETA no diretório: /opt/arduino20, aguarde..."
+echo -e "Descompactando o Arduino IDE 2.x no diretório: /opt/arduino20, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando mv: -v (verbose)
 	cd /tmp
 		sudo unzip arduino20.zip &>> $LOG
 		sudo mv -v arduino-*/ /opt/arduino20 &>> $LOG
 	cd - &>> $LOG
-echo -e "Descompactação do Arduino IDE no diretório /opt/arduino feito com sucesso!!!, continuando com o script...\n"
+echo -e "Descompactação do Arduino IDE 2.x no diretório /opt/arduino20 feito com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Criando o Link Simbólico do Arduino IDE 2.0 BETA no diretório: /bin, aguarde..."
+echo -e "Criando o Link Simbólico do Arduino IDE 2.x no diretório: /bin, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando ln: -s (symbolic), -v (verbose)
 	# opção do comando cp: -R (recursive), -f (force), -v (verbose)
 	sudo ln -sv /opt/arduino20/arduino-ide /bin/arduino-20 &>> $LOG
 	sudo cp -Rfv icons/ /opt/arduino20/ &>> $LOG
-echo -e "Link Simbólico do Arduino IDE feito com sucesso!!!, continuando com o script...\n"
+echo -e "Link Simbólico do Arduino IDE 2.x feito com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
 echo -e "Instalando o Fritzing, aguarde..."
@@ -257,7 +258,7 @@ echo -e "Clonando o projeto do Fritzing Parts do Github, aguarde..."
 echo -e "Projeto do Fritzing Parts clonado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Instalação do Arduino IDE 2.0 BETA e do Fritzing feita com Sucesso!!!."
+echo -e "Instalação do ArduinoIDE 2.x e do Fritzing feita com Sucesso!!!."
 	# script para calcular o tempo gasto (SCRIPT MELHORADO, CORRIGIDO FALHA DE HORA:MINUTO:SEGUNDOS)
 	# opção do comando date: +%T (Time)
 	HORAFINAL=$(date +%T)

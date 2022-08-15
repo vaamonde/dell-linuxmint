@@ -5,9 +5,9 @@
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 23/01/2021
-# Data de atualização: 10/06/2022
-# Versão: 0.10
-# Testado e homologado para a versão do Linux Mint 20.1 Ulyssa e 20.2 Uma x64
+# Data de atualização: 15/08/2022
+# Versão: 0.11
+# Testado e homologado para a versão do Linux Mint 20.1 Ulyssa, 20.2 Uma, 203. Una  x64
 # Testado e homologado para a versão do Arduino IDE v1.8.x, BlockDuino e Fritzing v0.9.x
 #
 # Arduino é uma plataforma de prototipagem eletrônica de hardware livre e de placa única, 
