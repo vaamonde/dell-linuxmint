@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 02/07/2021<br>
-#Data de atualização: 25/05/2022<br>
-#Versão: 0.16<br>
+#Data de atualização: 15/08/2022<br>
+#Versão: 0.17<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released!: https://blog.linuxmint.com/?p=4102<br>
@@ -73,7 +73,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		sudo apt clean
 		sudo reboot (Reinicializar o Sistema)
 
-#08_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.14.x suportado até 2025)<br>
+#08_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.15.x suportado até 2025)<br>
 
 		sudo apt update
 		sudo uname -a
@@ -98,9 +98,9 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 	_ Recomendado baixar o Driver mais novo do site da AMD: https://www.amd.com/pt/support
 		_ Download AMD Radeon RX Vega 64: https://www.amd.com/pt/support/graphics/radeon-rx-vega-series/radeon-rx-vega-series/radeon-rx-vega-64
-		_ Opção do download: Ubuntu x86 64-Bit Radeon™ Software for Linux® installer version 21.40.2 for
-		_ Ubuntu 20.04.3 (Revision Number 21.40.2, Release Date 19/01/2022)
-		_ Fazer o download do arquivo: amdgpu-install_21.40.2.40502-1_all.deb
+		_ Opção do download: Ubuntu x86 64-Bit Radeon™ Software for Linux® installer version 22.20 for
+		_ Ubuntu 20.04.5 HWE (Revision Number 22.20, Release Date 14/07/2022)
+		_ Fazer o download do arquivo: amdgpu-install_22.20.50200-1_all.deb
 		_ Fazer a instalação utilizando o Gerenciador Gráfico do Linux Mint GDEB (recomendado)
 		_ (clicar duas vezes no instalador e selecionar: Instalar Pacote)
 		_ Acessar o terminal pressionando: Ctrl+Alt+T
@@ -132,29 +132,59 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		Vsync Tearing Test: https://www.youtube.com/watch?v=9hIRq5HTh5s (Qualidade 1080p - Full Screen)
 		Test Your Video Playback: https://www.youtube.com/watch?v=2wVC-ZLhIHI (Qualidade 1080p - Full Screen)
 
+OBSERVAÇÃO IMPORTANTE: NO VÍDEO DE CONFIGURAÇÃO DO X99 XEON E5-2678 EU NÃO FIZ MENÇÃO AO SWAPFILE
+QUE É CRIADO AUTOMATICAMENTE NA INSTALAÇÃO DO LINUX MINT, QUANDO VOCÊ ESTÁ UTILIZANDO SSD, M.2 OU 
+NVME É RECOMENDADO DESATIVAR O SUPORTE AO SWAPFILE PARA AUMENTAR O TEMPO DE VIDA DO SSD.
+
+	_ Executar os procedimentos no Terminal (Ctrl + Alt + T)
+		sudo swapon --show
+		sudo swapoff -v /swapfile
+		sudo vim /etc/fstab
+			#Comentar a linha do Swapfile (salvar e sair: Esc Shift: x)
+			#swapfile	none	swap	sw	0	0
+		sudo rm /swapfile
+		sudo reboo
+
 #11_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
 
 	_ VirtualBOX: https://www.virtualbox.org/
-		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/virtualbox.md)
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/01-virtualbox.md)
+
+	_ VMware Workstation: https://www.vmware.com/br/products/workstation-pro.html
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/02-vmware.md)	
+
+	_ Docker CE: https://www.docker.com/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/03-docker.md)
+
+	_ GNS3: https://www.gns3.com/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/04-gns3.md)
+
+	_ Packet Tracer: https://www.packettracernetwork.com/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/05-packettracer.md)
+
+	_ Tilix: https://gnunn1.github.io/tilix-web/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/06-tilix.md)
+
+	_ Ansible: https://www.ansible.com/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/07-ansible.md)
+
+	_ Vagrant: https://www.vagrantup.com/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/08-vagrant.md)
+
+	_ Powershell: https://docs.microsoft.com/pt-br/powershell/scripting/overview?view=powershell-7.2
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/09-powershell.md)
+
+	_ VS Code: https://code.visualstudio.com/
+		(Link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/10-vscode.md)
+
+	_ WPS Office: http://linux.wps.com/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/11-wpsoffice.md)
 
 	_ NotepadQQ: https://notepadqq.com/s/
 		sudo apt update && sudo apt install notepadqq
 
-	_ Packet Tracer: https://www.packettracernetwork.com/
-		(link: https://mega.nz/folder/Co9GHIyK#2kzNnN7XzImP01M1SyRm2g/folder/vll2iSDI)
-
-	_ GNS3: https://www.gns3.com/
-		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/gns3.md)
-
-	_ WPS Office: http://linux.wps.com/
-		(link: https://linux.wps.com/)
-
 	_ KolourPaint: https://kde.org/applications/en/graphics/org.kde.kolourpaint
 		sudo apt update && sudo apt install kolourpaint
-
-	_ VS Code: https://code.visualstudio.com/
-		(extensions: Bash Beautify, BATS for VSCode, Brazilian Portuguese - Code Spell Checker 
-		Pacote de Idioma Português Brasileiro para VS Code Shell-Format e Shell)
 
 	_ Google Chrome: https://www.google.com/intl/pt-BR/chrome/
 
@@ -171,7 +201,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 	_ OBS Studio: https://obsproject.com/pt-br
 		(link da versão para Linux: https://obsproject.com/pt-br/download)
-
+		
 	_ Mega: https://mega.nz/
 		(link da versão >=: https://mega.nz/sync)
 

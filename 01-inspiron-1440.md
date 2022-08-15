@@ -8,8 +8,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 25/05/2022<br>
-#Versão: 0.16<br>
+#Data de atualização: 15/08/2022<br>
+#Versão: 0.17<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released!: https://blog.linuxmint.com/?p=4102<br>
@@ -56,8 +56,8 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	_ de Driver não funciona corretamente, sendo necessário instalar o Firmware e Driver manualmente 
 	_ por linha de comando.
 	_ OBSERVAÇÃO IMPORTANTE: na versão do Linux Mint 20.3 Una não e mais necessário instalar o
-	_ Driver da Placa de Rede Sem-Fio Broadcom, ele e reconhecido no Live-CD, depois de instalado
-	_ já está funcionando, mesmo depois de instalar o Kernel OEM >= 5.10.
+	_ Driver da Placa de Rede Sem-Fio Broadcom, ela é reconhecida no Live-CD, depois de instalado o
+	_ Linux Mint já está funcionando, mesmo depois de instalar o Kernel OEM >= 5.10.
 
 #06_ Hard Disk SATA SSD 60GB e SATA 500GB 7200rpm<br>
 
@@ -78,7 +78,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		sudo apt clean
 		sudo reboot (Reinicializar o Sistema)
 
-#08_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.14.x suportado até 2025)<br>
+#08_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.15.x suportado até 2025)<br>
 
 		sudo apt update
 		sudo uname -a
@@ -118,29 +118,59 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		sudo apt install firmware-b43-installer firmware-b43legacy-installer
 		sudo reboot (Reinicializar o Sistema)
 
+OBSERVAÇÃO IMPORTANTE: NO VÍDEO DE CONFIGURAÇÃO DO DELL INSPIRON 1440 EU NÃO FIZ MENÇÃO AO SWAPFILE
+QUE É CRIADO AUTOMATICAMENTE NA INSTALAÇÃO DO LINUX MINT, QUANDO VOCÊ ESTÁ UTILIZANDO SSD, M.2 OU 
+NVME É RECOMENDADO DESATIVAR O SUPORTE AO SWAPFILE PARA AUMENTAR O TEMPO DE VIDA DO SSD.
+
+	_ Executar os procedimentos no Terminal (Ctrl + Alt + T)
+		sudo swapon --show
+		sudo swapoff -v /swapfile
+		sudo vim /etc/fstab
+			#Comentar a linha do Swapfile (salvar e sair: Esc Shift: x)
+			#swapfile	none	swap	sw	0	0
+		sudo rm /swapfile
+		sudo reboot
+
 #12_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
 
 	_ VirtualBOX: https://www.virtualbox.org/
-		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/virtualbox.md)
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/01-virtualbox.md)
+
+	_ VMware Workstation: https://www.vmware.com/br/products/workstation-pro.html
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/02-vmware.md)	
+
+	_ Docker CE: https://www.docker.com/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/03-docker.md)
+
+	_ GNS3: https://www.gns3.com/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/04-gns3.md)
+
+	_ Packet Tracer: https://www.packettracernetwork.com/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/05-packettracer.md)
+
+	_ Tilix: https://gnunn1.github.io/tilix-web/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/06-tilix.md)
+
+	_ Ansible: https://www.ansible.com/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/07-ansible.md)
+
+	_ Vagrant: https://www.vagrantup.com/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/08-vagrant.md)
+
+	_ Powershell: https://docs.microsoft.com/pt-br/powershell/scripting/overview?view=powershell-7.2
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/09-powershell.md)
+
+	_ VS Code: https://code.visualstudio.com/
+		(Link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/10-vscode.md)
+
+	_ WPS Office: http://linux.wps.com/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/11-wpsoffice.md)
 
 	_ NotepadQQ: https://notepadqq.com/s/
 		sudo apt update && sudo apt install notepadqq
 
-	_ Packet Tracer: https://www.packettracernetwork.com/
-		(link: https://mega.nz/folder/Co9GHIyK#2kzNnN7XzImP01M1SyRm2g/folder/vll2iSDI)
-
-	_ GNS3: https://www.gns3.com/
-		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/gns3.md)
-
-	_ WPS Office: http://linux.wps.com/
-		(link: https://linux.wps.com/)
-
 	_ KolourPaint: https://kde.org/applications/en/graphics/org.kde.kolourpaint
 		sudo apt update && sudo apt install kolourpaint
-
-	_ VS Code: https://code.visualstudio.com/
-		(extensions: Bash Beautify, BATS for VSCode, Brazilian Portuguese - Code Spell Checker 
-		Pacote de Idioma Português Brasileiro para VS Code Shell-Format e Shell)
 
 	_ Google Chrome: https://www.google.com/intl/pt-BR/chrome/
 
