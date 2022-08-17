@@ -15,18 +15,24 @@
 
 #Link de Drivers e downloads: https://www.dell.com/support/home/pt-br?app=drivers
 #Link de Imagem de recuperação: https://www.dell.com/support/home/pt-br/drivers/OSISO
-#Link do Sources List da Dell: http://dell.archive.canonical.com/dists/
+#Link do Sources List da Dell Desktop: http://dell.archive.canonical.com/dists/
+#Link do Sources List da Dell Server: https://linux.dell.com/repo/community/openmanage/
 #Verificar o Service TAG no Linux: sudo dmidecode -s system-serial-number
 
 #01_ Adicionando o repositório da Dell<br>
+	_ sudo add-apt-repository universe (Mantido pela Comunidade e fornece software livre e de código aberto)
+	_ sudo add-apt-repository multiverse (Contém software com restrição de direitos autorais)
+	_ sudo add-apt-repository restricted (Contém drivers proprietários para dispositivos adicionais)
+	
 	_ sudo vim /etc/apt/sources.list.d/focal-dell.list
 		deb http://dell.archive.canonical.com/updates/ focal-dell public
 		deb http://dell.archive.canonical.com/updates/ focal-oem public
 		deb http://dell.archive.canonical.com/updates/ focal-somerville public
 		deb http://dell.archive.canonical.com/updates/ focal-somerville-melisa public
+		#https://linux.dell.com/repo/community/openmanage/10300/focal focal main
 	_ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F9FDA6BED73CDC22
-	_ sudo add-apt-repository universe (Mantido pela Comunidade e fornece software livre e de código aberto)
-	_ sudo add-apt-repository multiverse (Contém software com restrição de direitos autorais)
-	_ sudo add-apt-repository restricted (Contém drivers proprietários para dispositivos adicionais)
+	_ #sudo gpg --keyserver pool.sks-keyservers.net --recv-key 1285491434D8786F 
+	_ #gpg -a --export 1285491434D8786F | sudo apt-key add - 
+	
 	_ sudo apt update
 	_ sudo apt install oem-somerville-melisa-meta libfprint-2-tod1-goodix oem-somerville-meta tlp-config
