@@ -40,7 +40,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 	#opção do comando mkdir: -v (verbose), -p (parents), ~ (til: alias home directory)
 	#opção do comando fc-cache: -f (Force up-to-date cache files), -v (Display status)
 	mkdir -pv ~/.local/share/fonts/Hack
-	cd  ~/.local/share/fonts/Hack
+	cd ~/.local/share/fonts/Hack
 	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip
 	unzip Hack.zip
 	fc-cache -f -v

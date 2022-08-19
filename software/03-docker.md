@@ -86,6 +86,7 @@ Site Oficial do Docker Hub: https://hub.docker.com/search?q=
 #09_ Iniciando um Container de Teste do Docker CE<br>
 
 	#opção do comando docker: search (Search the Docker Hub for images), run (Run a command in a new container)
+	#link de consulta do Docker Hub: https://hub.docker.com/
 	docker search hello-world
 	docker run hello-world
 

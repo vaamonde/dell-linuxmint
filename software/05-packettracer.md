@@ -38,9 +38,9 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 
 #02_ Download do Cisco Packet Tracer 8.1.1<br>
 
-	Link Oficial Netacad: https://www.netacad.com/pt-br/courses/packet-tracer
-	Link Oficial Packet Tracer Network: https://www.packettracernetwork.com/
-	Mega.nz Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7XzImP01M1SyRm2g/folder/vll2iSDI
+	Link Oficial do Netacad: https://www.netacad.com/pt-br/courses/packet-tracer
+	Link Oficial do Packet Tracer Network: https://www.packettracernetwork.com/
+	Link do Mega.nz do Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7XzImP01M1SyRm2g/folder/vll2iSDI
 
 #03_ Instalando o Cisco Packet Tracer 8.1.1 no Linux Mint<br>
 
@@ -55,7 +55,7 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 	#opção do comando ldd: -v (verbose), | (piper = Conecta a saída padrão com a entrada padrão de outro comando)
 	sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
 
-	#Instalação das dependências do Cisco Packet Tracer
+	#Instalação das dependências do Cisco Packet Tracer no Linux Mint
 	sudo apt install libqt5networkauth5 libqt5script5 libqt5scripttools5
 	sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
 
