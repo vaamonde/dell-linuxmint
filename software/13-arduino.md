@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 15/08/2022<br>
-#Data de atualização: 15/08/2022<br>
-#Versão: 0.01<br>
+#Data de atualização: 24/08/2022<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Instalação do Arduino IDE 2.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
@@ -56,22 +56,15 @@ Site Oficial do Fritzing: https://fritzing.org/
 
 	arduino-20
 
-#07_ Configurando o Arduino IDE 2.x no Linux Mint<br>
+#07_ Verificando as Informações do Hardware do Arduino no Linux Mint<br>
 
-	Arduino IDE 2.0.0 BETA 11
-		no board selected
-			Arduino Uno at /dev/ttyACM0
-				Arduino AVR Boards [v1.8.3] - (Yes)
-
-#08_ Verificando as Informações do Hardware do Arduino no Linux Mint<br>
-
-	Arduino IDE 2.0.0 BETA 11
+	Arduino IDE 2.0.0 RC9.2
 		Tools
 			Board "Arduino Uno"
 			Port: "/dev/ttyACM0"
 			Get Board Info
 
-#09_ Executando um projeto básico do Arduino IDE no Linux Mint<br>
+#08_ Executando um projeto básico do Arduino IDE no Linux Mint<br>
 
 	File
 		Examples
