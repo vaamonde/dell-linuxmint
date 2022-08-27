@@ -7,14 +7,18 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 15/08/2022<br>
-#Data de atualização: 24/08/2022<br>
-#Versão: 0.02<br>
+#Data de atualização:27/08/2022<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Instalação do Arduino IDE 2.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 Site Oficial do Arduino IDE: https://www.arduino.cc/
 Projeto do Github do Arduino IDE 2.x: https://github.com/arduino/arduino-ide
+Site Oficial do Arduino Cloud: https://cloud.arduino.cc/
+Site Oficial do Arduino Web Editor: https://create.arduino.cc
+Site Oficial do Arduino IoT: https://create.arduino.cc/iot/things
+Site Oficial do Arduino Profile: https://id.arduino.cc/
 Site Oficial do Fritzing: https://fritzing.org/
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
@@ -38,7 +42,7 @@ Site Oficial do Fritzing: https://fritzing.org/
 
 #02_ Plugar o Arduino na porta USB no Linux Mint<br>
 
-	OBERVAÇÃO: verificar se os LED's de indicação do Arduino começar a piscar
+	OBERVAÇÃO: verificar se os LED's de indicação do Arduino começa a piscar
 
 #03_ Clonar o Projeto do Github<br>
 
@@ -71,3 +75,10 @@ Site Oficial do Fritzing: https://fritzing.org/
 			01. Basics
 				Blink
 					Upload
+
+#09_ Verificando as Informações do Hardware do Arduino utilizando o Arduino-Cli
+
+	Terminal (Ctrl + Alt + T)
+		arduino-cli
+		arduino-cli version
+		arduino-cli board list
