@@ -128,7 +128,7 @@ Providers (Provedores) padrão do Vagrant: VirtualBOX, Hyper-V, Docker, VMware, 
 
 #15_ Criando um novo projeto utilizando um BOX (Imagem) Oficial do Ubuntu<br>
 
-	#opções do comando mkdir: -v (verbose)
+	#opções do comando mkdir: -v (verbose), .. (ponto/ponto - mover uma pasta para cima)
 	cd ..
 	mkdir -v Ubuntu2204
 	cd Ubuntu2204

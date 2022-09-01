@@ -17,6 +17,7 @@
 #Link de Imagem de recuperação: https://www.dell.com/support/home/pt-br/drivers/OSISO
 #Link do Sources List da Dell Desktop: http://dell.archive.canonical.com/dists/
 #Link do Sources List da Dell Server: https://linux.dell.com/repo/community/openmanage/
+#Link do Sources List do Ubuntu OEM: http://oem.archive.canonical.com/updates/dists/
 #Verificar o Service TAG no Linux: sudo dmidecode -s system-serial-number
 
 #01_ Adicionando o repositório da Dell<br>
