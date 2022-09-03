@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 13/08/2021<br>
-#Data de atualização: 15/08/2022<br>
-#Versão: 0.17<br>
+#Data de atualização: 03/09/2022<br>
+#Versão: 0.18<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64 Bits
 
 08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released!: https://blog.linuxmint.com/?p=4102<br>
@@ -78,7 +78,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 		sudo apt update
 		sudo apt install software-properties-common build-essential lsb-core dkms
-		sudo apt install htop nmon psensor tlp tlp-rdw cpufrequtils cputool
+		sudo apt install htop nmon psensor tlp tlp-rdw cpufrequtils cputool ipmitool ipmiutil smartmontools
 		sudo apt install ttf-mscorefonts-installer cheese guvcview v4l-utils cairo-dock vim git p7zip-full p7zip-rar
 		sudo reboot (Reinicializar o Sistema)
 
@@ -99,7 +99,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		_ Unigine: https://benchmark.unigine.com/
 		_ GpuTest: https://www.geeks3d.com/gputest/
 
-OBSERVAÇÃO IMPORTANTE: NO VÍDEO DE CONFIGURAÇÃO DO DELL INSPIRON 1440 EU NÃO FIZ MENÇÃO AO SWAPFILE
+OBSERVAÇÃO IMPORTANTE: NO VÍDEO DE CONFIGURAÇÃO DO POSITIVO N4340 EU NÃO FIZ MENÇÃO AO SWAPFILE
 QUE É CRIADO AUTOMATICAMENTE NA INSTALAÇÃO DO LINUX MINT, QUANDO VOCÊ ESTÁ UTILIZANDO SSD, M.2 OU 
 NVME É RECOMENDADO DESATIVAR O SUPORTE AO SWAPFILE PARA AUMENTAR O TEMPO DE VIDA DO SSD. TRIM É UM 
 COMANDO QUE INFORMA QUAIS PÁGINAS OU BLOCOS ESTÃO REALMENTE EM USO EM SEU SSD. ESSA FUNÇÃO AUMENTA 

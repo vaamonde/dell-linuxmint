@@ -8,8 +8,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 15/08/2022<br>
-#Versão: 0.17<br>
+#Data de atualização: 03/09/2022<br>
+#Versão: 0.18<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released!: https://blog.linuxmint.com/?p=4102<br>
@@ -55,7 +55,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	_ OBS: se você utilizar o Kernel OEM >= 5.6 a instalação do Driver da Broadcom via Gerenciador 
 	_ de Driver não funciona corretamente, sendo necessário instalar o Firmware e Driver manualmente 
 	_ por linha de comando.
-	_ OBSERVAÇÃO IMPORTANTE: na versão do Linux Mint 20.3 Una não e mais necessário instalar o
+	_ OBSERVAÇÃO IMPORTANTE: na versão do Linux Mint 20.3 Una não é mais necessário instalar o
 	_ Driver da Placa de Rede Sem-Fio Broadcom, ela é reconhecida no Live-CD, depois de instalado o
 	_ Linux Mint já está funcionando, mesmo depois de instalar o Kernel OEM >= 5.10.
 
@@ -90,7 +90,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 		sudo apt update
 		sudo apt install software-properties-common build-essential lsb-core dkms
-		sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool
+		sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool ipmitool ipmiutil smartmontools
 		sudo apt install ttf-mscorefonts-installer cheese guvcview v4l-utils cairo-dock vim git p7zip-full p7zip-rar
 		sudo reboot (Reinicializar o Sistema)
 

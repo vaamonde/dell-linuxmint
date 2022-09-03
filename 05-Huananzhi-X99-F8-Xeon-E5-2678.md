@@ -55,9 +55,9 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 #06_ Placa de Rede Sem-Fio (Wi-Fi/Wireless)
 
-	_ Utilização do Adaptador Sem-Fio TP-Link 300Mbps Modelo TL-WN821N, já reconhecido no Linux Mint 
+	_ Utilização do Adaptador Sem-Fio TP-Link 300Mbps Modelo TL-WN821N, já é reconhecido no Linux Mint 
 	_ sem necessidade de instalação de Driver/Módulos para o seu funcionamento.
-	_ Teste feito com o Adaptador Sem-Fio TP-Link 150Mbps Modelo TL-WN721N, já reconhecido no Linux 
+	_ Teste feito com o Adaptador Sem-Fio TP-Link 150Mbps Modelo TL-WN721N, já é reconhecido no Linux 
 	_ Mint sem necessidade de instalação de Driver/Módulos para o seu funcionamento.
 
 #07_ Pós-Instalação do Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64 Bits<br>
@@ -84,7 +84,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 		sudo apt update
 		sudo apt install software-properties-common build-essential lsb-core dkms
-		sudo apt install htop nmon psensor cpufrequtils cputool
+		sudo apt install htop nmon psensor cpufrequtils cputool ipmitool ipmiutil smartmontools
 		sudo apt install ttf-mscorefonts-installer cheese guvcview v4l-utils cairo-dock vim git p7zip-full p7zip-rar
 		sudo reboot (Reinicializar o Sistema)
 
@@ -132,7 +132,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		Vsync Tearing Test: https://www.youtube.com/watch?v=9hIRq5HTh5s (Qualidade 1080p - Full Screen)
 		Test Your Video Playback: https://www.youtube.com/watch?v=2wVC-ZLhIHI (Qualidade 1080p - Full Screen)
 
-OBSERVAÇÃO IMPORTANTE: NO VÍDEO DE CONFIGURAÇÃO DO DELL INSPIRON 1440 EU NÃO FIZ MENÇÃO AO SWAPFILE
+OBSERVAÇÃO IMPORTANTE: NO VÍDEO DE CONFIGURAÇÃO DO DESKTOP GAMER XEON EU NÃO FIZ MENÇÃO AO SWAPFILE
 QUE É CRIADO AUTOMATICAMENTE NA INSTALAÇÃO DO LINUX MINT, QUANDO VOCÊ ESTÁ UTILIZANDO SSD, M.2 OU 
 NVME É RECOMENDADO DESATIVAR O SUPORTE AO SWAPFILE PARA AUMENTAR O TEMPO DE VIDA DO SSD. TRIM É UM 
 COMANDO QUE INFORMA QUAIS PÁGINAS OU BLOCOS ESTÃO REALMENTE EM USO EM SEU SSD. ESSA FUNÇÃO AUMENTA 
