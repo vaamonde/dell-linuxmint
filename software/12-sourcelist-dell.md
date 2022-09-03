@@ -7,21 +7,51 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 04/07/2021<br>
-#Data de atualização: 27/08/2022<br>
-#Versão: 0.04<br>
+#Data de atualização: 03/09/2022<br>
+#Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
-#Adicionando os Repositórios do Dell no Linux Mint 64 Bits
+#Link da Postagem na Comunidade da Dell: https://www.dell.com/community/Notebooks-Laptops/Reposit%C3%B3rio-Dell-Ubuntu-Codinome-Notebook/m-p/8262168#M36640
 
+#Modelos de Notebook da Dell Homologados:
+	_ Dell Inspiron 1440 2009 (Codename: );
+	_ Dell XPS L502X 2011 (Codename: );
+	_ Dell Vostro 5480 2015 (Codename: );
+	_ Dell G3 3590 2019 (Codename: ).
+
+#Adicionando os Repositórios da Dell no Linux Mint 64 Bits
+
+#Link de Hardware Homologados pela Dell: https://ubuntu.com/certified
 #Link de Drivers e downloads: https://www.dell.com/support/home/pt-br?app=drivers
-#Link de Imagem de recuperação: https://www.dell.com/support/home/pt-br/drivers/OSISO
+#Link da Imagem de Recuperação Linux: https://www.dell.com/support/home/en-us/drivers/osiso/linux?lwp=rt
+#Link de Imagem de Recuperação: https://www.dell.com/support/home/pt-br/drivers/OSISO
 #Link do Sources List da Dell Desktop: http://dell.archive.canonical.com/dists/
 #Link do Sources List da Dell Server: https://linux.dell.com/repo/community/openmanage/
 #Link do Sources List do Ubuntu OEM: http://oem.archive.canonical.com/updates/dists/
 #Verificar o Service TAG no Linux: sudo dmidecode -s system-serial-number
 
+#01_ Atualização do Sistema Operacional<br>
+
+	_ Atualização do sistema utilizando o MintUpdate;
+	_ Atualização do sistema utilizando o Apt;
+		sudo apt update
+		sudo apt upgrade
+		sudo apt full-upgrade
+		sudo apt dist-upgrade
+		sudo apt autoremove
+		sudo apt autoclean
+		sudo apt clean
+		sudo reboot (Reinicializar o Sistema)
+
+#02_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.15.x suportado até 2025)<br>
+
+		sudo apt update
+		sudo uname -a
+		sudo apt install linux-oem-20.04 fdutils
+		sudo reboot (Reinicializar o Sistema)
+
 #01_ Adicionando o repositório da Dell<br>
-	#Link de pesquisa de pacotes do Ubuntu: https://packages.ubuntu.com/
+	#Link de pesquisa dos pacotes do Ubuntu: https://packages.ubuntu.com/
 	_ sudo add-apt-repository main (Principal - Software livre e de código aberto suportado pela Canonical)
 	_ sudo add-apt-repository universe (Universe - Software livre e de código aberto mantido pela comunidade)
 	_ sudo add-apt-repository multiverse (Multiverse - Software restrito por direitos autorais ou questões legais)
