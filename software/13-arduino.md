@@ -13,12 +13,12 @@
 
 #Instalação do Arduino IDE 2.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
-Site Oficial do Arduino IDE: https://www.arduino.cc/
-Projeto do Github do Arduino IDE 2.x: https://github.com/arduino/arduino-ide
-Site Oficial do Arduino Cloud: https://cloud.arduino.cc/
-Site Oficial do Arduino Web Editor: https://create.arduino.cc
-Site Oficial do Arduino IoT: https://create.arduino.cc/iot/things
-Site Oficial do Arduino Profile: https://id.arduino.cc/
+Site Oficial do Arduino IDE: https://www.arduino.cc/<br>
+Projeto do Github do Arduino IDE 2.x: https://github.com/arduino/arduino-ide<br>
+Site Oficial do Arduino Cloud: https://cloud.arduino.cc/<br>
+Site Oficial do Arduino Web Editor: https://create.arduino.cc<br>
+Site Oficial do Arduino IoT: https://create.arduino.cc/iot/things<br>
+Site Oficial do Arduino Profile: https://id.arduino.cc/<br>
 Site Oficial do Fritzing: https://fritzing.org/
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
@@ -27,11 +27,13 @@ Site Oficial do Fritzing: https://fritzing.org/
 	sudo cat /etc/os-release
 	sudo localectl
 
-	Menu, Informações do Sistema
+	Menu
+		Informações do Sistema
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 
-	Menu, MintUpdate
+	Menu
+		MintUpdate
 
 	sudo apt update
 	sudo apt upgrade
@@ -76,7 +78,7 @@ Site Oficial do Fritzing: https://fritzing.org/
 				Blink
 					Upload
 
-#09_ Verificando as Informações do Hardware do Arduino utilizando o Arduino-Cli
+#09_ Verificando as Informações do Hardware do Arduino utilizando o Arduino-Cli<br>
 
 	Terminal (Ctrl + Alt + T)
 		arduino-cli

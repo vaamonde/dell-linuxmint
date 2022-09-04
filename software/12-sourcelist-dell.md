@@ -14,6 +14,7 @@
 #Link da Postagem na Comunidade da Dell: https://www.dell.com/community/Notebooks-Laptops/Reposit%C3%B3rio-Dell-Ubuntu-Codinome-Notebook/m-p/8262168#M36640
 
 #Modelos de Notebook da Dell Homologados:
+
 	_ Dell Inspiron 1440 2009 (Codename: );
 	_ Dell XPS L502X 2011 (Codename: );
 	_ Dell Vostro 5480 2015 (Codename: );
@@ -21,13 +22,13 @@
 
 #Adicionando os Repositórios da Dell no Linux Mint 64 Bits
 
-#Link de Hardware Homologados pela Dell: https://ubuntu.com/certified
-#Link de Drivers e downloads: https://www.dell.com/support/home/pt-br?app=drivers
-#Link da Imagem de Recuperação Linux: https://www.dell.com/support/home/en-us/drivers/osiso/linux?lwp=rt
-#Link de Imagem de Recuperação: https://www.dell.com/support/home/pt-br/drivers/OSISO
-#Link do Sources List da Dell Desktop: http://dell.archive.canonical.com/dists/
-#Link do Sources List da Dell Server: https://linux.dell.com/repo/community/openmanage/
-#Link do Sources List do Ubuntu OEM: http://oem.archive.canonical.com/updates/dists/
+#Link de Hardware Homologados pela Dell: https://ubuntu.com/certified<br>
+#Link de Drivers e downloads: https://www.dell.com/support/home/pt-br?app=drivers<br>
+#Link da Imagem de Recuperação Linux: https://www.dell.com/support/home/en-us/drivers/osiso/linux?lwp=rt<br>
+#Link de Imagem de Recuperação: https://www.dell.com/support/home/pt-br/drivers/OSISO<br>
+#Link do Sources List da Dell Desktop: http://dell.archive.canonical.com/dists/<br>
+#Link do Sources List da Dell Server: https://linux.dell.com/repo/community/openmanage/<br>
+#Link do Sources List do Ubuntu OEM: http://oem.archive.canonical.com/updates/dists/<br>
 #Verificar o Service TAG no Linux: sudo dmidecode -s system-serial-number
 
 #01_ Atualização do Sistema Operacional<br>
@@ -51,6 +52,7 @@
 		sudo reboot (Reinicializar o Sistema)
 
 #01_ Adicionando o repositório da Dell<br>
+
 	#Link de pesquisa dos pacotes do Ubuntu: https://packages.ubuntu.com/
 	_ sudo add-apt-repository main (Principal - Software livre e de código aberto suportado pela Canonical)
 	_ sudo add-apt-repository universe (Universe - Software livre e de código aberto mantido pela comunidade)
