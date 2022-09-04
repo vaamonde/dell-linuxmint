@@ -59,7 +59,9 @@ Site Oficial do VirtualBOX: https://www.virtualbox.org/
 	sudo lscpu
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
- 
+
+	_ Atualização do sistema utilizando o MintUpdate;
+	_ Atualização do sistema utilizando o Apt;
 	sudo apt update
 	sudo apt upgrade
 	sudo apt full-upgrade

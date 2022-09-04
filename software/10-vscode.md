@@ -23,6 +23,8 @@ Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 
+	_ Atualização do sistema utilizando o MintUpdate;
+	_ Atualização do sistema utilizando o Apt;
 	sudo apt update
 	sudo apt upgrade
 	sudo apt full-upgrade

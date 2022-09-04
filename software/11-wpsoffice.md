@@ -21,13 +21,13 @@ Github do Pacote de Tradução: https://github.com/vaamonde/pt_br-wpsoffice
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
 	sudo cat /etc/os-release
 	sudo localectl
-
-	Menu, Informações do Sistema
+	Menu
+		Informações do Sistema
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 
-	Menu, MintUpdate
-
+	_ Atualização do sistema utilizando o MintUpdate;
+	_ Atualização do sistema utilizando o Apt;
 	sudo apt update
 	sudo apt upgrade
 	sudo apt full-upgrade

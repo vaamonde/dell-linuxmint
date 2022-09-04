@@ -29,6 +29,8 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 
+	_ Atualização do sistema utilizando o MintUpdate;
+	_ Atualização do sistema utilizando o Apt;
 	sudo apt update
 	sudo apt upgrade
 	sudo apt full-upgrade

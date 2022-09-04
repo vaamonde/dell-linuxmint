@@ -20,8 +20,6 @@
 	_ Dell Vostro 5480 2015 (Codename: );
 	_ Dell G3 3590 2019 (Codename: ).
 
-#Adicionando os Repositórios da Dell no Linux Mint 64 Bits
-
 #Link de Hardware Homologados pela Dell: https://ubuntu.com/certified<br>
 #Link de Drivers e downloads: https://www.dell.com/support/home/pt-br?app=drivers<br>
 #Link da Imagem de Recuperação Linux: https://www.dell.com/support/home/en-us/drivers/osiso/linux?lwp=rt<br>
@@ -51,7 +49,7 @@
 		sudo apt install linux-oem-20.04 fdutils
 		sudo reboot (Reinicializar o Sistema)
 
-#01_ Adicionando o repositório da Dell<br>
+#03_ Adicionando o repositório da Dell<br>
 
 	#Link de pesquisa dos pacotes do Ubuntu: https://packages.ubuntu.com/
 	_ sudo add-apt-repository main (Principal - Software livre e de código aberto suportado pela Canonical)
