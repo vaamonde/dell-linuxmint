@@ -67,8 +67,7 @@
 
 	#Adicionando a Chave GPG do Repositório da Dell
 	_ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F9FDA6BED73CDC22
-	_ #sudo gpg --keyserver pool.sks-keyservers.net --recv-key 1285491434D8786F 
-	_ #gpg -a --export 1285491434D8786F | sudo apt-key add - 
+	_ #sudo apt-key adv --keyserver pool.sks-keyservers.net --recv-key 1285491434D8786F
 
 	#Atualizando e instalando os principais pacotes da Dell
 	_ sudo apt update
