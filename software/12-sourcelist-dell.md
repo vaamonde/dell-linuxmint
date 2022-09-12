@@ -7,18 +7,18 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 04/07/2021<br>
-#Data de atualização: 03/09/2022<br>
-#Versão: 0.05<br>
+#Data de atualização: 12/09/2022<br>
+#Versão: 0.06<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Link da Postagem na Comunidade da Dell: https://www.dell.com/community/Notebooks-Laptops/Reposit%C3%B3rio-Dell-Ubuntu-Codinome-Notebook/m-p/8262168#M36640
 
-#Modelos de Notebook da Dell Homologados:
+#Modelos dos Notebook da Dell Homologados:
 
-	_ Dell Inspiron 1440 2009 (Codename: );
-	_ Dell XPS L502X 2011 (Codename: );
-	_ Dell Vostro 5480 2015 (Codename: );
-	_ Dell G3 3590 2019 (Codename: ).
+	_ Dell Inspiron 1440 2009 (Codename: ???) Não Homologado pela Canonical;
+	_ Dell XPS L502X 2011 (Codename: ???) Não Homologado pela Canonical;
+	_ Dell Vostro 5480 2015 (Codename: ???) Homologado pela Canonical;
+	_ Dell G3 3590 2019 (Codename: ???) - Homologado pela Canonical.
 
 #Link de Hardware Homologados pela Dell: https://ubuntu.com/certified<br>
 #Link de Drivers e downloads: https://www.dell.com/support/home/pt-br?app=drivers<br>
@@ -58,6 +58,7 @@
 	_ sudo add-apt-repository restricted (Restrito - Drivers proprietários para dispositivos)
 	
 	#Criando o Sources List da Dell
+	_ sudo apt update && sudo apt install vim
 	_ sudo vim /etc/apt/sources.list.d/focal-dell.list
 		deb http://dell.archive.canonical.com/updates/ focal-dell public
 		deb http://dell.archive.canonical.com/updates/ focal-oem public
@@ -69,6 +70,6 @@
 	_ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F9FDA6BED73CDC22
 	_ #sudo apt-key adv --keyserver pool.sks-keyservers.net --recv-key 1285491434D8786F
 
-	#Atualizando e instalando os principais pacotes da Dell
+	#Atualizando as Lista do Apt e instalando os principais pacotes da Dell
 	_ sudo apt update
 	_ sudo apt install oem-somerville-melisa-meta libfprint-2-tod1-goodix oem-somerville-meta tlp-config
