@@ -11,14 +11,14 @@
 #Versão: 0.01<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
-#Atualizar o BIOS da Dell em um ambiente Linux ou Ubuntu: https://www.dell.com/support/kbdoc/en-us/000131486/update-the-dell-bios-in-a-linux-or-ubuntu-environment
+#Atualizar o BIOS da Dell em um ambiente Linux ou Ubuntu: https://www.dell.com/support/kbdoc/en-us/000131486/update-the-dell-bios-in-a-linux-or-ubuntu-environment<br>
 #Link de Drivers e downloads: https://www.dell.com/support/home/pt-br?app=drivers<br>
 #Link da Imagem de Recuperação Linux: https://www.dell.com/support/home/en-us/drivers/osiso/linux?lwp=rt<br>
 #Link de Imagem de Recuperação: https://www.dell.com/support/home/pt-br/drivers/OSISO<br>
-#Link de : https://fwupd.org/lvfs/devices/
-#Verificar o Service TAG no Linux: sudo dmidecode -s system-serial-number
-#Verificar a Versão da BIOS no Linux: sudo dmidecode -s bios-version
-#Verificar a Data da BIOS no Linux: sudo dmidecode -s bios-release-date
+#Link de Linux Vendor Firmware Service: https://fwupd.org/lvfs/devices/<br>
+#Verificar o Service TAG no Linux: sudo dmidecode -s system-serial-number<br>
+#Verificar a Versão da BIOS no Linux: sudo dmidecode -s bios-version<br>
+#Verificar a Data da BIOS no Linux: sudo dmidecode -s bios-release-date<br>
 #Verificar o Fabricante da BIOS no Linux: sudo dmidecode -s bios-vendor
 
 #Modelos dos Notebook utilizados na Atualização da BIOS:
