@@ -24,21 +24,22 @@
 #Modelos dos Notebook utilizados na Atualização da BIOS:
 
 	_ Dell Inspiron 1440 2009 (MODELO LEGADO, UTILIZAR PEN DRIVER COM FreeDOS);
-	_ Dell XPS L502X 2011 (MODELO LEGADO, UTILIZAR PEN DRIVER COM FreeDOS);
-	_ Dell Vostro 5480 2015 (MODELO LEGADO, UTILIZAR PEN DRIVER COM FreeDOS);
-	_ Dell G3 3590 2019 (MODELO COM SUPORTE A ATUALIZAÇÃO NO BOOT).
+	_ Dell XPS L502X 2011     (MODELO LEGADO, UTILIZAR PEN DRIVER COM FreeDOS);
+	_ Dell Vostro 5480 2015   (MODELO LEGADO, UTILIZAR PEN DRIVER COM FreeDOS);
+	_ Dell G3 3590 2019       (MODELO COM SUPORTE A ATUALIZAÇÃO NO BOOT).
 
-	_ Dell Inspiron 1440 - BIOS ATUAL: A07 21/12/2009 - UPDATE: A07 04/06/2020;
-	_ Dell XPS L502X 2011 - BIOS ATUAL: A07 10/20/2011 - UPDATE: A12 04/06/2020;
-	_ Dell Vostro 5480 - BIOS ATUAL: A03 02/10/2015 - UPDATE: A08 24/02/2018;
-	_ Dell G3 3590 - BIOS ATUAL: 1.6.0 08/08/2019 - UPDATE: 1.18.0 09/08/2022.
+	_ Dell Inspiron 1440    BIOS ATUAL: A07 21/12/2009   - UPDATE: A07 04/06/2020;
+	_ Dell XPS L502X 2011   BIOS ATUAL: A07 10/20/2011   - UPDATE: A12 04/06/2020;
+	_ Dell Vostro 5480      BIOS ATUAL: A03 02/10/2015   - UPDATE: A08 24/02/2018;
+	_ Dell G3 3590          BIOS ATUAL: 1.6.0 08/08/2019 - UPDATE: 1.18.0 09/08/2022.
 
 OBSERVAÇÃO IMPORTANTE: RECOMENDO FAZER O UPGRADE DA BIOS DOS NOTEBOOKS DA DELL CONECTADOS
 NA ENERGIA (FONTE DE ALIMENTAÇÃO) E SE POSSÍVEL CONECTADO EM UM SISTEMA DE NOBREAK, POIS
 QUALQUER FALHA NA ENERGIA NO PROCESSO DE ATUALIZAÇÃO DA BIOS PODE CAUSAR A FALHA DA PLACA
 E POSTERIORMENTE A FALHA DE INICIALIZAÇÃO DO SISTEMA. RECOMENDO TAMBÉM VERIFICAR A BATERIA
-DO NOTEBOOK SE ESTÁ CARREGANDO E FUNCIONANDO PERFEITAMENTE, ELE SERVER COMO NOBREAK CASO
-TENHA ALGUMA QUEDA DE ENERGIA, POIS AINDA RECOMENDO CONECTAR EM UM NOBREAK PARA GARANTIR.
+DO NOTEBOOK SE ESTÁ CARREGANDO E FUNCIONANDO PERFEITAMENTE, ELA SERVER COMO NOBREAK CASO
+TENHA ALGUMA QUEDA DE ENERGIA, MESMO ASSIM AINDA RECOMENDO CONECTAR EM UM NOBREAK ANTES DE
+EXECUTAR O PROCEDIMENTO DE ATUALIZAÇÃO DA BIOS.
 
 #01_ Formatar o Pen Driver com suporte ao FAT32
 
@@ -50,6 +51,22 @@ TENHA ALGUMA QUEDA DE ENERGIA, POIS AINDA RECOMENDO CONECTAR EM UM NOBREAK PARA 
 #03_ Inicializar a Atualização da BIOS via Boot
 
 #04_ Criando Pen Driver com suporte ao FreeDOS
-sudo add-apt-repository ppa:gezakovacs/ppa
-sudo apt-get update
-sudo apt-get install unetbootin
+
+	#Instlando o software UNetbootin no Linux Mint
+	sudo add-apt-repository ppa:gezakovacs/ppa
+	sudo apt-get update
+	sudo apt-get install unetbootin
+
+	#Formatando o Pen Driver com suporte ao FAT32
+	Inserir o Pen Driver na Porta USB;
+	Menu, Discos;
+		Selecionar o Pen Driver (Exemplo: SanDisk 15GB)
+			Desmontar o Pen Driver: Botão Quadrado
+		Formatar o Pen Driver com FA32
+			Opções adicionais de partição: Botão de Engrenagem
+
+	#Criando o Pen Driver Bootável com suporte ao FreeDOS
+	Menu, UNetbootin;
+		(Senha do seu usuário com direitos ao SUDO)
+			Ditribuição: FreeDOS - 1.0
+			Tipo: Unidade USB - Unidade: /dev/sdc
