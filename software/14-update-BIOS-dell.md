@@ -8,7 +8,7 @@
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 12/09/2021<br>
 #Data de atualização: 18/09/2022<br>
-#Versão: 0.04<br>
+#Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Atualizar o BIOS da Dell em um ambiente Linux ou Ubuntu: https://www.dell.com/support/kbdoc/en-us/000131486/update-the-dell-bios-in-a-linux-or-ubuntu-environment<br>
@@ -27,6 +27,10 @@
 	_ Dell XPS L502X       ANO 2011 (MODELO LEGADO, UTILIZAR PEN DRIVER COM FreeDOS);
 	_ Dell Vostro 5480     ANO 2015 (MODELO LEGADO, UTILIZAR PEN DRIVER COM FreeDOS);
 	_ Dell G3 3590         ANO 2019 (MODELO COM SUPORTE DE ATUALIZAÇÃO NO BOOT, PEN DRIVER EM FAT32).
+	OBSERVAÇÃO IMPORTANTE: O modelo G3 da Dell possui suporte para atualização da BIOS
+	ou Firmware utilizando o LVFS (Linux Vendor Firmware Service) que possibilita usar
+	os comandos fwupd* (fwupdagent, fwupdate, fwupdmgr e fwupdtool) que é nativo nas
+	distribuições Ubuntu e Linux Mint.
 
 	_ Dell Inspiron 1440   BIOS ATUAL: A07 21/12/2009   - UPDATE: A07 04/06/2020;
 	_ Dell XPS L502X 2011  BIOS ATUAL: A07 10/20/2011   - UPDATE: A12 04/06/2020;
