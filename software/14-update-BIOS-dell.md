@@ -8,7 +8,7 @@
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 12/09/2021<br>
 #Data de atualização: 18/09/2022<br>
-#Versão: 0.03<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Atualizar o BIOS da Dell em um ambiente Linux ou Ubuntu: https://www.dell.com/support/kbdoc/en-us/000131486/update-the-dell-bios-in-a-linux-or-ubuntu-environment<br>
@@ -26,7 +26,7 @@
 	_ Dell Inspiron 1440   ANO 2009 (MODELO LEGADO, UTILIZAR PEN DRIVER COM FreeDOS);
 	_ Dell XPS L502X       ANO 2011 (MODELO LEGADO, UTILIZAR PEN DRIVER COM FreeDOS);
 	_ Dell Vostro 5480     ANO 2015 (MODELO LEGADO, UTILIZAR PEN DRIVER COM FreeDOS);
-	_ Dell G3 3590         ANO 2019 (MODELO COM SUPORTE A ATUALIZAÇÃO NO BOOT).
+	_ Dell G3 3590         ANO 2019 (MODELO COM SUPORTE DE ATUALIZAÇÃO NO BOOT, PEN DRIVER EM FAT32).
 
 	_ Dell Inspiron 1440   BIOS ATUAL: A07 21/12/2009   - UPDATE: A07 04/06/2020;
 	_ Dell XPS L502X 2011  BIOS ATUAL: A07 10/20/2011   - UPDATE: A12 04/06/2020;
@@ -51,6 +51,9 @@ EXECUTAR O PROCEDIMENTO DE ATUALIZAÇÃO DA BIOS.
 	_ Link de Drivers e downloads: https://www.dell.com/support/home/pt-br?app=drivers
 	_ Service TAG no Linux: sudo dmidecode -s system-serial-number
 	_ Download da BIOS: Dell Inspiron 1440 System BIOS, A07 04 Jun 2020 <Download>
+	_ Download da BIOS: Dell XPS L502X System BIOS, A12 04 Jun 2020 <Download>
+	_ Download da BIOS: Dell Vostro 5480 System BIOS, A08 24 Feb 2018 <Download>
+	_ Download da BIOS: Dell G3 3590 System BIOS, 1.18.0 09 Aug 2022 <Download>
 
 	OBSERVAÇÃO IMPORTANTE: criar um diretório para cada modelo de notebook que você for
 	atualizar a BIOS, cuidado para não misturar as BIOS ou executar BIOS diferentes no
@@ -66,7 +69,7 @@ EXECUTAR O PROCEDIMENTO DE ATUALIZAÇÃO DA BIOS.
 #03_ Criando Pen Driver Bootável com suporte ao FreeDOS
 
 	#Conectar o Pen Driver na porta USB
-	_ Conectar o Pen Drive na Porta USB antes de gravar a Imagem
+	_ Conectar o Pen Drive na Porta USB antes de gravar a Imagem do FreeDOS
 
 	#Descompactar o arquivo Zipado do FreeDOS
 	_ Acessar o diretório de Download;
@@ -75,19 +78,22 @@ EXECUTAR O PROCEDIMENTO DE ATUALIZAÇÃO DA BIOS.
 	_ Acessar o diretório criado: FDT2209-FullUSB
 	_ Botão direito do mouse em cima do arquivo: T2209FULL.img
 	_ Selecionar a opção: Criar dispositivo USB inicializável
-		Gravar imagem: T2209FULL.img para: SanDisk USB
-		<Gravar>
+		Gravar imagem: T2209FULL.img para: SanDisk Cruzer Blade (/dev/sdb)
+		<Detalhes>
+			<Gravar>
 
-#04_ Copiar a arquivo da BIOS para a Raiz do Pen Driver Bootável do FreeDOS
+#04_ Copiar os arquivos de BIOS para a Raiz do Pen Driver Bootável do FreeDOS
 
-	_ Copiar o diretório INSPIRON para a Raiz do Pen Driver.
+	_ Copiar o diretório INSPIRON1440 para a Raiz do Pen Driver;
+	_ Copiar o diretório XPSL502X para a Raiz do Pen Driver;
+	_ Copiar o diretório VOSTRO5480 para a Raiz do Pen Driver.
 
-#05_ Iniciar o Notebook Dell Inspiron 1440 pelo Pen Driver do FreeDOS
+#05_ Iniciar o Notebook da Dell (Inspiron, XPS ou Vostro) pelo Pen Driver do FreeDOS
 
-	_ Ligar o Notebook Inspiron;
+	_ Ligar o Notebook: Power;
 	_ Pressionar a Tecla: F12;
 	_ Selecionar a opção: USB Storage Device <Enter>
-	_ Aguardar o Boot inicial do FreeDOS
+	_ Aguardar o Boot inicial do FreeDOS.
 
 #06_ Inicialização padrão do FreeDOS
 
@@ -98,13 +104,24 @@ EXECUTAR O PROCEDIMENTO DE ATUALIZAÇÃO DA BIOS.
 	_ What is your preferred language? English <Enter>
 	_ Do you want to proceed? No - Return to DOS <Enter>
 
-#07_ Atualizando a BIOS do Dell Inspiron 1440
+#07_ Atualizando as BIOS dos Notebooks da Dell (Inspiron, XPS e Vostro)
 
-	_ Acessar o diretório INSPIRON: cd INSPIRON <Enter>
+	_ Acessar o diretório INSPIRON1440: cd INSPIRON1440 <Enter>
 	_ Atualizar o BIOS com o comando: 1440_A07.EXE <Enter>
-	_ Aguardar a finalização da atualização da BIOS
+	_ Aguardar a finalização da atualização da BIOS.
 
-#08_ Acessando a BIOS do Dell Inspiron após a atualização
+	_ Acessar o diretório XPSL502X: cd XPSL502X <Enter>
+	_ Atualizar o BIOS com o comando: L502XA12.EXE <Enter>
+	_ Aguardar a finalização da atualização da BIOS.
 
-	_ Ligar o Notebook Inspiron;
+	_ Acessar o diretório VOSTRO5480: cd VOSTRO5480 <Enter>
+	_ Atualizar o BIOS com o comando: 5480A08.EXE <Enter>
+	_ Aguardar a finalização da atualização da BIOS.
+
+#08_ Acessando as BIOS dos Notebooks da Dell (Inspiron, XPS e Vostro) após a atualização
+
+	_ Ligar o Notebook: Power;
 	_ Pressionar a Tecla: F2;
+		Inspiron: Settings, General, System Information, BIOS Version
+		XPS L502X: Main, BIOS Version
+		Vostro: Main, BIOS Version
