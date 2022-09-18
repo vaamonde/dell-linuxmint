@@ -8,7 +8,7 @@
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 12/09/2021<br>
 #Data de atualização: 18/09/2022<br>
-#Versão: 0.02<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Atualizar o BIOS da Dell em um ambiente Linux ou Ubuntu: https://www.dell.com/support/kbdoc/en-us/000131486/update-the-dell-bios-in-a-linux-or-ubuntu-environment<br>
@@ -33,6 +33,11 @@
 	_ Dell Vostro 5480     BIOS ATUAL: A03 02/10/2015   - UPDATE: A08 24/02/2018;
 	_ Dell G3 3590         BIOS ATUAL: 1.6.0 08/08/2019 - UPDATE: 1.18.0 09/08/2022.
 
+	_ Dell Inspiron 1440   SUPORTE A BIOS UEFI: NÃO;
+	_ Dell XPS L502X 2011  SUPORTE A BIOS UEFI: NÃO;
+	_ Dell Vostro 5480     SUPORTE A BIOS UEFI: SIM (RECOMENDADO DEIXAR A BIOS EM MODO LEGACY);
+	_ Dell G3 3590         SUPORTE A BIOS UEFI: SIM (RECOMENDADO DEIXAR A BIOS EM MODO LEGACY).
+
 OBSERVAÇÃO IMPORTANTE: RECOMENDO FAZER O UPGRADE DA BIOS DOS NOTEBOOKS DA DELL CONECTADOS
 NA ENERGIA (FONTE DE ALIMENTAÇÃO) E SE POSSÍVEL CONECTADO EM UM SISTEMA DE NOBREAK, POIS
 QUALQUER FALHA NA ENERGIA NO PROCESSO DE ATUALIZAÇÃO DA BIOS PODE CAUSAR A FALHA DA PLACA
@@ -41,33 +46,65 @@ DO NOTEBOOK SE ESTÁ CARREGANDO E FUNCIONANDO PERFEITAMENTE, ELA SERVER COMO NOB
 TENHA ALGUMA QUEDA DE ENERGIA, MESMO ASSIM AINDA RECOMENDO CONECTAR EM UM NOBREAK ANTES DE
 EXECUTAR O PROCEDIMENTO DE ATUALIZAÇÃO DA BIOS.
 
-#01_ Formatar o Pen Driver com suporte ao FAT32
-
-#02_ Download da BIOS do site Oficial da Dell
+#01_ Download da BIOS do site Oficial da Dell
 
 	_ Link de Drivers e downloads: https://www.dell.com/support/home/pt-br?app=drivers
 	_ Service TAG no Linux: sudo dmidecode -s system-serial-number
+	_ Download da BIOS: Dell Inspiron 1440 System BIOS, A07 04 Jun 2020 <Download>
 
-#03_ Inicializar a Atualização da BIOS via Boot
+	OBSERVAÇÃO IMPORTANTE: criar um diretório para cada modelo de notebook que você for
+	atualizar a BIOS, cuidado para não misturar as BIOS ou executar BIOS diferentes no
+	momento da atualização.
 
-#04_ Criando Pen Driver com suporte ao FreeDOS
+#02_ Download do FreeDOS com suporte a Boot via Pen Drive
 
-	#Instalando o software UNetbootin no Linux Mint
-	_ sudo add-apt-repository ppa:gezakovacs/ppa
-	_ sudo apt-get update
-	_ sudo apt-get install unetbootin
+	_ Link de Download do FreeDOS: https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/distributions/test/
+		OBSERVAÇÃO IMPORTANTE: será utilizado a versão de Teste pois tem suporte a BIOS Intel, UEFI e Legada
+		Mais informações: https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/distributions/test/readme.txt
+	Selecionar a opção: FDT2209-FullUSB.zip (atualizada em: 01/09/2022)
 
-	#Formatando o Pen Driver com suporte ao FAT32
-	Inserir o Pen Driver na Porta USB;
-	
-	Menu, Discos;
-		Selecionar o Pen Driver (Exemplo: SanDisk 15GB)
-			Desmontar o Pen Driver: Botão Quadrado
-		Formatar o Pen Driver com FA32
-			Opções adicionais de partição: Botão de Engrenagem
+#03_ Criando Pen Driver Bootável com suporte ao FreeDOS
 
-	#Criando o Pen Driver Bootável com suporte ao FreeDOS
-	Menu, UNetbootin;
-		(Senha do seu usuário com direitos ao SUDO)
-			Ditribuição: FreeDOS - 1.0
-			Tipo: Unidade USB - Unidade: /dev/sdc
+	#Conectar o Pen Driver na porta USB
+	_ Conectar o Pen Drive na Porta USB antes de gravar a Imagem
+
+	#Descompactar o arquivo Zipado do FreeDOS
+	_ Acessar o diretório de Download;
+	_ Botão direito do mouse em cima do arquivo: FDT2209-FullUSB.zip
+	_ Selecionar a opção: Extrai Aqui
+	_ Acessar o diretório criado: FDT2209-FullUSB
+	_ Botão direito do mouse em cima do arquivo: T2209FULL.img
+	_ Selecionar a opção: Criar dispositivo USB inicializável
+		Gravar imagem: T2209FULL.img para: SanDisk USB
+		<Gravar>
+
+#04_ Copiar a arquivo da BIOS para a Raiz do Pen Driver Bootável do FreeDOS
+
+	_ Copiar o diretório INSPIRON para a Raiz do Pen Driver.
+
+#05_ Iniciar o Notebook Dell Inspiron 1440 pelo Pen Driver do FreeDOS
+
+	_ Ligar o Notebook Inspiron;
+	_ Pressionar a Tecla: F12;
+	_ Selecionar a opção: USB Storage Device <Enter>
+	_ Aguardar o Boot inicial do FreeDOS
+
+#06_ Inicialização padrão do FreeDOS
+
+	OBSERVAÇÃO IMPORTANTE: por padrão o FreeDOS que fazer a instalação do sistema
+	no momento da inicialização do Pen Driver, nesse cenário vamos iniciar somente
+	o ambiente para atualizar a BIOS.
+
+	_ What is your preferred language? English <Enter>
+	_ Do you want to proceed? No - Return to DOS <Enter>
+
+#07_ Atualizando a BIOS do Dell Inspiron 1440
+
+	_ Acessar o diretório INSPIRON: cd INSPIRON <Enter>
+	_ Atualizar o BIOS com o comando: 1440_A07.EXE <Enter>
+	_ Aguardar a finalização da atualização da BIOS
+
+#08_ Acessando a BIOS do Dell Inspiron após a atualização
+
+	_ Ligar o Notebook Inspiron;
+	_ Pressionar a Tecla: F2;
