@@ -33,12 +33,12 @@ Site Oficial do Fritzing: https://fritzing.org/
 
 	_ Atualização do sistema utilizando o MintUpdate;
 	_ Atualização do sistema utilizando o Apt;
-	sudo apt update
-	sudo apt upgrade
-	sudo apt full-upgrade
-	sudo apt dist-upgrade
-	sudo apt autoremove
-	sudo apt autoclean
+		sudo apt update
+		sudo apt upgrade
+		sudo apt full-upgrade
+		sudo apt dist-upgrade
+		sudo apt autoremove
+		sudo apt autoclean
 
 #02_ Plugar o Arduino na porta USB no Linux Mint<br>
 
