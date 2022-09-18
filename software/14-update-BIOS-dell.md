@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 12/09/2021<br>
-#Data de atualização: 12/09/2022<br>
-#Versão: 0.01<br>
+#Data de atualização: 18/09/2022<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Atualizar o BIOS da Dell em um ambiente Linux ou Ubuntu: https://www.dell.com/support/kbdoc/en-us/000131486/update-the-dell-bios-in-a-linux-or-ubuntu-environment<br>
@@ -23,15 +23,15 @@
 
 #Modelos dos Notebook utilizados na Atualização da BIOS:
 
-	_ Dell Inspiron 1440 2009 (MODELO LEGADO, UTILIZAR PEN DRIVER COM FreeDOS);
-	_ Dell XPS L502X 2011     (MODELO LEGADO, UTILIZAR PEN DRIVER COM FreeDOS);
-	_ Dell Vostro 5480 2015   (MODELO LEGADO, UTILIZAR PEN DRIVER COM FreeDOS);
-	_ Dell G3 3590 2019       (MODELO COM SUPORTE A ATUALIZAÇÃO NO BOOT).
+	_ Dell Inspiron 1440   ANO 2009 (MODELO LEGADO, UTILIZAR PEN DRIVER COM FreeDOS);
+	_ Dell XPS L502X       ANO 2011 (MODELO LEGADO, UTILIZAR PEN DRIVER COM FreeDOS);
+	_ Dell Vostro 5480     ANO 2015 (MODELO LEGADO, UTILIZAR PEN DRIVER COM FreeDOS);
+	_ Dell G3 3590         ANO 2019 (MODELO COM SUPORTE A ATUALIZAÇÃO NO BOOT).
 
-	_ Dell Inspiron 1440    BIOS ATUAL: A07 21/12/2009   - UPDATE: A07 04/06/2020;
-	_ Dell XPS L502X 2011   BIOS ATUAL: A07 10/20/2011   - UPDATE: A12 04/06/2020;
-	_ Dell Vostro 5480      BIOS ATUAL: A03 02/10/2015   - UPDATE: A08 24/02/2018;
-	_ Dell G3 3590          BIOS ATUAL: 1.6.0 08/08/2019 - UPDATE: 1.18.0 09/08/2022.
+	_ Dell Inspiron 1440   BIOS ATUAL: A07 21/12/2009   - UPDATE: A07 04/06/2020;
+	_ Dell XPS L502X 2011  BIOS ATUAL: A07 10/20/2011   - UPDATE: A12 04/06/2020;
+	_ Dell Vostro 5480     BIOS ATUAL: A03 02/10/2015   - UPDATE: A08 24/02/2018;
+	_ Dell G3 3590         BIOS ATUAL: 1.6.0 08/08/2019 - UPDATE: 1.18.0 09/08/2022.
 
 OBSERVAÇÃO IMPORTANTE: RECOMENDO FAZER O UPGRADE DA BIOS DOS NOTEBOOKS DA DELL CONECTADOS
 NA ENERGIA (FONTE DE ALIMENTAÇÃO) E SE POSSÍVEL CONECTADO EM UM SISTEMA DE NOBREAK, POIS
@@ -52,13 +52,14 @@ EXECUTAR O PROCEDIMENTO DE ATUALIZAÇÃO DA BIOS.
 
 #04_ Criando Pen Driver com suporte ao FreeDOS
 
-	#Instlando o software UNetbootin no Linux Mint
-	sudo add-apt-repository ppa:gezakovacs/ppa
-	sudo apt-get update
-	sudo apt-get install unetbootin
+	#Instalando o software UNetbootin no Linux Mint
+	_ sudo add-apt-repository ppa:gezakovacs/ppa
+	_ sudo apt-get update
+	_ sudo apt-get install unetbootin
 
 	#Formatando o Pen Driver com suporte ao FAT32
 	Inserir o Pen Driver na Porta USB;
+	
 	Menu, Discos;
 		Selecionar o Pen Driver (Exemplo: SanDisk 15GB)
 			Desmontar o Pen Driver: Botão Quadrado
