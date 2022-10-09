@@ -27,6 +27,7 @@
 	_ Dell XPS L502X       ANO 2011 (MODELO LEGADO, UTILIZAR PEN DRIVER COM FreeDOS);
 	_ Dell Vostro 5480     ANO 2015 (MODELO LEGADO, UTILIZAR PEN DRIVER COM FreeDOS);
 	_ Dell G3 3590         ANO 2019 (MODELO COM SUPORTE DE ATUALIZAÇÃO NO BOOT, PEN DRIVER EM FAT32).
+
 	OBSERVAÇÃO IMPORTANTE: O modelo G3 da Dell possui suporte para atualização da BIOS
 	ou Firmware utilizando o LVFS (Linux Vendor Firmware Service) que possibilita usar
 	os comandos fwupd* (fwupdagent, fwupdate, fwupdmgr e fwupdtool) que é nativo nas
