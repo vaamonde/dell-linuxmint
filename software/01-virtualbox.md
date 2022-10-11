@@ -7,13 +7,15 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 07/06/2022<br>
-#Versão: 0.06<br>
+#Data de atualização: 11/10/2022<br>
+#Versão: 0.07<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Instalação do VirtualBOX no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 Site Oficial do VirtualBOX: https://www.virtualbox.org/
+
+Lançamento da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Changelog-7.0#v00
 
 #Tecnologias de Virtualização de Processadores AMD e Intel<br>
 
@@ -92,6 +94,17 @@ Site Oficial do VirtualBOX: https://www.virtualbox.org/
 	sudo virt-host-validate
 
 #06_ Baixando e Instalando o Pacote de Extensões do Oracle VirtualBOX<br>
+
+	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
+	*Seguir os procedimentos na tela.
+
+#07_ Atualizando para a versão 7.0 do VirtualBOX
+
+	sudo apt update
+	sudo apt upgrade
+	sudo apt install virtualbox-7.0 cpu-checker libvirt-clients git vim python2 python3
+
+#08_ Baixando e Instalando o Pacote de Extensões do Oracle VirtualBOX<br>
 
 	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
 	*Seguir os procedimentos na tela.
