@@ -104,15 +104,15 @@ Iniciando a ISO do Linux Mint
 
 	_ VM LinuxMint21: Iniciar
 	_ Selecione o disco rígido de boot
-			Selecionar um arquivo de disco óptico virtual
+		Selecionar um arquivo de disco óptico virtual
 	_ Seletor de Discos Ópticos
-			Acrescentar
-			Selecione o arquivo de disco óptico virtual: linuxmint-21-cinnamon-64bit.iso
-			<Abrir>
+		Acrescentar
+		Selecione o arquivo de disco óptico virtual: linuxmint-21-cinnamon-64bit.iso
+		<Abrir>
 	_ Not Attached
-			Selecionar: linuxmint-21-cinnamon-64bit.iso
-			<Escolher>
-		<Iniciar>
+		Selecionar: linuxmint-21-cinnamon-64bit.iso
+		<Escolher>
+	<Iniciar>
 
 Instalando o Linux Mint
 
