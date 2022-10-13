@@ -116,6 +116,7 @@ Iniciando a ISO do Linux Mint
 
 Instalando o Linux Mint
 
-	_ Boot Inicial do Linux Mint 10 (dez segundos) iniciar a instalação
-		Pressionar: Seta para Baixo para parar o Boot inicial
-	_
+	_ Boot Inicial do Linux Mint 10 (dez segundos) inicia a instalação padrão.
+		Parar o Boot: pressionar: Seta para Baixo para parar o Boot inicial
+	_ Opções do Boot padrão do Linux Mint
+		
