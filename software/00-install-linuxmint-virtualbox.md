@@ -84,8 +84,9 @@ Personalizando a Máquina Virtual do Linux Mint
 				Relógio da máquina retorna hora UTC: OFF (Desabilitado) 
 			Processador
 				Processadores: 02 CPUs
-				Recursos Estendidos: Habilitar PAE/NX
-                                     Habilitar VT-x/AMD-V Aninhado
+				Recursos Estendidos:
+					Habilitar PAE/NX: ON (Habilitado)
+					Habilitar VT-x/AMD-V Aninhado: ON (Habilitado)
 		_ Monitor
 			Tela
 				Memória de Vídeo: 128MB
