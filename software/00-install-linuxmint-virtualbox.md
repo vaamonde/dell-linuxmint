@@ -85,7 +85,7 @@ Personalizando a Máquina Virtual do Linux Mint
 			Processador
 				Processadores: 02 CPUs
 				Recursos Estendidos: Habilitar PAE/NX
-									Habilitar VT-x/AMD-V Aninhado
+                                     Habilitar VT-x/AMD-V Aninhado
 		_ Monitor
 			Tela
 				Memória de Vídeo: 128MB
@@ -113,4 +113,7 @@ Iniciando a ISO do Linux Mint
 <Iniciar>
 
 Instalando o Linux Mint
-01. 
+
+	_ Boot Inicial do Linux Mint 10 (dez segundos) iniciar a instalação
+		Pressionar: Seta para Baixo para parar o Boot inicial
+	_
