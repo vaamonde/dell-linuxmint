@@ -101,17 +101,18 @@ Personalizando a Máquina Virtual do Linux Mint
 Quarta etapa: Instalação do Linux Mint 
 
 Iniciando a ISO do Linux Mint
-01. VM LinuxMint21: Iniciar
-02. Selecione o disco rígido de boot
-		Selecionar um arquivo de disco óptico virtual
-03. Seletor de Discos Ópticos
-		Acrescentar
-		Selecione o arquivo de disco óptico virtual: linuxmint-21-cinnamon-64bit.iso
-		<Abrir>
-04. Not Attached
-		Selecionar: linuxmint-21-cinnamon-64bit.iso
-		<Escolher>
-<Iniciar>
+
+	_ VM LinuxMint21: Iniciar
+	_ Selecione o disco rígido de boot
+			Selecionar um arquivo de disco óptico virtual
+	_ Seletor de Discos Ópticos
+			Acrescentar
+			Selecione o arquivo de disco óptico virtual: linuxmint-21-cinnamon-64bit.iso
+			<Abrir>
+	_ Not Attached
+			Selecionar: linuxmint-21-cinnamon-64bit.iso
+			<Escolher>
+		<Iniciar>
 
 Instalando o Linux Mint
 
