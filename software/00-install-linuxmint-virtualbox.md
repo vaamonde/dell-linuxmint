@@ -47,30 +47,30 @@ Link de download do Oracle VirtualBOX: https://www.virtualbox.org/wiki/Downloads
 
 Criando a Máquina Virtual do Linux Mint
 
-_ Ferramentas;
-	<Novo>
-_ Nome e Sistema Operacional:
-	Nome: LinuxMint21
-	Pasta da Máquina: (deixar o padrão do sistema) 
-	Tipo: Linux
-	Versão: Ubuntu (64-bit)
-	<Próximo>
-_ Tamanho da memória:
-	Tamanho: 4096MB
-	<Próximo>
-_ Disco Rígido:
-	Criar um novo disco rígido virtual agora
-	<Criar>
-_ Tipo de arquivo de disco rígido
-	VDI (VirtualBOX Disk Image)
-	<Próximo>
-_ Armazenamento em disco rígido físico
-	Dinamicamente alocado
-	<Próximo>
-_ Localização e tamanho do arquivo
-	Localização: (deixar o padrão do sistema)
-	Tamanho do disco: 50GB
-	<Criar>
+	_ Ferramentas;
+		<Novo>
+	_ Nome e Sistema Operacional:
+		Nome: LinuxMint21
+		Pasta da Máquina: (deixar o padrão do sistema) 
+		Tipo: Linux
+		Versão: Ubuntu (64-bit)
+		<Próximo>
+	_ Tamanho da memória:
+		Tamanho: 4096MB
+		<Próximo>
+	_ Disco Rígido:
+		Criar um novo disco rígido virtual agora
+		<Criar>
+	_ Tipo de arquivo de disco rígido
+		VDI (VirtualBOX Disk Image)
+		<Próximo>
+	_ Armazenamento em disco rígido físico
+		Dinamicamente alocado
+		<Próximo>
+	_ Localização e tamanho do arquivo
+		Localização: (deixar o padrão do sistema)
+		Tamanho do disco: 50GB
+		<Criar>
 
 Personalizando a Máquina Virtual do Linux Mint
 01. Configurações da Máquina Virtual Linux (Propriedades/Configurações)
