@@ -73,28 +73,29 @@ Criando a Máquina Virtual do Linux Mint
 		<Criar>
 
 Personalizando a Máquina Virtual do Linux Mint
-01. Configurações da Máquina Virtual Linux (Propriedades/Configurações)
-	Geral
-		Avançado
-			Área de Transferência Compartilhada: Bi-direcional
-			Arrastar e Soltar: Bi-direcional
-	Sistema
-		Placa-Mãe
-			Relógio da máquina retorna hora UTC: OFF (Desabilitado) 
-		Processador
-			Processadores: 02 CPUs
-			Recursos Estendidos: Habilitar PAE/NX
-								 Habilitar VT-x/AMD-V Aninhado
-	Monitor
-		Tela
-			Memória de Vídeo: 128MB
-			Aceleração: Habilitar Aceleração 3D
-	Rede
-		Adaptador 1
-			Habilitar Placa de Rede
-			Conectado a: Placa em Modo Bridge
-			Nome: (Interface padrão de acesso a Internet e Rede Local do Hospedeiro)
-<OK>
+
+	_ Configurações da Máquina Virtual Linux (Propriedades/Configurações)
+		_ Geral
+			Avançado
+				Área de Transferência Compartilhada: Bi-direcional
+				Arrastar e Soltar: Bi-direcional
+		_ Sistema
+			Placa-Mãe
+				Relógio da máquina retorna hora UTC: OFF (Desabilitado) 
+			Processador
+				Processadores: 02 CPUs
+				Recursos Estendidos: Habilitar PAE/NX
+									Habilitar VT-x/AMD-V Aninhado
+		_ Monitor
+			Tela
+				Memória de Vídeo: 128MB
+				Aceleração: Habilitar Aceleração 3D
+		_ Rede
+			Adaptador 1
+				Habilitar Placa de Rede
+				Conectado a: Placa em Modo Bridge
+				Nome: (Interface padrão de acesso a Internet e Rede Local do Hospedeiro)
+		<OK>
 
 Quarta etapa: Instalação do Linux Mint 
 
