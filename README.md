@@ -1,4 +1,4 @@
-# Curso GRÁTIS de Linux Mint 20.x em Notebook Dell (Inspiron, XPS, Vostro e G3), Notebook Positivo (N4340) e Desktop Gamer Xeon
+# Curso GRÁTIS de Linux Mint 20.x/21.x em Notebook Dell (Inspiron, XPS, Vostro e G3), Notebook Positivo (N4340) e Desktop Gamer Xeon
 
 ## 💰 Ajude o projeto Bora para Prática a continuar fazendo vídeos e materiais gratuitos para o Canal do YouTUBE
 ## 💰 Chave PIX do projeto: robsonvaamonde@gmail.com
@@ -31,7 +31,7 @@ Site do Linux Mint: https://www.linuxmint.com/​<br>
 Blog do Linux Mint: https://blog.linuxmint.com/​<br>
 FTP  do Linux Mint: https://ftp.heanet.ie/mirrors/linuxmint.com/stable/<br>
 
-## **Playlist do YouTUBE com todos os Vídeos do Linux Mint 20.x:**
+## **Playlist do YouTUBE com todos os Vídeos do Linux Mint 20.x/21.x:**
 Link da Playlist: https://www.youtube.com/playlist?list=PLozhsZB1lLUOKXT6TIhjwPWBNpUoExsNF
 
 ## **Lançamento Oficial do Linux Mint 20.1 Ulyssa - Instalação no Oracle VirtualBOX**
@@ -60,15 +60,15 @@ Linux Mint é uma distribuição Linux irlandesa. Possui duas versões: uma base
 
 O Linux Mint 21 é uma versão de suporte de longo prazo que será suportada até 2027. Ele vem com software atualizado e traz refinamentos e muitos novos recursos para tornar sua experiência de desktop mais confortável.
 
-Links das novidades da Versão 21:
-Notícias mensais – fevereiro de 2022: https://blog.linuxmint.com/?p=4285
-Notícias mensais – abril de 2022: https://blog.linuxmint.com/?p=4317
-Notícias mensais – maio de 2022: https://blog.linuxmint.com/?p=4323
-Notícias mensais – junho de 2022: https://blog.linuxmint.com/?p=4336
-Notícias mensais – julho de 2022: https://blog.linuxmint.com/?p=4370
-Novas características: https://www.linuxmint.com/rel_vanessa_cinnamon_whatsnew.php
-Linux Mint 21 “Vanessa” Cinnamon – Versão BETA: https://blog.linuxmint.com/?p=4344
-Linux Mint 21 “Vanessa” Cinnamon lançado!: https://blog.linuxmint.com/?p=4358
+Links das novidades da Versão 21:​<br>
+Notícias mensais – fevereiro de 2022: https://blog.linuxmint.com/?p=4285​<br>
+Notícias mensais – abril de 2022: https://blog.linuxmint.com/?p=4317​<br>
+Notícias mensais – maio de 2022: https://blog.linuxmint.com/?p=4323​<br>
+Notícias mensais – junho de 2022: https://blog.linuxmint.com/?p=4336​<br>
+Notícias mensais – julho de 2022: https://blog.linuxmint.com/?p=4370​<br>
+Novas características: https://www.linuxmint.com/rel_vanessa_cinnamon_whatsnew.php​<br>
+Linux Mint 21 “Vanessa” Cinnamon – Versão BETA: https://blog.linuxmint.com/?p=4344​<br>
+Linux Mint 21 “Vanessa” Cinnamon lançado!: https://blog.linuxmint.com/?p=4358​<br>
 Notas de lançamento: https://linuxmint.com/rel_vanessa_cinnamon.php
 
 [![Linux Mint 21](http://img.youtube.com/vi/J7dhSzPGX5w/0.jpg)](https://www.youtube.com/watch?v=J7dhSzPGX5w "Linux Mint 21")
@@ -83,8 +83,8 @@ Vídeo mostrando os procedimentos para atualizar o Linux Mint 20.3 Una para nova
 
 Foi disponibilizado no Blog e no Guia On-Line da Distribuição Linux Mint 21 os procedimentos para fazer o upgrade da versão 20.3 para 21
 
-Blog do Linux Mint 21 “Vanessa” Cinnamon released!: https://blog.linuxmint.com/?p=4358
-Blog do How to upgrade to Linux Mint 21: https://blog.linuxmint.com/?p=4378
+Blog do Linux Mint 21 “Vanessa” Cinnamon released!: https://blog.linuxmint.com/?p=4358​<br>
+Blog do How to upgrade to Linux Mint 21: https://blog.linuxmint.com/?p=4378​<br>
 Guia do How to upgrade to Linux Mint 21: https://linuxmint-user-guide.readthedocs.io/en/latest/upgrade-to-mint-21.html
 
 [![Upgrade Linux Mint](http://img.youtube.com/vi/QaLS-_lnu48/0.jpg)](https://www.youtube.com/watch?v=QaLS-_lnu48 "Upgrade Linux Mint")
