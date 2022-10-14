@@ -111,7 +111,7 @@ Mais informações acesse: https://blog.linuxmint.com/?p=4220
 
 Link da vídeo aula: https://www.youtube.com/watch?v=npQ0kjuxz9c
 
-Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/pdf/00-Projeto-Mint-Dell.pdf
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/04-g3-3590.md
 
@@ -127,7 +127,7 @@ Mais informações acesse: https://blog.linuxmint.com/?p=4220
 
 Link da vídeo aula: https://www.youtube.com/watch?v=faTRvAzAsnI
 
-Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/pdf/00-Projeto-Mint-Dell.pdf
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/04-g3-3590.md
 
@@ -183,7 +183,7 @@ https://www.youtube.com/watch?v=J3Or0bcr1PM
 
 Link da vídeo aula: https://www.youtube.com/watch?v=vS3SVAzp3QU
 
-Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/main/00-Projeto-Hypervisor-Hardware.pdf
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/pdf/00-Projeto-Hypervisor-Hardware.pdf
 
 ## **💻 Desktop Gamer Xeon E5-2678 V3 🐧🐧 Instalação do Linux Mint 20.2 Uma (Primeira Parte) 🐧🐧**
 
@@ -201,7 +201,7 @@ Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_ci
 
 Link da vídeo aula: https://www.youtube.com/watch?v=BOgTCW2EcBI
 
-Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/main/00-Projeto-Hypervisor-Hardware.pdf
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/pdf/00-Projeto-Hypervisor-Hardware.pdf
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/05-Huananzhi-X99-F8-Xeon-E5-2678.md
 
@@ -215,7 +215,7 @@ Décimo vídeo da série de atualização do meu Curso de Linux Mint, os procedi
 
 Link da vídeo aula: https://www.youtube.com/watch?v=sXDqOccf1qw
 
-Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/main/00-Projeto-Hypervisor-Hardware.pdf
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/pdf/00-Projeto-Hypervisor-Hardware.pdf
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/05-Huananzhi-X99-F8-Xeon-E5-2678.md
 
@@ -245,7 +245,7 @@ Mais informações acesse: https://blog.linuxmint.com/?p=4077
 
 Link da vídeo aula: https://www.youtube.com/watch?v=iDvxKv0ib8M
 
-Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/pdf/00-Projeto-Mint-Dell.pdf
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/01-inspiron-1440.md
 
@@ -261,7 +261,7 @@ Mais informações acesse: https://blog.linuxmint.com/?p=4077
 
 Link da vídeo aula: https://www.youtube.com/watch?v=VHtb30NCN4I
 
-Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/pdf/00-Projeto-Mint-Dell.pdf
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/01-inspiron-1440.md
 
@@ -277,7 +277,7 @@ Mais informações acesse: https://blog.linuxmint.com/?p=4077
 
 Link da vídeo aula: https://www.youtube.com/watch?v=67xQKa8PyZc
 
-Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/pdf/00-Projeto-Mint-Dell.pdf
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/02-xps-l502x.md
 
@@ -293,7 +293,7 @@ Mais informações acesse: https://blog.linuxmint.com/?p=4077
 
 Link da vídeo aula: https://www.youtube.com/watch?v=-zXv9V_0d5c
 
-Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/pdf/00-Projeto-Mint-Dell.pdf
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/02-xps-l502x.md
 
@@ -309,7 +309,7 @@ Mais informações acesse: https://blog.linuxmint.com/?p=4077
 
 Link da vídeo aula: https://www.youtube.com/watch?v=QnTDe9nLBYs
 
-Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/pdf/00-Projeto-Mint-Dell.pdf
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/03-vostro-5480.md
 
@@ -325,7 +325,7 @@ Mais informações acesse: https://blog.linuxmint.com/?p=4077
 
 Link da vídeo aula: https://www.youtube.com/watch?v=F6btA-Eo4ZY
 
-Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/pdf/00-Projeto-Mint-Dell.pdf
 
 Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/03-vostro-5480.md
 
