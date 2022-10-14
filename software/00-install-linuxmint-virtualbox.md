@@ -8,7 +8,7 @@
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 13/10/2022<br>
 #Data de atualização: 13/10/2022<br>
-#Versão: 0.01<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma, 20.3 Una e 21 Vanessa x64
 
 #Lançamentos Oficiais do Linux Mint<br>
@@ -45,7 +45,7 @@ _ Linux Live USC Creator: https://www.linuxliveusb.com/<br>
 Terceira etapa: Criação e Configuração da Máquina Virtual no Oracle VirtualBOX<br>
 Link de download do Oracle VirtualBOX: https://www.virtualbox.org/wiki/Downloads
 
-Criando a Máquina Virtual do Linux Mint
+Criando a Máquina Virtual do Linux Mint no VirtualBox
 
 	_ Ferramentas;
 		<Novo>
@@ -72,7 +72,7 @@ Criando a Máquina Virtual do Linux Mint
 		Tamanho do disco: 50GB
 		<Criar>
 
-Personalizando a Máquina Virtual do Linux Mint
+Personalizando a Máquina Virtual do Linux Mint no VirtualBox
 
 	_ Configurações da Máquina Virtual Linux (Propriedades/Configurações)
 		_ Geral
@@ -98,7 +98,7 @@ Personalizando a Máquina Virtual do Linux Mint
 				Nome: (Interface padrão de acesso a Internet e Rede Local do Hospedeiro)
 		<OK>
 
-Quarta etapa: Instalação do Linux Mint 
+Quarta etapa: Instalação do Linux Mint no VirtualBox
 
 Iniciando a ISO do Linux Mint
 
@@ -119,4 +119,35 @@ Instalando o Linux Mint
 	_ Boot Inicial do Linux Mint 10 (dez segundos) inicia a instalação padrão.
 		Parar o Boot: pressionar: Seta para Baixo para parar o Boot inicial
 	_ Opções do Boot padrão do Linux Mint
-		
+		*Start Linux Mint 21 Cinnamon 64-Bit (Padrão)
+		Start Linux Mint 21 Cinnamon 64-Bit (compatibility mode)
+		OEM install (for manufacturers)
+		Test memory
+	_ Ícone Install Linux Mint
+		Welcome
+			Português do Brasil
+			<Continuar>
+		Layout do teclado
+			Selecione o layout de seu teclado:
+				Portuguese (Brazil)
+			<Continuar>
+		Codecs Multimídia
+			Instalar codecs multimídia: ON (Habilitar)
+			<Continuar>
+		Tipo de instalação
+			Apagar disco e reinstalar o Linux Mint: ON (Selecionado)
+			<Instalar agora>
+			<Continuar>
+		Onde você está?
+			Sao Paulo
+			<Continuar>
+		Quem é você?
+			Seu nome: Robson Vaamonde
+			Nome do seu computador: VirtualBox
+			Escolha um nome de usuário: senac
+			Escolha uma senha: 123@senac
+			Confirme sua senha: 123@senac
+			Solicitar minha senha para entrar: ON (Selecionado)
+			<Continuar>
+	_ <Reiniciar agora>
+	Please remove the installation medium, then press <ENTER>:
