@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 13/10/2022<br>
-#Data de atualização: 13/10/2022<br>
-#Versão: 0.02<br>
+#Data de atualização: 14/10/2022<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma, 20.3 Una e 21 Vanessa x64
 
 #Lançamentos Oficiais do Linux Mint<br>
@@ -123,6 +123,7 @@ Instalando o Linux Mint
 		Start Linux Mint 21 Cinnamon 64-Bit (compatibility mode)
 		OEM install (for manufacturers)
 		Test memory
+	
 	_ Ícone Install Linux Mint
 		Welcome
 			Português do Brasil
@@ -144,9 +145,9 @@ Instalando o Linux Mint
 		Quem é você?
 			Seu nome: Robson Vaamonde
 			Nome do seu computador: VirtualBox
-			Escolha um nome de usuário: senac
-			Escolha uma senha: 123@senac
-			Confirme sua senha: 123@senac
+			Escolha um nome de usuário: vaamonde
+			Escolha uma senha: pti@2018
+			Confirme sua senha: pti@2018
 			Solicitar minha senha para entrar: ON (Selecionado)
 			<Continuar>
 	_ <Reiniciar agora>
