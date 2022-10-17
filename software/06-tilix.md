@@ -19,6 +19,8 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
+	Terminal: Ctrl + Alt + T
+
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
 	sudo cat /etc/os-release
 
@@ -26,6 +28,8 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 	_ Atualização do sistema utilizando o MintUpdate;
 	_ Atualização do sistema utilizando o Apt;
+
+	Terminal: Ctrl + Alt + T
 	sudo apt update
 	sudo apt upgrade
 	sudo apt full-upgrade
@@ -120,6 +124,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 	vim ~/.zshrc
 	
+	INSERT	
 	#Variáveis de configuração do Tema PowerLevel10K
 	ZSH_THEME="powerlevel10k/powerlevel10k"
 	POWERLEVEL10K_MODE="nerdfont-complete"
@@ -132,6 +137,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 		zsh-autosuggestions
 		k
 	)
+	ESC SHIFT: x
 
 	#recomendo fechar o Terminal Tilix e abrir novamente para verificar se tudo está funcionando
 	#e começar a customizar o Tema PowerLevel10K utilizando o Wizard padrão.
@@ -139,7 +145,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 #10_ Personalizando o Tema PowerLevel10K no Linux Mint<br>
 
 	#abrir um novo terminal para iniciar as configurações do PowerLevel10K
-	Ctrl + Alt + T
+	Terminal: Ctrl + Alt + T
 
 		Does this look like a diamond (rotated square)?
 			Choice [ynq]: y

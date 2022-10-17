@@ -53,6 +53,8 @@ Lançamento da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Change
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
+	Terminal: Ctrl + Alt + T
+	
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
 	sudo cat /etc/os-release
 	
@@ -64,6 +66,8 @@ Lançamento da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Change
 
 	_ Atualização do sistema utilizando o MintUpdate;
 	_ Atualização do sistema utilizando o Apt;
+
+	Terminal: Ctrl + Alt + T
 	sudo apt update
 	sudo apt upgrade
 	sudo apt full-upgrade

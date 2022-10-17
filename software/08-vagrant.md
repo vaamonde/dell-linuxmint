@@ -23,6 +23,8 @@ Providers (Provedores) padrão do Vagrant: VirtualBOX, Hyper-V, Docker, VMware, 
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
+	Terminal: Ctrl + Alt + T
+	
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
 	sudo cat /etc/os-release
 
@@ -30,6 +32,8 @@ Providers (Provedores) padrão do Vagrant: VirtualBOX, Hyper-V, Docker, VMware, 
 
 	_ Atualização do sistema utilizando o MintUpdate;
 	_ Atualização do sistema utilizando o Apt;
+
+	Terminal: Ctrl + Alt + T
 	sudo apt update
 	sudo apt upgrade
 	sudo apt full-upgrade

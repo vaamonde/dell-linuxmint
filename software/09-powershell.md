@@ -22,6 +22,8 @@ Documentação do .NET SDK e Runtime: https://docs.microsoft.com/pt-br/dotnet/co
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
+	Terminal: Ctrl + Alt + T
+
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
 	sudo cat /etc/os-release
 
@@ -29,6 +31,8 @@ Documentação do .NET SDK e Runtime: https://docs.microsoft.com/pt-br/dotnet/co
 
 	_ Atualização do sistema utilizando o MintUpdate;
 	_ Atualização do sistema utilizando o Apt;
+
+	Terminal: Ctrl + Alt + T
 	sudo apt update
 	sudo apt upgrade
 	sudo apt full-upgrade

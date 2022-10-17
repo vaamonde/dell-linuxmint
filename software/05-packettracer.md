@@ -31,6 +31,8 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 
 	_ Atualização do sistema utilizando o MintUpdate;
 	_ Atualização do sistema utilizando o Apt;
+
+	Terminal: Ctrl + Alt + T
 	sudo apt update
 	sudo apt upgrade
 	sudo apt full-upgrade

@@ -33,6 +33,8 @@
 
 	_ Atualização do sistema utilizando o MintUpdate;
 	_ Atualização do sistema utilizando o Apt;
+
+	Terminal: Ctrl + Alt + T
 		sudo apt update
 		sudo apt upgrade
 		sudo apt full-upgrade

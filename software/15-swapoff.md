@@ -13,6 +13,7 @@
 
 #01_ Verificando a quantidade de memória RAM no Linux Mint
 
+	Terminal: Ctrl + Alt + T
 	  #opção do comando inxi: -m (memory), xxx (extra data)
 	_ sudo inxi -mxxx
 
