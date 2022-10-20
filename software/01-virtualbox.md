@@ -108,7 +108,7 @@ Lançamento da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Change
 	sudo apt upgrade
 	sudo apt install virtualbox-7.0 cpu-checker libvirt-clients git vim python2 python3
 
-	OBSERVAÇÃO IMPORTANTE: CASO O PROCEDIMENTO ABAIXO NÃO FUNCIONE NO SEU LINUX MINT, 
+	OBSERVAÇÃO IMPORTANTE: CASO O PROCEDIMENTO ANTERIOR NÃO FUNCIONE NO SEU LINUX MINT, 
 	RECOMENDO FAZER A REMOÇÃO AUTOMÁTICA DO VIRTUALBOX-6.1 E DEPOIS INSTALAR A VERSÃO 
 	7.0, UTILIZE OS SEGUINTES COMANDOS:
 	
