@@ -108,7 +108,23 @@ Lançamento da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Change
 	sudo apt upgrade
 	sudo apt install virtualbox-7.0 cpu-checker libvirt-clients git vim python2 python3
 
-#08_ Baixando e Instalando o Pacote de Extensões do Oracle VirtualBOX<br>
+	OBSERVAÇÃO IMPORTANTE: CASO O PROCEDIMENTO ABAIXO NÃO FUNCIONE NO SEU LINUX MINT, 
+	RECOMENDO FAZER A REMOÇÃO AUTOMÁTICA DO VIRTUALBOX-6.1 E DEPOIS INSTALAR A VERSÃO 
+	7.0, UTILIZE OS SEGUINTES COMANDOS:
+	
+	sudo apt update
+	sudo apt upgrade
+	sudo apt purge virtualbox-6.1
+	sudo apt install virtualbox-7.0 cpu-checker libvirt-clients git vim python2 python3
+
+#08_ Baixando e Instalando o Pacote de Extensões do Oracle VirtualBOX 7.0<br>
 
 	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
 	*Seguir os procedimentos na tela.
+
+#09_ Corrigindo a Falha do VirtualBOX 7.0 em relação ao erro: Can't enumerate host usb devices
+
+	#opções do comando usermod: -a (append), -G (groups), $USER (variável de ambiente do nome do usuário)
+	sudo usermod -aG vboxusers $USER
+	sudo cat /etc/group | grep vbox
+	sudo reboot
