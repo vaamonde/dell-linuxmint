@@ -122,7 +122,7 @@ Lançamento da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Change
 	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
 	*Seguir os procedimentos na tela.
 
-#09_ Corrigindo a Falha do VirtualBOX 7.0 em relação ao erro: Can't enumerate host usb devices
+#09_ Corrigindo a Falha do VirtualBOX 7.0 em relação ao erro: Failed to enumerate host USB devices
 
 	#opções do comando usermod: -a (append), -G (groups), $USER (variável de ambiente do nome do usuário)
 	sudo usermod -aG vboxusers $USER
