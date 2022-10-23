@@ -7,15 +7,19 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 09/10/2021<br>
-#Data de atualização: 09/10/2022<br>
-#Versão: 0.01<br>
+#Data de atualização: 23/10/2022<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+
+#Tabela de Referência do Swapfile: https://docs.rackspace.com/support/how-to/create-remove-swap-file-in-ubuntu/
 
 #01_ Verificando a quantidade de memória RAM no Linux Mint
 
 	Terminal: Ctrl + Alt + T
 	  #opção do comando inxi: -m (memory), xxx (extra data)
 	_ sudo inxi -mxxx
+	  #opção do comando free: -h (human)
+	_ sudo free -h
 
 #02_ Desativando o Arquivo de Swapfile do Linux Mint
 

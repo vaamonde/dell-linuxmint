@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 11/06/2022<br>
-#Versão: 0.01<br>
+#Data de atualização: 23/10/2022<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Instalação do HashiCorp Vagrant no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
@@ -19,7 +19,8 @@ Vagrant Cloud Box: https://app.vagrantup.com/boxes/search<br>
 Images Oficiais do Ubuntu: https://cloud-images.ubuntu.com/
 
 Providers Vagrant: https://www.vagrantup.com/docs/providers<br>
-Providers (Provedores) padrão do Vagrant: VirtualBOX, Hyper-V, Docker, VMware, Virt-Manager.
+Providers (Provedores) padrão do Vagrant: VirtualBOX, Hyper-V, Docker, VMware, Virt-Manager.<br>
+Providers (Provedores) cloud do Vagrant: AWS EC2 VPS, Google GCE, Microsoft Azure.
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
@@ -27,6 +28,7 @@ Providers (Provedores) padrão do Vagrant: VirtualBOX, Hyper-V, Docker, VMware, 
 	
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
 	sudo cat /etc/os-release
+	sudo cat /etc/lsb-release
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 
@@ -34,12 +36,12 @@ Providers (Provedores) padrão do Vagrant: VirtualBOX, Hyper-V, Docker, VMware, 
 	_ Atualização do sistema utilizando o Apt;
 
 	Terminal: Ctrl + Alt + T
-	sudo apt update
-	sudo apt upgrade
-	sudo apt full-upgrade
-	sudo apt dist-upgrade
-	sudo apt autoremove
-	sudo apt autoclean
+		sudo apt update
+		sudo apt upgrade
+		sudo apt full-upgrade
+		sudo apt dist-upgrade
+		sudo apt autoremove
+		sudo apt autoclean
 
 #02_ Adicionando a Chave GPG do Vagrant no Linux Mint<br>
 
@@ -75,7 +77,7 @@ Providers (Provedores) padrão do Vagrant: VirtualBOX, Hyper-V, Docker, VMware, 
 	ls -lh
 	cat Vagrantfile
 
-#08_ Iniciando o Projeto da VM do Ubuntu no VirtualBOX utilizando o Vagrant<br>
+#08_ Iniciando o Projeto da VM do Ubuntu Server 20.04 no VirtualBOX utilizando o Vagrant<br>
 
 	#Link de referência: https://www.vagrantup.com/docs/cli/up
 	#opção do comando vagrant: up (starts and provisions the vagrant environment)
@@ -84,13 +86,13 @@ Providers (Provedores) padrão do Vagrant: VirtualBOX, Hyper-V, Docker, VMware, 
 	#opção do comando tree: -a (all)
 	tree -a
 
-#09_ Acessando a VM do Ubuntu no VirtualBOX utilizando o SSH do Vagrant<br>
+#09_ Acessando a VM do Ubuntu Server 20.04 no VirtualBOX utilizando o SSH do Vagrant<br>
 
 	#Link de referência: https://www.vagrantup.com/docs/cli/ssh
 	#opção do comando vagrant: ssh (connects to machine via SSH)
 	vagrant ssh
 
-#10_ Verificando as informações da VM do Ubuntu no VirtualBOX criada com o Vagrant<br>
+#10_ Verificando as informações da VM do Ubuntu Server 20.04 no VirtualBOX criada com o Vagrant<br>
 
 	#Link de referência: https://www.vagrantup.com/docs/cli/status
 	#Link de referência: https://www.vagrantup.com/docs/cli/global-status
@@ -98,7 +100,7 @@ Providers (Provedores) padrão do Vagrant: VirtualBOX, Hyper-V, Docker, VMware, 
 	vagrant status
 	vagrant global-status
 
-#11_ Desligando a VM do Ubuntu no VirtualBOX criada com o Vagrant<br>
+#11_ Desligando a VM do Ubuntu Server 20.04 no VirtualBOX criada com o Vagrant<br>
 
 	#Link de referência: https://www.vagrantup.com/docs/cli/halt
 	#Link de referência: https://www.vagrantup.com/docs/cli/status
@@ -108,7 +110,7 @@ Providers (Provedores) padrão do Vagrant: VirtualBOX, Hyper-V, Docker, VMware, 
 	vagrant status
 	vagrant global-status
 
-#12_ Removendo a VM do Ubuntu no VirtualBOX criada com o Vagrant<br>
+#12_ Removendo a VM do Ubuntu Server 20.04 no VirtualBOX criada com o Vagrant<br>
 
 	#Link de referência: https://www.vagrantup.com/docs/cli/destroy
 	#Link de referência: https://www.vagrantup.com/docs/cli/global-status
@@ -123,7 +125,7 @@ Providers (Provedores) padrão do Vagrant: VirtualBOX, Hyper-V, Docker, VMware, 
 	#opção do comando vagrant: box (manages boxes: installation, removal, etc.), list (boxes list)
 	vagrant box list
 
-#14_ Removendo a BOXES (Imagens) baixada do Ubuntu no Vagrant<br>
+#14_ Removendo a BOXES (Imagens) baixada do Ubuntu Server 20.04 no Vagrant<br>
 
 	#Link de referência: https://www.vagrantup.com/docs/cli/box
 	#opção do comando vagrant: box (manages boxes: installation, removal, etc.), remove (boxes remove)
@@ -132,7 +134,7 @@ Providers (Provedores) padrão do Vagrant: VirtualBOX, Hyper-V, Docker, VMware, 
 	vagrant box remove generic/ubuntu2004
 	vagrant box list
 
-#15_ Criando um novo projeto utilizando um BOX (Imagem) Oficial do Ubuntu<br>
+#15_ Criando um novo projeto utilizando um BOX (Imagem) Oficial do Ubuntu Server<br>
 
 	#opções do comando mkdir: -v (verbose), .. (ponto/ponto - mover uma pasta para cima)
 	cd ..
@@ -145,8 +147,8 @@ Providers (Provedores) padrão do Vagrant: VirtualBOX, Hyper-V, Docker, VMware, 
 	vagrant init -m
 	
 	vim Vagrantfile
-	ESC dG (d=delete | G=end of file)
-	INSERT
+		ESC dG (d=delete | G=end of file)
+		INSERT
 
 ```ruby
 #Início da configuração do BOX do Vagrant indicando a maior versão ("2")
@@ -169,7 +171,7 @@ Vagrant.configure("2") do |config|
     #Configuração da Máquina Virtual do BOX do Ubuntu Server no VirtualBOX do Vagrant
     web.vm.provider "virtualbox" do |vb|
       #Configuração do nome da Máquina Virtual no VirtualBOX do Vagrant
-      vb.name = "ubuntu-server-22-04"
+      vb.name = "ubuntu-server-2204"
       #Configuração da quantidade de Memória RAM da Máquina Virtual no VirtualBOX do Vagrant
       vb.memory = "1024"
       #Configuração da quantidade de vCPU's da Máquina Virtual no VirtualBOX do Vagrant
@@ -181,6 +183,8 @@ Vagrant.configure("2") do |config|
 #Fim do Bloco de Configuração: Configure (|config|)
 end
 ```
+		#sair e salvar o arquivo
+		ESC Shift : x <Enter>
 
 	#opção do comando vagrant: validade (validates your Vagrantfile)
 	vagrant validate
