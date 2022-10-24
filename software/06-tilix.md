@@ -30,12 +30,12 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 	_ Atualização do sistema utilizando o Apt;
 
 	Terminal: Ctrl + Alt + T
-	sudo apt update
-	sudo apt upgrade
-	sudo apt full-upgrade
-	sudo apt dist-upgrade
-	sudo apt autoremove
-	sudo apt autoclean
+		sudo apt update
+		sudo apt upgrade
+		sudo apt full-upgrade
+		sudo apt dist-upgrade
+		sudo apt autoremove
+		sudo apt autoclean
 
 #02_ Instalando o Tilix no Linux Mint<br>
 
@@ -50,11 +50,12 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip
 	unzip Hack.zip
 	fc-cache -f -v
+	exit (Atalho: Ctrl + D)
 
 #04_ Configurando o Tilix como Terminal Padrão no Linux Mint<br>
 
 	Menu
-		Aplicativos de Preferenciais
+		Aplicativos Preferenciais
 			Terminal
 				Tilix
 
@@ -80,6 +81,8 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 #07_ Instalando o Zsh (Z Shell) e Oh My Zsh no Linux Mint<br>
 
+	Terminal: Ctrl + Alt + T
+
 	sudo apt install zsh
 	
 	zsh
@@ -103,13 +106,6 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 	#Instalação do Plugin Highlighting do ZSH
 	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-	
-	#Instalação do Plugin FZF do ZSH
-	git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-	~/.fzf/install
-		Do you want to enable fuzzy auto-completion? ([y]/n) y <Enter>
-		Do you want to enable key bindings? ([y]/n) y <Enter>
-		Do you want to update your shell configuration files? ([y]/n) y <Enter>
 
 	#Instalação do Plugin Zsh-AutoSuggestions do ZSH
 	git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
@@ -120,27 +116,35 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 	#Instalação do Tema PowerLevel10K
 	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 
+	#Instalação do Plugin FZF do ZSH
+	git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+	~/.fzf/install
+		Do you want to enable fuzzy auto-completion? ([y]/n) y <Enter>
+		Do you want to enable key bindings? ([y]/n) y <Enter>
+		Do you want to update your shell configuration files? ([y]/n) y <Enter>
+
 09_ Editando o arquivo de configuração do ZSHRC no Linux Mint<br>
 
 	vim ~/.zshrc
-	
-	INSERT	
-	#Variáveis de configuração do Tema PowerLevel10K
-	ZSH_THEME="powerlevel10k/powerlevel10k"
-	POWERLEVEL10K_MODE="nerdfont-complete"
-	
-	#Variável de configuração dos Plugins do ZSH
-	plugins=(
-		git
-		zsh-syntax-highlighting
-		fzf
-		zsh-autosuggestions
-		k
-	)
-	ESC SHIFT: x
+		INSERT
 
-	#recomendo fechar o Terminal Tilix e abrir novamente para verificar se tudo está funcionando
-	#e começar a customizar o Tema PowerLevel10K utilizando o Wizard padrão.
+			#Variáveis de configuração do Tema PowerLevel10K
+			ZSH_THEME="powerlevel10k/powerlevel10k"
+			POWERLEVEL10K_MODE="nerdfont-complete"
+	
+			#Variável de configuração dos Plugins do ZSH
+			plugins=(
+				git
+				zsh-syntax-highlighting
+				fzf
+				zsh-autosuggestions
+				k
+			)
+
+		ESC SHIFT :x <Enter>
+
+	#recomendo fechar o Terminal Tilix e abrir novamente para verificar se tudo está funcionando,
+	#deverá iniciar a customização do Tema PowerLevel10K utilizando o Wizard padrão.
 
 #10_ Personalizando o Tema PowerLevel10K no Linux Mint<br>
 

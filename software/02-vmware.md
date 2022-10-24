@@ -67,12 +67,12 @@ Site Oficial do VMware Store: https://store-us.vmware.com/vmware-workstation-16-
 	_ Atualização do sistema utilizando o Apt;
 
 	Terminal: Ctrl + Alt + T
-	sudo apt update
-	sudo apt upgrade
-	sudo apt full-upgrade
-	sudo apt dist-upgrade
-	sudo apt autoremove
-	sudo apt autoclean
+		sudo apt update
+		sudo apt upgrade
+		sudo apt full-upgrade
+		sudo apt dist-upgrade
+		sudo apt autoremove
+		sudo apt autoclean
 
 #02_ Download do VMware Workstation Pro 16 (Build 16.2.3 07/06/2022)<br>
 

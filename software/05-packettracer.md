@@ -33,12 +33,12 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 	_ Atualização do sistema utilizando o Apt;
 
 	Terminal: Ctrl + Alt + T
-	sudo apt update
-	sudo apt upgrade
-	sudo apt full-upgrade
-	sudo apt dist-upgrade
-	sudo apt autoremove
-	sudo apt autoclean
+		sudo apt update
+		sudo apt upgrade
+		sudo apt full-upgrade
+		sudo apt dist-upgrade
+		sudo apt autoremove
+		sudo apt autoclean
 
 #02_ Download do Cisco Packet Tracer 8.1.1<br>
 

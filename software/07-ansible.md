@@ -28,12 +28,12 @@ Site Oficial do Ansible: https://www.ansible.com/
 	_ Atualização do sistema utilizando o Apt;
 
 	Terminal: Ctrl + Alt + T
-	sudo apt update
-	sudo apt upgrade
-	sudo apt full-upgrade
-	sudo apt dist-upgrade
-	sudo apt autoremove
-	sudo apt autoclean
+		sudo apt update
+		sudo apt upgrade
+		sudo apt full-upgrade
+		sudo apt dist-upgrade
+		sudo apt autoremove
+		sudo apt autoclean
 
 #02_ Instalando as Dependências do Ansible no Linux Mint<br>
 

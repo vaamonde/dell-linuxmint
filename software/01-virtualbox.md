@@ -7,15 +7,15 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 11/10/2022<br>
-#Versão: 0.07<br>
+#Data de atualização: 24/10/2022<br>
+#Versão: 0.08<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Instalação do VirtualBOX no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 Site Oficial do VirtualBOX: https://www.virtualbox.org/
 
-Lançamento da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Changelog-7.0#v00
+Lançamento da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Changelog-7.0#v02
 
 #Tecnologias de Virtualização de Processadores AMD e Intel<br>
 
@@ -68,13 +68,13 @@ Lançamento da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Change
 	_ Atualização do sistema utilizando o Apt;
 
 	Terminal: Ctrl + Alt + T
-	sudo apt update
-	sudo apt upgrade
-	sudo apt full-upgrade
-	sudo apt dist-upgrade
-	sudo apt autoremove
-	sudo apt autoclean
-	sudo apt clean
+		sudo apt update
+		sudo apt upgrade
+		sudo apt full-upgrade
+		sudo apt dist-upgrade
+		sudo apt autoremove
+		sudo apt autoclean
+		sudo apt clean
 
 #02_ Adicionando o Repositório do Oracle VirtualBOX no Linux Mint<br>
 

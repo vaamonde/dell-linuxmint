@@ -8,8 +8,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 03/09/2022<br>
-#Versão: 0.18<br>
+#Data de atualização: 24/10/2022<br>
+#Versão: 0.19<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released!: https://blog.linuxmint.com/?p=4102<br>
@@ -128,8 +128,10 @@ O DESEMPENHO DO DISPOSITIVO, GERA MAIS ESPAÇO LIVRE E AINDA AUXILIA A PROLONGAR
 		sudo swapon --show
 		sudo swapoff -v /swapfile
 		sudo vim /etc/fstab
-			#Comentar a linha do Swapfile (salvar e sair: Esc Shift: x)
-			#swapfile	none	swap	sw	0	0
+			INSERT
+				#Comentar a linha do Swapfile (salvar e sair: Esc Shift: x)
+				#swapfile	none	swap	sw	0	0
+			ESC SHIFT :x <Enter>
 		sudo rm /swapfile
 		sudo reboot
 

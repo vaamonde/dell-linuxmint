@@ -72,7 +72,7 @@
 	deb http://dell.archive.canonical.com/updates/ focal-somerville public
 	deb http://dell.archive.canonical.com/updates/ focal-somerville-melisa public
 	#https://linux.dell.com/repo/community/openmanage/10300/focal focal main
-	ESC SHIFT: x
+	ESC SHIFT :x <Enter>
 
 	#Adicionando a Chave GPG do Repositório da Dell no Linux Mint
 	_ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F9FDA6BED73CDC22

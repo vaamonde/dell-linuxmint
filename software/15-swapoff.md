@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 09/10/2021<br>
-#Data de atualização: 23/10/2022<br>
-#Versão: 0.02<br>
+#Data de atualização: 24/10/2022<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Tabela de Referência do Swapfile: https://docs.rackspace.com/support/how-to/create-remove-swap-file-in-ubuntu/
@@ -28,8 +28,15 @@
 	  #opção do comando swapoff: -v (verbose)
 	_ sudo swapoff -v /swapfile
 
-	  #opção do comando sed: -i (in-place), /^\ (início da lista + escape), 
-	  #/d (delete)
+	#Opção-01: Comentar o arquivo do Swapfile do fstab
+	_sudo vim /etc/fstab
+		INSERT
+			#Comentar a linha do Swapfile (salvar e sair: Esc Shift: x)
+			#swapfile	none	swap	sw	0	0
+		ESC SHIFT :x <Enter>
+	
+	#Opção-02: Remover o arquivo do Swapfile do fstab
+	  #opção do comando sed: -i (in-place), /^\ (início da lista + escape), /d (delete)
 	_ sudo sed -i ′/^\/swapfile/d′ /etc/fstab
 
 	  #opção do comando rm: -v (verbose)
