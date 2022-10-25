@@ -7,14 +7,15 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 23/10/2022<br>
-#Versão: 0.02<br>
+#Data de atualização: 24/10/2022<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Instalação do HashiCorp Vagrant no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 Site Oficial do Vagrant: https://www.vagrantup.com/<br>
 Site Oficial do Packer: https://www.packer.io/<br>
+Site Oficial do VirtualBOX: https://www.virtualbox.org/<br>
 Vagrant Cloud Box: https://app.vagrantup.com/boxes/search<br>
 Images Oficiais do Ubuntu: https://cloud-images.ubuntu.com/
 
@@ -59,6 +60,8 @@ Providers (Provedores) cloud do Vagrant: AWS EC2 VPS, Google GCE, Microsoft Azur
 #05_ Instalando o Vagrant e o Packer no Linux Mint<br>
 
 	sudo apt install vagrant packer vim git tree python3 python2
+	vagrant --version
+	packer --version
 
 #06_ Criando o diretório de Projetos do Vagrant no Linux Mint<br>
 
@@ -72,10 +75,11 @@ Providers (Provedores) cloud do Vagrant: AWS EC2 VPS, Google GCE, Microsoft Azur
 	#opção do comando vagrant: init (initializes a new Vagrant environment by creating a Vagrantfile)
 	vagrant init generic/ubuntu2004
 	
+	#Link da Imagem do Ubuntu Server: https://app.vagrantup.com/generic/boxes/ubuntu2004
 	#Link de referência: https://www.vagrantup.com/docs/vagrantfile
 	#opções do comando ls: -l (long listing), -h (human-readable)
 	ls -lh
-	cat Vagrantfile
+	less Vagrantfile
 
 #08_ Iniciando o Projeto da VM do Ubuntu Server 20.04 no VirtualBOX utilizando o Vagrant<br>
 
@@ -91,6 +95,12 @@ Providers (Provedores) cloud do Vagrant: AWS EC2 VPS, Google GCE, Microsoft Azur
 	#Link de referência: https://www.vagrantup.com/docs/cli/ssh
 	#opção do comando vagrant: ssh (connects to machine via SSH)
 	vagrant ssh
+
+	#Comandos Básicos da Imagem do Ubuntu Server 20.04
+	ip address show
+	ip route show
+	resolvectl
+	exit
 
 #10_ Verificando as informações da VM do Ubuntu Server 20.04 no VirtualBOX criada com o Vagrant<br>
 
