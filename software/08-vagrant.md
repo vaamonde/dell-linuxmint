@@ -177,6 +177,8 @@ Vagrant.configure("2") do |config|
     #OBSERVAÇÃO IMPORTANTE: por padrão o Vagrant utiliza a primeira Interface de Rede em Modo NAT
     #para acessar via SSH o BOX do Ubuntu Server, quando configurado a Interface Pública do Vagrant
     #ele habilita a segunda Interface do VirtualBOX em Modo Bridge e configura o Endereço IPv4 Estático
+    #verifique primeiro com o comando: ifconfig qual Interface de Rede do Hospedeiro que você vai usar
+    #em modo Bridge
     web.vm.network "public_network", ip: "192.168.0.251", bridge: "enp3s0"
     #Configuração da Máquina Virtual do BOX do Ubuntu Server no VirtualBOX do Vagrant
     web.vm.provider "virtualbox" do |vb|
@@ -194,7 +196,7 @@ Vagrant.configure("2") do |config|
 end
 ```
 		#sair e salvar o arquivo
-		ESC Shift : x <Enter>
+		ESC Shift :x <Enter>
 
 	#opção do comando vagrant: validade (validates your Vagrantfile)
 	vagrant validate
