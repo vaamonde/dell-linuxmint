@@ -140,7 +140,9 @@ Providers (Provedores) cloud do Vagrant: AWS EC2 VPS, Google GCE, Microsoft Azur
 	#Link de referência: https://www.vagrantup.com/docs/cli/box
 	#opção do comando vagrant: box (manages boxes: installation, removal, etc.), remove (boxes remove)
 	#opção do comando tree: -a (all), ~ (til: alias home directory)
+	#opção do comando du: -h (human-readable), ~ (til: alias home directory)
 	tree -a ~/.vagrant.d/
+	du -h ~/.vagrant.d/
 	vagrant box remove generic/ubuntu2004
 	vagrant box list
 
