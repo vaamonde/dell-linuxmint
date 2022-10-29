@@ -13,8 +13,7 @@
 
 #Instalação do VirtualBOX no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
-Site Oficial do VirtualBOX: https://www.virtualbox.org/
-
+Site Oficial do VirtualBOX: https://www.virtualbox.org/<br>
 Lançamento da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Changelog-7.0#v02
 
 #Tecnologias de Virtualização de Processadores AMD e Intel<br>
@@ -87,7 +86,7 @@ Lançamento da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Change
 	wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 	wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
 
-#04_ Instalando o Oracle VirtualBOX no Linux Mint<br>
+#04_ Instalando o Oracle VirtualBOX versão 6.1 no Linux Mint<br>
 
 	sudo apt update
 	sudo apt install virtualbox-6.1 cpu-checker libvirt-clients git vim python2 python3

@@ -11,31 +11,35 @@
 #Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
+#Partição Linux Swap (Memória Virtual): https://www.guiafoca.org/guiaonline/intermediario/ch05s07.html<br>
 #Tabela de Referência do Swapfile: https://docs.rackspace.com/support/how-to/create-remove-swap-file-in-ubuntu/
 
 #01_ Verificando a quantidade de memória RAM no Linux Mint
 
 	Terminal: Ctrl + Alt + T
+
 	  #opção do comando inxi: -m (memory), xxx (extra data)
 	_ sudo inxi -mxxx
+	
 	  #opção do comando free: -h (human)
 	_ sudo free -h
 
 #02_ Desativando o Arquivo de Swapfile do Linux Mint
 
+	  #opção do comando swapon: --show (Display a definable table of swap areas)
 	_ sudo swapon --show
 
 	  #opção do comando swapoff: -v (verbose)
 	_ sudo swapoff -v /swapfile
 
-	#Opção-01: Comentar o arquivo do Swapfile do fstab
+	#Opção-01: Comentar a linha de configuração do Swapfile no arquivo fstab
 	_sudo vim /etc/fstab
 		INSERT
 			#Comentar a linha do Swapfile (salvar e sair: Esc Shift: x)
 			#swapfile	none	swap	sw	0	0
 		ESC SHIFT :x <Enter>
 	
-	#Opção-02: Remover o arquivo do Swapfile do fstab
+	#Opção-02: Remover a linha de configuração do Swapfile no arquivo fstab
 	  #opção do comando sed: -i (in-place), /^\ (início da lista + escape), /d (delete)
 	_ sudo sed -i ′/^\/swapfile/d′ /etc/fstab
 
@@ -46,5 +50,9 @@
 
 #03_ Verificando o serviço do TRIM SSD ATA no Linux Mint
 
+	OBSERVAÇÃO IMPORTANTE: Um comando trim permite que um sistema operacional informe a uma	unidade 
+	de estado sólido quais blocos de dados não são mais considerados 'em uso' e, portanto, podem ser 
+	apagados internamente. O Trim foi introduzido logo após a introdução dos SSDs.
+	
 	_ sudo systemctl status fstrim
 	_ sudo systemctl status fstrim.timer

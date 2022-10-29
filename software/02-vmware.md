@@ -74,7 +74,7 @@ Site Oficial do VMware Store: https://store-us.vmware.com/vmware-workstation-16-
 		sudo apt autoremove
 		sudo apt autoclean
 
-#02_ Download do VMware Workstation Pro 16 (Build 16.2.3 07/06/2022)<br>
+#02_ Download do VMware Workstation Pro 16 (Build 16.2.4 29/10/2022)<br>
 
 	Link: https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html
 	Versão: Workstation 16 Pro for Linux

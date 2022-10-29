@@ -20,7 +20,7 @@ Vagrant Cloud Box: https://app.vagrantup.com/boxes/search<br>
 Images Oficiais do Ubuntu: https://cloud-images.ubuntu.com/
 
 Providers Vagrant: https://www.vagrantup.com/docs/providers<br>
-Providers (Provedores) padrão do Vagrant: VirtualBOX, Hyper-V, Docker, VMware, Virt-Manager.<br>
+Providers (Provedores) padrão do Vagrant: VirtualBOX, Hyper-V, Docker, VMware, Virt-Manager KVM, QEMU.<br>
 Providers (Provedores) cloud do Vagrant: AWS EC2 VPS, Google GCE, Microsoft Azure.
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
