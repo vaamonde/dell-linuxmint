@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 13/10/2022<br>
-#Data de atualização: 14/10/2022<br>
-#Versão: 0.03<br>
+#Data de atualização: 29/10/2022<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma, 20.3 Una e 21 Vanessa x64
 
 #Lançamentos Oficiais do Linux Mint<br>
@@ -33,7 +33,7 @@ Primeira etapa: Download da ISO do Netgate UTM pfSense
 02. Escolher o Mirror (Espelho) no Brasil de: Federal University of Sao Carlos<br>
 03. Salvar a ISO do Linux Mint: linuxmint-21-cinnamon-64bit.iso no seu computador<br>
 
-Segunda etapa: Software para a grava do Pen Drive Bootável
+Segunda etapa: Software para a gravação do Pen Drive Bootável
 
 _ Rufus: https://rufus.ie/pt_BR/<br>
 _ YUMI: https://www.pendrivelinux.com/yumi-multiboot-usb-creator/<br>
@@ -45,7 +45,7 @@ _ Linux Live USC Creator: https://www.linuxliveusb.com/<br>
 Terceira etapa: Criação e Configuração da Máquina Virtual no Oracle VirtualBOX<br>
 Link de download do Oracle VirtualBOX: https://www.virtualbox.org/wiki/Downloads
 
-Criando a Máquina Virtual do Linux Mint no VirtualBox
+Quarta etapa: Criando a Máquina Virtual do Linux Mint no VirtualBox
 
 	_ Ferramentas;
 		<Novo>
@@ -72,7 +72,7 @@ Criando a Máquina Virtual do Linux Mint no VirtualBox
 		Tamanho do disco: 50GB
 		<Criar>
 
-Personalizando a Máquina Virtual do Linux Mint no VirtualBox
+Quinta etapa: Personalizando a Máquina Virtual do Linux Mint no VirtualBox
 
 	_ Configurações da Máquina Virtual Linux (Propriedades/Configurações)
 		_ Geral
@@ -98,9 +98,7 @@ Personalizando a Máquina Virtual do Linux Mint no VirtualBox
 				Nome: (Interface padrão de acesso a Internet e Rede Local do Hospedeiro)
 		<OK>
 
-Quarta etapa: Instalação do Linux Mint no VirtualBox
-
-Iniciando a ISO do Linux Mint
+Sexta etapa: Iniciando a ISO do Linux Mint
 
 	_ VM LinuxMint21: Iniciar
 	_ Selecione o disco rígido de boot
@@ -114,7 +112,7 @@ Iniciando a ISO do Linux Mint
 		<Escolher>
 	<Iniciar>
 
-Instalando o Linux Mint
+Sétima etapa: Iniciando a Instalação o Linux Mint
 
 	_ Boot Inicial do Linux Mint 10 (dez segundos) inicia a instalação padrão.
 		Parar o Boot: pressionar: Seta para Baixo para parar o Boot inicial
@@ -152,3 +150,4 @@ Instalando o Linux Mint
 			<Continuar>
 	_ <Reiniciar agora>
 	Please remove the installation medium, then press <ENTER>:
+	Observação: Aguardar a reinicialização do sistema para se logar no Linux Mint.
