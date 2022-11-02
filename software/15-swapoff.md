@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 09/10/2021<br>
-#Data de atualização: 24/10/2022<br>
-#Versão: 0.03<br>
+#Data de atualização: 02/11/2022<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Partição Linux Swap (Memória Virtual): https://www.guiafoca.org/guiaonline/intermediario/ch05s07.html<br>
@@ -27,13 +27,20 @@
 #02_ Desativando o Arquivo de Swapfile do Linux Mint
 
 	  #opção do comando swapon: --show (Display a definable table of swap areas)
+	  #opção do comando ls: -l (use a long listing format), -h (human-readable)
+	  #opção do comando inxi: -Duxxx -D (disk), -u (uuid), -xxx (extra data levels)
+	  #opção do coma do df: -h (human-readable)
 	_ sudo swapon --show
+	_ sudo ls -lh /swapfile
+	_ sudo inxi -u
+	_ sudo df -h
 
 	  #opção do comando swapoff: -v (verbose)
 	_ sudo swapoff -v /swapfile
 
 	#Opção-01: Comentar a linha de configuração do Swapfile no arquivo fstab
-	_sudo vim /etc/fstab
+	_ sudo apt install vim
+	_ sudo vim /etc/fstab
 		INSERT
 			#Comentar a linha do Swapfile (salvar e sair: Esc Shift: x)
 			#swapfile	none	swap	sw	0	0
@@ -56,3 +63,7 @@
 	
 	_ sudo systemctl status fstrim
 	_ sudo systemctl status fstrim.timer
+
+#04_ Verificando o serviço de Hibernação no Linux Mint	
+
+	_ sudo systemctl status hibernate.target
