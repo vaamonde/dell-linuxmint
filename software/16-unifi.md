@@ -11,7 +11,7 @@
 #Versão: 0.01<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
-#Instalação do Unifi Network (Antigo Unifi Controller) no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Instalação do Unifi Network Application (Antigo Unifi Controller) no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 Site Oficial do Ubiquiti Unifi: https://unifi-network.ui.com/<br>
 Site Oficial do Unifi Software: https://www.ui.com/download/unifi<br>
@@ -67,14 +67,18 @@ Site do SpeedTest: https://www.speedtest.net/pt
 
 #05_ Clonar o Projeto do Github do script do Ubiquiti Unifi para Linux Mint<br>
 
+	Terminal: Ctrl + Alt + T
+	sudo -i
 	git clone https://github.com/vaamonde/ubiquiti-unifi
 
 #06_ Acessando o diretório clocando do Ubiquiti Unifi no Linux Mint<br>
 
+	ls
 	cd ubiquiti-unifi/
 
 #07_ Executando o script de Instalação do Ubiquiti Unifi Network no Linux Mint<br>
 
+	ls
 	bash unifi-mint20.sh
 
 #08_ Acessar o Unifi Network utilizando o Navegador Google Chrome no Linux Mint<br>
@@ -86,33 +90,33 @@ Site do SpeedTest: https://www.speedtest.net/pt
 
 	chrome https://localhost:8443
 
-#09_ Configurações Básicos do Unifi Network no Linux Mint<br>
+#09_ Configurações Básicas do Unifi Network no Linux Mint<br>
 
-Step 1 of 6:
-	Name Your Controller
-		Controller Name: Vaamonde
-		By selecting this you are agreeing to end user license agreement and the terms of service: ON <Next>
+	Step 1 of 6:
+		Name Your Controller
+			Controller Name: Vaamonde
+			By selecting this you are agreeing to end user license agreement and the terms of service: ON <Next>
 
-Step 2 of 6:
-	Sign in with your Ubiquiti Account
-		Username: usuário Id-SSO https://account.ui.com
-		Password: senha usuário ID-SSO <Next>
+	Step 2 of 6:
+		Sign in with your Ubiquiti Account
+			Username: usuário Id-SSO https://account.ui.com
+			Password: senha usuário ID-SSO <Next>
 
-Step 3 of 6:
-	UniFi Network Setup
-		Automatically optimize my network: ON
-		Enable Auto Backup: <Next>
+	Step 3 of 6:
+		UniFi Network Setup
+			Automatically optimize my network: ON
+			Enable Auto Backup: <Next>
 
-Step 4 of 6:
-	Devices Setup: <Next>
+	Step 4 of 6:
+		Devices Setup: <Next>
 
-Step 5 of 6:
-	WiFi Setup: <Skip>
+	Step 5 of 6:
+		WiFi Setup: <Skip>
 
-Step 6 of 6:
-	Review Configuration:
-		Country or territory: Brazil
-		Timezone: (UTC-03:00)America/Sao_Paulo <Next>
+	Step 6 of 6:
+		Review Configuration:
+			Country or territory: Brazil
+			Timezone: (UTC-03:00)America/Sao_Paulo <Next>
 
-Security & Analytics
-	Send to Ubiquiti
+	Security & Analytics
+		Send to Ubiquiti
