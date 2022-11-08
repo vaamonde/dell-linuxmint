@@ -82,7 +82,7 @@ Site do SpeedTest: https://www.speedtest.net/pt
 	bash unifi-mint20.sh
 
 	cd /var/log/
-		ls unifi-mint-20.sh
+		ls -lh unifi-mint-20.sh
 
 #08_ Acessar o Unifi Network utilizando o Navegador Google Chrome no Linux Mint<br>
 
