@@ -7,11 +7,11 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 08/11/2022<br>
-#Data de atualização:08/11/2022<br>
-#Versão: 0.01<br>
+#Data de atualização: 08/11/2022<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
-#Instalação do Unifi Network Application (Antigo Unifi Controller) no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+Instalação do Unifi Network Application (Antigo Unifi Controller) no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 Site Oficial do Ubiquiti Unifi: https://unifi-network.ui.com/<br>
 Site Oficial do Unifi Software: https://www.ui.com/download/unifi<br>
@@ -68,8 +68,8 @@ Site do SpeedTest: https://www.speedtest.net/pt
 #05_ Clonar o Projeto do Github do script do Ubiquiti Unifi para Linux Mint<br>
 
 	Terminal: Ctrl + Alt + T
-	sudo -i
-	git clone https://github.com/vaamonde/ubiquiti-unifi
+		sudo -i
+		git clone https://github.com/vaamonde/ubiquiti-unifi
 
 #06_ Acessando o diretório clocando do Ubiquiti Unifi no Linux Mint<br>
 
@@ -80,6 +80,9 @@ Site do SpeedTest: https://www.speedtest.net/pt
 
 	ls
 	bash unifi-mint20.sh
+
+	cd /var/log/
+		ls unifi-mint-20.sh
 
 #08_ Acessar o Unifi Network utilizando o Navegador Google Chrome no Linux Mint<br>
 
