@@ -55,29 +55,38 @@ Site do SpeedTest: https://www.speedtest.net/pt
 #03_ Instalar as dependências desse script no Linux Mint<br>
 
 	Terminal: Ctrl + Alt + T
-		sudo apt install git vim
+		sudo apt install git vim nmap
 
-#04_ Clonar o Projeto do Github do script do Ubiquiti Unifi para Linux Mint<br>
+#04_ Verificando os Dispositivos Ubiquiti Unifi conectados na rede no Linux Mint<br>
+
+	Terminal: Ctrl + Alt + T
+		sudo nmap 192.168.0.0/24
+
+	Wifiman AppImage
+	Wifiman Google Chrome
+
+#05_ Clonar o Projeto do Github do script do Ubiquiti Unifi para Linux Mint<br>
 
 	git clone https://github.com/vaamonde/ubiquiti-unifi
 
-#05_ Acessando o diretório clocando do Ubiquiti Unifi no Linux Mint<br>
+#06_ Acessando o diretório clocando do Ubiquiti Unifi no Linux Mint<br>
 
 	cd ubiquiti-unifi/
 
-#06_ Executando o script de Instalação do Ubiquiti Unifi Network no Linux Mint<br>
+#07_ Executando o script de Instalação do Ubiquiti Unifi Network no Linux Mint<br>
 
 	bash unifi-mint20.sh
 
-#07_ Acessar o Unifi Network utilizando o Navegador Google Chrome no Linux Mint<br>
+#08_ Acessar o Unifi Network utilizando o Navegador Google Chrome no Linux Mint<br>
 
-	OBSERVAÇÃO: a comunidade do Ubiquiti Unifii recomendo utilizar o navegador Google Chrome
-	para a configuração e administração do Unifi Network devido a compatabilidade do Java e
-	recursos integrados no sistema que funciona perfeitamente nesse navegador.
+	OBSERVAÇÃO: a comunidade do Ubiquiti Unifi recomendo utilizar o navegador Google Chrome
+	para a configuração e administração do Unifi Network devido a compatibilidade do Java e
+	recursos integrados no sistema que funciona perfeitamente nesse navegador, é recomendado
+	utilizar a conexão HTTPS para que o usuário e senha do Account Ui funcione corretamente.
 
 	chrome https://localhost:8443
 
-#08_ Configurações Básicos do Unifi Network no Linux Mint<br>
+#09_ Configurações Básicos do Unifi Network no Linux Mint<br>
 
 Step 1 of 6:
 	Name Your Controller
