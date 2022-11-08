@@ -95,28 +95,34 @@ Site do SpeedTest: https://www.speedtest.net/pt
 	Step 1 of 6:
 		Name Your Controller
 			Controller Name: Vaamonde
-			By selecting this you are agreeing to end user license agreement and the terms of service: ON <Next>
+			By selecting this you are agreeing to end user license agreement and the terms of service: ON 
+	<Next>
 
 	Step 2 of 6:
 		Sign in with your Ubiquiti Account
 			Username: usuário Id-SSO https://account.ui.com
-			Password: senha usuário ID-SSO <Next>
+			Password: senha usuário ID-SSO 
+	<Next>
 
 	Step 3 of 6:
 		UniFi Network Setup
 			Automatically optimize my network: ON
-			Enable Auto Backup: <Next>
+			Enable Auto Backup: 
+	<Next>
 
 	Step 4 of 6:
-		Devices Setup: <Next>
+		Devices Setup: 
+	<Next>
 
 	Step 5 of 6:
-		WiFi Setup: <Skip>
+		WiFi Setup: 
+	<Skip>
 
 	Step 6 of 6:
 		Review Configuration:
 			Country or territory: Brazil
-			Timezone: (UTC-03:00)America/Sao_Paulo <Next>
+			Timezone: (UTC-03:00)America/Sao_Paulo 
+	<Next>
 
 	Security & Analytics
 		Send to Ubiquiti
