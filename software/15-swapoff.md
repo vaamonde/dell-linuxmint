@@ -7,12 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 09/10/2021<br>
-#Data de atualização: 02/11/2022<br>
-#Versão: 0.04<br>
+#Data de atualização: 24/11/2022<br>
+#Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Partição Linux Swap (Memória Virtual): https://www.guiafoca.org/guiaonline/intermediario/ch05s07.html<br>
-#Tabela de Referência do Swapfile: https://docs.rackspace.com/support/how-to/create-remove-swap-file-in-ubuntu/
+#Tabela de Referência do Swapfile: https://docs.rackspace.com/support/how-to/create-remove-swap-file-in-ubuntu/<br>
+#Gerenciamento de energia/Suspender e hibernar: https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate
 
 #01_ Verificando a quantidade de memória RAM no Linux Mint
 
@@ -47,6 +48,8 @@
 		ESC SHIFT :x <Enter>
 	
 	#Opção-02: Remover a linha de configuração do Swapfile no arquivo fstab
+	#OBSERVAÇÃO: utilizar essa opção somente se necessário, recomendo comentar a linha do swapfile
+	#no arquivo fstab.
 	  #opção do comando sed: -i (in-place), /^\ (início da lista + escape), /d (delete)
 	_ sudo sed -i ′/^\/swapfile/d′ /etc/fstab
 
@@ -64,6 +67,10 @@
 	_ sudo systemctl status fstrim
 	_ sudo systemctl status fstrim.timer
 
-#04_ Verificando o serviço de Hibernação no Linux Mint	
+#04_ Verificando o serviço de Suspender/Hibernação no Linux Mint	
+
+	OBSERVAÇÃO IMPORTANTE: por padrão o serviço de hibernação está desativado no Linux Mint, para 
+	utilizar esse recurso é necessário utilizar o swapfile. A comunidade do Ubuntu recomenda usar
+	o software Userspace Software Suspend (uswsusp) para o gerenciamento da hibernação.
 
 	_ sudo systemctl status hibernate.target
