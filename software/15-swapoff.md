@@ -7,13 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 09/10/2021<br>
-#Data de atualização: 25/11/2022<br>
-#Versão: 0.06<br>
+#Data de atualização: 29/11/2022<br>
+#Versão: 0.07<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Partição Linux Swap (Memória Virtual): https://www.guiafoca.org/guiaonline/intermediario/ch05s07.html<br>
 #Tabela de Referência do Swapfile: https://docs.rackspace.com/support/how-to/create-remove-swap-file-in-ubuntu/<br>
-#Gerenciamento de energia/Suspender e hibernar: https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate
+#Gerenciamento de Energia/Suspender e Hibernar: https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate
 
 #01_ Verificando a quantidade de memória RAM no Linux Mint
 
@@ -41,7 +41,7 @@
 	_ sudo swapon --show
 
 	#Opção-01: Comentar a linha de configuração do Swapfile no arquivo fstab
-	_ sudo apt install vim
+	_ sudo apt install vim smartmontools
 	_ sudo vim /etc/fstab
 		INSERT
 			#Comentar a linha do Swapfile (salvar e sair: Esc Shift: x)
@@ -49,8 +49,8 @@
 		ESC SHIFT :x <Enter>
 	
 	#Opção-02: Remover a linha de configuração do Swapfile no arquivo fstab
-	#OBSERVAÇÃO: utilizar essa opção somente se necessário, recomendo comentar a linha do swapfile
-	#no arquivo fstab.
+	#OBSERVAÇÃO: utilizar essa opção somente se necessário, recomendo comentar a linha do 
+	#swapfile no arquivo fstab.
 	  #opção do comando sed: -i (in-place), /^\ (início da lista + escape), /d (delete)
 	_ sudo sed -i ′/^\/swapfile/d′ /etc/fstab
 
@@ -71,7 +71,14 @@
 	OBSERVAÇÃO IMPORTANTE: Um comando trim permite que um sistema operacional informe a uma	unidade 
 	de estado sólido quais blocos de dados não são mais considerados 'em uso' e, portanto, podem ser 
 	apagados internamente. O Trim foi introduzido logo após a introdução dos SSDs.
-	
+
+	  #opção do comando fdisk: -l (list)
+	  #opção do comando smartctl: -a (all)
+	  #opção do comando fstrim: -v (verbose)
+	_ sudo fdisk -l
+	_ sudo smartctl -a /dev/nvme0n1
+	_ sudo fstrim -v /home/vaamonde
+
 	_ sudo systemctl status fstrim (padrão desativado: Active: inactive (dead))
 	_ sudo systemctl status fstrim.timer (padrão ativado: Active: active (waiting))
 
@@ -82,3 +89,5 @@
 	o software Userspace Software Suspend (uswsusp) para o gerenciamento da hibernação.
 
 	_ sudo systemctl status hibernate.target (padrão desativado: Active: inactive (dead))
+	_ sudo systemctl status suspend.target (padrão desativado: Active: inactive (dead))
+	_ sudo systemctl status suspend-then-hibernate.target (padrão desativado: Active: inactive (dead))
