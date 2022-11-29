@@ -8,12 +8,17 @@
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 09/10/2021<br>
 #Data de atualização: 29/11/2022<br>
-#Versão: 0.07<br>
+#Versão: 0.08<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Partição Linux Swap (Memória Virtual): https://www.guiafoca.org/guiaonline/intermediario/ch05s07.html<br>
 #Tabela de Referência do Swapfile: https://docs.rackspace.com/support/how-to/create-remove-swap-file-in-ubuntu/<br>
 #Gerenciamento de Energia/Suspender e Hibernar: https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate
+
+DIFERENÇAS ENTRE PARTIÇÃO SWAP E SWAPFILE (Memória Virtual): partição Swap é um espaço restrito 
+que armazena uma quantidade de memória física a ser utilizada quando o sistema operacional fica 
+sobrecarregado. O swap em arquivo passou a ter o mesmo desempenho do swap em partição, trazendo
+vantagens em relação a partição swap.
 
 #01_ Verificando a quantidade de memória RAM no Linux Mint
 
@@ -87,6 +92,11 @@
 	OBSERVAÇÃO IMPORTANTE: por padrão o serviço de hibernação está desativado no Linux Mint, para 
 	utilizar esse recurso é necessário utilizar o swapfile. A comunidade do Ubuntu recomenda usar
 	o software Userspace Software Suspend (uswsusp) para o gerenciamento da hibernação.
+
+	DIFERENÇAS ENTRE SUSPENDER E HIBERNAÇÃO: O modo “Hibernar” deixa seu notebook em um modo de 
+	baixo consumo, onde seu computador fica quase “desligado” para economizar energia ao máximo. 
+	Já o modo “Suspender” apenas desliga sua tela e deixa o computador suspenso temporariamente. 
+	Outra diferença entre os dois modos, está na hora de voltar ao trabalho.
 
 	_ sudo systemctl status hibernate.target (padrão desativado: Active: inactive (dead))
 	_ sudo systemctl status suspend.target (padrão desativado: Active: inactive (dead))
