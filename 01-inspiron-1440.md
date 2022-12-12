@@ -8,9 +8,15 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 24/10/2022<br>
-#Versão: 0.19<br>
+#Data de atualização: 12/12/2022<br>
+#Versão: 0.20<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
+
+Novos Recursos do Linux Mint 21.1 Vera Cinnamon: https://www.linuxmint.com/rel_vera_cinnamon_whatsnew.php<br>
+Informações da Nova Versão do Linux Mint 21.1 Vera: https://www.linuxmint.com/rel_vera_cinnamon.php<br>
+06/12/2022 - Lançamento da Versão BETA do Linux Mint 21.1 Vera Cinnamon: https://blog.linuxmint.com/?p=4442<br>
+03/12/2022 - Lançamento das Versões "BETA" do Linux Mint 21.1 Vera: https://blog.linuxmint.com/?p=4438
 
 08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released!: https://blog.linuxmint.com/?p=4102<br>
 08/07/2021 - How to upgrade to Linux Mint 20.2: https://blog.linuxmint.com/?p=4111<br>
@@ -41,7 +47,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	_ Configuração Padrão de Fábrica, Hard Disk SATA em AHCI, VT-x habilitado, Audio, Wireless 
 	_ e Bluetooth habilitados.
 	
-#04_ Inicialização da Instalação do Linux Mint 20.1, 20.2 e 20.3<br>
+#04_ Inicialização da Instalação do Linux Mint 20.1 Ulyssa, 20.2 Uma, 20.3 Una, 21 Vanessa ou 21.1 Vera<br>
 
 	_ Para não ter falhas de inicialização da instalação, utilizei o recurso de Modo de 
 	_ Compatibilidade, recomendado para equipamentos legados (inicialização em modo de 
@@ -65,7 +71,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	_ de particionamento (instalação padrão), Hard Disk WD usado para armazenamento de arquivos e 
 	_ backup (case Akasa AK-OA2SSA-BKV2 2,5").
 
-#07_ Pós-Instalação do Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64 Bits<br>
+#07_ Pós-Instalação do Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una, 21 Vanessa e 21.1 Vera<br>
 
 	_ Atualização do sistema utilizando o MintUpdate;
 	_ Atualização do sistema utilizando o Apt;
@@ -113,7 +119,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		no Gerenciador de Driver, o Driver já está funcionando Perfeitamente mesmo depois de instalar
 		o Kernel OEM.
 
-		OBS: só usar esse comando se for realmente necessário.
+		OBSERVAÇÃO IMPORTANTE: só usar esse comando se for realmente necessário.
 		sudo apt update
 		sudo apt install firmware-b43-installer firmware-b43legacy-installer
 		sudo reboot (Reinicializar o Sistema)
