@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 09/10/2021<br>
-#Data de atualização: 29/11/2022<br>
-#Versão: 0.08<br>
+#Data de atualização: 12/12/2022<br>
+#Versão: 0.09<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Partição Linux Swap (Memória Virtual): https://www.guiafoca.org/guiaonline/intermediario/ch05s07.html<br>
@@ -101,3 +101,39 @@ vantagens em relação a partição swap.
 	_ sudo systemctl status hibernate.target (padrão desativado: Active: inactive (dead))
 	_ sudo systemctl status suspend.target (padrão desativado: Active: inactive (dead))
 	_ sudo systemctl status suspend-then-hibernate.target (padrão desativado: Active: inactive (dead))
+
+#05_ Limpeza do Cache da Memória RAM no Linux Mint
+
+	OBSERVAÇÃO IMPORTANTE: no vídeo eu não falo sobre a limpeza do cache da memória RAM do Linux Mint, 
+	em todos os sistemas operacionais encontramos caches que possuem arquivos indesejados que podem 
+	prejudicar o nosso sistema.
+
+	PAGE CACHE também chamado de Disk Cache é uma cópia de parte dos dados do disco, mantida na memória 
+	RAM, pelo sistema operacional.
+
+	DENTRIES a palavra “dentry” é uma abreviatura para “directory entry” (entrada de diretório), uma 
+	dentry é nada além de um componente específico no caminho para um arquivo a partir da raiz do 
+	sistema. Sua função é prover acesso a arquivos e diretórios.
+
+	INODES “inode” é abreviatura para “index node“. Em um sistema de arquivos Unix, um inode é uma 
+	estrutura de dados usada para representar um objeto do sistema de arquivos – qual seja um arquivo, 
+	um diretório etc.
+
+	BUFFERS memória usada temporariamente para armazenar dados em tráfego no sistema. Utilizando os 
+	exemplos de comandos demonstrados neste artigo podemos efetuar a limpeza de Inodes, cache de 
+	disco e File System no Linux de forma simples e rápida, sem necessidade de reiniciar o servidor.
+
+	#Limpando o PageCache da Memória RAM
+	_ sudo free -mh (coluna buffer/cache)
+	_ sudo sh -c 'echo 1 > /proc/sys/vm/drop_caches' ou sudo sync; sudo echo 1 > /proc/sys/vm/drop_caches
+	_ sudo free -mh
+
+	#Limpando o Dentries e Inodes da Memória RAM
+	_ sudo free -mh (coluna buffer/cache)
+	_ sudo sh -c 'echo 2 > /proc/sys/vm/drop_caches' ou sudo sync; sudo echo 2 > /proc/sys/vm/drop_caches
+	_ sudo free -mh
+
+	#Limpando o Page Cache, Dentries e Inodes da Memória RAM
+	_ sudo free -mh (coluna buffer/cache)
+	_ sudo sh -c 'echo 3 > /proc/sys/vm/drop_caches' ou sudo sync; sudo echo 3 > /proc/sys/vm/drop_caches
+	_ sudo free -mh
