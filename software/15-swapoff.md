@@ -8,7 +8,7 @@
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 09/10/2021<br>
 #Data de atualização: 12/12/2022<br>
-#Versão: 0.09<br>
+#Versão: 0.10<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 #Partição Linux Swap (Memória Virtual): https://www.guiafoca.org/guiaonline/intermediario/ch05s07.html<br>
@@ -125,15 +125,15 @@ vantagens em relação a partição swap.
 
 	#Limpando o PageCache da Memória RAM
 	_ sudo free -mh (coluna buffer/cache)
-	_ sudo sh -c 'echo 1 > /proc/sys/vm/drop_caches' ou sudo sync; sudo echo 1 > /proc/sys/vm/drop_caches
+	_ sudo sync; sudo sh -c 'echo 1 > /proc/sys/vm/drop_caches'
 	_ sudo free -mh
 
 	#Limpando o Dentries e Inodes da Memória RAM
 	_ sudo free -mh (coluna buffer/cache)
-	_ sudo sh -c 'echo 2 > /proc/sys/vm/drop_caches' ou sudo sync; sudo echo 2 > /proc/sys/vm/drop_caches
+	_ sudo sync; sudo sh -c 'echo 2 > /proc/sys/vm/drop_caches'
 	_ sudo free -mh
 
 	#Limpando o Page Cache, Dentries e Inodes da Memória RAM
 	_ sudo free -mh (coluna buffer/cache)
-	_ sudo sh -c 'echo 3 > /proc/sys/vm/drop_caches' ou sudo sync; sudo echo 3 > /proc/sys/vm/drop_caches
+	_ sudo sync; sudo sh -c 'echo 3 > /proc/sys/vm/drop_caches'
 	_ sudo free -mh
