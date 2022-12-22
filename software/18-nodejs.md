@@ -11,9 +11,9 @@
 #Versão: 0.01<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
-Instalação do Wondershare EdrawMax v11.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+Instalação do Node.JS e NPM no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
-Site Oficial do Edraw Soft: https://www.edrawsoft.com/pt/
+Site Oficial do Node.JS: https://nodejs.org/en/
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
@@ -21,7 +21,7 @@ Site Oficial do Edraw Soft: https://www.edrawsoft.com/pt/
 
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
 	sudo cat /etc/os-release
-	sudo localectl
+	sudo cat /etc/lsb-release
 	Menu
 		Informações do Sistema
 
@@ -38,17 +38,44 @@ Site Oficial do Edraw Soft: https://www.edrawsoft.com/pt/
 		sudo apt autoremove
 		sudo apt autoclean
 
-#02_ Download do EdrawMax para o Linux Mint<br>
+#02_ Instalando as Dependências do Node.JS no Linux Mint<br>
 
-	_ Site do download: https://www.edrawsoft.com/pt/download-edrawmax.html
-	_ Versão para: Debian, Ubuntu, Mint 64 bits: <Teste Grátis>
-	_ Arquivo (download feito em 22/12/2022): edrawmax_11.5.6_en_x86_64.deb
+	_ sudo apt install git vim curl gcc g++ make build-essential
 
-#03_ Instalando o EdrawMax no Linux Mint<br>
+#03_ Instalando a Versão LTS do Node.JS no Linux Mint<br>
 
-	_ OBSERVAÇÃO IMPORTANTE: recomendo utilizar o Gerenciador de Instalação de Pacotes
-	_ do Linux Mint: Gdeb, clicando duas vezes no arquivo: edrawmax_11.5.6_en_x86_64.deb
+	_ sudo curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash
+	_ sudo sudo apt install nodejs npm
 
-#04_ Utilizando o EdrawMax On-Line via Navegaor
+#04_ Verificando as Versões do Node.JS e NPM no Linux Mint<br>
 
-	_ Site do EdrawMax On-Line: https://www.edrawmax.com/online/pt/
+	_ sudo nodejs -v
+	_ sudo npm -v
+
+#05_ Criando um Projeto Simples para Testar o Node.JS no Linux Mint<br>
+
+	_ md nodejs-hello
+	_ cd nodejs-hello
+	_	npm init -y
+	_	npm install express --save
+
+#06_ Editando o Projeto Simples do Node.JS o VSCode no Linux Mint<br>
+
+	_ code .
+	_ OBSERVAÇÃO IMPORTANTE: nesse exemplo vamos editar o arquivo index.js
+
+	var express = require ('express'); 
+	var app = express();
+	
+	app.get('/', function (req, res) {
+		res.send('Robson Vaamonde #BoraParaPrática!!!');
+	});
+
+	app.listen(3000, function() {
+		console.log('Aplicativo de exemplo ouvindo na porta 3000');
+	});
+
+#07_ Executando o Projeto Simples do Node.JS no Linux Mint<br>
+
+	_ node index.js
+	_ firefox http://localhost:3000/
