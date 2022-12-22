@@ -8,7 +8,7 @@
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 22/12/2022<br>
 #Data de atualização: 22/12/2022<br>
-#Versão: 0.01<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 
 Instalação do Node.JS e NPM no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
@@ -40,21 +40,21 @@ Site Oficial do Node.JS: https://nodejs.org/en/
 
 #02_ Instalando as Dependências do Node.JS no Linux Mint<br>
 
-	_ sudo apt install git vim curl gcc g++ make build-essential
+	_ sudo apt install git vim curl gcc g++ make build-essential ca-certificates
 
 #03_ Instalando a Versão LTS do Node.JS no Linux Mint<br>
 
 	_ sudo curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash
-	_ sudo sudo apt install nodejs npm
+	_ sudo sudo apt install nodejs
 
 #04_ Verificando as Versões do Node.JS e NPM no Linux Mint<br>
 
-	_ sudo nodejs -v
+	_ sudo node -v
 	_ sudo npm -v
 
 #05_ Criando um Projeto Simples para Testar o Node.JS no Linux Mint<br>
 
-	_ md nodejs-hello
+	_ md -v nodejs-hello
 	_ cd nodejs-hello
 	_	npm init -y
 	_	npm install express --save
@@ -77,5 +77,9 @@ Site Oficial do Node.JS: https://nodejs.org/en/
 
 #07_ Executando o Projeto Simples do Node.JS no Linux Mint<br>
 
+	_ Atalho: Ctrl + J
 	_ node index.js
+
+#08_ Acessando o Projeto Simples do Node.JS no Linux Mint<br>
+
 	_ firefox http://localhost:3000/

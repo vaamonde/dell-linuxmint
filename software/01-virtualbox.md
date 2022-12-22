@@ -15,6 +15,7 @@
 
 Site Oficial do VirtualBOX: https://www.virtualbox.org/<br>
 Lançamento da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Changelog-7.0#v02
+Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Changelog-7.0#v4
 
 #Tecnologias de Virtualização de Processadores AMD e Intel<br>
 
