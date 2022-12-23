@@ -202,6 +202,18 @@ O DESEMPENHO DO DISPOSITIVO, GERA MAIS ESPAÇO LIVRE E AINDA AUXILIA A PROLONGAR
 	_ WPS Office: http://linux.wps.com/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/11-wpsoffice.md)
 
+	_ Sources List Dell: http://dell.archive.canonical.com/dists/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/12-sourcelist-dell.md)
+	
+	_ Arduino IDE: https://www.arduino.cc/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/13-arduino.md)
+
+	_ EdrawMax: https://www.edrawsoft.com/pt/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/17-edrawmax.md)
+	
+	_ Node.JS: https://nodejs.org/en/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/18-nodejs.md)
+		
 	_ NotepadQQ: https://notepadqq.com/s/
 		sudo apt update && sudo apt install notepadqq
 
