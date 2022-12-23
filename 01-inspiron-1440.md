@@ -8,9 +8,9 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 12/12/2022<br>
-#Versão: 0.20<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Data de atualização: 22/12/2022<br>
+#Versão: 0.21<br>
+#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Novos Recursos do Linux Mint 21.1 Vera Cinnamon: https://www.linuxmint.com/rel_vera_cinnamon_whatsnew.php<br>
@@ -58,12 +58,18 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	_ Modelo Broadcom BCM-4312, por padrão não é reconhecida no Linux Mint 20 sendo necessário 
 	_ instalar o Driver Proprietário pelo Gerenciador de Drivers do Linux Mint ou por linha de 
 	_ comando.
-	_ OBS: se você utilizar o Kernel OEM >= 5.6 a instalação do Driver da Broadcom via Gerenciador 
-	_ de Driver não funciona corretamente, sendo necessário instalar o Firmware e Driver manualmente 
-	_ por linha de comando.
+
+	_ OBSERVAÇÃO IMPORTANTE: se você utilizar o Kernel OEM >= 5.6 a instalação do Driver da 
+	_ Broadcom via Gerenciador de Driver não funciona corretamente, sendo necessário instalar 
+	_ o Firmware e Driver manualmente por linha de comando.
+
 	_ OBSERVAÇÃO IMPORTANTE: na versão do Linux Mint 20.3 Una não é mais necessário instalar o
-	_ Driver da Placa de Rede Sem-Fio Broadcom, ela é reconhecida no Live-CD, depois de instalado o
-	_ Linux Mint já está funcionando, mesmo depois de instalar o Kernel OEM >= 5.10.
+	_ Driver da Placa de Rede Sem-Fio Broadcom, ela é reconhecida no Live-CD, depois de instalado 
+	_ o Linux Mint já está funcionando, mesmo depois de instalar o Kernel OEM >= 5.10.
+
+	_ OBSERVAÇÃO IMPORTANTE: na versão do Linux Mint 21 Vanessa e 21.1 Vera o driver da Broadcom
+	_ não é reconhecido por padrão, sendo necessário instalar o Driver Proprietário pelo Gerenciador
+	_ de Drivers do Linux Mint ou por linha de comando.
 
 #06_ Hard Disk SATA SSD 60GB e SATA 500GB 7200rpm<br>
 
@@ -71,9 +77,15 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	_ de particionamento (instalação padrão), Hard Disk WD usado para armazenamento de arquivos e 
 	_ backup (case Akasa AK-OA2SSA-BKV2 2,5").
 
+	_ OBSERVAÇÃO IMPORTANTE: sempre utilizar o software Gparted para remover todas as partições
+	_ existente no disco que será feito a instalação do Linux Mint, isso deixar o sistema mais
+	_ seguro e não causa o problemas de Múltiplos Boots.
+
 #07_ Pós-Instalação do Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una, 21 Vanessa e 21.1 Vera<br>
 
 	_ Atualização do sistema utilizando o MintUpdate;
+	_ Atualização do sistema utilizando o Relatório do Sistema;
+		Instalar pacotes de idiomas
 	_ Atualização do sistema utilizando o Apt;
 		sudo apt update
 		sudo apt upgrade
@@ -88,7 +100,9 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 		sudo apt update
 		sudo uname -a
-		sudo apt install linux-oem-20.04 fdutils
+		sudo apt install linux-oem-20.04 fdutils (Linux Mint Versão 20.x)
+		sudo apt install linux-oem-22.04a fdutils (Linux Mint Versão 21.x - Kernel >= 5.17)
+		sudo apt install linux-oem-22.04b fdutils (Linux Mint Versão 21.x - Kernel >= 6.0)
 		sudo reboot (Reinicializar o Sistema)
 		sudo uname -a
 
@@ -104,7 +118,8 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 		sudo apt update
 		sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
-		sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5 beignet-opencl-icd
+		sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5 beignet-opencl-icd (Linux Mint Versão 20.x)
+		sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5 (Linux Mint Versão 21.x)
 		sudo reboot (Reinicializar o Sistema)
 
 #11_ Instalação dos Drivers Sem-Fio (Wi-Fi/Wireless) Broadcom BCM-4312<br>
@@ -118,6 +133,12 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		OBSERVAÇÃO IMPORTANTE: Na versão do Linux Mint 20.3 Una, ele reconhece a Placa de Rede Sem-Fio
 		no Gerenciador de Driver, o Driver já está funcionando Perfeitamente mesmo depois de instalar
 		o Kernel OEM.
+
+		OBSERVAÇÃO IMPORTANTE: Na versão do Linux Mint 21 Vanessa e 21.1 Vera, ele reconhecer a Rede
+		Sem-Fio no Gerenciador de Driver, mais o Driver padrão: bcmwl-kernel-source não funciona 
+		corretamente no Kernel padrão e no Kernel OEM, recomendo marcar a opção: Não usar esse 
+		dispositivo primeiro, Aplicar as Mudanças, reiniciar o Desktop/Notebook e depois instalar os 
+		Drivers abaixo.
 
 		OBSERVAÇÃO IMPORTANTE: só usar esse comando se for realmente necessário.
 		sudo apt update
