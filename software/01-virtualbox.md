@@ -7,11 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 24/10/2022<br>
-#Versão: 0.08<br>
+#Data de atualização: 04/01/2023<br>
+#Versão: 0.09<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 #Instalação do VirtualBOX no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Instalação do VirtualBOX no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Site Oficial do VirtualBOX: https://www.virtualbox.org/<br>
 Lançamento da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Changelog-7.0#v02
@@ -55,7 +57,8 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 	Terminal: Ctrl + Alt + T
 	
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 	
 	#opções do comando inxi: -C (cpu), -M (machine), -S (system), -f (flags), -xxx (extra 3)
@@ -78,8 +81,13 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 #02_ Adicionando o Repositório do Oracle VirtualBOX no Linux Mint<br>
 
+	#ADICIONANDO O REPOSITÓRIO PARA O LINUX MINT 20.x
 	#opção do comando sh: -c (Read commands from the command_string operand in‐stead of from the standard input)
 	sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian focal contrib" >> /etc/apt/sources.list.d/virtualbox.list'
+
+	#ADICIONANDO O REPOSITÓRIO PARA O LINUX MINT 21.x
+	#opção do comando sh: -c (Read commands from the command_string operand in‐stead of from the standard input)
+	sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian jammy contrib" >> /etc/apt/sources.list.d/virtualbox.list'
 
 #03_ Baixando e Instalando as Chaves de Autenticação GPG do Oracle VirtualBOX no Linux Mint<br>
 
@@ -90,7 +98,8 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 #04_ Instalando o Oracle VirtualBOX versão 6.1 no Linux Mint<br>
 
 	sudo apt update
-	sudo apt install virtualbox-6.1 cpu-checker libvirt-clients git vim python2 python3
+	sudo apt install virtualbox-6.1 cpu-checker libvirt-clients git vim python2 python3 (VirtualBOX 6.1.x)
+	sudo apt install virtualbox-7.0 cpu-checker libvirt-clients git vim python2 python3 (VirtualBOX 7.0.x)
 
 #05_ Verificando as Informações do suporte a Virtualização no Linux Mint<br>
 	
