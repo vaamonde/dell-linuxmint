@@ -7,11 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 05/08/2022<br>
-#Versão: 0.04<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Data de atualização: 05/01/2023<br>
+#Versão: 0.05<br>
+#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
-#Instalação do Docker CE no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Instalação do Docker CE no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Instalação do Docker CE no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Site Oficial do Docker: https://www.docker.com/<br>
 Site Oficial do Docker Hub: https://hub.docker.com/search?q=
@@ -20,7 +22,8 @@ Site Oficial do Docker Hub: https://hub.docker.com/search?q=
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
@@ -38,16 +41,26 @@ Site Oficial do Docker Hub: https://hub.docker.com/search?q=
 
 #02_ Instalando as Dependência do Docker CE no Linux Mint<br>
 
-	sudo apt install apt-transport-https ca-certificates curl software-properties-common
+	sudo apt install apt-transport-https ca-certificates curl software-properties-common curl gnupg-agent
 
 #03_ Adicionando a Chave GPG do Docker CE no Linux Mint<br>
 
+	#ADICIONANDO AS CHAVES DO REPOSITÓRIO NO LINUX MINT 20.x
 	#opções do comando curl: -f (fail), -s (silent), -S (show-error), -L (location)
 	curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
+	#ADICIONANDO AS CHAVES DO REPOSITÓRIO NO LINUX MINT 21.x
+	#opções do comando wget: -q (quiet)
+	wget -q https://download.docker.com/linux/ubuntu/gpg 
+	cat gpg | gpg --dearmor | sudo tee /usr/share/keyrings/docker-ce.gpg > /dev/null 2>&1
+
 #04_ Adicionando o Repositório do Docker CE no Linux Mint<br>
 
+	#ADICIONANDO O REPOSITÓRIO NO LINUX MINT 20.x
 	sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+
+	#ADICIONANDO O REPOSITÓRIO NO LINUX MINT 21.x
+	sudo add-apt-repository "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-ce.gpg] https://download.docker.com/linux/ubuntu jammy stable"
 
 #05_ Atualizando as Lista do Apt com o novo Repositório do Docker CE no Linux Mint<br>
 
@@ -65,8 +78,8 @@ Site Oficial do Docker Hub: https://hub.docker.com/search?q=
 	#opção do comando apt: purgue (remove --purge packages)
 	sudo apt purgue docker-compose
 	
-	#opção do comando curl: -S (show-error), -L (location), -o (output)
-	sudo curl -SL https://github.com/docker/compose/releases/download/v2.6.0/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
+	#opção do comando curl: -S (show-error), -L (location), -o (output) (Build 2.15 05/01/2023)
+	sudo curl -SL https://github.com/docker/compose/releases/download/v2.15.0/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
 	
 	#opção do comando chmod: -v (verbose), 755 (User=RWX,Group-R-X,Other-R-X)
 	sudo chmod -v 755 /usr/bin/docker-compose

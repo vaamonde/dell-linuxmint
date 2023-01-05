@@ -9,10 +9,10 @@
 #Data de criação: 01/10/2020<br>
 #Data de atualização: 05/01/2023<br>
 #Versão: 0.10<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
-#Instalação do VirtualBOX no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Instalação do VirtualBOX no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do VirtualBOX no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Site Oficial do VirtualBOX: https://www.virtualbox.org/<br>
@@ -81,22 +81,22 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 #02_ Adicionando o Repositório do Oracle VirtualBOX no Linux Mint<br>
 
-	#ADICIONANDO O REPOSITÓRIO PARA O LINUX MINT 20.x
+	#ADICIONANDO O REPOSITÓRIO NO LINUX MINT 20.x
 	#opção do comando sh: -c (Read commands from the command_string operand in‐stead of from the standard input)
 	sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian focal contrib" >> /etc/apt/sources.list.d/virtualbox.list'
 
-	#ADICIONANDO O REPOSITÓRIO PARA O LINUX MINT 21.x
+	#ADICIONANDO O REPOSITÓRIO NO LINUX MINT 21.x
 	#opção do comando sh: -c (Read commands from the command_string operand in‐stead of from the standard input)
 	sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/virtualbox.gpg] https://download.virtualbox.org/virtualbox/debian jammy contrib" >> /etc/apt/sources.list.d/virtualbox.list'
 
 #03_ Baixando e Instalando as Chaves de Autenticação GPG do Oracle VirtualBOX no Linux Mint<br>
 
-	#ADICIONANDO AS CHAVES DO REPOSITÓRIO DO VIRTUALBOX NO LINUX MINT 20.x
+	#ADICIONANDO AS CHAVES DO REPOSITÓRIO NO LINUX MINT 20.x
 	#opções do comando wget: -q (quiet), -O (output-document), - (file name)
 	wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 	wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
 
-	#ADICIONANDO AS CHAVES DO REPOSITÓRIO DO VIRTUALBOX NO LINUX MINT 21.x
+	#ADICIONANDO AS CHAVES DO REPOSITÓRIO NO LINUX MINT 21.x
 	#opções do comando wget: -q (quiet)
 	wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc
 	cat oracle_vbox_2016.asc | gpg --dearmor | sudo tee /usr/share/keyrings/virtualbox.gpg > /dev/null 2>&1
