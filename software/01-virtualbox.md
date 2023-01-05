@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 04/01/2023<br>
-#Versão: 0.09<br>
+#Data de atualização: 05/01/2023<br>
+#Versão: 0.10<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -87,15 +87,21 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 	#ADICIONANDO O REPOSITÓRIO PARA O LINUX MINT 21.x
 	#opção do comando sh: -c (Read commands from the command_string operand in‐stead of from the standard input)
-	sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian jammy contrib" >> /etc/apt/sources.list.d/virtualbox.list'
+	sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/virtualbox.gpg] https://download.virtualbox.org/virtualbox/debian jammy contrib" >> /etc/apt/sources.list.d/virtualbox.list'
 
 #03_ Baixando e Instalando as Chaves de Autenticação GPG do Oracle VirtualBOX no Linux Mint<br>
 
-	#opções do comando wget: -q (quiet), -O (output-document)
+	#ADICIONANDO AS CHAVES DO REPOSITÓRIO DO VIRTUALBOX NO LINUX MINT 20.x
+	#opções do comando wget: -q (quiet), -O (output-document), - (file name)
 	wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 	wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
 
-#04_ Instalando o Oracle VirtualBOX versão 6.1 no Linux Mint<br>
+	#ADICIONANDO AS CHAVES DO REPOSITÓRIO DO VIRTUALBOX NO LINUX MINT 21.x
+	#opções do comando wget: -q (quiet)
+	wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc
+	cat oracle_vbox_2016.asc | gpg --dearmor | sudo tee /usr/share/keyrings/virtualbox.gpg > /dev/null 2>&1
+
+#04_ Instalando o Oracle VirtualBOX no Linux Mint<br>
 
 	sudo apt update
 	sudo apt install virtualbox-6.1 cpu-checker libvirt-clients git vim python2 python3 (VirtualBOX 6.1.x)
@@ -111,7 +117,7 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
 	*Seguir os procedimentos na tela.
 
-#07_ Atualizando para a versão 7.0 do VirtualBOX
+#07_ Atualizando o VirtualBOX 6.1 para a versão nova versão 7.0<br>
 
 	sudo apt update
 	sudo apt upgrade
