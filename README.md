@@ -40,32 +40,32 @@ Vídeo mostrando os procedimentos básicos para baixar e instalar no VirtualBOX 
 
 Com lançamento previsto para o Natal de 2022, a nova versão da Distribuição Linux Mint 21.1 Codinome Vera traz grandes mudanças e melhorias conforme os links oficiais da distribuição.
 
-Novos Recursos do Linux Mint 21.1 Vera Cinnamon: 
+Novos Recursos do Linux Mint 21.1 Vera Cinnamon:<br>
 https://www.linuxmint.com/rel_vera_cinnamon_whatsnew.php
 
-Informações da Nova Versão do Linux Mint 21.1 Vera
+Informações da Nova Versão do Linux Mint 21.1 Vera<br>
 https://www.linuxmint.com/rel_vera_cinnamon.php
 
-06/12/2022 - Lançamento da Versão BETA do Linux Mint 21.1 Vera Cinnamon
+06/12/2022 - Lançamento da Versão BETA do Linux Mint 21.1 Vera Cinnamon<br>
 https://blog.linuxmint.com/?p=4442
 
-03/12/2022 - Lançamento das Versões "BETA" do Linux Mint 21.1 Vera
+03/12/2022 - Lançamento das Versões "BETA" do Linux Mint 21.1 Vera<br>
 https://blog.linuxmint.com/?p=4438
 
-01/11/2022 - Novidades da Versão do Linux Mint 21.1 Vera
-01_ Atualização do Blueman Bluetooth
-02_ Menos solicitações de Senha na remoção de aplicativos
-03_ Gerenciador de Atualização com suporte ao Flatpak
-04_ Mudanças Visuais no Nemo
-05_ Atalho para Configurações de Exibição na Área de Trabalho
+01/11/2022 - Novidades da Versão do Linux Mint 21.1 Vera<br>
+01_ Atualização do Blueman Bluetooth<br>
+02_ Menos solicitações de Senha na remoção de aplicativos<br>
+03_ Gerenciador de Atualização com suporte ao Flatpak<br>
+04_ Mudanças Visuais no Nemo<br>
+05_ Atalho para Configurações de Exibição na Área de Trabalho<br>
 https://blog.linuxmint.com/?p=4424
 
-30/10/2022 - Novidades da Versão do Linux Mint 21.1 Vera
-01_ Atualização do Timeshift agora mantido pelo Linux Mint
-02_ Atualização das Fontes de Software e PPA
-03_ Atualização do Gerenciador de Drivers
-04_ Ferramentas de Verificação de ISO
-05_ Atualização da Ferramenta de Gravação de Imagem USB
+30/10/2022 - Novidades da Versão do Linux Mint 21.1 Vera<br>
+01_ Atualização do Timeshift agora mantido pelo Linux Mint<br>
+02_ Atualização das Fontes de Software e PPA<br>
+03_ Atualização do Gerenciador de Drivers<br>
+04_ Ferramentas de Verificação de ISO<br>
+05_ Atualização da Ferramenta de Gravação de Imagem USB<br>
 https://blog.linuxmint.com/?p=4408
 
 [![Linux Mint 21.1](http://img.youtube.com/vi/mljY0_WW_cA/0.jpg)](https://www.youtube.com/watch?v=mljY0_WW_cA "Linux Mint 21.1")
