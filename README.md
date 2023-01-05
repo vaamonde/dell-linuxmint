@@ -34,23 +34,45 @@ FTP  do Linux Mint: https://ftp.heanet.ie/mirrors/linuxmint.com/stable/<br>
 ## **Playlist do YouTUBE com todos os Vídeos do Linux Mint 20.x/21.x:**
 Link da Playlist: https://www.youtube.com/playlist?list=PLozhsZB1lLUOKXT6TIhjwPWBNpUoExsNF
 
-## **Lançamento Oficial do Linux Mint 20.1 Ulyssa - Instalação no Oracle VirtualBOX**
+## **LINUX MINT 21.1 VERA - Lançamento da Versão BETA Cinnamon - Download e Instalação no VirtualBOX**
 
-Vídeo mostrando os procedimentos básicos para instalar o Linux Mint 20.1 Ulyssa no Oracle VirtualBOX
+Vídeo mostrando os procedimentos básicos para baixar e instalar no VirtualBOX a "NOVA" Versão do Linux Mint 21.1 Vera Cinnamon x64 Bits.
 
-No dia 03/01/2021 a equipe de desenvolvimento do Linux Mint disponibilizou nos seus Mirrors (espelhos) as versões "OFICIAL" do Linux Mint Cinnamon, Mate e XFCE 64bits e uma nova versão chamada "Edge", será que essas ISO's são as Oficiais?
+Com lançamento previsto para o Natal de 2022, a nova versão da Distribuição Linux Mint 21.1 Codinome Vera traz grandes mudanças e melhorias conforme os links oficiais da distribuição.
 
-No dia 31/12/2020 os desenvolvedores do Linux Mint comentaram que ainda não tem uma data para o lançamento oficial do Linux Mint 20.1, pois o seu lançamento só aconteceria depois de corrigir todas as falhas reportadas no Github em relação a versão "BETA".
+Novos Recursos do Linux Mint 21.1 Vera Cinnamon: 
+https://www.linuxmint.com/rel_vera_cinnamon_whatsnew.php
 
-Mesmo seguindo o seu planejamento semestral, a equipe do Linux Mint está atrasada em relação ao lançamento, mais será que eles conseguiram resolver todos os problemas ou vão lançar a versão mesmo com as falhas existentes? Vamos aguardar.
+Informações da Nova Versão do Linux Mint 21.1 Vera
+https://www.linuxmint.com/rel_vera_cinnamon.php
 
-No dia 08/01/2021 o site foi atualizado para a nova versão.
+06/12/2022 - Lançamento da Versão BETA do Linux Mint 21.1 Vera Cinnamon
+https://blog.linuxmint.com/?p=4442
 
-[![Linux Mint 20.1](http://img.youtube.com/vi/jhqmvgMQypo/0.jpg)](http://www.youtube.com/watch?v=jhqmvgMQypo "Linux Mint 20.1")
+03/12/2022 - Lançamento das Versões "BETA" do Linux Mint 21.1 Vera
+https://blog.linuxmint.com/?p=4438
 
-Link da vídeo aula: https://www.youtube.com/watch?v=jhqmvgMQypo
+01/11/2022 - Novidades da Versão do Linux Mint 21.1 Vera
+01_ Atualização do Blueman Bluetooth
+02_ Menos solicitações de Senha na remoção de aplicativos
+03_ Gerenciador de Atualização com suporte ao Flatpak
+04_ Mudanças Visuais no Nemo
+05_ Atalho para Configurações de Exibição na Área de Trabalho
+https://blog.linuxmint.com/?p=4424
 
-Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
+30/10/2022 - Novidades da Versão do Linux Mint 21.1 Vera
+01_ Atualização do Timeshift agora mantido pelo Linux Mint
+02_ Atualização das Fontes de Software e PPA
+03_ Atualização do Gerenciador de Drivers
+04_ Ferramentas de Verificação de ISO
+05_ Atualização da Ferramenta de Gravação de Imagem USB
+https://blog.linuxmint.com/?p=4408
+
+[![Linux Mint 21.1](http://img.youtube.com/vi/mljY0_WW_cA/0.jpg)](https://www.youtube.com/watch?v=mljY0_WW_cA "Linux Mint 21.1")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=mljY0_WW_cA
+
+Material de apoio desse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/software/00-install-linuxmint-21.1-virtualbox-7.0.md
 
 ## **LINUX MINT 21 VANESSA Lançamento Oficial - Review da nova versão e Testes no VirtualBOX**
 
@@ -92,6 +114,24 @@ Guia do How to upgrade to Linux Mint 21: https://linuxmint-user-guide.readthedoc
 Link da vídeo aula: https://www.youtube.com/watch?v=QaLS-_lnu48
 
 Material de apoio desse vídeo: 
+
+## **Lançamento Oficial do Linux Mint 20.1 Ulyssa - Instalação no Oracle VirtualBOX**
+
+Vídeo mostrando os procedimentos básicos para instalar o Linux Mint 20.1 Ulyssa no Oracle VirtualBOX
+
+No dia 03/01/2021 a equipe de desenvolvimento do Linux Mint disponibilizou nos seus Mirrors (espelhos) as versões "OFICIAL" do Linux Mint Cinnamon, Mate e XFCE 64bits e uma nova versão chamada "Edge", será que essas ISO's são as Oficiais?
+
+No dia 31/12/2020 os desenvolvedores do Linux Mint comentaram que ainda não tem uma data para o lançamento oficial do Linux Mint 20.1, pois o seu lançamento só aconteceria depois de corrigir todas as falhas reportadas no Github em relação a versão "BETA".
+
+Mesmo seguindo o seu planejamento semestral, a equipe do Linux Mint está atrasada em relação ao lançamento, mais será que eles conseguiram resolver todos os problemas ou vão lançar a versão mesmo com as falhas existentes? Vamos aguardar.
+
+No dia 08/01/2021 o site foi atualizado para a nova versão.
+
+[![Linux Mint 20.1](http://img.youtube.com/vi/jhqmvgMQypo/0.jpg)](http://www.youtube.com/watch?v=jhqmvgMQypo "Linux Mint 20.1")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=jhqmvgMQypo
+
+Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
 
 ## **💻 Notebooks utilizados: Dell Inspiron 1440, XPS L502, Vostro 5480 e G3 3590 🐧🐧**
 ![Notebook Dell](img/dell.png)
