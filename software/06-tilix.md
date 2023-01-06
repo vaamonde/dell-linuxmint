@@ -7,11 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 29/06/2022<br>
-#Versão: 0.01<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Data de atualização: 06/01/2023<br>
+#Versão: 0.02<br>
+#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
-#Instalação do Tilix no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Instalação do Tilix no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Instalação do Tilix no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Site Oficial do Terminal Tilix: https://gnunn1.github.io/tilix-web/<br>
 Site Oficial do Oh My Zsh: https://ohmyz.sh/<br>
@@ -21,7 +23,8 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
@@ -54,11 +57,17 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 #04_ Configurando o Tilix como Terminal Padrão no Linux Mint<br>
 
+	#OBSERVAÇÃO IMPORTANTE: no Linux Mint 20.x a mudança do Terminal padrão é feita utilizando
+	o recurso das Configurações do Sistema em Aplicativos Preferenciais
 	Menu
 		Aplicativos Preferenciais
 			Terminal
 				Tilix
 
+	#OBSERVAÇÃO IMPORTANTE: no Linux Mint 21.x a mudança do Terminal padrão não é mais feita
+	utilizando o recurso das Configurações do Sistema em Aplicativos Preferenciais, essa opção
+	foi retirada da ferramenta, sendo necessário alterar via linha de comando:
+	
 #05_ Executando o Tilix no Linux Mint<br>
 
 	Atalho: Ctrl + Alt + T
