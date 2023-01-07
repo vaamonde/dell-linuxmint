@@ -7,11 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 24/10/2022<br>
-#Versão: 0.03<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Data de atualização: 07/01/2023<br>
+#Versão: 0.04<br>
+#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
-#Instalação do HashiCorp Vagrant no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Instalação do HashiCorp Vagrant no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Instalação do HashiCorp Vagrant no Linux Mint  21 Vanessa e 21.1 Vera x64
 
 Site Oficial do Vagrant: https://www.vagrantup.com/<br>
 Site Oficial do Packer: https://www.packer.io/<br>
@@ -27,7 +29,8 @@ Providers (Provedores) cloud do Vagrant: AWS EC2 VPS, Google GCE, Microsoft Azur
 
 	Terminal: Ctrl + Alt + T
 	
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 
@@ -46,12 +49,21 @@ Providers (Provedores) cloud do Vagrant: AWS EC2 VPS, Google GCE, Microsoft Azur
 
 #02_ Adicionando a Chave GPG do Vagrant no Linux Mint<br>
 
+	#ADICIONANDO AS CHAVES DO REPOSITÓRIO NO LINUX MINT 20.x
 	#opções do comando curl: -f (fail), -s (silent), -S (show-error), -L (location)
 	curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 
+	#ADICIONANDO AS CHAVES DO REPOSITÓRIO NO LINUX MINT 21.x
+	#opções do comando wget: -q (quiet), -O (output file), - (file name)
+	wget -q -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp.gpg > /dev/null 2>&1
+
 #03_ Adicionando o Repositório do Vagrant no Linux Mint<br>
 
+	#ADICIONANDO O REPOSITÓRIO NO LINUX MINT 20.x
 	sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com focal main"
+
+	#ADICIONANDO O REPOSITÓRIO NO LINUX MINT 21.x
+	sudo apt-add-repository "deb [arch=amd64 signed-by=/usr/share/keyrings/hashicorp.gpg] https://apt.releases.hashicorp.com jammy main"
 
 #04_ Atualizando as Lista do Apt com o novo Repositório do Vagrant no Linux Mint<br>
 

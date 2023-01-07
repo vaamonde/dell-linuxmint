@@ -7,11 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 10/06/2022<br>
-#Versão: 0.03<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Data de atualização: 07/01/2023<br>
+#Versão: 0.04<br>
+#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
-#Instalação do Ansible no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Instalação do Ansible no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Instalação do Ansible no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Site Oficial do Ansible: https://www.ansible.com/
 
@@ -19,8 +21,10 @@ Site Oficial do Ansible: https://www.ansible.com/
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
+	sudo cat /etc/lsb-release
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 
@@ -50,7 +54,7 @@ Site Oficial do Ansible: https://www.ansible.com/
 
 #05_ Verificando a Versão do Ansible<br>
 
-	#Link de referência: https://docs.ansible.com/ansible/2.4/ansible.html
+	#Link de referência: https://docs.ansible.com/ansible/latest/
 	ansible --version
 
 #06_ Criando o Arquivo de Inventário dos Hosts e Log do Ansible no Linux Mint<br>

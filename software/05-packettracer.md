@@ -31,6 +31,7 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 	Packet Tracer funciona muito bem no Mint com o ambiente gráfico Cinnamon, isso não acontece 
 	nos Ambientes Gráficos MATE ou XFCE ou na versão LMDE que não possui essas dependências.
 	sudo cat /etc/os-release
+	sudo cat /etc/lsb-release
 	sudo cinnamon --version
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
