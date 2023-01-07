@@ -7,11 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 28/07/2022<br>
-#Versão: 0.02<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Data de atualização: 07/01/2023<br>
+#Versão: 0.03<br>
+#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
-#Instalação do Microsoft Visual Studio Code VSCode no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Instalação do Microsoft Visual Studio Code VSCode no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Instalação do Microsoft Visual Studio Code VSCode no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Site Oficial do Visual Studio Code: https://code.visualstudio.com/<br>
 Link do Marketplace: https://marketplace.visualstudio.com/VSCode
@@ -20,8 +22,10 @@ Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
+	sudo cat /etc/lsb-release
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 
@@ -85,7 +89,7 @@ Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 				Texto puro: Visual Studio Code
 				Código fonte: Visual Studio Code
 
-#08_ Instalando e Configurando as Principais Extensões que utilizo no Meu Dia a Dia<br>
+#08_ Instalando e Configurando as Principais Extensões Microsoft Visual Studio Code VSCode<br>
 
 	Portuguese (Brazil) Language Pack for Visual Studio Code
 		(Sem necessidade de configuração)
@@ -144,7 +148,7 @@ Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 	YAML
 		(Sem necessidade de configuração)
 
-#09_ Configurações principais do Microsoft Visual Studio Code VSCode para funcionar perfeitamente no Linux Mint<br>
+#09_ Configurações básicas do Microsoft Visual Studio Code VSCode para funcionar perfeitamente no Linux Mint<br>
 
 	Gerenciar
 		Configurações

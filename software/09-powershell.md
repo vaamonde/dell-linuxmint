@@ -7,11 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 11/06/2022<br>
-#Versão: 0.01<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Data de atualização: 07/01/2023<br>
+#Versão: 0.02<br>
+#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
-#Instalação do Microsoft Powershell no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Instalação do Microsoft Powershell no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Instalação do Microsoft Powershell no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Site Oficial do PowerShell: https://docs.microsoft.com/pt-br/powershell/scripting/overview?view=powershell-7.2<br>
 Site Oficial do .NET SDK: https://docs.microsoft.com/pt-br/dotnet/core/sdk<br>
@@ -24,8 +26,10 @@ Documentação do .NET SDK e Runtime: https://docs.microsoft.com/pt-br/dotnet/co
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
+	sudo cat /etc/lsb-release
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 
@@ -47,8 +51,13 @@ Documentação do .NET SDK e Runtime: https://docs.microsoft.com/pt-br/dotnet/co
 
 #03_ Baixando o repositório oficial do PowerShell e do .NET SDK e Runtime no Linux Mint<br>
 	
+	#ADICIONANDO O REPOSITÓRIO NO LINUX MINT 20.x
 	#opção do comando wget: -q (quiet)
 	wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb
+
+	#ADICIONANDO O REPOSITÓRIO NO LINUX MINT 21.x
+	#opção do comando wget: -q (quiet)
+	wget -q https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.de
 
 #04_ Instalando o repositório oficial do PowerShell e do .NET SDK e Runtime no Linux Mint<br>
 	
