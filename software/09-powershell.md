@@ -46,18 +46,23 @@ Documentação do .NET SDK e Runtime: https://docs.microsoft.com/pt-br/dotnet/co
 
 #02_ Instalando as Dependências do PowerShell e do .NET SDK e Runtime no Linux Mint<br>
 
+	#INSTALANDO AS DEPENDÊNCIAS DO POWERSHELL NO LINUX MINT 20.x
 	sudo apt install apt-transport-https software-properties-common libc6 libgcc1 \
 	libgssapi-krb5-2 libicu66 libssl1.1 libstdc++6 zlib1g vim git python2 python3
 
+	#INSTALANDO AS DEPENDÊNCIAS DO POWERSHELL NO LINUX MINT 21.x
+	sudo apt install apt-transport-https software-properties-common libc6 libgcc-s1 \
+	libgssapi-krb5-2 libicu70 libssl1.1 libstdc++6 zlib1g vim git python2 python3
+
 #03_ Baixando o repositório oficial do PowerShell e do .NET SDK e Runtime no Linux Mint<br>
 	
-	#ADICIONANDO O REPOSITÓRIO NO LINUX MINT 20.x
+	#ADICIONANDO O REPOSITÓRIO DO POWERSHELL NO LINUX MINT 20.x
 	#opção do comando wget: -q (quiet)
 	wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb
 
-	#ADICIONANDO O REPOSITÓRIO NO LINUX MINT 21.x
+	#ADICIONANDO O REPOSITÓRIO DO POWERSHELL NO LINUX MINT 21.x
 	#opção do comando wget: -q (quiet)
-	wget -q https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.de
+	wget -q https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb
 
 #04_ Instalando o repositório oficial do PowerShell e do .NET SDK e Runtime no Linux Mint<br>
 	
@@ -69,8 +74,8 @@ Documentação do .NET SDK e Runtime: https://docs.microsoft.com/pt-br/dotnet/co
 	sudo apt update
 
 #06_ Instalando o PowerShell, .NET SDK e Runtime no Linux Mint<br>
-	
-	sudo apt install powershell dotnet-sdk-6.0 aspnetcore-runtime-6.0
+
+	sudo apt install powershell dotnet-sdk-7.0 aspnetcore-runtime-7.0
 
 #07_ Rodando o PowerShell no Linux Mint<br>
 	
@@ -78,8 +83,12 @@ Documentação do .NET SDK e Runtime: https://docs.microsoft.com/pt-br/dotnet/co
 
 #08_ Utilizando os comandos Básicos do PowerShell no Linux Mint<br>
 
+	Get-Date		- informações de data e hora do linux
 	Get-Host		- informações detalhadas do PowerShell
+	Get-Location	- informações da localização (Path)
+	Get-PSDrive		- informações do Hard Disk
 	Get-Process		- informações de processos
+	Get-Uptime		- informações do tempo de uso do linux
 	Get-Command		- lista todos os comandos que estão disponíveis
 	Get-Module		- lista todos os módulos que estão disponíveis
 	Get-History		- imprimir todo o histórico de comandos do PowerShell

@@ -68,11 +68,11 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 	#opção do comando ldd: -v (verbose), | (piper = Conecta a saída padrão com a entrada padrão de outro comando)
 	sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
 
-	#Instalando as dependências do Cisco Packet Tracer no Linux Mint 20.x
+	#INSTALANDO AS DEPENDÊNCIAS DO CISCO PACKET TRACER NO LINUX MINT 20.x
 	sudo apt install libqt5networkauth5 libqt5script5 libqt5scripttools5
 	sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
 
-	#Instalando as dependências do Cisco Packet Tracer no Linux Mint 21.x
+	#INSTALANDO AS DEPENDÊNCIAS DO CISCO PACKET TRACER NO LINUX MINT 21.x
 	sudo apt install libqt5networkauth5 libqt5script5 libqt5scripttools5 libqt5texttospeech5 libqt5positioning5 \
 	libqt5qml5 libqt5webchannel5 libqt5qmlmodels5 libqt5quick5 libqt5webenginecore5 libqt5webenginewidgets5 \
 
