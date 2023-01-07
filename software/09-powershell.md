@@ -85,7 +85,7 @@ Documentação do .NET SDK e Runtime: https://docs.microsoft.com/pt-br/dotnet/co
 
 	Get-Date		- informações de data e hora do linux
 	Get-Host		- informações detalhadas do PowerShell
-	Get-Location	- informações da localização (Path)
+	Get-Location		- informações da localização (Path)
 	Get-PSDrive		- informações do Hard Disk
 	Get-Process		- informações de processos
 	Get-Uptime		- informações do tempo de uso do linux
