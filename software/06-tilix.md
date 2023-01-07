@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 06/01/2023<br>
-#Versão: 0.02<br>
+#Data de atualização: 07/01/2023<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -67,7 +67,9 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 	#OBSERVAÇÃO IMPORTANTE: no Linux Mint 21.x a mudança do Terminal padrão não é mais feita
 	utilizando o recurso das Configurações do Sistema em Aplicativos Preferenciais, essa opção
 	foi retirada da ferramenta, sendo necessário alterar via linha de comando:
-	
+	gsettings set org.cinnamon.desktop.default-applications.terminal exec /usr/bin/tilix
+	exit (Atalho: Ctrl + D)
+
 #05_ Executando o Tilix no Linux Mint<br>
 
 	Atalho: Ctrl + Alt + T
@@ -83,7 +85,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 					Fonte Personalizada: Yes
 						Hack Nerd Font Mono Bold
 						Tamanho: 16
-				Color
+				Cor
 					Esquemas de Cores: Monokai Dark
 					Transparência: Aumentar um Pouco
 	Fechar
