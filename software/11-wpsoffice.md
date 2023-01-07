@@ -7,21 +7,29 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 24/07/2022<br>
-#Data de atualização: 24/07/2022<br>
-#Versão: 0.01<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Data de atualização: 07/01/2023<br>
+#Versão: 0.02<br>
+#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
-#Instalação do WPS Office 2019 + Pacote de Tradução e Dicionário no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Instalação do WPS Office 2021 + Pacote de Tradução e Dicionário no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Instalação do WPS Office 2021 + Pacote de Tradução e Dicionário no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Site Oficial do WPS Office: https://www.wps.com/<br>
+AppImage do WPS Office (não oficial): https://apprepo.de/appimage/wps-office<br>
+Flatpack (Flathub) WPS Office: https://flathub.org/apps/details/com.wps.Office<br>
 Github do Pacote de Tradução: https://github.com/vaamonde/pt_br-wpsoffice
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
 	Terminal: Ctrl + Alt + T
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
+	
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
+	sudo cat /etc/lsb-release
 	sudo localectl
+
 	Menu
 		Informações do Sistema
 
@@ -38,19 +46,19 @@ Github do Pacote de Tradução: https://github.com/vaamonde/pt_br-wpsoffice
 		sudo apt autoremove
 		sudo apt autoclean
 
-#02_ Download do WPS Office 2019 no Linux Mint<br>
+#02_ Download do WPS Office 2021 no Linux Mint<br>
 
-	Site: https://www.wps.com/office/linux/
+	Site: https://www.wps.com/pt-BR/office/linux/
 		Pacote: .DEB
 
-#03_ Instalando o WPS Office 2019 no Linux Mint<br>
+#03_ Instalando o WPS Office 2021 no Linux Mint<br>
 
-	01_ Na pasta de Download, clicar duas vezes no Instalador do WPS Office 2019;
+	01_ Na pasta de Download, clicar duas vezes no Instalador do WPS Office 2021;
 	02_ Seguir os procedimentos na tela;
 	03_ Menu, WPS Office
 	04_ End User License Agreement for WPS Office: Have read and agreed to Kingsoft Office Software: YES <I Confirm>
 
-#04_ Instalando o pacote de Tradução e Dicionário PT-BR do WPS Office 2019 no Linux Mint<br>
+#04_ Instalando o pacote de Tradução e Dicionário PT-BR do WPS Office 2021 no Linux Mint<br>
 
 	01_ Primeira etapa: Acessar o Terminal
 		Atalho: Ctrl + Alt + T
