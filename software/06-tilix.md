@@ -49,11 +49,11 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 	#opção do comando mkdir: -v (verbose), -p (parents), ~ (til: alias home directory)
 	#opção do comando fc-cache: -f (Force up-to-date cache files), -v (Display status)
 	mkdir -pv ~/.local/share/fonts/Hack
-	cd ~/.local/share/fonts/Hack
-	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip
-	unzip Hack.zip
-	fc-cache -f -v
-	exit (Atalho: Ctrl + D)
+		cd ~/.local/share/fonts/Hack
+		wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip
+		unzip Hack.zip
+		fc-cache -f -v
+		exit (Atalho: Ctrl + D)
 
 #04_ Configurando o Tilix como Terminal Padrão no Linux Mint<br>
 
@@ -67,6 +67,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 	#OBSERVAÇÃO IMPORTANTE: no Linux Mint 21.x a mudança do Terminal padrão não é mais feita
 	utilizando o recurso das Configurações do Sistema em Aplicativos Preferenciais, essa opção
 	foi retirada da ferramenta, sendo necessário alterar via linha de comando:
+
 	gsettings set org.cinnamon.desktop.default-applications.terminal exec /usr/bin/tilix
 	exit (Atalho: Ctrl + D)
 
@@ -103,10 +104,10 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 	#opções do comando curl: -f (fail), -s (silent), -S (show-error), -L (location) 
 	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 		Do you want to change your default shell to zsh? [Y/n] Y <Enter>
-		[sudo] senha para usuário: <Enter>
+		[sudo] senha do seu usuário: <Enter>
 
 	#recomendo fechar o Terminal Tilix e abrir novamente para verificar se tudo está funcionando
-	exit (Atalho: Ctrl + D)
+	exit (Atalho: Ctrl + D) - sair 03 (três) vezes do terminal
 
 #08_ Instalação dos Plugins e Temas do ZSH e do Oh My Zsh no Linux Mint<br>
 
@@ -140,10 +141,12 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 		INSERT
 
 			#Variáveis de configuração do Tema PowerLevel10K
+			#Copiar e colar substituindo a partir da linha: 11
 			ZSH_THEME="powerlevel10k/powerlevel10k"
 			POWERLEVEL10K_MODE="nerdfont-complete"
 	
 			#Variável de configuração dos Plugins do ZSH
+			#Copiar e colar substituindo a partir da linha: 75
 			plugins=(
 				git
 				zsh-syntax-highlighting
@@ -155,7 +158,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 		ESC SHIFT :x <Enter>
 
 	#recomendo fechar o Terminal Tilix e abrir novamente para verificar se tudo está funcionando,
-	#deverá iniciar a customização do Tema PowerLevel10K utilizando o Wizard padrão.
+	#deverá iniciar automaticamente a customização do Tema PowerLevel10K utilizando o Wizard padrão.
 
 #10_ Personalizando o Tema PowerLevel10K no Linux Mint<br>
 
@@ -164,43 +167,62 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 		Does this look like a diamond (rotated square)?
 			Choice [ynq]: y
+		
 		Does this look like a lock?
 			Choice [ynq]: y
+		
 		Does this look like a Debian logo (swirl/spiral)?
 			Choice [ynq]: y
+		
 		Do all these icons fit between the crosses?
 			Choice [ynq]: y
+		
 		Prompt Style: (2) Classic
 			Choice [1234rq]: 2
+		
 		Character Set: (1) Unicode
 			Choice [1234rq]: 1
+		
 		Prompt Color: (4) Darkest.
 			Choice [1234rq]: 4
-		Show current time?: (3)  12-hour format.
-			Choice [123rq]: 3
+		
+		Show current time?: (2) 24-hour format.
+			Choice [123rq]: 2
+		
 		Prompt Separators: (3)  Slanted.
 			Choice [123rq]: 3
+		
 		Prompt Heads: (1)  Sharp.
 			Choice [123rq]: 1
+		
 		Prompt Tails: (1)  Flat.
 			Choice [123rq]: 1
+		
 		Prompt Height: (2)  Two lines.
 			Choice [123rq]: 2
+		
 		Prompt Connection: (1)  Disconnected.
 			Choice [123rq]: 1
+		
 		Prompt Frame: (1)  No frame.
 			Choice [123rq]: 1
-		Prompt Spacing: 1)  Space.
+		
+		Prompt Spacing: (2)  Sparse.
 			Choice [123rq]: 2
+		
 		Icons: (2)  Many icons.
 			Choice [123rq]: 2
+		
 		Prompt Flow: (2)  Fluent.
 			Choice [123rq]: 2
+		
 		Enable Transient Prompt? (n)  No.
 			Choice [n]: n
+		
 		Instant Prompt Mode: (1)  Verbose (recommended).
 			Choice [123rq]: 1
-		 Apply changes to ~/.zshrc?: (y)  Yes (recommended).
+		
+		Apply changes to ~/.zshrc?: (y)  Yes (recommended).
 		 	Choice [ynrq]: y
 
 	#caso queira reconfigurar o PowerLevel10K novamente digite o comando abaixo.
@@ -208,6 +230,8 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 				
 #11_ Configurando o Visual Studio Code com suporte a Fonte Hack Nerd Font e Terminal ZSH<br>
 
+	OBSERVAÇÃO IMPORTANTE: executar esse procedimento somente se você tem instalado
+	o Microsoft Visual Studio no seu Linux Mint
 	Gerenciar
 		Configurações
 			terminal.integrated.fontFamily
