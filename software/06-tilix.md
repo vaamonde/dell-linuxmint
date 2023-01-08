@@ -28,6 +28,9 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 
+	Menu
+		Informações do Sistema
+		
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 
 	_ Atualização do sistema utilizando o MintUpdate;

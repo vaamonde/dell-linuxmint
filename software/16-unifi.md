@@ -7,11 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 08/11/2022<br>
-#Data de atualização: 08/11/2022<br>
-#Versão: 0.02<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Data de atualização: 08/01/2023<br>
+#Versão: 0.03<br>
+#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
-Instalação do Unifi Network Application (Antigo Unifi Controller) no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Instalação do Unifi Network Application (Antigo Unifi Controller) no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Instalação do Unifi Network Application (Antigo Unifi Controller) no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Site Oficial do Ubiquiti Unifi: https://unifi-network.ui.com/<br>
 Site Oficial do Unifi Software: https://www.ui.com/download/unifi<br>
@@ -29,9 +31,12 @@ Site do SpeedTest: https://www.speedtest.net/pt
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
+	sudo cat /etc/lsb-release
 	sudo localectl
+
 	Menu
 		Informações do Sistema
 
@@ -78,11 +83,17 @@ Site do SpeedTest: https://www.speedtest.net/pt
 
 #07_ Executando o script de Instalação do Ubiquiti Unifi Network no Linux Mint<br>
 
-	ls
+	#INSTALANDO O UNIFI CONTROLLER NO LINUX MINT 20.x
 	bash unifi-mint20.sh
 
 	cd /var/log/
 		ls -lh unifi-mint-20.sh
+
+	#INSTALANDO O UNIFI CONTROLLER NO LINUX MINT 21.x
+	bash unifi-mint21.sh
+
+	cd /var/log/
+		ls -lh unifi-mint-21.sh
 
 #08_ Acessar o Unifi Network utilizando o Navegador Google Chrome no Linux Mint<br>
 

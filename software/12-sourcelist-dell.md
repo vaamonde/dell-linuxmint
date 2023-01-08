@@ -30,6 +30,18 @@
 #Link do Sources List do Ubuntu OEM: http://oem.archive.canonical.com/updates/dists/<br>
 #Verificar o Service TAG no Linux: sudo dmidecode -s system-serial-number
 
+#00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
+
+	Terminal: Ctrl + Alt + T
+
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+	sudo cat /etc/os-release
+	sudo cat /etc/lsb-release
+
+	Menu
+		Informações do Sistema
+		
 #01_ Atualização do Sistema Operacional<br>
 
 	_ Atualização do sistema utilizando o MintUpdate;
@@ -88,11 +100,11 @@
 	#deb https://linux.dell.com/repo/community/openmanage/11000/jammy jammy main
 	ESC SHIFT :x <Enter>
 
-	#Adicionando a Chave GPG do Repositório da Dell no Linux Mint
+	#ADICIONANDO A CHAVE GPG DA DELL NO LINUX MINT 20.x
 	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F9FDA6BED73CDC22
 	
 	#OBSERVAÇÃO IMPORTANTE: adicionar a chave abaixo somente se você for utilizar o repositório
-	#da Dell OpenManager no seu Desktop ou Servidor.
+	#da Dell OpenManager no seu Linux Mint 20.x somente se você for utilizar.
 	#sudo apt-key adv --keyserver pool.sks-keyservers.net --recv-key 1285491434D8786F
 
 #05_ Atualizando as Lista do Apt e instalando os principais pacotes da Dell no Linux Mint

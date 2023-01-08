@@ -7,21 +7,27 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 22/12/2022<br>
-#Data de atualização: 22/12/2022<br>
-#Versão: 0.02<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Data de atualização: 08/01/2023<br>
+#Versão: 0.03<br>
+#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
-Instalação do Node.JS e NPM no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Instalação do Node.JS e NPM no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Instalação do Node.JS e NPM no Linux Mint 21 Vanessa e 21.1 Vera x64
 
-Site Oficial do Node.JS: https://nodejs.org/en/
+Site Oficial do Node.JS: https://nodejs.org/en/<br>
+Site Oficial o NPM: https://www.npmjs.com/
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
+	sudo localectl
+
 	Menu
 		Informações do Sistema
 
@@ -64,16 +70,21 @@ Site Oficial do Node.JS: https://nodejs.org/en/
 	_ code .
 	_ OBSERVAÇÃO IMPORTANTE: nesse exemplo vamos editar o arquivo index.js
 
-	var express = require ('express'); 
-	var app = express();
-	
-	app.get('/', function (req, res) {
-		res.send('Robson Vaamonde #BoraParaPrática!!!');
-	});
+```js
+// Criando as variáveis express e app
+var express = require ('express'); 
+var app = express();
 
-	app.listen(3000, function() {
-		console.log('Aplicativo de exemplo ouvindo na porta 3000');
-	});
+// Mensagem que será mostrada no browser (navegador) 
+app.get('/', function (req, res) {
+	res.send('Robson Vaamonde #BoraParaPrática!!!');
+});
+
+// Porta padrão utilizada pela aplicação do Node.JS
+app.listen(3000, function() {
+	console.log('Aplicativo de exemplo ouvindo na porta 3000');
+});
+```
 
 #07_ Executando o Projeto Simples do Node.JS no Linux Mint<br>
 

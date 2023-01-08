@@ -34,6 +34,9 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 	sudo cat /etc/lsb-release
 	sudo cinnamon --version
 
+	Menu
+		Informações do Sistema
+		
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 
 	_ Atualização do sistema utilizando o MintUpdate;

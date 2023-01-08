@@ -7,11 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 15/08/2022<br>
-#Data de atualização:27/08/2022<br>
-#Versão: 0.03<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Data de atualização: 08/01/2023<br>
+#Versão: 0.05<br>
+#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
-#Instalação do Arduino IDE 2.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Instalação do Arduino IDE 2.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Instalação do Arduino IDE 2.x no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Site Oficial do Arduino IDE: https://www.arduino.cc/<br>
 Projeto do Github do Arduino IDE 2.x: https://github.com/arduino/arduino-ide<br>
@@ -25,9 +27,12 @@ Site Oficial do Fritzing: https://fritzing.org/
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
+	sudo cat /etc/lsb-release
 	sudo localectl
+
 	Menu
 		Informações do Sistema
 
@@ -58,7 +63,11 @@ Site Oficial do Fritzing: https://fritzing.org/
 
 #05_ Executando o script de Instalação do Arduino IDE 2.x no Linux Mint<br>
 
+	#INSTALAÇÃO DO ARDUINO IDE NO LINUX MINT 20.x
 	bash install20.sh
+
+	#INSTALAÇÃO DO ARDUINO IDE NO LINUX MINT 21.x
+	bash install21.sh
 
 #06_ Executando o Arduino IDE 2.x no Linux Mint<br>
 
@@ -66,7 +75,7 @@ Site Oficial do Fritzing: https://fritzing.org/
 
 #07_ Verificando as Informações do Hardware do Arduino no Linux Mint<br>
 
-	Arduino IDE 2.0.0 RC9.2
+	Arduino IDE 2.0.3
 		Tools
 			Board "Arduino Uno"
 			Port: "/dev/ttyACM0"
