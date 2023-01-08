@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 04/07/2021<br>
-#Data de atualização: 07/01/2023<br>
-#Versão: 0.08<br>
+#Data de atualização: 08/01/2023<br>
+#Versão: 0.09<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -48,41 +48,57 @@
 #02_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.15.x suportado até 2025)<br>
 
 	#Link de pesquisa do Kernel OEM da Canonical/Ubuntu: https://wiki.ubuntu.com/Kernel/OEMKernel
-	_ sudo apt update
-	_ sudo uname -a
-	_ sudo apt install linux-oem-20.04 fdutils
-	_ sudo reboot (Reinicializar o Sistema)
+	sudo apt update
+	sudo uname -a
+	sudo apt install linux-oem-20.04 fdutils (Linux Mint Versão 20.x)
+	sudo apt install linux-oem-22.04a fdutils (Linux Mint Versão 21.x - Kernel >= 5.17)
+	sudo apt install linux-oem-22.04b fdutils (Linux Mint Versão 21.x - Kernel >= 6.0)
+	sudo reboot (Reinicializar o Sistema)
+	sudo uname -a
 
 #03_ Habilitando os repositórios no Linux Mint<br>
 
 	#Link de pesquisa dos pacotes do Ubuntu: https://packages.ubuntu.com/
-	_ sudo add-apt-repository main (Principal - Software livre e de código aberto suportado pela Canonical)
-	_ sudo add-apt-repository universe (Universe - Software livre e de código aberto mantido pela comunidade)
-	_ sudo add-apt-repository multiverse (Multiverse - Software restrito por direitos autorais ou questões legais)
-	_ sudo add-apt-repository restricted (Restrito - Drivers proprietários para dispositivos)
+	sudo add-apt-repository main (Principal - Software livre e de código aberto suportado pela Canonical)
+	sudo add-apt-repository universe (Universe - Software livre e de código aberto mantido pela comunidade)
+	sudo add-apt-repository multiverse (Multiverse - Software restrito por direitos autorais ou questões legais)
+	sudo add-apt-repository restricted (Restrito - Drivers proprietários para dispositivos)
 
 #04_ Adicionando o repositório da Dell no Linux Mint<br>	
 
 	#Criando o arquivo do Sources List da Dell no Linux Mint
-	_ sudo apt update && sudo apt install vim
-	_ sudo vim /etc/apt/sources.list.d/focal-dell.list
-	
+	sudo apt update && sudo apt install vim
+	sudo vim /etc/apt/sources.list.d/dell.list
+
+	#ADICIONANDO O REPOSITÓRIO DA DELL NO LINUX MINT 20.x	
 	INSERT
 	deb http://dell.archive.canonical.com/updates/ focal-dell public
 	deb http://dell.archive.canonical.com/updates/ focal-oem public
 	deb http://dell.archive.canonical.com/updates/ focal-somerville public
 	deb http://dell.archive.canonical.com/updates/ focal-somerville-melisa public
-	#https://linux.dell.com/repo/community/openmanage/10300/focal focal main
+	#deb https://linux.dell.com/repo/community/openmanage/10300/focal focal main
+	ESC SHIFT :x <Enter>
+
+	#ADICIONANDO O REPOSITÓRIO DA DELL NO LINUX MINT 21.x	
+	INSERT
+	deb http://dell.archive.canonical.com/updates/ jammy public
+	deb http://dell.archive.canonical.com/updates/ jammy-oem public
+	deb http://dell.archive.canonical.com/updates/ jammy-somerville public
+	deb http://dell.archive.canonical.com/updates/ jammy-stella public
+	#deb https://linux.dell.com/repo/community/openmanage/11000/jammy jammy main
 	ESC SHIFT :x <Enter>
 
 	#Adicionando a Chave GPG do Repositório da Dell no Linux Mint
-	_ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F9FDA6BED73CDC22
-	_ #sudo apt-key adv --keyserver pool.sks-keyservers.net --recv-key 1285491434D8786F
+	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F9FDA6BED73CDC22
+	
+	#OBSERVAÇÃO IMPORTANTE: adicionar a chave abaixo somente se você for utilizar o repositório
+	#da Dell OpenManager no seu Desktop ou Servidor.
+	#sudo apt-key adv --keyserver pool.sks-keyservers.net --recv-key 1285491434D8786F
 
 #05_ Atualizando as Lista do Apt e instalando os principais pacotes da Dell no Linux Mint
-	_ sudo apt update
-	_ sudo apt install oem-somerville-melisa-meta libfprint-2-tod1-goodix oem-somerville-meta tlp-config
-	_ sudo reboot (Reinicializar o Sistema)
+	sudo apt update
+	sudo apt install oem-somerville-melisa-meta libfprint-2-tod1-goodix oem-somerville-meta tlp-config
+	sudo reboot (Reinicializar o Sistema)
 
 #06_ Verificando o Driver da Dell no Gerenciador de Drivers do Linux Mint
 	Menu
