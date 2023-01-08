@@ -96,16 +96,19 @@
 	#sudo apt-key adv --keyserver pool.sks-keyservers.net --recv-key 1285491434D8786F
 
 #05_ Atualizando as Lista do Apt e instalando os principais pacotes da Dell no Linux Mint
+
 	sudo apt update
 	sudo apt install oem-somerville-melisa-meta libfprint-2-tod1-goodix oem-somerville-meta tlp-config
 	sudo reboot (Reinicializar o Sistema)
 
 #06_ Verificando o Driver da Dell no Gerenciador de Drivers do Linux Mint
+
 	Menu
 		Pesquisa Indexada
 			Driver
 
 07_ Verificando os Aplicativos de Drivers da Dell no Gerenciador de Aplicativos do Linux Mint
+
 	Menu
 		Gerenciador de Aplicativos
 			Pesquisar: Dell
