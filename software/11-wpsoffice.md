@@ -12,10 +12,11 @@
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
-#Instalação do WPS Office 2021 + Pacote de Tradução e Dicionário no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do WPS Office 2021 + Pacote de Tradução e Dicionário no Linux Mint 21 Vanessa e 21.1 Vera x64
+#Instalação do WPS Office 2019 + Pacote de Tradução e Dicionário no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Instalação do WPS Office 2019 + Pacote de Tradução e Dicionário no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Site Oficial do WPS Office: https://www.wps.com/<br>
+Novidades da Versão do WPS Office: https://www.wps.com/whatsnew/linux/<br>
 AppImage do WPS Office (não oficial): https://apprepo.de/appimage/wps-office<br>
 Flatpack (Flathub) WPS Office: https://flathub.org/apps/details/com.wps.Office<br>
 Github do Pacote de Tradução: https://github.com/vaamonde/pt_br-wpsoffice
@@ -46,19 +47,19 @@ Github do Pacote de Tradução: https://github.com/vaamonde/pt_br-wpsoffice
 		sudo apt autoremove
 		sudo apt autoclean
 
-#02_ Download do WPS Office 2021 no Linux Mint<br>
+#02_ Download do WPS Office 2019 no Linux Mint<br>
 
 	Site: https://www.wps.com/pt-BR/office/linux/
 		Pacote: .DEB
 
-#03_ Instalando o WPS Office 2021 no Linux Mint<br>
+#03_ Instalando o WPS Office 2019 no Linux Mint<br>
 
-	01_ Na pasta de Download, clicar duas vezes no Instalador do WPS Office 2021;
+	01_ Na pasta de Download, clicar duas vezes no Instalador do WPS Office 2019;
 	02_ Seguir os procedimentos na tela;
 	03_ Menu, WPS Office
 	04_ End User License Agreement for WPS Office: Have read and agreed to Kingsoft Office Software: YES <I Confirm>
 
-#04_ Instalando o pacote de Tradução e Dicionário PT-BR do WPS Office 2021 no Linux Mint<br>
+#04_ Instalando o pacote de Tradução e Dicionário PT-BR do WPS Office 2019 no Linux Mint<br>
 
 	01_ Primeira etapa: Acessar o Terminal
 		Atalho: Ctrl + Alt + T
@@ -80,10 +81,11 @@ Github do Pacote de Tradução: https://github.com/vaamonde/pt_br-wpsoffice
 		wps
 
 	07_ Sétima etapa..: Procedimentos para corrigir a Falha de Acentuação do WPS Office
-		_ Abrir o WPS Office;
-		_ na tela inicial do WPS Office clicar em: Global Settings;
-		_ selecionar: settings;
+		_ Abrir o WPS Office 2019;
+		_ na tela inicial do WPS Office clicar em: Global Settings (Definições Globais);
+		_ selecionar: settings (Definições);
 		_ em Settings Other clicar em: Settings Other Options Popup Component;
 		_ alterar para: Multi-Module Mode <OK>;
 		_ na tela de Restart WPS to see changes clicar em: <OK>;
-		_ Fechar o WPS Office e testar a acentuação no Write e Spreadsheets.
+		_ Fechar o WPS Office e testar a acentuação no Write e Spreadsheets;
+		_ na tela de Verificação do Sistema marque a opção: Não relatar novamente e <Close>
