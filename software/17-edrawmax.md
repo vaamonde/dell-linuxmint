@@ -46,14 +46,22 @@ Site do EdrawMax On-Line: https://www.edrawmax.com/online/pt/
 
 #02_ Download do EdrawMax para o Linux Mint<br>
 
-	_ Site do download: https://www.edrawsoft.com/pt/download-edrawmax.html
-	_ Versão para: Debian, Ubuntu, Mint 64 bits: <Teste Grátis>
-	_ Arquivo (download feito em 22/12/2022): edrawmax_11.5.6_en_x86_64.deb
+	Site do download: https://www.edrawsoft.com/pt/download-edrawmax.html
+	Versão para: Debian, Ubuntu, Mint 64 bits: <Teste Grátis>
+	Arquivo (download feito em 22/12/2022): edrawmax_11.5.6_en_x86_64.deb
 
 #03_ Instalando o EdrawMax no Linux Mint<br>
 
-	_ OBSERVAÇÃO IMPORTANTE: recomendo utilizar o Gerenciador de Instalação de Pacotes
-	_ do Linux Mint: Gdeb, clicando duas vezes no arquivo: edrawmax_11.5.6_en_x86_64.deb
+	OBSERVAÇÃO IMPORTANTE: recomendo utilizar o Gerenciador de Instalação de Pacotes
+	do Linux Mint: Gdeb, clicando duas vezes no arquivo: edrawmax_11.5.6_en_x86_64.deb
+	Seguir os procedimentos na tela.
+
+	OBSERVAÇÃO IMPORTANTE: teste feito no Linux Mint 21.1 Vera do instalador do pacote
+	do EdrawMax via Gerenciador de Instalação Gdeb não funcionou corretamente, sendo
+	necessário fazer a instalação via linha de comando, conforme abaixo:
+	
+	01_ Na pasta de Download, clicar com o botão direito do mouse e selecionar: Abrir no Terminal;
+	02_ digitar o comando: sudo dpkg -i edrawmax_11.*.deb.
 
 #04_ Utilizando o EdrawMax On-Line via Navegaor
 

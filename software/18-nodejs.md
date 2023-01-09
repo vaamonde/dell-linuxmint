@@ -33,8 +33,8 @@ Site Oficial o NPM: https://www.npmjs.com/
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 
-	_ Atualização do sistema utilizando o MintUpdate;
-	_ Atualização do sistema utilizando o Apt;
+	Atualização do sistema utilizando o MintUpdate;
+	Atualização do sistema utilizando o Apt;
 
 	Terminal: Ctrl + Alt + T
 		sudo apt update
@@ -46,29 +46,42 @@ Site Oficial o NPM: https://www.npmjs.com/
 
 #02_ Instalando as Dependências do Node.JS no Linux Mint<br>
 
-	_ sudo apt install git vim curl gcc g++ make build-essential ca-certificates
+	sudo apt install git vim curl gcc g++ make build-essential ca-certificates
 
 #03_ Instalando a Versão LTS do Node.JS no Linux Mint<br>
 
-	_ sudo curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash
-	_ sudo sudo apt install nodejs
+	#OBSERVAÇÃO IMPORTANTE: o script de adicionar o Sources List do Node.JS no
+	Linux Mint já reconhece a versão que você está usando, não sendo necessário
+	informar o codinome do Ubuntu (focal ou jammy).
+	sudo curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash
+	sudo sudo apt install nodejs
 
 #04_ Verificando as Versões do Node.JS e NPM no Linux Mint<br>
 
-	_ sudo node -v
-	_ sudo npm -v
+	#opção do comando node: -v (version)
+	#opção do comando npm: -v (version)
+	sudo node -v
+	sudo npm -v
 
 #05_ Criando um Projeto Simples para Testar o Node.JS no Linux Mint<br>
 
-	_ md -v nodejs-hello
-	_ cd nodejs-hello
-	_	npm init -y
-	_	npm install express --save
+	mkdir -v nodejs-hello
+	cd nodejs-hello
+		#opção do comando init (create package.json file): -y (yes)
+		#opção do comando ls: -l (list), -h (human-readable)
+		npm init -y
+		npm install express --save
+		ls -lh
 
 #06_ Editando o Projeto Simples do Node.JS o VSCode no Linux Mint<br>
 
-	_ code .
-	_ OBSERVAÇÃO IMPORTANTE: nesse exemplo vamos editar o arquivo index.js
+	#OBSERVAÇÃO IMPORTANTE: nesse exemplo vamos editar o arquivo index.js
+	utilizando o Microsoft Visual Studio VSCode.
+	code .
+
+	01_ criando um novo arquivo: (Atalho) Ctrl + N
+	02_ copiar e colar o código abaixo: 
+	03_ salvar o arquivo com o nome: index.js (Atalho) Ctrl + S
 
 ```js
 // Criando as variáveis express e app
@@ -88,9 +101,11 @@ app.listen(3000, function() {
 
 #07_ Executando o Projeto Simples do Node.JS no Linux Mint<br>
 
-	_ Atalho: Ctrl + J
-	_ node index.js
+	Abrir o Terminal do VSCode: (Atalho): Ctrl + J
+		node index.js
 
 #08_ Acessando o Projeto Simples do Node.JS no Linux Mint<br>
 
-	_ firefox http://localhost:3000/
+	#opção do comando lsof: -n (network number), -P (port number), -i (list IP Address), -s (alone directs)
+	lsof -nP -iTCP:'3000' -sTCP:LISTEN
+	firefox http://localhost:3000/
