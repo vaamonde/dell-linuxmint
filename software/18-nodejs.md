@@ -88,14 +88,14 @@ Site Oficial o NPM: https://www.npmjs.com/
 var express = require ('express'); 
 var app = express();
 
-// Porta padrão utilizada pela aplicação do Node.JS
-app.listen(3000, function() {
-	console.log('Aplicativo de exemplo ouvindo na porta 3000');
-});
-
 // Mensagem que será mostrada no browser (navegador) 
 app.get('/', function (req, res) {
 	res.send('Robson Vaamonde #BoraParaPrática!!!');
+});
+
+// Porta padrão utilizada pela aplicação do Node.JS
+app.listen(3000, function() {
+	console.log('Aplicativo de exemplo ouvindo na porta 3000');
 });
 ```
 
