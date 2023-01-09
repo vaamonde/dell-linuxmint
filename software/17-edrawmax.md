@@ -61,7 +61,8 @@ Site do EdrawMax On-Line: https://www.edrawmax.com/online/pt/
 	necessário fazer a instalação via linha de comando, conforme abaixo:
 	
 	01_ Na pasta de Download, clicar com o botão direito do mouse e selecionar: Abrir no Terminal;
-	02_ digitar o comando: sudo dpkg -i edrawmax_11.*.deb.
+	02_ Digitar o comando: sudo dpkg -i edrawmax_11.*.deb;
+	03_ Digitar a senha do seu usuário e aguardar a finalização da instalação.
 
 #04_ Utilizando o EdrawMax On-Line via Navegaor
 

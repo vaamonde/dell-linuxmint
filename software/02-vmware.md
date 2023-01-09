@@ -63,7 +63,7 @@ Site Oficial do VMware Store: https://store-us.vmware.com/vmware-workstation-17-
 	
 	#opções do comando inxi: -C (cpu), -M (machine), -S (system), -f (flags), -xxx (extra 3)
 	sudo inxi -CMSfxxx
-	sudo lscpupu
+	sudo lscpu
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 

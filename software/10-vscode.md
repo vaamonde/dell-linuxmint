@@ -57,7 +57,7 @@ Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 
 	Arquivos
 		Download
-			code_1.xxxx_amd64
+			code_1.*_amd64
 				Instalar Pacote
 			Fechar
 
