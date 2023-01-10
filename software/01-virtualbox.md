@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 05/01/2023<br>
-#Versão: 0.10<br>
+#Data de atualização: 10/01/2023<br>
+#Versão: 0.11<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -16,7 +16,7 @@
 #Instalação do VirtualBOX no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Site Oficial do VirtualBOX: https://www.virtualbox.org/<br>
-Lançamento da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Changelog-7.0#v02
+Lançamento da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Changelog-7.0#v02<br>
 Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Changelog-7.0#v4
 
 #Tecnologias de Virtualização de Processadores AMD e Intel<br>
@@ -65,6 +65,9 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 	#opções do comando inxi: -C (cpu), -M (machine), -S (system), -f (flags), -xxx (extra 3)
 	sudo inxi -CMSfxxx
 	sudo lscpu
+
+	Menu
+		Informações do Sistema
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 
@@ -116,10 +119,14 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 #06_ Baixando e Instalando o Pacote de Extensões do Oracle VirtualBOX<br>
 
+	OBSERVAÇÃO: PROCEDIMENTO É IGUAL NA VERSÃO DO VIRTUALBOX 6.1 E 7.0
 	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
 	*Seguir os procedimentos na tela.
 
 #07_ Atualizando o VirtualBOX 6.1 para a versão nova versão 7.0<br>
+
+	OBSERVAÇÃO IMPORTANTE: executar esse procedimento somente se você instalou a versão
+	do Virtualbox-6.1.
 
 	sudo apt update
 	sudo apt upgrade

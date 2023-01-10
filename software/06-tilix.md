@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 07/01/2023<br>
-#Versão: 0.03<br>
+#Data de atualização: 10/01/2023<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -53,7 +53,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 	#opção do comando mkdir: -v (verbose), -p (parents), ~ (til: alias home directory)
 	#opção do comando fc-cache: -f (Force up-to-date cache files), -v (Display status)
 	mkdir -pv ~/.local/share/fonts/Hack
-		cd ~/.local/share/fonts/Hack
+	cd ~/.local/share/fonts/Hack
 		wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip
 		unzip Hack.zip
 		fc-cache -f -v
@@ -72,6 +72,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 	utilizando o recurso das Configurações do Sistema em Aplicativos Preferenciais, essa opção
 	foi retirada da ferramenta, sendo necessário alterar via linha de comando:
 
+	#opção do comando gsettings: set (Sets the value of KEY to VALUE)
 	gsettings set org.cinnamon.desktop.default-applications.terminal exec /usr/bin/tilix
 	exit (Atalho: Ctrl + D)
 
@@ -100,7 +101,6 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 	Terminal: Ctrl + Alt + T
 
 	sudo apt install zsh
-	
 	zsh
 		Type one of the keys in parentheses: 2
 

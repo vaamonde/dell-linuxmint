@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 06/01/2023<br>
-#Versão: 0.04<br>
+#Data de atualização: 10/01/2023<br>
+#Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -27,7 +27,7 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	OBSERVAÇÃO IMPORTANTE: outro detalhe muito importante do Linux Mint com o Ambiente Gráfico 
-	Cinnamon é que ele possui a maioria das dependência do Qt e GTK por causa disso que o Cisco 
+	Cinnamon é que ele possui a maioria das dependência do Qt e GTK, por causa disso que o Cisco 
 	Packet Tracer funciona muito bem no Mint com o ambiente gráfico Cinnamon, isso não acontece 
 	nos Ambientes Gráficos MATE ou XFCE ou na versão LMDE que não possui essas dependências.
 	sudo cat /etc/os-release
@@ -75,6 +75,10 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 	sudo apt install libqt5networkauth5 libqt5script5 libqt5scripttools5
 	sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
 
+	OBSERVAÇÃO IMPORTANTE: as dependências: libQt5QmlModels.so.5 e o erro: /lib/x86_64-linux-gnu/libQt5Core.so.5: 
+	version `Qt_5.15' not found não interfere diretamente no funcionamento do Cisco Packet Tracer 8.1.x ou 8.2.x
+	no Linux Mint 20.x, essas dependências fazem parte da versão do Ubuntu >= 21.04, verifique a versão do Qt5Core instalada no Linux Mint 20.x com o comando: sudo locate libQt5Core
+
 	#INSTALANDO AS DEPENDÊNCIAS DO CISCO PACKET TRACER NO LINUX MINT 21.x
 	sudo apt install libqt5networkauth5 libqt5script5 libqt5scripttools5 libqt5texttospeech5 libqt5positioning5 \
 	libqt5qml5 libqt5webchannel5 libqt5qmlmodels5 libqt5quick5 libqt5webenginecore5 libqt5webenginewidgets5 \
@@ -84,10 +88,6 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.16_amd64.deb
 	sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.16_amd64.deb
 	sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
-
-	OBSERVAÇÃO IMPORTANTE: as dependências: libQt5QmlModels.so.5 e o erro: /lib/x86_64-linux-gnu/libQt5Core.so.5: 
-	version `Qt_5.15' not found não interfere diretamente no funcionamento do Cisco Packet Tracer 8.1.x ou 8.2.x
-	no Linux Mint 20.x, essas dependências fazem parte da versão do Ubuntu >= 21.04, verifique a versão do Qt5Core instalada no Linux Mint 20.x com o comando: sudo locate libQt5Core
 
 #05_ Atualização para a Versão 8.2.0 do Cisco Packet Tracer
 

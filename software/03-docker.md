@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 05/01/2023<br>
-#Versão: 0.05<br>
+#Data de atualização: 10/01/2023<br>
+#Versão: 0.06<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -98,12 +98,13 @@ Site Oficial do Docker Hub: https://hub.docker.com/search?q=
 	#recomendado reinicializar a máquina para aplicar as permissões
 	sudo reboot
 
-#08_ Verificando o serviço do Docker CE, Docker Compose e Versão<br>
+#08_ Verificando o serviço do Docker CE, Docker Compose, Versões e Informações<br>
 
 	sudo systemctl status docker
+
 	docker version
-	docker info
 	docker-compose version
+	docker info
 	docker system info
 
 #09_ Iniciando um Container de Teste do Docker CE<br>

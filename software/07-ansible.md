@@ -180,7 +180,7 @@ log_path=/var/log/ansible.log
 	sudo vim /etc/ansible/update.yaml
 
 ```ruby
-#Iniciando a Playbook do Ansible, obrigatório iniciar com --- (três traços)
+#Iniciando o Playbook do Ansible, obrigatório iniciar com --- (três traços)
 #OBSERVAÇÃO IMPORTANTE: Recuo PADRÃO adequado SEMPRE usar ESPAÇO e NÃO TAB (tabulador) - 2 (dois) ESPAÇOS
 #SITE PARA TESTAR E OTIMIZAR A VALIDAÇÃO DO ARQUIVO YAML: http://www.yamllint.com/
 ---

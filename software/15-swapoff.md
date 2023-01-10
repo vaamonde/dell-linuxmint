@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 09/10/2021<br>
-#Data de atualização: 08/01/2023<br>
-#Versão: 0.11<br>
+#Data de atualização: 10/01/2023<br>
+#Versão: 0.12<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -137,17 +137,23 @@ vantagens em relação a partição swap.
 	exemplos de comandos demonstrados neste artigo podemos efetuar a limpeza de Inodes, cache de 
 	disco e File System no Linux de forma simples e rápida, sem necessidade de reiniciar o servidor.
 
-	#Limpando o PageCache da Memória RAM
+	#Limpando o Page Cache da Memória RAM
+	#opção do comando free: -m (mebi), -h (human)
+	#opção do comando sh: -c (command string)
 	sudo free -mh (coluna buffer/cache)
 	sudo sync; sudo sh -c 'echo 1 > /proc/sys/vm/drop_caches'
 	sudo free -mh
 
 	#Limpando o Dentries e Inodes da Memória RAM
+	#opção do comando free: -m (mebi), -h (human)
+	#opção do comando sh: -c (command string)
 	sudo free -mh (coluna buffer/cache)
 	sudo sync; sudo sh -c 'echo 2 > /proc/sys/vm/drop_caches'
 	sudo free -mh
 
 	#Limpando o Page Cache, Dentries e Inodes da Memória RAM
+	#opção do comando free: -m (mebi), -h (human)
+	#opção do comando sh: -c (command string)
 	sudo free -mh (coluna buffer/cache)
 	sudo sync; sudo sh -c 'echo 3 > /proc/sys/vm/drop_caches'
 	sudo free -mh

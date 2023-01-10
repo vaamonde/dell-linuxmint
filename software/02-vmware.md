@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 05/01/2023<br>
-#Versão: 0.03<br>
+#Data de atualização: 10/01/2023<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -65,6 +65,9 @@ Site Oficial do VMware Store: https://store-us.vmware.com/vmware-workstation-17-
 	sudo inxi -CMSfxxx
 	sudo lscpu
 
+	Menu
+		Informações do Sistema
+		
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 
 	_ Atualização do sistema utilizando o MintUpdate;

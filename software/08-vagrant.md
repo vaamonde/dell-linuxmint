@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 07/01/2023<br>
-#Versão: 0.04<br>
+#Data de atualização: 10/01/2023<br>
+#Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -87,10 +87,10 @@ Providers (Provedores) cloud do Vagrant: AWS EC2 VPS, Google GCE, Microsoft Azur
 #07_ Criando o arquivo de configuração da VM Vagrantfile do nosso projeto no Linux Mint<br>
 
 	#Link de referência: https://www.vagrantup.com/docs/cli/init
+	#Link do Vagrant Cloud da Imagem do Ubuntu 20.04: https://app.vagrantup.com/generic/boxes/ubuntu2004
 	#opção do comando vagrant: init (initializes a new Vagrant environment by creating a Vagrantfile)
 	vagrant init generic/ubuntu2004
-	
-	#Link da Imagem do Ubuntu Server: https://app.vagrantup.com/generic/boxes/ubuntu2004
+
 	#Link de referência: https://www.vagrantup.com/docs/vagrantfile
 	#opções do comando ls: -l (long listing), -h (human-readable)
 	ls -lh
@@ -161,7 +161,7 @@ Providers (Provedores) cloud do Vagrant: AWS EC2 VPS, Google GCE, Microsoft Azur
 	vagrant box remove generic/ubuntu2004
 	vagrant box list
 
-#15_ Criando um novo projeto utilizando um BOX (Imagem) Oficial do Ubuntu Server<br>
+#15_ Criando um novo projeto utilizando uma BOX (Imagem) Oficial do Ubuntu Server<br>
 
 	#opções do comando mkdir: -v (verbose), .. (ponto/ponto - mover uma pasta para cima)
 	cd ..
@@ -178,7 +178,7 @@ Providers (Provedores) cloud do Vagrant: AWS EC2 VPS, Google GCE, Microsoft Azur
 		INSERT
 
 ```ruby
-#Início da configuração do BOX do Vagrant indicando a maior versão ("2")
+#Início da configuração da BOX (Imagem) do Vagrant indicando a maior versão ("2")
 #OBSERVAÇÃO IMPORTANTE: Recuo PADRÃO adequado SEMPRE usar ESPAÇO e NÃO TAB (tabulador) - 2(dois) ESPAÇOS
 Vagrant.configure("2") do |config|
   #Configuração das Definições do Nome do BOX Local do Vagrant para Multi-VM
@@ -190,9 +190,9 @@ Vagrant.configure("2") do |config|
     web.vm.box_url = "https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64-vagrant.box"
     #Configuração do Hostname do BOX do Ubuntu Server no Vagrant
     web.vm.hostname = "webserver"
-    #Configuração do Endereçamento Público IPv4 do BOX do Ubuntu Server do Vagrant
+    #Configuração do Endereçamento Público IPv4 da BOX do Ubuntu Server do Vagrant
     #OBSERVAÇÃO IMPORTANTE: por padrão o Vagrant utiliza a primeira Interface de Rede em Modo NAT
-    #para acessar via SSH o BOX do Ubuntu Server, quando configurado a Interface Pública do Vagrant
+    #para acessar via SSH a BOX do Ubuntu Server, quando configurado a Interface Pública do Vagrant
     #ele habilita a segunda Interface do VirtualBOX em Modo Bridge e configura o Endereço IPv4 Estático
     #verifique primeiro com o comando: ifconfig qual Interface de Rede do Hospedeiro que você vai usar
     #em modo Bridge

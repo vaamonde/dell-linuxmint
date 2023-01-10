@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 08/11/2022<br>
-#Data de atualização: 08/01/2023<br>
-#Versão: 0.03<br>
+#Data de atualização: 10/01/2023<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -25,7 +25,8 @@ Download do Wifiman Desktop: https://community.ui.com/releases/WiFiman-Desktop-0
 Download do Ubiquiti Device Discovery Tool Google Chrome: https://chrome.google.com/webstore/detail/ubiquiti-device-discovery/hmpigflbjeapnknladcfphgkemopofig<br>
 Site do Wifiman: http://wifiman.com/<br>
 Site do SIMET: https://beta.simet.nic.br/<br>
-Site do SpeedTest: https://www.speedtest.net/pt
+Site do SpeedTest: https://www.speedtest.net/pt<br>
+Site do Fast: https://fast.com/pt/
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
@@ -60,12 +61,14 @@ Site do SpeedTest: https://www.speedtest.net/pt
 #03_ Instalar as dependências desse script no Linux Mint<br>
 
 	Terminal: Ctrl + Alt + T
-		sudo apt install git vim nmap
+	
+	sudo apt install git vim nmap
 
 #04_ Verificando os Dispositivos Ubiquiti Unifi conectados na rede no Linux Mint<br>
 
 	Terminal: Ctrl + Alt + T
-		sudo nmap 192.168.0.0/24
+	
+	sudo nmap 192.168.0.0/24
 
 	Wifiman AppImage
 	Wifiman Google Chrome
@@ -73,8 +76,10 @@ Site do SpeedTest: https://www.speedtest.net/pt
 #05_ Clonar o Projeto do Github do script do Ubiquiti Unifi para Linux Mint<br>
 
 	Terminal: Ctrl + Alt + T
-		sudo -i
-		git clone https://github.com/vaamonde/ubiquiti-unifi
+	
+	#opção do comando sudo: -i (login)
+	sudo -i
+	git clone https://github.com/vaamonde/ubiquiti-unifi
 
 #06_ Acessando o diretório clocando do Ubiquiti Unifi no Linux Mint<br>
 

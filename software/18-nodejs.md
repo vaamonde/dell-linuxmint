@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 22/12/2022<br>
-#Data de atualização: 08/01/2023<br>
-#Versão: 0.03<br>
+#Data de atualização: 10/01/2023<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -65,12 +65,14 @@ Site Oficial o NPM: https://www.npmjs.com/
 
 #05_ Criando um Projeto Simples para Testar o Node.JS no Linux Mint<br>
 
+	#opção do comando mkdir: -v (verbose)
 	mkdir -v nodejs-hello
 	cd nodejs-hello
-		#opção do comando init (create package.json file): -y (yes)
+		#opção do comando npm: init (create package.json file), -y (yes)
+		#opção do comando npm: install (install package in directory)
 		#opção do comando ls: -l (list), -h (human-readable)
 		npm init -y
-		npm install express --save
+		npm install express
 		ls -lh
 
 #06_ Editando o Projeto Simples do Node.JS o VSCode no Linux Mint<br>
@@ -88,14 +90,14 @@ Site Oficial o NPM: https://www.npmjs.com/
 var express = require ('express'); 
 var app = express();
 
-// Porta padrão utilizada pela aplicação do Node.JS
-app.listen(3000, function() {
-	console.log('Aplicativo de exemplo ouvindo na porta 3000');
-});
-
 // Mensagem que será mostrada no browser (navegador) 
 app.get('/', function (req, res) {
 	res.send('Robson Vaamonde #BoraParaPrática!!!');
+});
+
+// Porta padrão utilizada pela aplicação do Node.JS
+app.listen(3000, function() {
+	console.log('Aplicativo de exemplo ouvindo na porta 3000');
 });
 ```
 

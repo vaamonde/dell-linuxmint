@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 07/01/2023<br>
-#Versão: 0.02<br>
+#Data de atualização: 10/01/2023<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -57,7 +57,7 @@ Documentação do .NET SDK e Runtime: https://docs.microsoft.com/pt-br/dotnet/co
 	sudo apt install apt-transport-https software-properties-common libc6 libgcc-s1 \
 	libgssapi-krb5-2 libicu70 libssl1.1 libstdc++6 zlib1g vim git python2 python3
 
-#03_ Baixando o repositório oficial do PowerShell e do .NET SDK e Runtime no Linux Mint<br>
+#03_ Baixando o repositório oficial do PowerShell, .NET SDK e Runtime no Linux Mint<br>
 	
 	#ADICIONANDO O REPOSITÓRIO DO POWERSHELL NO LINUX MINT 20.x
 	#opção do comando wget: -q (quiet)
@@ -67,7 +67,7 @@ Documentação do .NET SDK e Runtime: https://docs.microsoft.com/pt-br/dotnet/co
 	#opção do comando wget: -q (quiet)
 	wget -q https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb
 
-#04_ Instalando o repositório oficial do PowerShell e do .NET SDK e Runtime no Linux Mint<br>
+#04_ Instalando o repositório oficial do PowerShell, .NET SDK e Runtime no Linux Mint<br>
 	
 	#opção do comando dpkg: -i (install packet)
 	sudo dpkg -i packages-microsoft-prod.deb
