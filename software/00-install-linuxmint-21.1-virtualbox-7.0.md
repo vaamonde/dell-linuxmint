@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 12/12/2022<br>
-#Data de atualização: 12/12/2022<br>
-#Versão: 0.01<br>
+#Data de atualização: 11/01/2023<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma, 20.3 Una, 21 Vanessa e 21.1 Vera
 
 #Lançamentos Oficiais do Linux Mint<br>
@@ -42,6 +42,7 @@ _ Etcher: https://www.balena.io/etcher/<br>
 _ UNetbootin: https://unetbootin.github.io/<br>
 _ Ventoy: https://www.ventoy.net/en/index.html<br>
 _ Linux Live USC Creator: https://www.linuxliveusb.com/<br>
+_ Popsicle: https://github.com/pop-os/popsicle
 
 Terceira etapa: Criação e Configuração da Máquina Virtual no Oracle VirtualBOX 7.0.x<br>
 Link de download do Oracle VirtualBOX: https://www.virtualbox.org/wiki/Downloads
@@ -143,5 +144,6 @@ Sétima etapa: Iniciando a Instalação o Linux Mint
 			Solicitar minha senha para entrar: ON (Selecionado)
 			<Continuar>
 	_ <Reiniciar agora>
+
 	Please remove the installation medium, then press <ENTER>:
 	Observação: Aguardar a reinicialização do sistema para se logar no Linux Mint.
