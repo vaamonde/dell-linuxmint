@@ -47,7 +47,7 @@ Site Oficial do Java: https://www.java.com/pt-BR/
 
 #02_ Instalando as Dependências do Eclipse IDE no Linux Mint<br>
 
-	sudo apt install git vim openjdk-17-jdk openjdk-17-jre software-properties-common
+	sudo apt install git vim openjdk-17-jdk openjdk-17-jre software-properties-common build-essential
 
 #03_ Verificando as Versões do Java instalado no Linux Mint<br>
 
@@ -71,7 +71,7 @@ Site Oficial do Java: https://www.java.com/pt-BR/
 
 #05_ Descompactar o Arquivo Zipado do Eclipse IDE no Linux Mint<br>
 
-	_01 acessar o diretório Download;
+	_01 acessar o diretório: Download;
 	_02 clicar com o botão direito do mouse no arquivo: eclipse-jee-2022-12-R-linux-gtk-x86_64.tar.gz
 	_03 selecionar a opção: Extrair aqui
 
@@ -79,8 +79,23 @@ Site Oficial do Java: https://www.java.com/pt-BR/
 
 	_01 acessar o diretório: eclipse
 	_02 executar o aplicativo (clicando duas vezes): eclipse
-	_03 
+	_03 na tela de Eclipse IDE Launcher deixar o padrão do Workspace:
+		Workspace: /home/vaamonde/eclipse-workspace/
+	_04 marque a opção: use this default and do not ask again
+	_05 clique em: <Launch>
 
 #08_ Configuração Básica do Eclipse IDE no Linux Mint<br>
 
-#09_ Executando uma Aplicação JAVA desenvolvido na Eclipse IDE no Linux Mint
+	OBSERVAÇÃO IMPORTANTE: devido ao Tema Black/Dark do Linux Mint o Eclipse IDE fica com uma aparencia
+	que os ícones/botões não aparece corretamente, para resolver esse problema recomendo utilizar o Tema
+	Dark do Eclipse IDE.
+
+	Windows
+		Preferences
+			General
+				Appearance
+					Theme: Dark
+	<Apply and Close>
+	<Restart>
+
+#09_ Executando uma Aplicação JAVA desenvolvida na Eclipse IDE no Linux Mint<br>
