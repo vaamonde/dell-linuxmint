@@ -13,7 +13,7 @@
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 #Instalação do Eclipse IDE e OpenJDK/JRE 17.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação doEclipse IDE e OpenJDK/JRE 17.x no Linux Mint 21 Vanessa e 21.1 Vera x64
+#Instalação do Eclipse IDE e OpenJDK/JRE 17.x no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Site Oficial do Eclipse: https://www.eclipse.org/downloads/<br>
 Site Oficial do OpenJDK: https://openjdk.org/<br>
@@ -58,37 +58,37 @@ Site Oficial do Java: https://www.java.com/pt-BR/
 
 #04_ Configurando o Versão do Java Padrão no Linux Mint<br>
 
-	#OBSERVAÇÃO IMPORTANTE: cuidado com a versão do Java que você for utilizar no seu
-	projeto, versões diferentes pode causar falha de abertura do projeto ou erro na 
-	hora de executar a compilação e criação do arquivo WAN ou JAR.
+	#OBSERVAÇÃO IMPORTANTE: cuidado com a versão do Java que você for utilizar no seu projeto, 
+	versões diferentes pode causar falha de abertura do projeto ou erro na hora de executar a 
+	compilação e criação do arquivo WAN ou JAR.
 	sudo update-alternatives --config java
 
-#04_ Download do Eclipse IDE no Linux Mint<br>
+#05_ Download do Eclipse IDE no Linux Mint<br>
 
 	Link do download: https://www.eclipse.org/downloads/packages/
 	Versão do Eclipse: Eclipse IDE for Enterprise Java and Web Developers
 		Linux x86_64: eclipse-jee-2022-12-R-linux-gtk-x86_64.tar.gz (atualizado em 14/01/2023)
 
-#05_ Descompactar o Arquivo Zipado do Eclipse IDE no Linux Mint<br>
+#06_ Descompactar o Arquivo Zipado do Eclipse IDE no Linux Mint<br>
 
 	_01 acessar o diretório: Download;
 	_02 clicar com o botão direito do mouse no arquivo: eclipse-jee-2022-12-R-linux-gtk-x86_64.tar.gz
 	_03 selecionar a opção: Extrair aqui
 
-#06_ Executando o Eclipse IDE no Linux Mint<br>
+#07_ Executando o Eclipse IDE no Linux Mint<br>
 
 	_01 acessar o diretório: eclipse
 	_02 executar o aplicativo (clicando duas vezes): eclipse
 	_03 na tela de Eclipse IDE Launcher deixar o padrão do Workspace:
-		Workspace: /home/vaamonde/eclipse-workspace/
+		Workspace: /home/seu_usuário/eclipse-workspace/
 	_04 marque a opção: use this default and do not ask again
 	_05 clique em: <Launch>
 
 #08_ Configuração Básica do Eclipse IDE no Linux Mint<br>
 
-	OBSERVAÇÃO IMPORTANTE: devido ao Tema Black/Dark do Linux Mint o Eclipse IDE fica com uma aparencia
-	que os ícones/botões não aparece corretamente, para resolver esse problema recomendo utilizar o Tema
-	Dark do Eclipse IDE.
+	OBSERVAÇÃO IMPORTANTE: devido ao Tema Black/Dark do Linux Mint o Eclipse IDE fica com 
+	uma aparência que os ícones/botões não aparece corretamente, para resolver esse problema 
+	recomendo utilizar o Tema Dark do Eclipse IDE.
 
 	Windows
 		Preferences
@@ -98,4 +98,16 @@ Site Oficial do Java: https://www.java.com/pt-BR/
 	<Apply and Close>
 	<Restart>
 
-#09_ Executando uma Aplicação JAVA desenvolvida na Eclipse IDE no Linux Mint<br>
+#09_ Clocando um Projeto Desenvolvido em JAVA no Workspace do Eclipse IDE no Linux Mint<br>
+
+	Terminal: Ctrl + Alt + T
+
+	cd eclipse-workspace/
+	git clone https://github.com/vaamonde/
+
+#10_ Importando o Projeto Desenvolvido em JAVA utilizando Eclipse IDE no Linux Mint<br>
+
+	File
+		Import
+
+#11_ Executando o Projeto Desenvolvido em JAVA utilizando Eclipse IDE no Linux Mint<br>
