@@ -16,7 +16,7 @@
 #Instalação do Node.JS e NPM no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Site Oficial do Node.JS: https://nodejs.org/en/<br>
-Site Oficial o NPM: https://www.npmjs.com/
+Site Oficial do NPM: https://www.npmjs.com/
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
@@ -54,7 +54,7 @@ Site Oficial o NPM: https://www.npmjs.com/
 	Linux Mint já reconhece a versão que você está usando, não sendo necessário
 	informar o codinome do Ubuntu (focal ou jammy).
 	sudo curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash
-	sudo sudo apt install nodejs
+	sudo apt install nodejs
 
 #04_ Verificando as Versões do Node.JS e NPM no Linux Mint<br>
 
