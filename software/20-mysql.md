@@ -120,7 +120,7 @@ Site Oficial do Workbench: https://www.mysql.com/products/workbench/
 
 	#opções do comando usermod: -a (append), -G (groups), $USER (environment variable)
 	sudo usermod -a -G mysql $USER
-	newgrp wireshark
+	newgrp mysql
 	id
 	
 	#recomendado reinicializar a máquina para aplicar as permissões
