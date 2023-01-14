@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 13/10/2022<br>
-#Data de atualização: 12/12/2022<br>
-#Versão: 0.05<br>
+#Data de atualização: 14/01/2023<br>
+#Versão: 0.06<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma, 20.3 Una, 21 Vanessa
 
 #Lançamentos Oficiais do Linux Mint<br>
@@ -24,8 +24,8 @@ Mate: https://www.linuxmint.com/rel_vanessa_mate.php<br>
 XFCE: https://www.linuxmint.com/rel_vanessa_xfce.php.
 
 #Versões baseadas da Distribuição Ubuntu<br>
-Linux Mint 20.x - baseado na versão do Ubuntu 18.04.x LTS<br>
-Linux Mint 21.x - baseado na versão do Ubuntu 20.04.x LTS<br>
+Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa<br>
+Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 
 Primeira etapa: Download da ISO do Linux Mint
 
