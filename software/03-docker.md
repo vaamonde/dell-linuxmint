@@ -123,6 +123,7 @@ Site Oficial do Docker Hub: https://hub.docker.com/search?q=
 		cat /etc/os-release
 		apt update
 		apt install net-tools iputils-ping
+		ifconfig
 		exit
 
 #11_ Verificando as Imagens dos Container no Docker CE<br>
