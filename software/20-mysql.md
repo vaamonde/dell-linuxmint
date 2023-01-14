@@ -66,12 +66,15 @@ Site Oficial do Workbench: https://www.mysql.com/products/workbench/
 	wget http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/mysql-workbench-community_8.0.31-1ubuntu22.04_amd64.deb
 	sudo dpkg -i mysql-workbench-community*.deb
 
-#05_ Verificando o Serviço do MySQL Server no Linux Mint<br>
+#05_ Verificando o Serviço e Versão do MySQL Server no Linux Mint<br>
 
 	sudo systemctl status mysql
 	sudo systemctl restart mysql
 	sudo systemctl stop mysql
 	sudo systemctl start mysql
+
+	sudo mysqld --version (Server)
+	sudo mysql --version (Client)
 
 #06_ Verificando a Porta de Conexão do MySQL Server no Linux Mint<br>
 
