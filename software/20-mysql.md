@@ -8,7 +8,7 @@
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 14/01/2023<br>
 #Data de atualização: 14/01/2023<br>
-#Versão: 0.01<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -47,37 +47,24 @@ Site Oficial do Workbench: https://www.mysql.com/products/workbench/
 
 #02_ Instalando o MySQL Server e Client 8.0 no Linux Mint<br>
 
-	sudo apt install git vim mysql-server-8.0 mysql-client-8.0 
+	sudo apt install git vim libproj15 proj-data mysql-server-8.0 mysql-client-8.0 
 
 #03_ Verificando as Versões do Java instalado no Linux Mint<br>
 
-	#INSTALANDO O REPOSITÓRIO DO MYSQL WORKBENCH NO LINUX MINT 20.x
+	#INSTALANDO O MYSQL WORKBENCH NO LINUX MINT 20.x
+	#OBSERVAÇÃO IMPORTANTE: as versões para o Ubuntu 20.04.x e Linux Mint 20.x do MySQL Workbench
+	#foram descontinuada (última atualização em: 16-Sep-2022), recomendo fazer a migração para as
+	#versões mais novas do Ubuntu >= 22.04.x ou do Linux Mint >= 21.x
 	#opção do comando dpkg: -i (install)
-	wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb (link atualizado em 14/01/2023)
-	sudo dpkg -i mysql-apt-config*.deb
-	sudo apt update
-	sudo apt install mysql-workbench-community
-
-	#INSTALANDO O REPOSITÓRIO DO MYSQL WORKBENCH NO LINUX MINT 21.x
-	#opção do comando dpkg: -i (install)
-	Link do download do MySQL Workbench: https://dev.mysql.com/downloads/workbench/
-		Select Operating System: Ubuntu Linux
-		Select OS Version: Ubuntu Linux 22.04 (x86, 64-bit)
-		DEB Package: 8.0.31 (atualizado em 14/01/2023)
-		Version: mysql-workbench-community_8.0.31-1ubuntu22.04_amd64.deb
-	wget https://dev.mysql.com/get/Downloads/MySQLGUITools/mysql-workbench-community_8.0.31-1ubuntu22.04_amd64.deb
+	#Link repositório do MySQL Workbench: http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/
+	wget http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/mysql-workbench-community_8.0.29-1ubuntu20.04_amd64.deb (link atualizado em 14/01/2023)
 	sudo dpkg -i mysql-workbench-community*.deb
 
-#04_ Aplicando as Políticas de Segurança do MySQL Server no Linux Mint<br>
-
-	sudo mysql_secure_installation
-		1. Connecting to MySQL using a blank password (Press y|Y for Yes, any other key for No:) <Enter>
-		2. New password root: pti@2018 <Enter>
-		3. Re-enter new password root: pti@2018 <Enter>
-		4. Remove anonymous users? (Press y|Y for Yes, any other key for No:) y <Enter>
-		5. Disallow root login remotely (Press y|Y for Yes, any other key for No:) <Enter>
-		6. Remove test database and access to it? (Press y|Y for Yes, any other key for No:) <Enter>
-		7. Reload privilege tables now? (Press y|Y for Yes, any other key for No:) y <Enter>
+	#INSTALANDO O MYSQL WORKBENCH NO LINUX MINT 21.x
+	#opção do comando dpkg: -i (install)
+	#Link repositório do MySQL Workbench: http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/
+	wget http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/mysql-workbench-community_8.0.31-1ubuntu22.04_amd64.deb
+	sudo dpkg -i mysql-workbench-community*.deb
 
 #05_ Verificando o Serviço do MySQL Server no Linux Mint<br>
 
@@ -89,19 +76,77 @@ Site Oficial do Workbench: https://www.mysql.com/products/workbench/
 #06_ Verificando a Porta de Conexão do MySQL Server no Linux Mint<br>
 
 	#opção do comando lsof: -n (network number), -P (port number), -i (list IP Address), -s (alone directs)
-	lsof -nP -iTCP:'3306' -sTCP:LISTEN
+	sudo lsof -nP -iTCP:'3306' -sTCP:LISTEN
 
 #07_ Localização dos Arquivos de Configuração do MySQL Server no Linux Mint<br>
 
 	/etc/mysql <-- Diretório de configuração do SGBD MySQL Server
 	/etc/mysql/mysql.conf.d/mysqld.cnf <-- Arquivo de configuração do Servidor SGBD do MySQL Server
+	/var/lib/mysql <-- Diretório da Base de Dados padrão do SGBD MySQL Server
 
 #08_ Acesso o MySQL Server no Linux Mint<br>
 
 	#opções do comando mysql: -u (user), -p (password)
 	sudo mysql -u root -p
 
-#09_ Verificando as Bases de Dados existentes do MySQL Server no Linux Mint<br>
+#09_ Aplicando a segurança de acesso do MySQL Server no Linux Mint<br>
 
 	SHOW DATABASES;
-	exit
+	USE mysql;
+		SHOW TABLES;
+		SELECT user,host FROM user;
+		ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pti@2018';
+		GRANT ALL ON *.* TO 'root'@'localhost';
+		FLUSH PRIVILEGES;
+		exit (ou quit)
+
+	#opções do comando mysql: -u (user), -p (password)
+	sudo mysql -u root -p
+
+#10_ Criando um usuário DBA no MySQL Server no Linux Mint<br>
+
+	CREATE USER 'dba'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pti@2018';
+	GRANT ALL ON *.* TO 'dba'@'localhost';
+	FLUSH PRIVILEGES;
+	exit (ou quit)
+
+	#opções do comando mysql: -u (user), -p (password)
+	sudo mysql -u dba -p
+
+#11_ Adicionado o Usuário Local no Grupo Padrão do MySQL Server no Linux Mint<br>
+
+	#opções do comando usermod: -a (append), -G (groups), $USER (environment variable)
+	sudo usermod -a -G mysql $USER
+	newgrp wireshark
+	id
+	
+	#recomendado reinicializar a máquina para aplicar as permissões
+	sudo reboot
+
+#12_ Conectando no MySQL Server utilizando o MySQL Workbech no Linux Mint<br>
+
+	Menu
+		Pesquisa Indexada
+			MySQL Workbench
+
+	#se conectando com o usuário root do MySQL no Workbench
+	MySQL Connections
+		Local instance 3306
+			root
+			localhost
+		
+	#se conectando com o usuário dba do MySQL no Workbench
+	MySQL Connections: +
+		Connection Name: LinuxMint
+		Connection Method: Standard (TCP/IP)
+		Parameters:
+			Hostname: 127.0.0.1 (ou localhost)
+			Port: 3306
+			Username: dba
+			Password:
+				Store in Keychain
+					Password: pti@2018
+				<OK>
+		<Test Connection>
+			<OK>
+		<OK>
