@@ -47,14 +47,15 @@ Site Oficial do Workbench: https://www.mysql.com/products/workbench/
 
 #02_ Instalando o MySQL Server e Client 8.0 no Linux Mint<br>
 
+	#INSTALANDO O MYSQL SERVER E CLIENT NO LINUX MINT 20.x
 	sudo apt install git vim libproj15 proj-data mysql-server-8.0 mysql-client-8.0 
+
+	#INSTALANDO O MYSQL SERVER E CLIENT NO LINUX MINT 21.x
+	sudo apt install git vim libproj22 proj-data mysql-server-8.0 mysql-client-8.0 
 
 #03_ Verificando as Versões do Java instalado no Linux Mint<br>
 
 	#INSTALANDO O MYSQL WORKBENCH NO LINUX MINT 20.x
-	#OBSERVAÇÃO IMPORTANTE: as versões para o Ubuntu 20.04.x e Linux Mint 20.x do MySQL Workbench
-	#foram descontinuada (última atualização em: 16-Sep-2022), recomendo fazer a migração para as
-	#versões mais novas do Ubuntu >= 22.04.x ou do Linux Mint >= 21.x
 	#opção do comando dpkg: -i (install)
 	#Link repositório do MySQL Workbench: http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/
 	wget http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/mysql-workbench-community_8.0.29-1ubuntu20.04_amd64.deb (link atualizado em 14/01/2023)

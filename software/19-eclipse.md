@@ -103,7 +103,7 @@ Site Oficial do Java: https://www.java.com/pt-BR/
 	Terminal: Ctrl + Alt + T
 
 	cd eclipse-workspace/
-	git clone https://github.com/vaamonde/
+		git clone https://github.com/vaamonde/javaimc
 
 #10_ Importando o Projeto Desenvolvido em JAVA utilizando Eclipse IDE no Linux Mint<br>
 
