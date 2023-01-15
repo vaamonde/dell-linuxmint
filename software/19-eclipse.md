@@ -8,7 +8,7 @@
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 14/01/2023<br>
 #Data de atualização: 14/01/2023<br>
-#Versão: 0.01<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -72,7 +72,7 @@ Site Oficial do Java: https://www.java.com/pt-BR/
 #06_ Descompactar o Arquivo Zipado do Eclipse IDE no Linux Mint<br>
 
 	_01 acessar o diretório: Download;
-	_02 clicar com o botão direito do mouse no arquivo: eclipse-jee-2022-12-R-linux-gtk-x86_64.tar.gz
+	_02 clicar com o botão direito do mouse no arquivo: eclipse-jee-*.tar.gz
 	_03 selecionar a opção: Extrair aqui
 
 #07_ Executando o Eclipse IDE no Linux Mint<br>
@@ -109,5 +109,22 @@ Site Oficial do Java: https://www.java.com/pt-BR/
 
 	File
 		Import
+			Select
+				General
+					Existing Projects into Workspace
+			<Next>
+			Import Projects
+				Select root directory: <Browse>
+					/home/seu_usuário/eclipse-workspace/
+				Project
+					javaimc
+			<Finish>
 
 #11_ Executando o Projeto Desenvolvido em JAVA utilizando Eclipse IDE no Linux Mint<br>
+
+	Project Explorer
+		javaimc
+		    src
+			    view
+				TelaIMC.java
+	<Run TelaIMC> (atalho: Ctrl+3 - selecionar: Run)
