@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 14/01/2023<br>
-#Data de atualização: 14/01/2023<br>
-#Versão: 0.03<br>
+#Data de atualização: 16/01/2023<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -53,7 +53,7 @@ Site Oficial do Workbench: https://www.mysql.com/products/workbench/
 	#INSTALANDO O MYSQL SERVER E CLIENT NO LINUX MINT 21.x
 	sudo apt install git vim libproj22 proj-data mysql-server-8.0 mysql-client-8.0 
 
-#03_ Verificando as Versões do Java instalado no Linux Mint<br>
+#03_ Instalando o MySQL Workbench no Linux Mint<br>
 
 	#INSTALANDO O MYSQL WORKBENCH NO LINUX MINT 20.x
 	#opção do comando dpkg: -i (install)
@@ -86,6 +86,7 @@ Site Oficial do Workbench: https://www.mysql.com/products/workbench/
 
 	/etc/mysql <-- Diretório de configuração do SGBD MySQL Server
 	/etc/mysql/mysql.conf.d/mysqld.cnf <-- Arquivo de configuração do Servidor SGBD do MySQL Server
+	/etc/mysql/mysql.conf.d/mysql.cnf <-- Arquivo de configuração do Cliente SGBD do MySQL Client
 	/var/lib/mysql <-- Diretório da Base de Dados padrão do SGBD MySQL Server
 
 #08_ Acesso o MySQL Server no Linux Mint<br>
@@ -93,7 +94,7 @@ Site Oficial do Workbench: https://www.mysql.com/products/workbench/
 	#opções do comando mysql: -u (user), -p (password)
 	sudo mysql -u root -p
 
-#09_ Aplicando a segurança de acesso do MySQL Server no Linux Mint<br>
+#09_ Aplicando a segurança de acesso do usuário Root do MySQL Server no Linux Mint<br>
 
 	SHOW DATABASES;
 	USE mysql;
@@ -127,19 +128,22 @@ Site Oficial do Workbench: https://www.mysql.com/products/workbench/
 	#recomendado reinicializar a máquina para aplicar as permissões
 	sudo reboot
 
-#12_ Conectando no MySQL Server utilizando o MySQL Workbech no Linux Mint<br>
+	#opções do comando mysql: -u (user), -p (password)
+	mysql -u dba -p
+
+#12_ Conectando no MySQL Server utilizando o MySQL Workbench no Linux Mint<br>
 
 	Menu
 		Pesquisa Indexada
 			MySQL Workbench
 
-	#se conectando com o usuário root do MySQL no Workbench
+	#conectando com o usuário root do MySQL no Workbench
 	MySQL Connections
 		Local instance 3306
 			root
 			localhost
 		
-	#se conectando com o usuário dba do MySQL no Workbench
+	#conectando com o usuário dba do MySQL no Workbench
 	MySQL Connections: +
 		Connection Name: LinuxMint
 		Connection Method: Standard (TCP/IP)
