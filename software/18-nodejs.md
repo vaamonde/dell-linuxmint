@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 22/12/2022<br>
-#Data de atualização: 10/01/2023<br>
-#Versão: 0.04<br>
+#Data de atualização: 17/01/2023<br>
+#Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -46,7 +46,7 @@ Site Oficial do NPM: https://www.npmjs.com/
 
 #02_ Instalando as Dependências do Node.JS no Linux Mint<br>
 
-	sudo apt install git vim curl gcc g++ make build-essential ca-certificates
+	sudo apt install git vim curl gcc g++ make software-properties-common build-essential ca-certificates
 
 #03_ Instalando a Versão LTS do Node.JS no Linux Mint<br>
 

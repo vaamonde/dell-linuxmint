@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 14/01/2023<br>
-#Data de atualização: 16/01/2023<br>
-#Versão: 0.04<br>
+#Data de atualização: 17/01/2023<br>
+#Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -57,13 +57,13 @@ Site Oficial do Workbench: https://www.mysql.com/products/workbench/
 
 	#INSTALANDO O MYSQL WORKBENCH NO LINUX MINT 20.x
 	#opção do comando dpkg: -i (install)
-	#Link repositório do MySQL Workbench: http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/
-	wget http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/mysql-workbench-community_8.0.29-1ubuntu20.04_amd64.deb (link atualizado em 14/01/2023)
+	#Link repositório do MySQL Workbench: http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/ (link atualizado em 14/01/2023)
+	wget http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/mysql-workbench-community_8.0.29-1ubuntu20.04_amd64.deb
 	sudo dpkg -i mysql-workbench-community*.deb
 
 	#INSTALANDO O MYSQL WORKBENCH NO LINUX MINT 21.x
 	#opção do comando dpkg: -i (install)
-	#Link repositório do MySQL Workbench: http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/
+	#Link repositório do MySQL Workbench: http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/ (link atualizado em 14/01/2023)
 	wget http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/mysql-workbench-community_8.0.31-1ubuntu22.04_amd64.deb
 	sudo dpkg -i mysql-workbench-community*.deb
 
