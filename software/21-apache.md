@@ -98,3 +98,78 @@ Site Oficial do PHP (7.x ou 8.x): https://www.php.net/
 	
 	#recomendado reinicializar a máquina para aplicar as permissões
 	sudo reboot
+
+#07_ Criando um diretório de Teste do HTML e PHP no Linux Mint<br>
+
+	cd /var/www/html
+		sudo mkdir -v teste
+		sudo chmod -v 775 teste/
+		sudo chown -v root.www-data teste/
+		cd teste
+
+#08_ Criando páginas HTML e PHP para testar o Apache2 Server no Linux Mint<br>
+
+	#OBSERVAÇÃO IMPORTANTE: nesse exemplo vamos editar o arquivo teste.html, teste.php
+	e phpinfo.php utilizando o Microsoft Visual Studio VSCode.
+	code .
+
+	01_ criando um novo arquivo: (Atalho) Ctrl + N
+	02_ copiar e colar o código abaixo: 
+	03_ salvar o arquivo com o nome: teste.html (Atalho) Ctrl + S
+
+```html
+<!DOCTYPE html>
+	<html lang="pt-br">
+		<head>
+			<title>Teste da Linguagem HTML</title>
+			<meta charset="utf-8">
+		</head>
+		<body>
+			<h1>Teste da Linguagem HTML (HyperText Markup Language)</h1>
+			Autor: Robson Vaamonde<br>
+			Linkedin: <a href="https://www.linkedin.com/in/robson-vaamonde-0b029028/">Robson Vaamonde</a><br>
+			Site: <a href="procedimentosemti.com.br">procedimentosemti.com.br</a><br>
+			Facebook: <a href="facebook.com/ProcedimentosEmTI"> Procedimentos Em TI</a><br>
+			Facebook: <a href="facebook.com/BoraParaPratica">Bora Para Pratica</a><br>
+			Instagram: <a href="https://www.instagram.com/procedimentoem/?hl=pt-br">Procedimentos Em TI</a><br>
+			YouTube: <a href="youtube.com/BoraParaPratica">Bora Para Pratica</a><br>
+		</body>
+	</html>
+```
+
+	01_ criando um novo arquivo: (Atalho) Ctrl + N
+	02_ copiar e colar o código abaixo: 
+	03_ salvar o arquivo com o nome: teste.php (Atalho) Ctrl + S
+
+```php
+<!DOCTYPE html>
+	<html lang="pt-br">
+		<head>
+			<title>Teste da Linguagem PHP</title>
+			<meta charset="utf-8">
+		</head>
+		<body>
+			<?php 
+				echo 'Teste da Linguagem HTML (HyperText Markup Language)';
+				echo 'Autor: Robson Vaamonde';
+				echo 'Linkedin: linkedin.com/in/robson-vaamonde-0b029028/';
+				echo 'Site: procedimentosemti.com.br';
+				echo 'Facebook: facebook.com/ProcedimentosEmTI';
+				echo 'Facebook: facebook.com/BoraParaPratica';
+				echo 'Instagram: instagram.com/procedimentoem/';
+				echo 'YouTube: youtube.com/BoraParaPratica'; 
+			?>
+		</body>
+	</html>
+```
+
+	01_ criando um novo arquivo: (Atalho) Ctrl + N
+	02_ copiar e colar o código abaixo: 
+	03_ salvar o arquivo com o nome: phpinfo.php (Atalho) Ctrl + S
+
+```php
+<?php
+	/** Módulo do PHP para gerar a página de documentação e parâmetros do PHP*/
+	phpinfo(); 
+?>
+```
