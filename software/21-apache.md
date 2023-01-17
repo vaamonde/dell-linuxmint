@@ -62,15 +62,15 @@ Site Oficial do PHP (7.x ou 8.x): https://www.php.net/
 	php8.1-mbstring php8.1-xml php8.1-zip php8.1-soap php-imagick php-json libapache2-mod-php libapr1 \
 	libapache2-mod-php8.1 libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap
 
-#03_ Verificando o Serviço e Versão do Apache 2 do PHP no Linux Mint<br>
+#03_ Verificando o Serviço e Versão do Apache 2 e do PHP no Linux Mint<br>
 
 	sudo systemctl status apache2
 	sudo systemctl restart apache2
 	sudo systemctl stop apache2
 	sudo systemctl start apache2
 
-	sudo --version (Server)
-	sudo --version (PHP)
+	sudo apache2 -V (Server)
+	sudo php --version (PHP)
 
 #04_ Verificando a Porta de Conexão do Apache 2 no Linux Mint<br>
 
@@ -84,7 +84,17 @@ Site Oficial do PHP (7.x ou 8.x): https://www.php.net/
 	/etc/apache2/sites-available/ <-- Diretório padrão do Sites Acessíveis do Apache 2 Server
 	/etc/apache2/conf-available/ <-- Diretório padrão das Configurações Acessíveis do Apache 2 Server
 	/etc/php/ <--- Diretório de configuração do PHP 7.x ou 8.x
-	/etc/php/8.1/apache2/php.ini <-- Arquivo de configuração do PHP 7.x do Apache 2 Server
+	/etc/php/7.4/apache2/php.ini <-- Arquivo de configuração do PHP 7.x do Apache 2 Server
+	/etc/php/8.1/apache2/php.ini <-- Arquivo de configuração do PHP 8.x do Apache 2 Server
 	/var/www/html/ <-- Diretório padrão das Hospedagem de Site do Apache 2 Server
 	/var/log/apache2/ <-- Diretório padrão dos Logs do Apache 2 Server
 
+#06_ Adicionado o Usuário Local no Grupo Padrão do Apache2 Server no Linux Mint<br>
+
+	#opções do comando usermod: -a (append), -G (groups), $USER (environment variable)
+	sudo usermod -a -G www-data $USER
+	newgrp www-data
+	id
+	
+	#recomendado reinicializar a máquina para aplicar as permissões
+	sudo reboot
