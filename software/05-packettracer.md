@@ -26,6 +26,7 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+	
 	OBSERVAÇÃO IMPORTANTE: outro detalhe muito importante do Linux Mint com o Ambiente Gráfico 
 	Cinnamon é que ele possui a maioria das dependência do Qt e GTK, por causa disso que o Cisco 
 	Packet Tracer funciona muito bem no Mint com o ambiente gráfico Cinnamon, isso não acontece 
