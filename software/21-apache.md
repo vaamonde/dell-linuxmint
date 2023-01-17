@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 16/01/2023<br>
-#Data de atualização: 16/01/2023<br>
-#Versão: 0.01<br>
+#Data de atualização: 17/01/2023<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -102,8 +102,11 @@ Site Oficial do PHP (7.x ou 8.x): https://www.php.net/
 #07_ Criando um diretório de Teste do HTML e PHP no Linux Mint<br>
 
 	cd /var/www/html
+		#opção do comando mkdir: -v (verbose)
 		sudo mkdir -v teste
+		#opção do comando chmod: -v (verbose), 775 (User=RWX,Group=RWX,Other=R-X)
 		sudo chmod -v 775 teste/
+		#opção do comando chown: -v (verbose), root (User), . (separate), www-date (group)
 		sudo chown -v root.www-data teste/
 		cd teste
 
@@ -150,14 +153,14 @@ Site Oficial do PHP (7.x ou 8.x): https://www.php.net/
 		</head>
 		<body>
 			<?php 
-				echo 'Teste da Linguagem HTML (HyperText Markup Language)';
-				echo 'Autor: Robson Vaamonde';
-				echo 'Linkedin: linkedin.com/in/robson-vaamonde-0b029028/';
-				echo 'Site: procedimentosemti.com.br';
-				echo 'Facebook: facebook.com/ProcedimentosEmTI';
-				echo 'Facebook: facebook.com/BoraParaPratica';
-				echo 'Instagram: instagram.com/procedimentoem/';
-				echo 'YouTube: youtube.com/BoraParaPratica'; 
+				echo '<h1>Teste da Linguagem HTML (HyperText Markup Language)</h1>';
+				echo 'Autor: Robson Vaamonde<br>';
+				echo 'Linkedin: linkedin.com/in/robson-vaamonde-0b029028/<br>';
+				echo 'Site: procedimentosemti.com.br<br>';
+				echo 'Facebook: facebook.com/ProcedimentosEmTI<br>';
+				echo 'Facebook: facebook.com/BoraParaPratica<br>';
+				echo 'Instagram: instagram.com/procedimentoem/<br>';
+				echo 'YouTube: youtube.com/BoraParaPratica<br>'; 
 			?>
 		</body>
 	</html>
@@ -173,3 +176,8 @@ Site Oficial do PHP (7.x ou 8.x): https://www.php.net/
 	phpinfo(); 
 ?>
 ```
+
+#09_ Testando o Apache2 e o PHP no navegador utilizando o Linux Mint<br>
+
+	firefox http://localhost
+	firefox http://localhost/teste/
