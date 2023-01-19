@@ -16,7 +16,7 @@
 #Instalação do Apache Tomcat 10.1.x no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Site Oficial do Apache2: https://httpd.apache.org/<br>
-Site Oficial do Apache Tomcat: https://tomcat.apache.org/
+Site Oficial do Apache Tomcat: https://tomcat.apache.org/<br>
 Site Oficial do OpenJDK: https://openjdk.org/
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
@@ -65,8 +65,8 @@ Site Oficial do OpenJDK: https://openjdk.org/
 
 #04_ Download do Apache Tomcat Server 10.1.x do site Oficial<br>
 
-	OBSERVAÇÃO IMPORTANTE: recomendo que o procedimento abaixo seja feito utilizando o usuário: Root
-	do Linux Mint para facilitar a instalação e configuração do Apache Tomcat Server 10.1.x.
+	OBSERVAÇÃO IMPORTANTE: recomendo que o procedimento abaixo seja feito utilizando o usuário: 
+	Root do Linux Mint para facilitar a instalação e configuração do Apache Tomcat Server 10.1.x.
 	Link Oficial das versões do Apache Tomcat Server: https://dlcdn.apache.org/tomcat/
 
 	#opção do comando sudo: -i (login)
@@ -144,7 +144,7 @@ Site Oficial do OpenJDK: https://openjdk.org/
 	#recomendado reinicializar a máquina para aplicar as permissões
 	sudo reboot
 
-#14_ Testando oApache Tomcat Server no navegador utilizando o Linux Mint<br>
+#14_ Testando o Apache Tomcat Server no navegador utilizando o Linux Mint<br>
 
 	firefox http://localhost:8080
 		Usuário padrão: admin
