@@ -19,8 +19,8 @@
 #Instalação do Apache Tomcat 10.1.x no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 #
-# Site Oficial do Apache Tomcat:
-# Site Oficial do OpenJDK:
+# Site Oficial do Apache Tomcat: https://tomcat.apache.org/
+# Site Oficial do OpenJDK: https://openjdk.org/
 #
 # OBSERVAÇÃO IMPORTANTE: Nesse vídeo utilizei os conceitos do Git e Github para clonar o 
 # projeto no Linux Mint
@@ -48,9 +48,9 @@ LOG="$HOME/$(echo $0 | cut -d'/' -f2)"
 #
 # Declarando as variáveis de download do Tomcat 10 (Links atualizados no dia 19/01/2023)
 TOMCAT10="https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.5/bin/apache-tomcat-10.1.5.tar.gz"
-SERVERXML=""
-USERXML=""
-SERVICE=""
+SERVERXML="https://raw.githubusercontent.com/vaamonde/dell-linuxmint/master/scripts/conf/server.xml"
+USERXML="https://raw.githubusercontent.com/vaamonde/dell-linuxmint/master/scripts/conf/tomcat-users.xml"
+SERVICE="https://raw.githubusercontent.com/vaamonde/dell-linuxmint/master/scripts/conf/tomcat10.service"
 OPENJDK="openjdk-17-jdk openjdk-17-jre software-properties-common build-essential"
 DEPENDENCE="members git vim unzip python2 python3"
 PATH="/opt/tomcat"
@@ -129,15 +129,15 @@ echo -e "Descompactando o Apache Tomcat Server 10.x, aguarde..."
 echo -e "Descompactação do Apache Tomcat Server 10.x feito com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Descompactando o Apache Tomcat Server 10.x, aguarde..."
+echo -e "Atualizando os arquivos de configuração do Apache Tomcat Server 10.x, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
-	# opção do comando tar: -x (extract), -z (gzip), -v (verbose), -f (file), -C (directory)
-	tar -xzvf /tmp/tomcat10.tar.gz -C /tmp --strip-components=1 &>> $LOG
-	mv -v /tmp/apache-tomcat* $PATH &>> $LOG
-echo -e "Descompactação do Apache Tomcat Server 10.x feito com sucesso!!!, continuando com o script...\n"
+	# opção do comando wget: -O (output)
+	wget $SERVERXML -O /opt/tomcat/conf/server.xml &>> $LOG
+	wget $USERXML -O /opt/tomcat/conf/tomcat-users.xml &>> $LOG
+	wget $SERVICE -O /etc/systemd/system/tomcat10.service &>> $LOG
+echo -e "Arquivos de configuração do Apache Tomcat Server 10.x atualizados com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-
 echo -e "Criando o Usuário do Apache Tomcat Server 10.x, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando useradd: -m (create-home), -d (home-dir), -U (user-group), -s (shell)
@@ -154,9 +154,29 @@ echo -e "Alterando os Permissões do Diretório do Apache Tomcat Server 10.x, ag
 echo -e "Permissões do Diretório do Apache Tomcat Server 10.x alteradas com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-
-
-
+echo -e "Iniciando o Serviço do Apache Tomcat Server 10.x, aguarde..."
+	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
+	# opção do comando useradd: -m (create-home), -d (home-dir), -U (user-group), -s (shell)
+	systemctl daemon-reload &>> $LOG
+	systemctl enable tomcat10 &>> $LO
+	systemctl start tomcat10 &>> $LOG
+echo -e "Serviço do Apache Tomcat Server 10.x iniciado com sucesso!!!, continuando com o script...\n"
+sleep 5
+#
+echo -e "Verificando o serviço do Apache Tomcat 10.x, aguarde..."
+	echo -e "Tomcat10: $(systemctl status tomcat10 | grep Active)"
+echo -e "Serviço do Apache Tomcat Server 10.x verificado com sucesso!!!, continuando com o script...\n"
+sleep 5
+#
+echo -e "Verificando a porta de conexão do Apache Tomcat 10.x, aguarde..."
+	# opção do comando lsof: -n (inhibits the conversion of network numbers to host names for 
+	# network files), -P (inhibits the conversion of port numbers to port names for network files), 
+	# -i (selects the listing of files any of whose Internet address matches the address specified 
+	# in i), -s (alone directs lsof to display file size at all times)
+	lsof -nP -iTCP:"8080" -sTCP:LISTEN
+echo -e "Porta de conexão do Apache Tomcat 10.x verificada com sucesso!!!, continuando com o script...\n"
+sleep 5
+#
 echo -e "Instalação do Apache Tomcat Server 10.x feita com Sucesso!!!"
 	# script para calcular o tempo gasto (SCRIPT MELHORADO, CORRIGIDO FALHA DE HORA:MINUTO:SEGUNDOS)
 	# opção do comando date: +%T (Time)
