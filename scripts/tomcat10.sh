@@ -124,6 +124,7 @@ sleep 5
 echo -e "Descompactando o Apache Tomcat Server 10.x, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando tar: -x (extract), -z (gzip), -v (verbose), -f (file), -C (directory)
+	# opção do comando mv: -v (verbose)
 	tar -xzvf /tmp/tomcat10.tar.gz -C /tmp --strip-components=1 &>> $LOG
 	mv -v /tmp/apache-tomcat* $PATH &>> $LOG
 echo -e "Descompactação do Apache Tomcat Server 10.x feito com sucesso!!!, continuando com o script...\n"
@@ -155,8 +156,6 @@ echo -e "Permissões do Diretório do Apache Tomcat Server 10.x alteradas com su
 sleep 5
 #
 echo -e "Iniciando o Serviço do Apache Tomcat Server 10.x, aguarde..."
-	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
-	# opção do comando useradd: -m (create-home), -d (home-dir), -U (user-group), -s (shell)
 	systemctl daemon-reload &>> $LOG
 	systemctl enable tomcat10 &>> $LO
 	systemctl start tomcat10 &>> $LOG

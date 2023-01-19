@@ -61,6 +61,7 @@ Site Oficial do Java: https://www.java.com/pt-BR/
 	sudo java -version
 	sudo apt list --installed | grep -i openjdk
 	sudo update-alternatives --list java
+	sudo update-java-alternatives --list
 
 #04_ Configurando o Versão do Java Padrão no Linux Mint<br>
 
