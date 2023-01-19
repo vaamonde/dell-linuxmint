@@ -28,9 +28,7 @@
 # Terminal: Ctrl + Alt + t (Atalho do Terminal)
 #	sudo apt update
 #	sudo apt install git vim
-#	git clone https://github.com/vaamonde/arduino
-#	cd tomcat10/
-#		bash tomcat10.sh
+#	wget 
 #
 # Variável da Data Inicial para calcular o tempo de execução do script (VARIÁVEL MELHORADA)
 # opção do comando date: +%T (Time)
@@ -50,6 +48,9 @@ LOG="$HOME/$(echo $0 | cut -d'/' -f2)"
 #
 # Declarando as variáveis de download do Tomcat 10 (Links atualizados no dia 19/01/2023)
 TOMCAT10="https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.5/bin/apache-tomcat-10.1.5.tar.gz"
+SERVERXML=""
+USERXML=""
+SERVICE=""
 OPENJDK="openjdk-17-jdk openjdk-17-jre software-properties-common build-essential"
 DEPENDENCE="members git vim unzip python2 python3"
 PATH="/opt/tomcat"
@@ -66,36 +67,35 @@ clear
 echo
 echo -e "Instalação do Apache Tomcat Server 10.x no Linux Mint 20.x e 21.x\n"
 echo -e "Aguarde, esse processo demora um pouco dependendo do seu Link de Internet...\n"
-echo -e "Será necessário digitar a senha do seu usuário: $USUARIO que tem direitos administrativos do sudo.\n"
 sleep 5
 #
 echo -e "Atualizando o Sources List do Apt, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
-	sudo apt update &>> $LOG
+	apt update &>> $LOG
 echo -e "Listas atualizadas com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
 echo -e "Atualizando o sistema operacional, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando apt: -y (yes)
-	sudo apt upgrade -y &>> $LOG
-	sudo apt full-upgrade -y &>> $LOG
-	sudo apt dist-upgrade -y &>> $LOG
+	apt upgrade -y &>> $LOG
+	apt full-upgrade -y &>> $LOG
+	apt dist-upgrade -y &>> $LOG
 echo -e "Sistema atualizado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
 echo -e "Instalando as dependências desse script, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando apt: -y (yes)
-	sudo apt install $DEPENDENCE -y &>> $LOG
+	apt install $DEPENDENCE -y &>> $LOG
 echo -e "Dependências instaladas com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
 echo -e "Removendo os software desnecessários, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando apt: -y (yes)
-	sudo apt autoremove -y &>> $LOG
-	sudo apt autoclean -y &>> $LOG
+	apt autoremove -y &>> $LOG
+	apt autoclean -y &>> $LOG
 echo -e "Software desnecessários removidos com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
@@ -106,31 +106,42 @@ echo -e "Instalando o OpenJDK e OpenJRE 17 LTS, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando apt: -y (yes)
 	# opção do comando grep: -i (ignore-case)
-	sudo apt install $OPENJDK -y &>> $LOG
-	sudo java -version &>> $LOG
-	sudo apt list --installed | grep -i openjdk &>> $LOG
-	sudo update-alternatives --list java &>> $LOG
+	apt install $OPENJDK -y &>> $LOG
+	java -version &>> $LOG
+	apt list --installed | grep -i openjdk &>> $LOG
+	update-alternatives --list java &>> $LOG
+	update-java-alternatives -l  &>> $LOG
 echo -e "OpenJDK e OpenJRE instalados com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
 echo -e "Fazendo o download do Apache Tomcat Server 10.x site Oficial, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando wget: -v (verbose), -O (output-document)
-	sudo wget -v -O /tmp/tomcat10.tar.gz $TOMCAT10 &>> $LOG
+	wget -v -O /tmp/tomcat10.tar.gz $TOMCAT10 &>> $LOG
 echo -e "Download do Apache Tomcat Server 10.x feito com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
 echo -e "Descompactando o Apache Tomcat Server 10.x, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando tar: -x (extract), -z (gzip), -v (verbose), -f (file), -C (directory)
-	sudo tar -xzvf /tmp/tomcat10.tar.gz -C $PATH --strip-components=1 &>> $LOG
+	tar -xzvf /tmp/tomcat10.tar.gz -C /tmp --strip-components=1 &>> $LOG
+	mv -v /tmp/apache-tomcat* $PATH &>> $LOG
 echo -e "Descompactação do Apache Tomcat Server 10.x feito com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
+echo -e "Descompactando o Apache Tomcat Server 10.x, aguarde..."
+	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
+	# opção do comando tar: -x (extract), -z (gzip), -v (verbose), -f (file), -C (directory)
+	tar -xzvf /tmp/tomcat10.tar.gz -C /tmp --strip-components=1 &>> $LOG
+	mv -v /tmp/apache-tomcat* $PATH &>> $LOG
+echo -e "Descompactação do Apache Tomcat Server 10.x feito com sucesso!!!, continuando com o script...\n"
+sleep 5
+#
+
 echo -e "Criando o Usuário do Apache Tomcat Server 10.x, aguarde..."
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando useradd: -m (create-home), -d (home-dir), -U (user-group), -s (shell)
-	sudo useradd -m -d $PATH -U -s /bin/false $USERTOMCAT10 &>> $LOG
+	useradd -m -d $PATH -U -s /bin/false $USERTOMCAT10 &>> $LOG
 echo -e "Usuário do Apache Tomcat Server 10.x criado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
@@ -138,11 +149,13 @@ echo -e "Alterando os Permissões do Diretório do Apache Tomcat Server 10.x, ag
 	# opção do redirecionador &>>: Redireciona a saída padrão (STDOUT) anexando
 	# opção do comando chown: -R (recursive), -v (verbose), tomcat:tomcat (user and group)
 	# opção do comando chmod: -R (recursive), -v (verbose), u+x (user added execute/search)
-	sudo chown -Rv tomcat:tomcat $PATH &>> $LOG
-	sudo chmod -Rv u+x $PATH/bin &>> $LOG
+	chown -Rv tomcat:tomcat $PATH &>> $LOG
+	chmod -Rv u+x $PATH/bin &>> $LOG
 echo -e "Permissões do Diretório do Apache Tomcat Server 10.x alteradas com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
+
+
 
 echo -e "Instalação do Apache Tomcat Server 10.x feita com Sucesso!!!"
 	# script para calcular o tempo gasto (SCRIPT MELHORADO, CORRIGIDO FALHA DE HORA:MINUTO:SEGUNDOS)

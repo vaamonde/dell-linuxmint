@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-# Autor: Robson Vaamonde
-# Site: www.procedimentosemti.com.br
-# Facebook: facebook.com/ProcedimentosEmTI
-# Facebook: facebook.com/BoraParaPratica
-# YouTube: youtube.com/BoraParaPratica
-# Linkedin: https://www.linkedin.com/in/robson-vaamonde-0b029028/
-# Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
-# Data de criação: 24/10/2021
-# Data de atualização: 12/05/2022
-# Versão: 0.07
-# Testado e homologado para a versão do Ubuntu Server 20.04.x LTS x64x
-# Testado e homologado para a versão do Tomcat 9.0.x, OpenJDK 11.x e OpenJRE 11.x
+#Autor: Robson Vaamonde
+#Procedimentos em TI: http://procedimentosemti.com.br
+#Bora para Prática: http://boraparapratica.com.br
+#Robson Vaamonde: http://vaamonde.com.br
+#Facebook Procedimentos em TI: https://www.facebook.com/ProcedimentosEmTi
+#Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica
+#Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
+#YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
+#LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
+#Data de criação: 19/01/2023
+#Data de atualização: 19/01/2023
+#Versão: 0.02
 -->
 <Server port="-1" shutdown="SHUTDOWN">
   <Listener className="org.apache.catalina.startup.VersionLoggerListener" />
@@ -19,7 +19,6 @@
   <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener" />
   <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener" />
   <Listener className="org.apache.catalina.core.ThreadLocalLeakPreventionListener" />
-
   <!--
    # Configuração principal do Tomcat referente a forma de autenticação dos usuários
    # de administração dos Containers (Aplicativos).
@@ -31,7 +30,6 @@
               factory="org.apache.catalina.users.MemoryUserDatabaseFactory"
               pathname="conf/tomcat-users.xml" />
   </GlobalNamingResources>
-
   <!--
    # Configuração principal do Tomcat referente a Porta padrão (8080 - HTTPS), Timeout e
    # Porta Segura (8443 - HTTPS)
@@ -41,35 +39,11 @@
     <Connector port="8080" protocol="HTTP/1.1"
                connectionTimeout="20000"
                redirectPort="8443" />
-    <!--
-    # Configuração do suporte ao SSL/TLS do Tomcat9 utilizando o software Keytool
-    # e Certificados Assinados utilizando o OpenSSL
-    # Comando para a geração do certificado do Tomcat9 SSL/TLS não assinado
-    #	keytool -genkey -alias tomcat -keyalg RSA -keystore /etc/tomcat9/cert.jks
-	# Descomentar as linhas abaixo depois de configurar o TLS/SSL do Apache Tomcat9
-    -->
-    <!--	
-    <Connector
-		port="8443"
-		protocol="HTTP/1.1"
-		connectionTimeout="20000"
-		scheme="https"
-		secure="true"
-		maxThreads="150"
-		clientAuth="false"
-		SSLEnabled="true" 
-		sslProtocol="TLS"
-		sslEnabledProtocols="TLSv1.2,TLSv1.1,TLSv1,SSLv2Hello"
-		keystoreFile="/etc/tomcat9/tomcat9.jks"
-		keystorePass="vaamonde" />
-    -->
-
     <Engine name="Catalina" defaultHost="localhost">
       <Realm className="org.apache.catalina.realm.LockOutRealm">
         <Realm className="org.apache.catalina.realm.UserDatabaseRealm"
                resourceName="UserDatabase"/>
       </Realm>
-
       <!--
        # Configuração principal do Tomcat referente ao suporte do WebApps permitir
        # fazer a descompactação e instalação dos aplicações WAR's via Gerenciador
