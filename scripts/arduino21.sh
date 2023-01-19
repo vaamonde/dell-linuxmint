@@ -6,8 +6,8 @@
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 25/08/2021
 # Data de atualização: 08/01/2023
-# Versão: 0.09
-# Testado e homologado para a versão do Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+# Versão: 0.08
+# Testado e homologado para a versão do Linux Mint 21 Vanessa e 21.1 Vera x64
 # Testado e homologado para a versão do Arduino IDE v2.0.x, Cli v0.26.x e Fritzing v0.9.x
 #
 # Arduino é uma plataforma de prototipagem eletrônica de hardware livre e de placa única, 
@@ -51,7 +51,7 @@
 #		sudo apt install git
 #		git clone https://github.com/vaamonde/arduino
 #			cd arduino/
-#				bash install20.sh
+#				bash install21.sh
 #
 # Terminal
 #		arduino-20
@@ -97,7 +97,7 @@ AGENTFIREFOX="https://github.com/arduino/arduino-create-agent/releases/download/
 AGENTCHROME="https://github.com/arduino/arduino-create-agent/releases/download/1.2.7/ArduinoCreateAgent-1.2.7-linux-amd64-installer-chrome.run"
 PATHARDUINO="/opt/arduino20"
 #
-# Script de instalação do Arduino IDE 2.0.x e do Fritzing no Linux Mint 20.1 Ulyssa, 20.2 Uma ou 20.3 Una 
+# Script de instalação do Arduino IDE 2.0.x e do Fritzing no Linux Mint 21 Vanessa e 21.1 Vera x64
 # opção do comando echo: -e (enable interpretation of backslash escapes), \n (new line)
 # $0 (variável de ambiente do nome do comando)
 # opção do comando date: + (format), %d (day), %m (month), %Y (year 1970), %H (hour 24), %M (minute 60)
@@ -106,7 +106,7 @@ echo -e "Início do script $0 em: $(date +%d/%m/%Y-"("%H:%M")")\n" &>> $LOG
 clear
 #
 echo
-echo -e "Instalação do Arduino IDE 2.x, Cli e do Fritzing no Linux Mint 20.x\n"
+echo -e "Instalação do Arduino IDE 2.x, Cli e do Fritzing no Linux Mint 21.x\n"
 echo -e "Após a instalação do Arduino IDE digitar no console: arduino-20"
 echo -e "Após a instalação do Arduino Cli digitar no console: arduino-cli"
 echo -e "Após a instalação do Arduino Agent Cloud acessar a URL: https://create.arduino.cc/getting-started/plugin/welcome"
