@@ -78,7 +78,7 @@ Site Oficial do OpenJDK: https://openjdk.org/
 #05_ Descompactando e instalando o Apache Tomcat 10.1.x no Linux Mint<br>
 
 	#opção do comando tar: -x (extract), -z (gzip), -v (verbose), -f (file), -C (directory)
-	tar -xzvf /tmp/tomcat10.tar.gz -C /tmp --strip-components=1
+	tar -xzvf /tmp/tomcat10.tar.gz -C /tmp
 	
 	#opção do comando mv: -v (verbose)
 	mv -v /tmp/apache-tomcat* /opt/tomcat
