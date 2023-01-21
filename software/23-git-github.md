@@ -179,6 +179,7 @@ Site Oficial do Gitlab: https://about.gitlab.com/
 #12_ Criando um Token para acesso remoto utilizando o comando Git no Repositório Remoto do Github<br
 
 	Link da geração do Token: https://github.com/settings/tokens
+
 	Settings
 		Developer settings
 			Personal access tokens
