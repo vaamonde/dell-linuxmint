@@ -1,25 +1,54 @@
-#!/bin/bash
-# Autor: Robson Vaamonde
-# Site: www.procedimentosemti.com.br
-# Facebook: facebook.com/ProcedimentosEmTI
-# Facebook: facebook.com/BoraParaPratica
-# YouTube: youtube.com/BoraParaPratica
-# Linkedin: https://www.linkedin.com/in/robson-vaamonde-0b029028/
-# Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
-# Github: https://github.com/vaamonde
-# Data de criação: 10/10/2021
-# Data de atualização: 20/01/2022
-# Versão: 0.20
-# Testado e homologado para a versão do Ubuntu Server 20.04.x LTS x64
-#
-# Indicação de site com muita informação sobre o Editor de Texto VIM: Aurelio.net
-# Link: https://aurelio.net/vim/
-#
-# Comandos básicos do Editor de Texto VIM
-#
-# Instalando o Editor de Texto VIM no Debian, Ubuntu ou Linux Mint
-sudo apt update && sudo apt install vim vim-common
-#
+#Autor: Robson Vaamonde<br>
+#Procedimentos em TI: http://procedimentosemti.com.br<br>
+#Bora para Prática: http://boraparapratica.com.br<br>
+#Robson Vaamonde: http://vaamonde.com.br<br>
+#Facebook Procedimentos em TI: https://www.facebook.com/ProcedimentosEmTi<br>
+#Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica<br>
+#Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
+#YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
+#Data de criação: 21/01/2023<br>
+#Data de atualização: 21/01/2023<br>
+#Versão: 0.01<br>
+#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
+
+#Instalação do Editor de Texto Vim no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Instalação do Editor de Texto Vim no Linux Mint 21 Vanessa e 21.1 Vera x64
+
+Site Oficial do Vim: https://git-scm.com/<br>
+Site Oficial do Aurelio.net: https://aurelio.net/vim/
+
+#00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
+
+	Terminal: Ctrl + Alt + T
+
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+	sudo cat /etc/os-release
+	sudo cat /etc/lsb-release
+	sudo localectl
+
+	Menu
+		Informações do Sistema
+
+#01_ Atualização do Sistema Operacional Linux Mint<br>
+
+	Atualização do sistema utilizando o MintUpdate;
+	Atualização do sistema utilizando o Apt;
+
+	Terminal: Ctrl + Alt + T
+		sudo apt update
+		sudo apt upgrade
+		sudo apt full-upgrade
+		sudo apt dist-upgrade
+		sudo apt autoremove
+		sudo apt autoclean
+
+#02_ Instalando o Vim e suas Dependências no Linux Mint<br>
+
+	sudo apt update
+	sudo apt install git vim vim-common python2 python3
+
 # Iniciando o editor de Texto VIM
 man vim
 vim

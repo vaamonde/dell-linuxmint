@@ -93,8 +93,8 @@ Site Oficial do Gitlab: https://about.gitlab.com/
 	OBSERVAÇÃO IMPORTANTE: o nome de usuário no Github será utilizado como Repositório Base, 
 	por exemplo o Repositório Base do Projeto Bora para Prática é: https://github.com/vaamonde
 	(vaamonde), recomendo sempre criar o seu usuário tudo em minúscula, sem acentuação, sem
-	espaço, nome que seja legível, fácil entendimento pois esse será utilizado como referência
-	para o seu projeto.
+	espaço, nome que seja legível, fácil entendimento pois esse usuário será utilizado como 
+	referência para o seu projeto.
 	
 	_05: 
 
