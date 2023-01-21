@@ -162,6 +162,7 @@ Site Oficial do Gitlab: https://about.gitlab.com/
 	<Commit new file>
 
 #11_ Criando um diretório e arquivo de Shell Script no Repositório Remoto do Github<br
+
 	<Add file>
 		Create new file
 			devops/install/teste04.sh
@@ -176,6 +177,7 @@ Site Oficial do Gitlab: https://about.gitlab.com/
 	<Commit new file>
 
 #12_ Criando um Token para acesso remoto utilizando o comando Git no Repositório Remoto do Github<br
+
 	Link da geração do Token: https://github.com/settings/tokens
 	Settings
 		Developer settings
