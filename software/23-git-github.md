@@ -270,7 +270,7 @@ Site Oficial do Gitlab: https://about.gitlab.com/
 		git show
 		git log
 		git remote add origin git@github.com:rsvaamonde/vaamonde.git
-		git push -u -f origin main
+		git push -u origin master
 
 	#automatizando as mudanças do Repositório Local com o Repositório Remoto do Github no bash/shell
 	git pull && git add . && git commit -m "Atualizacao" && git push
