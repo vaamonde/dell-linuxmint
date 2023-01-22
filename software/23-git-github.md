@@ -17,7 +17,8 @@
 
 Site Oficial do Git: https://git-scm.com/<br>
 Site Oficial do Github: https://github.com/<br>
-Site Oficial do Gitlab: https://about.gitlab.com/
+Site Oficial do Gitlab: https://about.gitlab.com/<br>
+Site Oficial do Markdown Guide: https://www.markdownguide.org/
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
@@ -75,6 +76,7 @@ Site Oficial do Gitlab: https://about.gitlab.com/
 	
 	#Listando todas as variáveis definidas no arquivo de configuração do Git, junto com seus valores.
 	git config --list
+		Q (quit) para sair
 	
 	#Localização do arquivo de configuração do Git no Linunx Mint.
 	#opção do comando ls: -l (long listing), -h (human-readable), -a (all), ~ (directory home)
@@ -96,7 +98,11 @@ Site Oficial do Gitlab: https://about.gitlab.com/
 	espaço, nome que seja legível, fácil entendimento pois esse usuário será utilizado como 
 	referência para o seu projeto.
 	
-	_05: 
+	_05: no campo: Would you like to receive product updates and announcements via emails? - digite n e clique em? <Continue>
+	_06: na tela de: Verify your account: clique em: <Verificar>
+	_07: selecione depois nos quadros os dois objetivos idênticos e clique em: <Create account>
+	_08: no campo: You're almost done! digite no campo: Enter code o código enviado para o seu email.
+	_09: na tela de: Welcome to Github clique em: <Skip personalization>
 
 #06_ Criando nosso primeiro Repositório Remoto no Github<br>
 
@@ -148,7 +154,7 @@ Site Oficial do Gitlab: https://about.gitlab.com/
 			Commit changes: Upload do nosso segundo script em Shell
 			Add and optional: Upload de de arquivos no Github
 			Check: Commit directly to the master branch
-	<Commit new file>
+	<Commit changes>
 
 #10_ Enviando um diretório de Shell Script no Repositório Remoto do Github<br>
 
@@ -159,7 +165,7 @@ Site Oficial do Gitlab: https://about.gitlab.com/
 			Commit changes: Enviando um diretório de configuração
 			Add and optional: Envio do diretório de configuração no Github
 			Check: Commit directly to the master branch
-	<Commit new file>
+	<Commit changes>
 
 #11_ Criando um diretório e arquivo de Shell Script no Repositório Remoto do Github<br
 
@@ -171,7 +177,7 @@ Site Oficial do Gitlab: https://about.gitlab.com/
 					echo "Criando nosso quarto script em Shell"
 					echo "A data de hoje é: $(date)"
 				Preview
-				Commit new file: Criando nosso primeiro script em Shell
+				Commit new file: Criando nosso quarto script em Shell
 				Add and optional: Aprendendo o básico em Shell
 				Check: Commit directly to the master branch
 	<Commit new file>
@@ -192,6 +198,7 @@ Site Oficial do Gitlab: https://about.gitlab.com/
 						Select scopes
 							Select All Options
 					<Generate token>
+				Copiar o Token no ícone: copiar para área de transferência e salvar.
 
 #13_ Utilizando o comando Git no no Linux Mint e sincronizando com nosso Repositório Remoto no Github<br>
 
@@ -203,7 +210,7 @@ Site Oficial do Gitlab: https://about.gitlab.com/
 	cd devops/
 
 	#criando um arquivo dentro do Repositório Local
-	echo "#!/bin/sh" > teste05.sh
+	echo "#!/bin/bash" > teste05.sh
 	echo "#Teste de versionamento utilizando o Git" >> teste05.sh
 	cat teste05.sh
 
@@ -220,10 +227,11 @@ Site Oficial do Gitlab: https://about.gitlab.com/
 
 	#listando vários tipos de objetos (blobs, trees, tags e commits) no Repositório Local
 	git show
+		Q (quit) para sair
 
 	#mostrando os logs de confirmação (commits) no Repositório Local
 	git log
-		Q para sair
+		Q (quit) para sair
 
 	#enviando o novo arquivo confirmado (commit) do Repositório Local para o Repositório Remoto do Github
 	#OBSERVAÇÃO IMPORTANTE: copiar e colocar o Token de acesso no campo login do comando git push
@@ -239,7 +247,7 @@ Site Oficial do Gitlab: https://about.gitlab.com/
 
 	#editando um arquivo localmente e enviando as confirmações (commit) para o Repositório Remoto do Github
 	vim README.md
-	git add * ou git add .
+	git add * ou git add . (recomendado)
 	git commit -m "Alteração do arquivo README.md"
 	git status
 	git show
@@ -264,13 +272,20 @@ Site Oficial do Gitlab: https://about.gitlab.com/
 		git init
 		ls -lha
 		echo "#Teste de versionamento utilizando o Git" > teste.sh
-		git add * ou git add .
+		git add * ou git add . (recomendado)
+		#opção do comando git commit: -m (message)
 		git commit -m "Criação do arquivo teste.sh"
 		git status
 		git show
 		git log
-		git branch -M master
+		
+		OBSERVAÇÃO IMPORTANTE: antigamente o Github permitia fazer o comando git push
+		e se o diretório remoto não existir no Github ele fazer a criação, agora esse
+		recurso não funciona, sendo necessário fazer a criação do repositório remoto
+		de forma simples e depois adicionar no remoto local a referência.
+		
 		git remote add origin https://github.com/rsvaamonde/vaamonde.git
+		#opção do comando git push: -u (set-upstream)
 		git push -u origin master
 
 	#automatizando as mudanças do Repositório Local com o Repositório Remoto do Github no bash/shell
