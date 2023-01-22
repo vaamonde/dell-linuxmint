@@ -269,8 +269,8 @@ Site Oficial do Gitlab: https://about.gitlab.com/
 		git status
 		git show
 		git log
-		git push (utilizar o seu Token criado)
 		git remote add origin git@github.com:rsvaamonde/vaamonde.git
+		git push -u -f origin main
 
 	#automatizando as mudanças do Repositório Local com o Repositório Remoto do Github no bash/shell
 	git pull && git add . && git commit -m "Atualizacao" && git push
