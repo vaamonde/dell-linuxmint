@@ -269,7 +269,8 @@ Site Oficial do Gitlab: https://about.gitlab.com/
 		git status
 		git show
 		git log
-		git remote add origin rsvaamonde@github.com:rsvaamonde/vaamonde.git
+		git branch -M master
+		git remote add origin https://github.com/rsvaamonde/vaamonde.git
 		git push -u origin master
 
 	#automatizando as mudanças do Repositório Local com o Repositório Remoto do Github no bash/shell
