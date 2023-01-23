@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 21/01/2023<br>
-#Data de atualização: 21/01/2023<br>
-#Versão: 0.01<br>
+#Data de atualização: 22/01/2023<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -152,7 +152,7 @@ Site Oficial do Markdown Guide: https://www.markdownguide.org/
 			Or choose your files: 
 				Envio de arquivos: teste02.sh <Abrir>
 			Commit changes: Upload do nosso segundo script em Shell
-			Add and optional: Upload de de arquivos no Github
+			Add and optional: Upload de arquivos no Github
 			Check: Commit directly to the master branch
 	<Commit changes>
 
@@ -268,7 +268,7 @@ Site Oficial do Markdown Guide: https://www.markdownguide.org/
 
 	#criando um novo Repositório Local com o Git e enviando as confirmações (commit) para o Repositório Remoto do Github
 	mkdir -v vaamonde
-		cd vaamonde
+	cd vaamonde
 		git init
 		ls -lha
 		echo "#Teste de versionamento utilizando o Git" > teste.sh
@@ -289,4 +289,4 @@ Site Oficial do Markdown Guide: https://www.markdownguide.org/
 		git push -u origin master
 
 	#automatizando as mudanças do Repositório Local com o Repositório Remoto do Github no bash/shell
-	git pull && git add . && git commit -m "Atualizacao" && git push
+	git pull && git add . && git commit -m "Atualização" && git push
