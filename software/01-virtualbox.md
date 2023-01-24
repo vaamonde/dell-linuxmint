@@ -109,8 +109,12 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 	OBSERVAÇÃO IMPORTANTE: recomendo fazer a instalação da nova versão do VirtualBOX 7.0.x
 	sudo apt update
-	sudo apt install virtualbox-6.1 cpu-checker libvirt-clients git vim python2 python3 (VirtualBOX 6.1.x)
-	sudo apt install virtualbox-7.0 cpu-checker libvirt-clients git vim python2 python3 (VirtualBOX 7.0.x)
+	
+	#INSTALANDO O VIRTUALBOX VERSÃO 6.1.x
+	sudo apt install virtualbox-6.1 cpu-checker libvirt-clients git vim python2 python3
+	
+	#INSTALANDO O VIRTUALBOX VERSÃO 6.1.x
+	sudo apt install virtualbox-7.0 cpu-checker libvirt-clients git vim python2 python3
 
 #05_ Verificando as Informações do suporte a Virtualização no Linux Mint<br>
 	
