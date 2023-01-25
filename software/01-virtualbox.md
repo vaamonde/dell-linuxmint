@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 10/01/2023<br>
-#Versão: 0.11<br>
+#Data de atualização: 25/01/2023<br>
+#Versão: 0.12<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -87,10 +87,12 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 	#ADICIONANDO O REPOSITÓRIO NO LINUX MINT 20.x
 	#opção do comando sh: -c (Read commands from the command_string operand in‐stead of from the standard input)
+	#opção do redirecionador >>: Redireciona a saída padrão, anexando
 	sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian focal contrib" >> /etc/apt/sources.list.d/virtualbox.list'
 
 	#ADICIONANDO O REPOSITÓRIO NO LINUX MINT 21.x
 	#opção do comando sh: -c (Read commands from the command_string operand in‐stead of from the standard input)
+	#opção do redirecionador >>: Redireciona a saída padrão, anexando
 	sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/virtualbox.gpg] https://download.virtualbox.org/virtualbox/debian jammy contrib" >> /etc/apt/sources.list.d/virtualbox.list'
 
 #03_ Baixando e Instalando as Chaves de Autenticação GPG do Oracle VirtualBOX no Linux Mint<br>
@@ -102,6 +104,9 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 	#ADICIONANDO AS CHAVES DO REPOSITÓRIO NO LINUX MINT 21.x
 	#opções do comando wget: -q (quiet)
+	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
+	#opção do redirecionador >: Redireciona a saída padrão (STDOUT)
+	#opção do redirecionador 2>&1: Conecta a saída de erro na saída padrão
 	wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc
 	cat oracle_vbox_2016.asc | gpg --dearmor | sudo tee /usr/share/keyrings/virtualbox.gpg > /dev/null 2>&1
 
@@ -110,7 +115,7 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 	OBSERVAÇÃO IMPORTANTE: recomendo fazer a instalação da nova versão do VirtualBOX 7.0.x
 	sudo apt update
 	
-	#INSTALANDO O VIRTUALBOX VERSÃO 6.1.x
+	#INSTALANDO O VIRTUALBOX VERSÃO 6.1.x (NÃO MAIS RECOMENDADO A SUA INSTALAÇÃO)
 	sudo apt install virtualbox-6.1 cpu-checker libvirt-clients git vim python2 python3
 	
 	#INSTALANDO O VIRTUALBOX VERSÃO 7.0.x
@@ -124,8 +129,12 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 #06_ Baixando e Instalando o Pacote de Extensões do Oracle VirtualBOX<br>
 
 	OBSERVAÇÃO: PROCEDIMENTO É IGUAL NA VERSÃO DO VIRTUALBOX 6.1 E 7.0
+	Link para download: https://www.virtualbox.org/wiki/Downloads
+		Opção: VirtualBox 7.0.6 Oracle VM VirtualBox Extension Pack
+		Clique em: All supported platforms
+
 	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
-	*Seguir os procedimentos na tela.
+	*Após baixar o pacote, clicar duas vezes no mesmo e seguir os procedimentos na tela.
 
 #07_ Atualizando o VirtualBOX 6.1 para a versão nova versão 7.0<br>
 
@@ -147,8 +156,13 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 #08_ Baixando e Instalando o Pacote de Extensões do Oracle VirtualBOX 7.0<br>
 
+	OBSERVAÇÃO: PROCEDIMENTO É IGUAL NA VERSÃO DO VIRTUALBOX 6.1 E 7.0
+	Link para download: https://www.virtualbox.org/wiki/Downloads
+		Opção: VirtualBox 7.0.6 Oracle VM VirtualBox Extension Pack
+		Clique em: All supported platforms
+
 	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
-	*Seguir os procedimentos na tela.
+	*Após baixar o pacote, clicar duas vezes no mesmo e seguir os procedimentos na tela
 
 #09_ Corrigindo a Falha do VirtualBOX 7.0 em relação ao erro: Failed to enumerate host USB devices
 

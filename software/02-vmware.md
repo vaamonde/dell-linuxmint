@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 10/01/2023<br>
-#Versão: 0.04<br>
+#Data de atualização: 24/01/2023<br>
+#Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -81,7 +81,7 @@ Site Oficial do VMware Store: https://store-us.vmware.com/vmware-workstation-17-
 		sudo apt autoremove
 		sudo apt autoclean
 
-#02_ Download do VMware Workstation Pro 17 (Build 17.0.0 05/01/2023)<br>
+#02_ Download do VMware Workstation Pro 17 (Build 17.0.0 24/01/2023)<br>
 
 	Link: https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html
 	Versão: Workstation 17 Pro for Linux

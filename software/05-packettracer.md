@@ -31,6 +31,7 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 	Cinnamon é que ele possui a maioria das dependência do Qt e GTK, por causa disso que o Cisco 
 	Packet Tracer funciona muito bem no Mint com o ambiente gráfico Cinnamon, isso não acontece 
 	nos Ambientes Gráficos MATE ou XFCE ou na versão LMDE que não possui essas dependências.
+	
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 	sudo cinnamon --version
@@ -69,10 +70,12 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 	#opção do comando ldd: -v (verbose)
 	sudo ldd -v /opt/pt/bin/PacketTracer
 
-	#opção do comando ldd: -v (verbose), | (piper = Conecta a saída padrão com a entrada padrão de outro comando)
+	#opção do comando ldd: -v (verbose)
+	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
 	sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
 
 	#INSTALANDO AS DEPENDÊNCIAS DO CISCO PACKET TRACER NO LINUX MINT 20.x
+	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
 	sudo apt install libqt5networkauth5 libqt5script5 libqt5scripttools5
 	sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
 
@@ -86,6 +89,7 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 
 	#Resolvendo a falha das bibliotecas libssl.so.1.1 e libcrypto.so.1.1 no Linux Mint 21.x
 	#opção do comando dpkg: -i (install)
+	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
 	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.16_amd64.deb
 	sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.16_amd64.deb
 	sudo ldd /opt/pt/bin/PacketTracer | grep "not found"

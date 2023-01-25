@@ -51,10 +51,14 @@ Site Oficial do Docker Hub: https://hub.docker.com/search?q=
 
 	#ADICIONANDO AS CHAVES DO REPOSITÓRIO NO LINUX MINT 20.x
 	#opções do comando curl: -f (fail), -s (silent), -S (show-error), -L (location)
+	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
 	curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 	#ADICIONANDO AS CHAVES DO REPOSITÓRIO NO LINUX MINT 21.x
 	#opções do comando wget: -q (quiet)
+	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
+	#opção do redirecionador >: Redireciona a saída padrão (STDOUT)
+	#opção do redirecionador 2>&1: Conecta a saída de erro na saída padrão
 	wget -q https://download.docker.com/linux/ubuntu/gpg 
 	cat gpg | gpg --dearmor | sudo tee /usr/share/keyrings/docker-ce.gpg > /dev/null 2>&1
 
