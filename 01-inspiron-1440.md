@@ -9,7 +9,7 @@
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
 #Data de atualização: 24/01/2023<br>
-#Versão: 0.23<br>
+#Versão: 0.24<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -50,9 +50,12 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	
 #04_ Inicialização da Instalação do Linux Mint 20.1 Ulyssa, 20.2 Uma, 20.3 Una, 21 Vanessa ou 21.1 Vera<br>
 
-	_ Para não ter falhas de inicialização da instalação, utilizei o recurso de Modo de 
-	_ Compatibilidade, recomendado para equipamentos legados (inicialização em modo de 
-	_ compatibilidade e mais lento no Dell Inspiron 1440)
+	_ Para não ter falhas de inicialização da instalação do Linux Mint 20.x, utilizei o recurso 
+	_ de Modo de Compatibilidade, recomendado para equipamentos legados (inicialização em modo 
+	_ de compatibilidade e mais lento no Dell Inspiron 1440)
+
+	OBSERVAÇÃO IMPORTANTE: no Linux Mint 21.x a falha de inicialização não acontece mais no
+	Dell Inspiron 1440, a inicialização pode ser feita de forma normal.
 
 #05_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless)<br>
 
@@ -78,7 +81,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	_ de particionamento (instalação padrão), Hard Disk WD usado para armazenamento de arquivos e 
 	_ backup (case Akasa AK-OA2SSA-BKV2 2,5").
 
-	_ OBSERVAÇÃO IMPORTANTE: sempre utilizar o software Gparted para remover todas as partições
+	_ OBSERVAÇÃO IMPORTANTE: sempre utilizar o software GParted para remover todas as partições
 	_ existente no disco que será feito a instalação do Linux Mint, isso deixar o sistema mais
 	_ seguro e não causa o problemas de Múltiplos Boots.
 

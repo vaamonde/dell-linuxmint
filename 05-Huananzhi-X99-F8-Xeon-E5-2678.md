@@ -59,6 +59,10 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	_ particionamento (instalação padrão), SSD Adata SU630 usado para armazenamento de arquivos, 
 	_ backup e jogos.
 
+	_ OBSERVAÇÃO IMPORTANTE: sempre utilizar o software GParted para remover todas as partições
+	_ existente no disco que será feito a instalação do Linux Mint, isso deixar o sistema mais
+	_ seguro e não causa o problemas de Múltiplos Boots.
+	
 #06_ Placa de Rede Sem-Fio (Wi-Fi/Wireless)
 
 	_ Utilização do Adaptador Sem-Fio TP-Link 300Mbps Modelo TL-WN821N, já é reconhecido no Linux Mint 

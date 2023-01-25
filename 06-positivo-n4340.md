@@ -60,6 +60,10 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	_ Modelo CVB-8D256, Hard Disk para a instalação do Linux Mint, sem necessidade de particionamento
 	_ (instalação padrão).
 
+	_ OBSERVAÇÃO IMPORTANTE: sempre utilizar o software GParted para remover todas as partições
+	_ existente no disco que será feito a instalação do Linux Mint, isso deixar o sistema mais
+	_ seguro e não causa o problemas de Múltiplos Boots.
+	
 #07_ Pós-Instalação do Linux Mint 20.1 Ulyssa, 20.2 Uma, 20.3 Una, 21 Vanessa ou 21.1 Vera<br>
 
 	_ Atualização do sistema utilizando o MintUpdate;
