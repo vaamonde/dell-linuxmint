@@ -114,8 +114,11 @@ vantagens em relação a partição swap.
 	sudo smartctl -a /dev/nvme0n1
 	sudo fstrim -v /home/vaamonde
 
-	sudo systemctl status fstrim (padrão desativado: Active: inactive (dead))
-	sudo systemctl status fstrim.timer (padrão ativado: Active: active (waiting))
+	#verificando o status do serviço do FSTRIM (padrão desativado: Active: inactive (dead))
+	sudo systemctl status fstrim
+	
+	#verificando o status do serviçco do FSTRIM.TIMER (padrão ativado: Active: active (waiting))
+	sudo systemctl status fstrim.timer
 
 #04_ Verificando o serviço de Suspender/Hibernação no Linux Mint	
 
@@ -128,9 +131,14 @@ vantagens em relação a partição swap.
 	Já o modo “Suspender” apenas desliga sua tela e deixa o computador suspenso temporariamente. 
 	Outra diferença entre os dois modos, está na hora de voltar ao trabalho.
 
-	sudo systemctl status hibernate.target (padrão desativado: Active: inactive (dead))
-	sudo systemctl status suspend.target (padrão desativado: Active: inactive (dead))
-	sudo systemctl status suspend-then-hibernate.target (padrão desativado: Active: inactive (dead))
+	#verificando o status do serviço do HIBERNATE.TARGET (padrão desativado: Active: inactive (dead))
+	sudo systemctl status hibernate.target 
+
+	#verificando o status do serviço do SUSPEND.TARGET (padrão desativado: Active: inactive (dead))
+	sudo systemctl status suspend.target 
+
+	#verificando o statuso do serviço do SUSPEND-THEN-HIBERNATE.TARGET (padrão desativado: Active: inactive (dead))
+	sudo systemctl status suspend-then-hibernate.target 
 
 #05_ Limpeza do Cache da Memória RAM no Linux Mint
 
