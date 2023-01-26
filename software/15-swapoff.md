@@ -52,8 +52,15 @@ vantagens em relação a partição swap.
 	#opção do coma do df: -h (human-readable)
 	sudo swapon --show
 	sudo ls -lh /swapfile
-	sudo inxi -Duxxx
 	sudo df -h
+
+	#OPÇÃO DO INXI PARA O LINUX MINT 20.x
+	#opção do comando inxi: -Duxxx -D (disk), -u (uuid), -xxx (extra data levels)
+	sudo inxi -Duxxx
+
+	#OPÇÃO DO INXI PARA O LINUX MINT 21.x
+	#opção do comando inxi: -Duxxx -D (disk), -P (Partition), -xxx (extra data levels)
+	sudo inxi -DPxxx
 
 	#opção do comando swapoff: -v (verbose)
 	sudo swapoff -v /swapfile
@@ -67,6 +74,7 @@ vantagens em relação a partição swap.
 			#swapfile	none	swap	sw	0	0
 		ESC SHIFT :x <Enter>
 	
+	OBSERVAÇÃO IMPORTANTE: SÓ UTILIZAR A SEGUNDA OPÇÃO SE FOR REALMENTE NECESSÁRIO
 	#Opção-02: Remover a linha de configuração do Swapfile no arquivo fstab
 	#OBSERVAÇÃO: utilizar essa opção somente se necessário, recomendo comentar a linha do 
 	#swapfile no arquivo fstab.
@@ -81,9 +89,17 @@ vantagens em relação a partição swap.
 	sudo reboot
 
 	#Verificando as informações do Swapfile no Linux Mint
+	#opção do comando df: -h (human-readable)
 	sudo swapon --show
-	sudo inxi -Duxxx
 	sudo df -h
+
+	#OPÇÃO DO INXI PARA O LINUX MINT 20.x
+	#opção do comando inxi: -Duxxx -D (disk), -u (uuid), -xxx (extra data levels)
+	sudo inxi -Duxxx
+
+	#OPÇÃO DO INXI PARA O LINUX MINT 21.x
+	#opção do comando inxi: -Duxxx -D (disk), -P (Partition), -xxx (extra data levels)
+	sudo inxi -DPxxx
 
 #03_ Verificando o serviço do TRIM SSD ATA no Linux Mint
 
