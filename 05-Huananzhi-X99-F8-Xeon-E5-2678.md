@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 02/07/2021<br>
-#Data de atualização: 24/01/2023<br>
-#Versão: 0.21<br>
+#Data de atualização: 26/01/2023<br>
+#Versão: 0.22<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -85,9 +85,12 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 #08_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.15.x suportado até 2025)<br>
 
-		sudo apt update
+		#INSTALAÇÃO DO KERNEL OEM LINUX MINT 20.x (KERNEL >= 5.14)
+		sudo apt install linux-oem-20.04 fdutils
+		sudo reboot (Reinicializar o Sistema)
 		sudo uname -a
-		sudo apt install linux-oem-20.04 fdutils (Linux Mint Versão 20.x)
+
+		#INSTALAÇÃO DO KERNEL OEM LINUX MINT 21.x (KERNEL >= 5.14, KERNEL >= 6.0 e KERNEL >= 6.1)
 		sudo apt install linux-oem-22.04a fdutils (Linux Mint Versão 21.x - Kernel >= 5.17)
 		sudo apt install linux-oem-22.04b fdutils (Linux Mint Versão 21.x - Kernel >= 6.0)
 		sudo apt install linux-oem-22.04c fdutils (Linux Mint Versão 21.x - Kernel >= 6.1)
