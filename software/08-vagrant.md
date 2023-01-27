@@ -7,13 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 10/01/2023<br>
-#Versão: 0.05<br>
+#Data de atualização: 27/01/2023<br>
+#Versão: 0.06<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 #Instalação do HashiCorp Vagrant no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do HashiCorp Vagrant no Linux Mint  21 Vanessa e 21.1 Vera x64
+#Instalação do HashiCorp Vagrant no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Site Oficial do Vagrant: https://www.vagrantup.com/<br>
 Site Oficial do Packer: https://www.packer.io/<br>
@@ -52,29 +52,25 @@ Providers (Provedores) cloud do Vagrant: AWS EC2 VPS, Google GCE, Microsoft Azur
 
 #02_ Adicionando a Chave GPG do Vagrant no Linux Mint<br>
 
-	#ADICIONANDO AS CHAVES DO REPOSITÓRIO NO LINUX MINT 20.x
-	#opções do comando curl: -f (fail), -s (silent), -S (show-error), -L (location)
-	curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
-
-	#ADICIONANDO AS CHAVES DO REPOSITÓRIO NO LINUX MINT 21.x
 	#opções do comando wget: -q (quiet), -O (output file), - (file name)
 	wget -q -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp.gpg > /dev/null 2>&1
 
 #03_ Adicionando o Repositório do Vagrant no Linux Mint<br>
 
 	#ADICIONANDO O REPOSITÓRIO NO LINUX MINT 20.x
-	sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com focal main"
+	echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com focal main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
 
 	#ADICIONANDO O REPOSITÓRIO NO LINUX MINT 21.x
-	sudo apt-add-repository "deb [arch=amd64 signed-by=/usr/share/keyrings/hashicorp.gpg] https://apt.releases.hashicorp.com jammy main"
+	echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com jammy main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
 
 #04_ Atualizando as Lista do Apt com o novo Repositório do Vagrant no Linux Mint<br>
 
 	sudo apt update
 
-#05_ Instalando o Vagrant e o Packer no Linux Mint<br>
+#05_ Instalando o Vagrant e o Packer e verificando a sua versão no Linux Mint<br>
 
 	sudo apt install vagrant packer vim git tree python3 python2
+
 	vagrant --version
 	packer --version
 
