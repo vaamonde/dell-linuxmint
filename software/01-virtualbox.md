@@ -115,7 +115,7 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 	OBSERVAÇÃO IMPORTANTE: recomendo fazer a instalação da nova versão do VirtualBOX 7.0.x
 	sudo apt update
 	
-	#INSTALANDO O VIRTUALBOX VERSÃO 6.1.x (NÃO MAIS RECOMENDADO A SUA INSTALAÇÃO)
+	#INSTALANDO O VIRTUALBOX VERSÃO 6.1.x (NÃO RECOMENDADO MAIS A SUA INSTALAÇÃO)
 	sudo apt install virtualbox-6.1 cpu-checker libvirt-clients git vim python2 python3
 	
 	#INSTALANDO O VIRTUALBOX VERSÃO 7.0.x
@@ -130,7 +130,7 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 	OBSERVAÇÃO: PROCEDIMENTO É IGUAL NA VERSÃO DO VIRTUALBOX 6.1 E 7.0
 	Link para download: https://www.virtualbox.org/wiki/Downloads
-		Opção: VirtualBox 7.0.6 Oracle VM VirtualBox Extension Pack
+		Opção: VirtualBox 7.x Oracle VM VirtualBox Extension Pack
 		Clique em: All supported platforms
 
 	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
@@ -158,7 +158,7 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 	OBSERVAÇÃO: PROCEDIMENTO É IGUAL NA VERSÃO DO VIRTUALBOX 6.1 E 7.0
 	Link para download: https://www.virtualbox.org/wiki/Downloads
-		Opção: VirtualBox 7.0.6 Oracle VM VirtualBox Extension Pack
+		Opção: VirtualBox 7.x Oracle VM VirtualBox Extension Pack
 		Clique em: All supported platforms
 
 	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
