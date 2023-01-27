@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 21/01/2023<br>
-#Data de atualização: 22/01/2023<br>
-#Versão: 0.02<br>
+#Data de atualização: 27/01/2023<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -269,8 +269,15 @@ Site Oficial do Markdown Guide: https://www.markdownguide.org/
 	#criando um novo Repositório Local com o Git e enviando as confirmações (commit) para o Repositório Remoto do Github
 	mkdir -v vaamonde
 	cd vaamonde
+		
+		#Crie um repositório Git vazio ou reinicie um existente
 		git init
 		ls -lha
+
+		#Troque de ramificação ou restaure os arquivos da árvore de trabalho
+		git checkout -b main
+		git checkout -b master
+
 		echo "#Teste de versionamento utilizando o Git" > teste.sh
 		git add * ou git add . (recomendado)
 		#opção do comando git commit: -m (message)
