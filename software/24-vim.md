@@ -70,6 +70,7 @@ Site Oficial do Aurelio.net: https://aurelio.net/vim/
 	man vim
 	vim --help
 	vimtutor
+
 	<Esc> shift :help <Enter>
 	<Esc> F1
 	<Esc> shift :q <Enter>
