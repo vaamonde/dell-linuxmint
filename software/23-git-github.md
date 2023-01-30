@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 21/01/2023<br>
-#Data de atualização: 27/01/2023<br>
-#Versão: 0.03<br>
+#Data de atualização: 30/01/2023<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -62,7 +62,7 @@ Site Oficial do Markdown Guide: https://www.markdownguide.org/
 	git config --global user.name "Robson Vaamonde"
 	
 	#Seu endereço de e-mail que vai ser utilizado em qualquer commit (confirmação) recém-criado.
-	#DICA: recomendo você usar o seu endereço de autenticação do Github
+	#DICA: recomendo você usar o seu endereço de email utilizado na autenticação do Github
 	git config --global user.email boraparapratica@gmail.com
 	
 	#Seu editor de texto padrão para todos os commit (confirmação) e tags.
@@ -200,7 +200,7 @@ Site Oficial do Markdown Guide: https://www.markdownguide.org/
 					<Generate token>
 				Copiar o Token no ícone: copiar para área de transferência e salvar.
 
-#13_ Utilizando o comando Git no no Linux Mint e sincronizando com nosso Repositório Remoto no Github<br>
+#13_ Utilizando o comando Git no no Linux Mint e sincronizando com o nosso Repositório Remoto no Github<br>
 
 	#clonando um Repositório Remoto do Github Localmente
 	git clone https://github.com/rsvaamonde/devops
@@ -274,26 +274,32 @@ Site Oficial do Markdown Guide: https://www.markdownguide.org/
 		git init
 		ls -lha
 
+		#OBSERVAÇÃO IMPORTANTE: não foi comentado no vídeo, mais por padrão no Linux Mint
+		todo repositório novo criado está no Branch: MASTER, muitas vezes recomendamos que
+		o Branch padrão seja o: MAIN
+		
 		#Troque de ramificação ou restaure os arquivos da árvore de trabalho
+		#opção do comando git checkout: -b (new_branch)
 		git checkout -b main
 		git checkout -b master
 
 		echo "#Teste de versionamento utilizando o Git" > teste.sh
 		git add * ou git add . (recomendado)
+		
 		#opção do comando git commit: -m (message)
 		git commit -m "Criação do arquivo teste.sh"
 		git status
 		git show
 		git log
 		
-		OBSERVAÇÃO IMPORTANTE: antigamente o Github permitia fazer o comando git push
-		e se o diretório remoto não existir no Github ele fazer a criação, agora esse
-		recurso não funciona, sendo necessário fazer a criação do repositório remoto
-		de forma simples e depois adicionar no remoto local a referência.
+		OBSERVAÇÃO IMPORTANTE: antigamente o Github permitia fazer o comando git push se o 
+		diretório remoto não existir no Github ele fazer a criação, agora esse recurso não 
+		funciona, sendo necessário fazer a criação do repositório remoto de forma simples 
+		e depois adicionar no remoto local a referência.
 		
 		git remote add origin https://github.com/rsvaamonde/vaamonde.git
 		#opção do comando git push: -u (set-upstream)
 		git push -u origin master
 
-	#automatizando as mudanças do Repositório Local com o Repositório Remoto do Github no bash/shell
+	#Automatizando as mudanças do Repositório Local com o Repositório Remoto do Github no bash/shell
 	git pull && git add . && git commit -m "Atualização" && git push
