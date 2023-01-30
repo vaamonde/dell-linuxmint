@@ -149,16 +149,16 @@ Site Oficial do Aurelio.net: https://aurelio.net/vim/
 
 #18_ Formatação de alinhamento no editor de Texto VIM
 
-	<Esc> :left <Enter>   <-- alinhamento de texto para a esquerda
-	<Esc> :right <Enter>  <-- alinhamento de texto centralizado
-	<Esc> :center <Enter> <-- alinhamento de texto para a direita
+	<Esc> shift :left <Enter>   <-- alinhamento de texto para a esquerda
+	<Esc> shift :right <Enter>  <-- alinhamento de texto centralizado
+	<Esc> shift :center <Enter> <-- alinhamento de texto para a direita
 
 #19_ Dividindo a tela horizontalmente no editor de Texto VIM (split = dividir)
 
-	<Esc> :split
+	<Esc> shift :split
 	Ctrl W
 
 #20_ Dividindo a tela verticalmente no editor de Texto VIM (vsplit = dividir tela vertical)
 
-	<Esc> :vsplit
+	<Esc> shift :vsplit
 	Ctrl W
