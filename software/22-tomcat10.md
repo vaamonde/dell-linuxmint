@@ -50,7 +50,7 @@ Site Oficial do OpenJDK: https://openjdk.org/
 	#INSTALANDO O OPENJDK E OPENJRE NO LINUX MINT 20.x
 	sudo apt install git vim openjdk-17-jdk openjdk-17-jre software-properties-common build-essential
 
-	#INSTALANDO O ECLIPSE IDE NO LINUX MINT 21.x
+	#INSTALANDO O OPENJDK E OPENJRE NO LINUX MINT 21.x
 	sudo apt install git vim openjdk-17-jdk openjdk-17-jre software-properties-common build-essential (Versão 17)
 	sudo apt install git vim openjdk-18-jdk openjdk-18-jre software-properties-common build-essential (Versão 18)
 	sudo apt install git vim openjdk-19-jdk openjdk-19-jre software-properties-common build-essential (Versão 19)
