@@ -99,6 +99,7 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 	#ADICIONANDO AS CHAVES DO REPOSITÓRIO NO LINUX MINT 20.x
 	#opções do comando wget: -q (quiet), -O (output-document), - (file name)
+	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
 	wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 	wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
 
