@@ -61,7 +61,6 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
 	#opção do comando gpg: -o (output)
 	curl -fsSL https://www.mongodb.org/static/pgp/server-6.0.asc | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/mongodb-6.gpg
-	#wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
 
 #04_ Criando o repositório do MongoDB Server no Linux Mint<br>
 

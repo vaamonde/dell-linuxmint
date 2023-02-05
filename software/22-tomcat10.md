@@ -131,6 +131,7 @@ Site Oficial do OpenJDK: https://openjdk.org/
 	/opt/tomcat/conf <-- Diretório das configurações do Apache Tomcat Server
 	/opt/tomcat/conf/server.xml <-- Arquivo de configuração do Servidor do Apache Tomcat Server
 	/opt/tomcat/conf/tomcat-users.xml <-- Arquivo de configuração dos Usuários do Apache Tomcat Server
+	/opt/tomcat/conf/context.xml <-- Arquivo de configuração do Aplicativo eb do Apache Tomcat Server
 	/opt/tomcat/logs <-- Diretório dos Logs do Apache Tomcat Server
 	/opt/tomcat/webapps <-- Diretório das Aplicações Web do Apache Tomcat Server
 
