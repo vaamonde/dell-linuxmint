@@ -162,6 +162,10 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
 	*Após baixar o pacote, clicar duas vezes no mesmo e seguir os procedimentos na tela.
+	<Instalar>
+		Rolar a barra de rolagem até o final
+	<Eu Concordo>
+		Digite a senha do seu usuário clique em: <Autenticar>
 
 #07_ Atualizando o VirtualBOX 6.1 para a versão nova versão 7.0<br>
 
@@ -190,6 +194,10 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
 	*Após baixar o pacote, clicar duas vezes no mesmo e seguir os procedimentos na tela
+	<Instalar>
+		Rolar a barra de rolagem até o final
+	<Eu Concordo>
+		Digite a senha do seu usuário clique em: <Autenticar>
 
 #09_ Corrigindo a Falha do VirtualBOX 7.0 em relação ao erro: Failed to enumerate host USB devices
 
