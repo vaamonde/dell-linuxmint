@@ -55,14 +55,14 @@ Site Oficial do Aurelio.net: https://aurelio.net/vim/
 
 #04_ Modos do editor de Texto VIM
 
-	Modo                Tecla                           Rodapé              Descrição 
+	Modo                Tecla                           Rodapé              DESCrição 
 	---------------------------------------------------------------------------------------------------------
-	de Inserção         i ou Insert                     -- INSERÇÃO --      Inserção de texto
-	de Comandos         <Esc>                           Comandos de manipulação de texto
-	de Linha de comando <Esc> shift : (dois pontos)     :                   Comandos de manipulação arquivo 
-	de Visual           <Esc> v                         -- VISUAL --        Seleção visual de texto
-	de Busca            <Esc> /                         /                   Busca de padrões no texto
-	de Reposição        <Esc> shift R ou Insert/Insert  -- SUBSTITUIÇÃO --  Inserção sobrescrevendo
+	de Inserção         i ou INSERT                     -- INSERÇÃO --      Inserção de texto
+	de Comandos         <ESC>                           Comandos de manipulação de texto
+	de Linha de comando <ESC> SHIFT : (dois pontos)     :                   Comandos de manipulação arquivo 
+	de Visual           <ESC> v                         -- VISUAL --        Seleção visual de texto
+	de Busca            <ESC> /                         /                   Busca de padrões no texto
+	de Reposição        <ESC> SHIFT R ou INSERT/INSERT  -- SUBSTITUIÇÃO --  Inserção sobrESCrevendo
 	---------------------------------------------------------------------------------------------------------
 
 #05_ Ajuda do editor de Texto VIM (q = quit)
@@ -71,94 +71,101 @@ Site Oficial do Aurelio.net: https://aurelio.net/vim/
 	vim --help
 	vimtutor
 
-	<Esc> shift :help <Enter>
-	<Esc> F1
-	<Esc> shift :q <Enter>
+	<ESC> SHIFT :help <Enter>
+	<ESC> SHIFT :q <Enter>
+
+	<ESC> F1
+	<ESC> SHIFT :q <Enter>
 
 #06_ Saindo do editor de Texto VIM (q = quit | a = all | ! = force)
 
-	<Esc> shift :q <Enter>
-	<Esc> shift :q! <Enter>
-	<Esc> shift :qa! <Enter>
+	<ESC> SHIFT :q <Enter>
+	<INSERT>
+		Robson Vaamonde
+	<ESC> SHIFT :q! <Enter>
+
+	<INSERT>
+		Robson Vaamonde
+	<ESC> SHIFT :qa! <Enter>
 
 #07_ Salvando arquivo no editor de Texto VIM (w = write | wq = write/quit | x = write/quit)
 
-	<Esc> shift :w teste01.txt <Enter>
-	<Esc> shift :wq <Enter>
-	<Esc> shift :x <Enter>
+	<ESC> SHIFT :w teste01.txt <Enter>
+	<ESC> SHIFT :wq <Enter>
+	<ESC> SHIFT :x <Enter>
 
 #08_ Criando um novo arquivo no editor de Texto VIM (enew = new file | w! = write/force | sav = save as)
 
 	vim teste01.txt <Enter>
-	<Esc> shift :enew <Enter>
-	<Esc> shift :w! teste01.txt <Enter>
-	<Esc> shift :sav teste02.txt <Enter>
+	<ESC> SHIFT :enew <Enter>
+	<ESC> SHIFT :w! teste01.txt <Enter>
+	<ESC> SHIFT :sav teste02.txt <Enter>
 
 #09_ Abrindo um arquivo no editor de Texto VIM (e = explorer | o TAB funciona)
 
-	<Esc> shift :e teste01.txt <Enter>
-	<Esc> shift :e. <Enter>
+	<ESC> SHIFT :e teste01.txt <Enter>
+	<ESC> SHIFT :e. <Enter>
 
 #10_ Executando comandos externos no editor de Texto VIM (o TAB funciona)
 
-	<Esc> shift :!ls -lh <Enter>
+	<ESC> SHIFT :!ls -lh <Enter>
 
 #11_ Habilitando recursos no editor de Texto VIM
 
-	<Esc> shift :set number <Enter>	<-- mostra número da linha
-	<Esc> shift :set ignorecase <Enter> <-- ignora case insensitive na busca
-	<Esc> shift :set syntax on <Enter> <-- identificação da linguagem
-	<Esc> shift :set autoindent <Enter> <-- indentação automática
-	<Esc> shift :set showmatch <Enter> <-- completa as chaves e colchetes quando você os fecha
-	<Esc> shift :set autowrite <Enter> <-- salva o arquivo a cada alteração
+	<ESC> SHIFT :set number <Enter>	<-- mostra número da linha
+	<ESC> SHIFT :set ignorecase <Enter> <-- ignora case insensitive na busca
+	<ESC> SHIFT :set syntax on <Enter> <-- identificação da linguagem
+	<ESC> SHIFT :set autoindent <Enter> <-- indentação automática
+	<ESC> SHIFT :set showmatch <Enter> <-- completa as chaves e colchetes quando você os fecha
+	<ESC> SHIFT :set autowrite <Enter> <-- salva o arquivo a cada alteração
 
 #12_ Arquivo de configuração do editor de Texto VIM
 
-	<Esc> shift :!ls -lha /etc/vim/vimrc
-	<Esc> shift :!cat /etc/vim/vimrc
-	<Esc> shift :e /etc/vim/vimrc
-	<Esc> shift :!sudo vim /etc/vim/vimrc
+	<ESC> SHIFT :!ls -lha /etc/vim/vimrc
+	<ESC> SHIFT :!cat /etc/vim/vimrc
+	<ESC> SHIFT :e /etc/vim/vimrc
+	<ESC> SHIFT :!sudo vim /etc/vim/vimrc
 
 #13_ Deletando caracteres e linhas no editor de Texto VIM (x = delete char | d = delete | dw = delete next word | G=end of file)
 
-	<Esc> x		<-- deleta carácter por carácter
-	<Esc> dw	<-- deleta palavra por palavra
-	<Esc> dd	<-- deleta uma linha inteira
+	<ESC> x		<-- deleta carácter por carácter
+	<ESC> dw	<-- deleta palavra por palavra
+	<ESC> dd	<-- deleta uma linha inteira
 	<ESC> dG 	<-- deleta todo o conteúdo do arquivo
 
 #14_ Desfazendo uma alteração no editor de Texto VIM (u = undo | . repeat)
 
-	<Esc> u
-	<Esc> .
+	<ESC> u
+	<ESC> .
 
 #15_ Copiando palavras ou linhas no editor de Texto VIM (y = yank)
 
-	<Esc> v		<-- selecionar o texto com os direcionadores
-	<Esc> y		<-- copia o texto
-	<Esc> yy	<-- copiando a linha inteira
+	<ESC> v		<-- selecionar o texto com os direcionadores
+	<ESC> y		<-- copia o texto
+	<ESC> yy	<-- copiando a linha inteira
 
 #16_ Colando palavras ou linhas no editor de Texto VIM (p = paste after)
 
-	<Esc> i		<-- colocar o curso no local que desejado para colar
-	<Esc> p		<-- colar o texto
+	<ESC> i		<-- colocar o curso no local que desejado para colar
+	<ESC> p		<-- colar o texto
 
 #17_ Localizando palavras no editor de Texto VIM (/ = find | n = next find)
 
-	<Esc> /palavra <Enter>
+	<ESC> /palavra <Enter>
 	n		<-- localiza a próxima ocorrência
 
 #18_ Formatação de alinhamento no editor de Texto VIM
 
-	<Esc> shift :left <Enter>   <-- alinhamento de texto para a esquerda
-	<Esc> shift :right <Enter>  <-- alinhamento de texto centralizado
-	<Esc> shift :center <Enter> <-- alinhamento de texto para a direita
+	<ESC> SHIFT :left <Enter>   <-- alinhamento de texto para a esquerda
+	<ESC> SHIFT :right <Enter>  <-- alinhamento de texto centralizado
+	<ESC> SHIFT :center <Enter> <-- alinhamento de texto para a direita
 
 #19_ Dividindo a tela horizontalmente no editor de Texto VIM (split = dividir)
 
-	<Esc> shift :split
+	<ESC> SHIFT :split
 	Ctrl W
 
 #20_ Dividindo a tela verticalmente no editor de Texto VIM (vsplit = dividir tela vertical)
 
-	<Esc> shift :vsplit
+	<ESC> SHIFT :vsplit
 	Ctrl W
