@@ -163,7 +163,7 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
 	*Após baixar o pacote, clicar duas vezes no mesmo e seguir os procedimentos na tela.
 	<Instalar>
-		Rolar a barra de rolagem até o final
+		Descer a barra de rolagem até o final
 	<Eu Concordo>
 		Digite a senha do seu usuário clique em: <Autenticar>
 
@@ -195,7 +195,7 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
 	*Após baixar o pacote, clicar duas vezes no mesmo e seguir os procedimentos na tela
 	<Instalar>
-		Rolar a barra de rolagem até o final
+		Descer a barra de rolagem até o final
 	<Eu Concordo>
 		Digite a senha do seu usuário clique em: <Autenticar>
 
