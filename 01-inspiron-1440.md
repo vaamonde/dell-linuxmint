@@ -130,7 +130,11 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 		sudo apt update
 		sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
-		sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5 beignet-opencl-icd (Linux Mint Versão 20.x)
+		
+		#INSTALAÇÃO DOS DRIVERS VGA DA INTEL GRAPHICS NO LINUX MINT 20.x
+		sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5 beignet-opencl-icd
+		
+		#INSTALAÇÃO DOS DRIVERS VGA DA INTEL GRAPHICS NO LINUX MINT 21.x
 		sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5 (Linux Mint Versão 21.x)
 		sudo reboot (Reinicializar o Sistema)
 
