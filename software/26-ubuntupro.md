@@ -7,7 +7,7 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 05/02/2023<br>
-#Data de atualização: 05/02/2023<br>
+#Data de atualização: 08/02/2023<br>
 #Versão: 0.01<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
@@ -18,7 +18,8 @@
 Site Oficial do Ubuntu Pro: https://ubuntu.com/pro<br>
 Site Oficial dos Procedimentos do Ubuntu Pro: https://ubuntu.com/pro/tutorial<br>
 Site Oficial do Ubuntu One: https://login.ubuntu.com/<br>
-Site Oficial do Ubuntu CVE: https://ubuntu.com/security/cves
+Site Oficial do Ubuntu CVE: https://ubuntu.com/security/cves<br>
+Site Oficial do Ubuntu Membership: https://wiki.ubuntu.com/Membership
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
@@ -71,7 +72,7 @@ Site Oficial do Ubuntu CVE: https://ubuntu.com/security/cves
 #04_ Verificando a versão do Ubuntu Advantage Tools no Linux Mint<br>
 
 	OBSERVAÇÃO IMPORTANTE: a Canonical recomenda que a versão do Ubuntu Pro Client seja 
-	>= 27.13.1
+	>= 27.13.x
 
 	Terminal: Ctrl + Alt + T
 
