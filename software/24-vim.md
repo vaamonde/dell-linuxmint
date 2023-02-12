@@ -101,6 +101,7 @@ Site Oficial do Aurelio.net: https://aurelio.net/vim/
 
 	vim
 		<ESC> SHIFT :w teste01.txt <Enter>
+		<ESC> SHIFT :q <Enter>
 	
 	vim teste01.txt
 		<ESC> SHIFT :wq <Enter>
@@ -126,12 +127,12 @@ Site Oficial do Aurelio.net: https://aurelio.net/vim/
 
 #11_ Habilitando recursos no editor de Texto VIM
 
-	<ESC> SHIFT :set number <Enter>	<-- mostra número da linha
-	<ESC> SHIFT :set ignorecase <Enter> <-- ignora case insensitive na busca
-	<ESC> SHIFT :set syntax on <Enter> <-- identificação da linguagem
-	<ESC> SHIFT :set autoindent <Enter> <-- indentação automática
-	<ESC> SHIFT :set showmatch <Enter> <-- completa as chaves e colchetes quando você os fecha
-	<ESC> SHIFT :set autowrite <Enter> <-- salva o arquivo a cada alteração
+	<ESC> SHIFT :set number <Enter>	      <-- mostra número da linha
+	<ESC> SHIFT :set ignorecase <Enter>   <-- ignora case insensitive na busca
+	<ESC> SHIFT :set syntax on <Enter>    <-- identificação da linguagem
+	<ESC> SHIFT :set autoindent <Enter>   <-- indentação automática
+	<ESC> SHIFT :set showmatch <Enter>    <-- completa as chaves e colchetes quando você os fecha
+	<ESC> SHIFT :set autowrite <Enter>    <-- salva o arquivo a cada alteração
 
 #12_ Arquivo de configuração do editor de Texto VIM
 
@@ -142,10 +143,10 @@ Site Oficial do Aurelio.net: https://aurelio.net/vim/
 
 #13_ Deletando caracteres e linhas no editor de Texto VIM (x = delete char | d = delete | dw = delete next word | G=end of file)
 
-	<ESC> x		<-- deleta carácter por carácter
-	<ESC> dw	<-- deleta palavra por palavra
-	<ESC> dd	<-- deleta uma linha inteira
-	<ESC> dG 	<-- deleta todo o conteúdo do arquivo
+	<ESC> x     <-- deleta carácter por carácter
+	<ESC> dw    <-- deleta palavra por palavra
+	<ESC> dd    <-- deleta uma linha inteira
+	<ESC> dG    <-- deleta todo o conteúdo do arquivo
 
 #14_ Desfazendo uma alteração no editor de Texto VIM (u = undo | . repeat)
 
@@ -154,19 +155,19 @@ Site Oficial do Aurelio.net: https://aurelio.net/vim/
 
 #15_ Copiando palavras ou linhas no editor de Texto VIM (y = yank)
 
-	<ESC> v		<-- selecionar o texto com os direcionadores
-	<ESC> y		<-- copia o texto
-	<ESC> yy	<-- copiando a linha inteira
+	<ESC> v     <-- selecionar o texto com os direcionadores
+	<ESC> y     <-- copia o texto
+	<ESC> yy    <-- copiando a linha inteira
 
 #16_ Colando palavras ou linhas no editor de Texto VIM (p = paste after)
 
-	<ESC> i		<-- colocar o curso no local que desejado para colar
-	<ESC> p		<-- colar o texto
+	<ESC> i     <-- colocar o curso no local que desejado para colar
+	<ESC> p     <-- colar o texto
 
 #17_ Localizando palavras no editor de Texto VIM (/ = find | n = next find)
 
 	<ESC> /palavra <Enter>
-	n		<-- localiza a próxima ocorrência
+		n     <-- localiza a próxima ocorrência
 
 #18_ Formatação de alinhamento no editor de Texto VIM
 
@@ -176,10 +177,17 @@ Site Oficial do Aurelio.net: https://aurelio.net/vim/
 
 #19_ Dividindo a tela horizontalmente no editor de Texto VIM (split = dividir)
 
-	<ESC> SHIFT :split
+	<ESC> SHIFT :split <Enter>
 	Ctrl W
 
 #20_ Dividindo a tela verticalmente no editor de Texto VIM (vsplit = dividir tela vertical)
 
-	<ESC> SHIFT :vsplit
+	<ESC> SHIFT :vsplit <Enter>
 	Ctrl W
+
+#21_ Início e Fim de um arquivo movendo o cursor para uma Linha específica
+
+	vim /etc/services
+		<ESC> SHIFT :$ <Enter>
+		<ESC> SHIFT :0 <<Enter>
+		<ESC> SHIFT :110 <<Enter>
