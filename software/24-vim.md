@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 21/01/2023<br>
-#Data de atualização: 21/01/2023<br>
-#Versão: 0.01<br>
+#Data de atualização: 12/02/2023<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -55,51 +55,65 @@ Site Oficial do Aurelio.net: https://aurelio.net/vim/
 
 #04_ Modos do editor de Texto VIM
 
-	Modo                Tecla                           Rodapé              DESCrição 
-	---------------------------------------------------------------------------------------------------------
-	de Inserção         i ou INSERT                     -- INSERÇÃO --      Inserção de texto
-	de Comandos         <ESC>                           Comandos de manipulação de texto
-	de Linha de comando <ESC> SHIFT : (dois pontos)     :                   Comandos de manipulação arquivo 
-	de Visual           <ESC> v                         -- VISUAL --        Seleção visual de texto
-	de Busca            <ESC> /                         /                   Busca de padrões no texto
-	de Reposição        <ESC> SHIFT R ou INSERT/INSERT  -- SUBSTITUIÇÃO --  Inserção sobrESCrevendo
+	Modo                 Tecla                           Rodapé              Descrição 
+	----------------------------------------------------------------------------------------------------------
+	de Inserção          i ou INSERT                     -- INSERÇÃO --      Inserção de texto
+	de Comandos          <ESC>                                               Comandos de manipulação de texto
+	de Linha de comando  <ESC> SHIFT : (dois pontos)     :                   Comandos de manipulação arquivo 
+	de Visual            <ESC> v                         -- VISUAL --        Seleção visual de texto
+	de Busca             <ESC> /                         /                   Busca de padrões no texto
+	de Reposição         <ESC> SHIFT R ou INSERT/INSERT  -- SUBSTITUIÇÃO --  Inserção sobrescrevendo
 	---------------------------------------------------------------------------------------------------------
 
 #05_ Ajuda do editor de Texto VIM (q = quit)
 
 	man vim
+		q (quit)
 	vim --help
+	
 	vimtutor
+		<ESC> SHIFT :q <Enter>
 
-	<ESC> SHIFT :help <Enter>
-	<ESC> SHIFT :q <Enter>
+	vim
+		<ESC> SHIFT :help <Enter>
+		<ESC> SHIFT :q <Enter>
 
-	<ESC> F1
-	<ESC> SHIFT :q <Enter>
+		<ESC> F1
+		<ESC> SHIFT :q <Enter>
 
 #06_ Saindo do editor de Texto VIM (q = quit | a = all | ! = force)
 
-	<ESC> SHIFT :q <Enter>
-	<INSERT>
-		Robson Vaamonde
-	<ESC> SHIFT :q! <Enter>
+	vim
+		<ESC> SHIFT :q <Enter>
 
-	<INSERT>
-		Robson Vaamonde
-	<ESC> SHIFT :qa! <Enter>
+	vim
+		<INSERT>
+			Robson Vaamonde
+		<ESC> SHIFT :q <Enter>
+		<ESC> SHIFT :q! <Enter>
+
+	vim
+		<INSERT>
+			Robson Vaamonde
+		<ESC> SHIFT :qa! <Enter>
 
 #07_ Salvando arquivo no editor de Texto VIM (w = write | wq = write/quit | x = write/quit)
 
-	<ESC> SHIFT :w teste01.txt <Enter>
-	<ESC> SHIFT :wq <Enter>
-	<ESC> SHIFT :x <Enter>
+	vim
+		<ESC> SHIFT :w teste01.txt <Enter>
+	
+	vim teste01.txt
+		<ESC> SHIFT :wq <Enter>
+	
+	vim teste01.txt
+		<ESC> SHIFT :x <Enter>
 
 #08_ Criando um novo arquivo no editor de Texto VIM (enew = new file | w! = write/force | sav = save as)
 
-	vim teste01.txt <Enter>
-	<ESC> SHIFT :enew <Enter>
-	<ESC> SHIFT :w! teste01.txt <Enter>
-	<ESC> SHIFT :sav teste02.txt <Enter>
+	vim teste01.txt
+		<ESC> SHIFT :enew <Enter>
+		<ESC> SHIFT :w! teste01.txt <Enter>
+		<ESC> SHIFT :sav teste02.txt <Enter>
 
 #09_ Abrindo um arquivo no editor de Texto VIM (e = explorer | o TAB funciona)
 
