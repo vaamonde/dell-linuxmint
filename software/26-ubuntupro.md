@@ -93,6 +93,7 @@ Site Oficial do Ubuntu Membership: https://wiki.ubuntu.com/Membership
 
 #06_ Verificando os repositório de origem das atualizações no Linux Mint<br>
 
+	sudo pro status
 	sudo pro security-status
 	sudo pro security-status --esm-apps
 	sudo pro fix CVE-2023-23518

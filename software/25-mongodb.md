@@ -115,12 +115,17 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 
 	vim /etc/mongod.conf
 		INSERT
+			
+			#habilitando o recurso de autenticação do MongoDB
 			security:
 				authorization: enabled
+			
+			#habilitando o suporte remoto do MongoDB
 			net:
 				port: 27017
 				bindIp: 0.0.0.0
-		ESC SHIFT x <ENTER>
+
+		ESC SHIFT :x <ENTER>
 
 	sudo systemctl restart mongod
 
@@ -155,15 +160,16 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 		{
 			user: "admin",
 			pwd: "pti@2018",
-			roles: [ { role: "userAdminAnyDatabase", db: "admin" }, "readWriteAnyDatabase" ]
+			roles: [ "userAdminAnyDatabase", "dbAdminAnyDatabase", "readWriteAnyDatabase" ]
 		}
 		)
-	
+
 	db.getUsers()
 
 	exit
 
-	mongosh -u admin -p --authenticationDatabase admin
+	#opção do comando mongosh: admin (database) -u (username), -p (password)
+	mongosh admin -u admin -p
 
 #15_ Integrando o MongoDB Server com o Visual Studio Code VSCode no Linux Mint<br>
 
