@@ -16,6 +16,7 @@
 #Instalação do Microsoft Visual Studio Code VSCode no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Site Oficial do Visual Studio Code: https://code.visualstudio.com/<br>
+Site Oficial do Visual Studio Code Web: https://vscode.dev/<br>
 Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>

@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 30/01/2023<br>
-#Data de atualização: 31/01/2023<br>
-#Versão: 0.02<br>
+#Data de atualização: 13/02/2023<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -64,8 +64,13 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 
 #04_ Criando o repositório do MongoDB Server no Linux Mint<br>
 
+	#ADICIONANDO O REPOSITÓRIO DO MONGODB SERVER NO LINUX MINT 20.x
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
 	echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+
+	#ADICIONANDO O REPOSITÓRIO DO MONGODB SERVER NO LINUX MINT 21.x
+	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
+	echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
 
 #05_ Atualizando as Lista do Apt com o novo Repositório do MongoDB no Linux Mint<br>
 
@@ -111,37 +116,19 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 	#recomendado reinicializar a máquina para aplicar as permissões
 	sudo reboot
 
-#12_ Configurando o MongoDB Server para suportar autenticação e acesso Remoto<br>
-
-	vim /etc/mongod.conf
-		INSERT
-			
-			#habilitando o recurso de autenticação do MongoDB
-			security:
-				authorization: enabled
-			
-			#habilitando o suporte remoto do MongoDB
-			net:
-				port: 27017
-				bindIp: 0.0.0.0
-
-		ESC SHIFT :x <ENTER>
-
-	sudo systemctl restart mongod
-
 #12_ Testando a Conexão Local com o MongoDB Server o Linux Mint<br>
 
 	mongosh
 
 #13_ Comandos Básicos do MongoDB Server no Linux Mint<br>
 
-	#exibir os banco de dados existentes
+	#exibir os bancos de dados existentes no MongoDB
 	show dbs
 
-	#alterar o database informe
+	#alterar o database informe no MongoDB
 	use admin
 
-	#listar o database atual
+	#listar o database atual no MongoDB
 	db
 
 	#exibindo os collections do database atual
@@ -154,8 +141,10 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 
 	mongosh
 	
+		#alterar o database informe no MongoDB
 		use admin
-	
+
+		#criando o usuário admin do MongoDB
 		db.createUser(
 		{
 			user: "admin",
@@ -164,14 +153,53 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 		}
 		)
 
-	db.getUsers()
+		#visualizando os usuários do MongoDB
+		db.getUsers()
 
-	exit
+		#saindo do MongoDB
+		exit
 
+#15_ Configurando o MongoDB Server para suportar autenticação e acesso Remoto no Linux Mint<br>
+
+	sudo vim /etc/mongod.conf
+		
+		INSERT
+			
+			#habilitando o suporte remoto do MongoDB Server
+			#alterar a linha: bindIp: 127.0.0.1 para: bindIp: 0.0.0.0
+			net:
+				port: 27017
+				bindIp: 0.0.0.0
+			
+			#habilitando o recurso de autenticação do MongoDB Server
+			#descomentar a linha: #security, adicionar o valor: authorization: enabled
+			security:
+				authorization: enabled
+			
+		ESC SHIFT :x <ENTER>
+
+	sudo systemctl restart mongod
+
+#16_ Acessando o MongoDB com e sem autenticação no Linux Mint<br>
+
+	mongosh
+
+		#exibir os bancos de dados existentes no MongoDB
+		show dbs
+
+		#saindo do MongoDB Server
+		quit
+		
 	#opção do comando mongosh: admin (database) -u (username), -p (password)
 	mongosh admin -u admin -p
 
-#15_ Integrando o MongoDB Server com o Visual Studio Code VSCode no Linux Mint<br>
+		#exibir os bancos de dados existentes no MongoDB
+		show dbs
+
+		#saindo do MongoDB Server
+		quit
+
+#16_ Integrando o MongoDB Server com o Visual Studio Code VSCode no Linux Mint<br>
 
 	VSCode
 		Extensões
@@ -189,5 +217,9 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 								Connection Type: Standalone
 								Hostname: localhost
 								Port: 27017
-								Authentication: None
+								Authentication: Username/Password
+									Username: admin
+									Password: pti@2018
+									Authentication Database: admin
 						<Connect>
+					<Close>
