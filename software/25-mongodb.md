@@ -8,7 +8,7 @@
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 30/01/2023<br>
 #Data de atualização: 13/02/2023<br>
-#Versão: 0.03<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -141,23 +141,23 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 
 	mongosh
 	
-		#alterar o database informe no MongoDB
-		use admin
+	#alterar o database informe no MongoDB
+	use admin
 
-		#criando o usuário admin do MongoDB
-		db.createUser(
-		{
-			user: "admin",
-			pwd: "pti@2018",
-			roles: [ "userAdminAnyDatabase", "dbAdminAnyDatabase", "readWriteAnyDatabase" ]
-		}
-		)
+	#criando o usuário admin do MongoDB
+	db.createUser(
+	{
+		user: "admin",
+		pwd: "pti@2018",
+		roles: [ "userAdminAnyDatabase", "dbAdminAnyDatabase", "readWriteAnyDatabase" ]
+	}
+	)
 
-		#visualizando os usuários do MongoDB
-		db.getUsers()
+	#visualizando os usuários do MongoDB
+	db.getUsers()
 
-		#saindo do MongoDB
-		exit
+	#saindo do MongoDB
+	exit
 
 #15_ Configurando o MongoDB Server para suportar autenticação e acesso Remoto no Linux Mint<br>
 
@@ -168,13 +168,13 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 			#habilitando o suporte remoto do MongoDB Server
 			#alterar a linha: bindIp: 127.0.0.1 para: bindIp: 0.0.0.0
 			net:
-				port: 27017
-				bindIp: 0.0.0.0
+			  port: 27017
+			  bindIp: 0.0.0.0
 			
 			#habilitando o recurso de autenticação do MongoDB Server
 			#descomentar a linha: #security, adicionar o valor: authorization: enabled
 			security:
-				authorization: enabled
+			  authorization: enabled
 			
 		ESC SHIFT :x <ENTER>
 
@@ -184,20 +184,20 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 
 	mongosh
 
-		#exibir os bancos de dados existentes no MongoDB
-		show dbs
+	#exibir os bancos de dados existentes no MongoDB
+	show dbs
 
-		#saindo do MongoDB Server
-		quit
+	#saindo do MongoDB Server
+	quit
 		
 	#opção do comando mongosh: admin (database) -u (username), -p (password)
 	mongosh admin -u admin -p
 
-		#exibir os bancos de dados existentes no MongoDB
-		show dbs
+	#exibir os bancos de dados existentes no MongoDB
+	show dbs
 
-		#saindo do MongoDB Server
-		quit
+	#saindo do MongoDB Server
+	quit
 
 #16_ Integrando o MongoDB Server com o Visual Studio Code VSCode no Linux Mint<br>
 
