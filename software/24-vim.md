@@ -7,15 +7,15 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 21/01/2023<br>
-#Data de atualização: 12/02/2023<br>
-#Versão: 0.02<br>
+#Data de atualização: 16/02/2023<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 #Instalação do Editor de Texto Vim no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do Editor de Texto Vim no Linux Mint 21 Vanessa e 21.1 Vera x64
 
-Site Oficial do Vim: https://git-scm.com/<br>
+Site Oficial do Vim: https://www.vim.org/<br>
 Site Oficial do Aurelio.net: https://aurelio.net/vim/<br>
 Site Oficial do Vimbook: https://cassiobotaro.dev/vimbook/
 
@@ -130,10 +130,14 @@ Site Oficial do Vimbook: https://cassiobotaro.dev/vimbook/
 
 	<ESC> SHIFT :set number <Enter>	      <-- mostra número da linha
 	<ESC> SHIFT :set ignorecase <Enter>   <-- ignora case insensitive na busca
-	<ESC> SHIFT :set syntax on <Enter>    <-- identificação da linguagem
 	<ESC> SHIFT :set autoindent <Enter>   <-- indentação automática
 	<ESC> SHIFT :set showmatch <Enter>    <-- completa as chaves e colchetes quando você os fecha
 	<ESC> SHIFT :set autowrite <Enter>    <-- salva o arquivo a cada alteração
+	
+	#OBSERVAÇÃO IMPORTANTE: com essa opção habilita a seguinte mensagem é mostrada toda vez que você for 
+	#editar um arquivo: filetype unknown Aperte ENTER ou digite um comando para continuar, recomendo não
+	#usar essa opção que foi mostrada no vídeo.
+	<ESC> SHIFT :set syntax=on <Enter>    <-- identificação da linguagem
 
 #12_ Arquivo de configuração do editor de Texto VIM
 
@@ -192,3 +196,4 @@ Site Oficial do Vimbook: https://cassiobotaro.dev/vimbook/
 		<ESC> SHIFT :$ <Enter>
 		<ESC> SHIFT :0 <Enter>
 		<ESC> SHIFT :110 <Enter>
+	vim +100 /etc/services
