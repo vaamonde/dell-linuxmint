@@ -16,7 +16,8 @@
 #Instalação do Editor de Texto Vim no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Site Oficial do Vim: https://git-scm.com/<br>
-Site Oficial do Aurelio.net: https://aurelio.net/vim/
+Site Oficial do Aurelio.net: https://aurelio.net/vim/<br>
+Site Oficial do Vimbook: https://cassiobotaro.dev/vimbook/
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
@@ -189,5 +190,5 @@ Site Oficial do Aurelio.net: https://aurelio.net/vim/
 
 	vim /etc/services
 		<ESC> SHIFT :$ <Enter>
-		<ESC> SHIFT :0 <<Enter>
-		<ESC> SHIFT :110 <<Enter>
+		<ESC> SHIFT :0 <Enter>
+		<ESC> SHIFT :110 <Enter>

@@ -128,13 +128,13 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 	#alterar o database informe no MongoDB
 	use admin
 
-	#listar o database atual no MongoDB
+	#listar o database informe atual no MongoDB
 	db
 
-	#exibindo os collections do database atual
+	#exibir os collections do database informe atual no MongoDB
 	show collections
 
-	#saindo do MongoDB Server
+	#sair do MongoDB
 	quit
 
 #14_ Criando o usuário de administração do MongoDB Server no Linux Mint<br>
@@ -144,7 +144,7 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 	#alterar o database informe no MongoDB
 	use admin
 
-	#criando o usuário admin do MongoDB
+	#criando o usuário admin e suas roles do MongoDB
 	db.createUser(
 	{
 		user: "admin",
