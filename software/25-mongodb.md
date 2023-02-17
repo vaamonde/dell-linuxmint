@@ -7,7 +7,7 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 30/01/2023<br>
-#Data de atualização: 13/02/2023<br>
+#Data de atualização: 17/02/2023<br>
 #Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
@@ -52,7 +52,7 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 	#INSTALANDO AS DEPENDÊNCIAS DO MONGODB SERVER NO LINUX MINT 21.x
 	#opção do comando dpkg: -i (install)
 	sudo apt install git vim build-essential software-properties-common gnupg apt-transport-https ca-certificates
-	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.16_amd64.deb
+	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.17_amd64.deb
 	sudo dpkg -i libssl*.deb
 
 #03_ Baixando e instalando a Chave GPG do MongoDB Server no Linux Mint<br>
@@ -179,6 +179,7 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 		ESC SHIFT :x <ENTER>
 
 	sudo systemctl restart mongod
+	sudo systemctl status mongod
 
 #16_ Acessando o MongoDB com e sem autenticação no Linux Mint<br>
 
@@ -199,7 +200,7 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 	#saindo do MongoDB Server
 	quit
 
-#16_ Integrando o MongoDB Server com o Visual Studio Code VSCode no Linux Mint<br>
+#17_ Integrando o MongoDB Server com o Visual Studio Code VSCode no Linux Mint<br>
 
 	VSCode
 		Extensões
