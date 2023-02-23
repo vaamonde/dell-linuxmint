@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 30/01/2023<br>
-#Data de atualização: 17/02/2023<br>
-#Versão: 0.04<br>
+#Data de atualização: 23/02/2023<br>
+#Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -200,7 +200,27 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 	#saindo do MongoDB Server
 	quit
 
-#17_ Integrando o MongoDB Server com o Visual Studio Code VSCode no Linux Mint<br>
+#17_ Download e Instalação do MongoDB Compass no Linux Mint<br>
+
+	#Link atualizado em: 22/02/2023
+	Link Oficial do MongoDB Compass: https://downloads.mongodb.com/compass/mongodb-compass_1.35.0_amd64.deb
+	
+	01_ Na pasta de Download, clicar duas vezes no Instalador do MongoDB Compass;
+	02_ Seguir os procedimentos na tela.
+
+	Menu
+		Pesquisa Indexada: MongoDB Compass
+			New connection +
+				Advanced Connection Options
+					Authentication
+						Authentication Method: Username/Password
+							Username: admin
+							Password: pti@2018
+							Authentication Database: admin
+							Authentication Mechanism: Default
+			<Save>
+
+#18_ Integrando o MongoDB Server com o Visual Studio Code VSCode no Linux Mint<br>
 
 	VSCode
 		Extensões
@@ -224,23 +244,3 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 									Authentication Database: admin
 						<Connect>
 					<Close>
-
-#18_ Download e Instalação do MongoDB Compass no Linux Mint<br>
-
-	#Link atualizado em: 22/02/2023
-	Link Oficial do MongoDB Compass: https://downloads.mongodb.com/compass/mongodb-compass_1.35.0_amd64.deb
-	
-	01_ Na pasta de Download, clicar duas vezes no Instalador do MongoDB Compass;
-	02_ Seguir os procedimentos na tela.
-
-	Menu
-		Pesquisa Indexada: MongoDB Compass
-			New connection +
-				Advanced Connection Options
-					Authentication
-						Authentication Method: Username/Password
-							Username: admin
-							Password: pti@2018
-							Authentication Database: admin
-							Authentication Mechanism: Default
-			<Save>
