@@ -94,6 +94,7 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 	sudo systemctl start mongod
 
 	mongod --version
+	mongosh --version
 
 #09_ Verificando a Porta de Conexão do MongoDB Server no Linux Mint<br>
 
@@ -103,8 +104,8 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 #10_ Localização dos Arquivos de Configuração do MongoDB Server no Linux Mint<br>
 
 	/etc/mongod.conf	<-- arquivo de configuração do MongoDB Server
-	/var/log/mongodb	<-- diretório do arquivo de Logo do MongoDB Sever
-	/var/lib/mongodb	<-- diretório do banco de dados padrão do MongoDB Server
+	/var/log/mongodb	<-- diretório dos arquivos de Log do MongoDB Sever
+	/var/lib/mongodb	<-- diretório dos arquivos de Banco de Dados do MongoDB Server
 
 #11_ Adicionado o Usuário Local no Grupo Padrão do MongoDB Server no Linux Mint<br>
 
