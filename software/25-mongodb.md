@@ -224,3 +224,23 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 									Authentication Database: admin
 						<Connect>
 					<Close>
+
+#18_ Download e Instalação do MongoDB Compass no Linux Mint<br>
+
+	#Link atualizado em: 22/02/2023
+	Link Oficial do MongoDB Compass: https://downloads.mongodb.com/compass/mongodb-compass_1.35.0_amd64.deb
+	
+	01_ Na pasta de Download, clicar duas vezes no Instalador do MongoDB Compass;
+	02_ Seguir os procedimentos na tela.
+
+	Menu
+		Pesquisa Indexada: MongoDB Compass
+			New connection +
+				Advanced Connection Options
+					Authentication
+						Authentication Method: Username/Password
+							Username: admin
+							Password: pti@2018
+							Authentication Database: admin
+							Authentication Mechanism: Default
+			<Save>
