@@ -188,7 +188,7 @@ Site Oficial do DBeaver: https://dbeaver.io/
 	sudo systemctl restart postgresql
 	sudo systemctl status postgresql
 
-#15_ Download e Instalação do DBeaver Community no Linux Mint<br>
+#15_ Download e Instalação do DBeaver Community Edition no Linux Mint<br>
 
 	#Link atualizado em: 25/02/2023
 	Link Oficial do DBeaver Community: https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb
