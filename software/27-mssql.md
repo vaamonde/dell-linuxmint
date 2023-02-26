@@ -250,3 +250,22 @@ Notas sobre a versão do SQL Server 2022 no Linux: https://learn.microsoft.com/p
 				save password: Yes
 				profile name: LinuxMint
 			<Enable Trust server certificate>
+
+#17_ Download e Instalação do SSMS SQL Server Management Studio no Windows 10<br>
+
+	#Link atualizado em: 25/02/2023
+	Link Oficial do SSMS SQL Server Management Studio: https://download.microsoft.com/download/a/3/2/a32ae99f-b6bf-4a49-a076-e66503ccb925/SSMS-Setup-PTB.exe
+	
+	01_ Na pasta de Download, clicar duas vezes no Instalador do SSMS SQL Server Management Studio;
+	02_ Seguir os procedimentos na tela.
+
+	Menu
+		Pesquisa Indexada: SQL Server Management Studio
+			Conectar ao Servidor
+				Tipo de Servidor: Mecanismo de Banco de Dados
+				Nome do servidor: 192.168.0.115
+				Autenticação: Autenticação do SQL Server
+				Logon: sa
+				Senha: pti@2018
+				Lembrar senha: Yes
+			<Conectar>
