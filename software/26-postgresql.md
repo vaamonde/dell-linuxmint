@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 25/02/2023<br>
-#Data de atualização: 25/02/2023<br>
-#Versão: 0.01<br>
+#Data de atualização: 03/03/2023<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -16,7 +16,8 @@
 #Instalação do PostgreSQL Server 15.x no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Site Oficial do PostgreSQL: https://www.postgresql.org/<br>
-Site Oficial do DBeaver: https://dbeaver.io/
+Site Oficial do DBeaver: https://dbeaver.io/<br>
+Site Ofickial do PgAdmin: https://www.pgadmin.org/
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
@@ -107,10 +108,10 @@ Site Oficial do DBeaver: https://dbeaver.io/
 
 #10_ Localização dos Arquivos de Configuração do PostgreSQL Server no Linux Mint<br>
 
-	/etc/postgresql/15/main/postgresql.conf		<-- arquivo de configuração do Servidor PostgreSQL
-	/etc/postgresql/15/main/pg_hba.conf			<-- arquivo de liberação de rede do Servidor PostgreSQL
-	/var/log/postgresql/						<-- diretório dos Logs do Servidor PostgreSQL
-	/var/lib/postgresql/15/main					<-- diretório padrão do Banco e Dados do Servidor PostgreSQL
+	/etc/postgresql/15/main/postgresql.conf   <-- arquivo de configuração do Servidor PostgreSQL
+	/etc/postgresql/15/main/pg_hba.conf       <-- arquivo de liberação de rede do Servidor PostgreSQL
+	/var/log/postgresql/                      <-- diretório dos Logs do Servidor PostgreSQL
+	/var/lib/postgresql/15/main               <-- diretório padrão do Banco e Dados do Servidor PostgreSQL
 
 #11_ Adicionado o Usuário Local no Grupo Padrão do PostgreSQL Server no Linux Mint<br>
 
@@ -165,7 +166,7 @@ Site Oficial do DBeaver: https://dbeaver.io/
 		INSERT
 
 			#habilitando o suporte remoto do PostgreSQL Server
-			#alterar a linha : listen_addresses = 'localhost' para: listen_addresses = '*'
+			#decomentar a linha: 60 e alterar o valor de: listen_addresses = 'localhost' para: listen_addresses = '*'
 			listen_addresses = '*'
 
 		ESC SHIFT :x <ENTER>
