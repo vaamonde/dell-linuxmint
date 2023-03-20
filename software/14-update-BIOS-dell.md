@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 12/09/2021<br>
-#Data de atualização: 10/01/2023<br>
-#Versão: 0.07<br>
+#Data de atualização: 11/03/2023<br>
+#Versão: 0.08<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -70,7 +70,7 @@ EXECUTAR O PROCEDIMENTO DE ATUALIZAÇÃO DA BIOS.
 	_ Link de Download do FreeDOS: https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/distributions/test/
 		OBSERVAÇÃO IMPORTANTE: será utilizado a versão de Teste pois tem suporte a BIOS Intel, UEFI e Legada
 		Mais informações: https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/distributions/test/readme.txt
-	Selecionar a opção: FDT2301-FullUSB.zip (atualizada em: 01/01/2023)
+	Selecionar a opção: FDT2303-FullUSB.zip (atualizada em: 11/03/2023)
 
 #03_ Criando Pen Driver Bootável com suporte ao FreeDOS
 
@@ -79,10 +79,10 @@ EXECUTAR O PROCEDIMENTO DE ATUALIZAÇÃO DA BIOS.
 
 	#Descompactar o arquivo Zipado do FreeDOS
 	_ Acessar o diretório de Download;
-	_ Botão direito do mouse em cima do arquivo: FDT2301-FullUSB.zip
+	_ Botão direito do mouse em cima do arquivo: FDT2303-FullUSB.zip
 	_ Selecionar a opção: Extrai Aqui
-	_ Acessar o diretório criado: FDT2301-Full
-	_ Botão direito do mouse em cima do arquivo: T2301FULL.img
+	_ Acessar o diretório criado: FDT2303-Full
+	_ Botão direito do mouse em cima do arquivo: T2303FULL.img
 	_ Selecionar a opção: Criar dispositivo USB inicializável
 		Gravar imagem: T2301FULL.img para: SanDisk Cruzer Blade (/dev/sdb)
 		<Detalhes>
@@ -128,6 +128,14 @@ EXECUTAR O PROCEDIMENTO DE ATUALIZAÇÃO DA BIOS.
 
 	_ Ligar o Notebook: Power;
 	_ Pressionar a Tecla: F2;
-		Inspiron: Settings, General, System Information, BIOS Version
-		XPS L502X: Main, BIOS Version
-		Vostro: Main, BIOS Version
+		Inspiron: 
+			Settings, 
+				General, 
+					System Information, 
+						BIOS Version
+		XPS L502X: 
+			Main, 
+				BIOS Version
+		Vostro: 
+			Main, 
+				BIOS Version

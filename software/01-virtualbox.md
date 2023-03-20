@@ -151,6 +151,7 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 		ESC SHIFT :x <Enter>
 	sudo update-grub
 	sudo reboot
+	
 	sudo virt-host-validate
 
 #06_ Baixando e Instalando o Pacote de Extensões do Oracle VirtualBOX<br>
