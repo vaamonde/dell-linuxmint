@@ -7,7 +7,7 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 10/01/2023<br>
+#Data de atualização: 15/03/2023<br>
 #Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
@@ -61,7 +61,14 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 #03_ Instalando o Cisco Packet Tracer no Linux Mint<br>
 
 	01_ Na pasta de Download, clicar duas vezes no Instalador do Cisco Packet Tracer;
-	02_ Seguir os procedimentos na tela.
+	02_ Clicar em: <Instalar Pacote>
+	03_ Seguir os procedimentos na tela.
+
+	OBSERVAÇÃO IMPORTANTE: caso acontece falha no processo de instalação do Cisco Packet Tracer no Linux Mint
+	utilizando o Gdebi em modo gráfico, recomendo fazer a instalação em modo Terminal utilizando o dpkg.
+
+	Terminal: Ctrl + Alt + T
+	sudo dpkg -i Packet_Tracer*.deb
 
 #04_ Verificando se todas as Bibliotecas do Cisco Packet foram instaladas no Linux Mint<br>
 
@@ -90,8 +97,8 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 	#Resolvendo a falha das bibliotecas libssl.so.1.1 e libcrypto.so.1.1 no Linux Mint 21.x
 	#opção do comando dpkg: -i (install)
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
-	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.16_amd64.deb
-	sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.16_amd64.deb
+	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.17_amd64.deb
+	sudo dpkg -i libssl*.deb
 	sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
 
 #05_ Atualização para a Versão 8.2.0 do Cisco Packet Tracer
