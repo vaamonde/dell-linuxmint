@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 15/03/2023<br>
-#Versão: 0.05<br>
+#Data de atualização: 20/03/2023<br>
+#Versão: 0.06<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -61,14 +61,18 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 #03_ Instalando o Cisco Packet Tracer no Linux Mint<br>
 
 	01_ Na pasta de Download, clicar duas vezes no Instalador do Cisco Packet Tracer;
-	02_ Clicar em: <Instalar Pacote>
-	03_ Seguir os procedimentos na tela.
+	02_ Seguir os procedimentos na tela.
 
-	OBSERVAÇÃO IMPORTANTE: caso acontece falha no processo de instalação do Cisco Packet Tracer no Linux Mint
-	utilizando o Gdebi em modo gráfico, recomendo fazer a instalação em modo Terminal utilizando o dpkg.
+	OBSERVAÇÃO IMPORTANTE: se você utilizar o Gdebi para instalar o Cisco Packet Tracer e apresentar
+	falha no final da instalação, recomendo utilizar o comando: dpkg para forçar a instalação em modo
+	Terminal.
 
 	Terminal: Ctrl + Alt + T
-	sudo dpkg -i Packet_Tracer*.deb
+
+	#opção do comando dpkg: -i (install)
+	sudo dpkg -i CiscoPacketTracer*.deb
+		Na tela de: Configurando PacketTracer pressione Enter em: <OK>
+		Na tela de: Do you accept the terms of this EULA? selecione: <Sim> e <Enter>
 
 #04_ Verificando se todas as Bibliotecas do Cisco Packet foram instaladas no Linux Mint<br>
 
@@ -88,7 +92,8 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 
 	OBSERVAÇÃO IMPORTANTE: as dependências: libQt5QmlModels.so.5 e o erro: /lib/x86_64-linux-gnu/libQt5Core.so.5: 
 	version `Qt_5.15' not found não interfere diretamente no funcionamento do Cisco Packet Tracer 8.1.x ou 8.2.x
-	no Linux Mint 20.x, essas dependências fazem parte da versão do Ubuntu >= 21.04, verifique a versão do Qt5Core instalada no Linux Mint 20.x com o comando: sudo locate libQt5Core
+	no Linux Mint 20.x, essas dependências fazem parte da versão do Ubuntu >= 21.04, verifique a versão do Qt5Core 
+	instalada no Linux Mint 20.x com o comando: sudo locate libQt5Core
 
 	#INSTALANDO AS DEPENDÊNCIAS DO CISCO PACKET TRACER NO LINUX MINT 21.x
 	sudo apt install libqt5networkauth5 libqt5script5 libqt5scripttools5 libqt5texttospeech5 libqt5positioning5 \
@@ -98,9 +103,13 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 	#opção do comando dpkg: -i (install)
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
 	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.17_amd64.deb
-	sudo dpkg -i libssl*.deb
+	sudo dpkg -i libssl1.1_1.1.1*.deb
 	sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
 
 #05_ Atualização para a Versão 8.2.0 do Cisco Packet Tracer
 
 	Atualização feita em Julho/2022 - procedimento no Linux Mint versões 20.x e 21.x continua a mesma coisa.
+
+#06_ Atualização para a Versão 8.2.1 do Cisco Packet Tracer
+
+	Atualização feita em Março/2023 - procedimento no Linux Mint versões 20.x e 21.x continua a mesma coisa.
