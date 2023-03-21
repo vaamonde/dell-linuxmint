@@ -114,18 +114,24 @@ Site Oficial do PHP (7.x ou 8.x): https://www.php.net/
 			#descomentar as linhas do suporte ao FastCGI do PHP-FPM no NGINX
 				#descomentar a linha: 56
 				location ~ \.php$ {
+				
 				#descomentar a linha: 57
 				include snippets/fastcgi-php.conf;
+				
 				#descomentar a linha: 60
+				#OBSERVAÇÃO: se você estiver usando a versão 8.1.x do PHP-FPM alterar o caminho
 				fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+				
 				#descomentar a linha: 63
 				}
 
 			#descomentar as linhas do suporte ao .htaccess do NGINX
 				#descomentar a linha: 68
 				location ~ /\.ht {
+				
 				#descomentar a linha: 69
 				deny all;
+				
 				#descomentar a linha: 70
 				}
 
@@ -143,7 +149,9 @@ Site Oficial do PHP (7.x ou 8.x): https://www.php.net/
 		#opção do comando mkdir: -v (verbose)
 		sudo mkdir -v teste
 		
-		#opção do comando chmod: -v (verbose), 775 (User=RWX,Group=RWX,Other=RWX)
+		#opção do comando chmod: -v (verbose), 777 (User=RWX,Group=RWX,Other=RWX)
+		#OBSERVAÇÃO IMPORTANTE: em produção não utilizar a permissão 777, recomendado a permissão
+		#775 (User=RWX,Group=RWX,Other=R-X) ou 755 (User=RWX,Group=R-X,Other=R-X)
 		sudo chmod -v 777 teste/
 
 		cd teste
