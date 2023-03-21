@@ -79,15 +79,15 @@ Site Oficial do PHP (7.x ou 8.x): https://www.php.net/
 
 #05_ Localização dos Arquivos de Configuração do Apache 2 e do PHP 7.x ou 8.x no Linux Mint<br>
 
-	/etc/apache2/ <-- Diretório de configuração do Apache 2 Server
-	/etc/apache2/apache2.conf <-- Arquivo de configuração do Apache 2 Server
-	/etc/apache2/sites-available/ <-- Diretório padrão do Sites Acessíveis do Apache 2 Server
-	/etc/apache2/conf-available/ <-- Diretório padrão das Configurações Acessíveis do Apache 2 Server
-	/etc/php/ <--- Diretório de configuração do PHP 7.x ou 8.x
-	/etc/php/7.4/apache2/php.ini <-- Arquivo de configuração do PHP 7.x do Apache 2 Server
-	/etc/php/8.1/apache2/php.ini <-- Arquivo de configuração do PHP 8.x do Apache 2 Server
-	/var/www/html/ <-- Diretório padrão das Hospedagem de Site do Apache 2 Server
-	/var/log/apache2/ <-- Diretório padrão dos Logs do Apache 2 Server
+	/etc/apache2/                  <-- Diretório de configuração do Apache 2 Server
+	/etc/apache2/apache2.conf      <-- Arquivo de configuração do Apache 2 Server
+	/etc/apache2/sites-available/  <-- Diretório padrão do Sites Acessíveis do Apache 2 Server
+	/etc/apache2/conf-available/   <-- Diretório padrão das Configurações Acessíveis do Apache 2 Server
+	/etc/php/                      <-- Diretório de configuração do PHP 7.x ou 8.x
+	/etc/php/7.4/apache2/php.ini   <-- Arquivo de configuração do PHP 7.x do Apache 2 Server
+	/etc/php/8.1/apache2/php.ini   <-- Arquivo de configuração do PHP 8.x do Apache 2 Server
+	/var/www/html/                 <-- Diretório padrão das Hospedagem de Site do Apache 2 Server
+	/var/log/apache2/              <-- Diretório padrão dos Logs do Apache 2 Server
 
 #06_ Adicionado o Usuário Local no Grupo Padrão do Apache2 Server no Linux Mint<br>
 
@@ -104,8 +104,10 @@ Site Oficial do PHP (7.x ou 8.x): https://www.php.net/
 	cd /var/www/html
 		#opção do comando mkdir: -v (verbose)
 		sudo mkdir -v teste
+		
 		#opção do comando chmod: -v (verbose), 775 (User=RWX,Group=RWX,Other=R-X)
 		sudo chmod -v 775 teste/
+		
 		#opção do comando chown: -v (verbose), root (User), . (separate), www-date (group)
 		sudo chown -v root.www-data teste/
 		cd teste

@@ -50,10 +50,12 @@ Site Oficial do OpenJDK: https://openjdk.org/
 	#INSTALANDO O OPENJDK E OPENJRE NO LINUX MINT 20.x
 	sudo apt install git vim openjdk-17-jdk openjdk-17-jre software-properties-common build-essential
 
-	#INSTALANDO O OPENJDK E OPENJRE NO LINUX MINT 21.x
-	sudo apt install git vim openjdk-17-jdk openjdk-17-jre software-properties-common build-essential (Versão 17)
-	sudo apt install git vim openjdk-18-jdk openjdk-18-jre software-properties-common build-essential (Versão 18)
-	sudo apt install git vim openjdk-19-jdk openjdk-19-jre software-properties-common build-essential (Versão 19)
+	#INSTALANDO O ECLIPSE IDE NO LINUX MINT 21.x (RECOMENDADO UTILIZAR A VERSÃO 17)
+	sudo apt install git vim openjdk-17-jdk openjdk-17-jre software-properties-common build-essential
+
+	#CASO QUEIRA UTILIZAR OUTRAS VERSÕES DO JAVA NO LINUX 21.x (EXECUTAR SOMENTE SE NECESSÁRIO)
+	sudo apt install git vim openjdk-18-jdk openjdk-18-jre software-properties-common build-essential
+	sudo apt install git vim openjdk-19-jdk openjdk-19-jre software-properties-common build-essential
 
 #03_ Verificando as Versões do Java instalado no Linux Mint<br>
 
@@ -126,14 +128,14 @@ Site Oficial do OpenJDK: https://openjdk.org/
 
 #12_ Localização dos Arquivos de Configuração do Apache 2 e do PHP 7.x ou 8.x no Linux Mint<br>
 
-	/opt/tomcat <-- Diretório de configuração do Apache Tomcat Server
-	/opt/tomcat/bin <-- Diretório do binário (executável) do Apache Tomcat Server
-	/opt/tomcat/conf <-- Diretório das configurações do Apache Tomcat Server
-	/opt/tomcat/conf/server.xml <-- Arquivo de configuração do Servidor do Apache Tomcat Server
-	/opt/tomcat/conf/tomcat-users.xml <-- Arquivo de configuração dos Usuários do Apache Tomcat Server
-	/opt/tomcat/conf/context.xml <-- Arquivo de configuração do Aplicativo eb do Apache Tomcat Server
-	/opt/tomcat/logs <-- Diretório dos Logs do Apache Tomcat Server
-	/opt/tomcat/webapps <-- Diretório das Aplicações Web do Apache Tomcat Server
+	/opt/tomcat                        <-- Diretório de configuração do Apache Tomcat Server
+	/opt/tomcat/bin                    <-- Diretório do binário (executável) do Apache Tomcat Server
+	/opt/tomcat/conf                   <-- Diretório das configurações do Apache Tomcat Server
+	/opt/tomcat/conf/server.xml        <-- Arquivo de configuração do Servidor do Apache Tomcat Server
+	/opt/tomcat/conf/tomcat-users.xml  <-- Arquivo de configuração dos Usuários do Apache Tomcat Server
+	/opt/tomcat/conf/context.xml       <-- Arquivo de configuração do Aplicativo eb do Apache Tomcat Server
+	/opt/tomcat/logs                   <-- Diretório dos Logs do Apache Tomcat Server
+	/opt/tomcat/webapps                <-- Diretório das Aplicações Web do Apache Tomcat Server
 
 #13_ Adicionado o Usuário Local no Grupo Padrão do Apache Tomcat Server no Linux Mint<br>
 

@@ -54,8 +54,8 @@ Site Oficial do Java: https://www.java.com/pt-BR/
 	sudo apt install git vim openjdk-17-jdk openjdk-17-jre software-properties-common build-essential
 
 	#CASO QUEIRA UTILIZAR OUTRAS VERSÕES DO JAVA NO LINUX 21.x (EXECUTAR SOMENTE SE NECESSÁRIO)
-	sudo apt install git vim openjdk-18-jdk openjdk-18-jre software-properties-common build-essential (Versão 18)
-	sudo apt install git vim openjdk-19-jdk openjdk-19-jre software-properties-common build-essential (Versão 19)
+	sudo apt install git vim openjdk-18-jdk openjdk-18-jre software-properties-common build-essential
+	sudo apt install git vim openjdk-19-jdk openjdk-19-jre software-properties-common build-essential
 
 #03_ Verificando as Versões do Java instalado no Linux Mint<br>
 

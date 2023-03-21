@@ -134,10 +134,10 @@ Notas sobre a versão do SQL Server 2022 no Linux: https://learn.microsoft.com/p
 
 #10_ Localização dos Arquivos de Configuração do Microsoft SQL Server 2022 no Linux Mint<br>
 
-	/opt/mssql/bin		<-- diretório dos arquivos binários do Microsoft SQL Server
-	/opt/mssql/lib		<-- diretório dos arquivos de bibliotecas do Microsoft SQL Server
-	/var/opt/mssql/data	<-- diretório dos arquivos de Banco de Dados do Microsoft SQL Server
-	/var/opt/mssql/log	<-- diretório dos arquivos de Log do Microsoft SQL Server
+	/opt/mssql/bin       <-- diretório dos arquivos binários do Microsoft SQL Server
+	/opt/mssql/lib       <-- diretório dos arquivos de bibliotecas do Microsoft SQL Server
+	/var/opt/mssql/data  <-- diretório dos arquivos de Banco de Dados do Microsoft SQL Server
+	/var/opt/mssql/log   <-- diretório dos arquivos de Log do Microsoft SQL Server
 
 #11_ Adicionado o Usuário Local no Grupo Padrão do Microsoft SQL Server 2022 no Linux Mint<br>
 

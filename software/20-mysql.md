@@ -84,11 +84,11 @@ Site Oficial do Workbench: https://www.mysql.com/products/workbench/
 
 #07_ Localização dos Arquivos de Configuração do MySQL Server no Linux Mint<br>
 
-	/etc/mysql <-- Diretório de configuração do SGBD MySQL Server
-	/etc/mysql/mysql.conf.d/mysqld.cnf <-- Arquivo de configuração do Servidor SGBD do MySQL Server
-	/etc/mysql/mysql.conf.d/mysql.cnf <-- Arquivo de configuração do Cliente SGBD do MySQL Client
-	/var/log/mysql <-- Diretório padrão dos Logs do SGBD Mysql Server
-	/var/lib/mysql <-- Diretório da Base de Dados padrão do SGBD MySQL Server
+	/etc/mysql                          <-- Diretório de configuração do SGBD MySQL Server
+	/etc/mysql/mysql.conf.d/mysqld.cnf  <-- Arquivo de configuração do Servidor SGBD do MySQL Server
+	/etc/mysql/mysql.conf.d/mysql.cnf   <-- Arquivo de configuração do Cliente SGBD do MySQL Client
+	/var/log/mysql                      <-- Diretório padrão dos Logs do SGBD Mysql Server
+	/var/lib/mysql                      <-- Diretório da Base de Dados padrão do SGBD MySQL Server
 
 #08_ Acesso o MySQL Server no Linux Mint<br>
 

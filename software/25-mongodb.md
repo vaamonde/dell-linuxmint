@@ -103,9 +103,9 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 
 #10_ Localização dos Arquivos de Configuração do MongoDB Server no Linux Mint<br>
 
-	/etc/mongod.conf	<-- arquivo de configuração do MongoDB Server
-	/var/log/mongodb	<-- diretório dos arquivos de Log do MongoDB Sever
-	/var/lib/mongodb	<-- diretório dos arquivos de Banco de Dados do MongoDB Server
+	/etc/mongod.conf   <-- arquivo de configuração do MongoDB Server
+	/var/log/mongodb   <-- diretório dos arquivos de Log do MongoDB Sever
+	/var/lib/mongodb   <-- diretório dos arquivos de Banco de Dados do MongoDB Server
 
 #11_ Adicionado o Usuário Local no Grupo Padrão do MongoDB Server no Linux Mint<br>
 
