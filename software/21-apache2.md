@@ -114,7 +114,7 @@ Site Oficial do PHP (7.x ou 8.x): https://www.php.net/
 
 #08_ Criando páginas HTML e PHP para testar o Apache2 Server no Linux Mint<br>
 
-	#OBSERVAÇÃO IMPORTANTE: nesse exemplo vamos editar o arquivo teste.html, teste.php
+	#OBSERVAÇÃO IMPORTANTE: nesse exemplo vamos editar os arquivos: teste.html, teste.php
 	e phpinfo.php utilizando o Microsoft Visual Studio VSCode.
 	code .
 
