@@ -83,6 +83,7 @@ Site Oficial do PHP (7.x ou 8.x): https://www.php.net/
 
 	sudo nginx -v (Server)
 	sudo php --version (PHP)
+	sudo php-fpm7.4 --version (PHP-FPM)
 
 #04_ Verificando a Porta de Conexão do NGINX 1.18.x no Linux Mint<br>
 
@@ -91,17 +92,16 @@ Site Oficial do PHP (7.x ou 8.x): https://www.php.net/
 
 #05_ Localização dos Arquivos de Configuração do Apache 2 e do PHP 7.x ou 8.x no Linux Mint<br>
 
-	/etc/apache2/ <-- Diretório de configuração do Apache 2 Server
-	/etc/apache2/apache2.conf <-- Arquivo de configuração do Apache 2 Server
-	/etc/apache2/sites-available/ <-- Diretório padrão do Sites Acessíveis do Apache 2 Server
-	/etc/apache2/conf-available/ <-- Diretório padrão das Configurações Acessíveis do Apache 2 Server
-	/etc/php/ <--- Diretório de configuração do PHP 7.x ou 8.x
-	/etc/php/7.4/apache2/php.ini <-- Arquivo de configuração do PHP 7.x do Apache 2 Server
-	/etc/php/8.1/apache2/php.ini <-- Arquivo de configuração do PHP 8.x do Apache 2 Server
-	/var/www/html/ <-- Diretório padrão das Hospedagem de Site do Apache 2 Server
-	/var/log/apache2/ <-- Diretório padrão dos Logs do Apache 2 Server
+	/etc/nginx/                   <-- Diretório de configuração do NGINX Server
+	/etc/nginx/nginx.conf         <-- Arquivo de configuração do NGINX Server
+	/etc/nginx/sites-available/   <-- Diretório padrão do Sites Acessíveis do NGINX Server
+	/etc/php/                     <--- Diretório de configuração do PHP 7.x ou 8.x
+	/etc/php/7.4/fpm/php.ini      <-- Arquivo de configuração do PHP 7.x do NGINX Server
+	/etc/php/8.1/fpm/php.ini      <-- Arquivo de configuração do PHP 8.x do NGINX Server
+	/var/www/html/                <-- Diretório padrão das Hospedagem de Site do NGINX Server
+	/var/log/nginx/               <-- Diretório padrão dos Logs do NGINX Server
 
-#06_ Adicionado o Usuário Local no Grupo Padrão do Apache2 Server no Linux Mint<br>
+#06_ Adicionado o Usuário Local no Grupo Padrão do NGINX no Linux Mint<br>
 
 	#opções do comando usermod: -a (append), -G (groups), $USER (environment variable)
 	sudo usermod -a -G www-data $USER
