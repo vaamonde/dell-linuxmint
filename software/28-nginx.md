@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 17/03/2023<br>
-#Data de atualização: 21/03/2023<br>
-#Versão: 0.02<br>
+#Data de atualização: 23/03/2023<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -16,7 +16,8 @@
 #Instalação do NGINX 1.18.x e PHP 8.x no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Site Oficial do NGINX: https://www.nginx.com/<br>
-Site Oficial do PHP (7.x ou 8.x): https://www.php.net/
+Site Oficial do PHP (7.x ou 8.x): https://www.php.net/<br>
+Site Oficial do PHP-FPM (7.x ou 8.x): https://www.php.net/manual/pt_BR/install.fpm.php
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
