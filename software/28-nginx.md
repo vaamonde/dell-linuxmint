@@ -50,16 +50,15 @@ Site Oficial do PHP (7.x ou 8.x): https://www.php.net/
 	sudo apt install git vim perl python2 python3 unzip ghostscript zlibc zlib1g-dev apt-transport-https
 	
 	sudo apt install nginx php7.4 php7.4-cli php7.4-common php7.4-fpm php7.4-json php7.4-mysql \
-	php7.4-opcache php7.4-readline php7.4-common php7.4-bcmath php7.4-curl php7.4-intl php7.4-mbstring \
-	php7.4-xml php7.4-zip php7.4-soap php-imagick libapr1 libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap
+	php7.4-opcache php7.4-readline php7.4-bcmath php7.4-curl php7.4-intl php7.4-mbstring php7.4-xml \
+	php7.4-zip php7.4-soap php-imagick libapr1 libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap
 
 	#INSTALANDO O NGINX 1.18.x E PHP 8.x NO LINUX MINT 21.x
 	sudo apt install git vim perl python2 python3 unzip ghostscript zlib1g zlib1g-dev apt-transport-https
 
-	sudo apt install nginx php8.1 php8.1-cli php8.1-common \
-	php8.1-mysql php8.1-opcache php8.1-readline php8.1-common php8.1-bcmath php8.1-curl php8.1-intl \
-	php8.1-mbstring php8.1-xml php8.1-zip php8.1-soap php-imagick php-json libapr1 \
-	libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap
+	sudo apt install nginx php8.1 php8.1-cli php8.1-common php8.1-fpm php8.1-mysql php8.1-opcache \
+	php8.1-readline php8.1-bcmath php8.1-curl php8.1-intl php8.1-mbstring php8.1-xml php8.1-zip \
+	php8.1-soap php-imagick php-json libapr1 libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap
 
 #03_ Habilitando o Serviço do NGINX 1.18.x e do PHP-FPM no Linux Mint<br>
 
