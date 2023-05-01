@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 30/01/2023<br>
-#Data de atualização: 23/02/2023<br>
-#Versão: 0.05<br>
+#Data de atualização: 01/05/2023<br>
+#Versão: 0.06<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -52,7 +52,7 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 	#INSTALANDO AS DEPENDÊNCIAS DO MONGODB SERVER NO LINUX MINT 21.x
 	#opção do comando dpkg: -i (install)
 	sudo apt install git vim build-essential software-properties-common gnupg apt-transport-https ca-certificates
-	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.17_amd64.deb
+	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.18_amd64.deb
 	sudo dpkg -i libssl*.deb
 
 #03_ Baixando e instalando a Chave GPG do MongoDB Server no Linux Mint<br>

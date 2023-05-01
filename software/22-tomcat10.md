@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 19/01/2023<br>
-#Data de atualização: 15/03/2023<br>
-#Versão: 0.02<br>
+#Data de atualização: 01/05/2023<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -75,7 +75,7 @@ Site Oficial do OpenJDK: https://openjdk.org/
 	sudo -i
 	
 	#opção do comando wget: -v (verbose), -O (output file)
-	wget -v -O /tmp/tomcat10.tar.gz https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.7/bin/apache-tomcat-10.1.7.tar.gz
+	wget -v -O /tmp/tomcat10.tar.gz https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.8/bin/apache-tomcat-10.1.8.tar.gz
 
 #05_ Descompactando e instalando o Apache Tomcat 10.1.x no Linux Mint<br>
 
@@ -126,7 +126,7 @@ Site Oficial do OpenJDK: https://openjdk.org/
 	#opção do comando lsof: -n (network number), -P (port number), -i (list IP Address), -s (alone directs)
 	sudo lsof -nP -iTCP:'8080' -sTCP:LISTEN
 
-#12_ Localização dos Arquivos de Configuração do Apache 2 e do PHP 7.x ou 8.x no Linux Mint<br>
+#12_ Localização dos Arquivos de Configuração do Apache Tomcat Server 10.1.x no Linux Mint<br>
 
 	/opt/tomcat                        <-- Diretório de configuração do Apache Tomcat Server
 	/opt/tomcat/bin                    <-- Diretório do binário (executável) do Apache Tomcat Server

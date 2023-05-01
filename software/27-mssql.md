@@ -59,7 +59,7 @@ Notas sobre a versão do SQL Server 2022 no Linux: https://learn.microsoft.com/p
 	#INSTALANDO AS DEPENDÊNCIAS DO MICROSOFT SQL SERVER NO LINUX MINT 21.x
 	#opção do comando dpkg: -i (install)
 	sudo apt install git vim build-essential software-properties-common gnupg apt-transport-https ca-certificates
-	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.17_amd64.deb
+	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.18_amd64.deb
 	sudo dpkg -i libssl*.deb
 
 #03_ Baixando e instalando a Chave GPG do Microsoft SQL Server 2022 no Linux Mint<br>
