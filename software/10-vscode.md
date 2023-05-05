@@ -125,10 +125,10 @@ Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 	ShellCheck
 		(Sem necessidade de configuração)
 
-	Cisco IOS Systax
+	Cisco IOS Syntax
 		(Sem necessidade de configuração)
 
-	Cisco IOS-XR Systax
+	Cisco IOS-XR Syntax
 		(Sem necessidade de configuração)
 
 	Cisco Config Highlight
@@ -150,6 +150,15 @@ Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 		(Sem necessidade de configuração)
 
 	YAML
+		(Sem necessidade de configuração)
+
+	MySQL
+		(Sem necessidade de configuração)
+
+	Remote - SSH
+		(Sem necessidade de configuração)
+
+	NoSQL
 		(Sem necessidade de configuração)
 
 #09_ Configurações básicas do Microsoft Visual Studio Code VSCode para funcionar perfeitamente no Linux Mint<br>
