@@ -119,7 +119,7 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 	#INSTALANDO O VIRTUALBOX VERSÃO 6.1.x (NÃO RECOMENDADO MAIS A SUA INSTALAÇÃO)
 	sudo apt install virtualbox-6.1 cpu-checker libvirt-clients git vim python2 python3
 	
-	#INSTALANDO O VIRTUALBOX VERSÃO 7.0.x
+	#INSTALANDO O VIRTUALBOX VERSÃO 7.0.x (RECOMENDADO A SUA INSTALAÇÃO)
 	sudo apt install virtualbox-7.0 cpu-checker libvirt-clients git vim python2 python3
 
 #05_ Verificando as Informações do suporte a Virtualização no Linux Mint<br>
@@ -156,13 +156,13 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 #06_ Baixando e Instalando o Pacote de Extensões do Oracle VirtualBOX<br>
 
-	OBSERVAÇÃO: PROCEDIMENTO É IGUAL NA VERSÃO DO VIRTUALBOX 6.1 E 7.0
+	OBSERVAÇÃO IMPORTANTE: PROCEDIMENTO É IGUAL NA VERSÃO DO VIRTUALBOX 6.1 E 7.0
 	Link para download: https://www.virtualbox.org/wiki/Downloads
 		Opção: VirtualBox 7.x Oracle VM VirtualBox Extension Pack
 		Clique em: All supported platforms
 
 	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
-	*Após baixar o pacote, clicar duas vezes no mesmo e seguir os procedimentos na tela.
+	*Após o download do pacote, clicar duas vezes no mesmo e seguir os procedimentos na tela.
 	<Instalar>
 		Descer a barra de rolagem até o final
 	<Eu Concordo>

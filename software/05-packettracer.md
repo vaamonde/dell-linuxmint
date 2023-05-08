@@ -116,3 +116,4 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 #06_ Atualização para a Versão 8.2.1 do Cisco Packet Tracer
 
 	Atualização feita em Março/2023 - procedimento no Linux Mint versões 20.x e 21.x continua a mesma coisa.
+	Mais informações: https://www.packettracernetwork.com/features/packettracer-82-newfeatures.html
