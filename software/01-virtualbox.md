@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 05/02/2023<br>
-#Versão: 0.13<br>
+#Data de atualização: 18/05/2023<br>
+#Versão: 0.14<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -168,10 +168,10 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 	<Eu Concordo>
 		Digite a senha do seu usuário clique em: <Autenticar>
 
-#07_ Atualizando o VirtualBOX 6.1 para a versão nova versão 7.0<br>
+#07_ Atualizando o VirtualBOX 6.1.x para a versão nova versão 7.0.x<br>
 
 	OBSERVAÇÃO IMPORTANTE: executar esse procedimento somente se você instalou a versão
-	do Virtualbox-6.1.
+	do Virtualbox-6.1.x.
 
 	sudo apt update
 	sudo apt upgrade
@@ -188,7 +188,7 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 #08_ Baixando e Instalando o Pacote de Extensões do Oracle VirtualBOX 7.0<br>
 
-	OBSERVAÇÃO: PROCEDIMENTO É IGUAL NA VERSÃO DO VIRTUALBOX 6.1 E 7.0
+	OBSERVAÇÃO: PROCEDIMENTO É IGUAL NA VERSÃO DO VIRTUALBOX 6.1.x E 7.0.x
 	Link para download: https://www.virtualbox.org/wiki/Downloads
 		Opção: VirtualBox 7.x Oracle VM VirtualBox Extension Pack
 		Clique em: All supported platforms

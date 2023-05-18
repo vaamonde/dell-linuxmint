@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 10/01/2023<br>
-#Versão: 0.04<br>
+#Data de atualização: 18/05/2023<br>
+#Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -57,7 +57,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 		wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip
 		unzip Hack.zip
 		fc-cache -f -v
-		exit (Atalho: Ctrl + D)
+		exit
 
 #04_ Configurando o Tilix como Terminal Padrão no Linux Mint<br>
 
@@ -74,7 +74,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 	#opção do comando gsettings: set (Sets the value of KEY to VALUE)
 	gsettings set org.cinnamon.desktop.default-applications.terminal exec /usr/bin/tilix
-	exit (Atalho: Ctrl + D)
+	exit
 
 #05_ Executando o Tilix no Linux Mint<br>
 
@@ -111,7 +111,10 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 		[sudo] senha do seu usuário: <Enter>
 
 	#recomendo fechar o Terminal Tilix e abrir novamente para verificar se tudo está funcionando
-	exit (Atalho: Ctrl + D) - sair 03 (três) vezes do terminal
+	#será necessário sair 03 (três) vezes do terminal para concluir a configuração
+	exit
+	exit
+	exit
 
 #08_ Instalação dos Plugins e Temas do ZSH e do Oh My Zsh no Linux Mint<br>
 
@@ -236,6 +239,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 	OBSERVAÇÃO IMPORTANTE: executar esse procedimento somente se você tem instalado
 	o Microsoft Visual Studio no seu Linux Mint
+	
 	Gerenciar
 		Configurações
 			terminal.integrated.fontFamily

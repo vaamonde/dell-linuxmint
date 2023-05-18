@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 10/01/2023<br>
-#Versão: 0.06<br>
+#Data de atualização: 18/05/2023<br>
+#Versão: 0.07<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -86,8 +86,8 @@ Site Oficial do Docker Hub: https://hub.docker.com/search?q=
 	#opção do comando apt: purgue (remove --purge packages)
 	sudo apt purgue docker-compose
 	
-	#opção do comando curl: -S (show-error), -L (location), -o (output) (Build 2.17.3 20/04/2023)
-	sudo curl -SL https://github.com/docker/compose/releases/download/v2.17.3/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
+	#opção do comando curl: -S (show-error), -L (location), -o (output) (Build 2.18.1 17/05/2023)
+	sudo curl -SL https://github.com/docker/compose/releases/download/v2.18.1/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
 	
 	#opção do comando chmod: -v (verbose), 755 (User=RWX,Group-R-X,Other-R-X)
 	sudo chmod -v 755 /usr/bin/docker-compose

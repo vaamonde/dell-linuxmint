@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 28/03/2023<br>
-#Versão: 0.07<br>
+#Data de atualização: 18/05/2023<br>
+#Versão: 0.08<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -36,6 +36,10 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 	sudo cat /etc/lsb-release
 	sudo cinnamon --version
 
+	#opções do comando inxi: -C (cpu), -M (machine), -S (system), -f (flags), -xxx (extra 3)
+	sudo inxi -CMSfxxx
+	sudo lscpu
+
 	Menu
 		Informações do Sistema
 		
@@ -58,6 +62,11 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 	Link Oficial do Packet Tracer Network: https://www.packettracernetwork.com/
 	Link do Mega.nz do Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7XzImP01M1SyRm2g/folder/vll2iSDI
 
+	#DICA: RECOMENDO VOCÊ FAZER UM CONTA NO NETACAD DA CISCO NO CURSO GRATUITO DO CISCO PACKET TRACER
+	DISPONÍVEL NA PLATAFORMA NO LINK: https://skillsforall.com/pt/learningcollections/cisco-packet-tracer?courseLang=pt-BR
+
+	PARA CRIAR UMA CONTA NO NETACAD ACESSE O LINK: https://id.cisco.com/signin/register
+
 #03_ Instalando o Cisco Packet Tracer no Linux Mint<br>
 
 	01_ Na pasta de Download, clicar duas vezes no Instalador do Cisco Packet Tracer;
@@ -67,8 +76,8 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 	04_ Marque a opção: do you accept the terms of this EULA?: <Yes> clique em: <Next>
 
 	OBSERVAÇÃO IMPORTANTE: se você utilizar o Gdebi para instalar o Cisco Packet Tracer e apresentar
-	falha no final da instalação, recomendo utilizar o comando: dpkg para forçar a instalação em modo
-	Terminal.
+	uma falha no final da instalação, recomendo utilizar o comando: dpkg para forçar a instalação em 
+	modo Terminal.
 
 	Terminal: Ctrl + Alt + T
 
