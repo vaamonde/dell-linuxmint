@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 14/01/2023<br>
-#Data de atualização: 17/01/2023<br>
-#Versão: 0.03<br>
+#Data de atualização: 19/05/2023<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -48,14 +48,14 @@ Site Oficial do Java: https://www.java.com/pt-BR/
 #02_ Instalando as Dependências do Eclipse IDE no Linux Mint<br>
 
 	#INSTALANDO O ECLIPSE IDE NO LINUX MINT 20.x
-	sudo apt install git vim openjdk-17-jdk openjdk-17-jre software-properties-common build-essential
+	sudo apt install git vim openjdk-17-jdk openjdk-17-jre openjdk-17-jre-headless software-properties-common build-essential
 
 	#INSTALANDO O ECLIPSE IDE NO LINUX MINT 21.x (RECOMENDADO UTILIZAR A VERSÃO 17)
-	sudo apt install git vim openjdk-17-jdk openjdk-17-jre software-properties-common build-essential
+	sudo apt install git vim openjdk-17-jdk openjdk-17-jre openjdk-17-jre-headless software-properties-common build-essential
 
 	#CASO QUEIRA UTILIZAR OUTRAS VERSÕES DO JAVA NO LINUX 21.x (EXECUTAR SOMENTE SE NECESSÁRIO)
-	sudo apt install git vim openjdk-18-jdk openjdk-18-jre software-properties-common build-essential
-	sudo apt install git vim openjdk-19-jdk openjdk-19-jre software-properties-common build-essential
+	sudo apt install git vim openjdk-18-jdk openjdk-18-jre openjdk-18-jre-headless software-properties-common build-essential
+	sudo apt install git vim openjdk-19-jdk openjdk-19-jre openjdk-19-jre-headless software-properties-common build-essential
 
 #03_ Verificando as Versões do Java instalado no Linux Mint<br>
 
@@ -76,7 +76,7 @@ Site Oficial do Java: https://www.java.com/pt-BR/
 
 	Link do download: https://www.eclipse.org/downloads/packages/
 	Versão do Eclipse: Eclipse IDE for Enterprise Java and Web Developers
-		Linux x86_64: eclipse-jee-2022-12-R-linux-gtk-x86_64.tar.gz (atualizado em 14/01/2023)
+		Linux x86_64:  eclipse-jee-2023-03-R-linux-gtk-x86_64.tar.gz (atualizado em 19/05/2023)
 
 #06_ Descompactar o Arquivo Zipado do Eclipse IDE no Linux Mint<br>
 
