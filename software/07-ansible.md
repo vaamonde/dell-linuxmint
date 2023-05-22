@@ -44,7 +44,7 @@ Site Oficial do Ansible: https://www.ansible.com/
 
 #02_ Instalando as Dependências do Ansible no Linux Mint<br>
 
-	sudo apt install software-properties-common
+	sudo apt install software-properties-common git vim python2 python3
 
 #03_ Adicionando o PPA Oficial do Ansible no Linux Mint<br>
 
@@ -53,7 +53,7 @@ Site Oficial do Ansible: https://www.ansible.com/
 #04_ Instalando o Ansible no Linux Mint<br>
 
 	sudo apt update
-	sudo apt install ansible vim git python2 python3
+	sudo apt install ansible
 
 #05_ Verificando a Versão do Ansible<br>
 

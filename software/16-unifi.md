@@ -62,7 +62,7 @@ Site do Fast: https://fast.com/pt/
 
 	Terminal: Ctrl + Alt + T
 	
-	sudo apt install git vim nmap
+	sudo apt install git vim nmap python2 python3
 
 #04_ Verificando os Dispositivos Ubiquiti Unifi conectados na rede no Linux Mint<br>
 

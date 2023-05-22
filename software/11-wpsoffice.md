@@ -66,7 +66,7 @@ Github do Pacote de Tradução: https://github.com/vaamonde/pt_br-wpsoffice
 
 	02_ Segunda etapa.: Instalar o software Git:
 		sudo apt update
-		sudo apt install git
+		sudo apt install git vim python2 python3
 
 	03_ Terceira etapa: Clonar o projeto do Github
 		git clone https://github.com/vaamonde/pt_br-wpsoffice

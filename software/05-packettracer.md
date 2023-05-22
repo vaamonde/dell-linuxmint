@@ -99,7 +99,7 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 
 	#INSTALANDO AS DEPENDÊNCIAS DO CISCO PACKET TRACER NO LINUX MINT 20.x
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
-	sudo apt install libqt5networkauth5 libqt5script5 libqt5scripttools5
+	sudo apt install libqt5networkauth5 libqt5script5 libqt5scripttools5 git vim python2 python3
 	sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
 
 	OBSERVAÇÃO IMPORTANTE: as dependências: libQt5QmlModels.so.5 e o erro: /lib/x86_64-linux-gnu/libQt5Core.so.5: 
@@ -109,7 +109,8 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 
 	#INSTALANDO AS DEPENDÊNCIAS DO CISCO PACKET TRACER NO LINUX MINT 21.x
 	sudo apt install libqt5networkauth5 libqt5script5 libqt5scripttools5 libqt5texttospeech5 libqt5positioning5 \
-	libqt5qml5 libqt5webchannel5 libqt5qmlmodels5 libqt5quick5 libqt5webenginecore5 libqt5webenginewidgets5
+	libqt5qml5 libqt5webchannel5 libqt5qmlmodels5 libqt5quick5 libqt5webenginecore5 libqt5webenginewidgets5 git \
+	vim python2 python3
 
 	#Resolvendo a falha das bibliotecas libssl.so.1.1 e libcrypto.so.1.1 no Linux Mint 21.x
 	#opção do comando dpkg: -i (install)
