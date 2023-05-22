@@ -84,7 +84,7 @@ Site Oficial do Docker Hub: https://hub.docker.com/search?q=
 	COMENTADO NO VÍDEO)
 
 	#opção do comando apt: purgue (remove --purge packages)
-	sudo apt purgue docker-compose
+	sudo apt purge docker-compose
 	
 	#opção do comando curl: -S (show-error), -L (location), -o (output) (Build 2.18.1 17/05/2023)
 	sudo curl -SL https://github.com/docker/compose/releases/download/v2.18.1/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
