@@ -7,7 +7,7 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 19/05/2023<br>
-#Data de atualização: 19/05/2023<br>
+#Data de atualização: 24/05/2023<br>
 #Versão: 0.01<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
@@ -37,8 +37,9 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 #02_ Configurações do Hardware do Notebook Itautec Infoway N8645<br>
 
-	_ CPU Intel i7 M620 2.67Ghz 4MB Chave, 8GB DDR-3 Mhz, HD Samsung HM500JI-(S1) 500GB, LCD 15", 
-	Webcam, VGA AMD Radeon RV730/M96, Ethernet , , Intel UHD Graphics , Audio 
+	_ CPU Intel i7 M620 2.67Ghz 4MB Cache, 8GB DDR-3 1333Mhz, HD Samsung HM500JI-(S1) 500GB, LCD 15", 
+	_ Webcam, VGA AMD Radeon RV730/M96, Ethernet Realtek RTL8111/8168, Audio Intel 5 Series/3400 e AMD
+	_ RV710/730 HDMI Radeon 4000 Series
 
 #03_ Configuração da BIOS P5214_I-SL2.1<br>
 
@@ -54,9 +55,9 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 	_ Já é reconhecida no Live-CD do Mint, depois de instalado o Mint ela já está habilitada.
 
-#06_ Hard Disk SATA SSD M.2 256GB<br>
+#06_ Hard Disk SATA HD Samsung 500GB<br>
 
-	_ Modelo CVB-8D256, Hard Disk para a instalação do Linux Mint, sem necessidade de particionamento
+	_ Modelo HM500JI, Hard Disk para a instalação do Linux Mint, sem necessidade de particionamento
 	_ (instalação padrão).
 
 	_ OBSERVAÇÃO IMPORTANTE: sempre utilizar o software GParted para remover todas as partições
