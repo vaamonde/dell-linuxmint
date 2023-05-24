@@ -9,7 +9,7 @@
 #Data de criação: 19/05/2023<br>
 #Data de atualização: 24/05/2023<br>
 #Versão: 0.01<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64
+#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
 Novos Recursos do Linux Mint 21.1 Vera Cinnamon: https://www.linuxmint.com/rel_vera_cinnamon_whatsnew.php<br>
@@ -85,10 +85,19 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		sudo uname -a
 
 		#INSTALAÇÃO DO KERNEL OEM LINUX MINT 21.x (KERNEL >= 5.14, KERNEL >= 6.0 e KERNEL >= 6.1)
-		sudo apt install linux-oem-22.04a fdutils (Linux Mint Versão 21.x - Kernel >= 5.17)
-		sudo apt install linux-oem-22.04b fdutils (Linux Mint Versão 21.x - Kernel >= 6.0)
-		sudo apt install linux-oem-22.04c fdutils (Linux Mint Versão 21.x - Kernel >= 6.1)
-		sudo reboot (Reinicializar o Sistema)
+		
+		#(Linux Mint Versão 21.x - Kernel >= 5.17)
+		sudo apt install linux-oem-22.04a fdutils
+		
+		#(Linux Mint Versão 21.x - Kernel >= 6.0)
+		sudo apt install linux-oem-22.04b fdutils
+		
+		#(Linux Mint Versão 21.x - Kernel >= 6.1 - RECOMENDADO O SEU USO)
+		sudo apt install linux-oem-22.04c fdutils
+		
+		#reiniciar o computador para testar o novo Kernel
+		#opção do comando uname: -a (all)
+		sudo reboot
 		sudo uname -a
 
 #09_ Instalação dos Aplicativos Básicos<br>
@@ -97,14 +106,14 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		sudo apt install software-properties-common build-essential lsb-core dkms
 		sudo apt install htop nmon psensor tlp tlp-rdw cpufrequtils cputool ipmitool ipmiutil smartmontools
 		sudo apt install ttf-mscorefonts-installer cheese guvcview v4l-utils cairo-dock vim git p7zip-full p7zip-rar
-		sudo reboot (Reinicializar o Sistema)
+		sudo reboot
 
-#10_ Instalação dos Drivers VGA Intel Graphics<br>
+#10_ Instalação dos Drivers VGA Intel Graphics e AMD Radeon<br>
 
 		sudo apt update
 		sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
-		sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5 beignet-opencl-icd
-		sudo reboot (Reinicializar o Sistema)
+		sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5
+		sudo reboot
 	
 	_ Testando o suporte ao Driver da Intel Mesa
 		sudo glxinfo | less
