@@ -1,0 +1,210 @@
+#Autor: Robson Vaamonde<br>
+#Procedimentos em TI: http://procedimentosemti.com.br<br>
+#Bora para Prática: http://boraparapratica.com.br<br>
+#Robson Vaamonde: http://vaamonde.com.br<br>
+#Facebook Procedimentos em TI: https://www.facebook.com/ProcedimentosEmTi<br>
+#Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica<br>
+#Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
+#YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
+#Data de criação: 29/05/2023<br>
+#Data de atualização: 29/05/2023<br>
+#Versão: 0.01<br>
+#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
+
+#Instalação e Configuração do AWS-Cli no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Instalação e Configuração do AWS-Cli no Linux Mint 21 Vanessa e 21.1 Vera x64
+
+Site Oficial do AWS: https://aws.amazon.com/pt/free<br>
+Site Oficial do EC2: https://aws.amazon.com/pt/ec2<br>
+Site Oficial do AWS-Cli: https://aws.amazon.com/pt/cli/
+
+#00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
+
+	Terminal: Ctrl + Alt + T
+
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+	sudo cat /etc/os-release
+	sudo cat /etc/lsb-release
+	sudo localectl
+
+	Menu
+		Informações do Sistema
+
+#01_ Atualização do Sistema Operacional Linux Mint<br>
+
+	Atualização do sistema utilizando o MintUpdate;
+	Atualização do sistema utilizando o Apt;
+
+	Terminal: Ctrl + Alt + T
+		sudo apt update
+		sudo apt upgrade
+		sudo apt full-upgrade
+		sudo apt dist-upgrade
+		sudo apt autoremove
+		sudo apt autoclean
+
+#02_ Criando um Conta no Amazon AWS Free (Gratuita)<br>
+
+OBSERVAÇÃO IMPORTANTE: para faze a assinatura Gratuita do Amazon AWS é necessário a utilização
+de um Cartão de Crédito Internacional, na conta gratuita não será cobrado nenhum valor no seu
+cartão, apenas se você ultrapassar os limites da conta.
+
+	Acesse o site: https://aws.amazon.com/pt/free
+	Clique em: <Crie uma conta gratuita>
+	Preencha os campos:
+		Endereço de e-mail do usuário raiz: SEU_ENDEREÇO_DE_EMAIL
+		Nome da conta da AWS: SEU_USUÁRIO_DE_LOGIN
+		<Verificar endereço de e-mail>
+
+	Será enviado para o seu email um código de verificação, copiar e colar no campo
+		Código de verificação
+		<Verificar>
+
+	Crie sua senha
+		Senha do usuário raiz: SUA_SENHA
+		Confirmar senha do usuário raiz: CONFIRMAÇÃO_DA_SUA_SENHA
+		<Continuar (etapa 1 de 5)>
+
+	Informações de contato
+		Como você planeja usar a AWS?
+			Pessoal - para seus próprios projetos
+		Nome completo: SEU_NOME_COMPLETO
+		Número de telefone: SEU_CELULAR
+		País ou região: SEU_PAÍS
+		Endereço: SEU_ENDEREÇO
+		Cidade: SUA_CIDADE
+		Estado/província ou região: SEU_ESTADO
+		Código postal: SEU_CEP
+		<Continuar (etapa 2 de 5)>
+	
+	Informações de faturamento
+		Número do cartão de crédito: SEU_NÚMERO_CARTÃO_DE_CRÉDITO
+		Data de expiração: MÊS_ANO
+		Nome do titular do cartão: SEU_NOME_NO_CARTÃO_DE_CRÉDITO
+		Endereço de faturamento: SEU_ENDEREÇO_DE_FATURAMENTO
+		Tipo de registro fiscal: CPF_OU_CNPJ
+			Número do registro fiscal: SEU_CPF
+			Data de nascimento: SUA_DATA_DE_NASCIMENTO
+			Endereço fiscal
+				País ou região: AUTO_PREENCHIDO
+				Código postal: SEU_CEP
+				Estado: AUTO_PREENCHIDO
+				Cidade: AUTO_PREENCHIDO
+				Bairro: SEU_BAIRRO
+				Endereço fiscal: SEU_ENDEREÇO
+		<Continuar (etapa 3 de 5)>
+
+	Confirmar sua identidade
+		Como devemos enviar para você o código de verificação
+			Mensagem de texto (SMS)
+			Código do país ou região: SEU_CÓDIGO_DE_PAÍS
+			Número de telefone celular: SEU_NÚMERO_DE_CELULAR
+			Digite os caracteres como mostrado acima: SEU_CAPTCHA
+		<Continuar (etapa 4 de 5)>
+
+	Selecionar um plano de suporte
+		Suporte Basic - Gratuito
+		<Concluir cadastramento>
+		<Acesse o Console de Gerenciamento da AWS>
+
+#03_ Se autenticando na Amazon AWS Free (Gratuita)<br>
+
+	Acesse a URL: https://aws.amazon.com/pt/
+	Clique em: <Faça login no console>
+
+	Entrar
+		Usuário root
+		Endereço de e-mail do usuário root: SEU_ENDEREÇO_DE_EMAIL
+		<Próximo>
+	 Login do usuário raiz
+	 	Senha: SUA_SENHA
+		<Entrar>
+
+#04_ Criando um Par de Chaves de autenticação no EC2 da Amazon AWS<br>
+	
+	Clique em: EC2
+	
+	No Painel do EC2, clique em: 
+		Rede e segurança
+			Pares de Chaves
+	
+	Clique em: <Criar par de chaves>
+		Par de chaves
+			Nome: WebServer
+			Tipo de par de chaves: RSA
+			Formato de arquivo de chave privada: PEM
+		<Criar par de chaves>
+
+	OBSERVAÇÃO IMPORTANTE: automaticamente o Par de Chaves criado será feito download no seu computador
+	recomendo copiar a chave para o diretório padrão de chaves do Linux Mint e alterar as suas permissões.
+
+	Clique em: Arquivos (Nemo) acesse a Pasta: Download
+	Clique como Botão Direito do Mouse e selecione: Abrir no Terminal
+
+	#opção do comando cp: -v (verbose)
+	#opção do comando chmod: -v (verbose), 0600 (User: RW-,Group: ---,Other: ---)
+	cp -v WebServer.pem ../.ssh
+	chmod -v 0600 ../.ssh/WebServer.pem
+
+#05_ Criando uma Máquina Virtual (VPC - Virtual Private Cloud) no EC2 da Amazon AWS<br>
+
+	No Painel do EC2, clique em:
+		Instância
+			Instância
+				<Executar instância>
+
+	Iniciar uma instância
+		Nome e tags: 
+			Nome: WebServer
+		Imagens de aplicação e de sistema operacional (imagem de máquina da Amazon)
+			Início rápido: Ubuntu
+				Ubuntu Server 22.04 LTS (HVM), SSD Volume Type (Qualificado para o nível gratuito)
+			Descrição: Canonical, Ubuntu, 22.04 LTS, amd64 jammy image build on 2023-05-16
+			Arquitetura: 64 bits (x86)
+		Tipo de instância
+			Tipo de instância: t2.micro (Qualificado para o nível gratuito)
+		Par de chaves (login)
+			Nome do par de chaves - obrigatório: WebServer
+		Configurações de Rede:
+			Firewall (grupos de segurança): Criar grupo de segurança
+			Permitir tráfego SSD de: Qualquer lugar (0.0.0.0/0)
+		Configurar armazenamento
+			1x 8GiB gp2 Volume raiz (Não criptografado)
+		Detalhes avançado: Default
+		Resumo
+			<Executar instância>
+
+#06_ Se conectando na Instância da VPC do Ubuntu Server no EC2 da Amazon AWS<br>
+
+	No Painel do EC2, clique em:
+		Instância
+			Instância
+
+	Clique no ID da sua Instância
+		Clique em: <Conectar>
+	
+	Conexão da instância do EC2
+		<Conectar>
+	
+	Cliente SSH
+		#opção do comando ssh: -i (identity_file)
+		ssh -i "/home/vaamonde/.ssh/WebServer.pem" ubuntu@ID_DA_SUA_VPC.amazonaws.com
+
+#07_ Instalando e Configurando o AWS-Cli no Linux Mint<br>
+
+	#instalando as principais dependências do AWS-Cli
+	sudo apt update
+	sudo apt install glibc-source groff less unzip
+
+	#download e instalação do AWS-Cli
+	#opção do comando curl: -o (output file)
+	curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+	unzip awscliv2.zip
+	sudo ./aws/install
+	aws --version
+
+#08_ Comandos Básicos de Administração do AWS EC2 utilizando o AWS-Cli no Linux Mint<br>
+
+	
