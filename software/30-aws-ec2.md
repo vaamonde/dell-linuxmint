@@ -47,7 +47,7 @@ Site Oficial do AWS-Cli: https://aws.amazon.com/pt/cli/
 
 #02_ Criando um Conta no Amazon AWS Free (Gratuita)<br>
 
-OBSERVAÇÃO IMPORTANTE: para faze a assinatura Gratuita do Amazon AWS é necessário a utilização
+OBSERVAÇÃO IMPORTANTE: para fazer a assinatura Gratuita do Amazon AWS é necessário a utilização
 de um Cartão de Crédito Internacional, na conta gratuita não será cobrado nenhum valor no seu
 cartão, apenas se você ultrapassar os limites da conta.
 
@@ -196,15 +196,23 @@ cartão, apenas se você ultrapassar os limites da conta.
 
 	#instalando as principais dependências do AWS-Cli
 	sudo apt update
-	sudo apt install glibc-source groff less unzip
+	sudo apt install glibc-source groff less unzip git vim python2 python3
 
 	#download e instalação do AWS-Cli
 	#opção do comando curl: -o (output file)
 	curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 	unzip awscliv2.zip
 	sudo ./aws/install
+	
+	#verificando a versão do AWS-Cli
 	aws --version
 
-#08_ Comandos Básicos de Administração do AWS EC2 utilizando o AWS-Cli no Linux Mint<br>
+#08_ Criando um Usuário IAM (Identity and Access Management) no Amazon AWS<br>
 
+	Na pesquisa de serviços da Amazon digite: IAM
+		Em Service clique em: IAM (Manage access to AWS resources)
 	
+	Gerenciamento de acesso
+		Usuários
+			<Adicionar usuários>
+				

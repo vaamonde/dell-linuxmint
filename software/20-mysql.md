@@ -64,7 +64,7 @@ Site Oficial do Workbench: https://www.mysql.com/products/workbench/
 	#INSTALANDO O MYSQL WORKBENCH NO LINUX MINT 21.x
 	#opção do comando dpkg: -i (install)
 	#Link repositório do MySQL Workbench: http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/ (link atualizado em 14/01/2023)
-	wget http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/mysql-workbench-community_8.0.31-1ubuntu22.04_amd64.deb
+	wget http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/mysql-workbench-community_8.0.33-1ubuntu22.04_amd64.deb
 	sudo dpkg -i mysql-workbench-community*.deb
 
 #05_ Verificando o Serviço e Versão do MySQL Server no Linux Mint<br>
