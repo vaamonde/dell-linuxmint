@@ -49,7 +49,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 #04_ Inicialização da Instalação do Linux Mint 20.1 Ulyssa, 20.2 Uma, 20.3 Una, 21 Vanessa ou 21.1 Vera<br>
 
 	_ Inicialização padrão, a falha de resolução de vídeo não acontece nesse modelo de notebook 
-	_ da Positivo N4340 devido o monitor ser de 14" e atingir altas resoluções.
+	_ da Itautec Infoway N8645 devido o monitor ser de 14" e atingir altas resoluções.
 
 #05_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless)<br>
 
@@ -114,7 +114,9 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
 		sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5
 		sudo reboot
-	
+
+		sudo apt install xserver-xorg-video-radeon
+		
 	_ Testando o suporte ao Driver da Intel Mesa
 		sudo glxinfo | less
 		sudo glxgears

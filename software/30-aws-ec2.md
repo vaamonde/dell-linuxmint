@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 29/05/2023<br>
-#Data de atualização: 29/05/2023<br>
-#Versão: 0.01<br>
+#Data de atualização: 05/06/2023<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -51,6 +51,19 @@ OBSERVAÇÃO IMPORTANTE: para fazer a assinatura Gratuita do Amazon AWS é neces
 de um Cartão de Crédito Internacional, na conta gratuita não será cobrado nenhum valor no seu
 cartão, apenas se você ultrapassar os limites da conta.
 
+Mais informações acesse: https://aws.amazon.com/pt/free/
+
+Computação:
+	Nível gratuito: 12 meses gratuitos;
+	Amazon EC2: 750 horas por mês.
+Armazenamento
+	Nível gratuito: 12 meses gratuitos;
+	Amazon S3: 5 GB.
+Banco de Dados
+	Nível gratuito: 12 meses gratuitos;
+	Amazon RDS: 750 horas.
+
+Criando sua conta na Amazon Free
 	Acesse o site: https://aws.amazon.com/pt/free
 	Clique em: <Crie uma conta gratuita>
 	Preencha os campos:
@@ -143,6 +156,7 @@ cartão, apenas se você ultrapassar os limites da conta.
 	Clique em: Arquivos (Nemo) acesse a Pasta: Download
 	Clique como Botão Direito do Mouse e selecione: Abrir no Terminal
 
+	Terminal: Ctrl + Alt + T
 	#opção do comando cp: -v (verbose)
 	#opção do comando chmod: -v (verbose), 0600 (User: RW-,Group: ---,Other: ---)
 	cp -v WebServer.pem ../.ssh
@@ -188,12 +202,16 @@ cartão, apenas se você ultrapassar os limites da conta.
 	Conexão da instância do EC2
 		<Conectar>
 	
+	Terminal: Ctrl + Alt + T
+
 	Cliente SSH
 		#opção do comando ssh: -i (identity_file)
 		ssh -i "/home/vaamonde/.ssh/WebServer.pem" ubuntu@ID_DA_SUA_VPC.amazonaws.com
 
 #07_ Instalando e Configurando o AWS-Cli no Linux Mint<br>
 
+	Terminal: Ctrl + Alt + T
+	
 	#instalando as principais dependências do AWS-Cli
 	sudo apt update
 	sudo apt install glibc-source groff less unzip git vim python2 python3
@@ -215,4 +233,53 @@ cartão, apenas se você ultrapassar os limites da conta.
 	Gerenciamento de acesso
 		Usuários
 			<Adicionar usuários>
-				
+				Detalhes do usuário
+					Nome do usuário: SEU_NOME_DE_USUÁRIO
+					ON (Enable) - Fornecer acesso para os usuários ao Console de Gerenciamento da AWS - opcional
+					ON (Enable) - Quero criar um usuário IAM
+						Senha do console:
+							Senha personalizada: SUA_SENHA
+							OFF (Disable) - Os usuários devem criar uma nova senha no próximo logon
+					<Próximo>
+				Opções de permissões
+					ON - Anexar políticas diretamente
+					Políticas de permissões
+						ON (Enable) - IAMFullAccess
+						ON (Enable) - AmazonEC2FullAccess
+					<Próximo>
+				Revisar e criar
+			<Criar usuário>
+		
+		Usuários
+			CLICAR_NO_USUÁRIO_CRIADO
+				Credenciais e segurança
+					Chaves de acesso
+						<Criar chave de acesso>
+							Práticas recomendadas e alternativas para chaves de acesso
+								ON (Enable) - Command Line Interface (CLI)
+								ON (Enable) - Compreendo a recomendação acima e quero prosseguir para criar uma chave de acesso.
+								<Próximo>
+							Definir etiqueta de descrição - opcional
+								Valor da etiqueta de descrição: AWS-CLI
+								<Criar chave de acesso>
+							Recuperar chaves de acesso
+								Chave de acesso: AKI(COPIAR_SUA_CHAVE_DE_ACESSO)
+								Chave de acesso secreta: MOSTRAR (COPIAR_SUA_CHAVE_SECRETA_DE_ACESSO)
+						<Concluído>
+
+#09_ Configurando o AWS-Cli no Linux Mint com a conta IAM (Identity and Access Management) do Amazon AWS<br>
+
+	Terminal: Ctrl + Alt + T
+
+	#opção do comando aws: configure (Configure  AWS  CLI  options)
+	aws configure
+		AWS Access Key ID [None]: AKI(COLAR_SUA_CAHVE_DE_ACESSO)
+		AWS Secret Access Key [None]: COLAR_SUA_CHAVE_SECRETA_DE_ACESSO
+		Default region name [None]: us-west-2
+		Default output format [None]: json
+	
+	#opção do comando aws: iam (Identity and Access Management (IAM)), list-users (Lists the IAM users) 
+	aws iam list-users
+
+	#opção do comando aws: ec2 (Amazon Elastic Compute Cloud), describe-instances (Describes the specified instances or all instances)
+	aws ec2 describe-instances
