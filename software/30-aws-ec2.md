@@ -211,7 +211,8 @@ Mais informações acesse: https://aws.amazon.com/pt/free/
 
 	OBSERVAÇÃO IMPORTANTE: Caso acontece a falha de: SSH Too Many Authentication Failures, digite a opção: 
 	-o IdentitiesOnly=yes depois da chave de autenticação do SSH.
-		#opção do comando ssh: -i (identity_file)
+	
+		#opção do comando ssh: -i (identity_file), -o (options)
 		ssh -i "/home/vaamonde/.ssh/WebServer.pem" -o IdentitiesOnly=yes ubuntu@ID_DA_SUA_VPC.amazonaws.com
 
 #07_ Instalando e Configurando o AWS-Cli no Linux Mint<br>
