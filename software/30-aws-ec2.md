@@ -53,17 +53,18 @@ cartão, apenas se você ultrapassar os limites da conta.
 
 Mais informações acesse: https://aws.amazon.com/pt/free/
 
-Computação:
-	Nível gratuito: 12 meses gratuitos;
-	Amazon EC2: 750 horas por mês.
-Armazenamento
-	Nível gratuito: 12 meses gratuitos;
-	Amazon S3: 5 GB.
-Banco de Dados
-	Nível gratuito: 12 meses gratuitos;
-	Amazon RDS: 750 horas.
+	Computação:
+		Nível gratuito: 12 meses gratuitos;
+		Amazon EC2: 750 horas por mês.
+	Armazenamento
+		Nível gratuito: 12 meses gratuitos;
+		Amazon S3: 5 GB.
+	Banco de Dados
+		Nível gratuito: 12 meses gratuitos;
+		Amazon RDS: 750 horas.
 
-Criando sua conta na Amazon Free
+	Criando sua conta na Amazon Free
+	
 	Acesse o site: https://aws.amazon.com/pt/free
 	Clique em: <Crie uma conta gratuita>
 	Preencha os campos:
