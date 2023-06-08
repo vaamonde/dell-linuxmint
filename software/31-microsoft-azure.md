@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 07/06/2023<br>
-#Data de atualização: 07/06/2023<br>
-#Versão: 0.01<br>
+#Data de atualização: 08/06/2023<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -201,46 +201,67 @@ uma conta do Github.
 				<Avançar: Revisar + criar>
 		<Criar>
 
-	GErar um novo par de chaves
+	Gerar um novo par de chaves
 	<Baixar chave privada e criar recurso>
-	
-#06_ Se conectando na Instância da VPC do Ubuntu Server no EC2 da Amazon AWS<br>
 
-	No Painel do EC2, clique em:
-		Instância
-			Instância
+#05_ Copiando o Par de Chaves para a a nova Localização e alterando a sua permissão<br>
 
-	Clique no ID da sua Instância
-		Clique em: <Conectar>
-	
-	Conexão da instância do EC2
-		<Conectar>
-	
+	Clique em: Arquivos (Nemo) acesse a Pasta: Download
+	Clique como Botão Direito do Mouse e selecione: Abrir no Terminal
+
+	Terminal: Ctrl + Alt + T
+	#opção do comando cp: -v (verbose)
+	#opção do comando chmod: -v (verbose), 0600 (User: RW-,Group: ---,Other: ---)
+	cp -v WebServerAzure.pem ../.ssh
+	chmod -v 0600 ../.ssh/WebServer.pem
+
+#06_ Se conectando na Instância do Ubuntu Server no Microsoft Azure<br>
+
+	No Painel do Microsoft Azure, clique em:
+		Recursos
+			Recentes
+				WebServer
+
+	Clique em: <Conectar>
+
+	Terminal: Ctrl + Alt + T	
 	Cliente SSH
 		#opção do comando ssh: -i (identity_file)
-		ssh -i "/home/vaamonde/.ssh/WebServer.pem" ubuntu@ID_DA_SUA_VPC.amazonaws.com
+		ssh -i "/home/vaamonde/.ssh/WebServerAzure.pem" vaamonde@ENDEREÇO_IPV4_MICROSOFT_AZURE
 
-#07_ Instalando e Configurando o AWS-Cli no Linux Mint<br>
+	OBSERVAÇÃO IMPORTANTE: Caso acontece a falha de: SSH Too Many Authentication Failures, digite a opção: 
+	-o IdentitiesOnly=yes depois da chave de autenticação do SSH.
+	
+		#opção do comando ssh: -i (identity_file), -o (options)
+		ssh -i "/home/vaamonde/.ssh/WebServerAzure.pem" -o IdentitiesOnly=yes vaamonde@ENDEREÇO_IPV4_MICROSOFT_AZURE
 
-	#instalando as principais dependências do AWS-Cli
+#07_ Instalando o Azure-Cli no Linux Mint<br>
+
+	Terminal: Ctrl + Alt + T
+	
+	#instalando as principais dependências do Azure-Cli
 	sudo apt update
-	sudo apt install glibc-source groff less unzip git vim python2 python3
+	sudo apt install ca-certificates curl apt-transport-https lsb-release gnupg unzip git vim python2 python3
 
-	#download e instalação do AWS-Cli
-	#opção do comando curl: -o (output file)
-	curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-	unzip awscliv2.zip
-	sudo ./aws/install
+	#download e instalação do Azure-Cli
+	#opção do comando curl: -s (output file), -L ()
+	curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 	
-	#verificando a versão do AWS-Cli
-	aws --version
+	#verificando a versão do Azure-Cli
+	az --version
 
-#08_ Criando um Usuário IAM (Identity and Access Management) no Amazon AWS<br>
+#08_ Autenticando o Azure Cli no Linux Mint<br>
 
-	Na pesquisa de serviços da Amazon digite: IAM
-		Em Service clique em: IAM (Manage access to AWS resources)
-	
-	Gerenciamento de acesso
-		Usuários
-			<Adicionar usuários>
-				
+	OBSERVAÇÃO: O sistema irá redirecioná-lo para o navegador padrão. 
+	az login
+
+#09_ Comandos básicos do Azure-Cli no Linux Mint<br>
+
+	#listando as VM's no Microsoft Azure
+	az vm list
+
+	#listando informações detalhadas da VM no Microsoft Azure
+	az vm show --resource-group myResourceGroup --name WebServer
+
+	#listando as imagens no Microsoft Azure
+	az vm image list --output table
