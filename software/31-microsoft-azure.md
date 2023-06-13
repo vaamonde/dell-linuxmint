@@ -204,7 +204,7 @@ uma conta do Github.
 	Gerar um novo par de chaves
 	<Baixar chave privada e criar recurso>
 
-#05_ Copiando o Par de Chaves para a a nova Localização e alterando a sua permissão<br>
+#05_ Copiando o Par de Chaves para a nova Localização e alterando a sua permissão<br>
 
 	Clique em: Arquivos (Nemo) acesse a Pasta: Download
 	Clique como Botão Direito do Mouse e selecione: Abrir no Terminal
