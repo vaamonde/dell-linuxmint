@@ -52,8 +52,14 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 	#INSTALANDO AS DEPENDÊNCIAS DO MONGODB SERVER NO LINUX MINT 21.x
 	#opção do comando dpkg: -i (install)
 	sudo apt install git vim build-essential software-properties-common gnupg apt-transport-https ca-certificates
-	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.18_amd64.deb
-	sudo dpkg -i libssl*.deb
+	
+	OBSERVAÇÃO IMPORTANTE: o tempo todo a Biblioteca LibSSL sofre alteração de versão, antes de baixar a versão
+	acesse o site: http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/ e veja qual a versão atual, altere
+	o script e faço o download.
+
+	#opção do comando dpkg: -i (install)
+	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb
+	sudo dpkg -i libssl1.1_1.1.1*.deb
 
 #03_ Baixando e instalando a Chave GPG do MongoDB Server no Linux Mint<br>
 

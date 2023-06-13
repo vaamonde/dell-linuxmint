@@ -57,8 +57,14 @@ Site Ofickial do PgAdmin: https://www.pgadmin.org/
 	sudo apt install git vim build-essential software-properties-common gnupg apt-transport-https \
 	ca-certificates libssl-dev libffi-dev libgmp3-dev virtualenv python3-pip libpq-dev python-dev \
 	libexpat1 ssl-cert
-	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.18_amd64.deb
-	sudo dpkg -i libssl*.deb
+	
+	OBSERVAÇÃO IMPORTANTE: o tempo todo a Biblioteca LibSSL sofre alteração de versão, antes de baixar a versão
+	acesse o site: http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/ e veja qual a versão atual, altere
+	o script e faço o download.
+
+	#opção do comando dpkg: -i (install)
+	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb
+	sudo dpkg -i libssl1.1_1.1.1*.deb
 
 #03_ Baixando e instalando a Chave GPG do PostgreSQL Server no Linux Mint<br>
 
