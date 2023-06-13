@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 07/06/2023<br>
-#Data de atualização: 08/06/2023<br>
-#Versão: 0.02<br>
+#Data de atualização: 13/06/2023<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
 
@@ -62,12 +62,36 @@ uma conta do Github.
 	Insira sua senha:
 		SenHA: SUA_SENHA_DE_EMAIL_DO_OFFICE
 		<Entrar>
-
-	Contrato
+	
+	Continuar conectado
+		Off (Disable) Não mostre isso novamente
+		<Sim>
+	
+	Seu Perfil
+		Pais/Região: SEU_PAIS_E_REGIÃO
+		Primeiro Nome: SEU_PRIMEIRO_NOME
+		Nome do meio (Opcional): SEU_NOME_DO_MEIO
+		Sobrenome: SEU_SOBRENOME
+		Endereço de email: SEU_ENDEREÇO_DE_EMAIL_DO_OFFICE
+		Telefone: SEU_TELEFONE_DE_CELULAR (Prefixo São Paulo 11)
+		Off (Disable) (Use um número de telefone diferente para verificar sua identidade)
+		<Enviar SMS para mim>
+			Código de verificação: SEU_CÓDIGO_DO_SMS
+		<Verificar código>
+		Número do CNPJ Editado: SEU_NÚMERO_DO_CNPJ (Opcional)
+		Linha de endereço 1: SEU_ENDEREÇO
+		Linha de endereço 2: COMPLEMENTO_DO_SEU_ENDEREÇO
+		Cidade: SUA_CIDADE
+		Estado: SEU_ESTADO
+		CEP: SEU_CEP
 		On (Enable) - Concordo com o contrato de client
 		Off (Disable) - Compartilhar minhas informações
 		<Avançar>
-	
+
+	OBSERVAÇÃO IMPORTANTE: essas informações são solicitadas somente se você está usando uma conta
+	corporativa do Office 365, os dados do Perfil do Usuário já vem pré-preenchido, precisando apenas
+	validar o celular e código SMS.
+
 	Verificação de identidade por telefone
 		Código do Pais: SEU_CÓDIGO_DO_PAIS (Brasil +55)
 		Número de telefone: SEU_NÚMERO_DE_CELULAR (Prefixo São Paulo 11)
@@ -77,13 +101,18 @@ uma conta do Github.
 		Código de verificação: SEU_CÓDIGO_DO_SMS
 		<Verificar código>
 
+	Contrato
+		On (Enable) - Concordo com o contrato de client
+		Off (Disable) - Compartilhar minhas informações
+		<Avançar>
+
 	Verificação de identidade por cartão
 		Nome do Titular do Cartão: SEU_NOME_DO_CARTÃO_DE_CRÉDITO
 		Número do cartão: NÚMERO_DO_CARTÃO_DE_CRÉDITO
 		Expira em: MÊS_ANO_EXPIRAÇÃO_DO_CARTÃO_DE_CRÉDITO
 		CVV: CÓDIGO_DE_VERIFICAÇÃO_DO_CARTÃO_DE_CRÉDITO
 		Linha de endereço 1: ENDEREÇO_FATURA_DO_CARTÃO_DE_CRÉDITO
-		Linha de endereço 2 COMPLEMENTO_DO_ENDEREÇO_FATURA_DO_CARTÃO_DE_CRÉDITO
+		Linha de endereço 2: COMPLEMENTO_DO_ENDEREÇO_FATURA_DO_CARTÃO_DE_CRÉDITO
 		Cidade: CIDADE_DO_CARTÃO_DE_CRÉDITO
 		Estado: ESTADO_DO_CARTÃO_DE_CRÉDITO
 		Cep: CEP_DO_CARTÃO_DE_CRÉDITO
@@ -115,7 +144,7 @@ uma conta do Github.
 					Assinatura: Azure subscription 1
 					Grupo de recursos: Default
 				Detalhes da instância
-					Nome da máquina virtual: WebServer
+					Nome da máquina virtual: WebServerAzure
 					Região: (South America) Brazil South
 					Opções de disponibilidade: Nenhuma redundância infraestrutura necessária
 					Tipo de segurança: Padrão
@@ -202,7 +231,11 @@ uma conta do Github.
 		<Criar>
 
 	Gerar um novo par de chaves
-	<Baixar chave privada e criar recurso>
+		<Baixar chave privada e criar recurso>
+		<Retornar para criar uma máquina virtual>
+
+	A implementação foi concluída
+	<Ir para o recurso>
 
 #05_ Copiando o Par de Chaves para a nova Localização e alterando a sua permissão<br>
 
@@ -213,7 +246,7 @@ uma conta do Github.
 	#opção do comando cp: -v (verbose)
 	#opção do comando chmod: -v (verbose), 0600 (User: RW-,Group: ---,Other: ---)
 	cp -v WebServerAzure.pem ../.ssh
-	chmod -v 0600 ../.ssh/WebServer.pem
+	chmod -v 0600 ../.ssh/WebServerAzure.pem
 
 #06_ Se conectando na Instância do Ubuntu Server no Microsoft Azure<br>
 
@@ -261,7 +294,7 @@ uma conta do Github.
 	az vm list
 
 	#listando informações detalhadas da VM no Microsoft Azure
-	az vm show --resource-group myResourceGroup --name WebServer
+	az vm show --resource-group WebServerAzure_group --name WebServerAzure
 
 	#listando as imagens no Microsoft Azure
 	az vm image list --output table
