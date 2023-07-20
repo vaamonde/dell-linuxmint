@@ -7,13 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 14/01/2023<br>
-#Data de atualização: 17/01/2023<br>
-#Versão: 0.05<br>
+#Data de atualização: 19/07/2023<br>
+#Versão: 0.06<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação do MySQL Server e Client 8.0 no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do MySQL Server e Client 8.0 no Linux Mint 21 Vanessa e 21.1 Vera x64
+#Instalação do MySQL Server e Client 8.0 no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 Site Oficial do MySQL: https://www.mysql.com/<br>
 Site Oficial do MariaDB: https://mariadb.org/<br>
@@ -51,7 +51,7 @@ Site Oficial do Workbench: https://www.mysql.com/products/workbench/
 	sudo apt install git vim libproj15 proj-data mysql-server-8.0 mysql-client-8.0 
 
 	#INSTALANDO O MYSQL SERVER E CLIENT NO LINUX MINT 21.x
-	sudo apt install git vim libproj22 proj-data mysql-server-8.0 mysql-client-8.0 
+	sudo apt install git vim libmysqlclient21 libpcrecpp0v5 libproj22 proj-data mysql-server-8.0 mysql-client-8.0 
 
 #03_ Instalando o MySQL Workbench no Linux Mint<br>
 
