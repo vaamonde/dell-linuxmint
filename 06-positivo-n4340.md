@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 13/08/2021<br>
-#Data de atualização: 24/07/2023<br>
-#Versão: 0.23<br>
+#Data de atualização: 31/07/2023<br>
+#Versão: 0.24<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
@@ -79,7 +79,9 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		sudo apt autoremove
 		sudo apt autoclean
 		sudo apt clean
-		sudo reboot (Reinicializar o Sistema)
+		
+		#Reinicializar o Sistema
+		sudo reboot
 
 #08_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.15.x suportado até 2025)<br>
 
@@ -87,8 +89,10 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		sudo apt install linux-oem-20.04 fdutils
 		
 		#Reinicializar o Sistema
+		sudo reboot
+		
+		#Verificando a versão do Kernel que está rodando na inicialização do Linux Mint
 		#opção do comando uname: -a (all)
-		sudo reboot 
 		sudo uname -a
 
 		#INSTALAÇÃO DO KERNEL OEM LINUX MINT 21.x (KERNEL >= 5.14, KERNEL >= 6.0 e KERNEL >= 6.1)
@@ -103,8 +107,10 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		sudo apt install linux-oem-22.04c fdutils
 
 		#Reinicializar o Sistema
-		#opção do comando uname: -a (all)
 		sudo reboot 
+
+		#Verificando a versão do Kernel que está rodando na inicialização do Linux Mint
+		#opção do comando uname: -a (all)
 		sudo uname -a
 
 #09_ Instalação dos Aplicativos Básicos<br>
@@ -113,14 +119,18 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		sudo apt install software-properties-common build-essential lsb-core dkms
 		sudo apt install htop nmon psensor tlp tlp-rdw cpufrequtils cputool ipmitool ipmiutil smartmontools
 		sudo apt install ttf-mscorefonts-installer cheese guvcview v4l-utils cairo-dock vim git p7zip-full p7zip-rar
-		sudo reboot (Reinicializar o Sistema)
+
+		#Reinicializar o Sistema
+		sudo reboot
 
 #10_ Instalação dos Drivers VGA Intel Graphics<br>
 
 		sudo apt update
 		sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
 		sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5 beignet-opencl-icd
-		sudo reboot (Reinicializar o Sistema)
+
+		#Reinicializar o Sistema
+		sudo reboot
 	
 	_ Testando o suporte ao Driver da Intel Mesa
 		sudo glxinfo | less
@@ -139,14 +149,18 @@ COMANDO QUE INFORMA QUAIS PÁGINAS OU BLOCOS ESTÃO REALMENTE EM USO EM SEU SSD.
 O DESEMPENHO DO DISPOSITIVO, GERA MAIS ESPAÇO LIVRE E AINDA AUXILIA A PROLONGAR SUA VIDA ÚTIL.
 
 	_ Executar os procedimentos no Terminal (Ctrl + Alt + T)
+		#opção do comando swapoff: -v (verbose)
+		#opção do comando rm: -v (verbose)
 		sudo swapon --show
 		sudo swapoff -v /swapfile
 		sudo vim /etc/fstab
 			INSERT
-				#Comentar a linha do Swapfile (salvar e sair: Esc Shift: x)
+				#Comentar a linha 12 (doze) do Swapfile (salvar e sair: Esc Shift: x)
 				#swapfile	none	swap	sw	0	0
 			ESC SHIFT :x <Enter>
-		sudo rm /swapfile
+		sudo rm -v /swapfile
+		
+		#Reinicializar o Sistema
 		sudo reboot
 
 	_ Executar os procedimentos no Terminal (Ctrl + Alt + T)
