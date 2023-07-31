@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 12/12/2022<br>
-#Data de atualização: 14/01/2023<br>
-#Versão: 0.03<br>
+#Data de atualização: 31/07/2023<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 21.1 Vera
 
 #Lançamentos Oficiais do Linux Mint<br>
@@ -147,3 +147,58 @@ Sétima etapa: Iniciando a Instalação o Linux Mint
 
 	Please remove the installation medium, then press <ENTER>:
 	Observação: Aguardar a reinicialização do sistema para se logar no Linux Mint.
+
+
+Oitava etapa: Se logando pela primeira vez no Linux Mint
+
+	_ Após a inicialização do Linux Mint, selecionar o usuário: Robson Vaamonde
+	_ Digitar a senha do usuário: pti@2018 pressionar: <Enter>
+	_ Aguardar a criação do perfil do usuário
+
+Nona etapa: Atualização do Sistema Operacional Linux Mint
+
+	_ Atualização do sistema utilizando o Relatório do Sistema;
+		Instalar pacotes de idiomas.
+	_ Atualização do sistema utilizando o MintUpdate.
+		RECOMENDADO UTILIZAR PRIMEIRO O MINTUPDATE DEPOIS PARA SER FEITO VIA TERMINAL
+	
+	_ Atualização do sistema utilizando o Apt;
+		Atalho do Terminal: Ctrl + Alt + T
+		sudo apt update
+		sudo apt upgrade
+		sudo apt full-upgrade
+		sudo apt dist-upgrade
+		sudo apt autoremove
+		sudo apt autoclean
+		sudo apt clean
+
+		#Reinicializar o Sistema
+		sudo reboot
+
+Décima etapa: Instalação dos Convidados do VirtualBOX no Linux Mint
+
+	_ Após a atualização do Linux Mint, clicar nas opções do VirtualBOX:
+		Dispositivos
+			Inserir imagem de CD dos Adicionais de Convidados
+	_ Na mensagem de: Está mídia contém um software de inicialização automática.
+		Clique em: <Executar>
+	_ Na tela de: A autenticação é necessária para executar /bin/sh como o superusuário
+		Digite a sua senha e clique em: <Autenticar>
+	_ Na mensagem: Press Return to close this Windows...
+		Pressione: <Enter>
+	_ Após a instalação dos convidados clique em:
+		Menu
+			Sair
+				Reiniciar
+
+Décima primeira etapa: Configuração da integração da Área de Transferência Compartilhada
+
+	_ Após a reinicialização do Linux Mint teste a opção de Maximizar do VirtualBOX
+
+	_ Atalho do Terminal: Ctrl + Alt + T
+		#opção do comando uname: -r (kernel-release)
+		#opções do comando usermod: -a (append), -G (groups), $USER (variável de ambiente do nome do usuário)
+		sudo apt update
+		sudo apt install dkms build-essential linux-headers-generic linux-headers-$(uname -r)
+		sudo usermod -aG vboxsf $USER
+		sudo reboot

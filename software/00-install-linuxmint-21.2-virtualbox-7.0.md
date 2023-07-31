@@ -164,6 +164,7 @@ Nona etapa: Atualização do Sistema Operacional Linux Mint
 		RECOMENDADO UTILIZAR PRIMEIRO O MINTUPDATE DEPOIS PARA SER FEITO VIA TERMINAL
 	
 	_ Atualização do sistema utilizando o Apt;
+		Atalho do Terminal: Ctrl + Alt + T
 		sudo apt update
 		sudo apt upgrade
 		sudo apt full-upgrade
@@ -175,9 +176,30 @@ Nona etapa: Atualização do Sistema Operacional Linux Mint
 		#Reinicializar o Sistema
 		sudo reboot
 
-Décima etapa: Instalação do Convidados do VirtualBOX no Linux Mint
+Décima etapa: Instalação dos Convidados do VirtualBOX no Linux Mint
 
 	_ Após a atualização do Linux Mint, clicar nas opções do VirtualBOX:
 		Dispositivos
 			Inserir imagem de CD dos Adicionais de Convidados
-	
+	_ Na mensagem de: Está mídia contém um software de inicialização automática.
+		Clique em: <Executar>
+	_ Na tela de: A autenticação é necessária para executar /bin/sh como o superusuário
+		Digite a sua senha e clique em: <Autenticar>
+	_ Na mensagem: Press Return to close this Windows...
+		Pressione: <Enter>
+	_ Após a instalação dos convidados clique em:
+		Menu
+			Sair
+				Reiniciar
+
+Décima primeira etapa: Configuração da integração da Área de Transferência Compartilhada
+
+	_ Após a reinicialização do Linux Mint teste a opção de Maximizar do VirtualBOX
+
+	_ Atalho do Terminal: Ctrl + Alt + T
+		#opção do comando uname: -r (kernel-release)
+		#opções do comando usermod: -a (append), -G (groups), $USER (variável de ambiente do nome do usuário)
+		sudo apt update
+		sudo apt install dkms build-essential linux-headers-generic linux-headers-$(uname -r)
+		sudo usermod -aG vboxsf $USER
+		sudo reboot
