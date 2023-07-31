@@ -149,3 +149,35 @@ Sétima etapa: Iniciando a Instalação o Linux Mint
 
 	Please remove the installation medium, then press <ENTER>:
 	Observação: Aguardar a reinicialização do sistema para se logar no Linux Mint.
+
+Oitava etapa: Se logando pela primeira vez no Linux Mint
+
+	_ Após a inicialização do Linux Mint, selecionar o usuário: Robson Vaamonde
+	_ Digitar a senha do usuário: pti@2018 pressionar: <Enter>
+	_ Aguardar a criação do perfil do usuário
+
+Nona etapa: Atualização do Sistema Operacional Linux Mint
+
+	_ Atualização do sistema utilizando o Relatório do Sistema;
+		Instalar pacotes de idiomas.
+	_ Atualização do sistema utilizando o MintUpdate.
+		RECOMENDADO UTILIZAR PRIMEIRO O MINTUPDATE DEPOIS PARA SER FEITO VIA TERMINAL
+	
+	_ Atualização do sistema utilizando o Apt;
+		sudo apt update
+		sudo apt upgrade
+		sudo apt full-upgrade
+		sudo apt dist-upgrade
+		sudo apt autoremove
+		sudo apt autoclean
+		sudo apt clean
+
+		#Reinicializar o Sistema
+		sudo reboot
+
+Décima etapa: Instalação do Convidados do VirtualBOX no Linux Mint
+
+	_ Após a atualização do Linux Mint, clicar nas opções do VirtualBOX:
+		Dispositivos
+			Inserir imagem de CD dos Adicionais de Convidados
+	
