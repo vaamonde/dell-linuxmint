@@ -10,10 +10,10 @@
 #Data de atualização: 18/05/2023<br>
 #Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação do Tilix no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do Tilix no Linux Mint 21 Vanessa e 21.1 Vera x64
+#Instalação do Tilix no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 Site Oficial do Terminal Tilix: https://gnunn1.github.io/tilix-web/<br>
 Site Oficial do Oh My Zsh: https://ohmyz.sh/<br>

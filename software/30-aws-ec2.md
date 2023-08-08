@@ -10,10 +10,10 @@
 #Data de atualização: 05/06/2023<br>
 #Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação e Configuração do AWS-Cli no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação e Configuração do AWS-Cli no Linux Mint 21 Vanessa e 21.1 Vera x64
+#Instalação e Configuração do AWS-Cli no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 Site Oficial do AWS: https://aws.amazon.com/pt/free<br>
 Site Oficial do EC2: https://aws.amazon.com/pt/ec2<br>

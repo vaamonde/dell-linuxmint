@@ -10,10 +10,10 @@
 #Data de atualização: 25/02/2023<br>
 #Versão: 0.01<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação do Microsoft SQL Server 2022 no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do Microsoft SQL Server 2022  no Linux Mint 21 Vanessa e 21.1 Vera x64
+#Instalação do Microsoft SQL Server 2022 no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 Site Oficial do Microsoft SQL Server: https://www.microsoft.com/pt-br/sql-server/sql-server-2022<br>
 Site Oficial do Download do Microsoft SQL Server: https://www.microsoft.com/pt-br/sql-server/sql-server-downloads<br>

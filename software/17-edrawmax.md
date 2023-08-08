@@ -10,10 +10,10 @@
 #Data de atualização: <br>
 #Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação do Wondershare EdrawMax v11.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do Wondershare EdrawMax v11.x no Linux Mint 21 Vanessa e 21.1 Vera x64
+#Instalação do Wondershare EdrawMax v11.x no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 Site Oficial do Edraw Soft: https://www.edrawsoft.com/pt/<br>
 Site do EdrawMax On-Line: https://www.edrawmax.com/online/pt/

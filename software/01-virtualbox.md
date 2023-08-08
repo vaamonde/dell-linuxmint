@@ -10,10 +10,10 @@
 #Data de atualização: 18/05/2023<br>
 #Versão: 0.14<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação do VirtualBOX no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do VirtualBOX no Linux Mint 21 Vanessa e 21.1 Vera x64
+#Instalação do VirtualBOX no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 Site Oficial do VirtualBOX: https://www.virtualbox.org/<br>
 Lançamento da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Changelog-7.0#v02<br>

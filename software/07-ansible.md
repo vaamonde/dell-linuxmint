@@ -10,10 +10,10 @@
 #Data de atualização: 07/01/2023<br>
 #Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação do Ansible no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do Ansible no Linux Mint 21 Vanessa e 21.1 Vera x64
+#Instalação do Ansible no LLinux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 Site Oficial do Ansible: https://www.ansible.com/
 

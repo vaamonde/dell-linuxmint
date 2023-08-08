@@ -10,10 +10,10 @@
 #Data de atualização: 18/05/2023<br>
 #Versão: 0.06<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa e 21.1 Vera x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação do VMware Workstation no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do VMware Workstation no Linux Mint 21 Vanessa e 21.1 Vera x64
+#Instalação do VMware Workstation no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 Site Oficial do VMware Workstation: https://www.vmware.com/br/products/workstation-pro.html<br>
 Site Oficial do VMware Store: https://store-us.vmware.com/vmware-workstation-17-pro-5709912600.html
