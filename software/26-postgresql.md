@@ -49,14 +49,14 @@ Site Ofickial do PgAdmin: https://www.pgadmin.org/
 
 	#INSTALANDO AS DEPENDÊNCIAS DO POSTGRESQL SERVER NO LINUX MINT 20.x
 	sudo apt install git vim build-essential software-properties-common gnupg apt-transport-https \
-	ca-certificates libssl-dev libffi-dev libgmp3-dev virtualenv python3-pip libpq-dev python-dev \
-	libexpat1 ssl-cert
+	ca-certificates libssl-dev libffi-dev libgmp3-dev virtualenv python3-pip libpq-dev python2-dev \
+	python3-dev libexpat1 ssl-cert
 
 	#INSTALANDO AS DEPENDÊNCIAS DO POSTGRESQL SERVER NO LINUX MINT 21.x
 	#opção do comando dpkg: -i (install)
 	sudo apt install git vim build-essential software-properties-common gnupg apt-transport-https \
-	ca-certificates libssl-dev libffi-dev libgmp3-dev virtualenv python3-pip libpq-dev python-dev \
-	libexpat1 ssl-cert
+	ca-certificates libssl-dev libffi-dev libgmp3-dev virtualenv python3-pip libpq-dev python2-dev \
+	python3-dev libexpat1 ssl-cert
 	
 	OBSERVAÇÃO IMPORTANTE: o tempo todo a Biblioteca LibSSL sofre alteração de versão, antes de baixar a versão
 	acesse o site: http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/ e veja qual a versão atual, altere
