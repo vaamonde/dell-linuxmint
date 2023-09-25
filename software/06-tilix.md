@@ -7,7 +7,7 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 18/05/2023<br>
+#Data de atualização: 25/09/2023<br>
 #Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
@@ -76,6 +76,14 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 	gsettings set org.cinnamon.desktop.default-applications.terminal exec /usr/bin/tilix
 	exit
 
+	#OBSERVAÇÃO IMPORTANTE: no Linux Mint 21.2 Victoria a recurso de configurar o terminal pelo
+	Aplicativos Preferenciais voltou, recomendo fazer por ele.
+	Menu
+		Aplicativos Preferenciais
+			Sistema
+				Terminal
+					Tilix
+
 #05_ Executando o Tilix no Linux Mint<br>
 
 	Atalho: Ctrl + Alt + T
@@ -86,11 +94,12 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 		Preferências
 			Aparência
 				Usar abas em vez da barra lateral (necessário reiniciar aplicação)
-			Padrão
+			Padrão (Default)
 				Geral
 					Fonte Personalizada: Yes
 						Hack Nerd Font Mono Bold
 						Tamanho: 16
+							Selecionar
 				Cor
 					Esquemas de Cores: Monokai Dark
 					Transparência: Aumentar um Pouco
@@ -100,7 +109,10 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 	Terminal: Ctrl + Alt + T
 
+	sudo apt update
 	sudo apt install zsh
+	
+	#Executando o Terminal ZSH
 	zsh
 		Type one of the keys in parentheses: 2
 
@@ -137,6 +149,8 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 	#Instalação do Plugin FZF do ZSH
 	git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+	
+	#Executando o instalador do Plugin FSF do ZSH
 	~/.fzf/install
 		Do you want to enable fuzzy auto-completion? ([y]/n) y <Enter>
 		Do you want to enable key bindings? ([y]/n) y <Enter>
@@ -147,22 +161,22 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 	vim ~/.zshrc
 		INSERT
 
-			#Variáveis de configuração do Tema PowerLevel10K
-			#Copiar e colar substituindo a partir da linha: 11
-			ZSH_THEME="powerlevel10k/powerlevel10k"
-			POWERLEVEL10K_MODE="nerdfont-complete"
-	
-			#Variável de configuração dos Plugins do ZSH
-			#Copiar e colar substituindo a partir da linha: 75
-			plugins=(
-				git
-				zsh-syntax-highlighting
-				fzf
-				zsh-autosuggestions
-				k
-			)
+	#Variáveis de configuração do Tema PowerLevel10K
+	#Copiar e colar substituindo a partir da linha: 11
+	ZSH_THEME="powerlevel10k/powerlevel10k"
+	POWERLEVEL10K_MODE="nerdfont-complete"
 
-		ESC SHIFT :x <Enter>
+	#Variável de configuração dos Plugins do ZSH
+	#Copiar e colar substituindo a partir da linha: 74
+	plugins=(
+		git
+		zsh-syntax-highlighting
+		fzf
+		zsh-autosuggestions
+		k
+	)
+
+	ESC SHIFT :x <Enter>
 
 	#recomendo fechar o Terminal Tilix e abrir novamente para verificar se tudo está funcionando,
 	#deverá iniciar automaticamente a customização do Tema PowerLevel10K utilizando o Wizard padrão.
@@ -173,63 +187,63 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 	Terminal: Ctrl + Alt + T
 
 		Does this look like a diamond (rotated square)?
-			Choice [ynq]: y
+			Choice [ynrq]: y
 		
 		Does this look like a lock?
-			Choice [ynq]: y
+			Choice [ynrq]: y
 		
-		Does this look like a Debian logo (swirl/spiral)?
-			Choice [ynq]: y
-		
+		Does this look like an upwards arrow?
+			Choice [ynrq]: y
+
 		Do all these icons fit between the crosses?
-			Choice [ynq]: y
-		
-		Prompt Style: (2) Classic
+			Choice [ynrq]: y
+
+		Prompt Style: (2) Classic.
 			Choice [1234rq]: 2
 		
-		Character Set: (1) Unicode
-			Choice [1234rq]: 1
+		Character Set: (1) Unicode.
+			Choice [12rq]: 1
 		
 		Prompt Color: (4) Darkest.
 			Choice [1234rq]: 4
 		
 		Show current time?: (2) 24-hour format.
-			Choice [123rq]: 2
+			Choice [n12rq]: 2
 		
-		Prompt Separators: (3)  Slanted.
-			Choice [123rq]: 3
+		Prompt Separators: (3) Slanted.
+			Choice [1234rq]: 3
 		
-		Prompt Heads: (1)  Sharp.
+		Prompt Heads: (1) Sharp.
+			Choice [1234rq]: 1
+		
+		Prompt Tails: (1) Flat.
+			Choice [12345rq]: 1
+		
+		Prompt Height: (2) Two lines.
+			Choice [12rq]: 2
+		
+		Prompt Connection: (1) Disconnected.
 			Choice [123rq]: 1
 		
-		Prompt Tails: (1)  Flat.
+		Prompt Frame: (1) No frame.
+			Choice [1234rq]: 1
+		
+		Prompt Spacing: (2) Sparse.
+			Choice [12rq]: 2
+		
+		Icons: (2) Many icons.
+			Choice [12rq]: 2
+		
+		Prompt Flow: (2) Fluent.
+			Choice [12rq]: 2
+		
+		Enable Transient Prompt? (n) No.
+			Choice [ynrq]: n
+		
+		Instant Prompt Mode: (1) Verbose (recommended).
 			Choice [123rq]: 1
 		
-		Prompt Height: (2)  Two lines.
-			Choice [123rq]: 2
-		
-		Prompt Connection: (1)  Disconnected.
-			Choice [123rq]: 1
-		
-		Prompt Frame: (1)  No frame.
-			Choice [123rq]: 1
-		
-		Prompt Spacing: (2)  Sparse.
-			Choice [123rq]: 2
-		
-		Icons: (2)  Many icons.
-			Choice [123rq]: 2
-		
-		Prompt Flow: (2)  Fluent.
-			Choice [123rq]: 2
-		
-		Enable Transient Prompt? (n)  No.
-			Choice [n]: n
-		
-		Instant Prompt Mode: (1)  Verbose (recommended).
-			Choice [123rq]: 1
-		
-		Apply changes to ~/.zshrc?: (y)  Yes (recommended).
+		Apply changes to ~/.zshrc?: (y) Yes (recommended).
 		 	Choice [ynrq]: y
 
 	#caso queira reconfigurar o PowerLevel10K novamente digite o comando abaixo.
