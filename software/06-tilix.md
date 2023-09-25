@@ -259,6 +259,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 			terminal.integrated.fontFamily
 				Hack Nerd Font
 
-	Ctrl + Shift + P
-		Terminal: Selecionar o Perfil Padrão
+	Ctrl + J
+		Terminal: Selecionar o Perfil Padrão (Símbolo do + Launch Profile)
 			zsh
+			#OBSERVAÇÃO: remover depois o bash do perfil padrão
