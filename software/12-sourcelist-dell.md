@@ -122,8 +122,14 @@
 
 #05_ Atualizando as Lista do Apt e instalando os principais pacotes da Dell no Linux Mint
 
+	#INSTALANDO OS PRINCIPAIS PACOTES DA DELL NO LINUX MINT 20.x
 	sudo apt update
-	sudo apt install oem-somerville-melisa-meta libfprint-2-tod1-goodix oem-somerville-meta tlp-config
+	sudo apt install oem-somerville-melisa-meta oem-somerville-meta libfprint-2-tod1-goodix tlp-config
+	sudo reboot (Reinicializar o Sistema)
+
+	#INSTALANDO OS PRINCIPAIS PACOTES DA DELL NO LINUX MINT 21.x
+	sudo apt update
+	sudo apt install oem-somerville-meta oem-stella-meta libfprint-2-tod1 tlp tlp-rdw
 	sudo reboot (Reinicializar o Sistema)
 
 #06_ Verificando o Driver da Dell no Gerenciador de Drivers do Linux Mint
