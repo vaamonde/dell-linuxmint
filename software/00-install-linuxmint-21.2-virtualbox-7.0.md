@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/07/2023<br>
-#Data de atualização: 31/07/2023<br>
-#Versão: 0.01<br>
+#Data de atualização: 15/10/2023<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 21.2 Victoria
 
 #Lançamentos Oficiais do Linux Mint<br>
@@ -58,7 +58,7 @@ Quarta etapa: Criando a Máquina Virtual do Linux Mint no VirtualBox
 		Pasta (F): (deixar o padrão do sistema) 
 		Imagem ISO:
 			Outro
-				/home/vaamonde/ISO/linuxmint-21.2-cinnamon-64bit.iso
+				linuxmint-21.2-cinnamon-64bit.iso
 		Edição: (Default)
 		Tipo: Linux
 		Versão: Ubuntu (64-bit)
@@ -107,7 +107,7 @@ Quinta etapa: Personalizando a Máquina Virtual do Linux Mint no VirtualBox
 
 Sexta etapa: Iniciando a ISO do Linux Mint
 
-	_ VM LinuxMint21.1: Iniciar
+	_ VM LinuxMint21.2: Iniciar
 
 Sétima etapa: Iniciando a Instalação o Linux Mint
 
