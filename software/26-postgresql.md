@@ -7,13 +7,17 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 25/02/2023<br>
-#Data de atualização: 03/03/2023<br>
-#Versão: 0.02<br>
+#Data de atualização: 16/10/2023<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação do PostgreSQL Server 15.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do PostgreSQL Server 15.x no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+
+OBSERVAÇÃO IMPORTANTE: LANÇADO NO MÊS SETEMBRO/2023 A VERSÃO 16 DO POSTGRESQL SERVER,<br>
+OS PROCEDIMENTOS ADOTADO NESSE VÍDEO SERVER PARA ESSE VERSÃO, MUDANDO APENAS O NÚMERO<br>
+DA VERSÃO DE: 15 PARA 16 NOS CAMINHOS DOS DIRETÓRIOS.
 
 Site Oficial do PostgreSQL: https://www.postgresql.org/<br>
 Site Oficial do DBeaver: https://dbeaver.io/<br>
