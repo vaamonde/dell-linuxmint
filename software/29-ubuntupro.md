@@ -98,4 +98,4 @@ Site Oficial do Ubuntu Membership: https://wiki.ubuntu.com/Membership
 	sudo pro security-status --esm-apps
 	sudo pro fix CVE-2023-23518
 
-#07_ 
+#07_ https://learnubuntu.com/use-ubuntu-pro/
