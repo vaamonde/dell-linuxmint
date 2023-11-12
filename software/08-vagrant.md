@@ -15,7 +15,7 @@
 #Instalação do HashiCorp Vagrant no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do HashiCorp Vagrant no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
-[![Vagrant](http://img.youtube.com/vi/TlrcoR5YQE/0.jpg)](https://www.youtube.com/watch?v=LTlrcoR5YQE "Vagrant")
+[![Vagrant](http://img.youtube.com/vi/LTlrcoR5YQE/0.jpg)](https://www.youtube.com/watch?v=LTlrcoR5YQE "Vagrant")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=LTlrcoR5YQE
 

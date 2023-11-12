@@ -7,10 +7,14 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 04/07/2021<br>
-#Data de atualização: 25/09/2023<br>
-#Versão: 0.10<br>
+#Data de atualização: 12/11/2023<br>
+#Versão: 0.11<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+
+[![Dell Sources.List](http://img.youtube.com/vi/Hhn7OA6jDc/0.jpg)](https://www.youtube.com/watch?v=sHhn7OA6jDc "Dell Sources.List")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=sHhn7OA6jDc
 
 #Link da Postagem na Comunidade da Dell: https://www.dell.com/community/Notebooks-Laptops/Reposit%C3%B3rio-Dell-Ubuntu-Codinome-Notebook/m-p/8262168#M36640
 

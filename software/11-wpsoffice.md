@@ -15,6 +15,10 @@
 #Instalação do WPS Office 2019 + Pacote de Tradução e Dicionário no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do WPS Office 2019 + Pacote de Tradução e Dicionário no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
+[![WPS Office](http://img.youtube.com/vi/PzIgNdJDdFE/0.jpg)](https://www.youtube.com/watch?v=PzIgNdJDdFE "WPS Office")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=PzIgNdJDdFE
+
 Site Oficial do WPS Office: https://www.wps.com/<br>
 Novidades da Versão do WPS Office: https://www.wps.com/whatsnew/linux/<br>
 AppImage do WPS Office (não oficial): https://apprepo.de/appimage/wps-office<br>

@@ -7,13 +7,17 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 10/01/2023<br>
-#Versão: 0.03<br>
+#Data de atualização: 12/11/2023<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação do Microsoft Powershell no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do Microsoft Powershell no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+
+[![Powershell](http://img.youtube.com/vi/1yUXXUtvl0o/0.jpg)](https://www.youtube.com/watch?v=1yUXXUtvl0o "Powershell")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=1yUXXUtvl0o
 
 Site Oficial do PowerShell: https://docs.microsoft.com/pt-br/powershell/scripting/overview?view=powershell-7.2<br>
 Site Oficial do .NET SDK: https://docs.microsoft.com/pt-br/dotnet/core/sdk<br>
@@ -86,14 +90,14 @@ Documentação do .NET SDK e Runtime: https://docs.microsoft.com/pt-br/dotnet/co
 
 #08_ Utilizando os comandos Básicos do PowerShell no Linux Mint<br>
 
-	Get-Date		- informações de data e hora do linux
-	Get-Host		- informações detalhadas do PowerShell
-	Get-Location	- informações da localização (Path)
-	Get-PSDrive		- informações do Hard Disk
-	Get-Process		- informações de processos
-	Get-Uptime		- informações do tempo de uso do linux
-	Get-Command		- lista todos os comandos que estão disponíveis
-	Get-Module		- lista todos os módulos que estão disponíveis
-	Get-History		- imprimir todo o histórico de comandos do PowerShell
-	dir ou ls 		- lista o conteúdo do diretório
-	exit			- sair do PowerShell
+	Get-Date        - informações de data e hora do linux
+	Get-Host        - informações detalhadas do PowerShell
+	Get-Location    - informações da localização (Path)
+	Get-PSDrive     - informações do Hard Disk
+	Get-Process     - informações de processos
+	Get-Uptime      - informações do tempo de uso do linux
+	Get-Command     - lista todos os comandos que estão disponíveis
+	Get-Module      - lista todos os módulos que estão disponíveis
+	Get-History     - imprimir todo o histórico de comandos do PowerShell
+	dir ou ls       - lista o conteúdo do diretório
+	exit            - sair do PowerShell
