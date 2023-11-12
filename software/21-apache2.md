@@ -7,13 +7,17 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 16/01/2023<br>
-#Data de atualização: 17/01/2023<br>
-#Versão: 0.02<br>
+#Data de atualização: 12/11/2023<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação do Apache 2 e PHP 7.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do Apache 2 e PHP 8.x no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+
+[![Apache2 Server](http://img.youtube.com/vi/XDURRbCpd2M/0.jpg)](https://www.youtube.com/watch?v=XDURRbCpd2M "Apache2 Server")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=XDURRbCpd2M
 
 Site Oficial do Apache2: https://httpd.apache.org/<br>
 Site Oficial do PHP (7.x ou 8.x): https://www.php.net/

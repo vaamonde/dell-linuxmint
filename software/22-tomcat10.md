@@ -7,13 +7,17 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 19/01/2023<br>
-#Data de atualização: 01/05/2023<br>
-#Versão: 0.03<br>
+#Data de atualização: 12/11/2023<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação do Apache Tomcat 10.1.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do Apache Tomcat 10.1.x no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+
+[![Tomcat Server](http://img.youtube.com/vi/ZmpQFKsMIXE/0.jpg)](https://www.youtube.com/watch?v=ZmpQFKsMIXE "Tomcat Server")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=ZmpQFKsMIXE
 
 Site Oficial do Apache2: https://httpd.apache.org/<br>
 Site Oficial do Apache Tomcat: https://tomcat.apache.org/<br>
@@ -50,7 +54,7 @@ Site Oficial do OpenJDK: https://openjdk.org/
 	#INSTALANDO O OPENJDK E OPENJRE NO LINUX MINT 20.x
 	sudo apt install git vim openjdk-17-jdk openjdk-17-jre software-properties-common build-essential
 
-	#INSTALANDO O ECLIPSE IDE NO LINUX MINT 21.x (RECOMENDADO UTILIZAR A VERSÃO 17)
+	#INSTALANDO O OPENJDK IDE NO LINUX MINT 21.x (RECOMENDADO UTILIZAR A VERSÃO 17)
 	sudo apt install git vim openjdk-17-jdk openjdk-17-jre software-properties-common build-essential
 
 	#CASO QUEIRA UTILIZAR OUTRAS VERSÕES DO JAVA NO LINUX 21.x (EXECUTAR SOMENTE SE NECESSÁRIO)
@@ -74,8 +78,8 @@ Site Oficial do OpenJDK: https://openjdk.org/
 	#opção do comando sudo: -i (login)
 	sudo -i
 	
-	#opção do comando wget: -v (verbose), -O (output file)
-	wget -v -O /tmp/tomcat10.tar.gz https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.8/bin/apache-tomcat-10.1.8.tar.gz
+	#opção do comando wget: -v (verbose), -O (output file) (link atualizado em 12/11/2023)
+	wget -v -O /tmp/tomcat10.tar.gz https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.15/bin/apache-tomcat-10.1.15.tar.gz
 
 #05_ Descompactando e instalando o Apache Tomcat 10.1.x no Linux Mint<br>
 
