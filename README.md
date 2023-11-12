@@ -34,6 +34,39 @@ FTP  do Linux Mint: https://ftp.heanet.ie/mirrors/linuxmint.com/stable/<br>
 ## **Playlist do YouTUBE com todos os Vídeos do Linux Mint 20.x/21.x:**
 Link da Playlist: https://www.youtube.com/playlist?list=PLozhsZB1lLUOKXT6TIhjwPWBNpUoExsNF
 
+## **O QUE ESPERAR da NOVA versão do LINUX MINT 21.2 VICTORIA BETA Cinnamon - Instalação VirtualBOX**
+
+Vídeo mostrando os procedimentos básicos para baixar e instalar no VirtualBOX a "NOVA" Versão do Linux Mint 21.2 Victoria (Vitória) Cinnamon x64 Bits.
+
+Com lançamento previsto para final do mês de Junho/2023 (ou no início do mês de Julho/2023), a nova versão da Distribuição Linux Mint 21.2 Codinome Victoria (Vitória) traz grandes mudanças e melhorias conforme os links oficiais da distribuição.
+
+Notas de Lançamento do Linux Mint 21.2 Victoria Cinnamon:<br>
+https://www.linuxmint.com/rel_victoria_cinnamon.php
+
+21/06/2023 - Lançamento da Versão BETA do Linux Mint 21.1 Victoria<br>
+https://blog.linuxmint.com/?p=4523
+
+02/06/2023 - Finalização das Correções da Versão BETA do Linux Mint 21.1 Victoria<br>
+https://blog.linuxmint.com/?p=4518<br>
+01_ CJS (Cinnamon JavaScript) e GJS (Gnome JavaScript);<br>
+02_ XDG (X Development Group);<br>
+03_ Cinnamon 5.8;<br>
+04_ Preferências de Cor;<br>
+05_ Melhoria no Algoritmo do Gerenciador de Aplicativos.
+
+02/05/2023 - Novidades da Versão https://blog.linuxmint.com/?p=4518<br>
+https://blog.linuxmint.com/?p=4513<br>
+01_ Tooltips (Dicas de Ferramentas);<br>
+02_ Notifications (Notificações);<br>
+03_ Secureboot (Boot Seguro);<br>
+04_ Warpinator (Compartilhamento de Arquivos)
+
+[![Linux Mint 21.2](http://img.youtube.com/vi/Ie9WblbiUu0/0.jpg)](https://www.youtube.com/watch?v=Ie9WblbiUu0 "Linux Mint 21.2")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=Ie9WblbiUu0
+
+Material de apoio desse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/software/00-install-linuxmint-21.2-virtualbox-7.0.md
+
 ## **LINUX MINT 21.1 VERA - Lançamento da Versão BETA Cinnamon - Download e Instalação no VirtualBOX**
 
 Vídeo mostrando os procedimentos básicos para baixar e instalar no VirtualBOX a "NOVA" Versão do Linux Mint 21.1 Vera Cinnamon x64 Bits.
