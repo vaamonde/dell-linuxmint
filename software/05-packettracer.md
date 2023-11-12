@@ -7,13 +7,21 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 25/09/2023<br>
-#Versão: 0.09<br>
+#Data de atualização: 12/11/2023<br>
+#Versão: 0.10<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação do Cisco Packet Tracer no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do Cisco Packet Tracer no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+
+[![Packet Tracer 8.1.x](http://img.youtube.com/vi/yFS2d93-hbws/0.jpg)](https://www.youtube.com/watch?v=yFS2d93-hbw "Packet Tracer 8.1.x")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=yFS2d93-hbws
+
+[![Packet Tracer 8.2.x](http://img.youtube.com/vi/hLU-9NWmcno/0.jpg)](https://www.youtube.com/watch?v=hLU-9NWmcno "Packet Tracer 8.2.x")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=hLU-9NWmcno
 
 Site Oficial do Netacad: https://www.netacad.com/pt-br<br>
 Cursos Oficiais do Cisco Packet Tracer: https://www.netacad.com/pt-br/courses/packet-tracer<br>

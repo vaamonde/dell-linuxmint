@@ -7,50 +7,55 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 18/05/2023<br>
-#Versão: 0.06<br>
+#Data de atualização: 12/11/2023<br>
+#Versão: 0.07<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação do VMware Workstation no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do VMware Workstation no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
+[![VMware Workstation](http://img.youtube.com/vi/yUv2mebfheaI/0.jpg)](https://www.youtube.com/watch?v=Uv2mebfheaI "VMware Workstation")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=Uv2mebfheaI
+
 Site Oficial do VMware Workstation: https://www.vmware.com/br/products/workstation-pro.html<br>
 Site Oficial do VMware Store: https://store-us.vmware.com/vmware-workstation-17-pro-5709912600.html
 
 #Tecnologias de Virtualização de Processadores AMD e Intel<br>
 
-	vmx – Intel VT-x, suporte a virtualização ativada na BIOS.
-	svm – AMD SVM, suporte a virtualização ativada na BIOS.
+	vmx....: Intel VT-x, suporte a virtualização ativada na BIOS.
+	svm....: AMD SVM, suporte a virtualização ativada na BIOS.
 
 #AES dos Processadores da AMD e Intel<br>
 
-	aes – Aplicativos que executam criptografia e descriptografia usando o Advanced
+	aes....: Aplicativos que executam criptografia e descriptografia usando o Advanced
 	Encryption Standard em processadores Intel e AMD.
 
 #Flags dos Processadores da Intel<br>
 
-	ept – Suporte de tabela de páginas estendidas da Intel habilitado para tornar
+	ept.....: Suporte de tabela de páginas estendidas da Intel habilitado para tornar
 	mais rápida a emulação de tabelas de páginas de convidados.
-	vpid – ID do processador virtual da Intel. Faça descargas de TLB caras
+	vpid....: ID do processador virtual da Intel. Faça descargas de TLB caras
 	desnecessárias quando alternar o contexto entre os convidados.
-	tpr_shadow e flexpriority – Recurso da Intel que reduz as chamadas para o
+	vnmi....: O Intel Virtual NMI ajuda com eventos de interrupção selecionados em 
+	convidados.
+	tpr_shadow e flexpriority..: Recurso da Intel que reduz as chamadas para o
 	hypervisor ao acessar o Registro de prioridade de tarefas, o que ajuda na execução
 	de determinados tipos de convidados do SMP.
-	vnmi – O Intel Virtual NMI ajuda com eventos de interrupção selecionados em convidados.
 
 #Flags dos Processadores da AMD<br>
 
-	npt – Tabelas de Páginas Aninhadas AMD, semelhantes ao Intel EPT.
-	lbrv – Suporte de virtualização da AMD LBR.
-	svm_lock – MSR de bloqueio AMD SVM.
-	nrip_save – AMD SVM next_rip salvar.
-	tsc_scale – Suporte de dimensionamento do AMD TSC.
-	vmcb_clean – Suporte para bits limpos AMD VMCB.
-	flushbyasid – Suporte para AMD flush-by-ASID.
-	decodeassists – AMD Decode Assistir ao suporte.
-	pausefilter – Interrupção de pausa filtrada AMD.
-	pfthreshold – AMD pausa o limite do filtro.
+	npt...........: Tabelas de Páginas Aninhadas AMD, semelhantes ao Intel EPT.
+	lbrv..........: Suporte de virtualização da AMD LBR.
+	svm_lock......: MSR de bloqueio AMD SVM.
+	nrip_save.....: AMD SVM next_rip salvar.
+	tsc_scale.....: Suporte de dimensionamento do AMD TSC.
+	vmcb_clean....: Suporte para bits limpos AMD VMCB.
+	flushbyasid...: Suporte para AMD flush-by-ASID.
+	decodeassists.: AMD Decode Assistir ao suporte.
+	pausefilter...: Interrupção de pausa filtrada AMD.
+	pfthreshold...: AMD pausa o limite do filtro.
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
