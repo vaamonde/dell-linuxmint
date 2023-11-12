@@ -15,9 +15,9 @@
 #Instalação do Cisco Packet Tracer no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do Cisco Packet Tracer no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
-[![Packet Tracer 8.1.x](http://img.youtube.com/vi/yFS2d93-hbws/0.jpg)](https://www.youtube.com/watch?v=yFS2d93-hbw "Packet Tracer 8.1.x")
+[![Packet Tracer 8.1.x](http://img.youtube.com/vi/yFS2d93-hbw/0.jpg)](https://www.youtube.com/watch?v=yFS2d93-hbw "Packet Tracer 8.1.x")
 
-Link da vídeo aula: https://www.youtube.com/watch?v=yFS2d93-hbws
+Link da vídeo aula: https://www.youtube.com/watch?v=yFS2d93-hbw
 
 [![Packet Tracer 8.2.x](http://img.youtube.com/vi/hLU-9NWmcno/0.jpg)](https://www.youtube.com/watch?v=hLU-9NWmcno "Packet Tracer 8.2.x")
 
