@@ -15,9 +15,9 @@
 #Instalação do Ansible no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do Ansible no LLinux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
-[![Ansible](http://img.youtube.com/vi/6WD0A9PFFtco/0.jpg)](https://www.youtube.com/watch?v=6WD0A9PFFtc "Ansible")
+[![Ansible](http://img.youtube.com/vi/6WD0A9PFFtc/0.jpg)](https://www.youtube.com/watch?v=6WD0A9PFFtc "Ansible")
 
-Link da vídeo aula: https://www.youtube.com/watch?v=6WD0A9PFFtco
+Link da vídeo aula: https://www.youtube.com/watch?v=6WD0A9PFFtc
 
 Site Oficial do Ansible: https://www.ansible.com/
 
