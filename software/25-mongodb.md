@@ -7,13 +7,17 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 30/01/2023<br>
-#Data de atualização: 01/05/2023<br>
-#Versão: 0.06<br>
+#Data de atualização: 12/11/2023<br>
+#Versão: 0.07<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação do MongoDB Server 6.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do MongoDB Server 6.x no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+
+[![MongoDB Server](http://img.youtube.com/vi/JUWuyTHvLVY/0.jpg)](https://www.youtube.com/watch?v=JUWuyTHvLVY "MongoDB Server")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=JUWuyTHvLVY
 
 Site Oficial do MongoDB: https://www.mongodb.com/<br>
 Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
@@ -57,8 +61,8 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 	acesse o site: http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/ e veja qual a versão atual, altere
 	o script e faço o download.
 
-	#opção do comando dpkg: -i (install)
-	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb
+	#opção do comando dpkg: -i (install) (link atualizado no dia: 12/11/2023)
+	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.20_amd64.deb
 	sudo dpkg -i libssl1.1_1.1.1*.deb
 
 #03_ Baixando e instalando a Chave GPG do MongoDB Server no Linux Mint<br>
@@ -209,8 +213,8 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 
 #17_ Download e Instalação do MongoDB Compass no Linux Mint<br>
 
-	#Link atualizado em: 22/02/2023
-	Link Oficial do MongoDB Compass: https://downloads.mongodb.com/compass/mongodb-compass_1.35.0_amd64.deb
+	#Link atualizado em: 12/11/2023
+	Link Oficial do MongoDB Compass: https://downloads.mongodb.com/compass/mongodb-compass_1.40.4_amd64.deb
 	
 	01_ Na pasta de Download, clicar duas vezes no Instalador do MongoDB Compass;
 	02_ Seguir os procedimentos na tela.
