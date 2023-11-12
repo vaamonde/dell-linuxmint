@@ -7,9 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/07/2023<br>
-#Data de atualização: 15/10/2023<br>
-#Versão: 0.02<br>
+#Data de atualização: 12/11/2023<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 21.2 Victoria
+
+[![Linux Mint 21.2](http://img.youtube.com/vi/Ie9WblbiUu0/0.jpg)](https://www.youtube.com/watch?v=Ie9WblbiUu0 "Linux Mint 21.2")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=Ie9WblbiUu0
 
 #Lançamentos Oficiais do Linux Mint<br>
 27/07/2020 - Linux Mint 20 "Ulyana" Cinnamon released: https://www.linuxmint.com/rel_ulyana_cinnamon.php<br>
