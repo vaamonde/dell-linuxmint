@@ -7,13 +7,17 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 25/02/2023<br>
-#Data de atualização: 16/10/2023<br>
-#Versão: 0.03<br>
+#Data de atualização: 12/11/2023<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação do PostgreSQL Server 15.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do PostgreSQL Server 15.x no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+
+[![PostgreSQL Server](http://img.youtube.com/vi/rDh3iq8nmDg/0.jpg)](https://www.youtube.com/watch?v=rDh3iq8nmDg "PostgreSQL Server")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=rDh3iq8nmDg
 
 OBSERVAÇÃO IMPORTANTE: LANÇADO NO MÊS SETEMBRO/2023 A VERSÃO 16 DO POSTGRESQL SERVER,<br>
 OS PROCEDIMENTOS ADOTADO NESSE VÍDEO SERVER PARA ESSE VERSÃO, MUDANDO APENAS O NÚMERO<br>
@@ -66,8 +70,8 @@ Site Ofickial do PgAdmin: https://www.pgadmin.org/
 	acesse o site: http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/ e veja qual a versão atual, altere
 	o script e faço o download.
 
-	#opção do comando dpkg: -i (install)
-	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb
+	#opção do comando dpkg: -i (install) (link atualizado no dia: 12/11/2023)
+	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.20_amd64.deb
 	sudo dpkg -i libssl1.1_1.1.1*.deb
 
 #03_ Baixando e instalando a Chave GPG do PostgreSQL Server no Linux Mint<br>
@@ -118,10 +122,21 @@ Site Ofickial do PgAdmin: https://www.pgadmin.org/
 
 #10_ Localização dos Arquivos de Configuração do PostgreSQL Server no Linux Mint<br>
 
+	OBSERVAÇÃO IMPORTANTE: LANÇADO NO MÊS SETEMBRO/2023 A VERSÃO 16 DO POSTGRESQL SERVER,
+	OS PROCEDIMENTOS ADOTADO NESSE VÍDEO SERVER PARA ESSE VERSÃO, MUDANDO APENAS O NÚMERO
+	DA VERSÃO DE: 15 PARA 16 NOS CAMINHOS DOS DIRETÓRIOS.
+	
+	#localização dos arquivos do PostgreSQL Server na versão 15
 	/etc/postgresql/15/main/postgresql.conf   <-- arquivo de configuração do Servidor PostgreSQL
 	/etc/postgresql/15/main/pg_hba.conf       <-- arquivo de liberação de rede do Servidor PostgreSQL
 	/var/log/postgresql/                      <-- diretório dos Logs do Servidor PostgreSQL
 	/var/lib/postgresql/15/main               <-- diretório padrão do Banco e Dados do Servidor PostgreSQL
+
+	#localização dos arquivos do PostgreSQL Server na versão 16
+	/etc/postgresql/16/main/postgresql.conf   <-- arquivo de configuração do Servidor PostgreSQL
+	/etc/postgresql/16/main/pg_hba.conf       <-- arquivo de liberação de rede do Servidor PostgreSQL
+	/var/log/postgresql/                      <-- diretório dos Logs do Servidor PostgreSQL
+	/var/lib/postgresql/16/main               <-- diretório padrão do Banco e Dados do Servidor PostgreSQL
 
 #11_ Adicionado o Usuário Local no Grupo Padrão do PostgreSQL Server no Linux Mint<br>
 
@@ -171,8 +186,15 @@ Site Ofickial do PgAdmin: https://www.pgadmin.org/
 
 #14_ Permitindo o acesso remoto do PostgreSQL Server no Linux Mint<br>
 
+	#OBSERVAÇÃO IMPORTANTE: ALTERE A VERSÃO DO POSTGRESQL SERVER ANTES DE EDITAR O ARQUIVO
+	#DE CONFIGURAÇÃO DE ACESSO REMOTO.
+
+	#editando o arquivo de acesso remoto do PostgreSQL Server na versão 15
 	sudo vim /etc/postgresql/15/main/postgresql.conf
 	
+	#editando o arquivo de acesso remoto do PostgreSQL Server na versão 16
+	sudo vim /etc/postgresql/16/main/postgresql.conf
+
 		INSERT
 
 			#habilitando o suporte remoto do PostgreSQL Server
@@ -181,8 +203,12 @@ Site Ofickial do PgAdmin: https://www.pgadmin.org/
 
 		ESC SHIFT :x <ENTER>
 
+	#editando o arquivo de acesso remoto do PostgreSQL Server na versão 15
 	sudo vim /etc/postgresql/15/main/pg_hba.conf
 	
+	#editando o arquivo de acesso remoto do PostgreSQL Server na versão 16
+	sudo vim /etc/postgresql/16/main/pg_hba.conf
+
 		INSERT
 
 			#liberando o acesso remoto ao Banco de Dados PostgreSQL

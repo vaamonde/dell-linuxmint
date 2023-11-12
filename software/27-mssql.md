@@ -7,13 +7,17 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 25/02/2023<br>
-#Data de atualização: 25/02/2023<br>
-#Versão: 0.01<br>
+#Data de atualização: 12/11/2023<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação do Microsoft SQL Server 2022 no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do Microsoft SQL Server 2022 no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+
+[![Microsoft SQL Server](http://img.youtube.com/vi//0.jpg)]( "Microsoft SQL Server")
+
+Link da vídeo aula: 
 
 Site Oficial do Microsoft SQL Server: https://www.microsoft.com/pt-br/sql-server/sql-server-2022<br>
 Site Oficial do Download do Microsoft SQL Server: https://www.microsoft.com/pt-br/sql-server/sql-server-downloads<br>
@@ -64,8 +68,8 @@ Notas sobre a versão do SQL Server 2022 no Linux: https://learn.microsoft.com/p
 	acesse o site: http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/ e veja qual a versão atual, altere
 	o script e faço o download.
 
-	#opção do comando dpkg: -i (install)
-	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb
+	#opção do comando dpkg: -i (install) (link atualizado no dia: 12/11/2023)
+	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.20_amd64.deb
 	sudo dpkg -i libssl1.1_1.1.1*.deb
 
 #03_ Baixando e instalando a Chave GPG do Microsoft SQL Server 2022 no Linux Mint<br>
