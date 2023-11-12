@@ -7,13 +7,17 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 20/06/2023<br>
-#Data de atualização: 28/06/2023<br>
-#Versão: 0.02<br>
+#Data de atualização: 12/11/2023<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação e Configuração do Gcloud Cli no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação e Configuração do Gcloud Cli no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+
+[![Google Cloud](http://img.youtube.com/vi//0.jpg)]( "Google Cloud")
+
+Link da vídeo aula: 
 
 Site Oficial do Google Cloud: https://cloud.google.com/?hl=pt-br<br>
 Site Oficial do Google Cli: https://cloud.google.com/sdk/docs/install?hl=pt-br

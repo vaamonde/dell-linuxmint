@@ -7,13 +7,17 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 07/06/2023<br>
-#Data de atualização: 13/06/2023<br>
-#Versão: 0.03<br>
+#Data de atualização: 12/11/2023<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação e Configuração do Azure Cli no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação e Configuração do Azure Cli no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+
+[![Microsoft Azure](http://img.youtube.com/vi/xrPyZuFKw2s/0.jpg)](https://www.youtube.com/watch?v=xrPyZuFKw2s "Microsoft Azure")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=xrPyZuFKw2s
 
 Site Oficial do Azure: https://azure.microsoft.com/pt-br/<br>
 Site Oficial do Azure Cli: https://learn.microsoft.com/pt-br/cli/azure/

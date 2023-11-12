@@ -7,13 +7,17 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 29/05/2023<br>
-#Data de atualização: 05/06/2023<br>
+#Data de atualização: 12/11/2023<br>
 #Versão: 0.02<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação e Configuração do AWS-Cli no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação e Configuração do AWS-Cli no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+
+[![AWS EC2](http://img.youtube.com/vi/JIFQqC4AIrQ/0.jpg)](https://www.youtube.com/watch?v=JIFQqC4AIrQ "AWS EC2")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=JIFQqC4AIrQ
 
 Site Oficial do AWS: https://aws.amazon.com/pt/free<br>
 Site Oficial do EC2: https://aws.amazon.com/pt/ec2<br>
