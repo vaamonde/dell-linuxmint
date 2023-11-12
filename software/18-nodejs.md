@@ -7,13 +7,17 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 22/12/2022<br>
-#Data de atualização: 17/01/2023<br>
-#Versão: 0.05<br>
+#Data de atualização: 12/11/2023<br>
+#Versão: 0.06<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação do Node.JS e NPM no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do Node.JS e NPM no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+
+[![Node.JS](http://img.youtube.com/vi/awDyXU-vIsk/0.jpg)](https://www.youtube.com/watch?v=awDyXU-vIsk "Node.JS")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=awDyXU-vIsk
 
 Site Oficial do Node.JS: https://nodejs.org/en/<br>
 Site Oficial do NPM: https://www.npmjs.com/
@@ -69,8 +73,11 @@ Site Oficial do NPM: https://www.npmjs.com/
 
 #05_ Criando um Projeto Simples para Testar o Node.JS no Linux Mint<br>
 
+	#criando o diretório do projeto de teste do Node.JS
 	#opção do comando mkdir: -v (verbose)
 	mkdir -v nodejs-hello
+	
+	#acessando o diretório criado do projeto de teste do Node.JS
 	cd nodejs-hello
 		#opção do comando npm: init (create package.json file), -y (yes)
 		#opção do comando npm: install (install package in directory)
@@ -82,7 +89,7 @@ Site Oficial do NPM: https://www.npmjs.com/
 #06_ Editando o Projeto Simples do Node.JS o VSCode no Linux Mint<br>
 
 	#OBSERVAÇÃO IMPORTANTE: nesse exemplo vamos editar o arquivo index.js
-	utilizando o Microsoft Visual Studio VSCode.
+	#utilizando o Microsoft Visual Studio VSCode.
 	code .
 
 	01_ criando um novo arquivo: (Atalho) Ctrl + N

@@ -6,14 +6,18 @@
 #Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica<br>
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
-#Data de criação: 22/12/2022<br>
+#Data de criação: 12/11/2023<br>
 #Data de atualização: <br>
-#Versão: 0.02<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação do Wondershare EdrawMax v11.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do Wondershare EdrawMax v11.x no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+
+[![EdrawMax](http://img.youtube.com/vi/ISws4p7nggk/0.jpg)](https://www.youtube.com/watch?v=ISws4p7nggk "EdrawMax")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=ISws4p7nggk
 
 Site Oficial do Edraw Soft: https://www.edrawsoft.com/pt/<br>
 Site do EdrawMax On-Line: https://www.edrawmax.com/online/pt/

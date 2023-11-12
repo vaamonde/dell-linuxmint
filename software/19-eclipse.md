@@ -7,13 +7,17 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 14/01/2023<br>
-#Data de atualização: 19/05/2023<br>
-#Versão: 0.04<br>
+#Data de atualização: 12/11/2023<br>
+#Versão: 0.54<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação do Eclipse IDE e OpenJDK/JRE 17.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do Eclipse IDE e OpenJDK/JRE 17.x no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+
+[![Eclipse IDE](http://img.youtube.com/vi/OQ-Hb4OOSJA/0.jpg)](https://www.youtube.com/watch?v=OQ-Hb4OOSJA "Eclipse IDE")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=OQ-Hb4OOSJA
 
 Site Oficial do Eclipse: https://www.eclipse.org/downloads/<br>
 Site Oficial do OpenJDK: https://openjdk.org/<br>
@@ -74,9 +78,10 @@ Site Oficial do Java: https://www.java.com/pt-BR/
 
 #05_ Download do Eclipse IDE no Linux Mint<br>
 
+	#recomendo utilizar a versão do Eclipse IDE Enterprise Java e Web
 	Link do download: https://www.eclipse.org/downloads/packages/
 	Versão do Eclipse: Eclipse IDE for Enterprise Java and Web Developers
-		Linux x86_64:  eclipse-jee-2023-03-R-linux-gtk-x86_64.tar.gz (atualizado em 19/05/2023)
+		Linux x86_64: eclipse-jee-2023-09-R-linux-gtk-x86_64.tar.gz (atualizado em 12/11/2023)
 
 #06_ Descompactar o Arquivo Zipado do Eclipse IDE no Linux Mint<br>
 
