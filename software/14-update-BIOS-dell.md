@@ -7,10 +7,14 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 12/09/2021<br>
-#Data de atualização: 09/04/2023<br>
-#Versão: 0.09<br>
+#Data de atualização: 12/11/2023<br>
+#Versão: 0.10<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+
+[![Dell BIOS Update](http://img.youtube.com/vi//0.jpg)]( "Dell BIOS Update")
+
+Link da vídeo aula: 
 
 #Atualizar o BIOS da Dell em um ambiente Linux ou Ubuntu: https://www.dell.com/support/kbdoc/en-us/000131486/update-the-dell-bios-in-a-linux-or-ubuntu-environment<br>
 #Link de Drivers e downloads: https://www.dell.com/support/home/pt-br?app=drivers<br>
