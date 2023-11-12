@@ -7,13 +7,17 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 07/01/2023<br>
-#Versão: 0.04<br>
+#Data de atualização: 12/11/2023<br>
+#Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação do Ansible no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do Ansible no LLinux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+
+[![Ansible](http://img.youtube.com/vi/6WD0A9PFFtco/0.jpg)](https://www.youtube.com/watch?v=6WD0A9PFFtc "Ansible")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=6WD0A9PFFtco
 
 Site Oficial do Ansible: https://www.ansible.com/
 

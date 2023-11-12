@@ -7,13 +7,17 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 25/09/2023<br>
-#Versão: 0.05<br>
+#Data de atualização: 12/11/2023<br>
+#Versão: 0.06<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
 #Instalação do Tilix no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do Tilix no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+
+[![Tilix](http://img.youtube.com/vi/0BrJ8jWbTko/0.jpg)](https://www.youtube.com/watch?v=0BrJ8jWbTko "Tilix")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=0BrJ8jWbTko
 
 Site Oficial do Terminal Tilix: https://gnunn1.github.io/tilix-web/<br>
 Site Oficial do Oh My Zsh: https://ohmyz.sh/<br>
@@ -23,8 +27,8 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 
@@ -50,9 +54,12 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 #03_ Instalando a Fonte Hack Nerd Fonts no Linux Mint<Br>
 
+	#criando o diretório das fontes Hack
 	#opção do comando mkdir: -v (verbose), -p (parents), ~ (til: alias home directory)
-	#opção do comando fc-cache: -f (Force up-to-date cache files), -v (Display status)
 	mkdir -pv ~/.local/share/fonts/Hack
+	
+	#acessando o diretório das fontes Hack
+	#opção do comando fc-cache: -f (Force up-to-date cache files), -v (Display status)
 	cd ~/.local/share/fonts/Hack
 		wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip
 		unzip Hack.zip
@@ -62,22 +69,23 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 #04_ Configurando o Tilix como Terminal Padrão no Linux Mint<br>
 
 	#OBSERVAÇÃO IMPORTANTE: no Linux Mint 20.x a mudança do Terminal padrão é feita utilizando
-	o recurso das Configurações do Sistema em Aplicativos Preferenciais
+	#o recurso das Configurações do Sistema em Aplicativos Preferenciais
 	Menu
 		Aplicativos Preferenciais
 			Terminal
 				Tilix
 
-	#OBSERVAÇÃO IMPORTANTE: no Linux Mint 21.x a mudança do Terminal padrão não é mais feita
-	utilizando o recurso das Configurações do Sistema em Aplicativos Preferenciais, essa opção
-	foi retirada da ferramenta, sendo necessário alterar via linha de comando:
+	#OBSERVAÇÃO IMPORTANTE: no Linux Mint 21 e 21.1 a mudança do Terminal padrão não é mais feita
+	#utilizando o recurso das Configurações do Sistema em Aplicativos Preferenciais, essa opção
+	#foi retirada da ferramenta, sendo necessário alterar via linha de comando:
 
 	#opção do comando gsettings: set (Sets the value of KEY to VALUE)
 	gsettings set org.cinnamon.desktop.default-applications.terminal exec /usr/bin/tilix
 	exit
 
 	#OBSERVAÇÃO IMPORTANTE: no Linux Mint 21.2 Victoria a recurso de configurar o terminal pelo
-	Aplicativos Preferenciais voltou, recomendo fazer por ele.
+	#Aplicativos Preferenciais voltou, recomendo fazer por ele, não utilizar o comando: gsettings
+
 	Menu
 		Aplicativos Preferenciais
 			Sistema
@@ -86,7 +94,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 #05_ Executando o Tilix no Linux Mint<br>
 
-	Atalho: Ctrl + Alt + T
+	Atalho do Terminal: Ctrl + Alt + T
 
 #06_ Customização Básica do Tilix no Linux Mint<br>
 
@@ -116,6 +124,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 	zsh
 		Type one of the keys in parentheses: 2
 
+	#instalando o Oh My Zsh no Linux Mint
 	#opção do comando sh: -c (Read commands from the command_string operand in‐stead of from the standard input)
 	#opções do comando curl: -f (fail), -s (silent), -S (show-error), -L (location) 
 	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -123,7 +132,8 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 		[sudo] senha do seu usuário: <Enter>
 
 	#recomendo fechar o Terminal Tilix e abrir novamente para verificar se tudo está funcionando
-	#será necessário sair 03 (três) vezes do terminal para concluir a configuração
+	#será necessário sair 03 (três) vezes do terminal para concluir a configuração, você pode usar
+	#o atalho: Ctrl + D para sair dos terminais.
 	exit
 	exit
 	exit
