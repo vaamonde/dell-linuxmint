@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 14/01/2023<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.07<br>
+#Data de atualização: 15/11/2023<br>
+#Versão: 0.08<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
@@ -163,3 +163,25 @@ Site Oficial do Workbench: https://www.mysql.com/products/workbench/
 		<Test Connection>
 			<OK>
 		<OK>
+
+#13_ Integrando o MySQL Server com o Visual Studio Code VSCode<br>
+
+	#instalando a Extensão do MySQL Server
+	VSCode
+		Extensões
+			Pesquisar
+				MySQL (Database manager for MySQL/MariaDB, PostgreSQL, SQLite, Redis and ElasticSearch)
+					Instalar
+
+	#configurando a conexão com o MySQL Server
+	VSCode
+		Database
+			<Create Connection>
+				Name: LinuxMint
+				Server Type:
+					MySQL
+						Host: 127.0.0.1 (ou localhost)
+						Port: 3306
+						Username: root
+						Password: pti@2018
+				<Save>
