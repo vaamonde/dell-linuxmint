@@ -15,7 +15,7 @@
 #Instalação do VMware Workstation no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do VMware Workstation no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
-[![VMware Workstation](http://img.youtube.com/vi/yUv2mebfheaI/0.jpg)](https://www.youtube.com/watch?v=Uv2mebfheaI "VMware Workstation")
+[![VMware Workstation](http://img.youtube.com/vi/Uv2mebfheaI/0.jpg)](https://www.youtube.com/watch?v=Uv2mebfheaI "VMware Workstation")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=Uv2mebfheaI
 
