@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.09<br>
+#Data de atualização: 15/11/2023<br>
+#Versão: 0.10<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
@@ -82,7 +82,7 @@ Site Oficial do Docker Hub: https://hub.docker.com/search?q=
 
 	sudo apt install docker-ce docker-compose git vim python2 python3
 
-	OBSERVAÇÃO IMPORTANTE: a versão do Docker-Compose utilizando o Source List do Docker-CE está
+	OBSERVAÇÃO IMPORTANTE: a versão do Docker-Compose utilizando o Sources List do Docker-CE está
 	desatualizada em relação ao projeto do Github: https://github.com/docker/compose, é recomendado
 	baixar o Binário do projeto e atualizar a versão no Linux Mint com o procedimento abaixo (NÃO
 	COMENTADO NO VÍDEO)
@@ -90,8 +90,8 @@ Site Oficial do Docker Hub: https://hub.docker.com/search?q=
 	#opção do comando apt: purgue (remove --purge packages)
 	sudo apt purge docker-compose
 	
-	#opção do comando curl: -S (show-error), -L (location), -o (output) (Build 2.22.0 21/09/2023)
-	sudo curl -SL https://github.com/docker/compose/releases/download/v2.22.0/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
+	#opção do comando curl: -S (show-error), -L (location), -o (output) (Build 2.23.0 15/11/2023)
+	sudo curl -SL https://github.com/docker/compose/releases/download/v2.23.0/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
 	
 	#opção do comando chmod: -v (verbose), 755 (User=RWX,Group-R-X,Other-R-X)
 	sudo chmod -v 755 /usr/bin/docker-compose
@@ -108,8 +108,10 @@ Site Oficial do Docker Hub: https://hub.docker.com/search?q=
 
 #08_ Verificando o serviço do Docker CE, Docker Compose, Versões e Informações<br>
 
+	#verificando o status do serviço do Docker CE
 	sudo systemctl status docker
 
+	#verificando as versões do Docker CE e Compose
 	docker version
 	docker-compose version
 	docker info
@@ -142,7 +144,7 @@ Site Oficial do Docker Hub: https://hub.docker.com/search?q=
 
 #12_ Limpando todas as Imagens, Container, Volumes e Redes no Docker CE<br>
 
-	#opção do comando docker: prune (Remove unused data), rmi (Remove one or more images)
+	#opção do comando docker: system (manager docker), prune (Remove unused data), rmi (Remove one or more images)
 	docker system prune
 	docker rmi hello-world:latest
 	docker rmi ubuntu:latest

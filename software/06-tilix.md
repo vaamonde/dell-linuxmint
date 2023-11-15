@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.06<br>
+#Data de atualização: 15/11/2023<br>
+#Versão: 0.07<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
@@ -58,10 +58,10 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 	#opção do comando mkdir: -v (verbose), -p (parents), ~ (til: alias home directory)
 	mkdir -pv ~/.local/share/fonts/Hack
 	
-	#acessando o diretório das fontes Hack
+	#acessando o diretório das fontes Hack (link atualizado no dia 15/11/2023)
 	#opção do comando fc-cache: -f (Force up-to-date cache files), -v (Display status)
 	cd ~/.local/share/fonts/Hack
-		wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip
+		wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Hack.zip
 		unzip Hack.zip
 		fc-cache -f -v
 		exit
@@ -168,8 +168,10 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 09_ Editando o arquivo de configuração do ZSHRC no Linux Mint<br>
 
+	#editando o arquivo de configuração do ZSHRC
 	vim ~/.zshrc
-		INSERT
+	
+	INSERT
 
 	#Variáveis de configuração do Tema PowerLevel10K
 	#Copiar e colar substituindo a partir da linha: 11

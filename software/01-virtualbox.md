@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.15<br>
+#Data de atualização: 15/11/2023<br>
+#Versão: 0.16<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
@@ -125,6 +125,10 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 	OBSERVAÇÃO IMPORTANTE: recomendo fazer a instalação da nova versão do VirtualBOX 7.0.x
 	sudo apt update
 	
+	#OBSERVAÇÃO IMPORTANTE: UTILIZAR SOMENTE A VERSÃO DO VIRTUALBOX 6.1.X SE FOR REALMENTE
+	#NECESSÁRIO, EM ALGUNS CASOS A VERSÃO ANTIGA RESOLVER PROBLEMAS DE SOFTWARE OU SISTEMA
+	#OPERACIONAL OBSOLETOS, MAIS HOJE EM DIA NÃO É INDICADO USAR ESSA VERSÃO.
+
 	#INSTALANDO O VIRTUALBOX VERSÃO 6.1.x (NÃO RECOMENDADO MAIS A SUA INSTALAÇÃO)
 	sudo apt install virtualbox-6.1 cpu-checker libvirt-clients git vim python2 python3
 	
@@ -133,7 +137,10 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 #05_ Verificando as Informações do suporte a Virtualização no Linux Mint<br>
 	
+	#verificando as informações de KVM (Kernel Virtual Machine)
 	sudo kvm-ok
+
+	#verificando as informações de validação do host da Biblioteca LibVirt
 	sudo virt-host-validate
 
 	OBSERVAÇÃO IMPORTANTE: conforme relatos no Canal do YouTUBE do Bora para Prática, no Linux Mint versão 
@@ -141,11 +148,13 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 	Conforme vários relatos nos fórum do Linux Mint e do Ubuntu esse erro está associado a versão do Cgroup
 	utilizado no Ubuntu 22.04.x que é a base do Linux Mint 21.x. 
 	
-	LXC: Checking for cgroup 'freezer' controller support	FAIL (Enable 'freezer' in kernel Kconfig file or mount/enable cgroup controller in your system)
+	LXC: Checking for cgroup 'freezer' controller support	FAIL (Enable 'freezer' in kernel Kconfig file or 
+	mount/enable cgroup controller in your system)
 
-	#CORREÇÃO PARA O LINUX MINT 21.x REFERENTE AO ERRO DO FREEZER
+	#CORREÇÃO PARA O LINUX MINT 21.x REFERENTE AO ERRO DO FREEZER DO COMANDO: virt-host-validate
 	sudo vim /etc/default/grub
 		INSERT
+
 			#alterar a linha 10 das configurações padrão do GRUB do Linux Mint de:
 			GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
 			
@@ -157,10 +166,14 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 			
 			#se estiver usando processadores AMD pode habilitar o IOMMU no GRUB adicionando a opção:
 			GRUB_CMDLINE_LINUX_DEFAULT="quiet splash systemd.unified_cgroup_hierarchy=0 amd_iommu=on"
+		
 		ESC SHIFT :x <Enter>
+	
+	#atualizar os arquivos de GRUB e reiniciar o computador
 	sudo update-grub
 	sudo reboot
 	
+	#verificando novamente a validação da biblioteca LibVirt
 	sudo virt-host-validate
 
 #06_ Baixando e Instalando o Pacote de Extensões do Oracle VirtualBOX<br>
@@ -172,6 +185,7 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
 	*Após o download do pacote, clicar duas vezes no mesmo e seguir os procedimentos na tela.
+	
 	<Instalar>
 		Descer a barra de rolagem até o final
 	<Eu Concordo>
@@ -180,7 +194,7 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 #07_ Atualizando o VirtualBOX 6.1.x para a versão nova versão 7.0.x<br>
 
 	OBSERVAÇÃO IMPORTANTE: executar esse procedimento somente se você instalou a versão
-	do Virtualbox-6.1.x.
+	do Virtualbox-6.1.x e queira atualizar para a versão do Virtualbox-7.0.x
 
 	sudo apt update
 	sudo apt upgrade
@@ -204,6 +218,7 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
 	*Após baixar o pacote, clicar duas vezes no mesmo e seguir os procedimentos na tela
+	
 	<Instalar>
 		Descer a barra de rolagem até o final
 	<Eu Concordo>
@@ -211,7 +226,12 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 #09_ Corrigindo a Falha do VirtualBOX 7.0 em relação ao erro: Failed to enumerate host USB devices
 
+	#adicionando o usuário no grupo do VirtualBOX Users
 	#opções do comando usermod: -a (append), -G (groups), $USER (variável de ambiente do nome do usuário)
 	sudo usermod -aG vboxusers $USER
+	
+	#verificando se o usuário foi adicionado no grupo
 	sudo cat /etc/group | grep vbox
+	
+	#recomendo reiniciar a máquina para testar se a falha foi resolvida
 	sudo reboot

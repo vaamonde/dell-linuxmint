@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.04<br>
+#Data de atualização: 15/11/2023<br>
+#Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
@@ -82,7 +82,7 @@ Documentação do .NET SDK e Runtime: https://docs.microsoft.com/pt-br/dotnet/co
 
 #06_ Instalando o PowerShell, .NET SDK e Runtime no Linux Mint<br>
 
-	sudo apt install powershell dotnet-sdk-7.0 aspnetcore-runtime-7.0
+	sudo apt install powershell dotnet-sdk-8.0 aspnetcore-runtime-8.0
 
 #07_ Rodando o PowerShell no Linux Mint<br>
 	

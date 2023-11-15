@@ -72,6 +72,7 @@ vantagens em relação a partição swap.
 
 	#Opção-01: Comentar a linha de configuração do Swapfile no arquivo fstab
 	sudo apt install vim smartmontools
+	
 	sudo vim /etc/fstab
 		INSERT
 			#Comentar a linha do Swapfile (salvar e sair: Esc Shift: x)
@@ -141,7 +142,7 @@ vantagens em relação a partição swap.
 	#verificando o status do serviço do SUSPEND.TARGET (padrão desativado: Active: inactive (dead))
 	sudo systemctl status suspend.target 
 
-	#verificando o statuso do serviço do SUSPEND-THEN-HIBERNATE.TARGET (padrão desativado: Active: inactive (dead))
+	#verificando o status do serviço do SUSPEND-THEN-HIBERNATE.TARGET (padrão desativado: Active: inactive (dead))
 	sudo systemctl status suspend-then-hibernate.target 
 
 #05_ Limpeza do Cache da Memória RAM no Linux Mint
