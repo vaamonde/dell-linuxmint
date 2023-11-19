@@ -79,7 +79,7 @@ Site Oficial do OpenJDK: https://openjdk.org/
 	sudo -i
 	
 	#opção do comando wget: -v (verbose), -O (output file) (link atualizado em 12/11/2023)
-	wget -v -O /tmp/tomcat10.tar.gz https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.15/bin/apache-tomcat-10.1.15.tar.gz
+	wget -v -O /tmp/tomcat10.tar.gz https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.16/bin/apache-tomcat-10.1.16.tar.gz
 
 #05_ Descompactando e instalando o Apache Tomcat 10.1.x no Linux Mint<br>
 

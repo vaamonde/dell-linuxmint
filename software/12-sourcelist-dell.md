@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 04/07/2021<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.11<br>
+#Data de atualização: 19/11/2023<br>
+#Versão: 0.12<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
@@ -86,17 +86,22 @@ Link da vídeo aula: https://www.youtube.com/watch?v=sHhn7OA6jDc
 
 #04_ Adicionando o repositório da Dell no Linux Mint<br>	
 
-	#Criando o arquivo do Sources List da Dell no Linux Mint 20.x
+	#instalando as dependências básicas no Linux Mint
 	sudo apt update && sudo apt install vim
+	
+	#Criando o arquivo do Sources List da Dell no Linux Mint 20.x
 	sudo vim /etc/apt/sources.list.d/dell.list
 
 	#ADICIONANDO OS REPOSITÓRIOS DA DELL NO LINUX MINT 20.x	
 	INSERT
+	
 	deb http://dell.archive.canonical.com/updates/ focal-dell public
 	deb http://dell.archive.canonical.com/updates/ focal-oem public
 	deb http://dell.archive.canonical.com/updates/ focal-somerville public
 	deb http://dell.archive.canonical.com/updates/ focal-somerville-melisa public
-	#deb https://linux.dell.com/repo/community/openmanage/10300/focal focal main
+	#deb https://linux.dell.com/repo/community/openmanage/11010/focal focal main
+	
+	#salvar e sair do arquivo
 	ESC SHIFT :x <Enter>
 
 	#ADICIONANDO A CHAVE GPG DA DELL NO LINUX MINT 20.x
@@ -111,18 +116,26 @@ Link da vídeo aula: https://www.youtube.com/watch?v=sHhn7OA6jDc
 	#a forma de adicionar repositórios e Chaves GPG mudou, no procedimento abaixo estou
 	#adicionando de forma manual os repositórios e convertendo as chaves GPG para o novo
 	#padrão.
+
+	#Criando o arquivo do Sources List da Dell no Linux Mint 21.x
+	sudo vim /etc/apt/sources.list.d/dell.list
+
+	#ADICIONANDO OS REPOSITÓRIOS DA DELL NO LINUX MINT 21.x	
+	INSERT
 	
-	#ADICIONANDO O REPOSITÓRIO DA DELL NO LINUX MINT 21.x
-	sudo add-apt-repository 'deb http://dell.archive.canonical.com/updates/ jammy-oem public'
-	sudo add-apt-repository 'deb http://dell.archive.canonical.com/updates/ jammy-somerville public'
-	sudo add-apt-repository 'deb http://dell.archive.canonical.com/updates/ jammy-stella public'
-	#sudo add-apt-repository 'deb https://linux.dell.com/repo/community/openmanage/11000/jammy jammy main'
+	deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/dell01.gpg] http://dell.archive.canonical.com/updates/ jammy-oem public
+	deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/dell01.gpg] http://dell.archive.canonical.com/updates/ jammy-somerville  public
+	deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/dell01.gpg] http://dell.archive.canonical.com/updates/ jammy-stella public
+	#deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/dell01.gpg] https://linux.dell.com/repo/community/openmanage/11010/jammy
+	
+	#salvar e sair do arquivo
+	ESC SHIFT :x <Enter>
 
 	#ADICIONANDO AS CHAVES GPG DA DELL NO LINUX MINT 21.x
 	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F9FDA6BED73CDC22
 	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys D4D1EAED36962F69
 	sudo apt-key export F9FDA6BED73CDC22 | sudo gpg --dearmour -o /etc/apt/trusted.gpg.d/dell01.gpg
-	sudo apt-key export D4D1EAED36962F69 | sudo gpg --dearmour -o /etc/apt/trusted.gpg.d/dell02.gpg
+	sudo apt-key export D4D1EAED36962F69 | sudo gpg --dearmour -o /etc/apt/trusted.gpg.d/dell01.gpg
 
 #05_ Atualizando as Lista do Apt e instalando os principais pacotes da Dell no Linux Mint
 
