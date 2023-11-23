@@ -139,15 +139,15 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 	sudo apt install xserver-xorg-video-radeon
 	
-_ Testando o suporte ao Driver da Intel Mesa
-	sudo glxinfo | less
-	sudo glxgears
+	_ Testando o suporte ao Driver da Intel Mesa
+		sudo glxinfo | less
+		sudo glxgears
 
-_ Software de Benchmark para GNU/Linux
-	_ PassMark: https://www.passmark.com/products/pt_linux/index.php
-	_ Hardinfo: https://github.com/lpereira/hardinfo
-	_ Unigine: https://benchmark.unigine.com/
-	_ GpuTest: https://www.geeks3d.com/gputest/
+	_ Software de Benchmark para GNU/Linux
+		_ PassMark: https://www.passmark.com/products/pt_linux/index.php
+		_ Hardinfo: https://github.com/lpereira/hardinfo
+		_ Unigine: https://benchmark.unigine.com/
+		_ GpuTest: https://www.geeks3d.com/gputest/
 
 #11_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
 
