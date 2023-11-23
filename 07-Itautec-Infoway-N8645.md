@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 19/05/2023<br>
-#Data de atualização: 31/07/2023<br>
-#Versão: 0.03<br>
+#Data de atualização: 23/11/2023<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
@@ -72,6 +72,8 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 	_ Atualização do sistema utilizando o MintUpdate;
 	_ Atualização do sistema utilizando o Apt;
+
+	Terminal Atalho: Ctrl + Alt + T
 		sudo apt update
 		sudo apt upgrade
 		sudo apt full-upgrade
@@ -79,96 +81,73 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		sudo apt autoremove
 		sudo apt autoclean
 		sudo apt clean
-		
-		#Reinicializar o Sistema
-		sudo reboot
+	
+	#Reinicializar o Sistema
+	sudo reboot
 
 #08_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.15.x suportado até 2025)<br>
 
-		#INSTALAÇÃO DO KERNEL OEM LINUX MINT 20.x (KERNEL >= 5.14)
-		sudo apt install linux-oem-20.04 fdutils
-		
-		#Reinicializar o Sistema
-		sudo reboot
-		
-		#Verificando a versão do Kernel que está rodando na inicialização do Linux Mint
-		#opção do comando uname: -a (all)
-		sudo uname -a
+	#INSTALAÇÃO DO KERNEL OEM LINUX MINT 20.x (KERNEL >= 5.14)
+	sudo apt install linux-oem-20.04 fdutils
+	
+	#Reinicializar o Sistema
+	sudo reboot
+	
+	#Verificando a versão do Kernel que está rodando na inicialização do Linux Mint
+	#opção do comando uname: -a (all)
+	sudo uname -a
 
-		#INSTALAÇÃO DO KERNEL OEM LINUX MINT 21.x (KERNEL >= 5.14, KERNEL >= 6.0 e KERNEL >= 6.1)
-		
-		#Linux Mint Versão 21.x - Kernel >= 5.17
-		sudo apt install linux-oem-22.04a fdutils
-		
-		#Linux Mint Versão 21.x - Kernel >= 6.0
-		sudo apt install linux-oem-22.04b fdutils
-		
-		#Linux Mint Versão 21.x - Kernel >= 6.1 - TESTADO E HOMOLOGADO, RECOMENDO A SUA INSTALAÇÃO
-		sudo apt install linux-oem-22.04c fdutils
+	#INSTALAÇÃO DO KERNEL OEM LINUX MINT 21.x (KERNEL >= 5.14, KERNEL >= 6.0, KERNEL >= 6.1 e KERNEL >= 6.5)
+	
+	#Linux Mint Versão 21.x - Kernel >= 5.17
+	sudo apt install linux-oem-22.04a fdutils
+	
+	#Linux Mint Versão 21.x - Kernel >= 6.0
+	sudo apt install linux-oem-22.04b fdutils
+	
+	#Linux Mint Versão 21.x - Kernel >= 6.1
+	sudo apt install linux-oem-22.04c fdutils
 
-		#Reinicializar o Sistema
-		sudo reboot 
+	#Linux Mint Versão 21.x - Kernel >= 6.5 - (TESTADO E HOMOLOGADO, RECOMENDO A SUA INSTALAÇÃO)
+	sudo apt install linux-oem-22.04d fdutils
 
-		#Verificando a versão do Kernel que está rodando na inicialização do Linux Mint
-		#opção do comando uname: -a (all)
-		sudo uname -a
+	#Reinicializar o Sistema
+	sudo reboot 
+
+	#Verificando a versão do Kernel que está rodando na inicialização do Linux Mint
+	#opção do comando uname: -a (all)
+	sudo uname -a
 
 #09_ Instalação dos Aplicativos Básicos<br>
 
-		sudo apt update
-		sudo apt install software-properties-common build-essential lsb-core dkms
-		sudo apt install htop nmon psensor tlp tlp-rdw cpufrequtils cputool ipmitool ipmiutil smartmontools
-		sudo apt install ttf-mscorefonts-installer cheese guvcview v4l-utils cairo-dock vim git p7zip-full p7zip-rar
-		
-		#Reinicializar o Sistema
-		sudo reboot
+	sudo apt update
+	sudo apt install software-properties-common build-essential lsb-core dkms
+	sudo apt install htop nmon psensor tlp tlp-rdw cpufrequtils cputool ipmitool ipmiutil smartmontools
+	sudo apt install ttf-mscorefonts-installer cheese guvcview v4l-utils cairo-dock vim git p7zip-full p7zip-rar
+	
+	#Reinicializar o Sistema
+	sudo reboot
 
 #10_ Instalação dos Drivers VGA Intel Graphics e AMD Radeon<br>
 
-		sudo apt update
-		sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
-		sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5
-		
-		#Reinicializar o Sistema
-		sudo reboot
-
-		sudo apt install xserver-xorg-video-radeon
-		
-	_ Testando o suporte ao Driver da Intel Mesa
-		sudo glxinfo | less
-		sudo glxgears
+	sudo apt update
+	sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
+	sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5
 	
-	_ Software de Benchmark para GNU/Linux
-		_ PassMark: https://www.passmark.com/products/pt_linux/index.php
-		_ Hardinfo: https://github.com/lpereira/hardinfo
-		_ Unigine: https://benchmark.unigine.com/
-		_ GpuTest: https://www.geeks3d.com/gputest/
+	#Reinicializar o Sistema
+	sudo reboot
 
-OBSERVAÇÃO IMPORTANTE: NO VÍDEO DE CONFIGURAÇÃO DO POSITIVO N4340 EU NÃO FIZ MENÇÃO AO SWAPFILE
-QUE É CRIADO AUTOMATICAMENTE NA INSTALAÇÃO DO LINUX MINT, QUANDO VOCÊ ESTÁ UTILIZANDO SSD, M.2 OU 
-NVME É RECOMENDADO DESATIVAR O SUPORTE AO SWAPFILE PARA AUMENTAR O TEMPO DE VIDA DO SSD. TRIM É UM 
-COMANDO QUE INFORMA QUAIS PÁGINAS OU BLOCOS ESTÃO REALMENTE EM USO EM SEU SSD. ESSA FUNÇÃO AUMENTA 
-O DESEMPENHO DO DISPOSITIVO, GERA MAIS ESPAÇO LIVRE E AINDA AUXILIA A PROLONGAR SUA VIDA ÚTIL.
+	sudo apt install xserver-xorg-video-radeon
+	
+_ Testando o suporte ao Driver da Intel Mesa
+	sudo glxinfo | less
+	sudo glxgears
 
-	_ Executar os procedimentos no Terminal (Ctrl + Alt + T)
-		#opção do comando swapoff: -v (verbose)
-		#opção do comando rm: -v (verbose)
-		sudo swapon --show
-		sudo swapoff -v /swapfile
-		sudo vim /etc/fstab
-			INSERT
-				#Comentar a linha 12 (doze) do Swapfile (salvar e sair: Esc Shift: x)
-				#swapfile	none	swap	sw	0	0
-			ESC SHIFT :x <Enter>
-		sudo rm -v /swapfile
-		
-		#Reinicializar o Sistema
-		sudo reboot
-
-	_ Executar os procedimentos no Terminal (Ctrl + Alt + T)
-		sudo swapon --show
-		sudo systemctl status fstrim.service
-		sudo systemctl status fstrim.timer
+_ Software de Benchmark para GNU/Linux
+	_ PassMark: https://www.passmark.com/products/pt_linux/index.php
+	_ Hardinfo: https://github.com/lpereira/hardinfo
+	_ Unigine: https://benchmark.unigine.com/
+	_ GpuTest: https://www.geeks3d.com/gputest/
 
 #11_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
 
@@ -190,9 +169,6 @@ O DESEMPENHO DO DISPOSITIVO, GERA MAIS ESPAÇO LIVRE E AINDA AUXILIA A PROLONGAR
 	_ Tilix: https://gnunn1.github.io/tilix-web/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/06-tilix.md)
 
-	_ Ansible: https://www.ansible.com/
-		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/07-ansible.md)
-
 	_ Vagrant: https://www.vagrantup.com/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/08-vagrant.md)
 
@@ -204,6 +180,18 @@ O DESEMPENHO DO DISPOSITIVO, GERA MAIS ESPAÇO LIVRE E AINDA AUXILIA A PROLONGAR
 
 	_ WPS Office: http://linux.wps.com/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/11-wpsoffice.md)
+
+	_ Arduino: https://www.arduino.cc/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/13-arduino.md)
+
+	_ Swap Off: 
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/15-swapoff.md)
+
+	EdrawMax: https://www.edrawsoft.com/pt/edraw-max/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/17-edrawmax.md)
+
+	Eclipse: https://www.eclipse.org/downloads/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/19-eclipse.md)
 
 	_ NotepadQQ: https://notepadqq.com/s/
 		sudo apt update && sudo apt install notepadqq
@@ -219,25 +207,16 @@ O DESEMPENHO DO DISPOSITIVO, GERA MAIS ESPAÇO LIVRE E AINDA AUXILIA A PROLONGAR
 		sudo apt update && sudo apt install kazam
 
 	_ Kdenlive: https://kdenlive.org/en/
-		(link da versão AppImage >=20.08.2: https://kdenlive.org/en/download/)
+		(link da versão AppImage >=23.08.x: https://kdenlive.org/en/download/)
 
 	_ Audacity: https://www.audacityteam.org/
 		sudo apt update && sudo apt install audacity
 
 	_ OBS Studio: https://obsproject.com/pt-br
 		(link da versão para Linux: https://obsproject.com/pt-br/download)
-		
-	_ Mega: https://mega.nz/
-		(link da versão >=: https://mega.nz/sync)
-
-	_ Teams: https://www.microsoft.com/pt-br/microsoft-365/microsoft-teams/download-app
-		(link da versão >=1.3.00: https://www.microsoft.com/pt-br/microsoft-365/microsoft-teams/download-app#desktopAppDownloadregion)
 
 	_ VLC: https://www.videolan.org/vlc/index.pt-BR.html
 		sudo apt update && sudo apt install vlc
-
-	_ Skype: https://www.skype.com/pt-br/
-		(link da versão >=8.66.0.74: https://www.skype.com/pt-br/get-skype/)<br>
 
 	_ Redshift: http://jonls.dk/redshift/
 		(nativo no Linux Mint, versão >= 1.12)
