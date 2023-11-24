@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/07/2023<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.03<br>
+#Data de atualização: 24/11/2023<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 21.2 Victoria
 
 [![Linux Mint 21.2](http://img.youtube.com/vi/Ie9WblbiUu0/0.jpg)](https://www.youtube.com/watch?v=Ie9WblbiUu0 "Linux Mint 21.2")
