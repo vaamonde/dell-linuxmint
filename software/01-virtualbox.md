@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 15/11/2023<br>
-#Versão: 0.16<br>
+#Data de atualização: 26/11/2023<br>
+#Versão: 0.17<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
@@ -66,15 +66,18 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 	Terminal: Ctrl + Alt + T
 	
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+	#verificando as versões e codinome do sistema operacional
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 	
+	#verificando informações de hardware e processador
 	#opções do comando inxi: -C (cpu), -M (machine), -S (system), -f (flags), -xxx (extra 3)
 	sudo inxi -CMSfxxx
 	sudo lscpu
 
+	#modo gráfico para verificar as informações de sistema operacional e hardware
 	Menu
 		Informações do Sistema
 
@@ -127,7 +130,7 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 	
 	#OBSERVAÇÃO IMPORTANTE: UTILIZAR SOMENTE A VERSÃO DO VIRTUALBOX 6.1.X SE FOR REALMENTE
 	#NECESSÁRIO, EM ALGUNS CASOS A VERSÃO ANTIGA RESOLVER PROBLEMAS DE SOFTWARE OU SISTEMA
-	#OPERACIONAL OBSOLETOS, MAIS HOJE EM DIA NÃO É INDICADO USAR ESSA VERSÃO.
+	#OPERACIONAL OBSOLETOS, HOJE EM DIA NÃO É MAIS INDICADO USAR ESSA VERSÃO.
 
 	#INSTALANDO O VIRTUALBOX VERSÃO 6.1.x (NÃO RECOMENDADO MAIS A SUA INSTALAÇÃO)
 	sudo apt install virtualbox-6.1 cpu-checker libvirt-clients git vim python2 python3
@@ -148,10 +151,11 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 	Conforme vários relatos nos fórum do Linux Mint e do Ubuntu esse erro está associado a versão do Cgroup
 	utilizado no Ubuntu 22.04.x que é a base do Linux Mint 21.x. 
 	
-	LXC: Checking for cgroup 'freezer' controller support	FAIL (Enable 'freezer' in kernel Kconfig file or 
+	LXC: Checking for cgroup 'freezer' controller support FAIL (Enable 'freezer' in kernel Kconfig file or 
 	mount/enable cgroup controller in your system)
 
 	#CORREÇÃO PARA O LINUX MINT 21.x REFERENTE AO ERRO DO FREEZER DO COMANDO: virt-host-validate
+	#editar o arquivo de configuração do Grub
 	sudo vim /etc/default/grub
 		INSERT
 
@@ -161,6 +165,9 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 			#para:
 			GRUB_CMDLINE_LINUX_DEFAULT="quiet splash systemd.unified_cgroup_hierarchy=0"
 			
+			#OBSERVAÇÃO IMPORTANTE: UTILIZAR AS OPÇÕES ABAIXO SOMENTE SE VOCÊ ESTÁ USANDO ESSES RECURSOS
+			#NO LINUX MINT E SEU HARDWARE SUPORTA TAL TECNOLOGIA.
+
 			#se estiver usando processadores Intel pode habilitar o IOMMU no GRUB adicionando a opção:
 			GRUB_CMDLINE_LINUX_DEFAULT="quiet splash systemd.unified_cgroup_hierarchy=0 intel_iommu=on"
 			

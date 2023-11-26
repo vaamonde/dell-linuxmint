@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.07<br>
+#Data de atualização: 26/11/2023<br>
+#Versão: 0.08<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
@@ -61,15 +61,18 @@ Site Oficial do VMware Store: https://store-us.vmware.com/vmware-workstation-17-
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+	#verificando as versões e codinome do sistema operacional
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 	
+	#verificando informações de hardware e processador
 	#opções do comando inxi: -C (cpu), -M (machine), -S (system), -f (flags), -xxx (extra 3)
 	sudo inxi -CMSfxxx
 	sudo lscpu
 
+	#modo gráfico para verificar as informações de sistema operacional e hardware
 	Menu
 		Informações do Sistema
 		
@@ -86,7 +89,7 @@ Site Oficial do VMware Store: https://store-us.vmware.com/vmware-workstation-17-
 		sudo apt autoremove
 		sudo apt autoclean
 
-#02_ Download do VMware Workstation Pro 17 (Build 17.0.2 25/04/2023)<br>
+#02_ Download do VMware Workstation Pro 17 (Build 17.5.0 26/11/2023)<br>
 
 	Link: https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html
 	Versão: Workstation 17 Pro for Linux

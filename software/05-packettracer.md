@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 15/11/2023<br>
-#Versão: 0.11<br>
+#Data de atualização: 26/11/2023<br>
+#Versão: 0.12<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
@@ -32,22 +32,26 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+	#verificando as versões e codinome do sistema operacional
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+
 	
-	OBSERVAÇÃO IMPORTANTE: outro detalhe muito importante do Linux Mint com o Ambiente Gráfico 
-	Cinnamon é que ele possui a maioria das dependência do Qt e GTK, por causa disso que o Cisco 
-	Packet Tracer funciona muito bem no Mint com o ambiente gráfico Cinnamon, isso não acontece 
-	nos Ambientes Gráficos MATE ou XFCE ou na versão LMDE que não possui essas dependências.
+	#OBSERVAÇÃO IMPORTANTE: outro detalhe muito importante do Linux Mint com o Ambiente Gráfico 
+	#Cinnamon é que ele possui a maioria das dependência do Qt e GTK, por causa disso que o Cisco 
+	#Packet Tracer funciona muito bem no Mint com o ambiente gráfico Cinnamon, isso não acontece 
+	#nos Ambientes Gráficos MATE ou XFCE ou na versão LMDE que não possui essas dependências.
 	
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 	sudo cinnamon --version
 
+	#verificando informações de hardware e processador
 	#opções do comando inxi: -C (cpu), -M (machine), -S (system), -f (flags), -xxx (extra 3)
 	sudo inxi -CMSfxxx
 	sudo lscpu
 
+	#modo gráfico para verificar as informações de sistema operacional e hardware
 	Menu
 		Informações do Sistema
 		
@@ -70,7 +74,7 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 	Link Oficial do Packet Tracer Network: https://www.packettracernetwork.com/
 	Link do Mega.nz do Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7XzImP01M1SyRm2g/folder/vll2iSDI
 
-	#DICA: RECOMENDO VOCÊ FAZER UM CONTA NO NETACAD DA CISCO NO CURSO GRATUITO DO CISCO PACKET TRACER
+	#DICA: RECOMENDO VOCÊ FAZER UMA CONTA NO NETACAD DA CISCO NO CURSO GRATUITO DO CISCO PACKET TRACER
 	DISPONÍVEL NA PLATAFORMA NO LINK: https://skillsforall.com/pt/learningcollections/cisco-packet-tracer?courseLang=pt-BR
 
 	PARA CRIAR UMA CONTA NO NETACAD ACESSE O LINK: https://id.cisco.com/signin/register
@@ -89,6 +93,7 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 
 	Terminal: Ctrl + Alt + T
 
+	#instalando o Cisco Packet Tracer via linha de comando
 	#opção do comando dpkg: -i (install)
 	sudo dpkg -i CiscoPacketTracer*.deb
 		Na tela de: Configurando PacketTracer pressione Enter em: <OK>
@@ -98,24 +103,30 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 
 	Terminal: Ctrl + Alt + T
 
+	#verificando as dependência do binário do Cisco Packet Tracer
 	#opção do comando ldd: -v (verbose)
 	sudo ldd -v /opt/pt/bin/PacketTracer
 
-	#opção do comando ldd: -v (verbose)
+	#filtrando as dependências não encontrado do Cisco Packet Tracer
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
 	sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
 
 	#INSTALANDO AS DEPENDÊNCIAS DO CISCO PACKET TRACER NO LINUX MINT 20.x
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
+	#opção da contra barra (\): criar uma quebra de linha no terminal
 	sudo apt install libqt5networkauth5 libqt5script5 libqt5scripttools5 git vim python2 python3
+	
+	#filtrando as dependências não encontrado do Cisco Packet Tracer
+	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
 	sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
 
-	OBSERVAÇÃO IMPORTANTE: as dependências: libQt5QmlModels.so.5 e o erro: /lib/x86_64-linux-gnu/libQt5Core.so.5: 
-	version `Qt_5.15' not found não interfere diretamente no funcionamento do Cisco Packet Tracer 8.1.x ou 8.2.x
-	no Linux Mint 20.x, essas dependências fazem parte da versão do Ubuntu >= 21.04, verifique a versão do Qt5Core 
-	instalada no Linux Mint 20.x com o comando: sudo locate libQt5Core
+	#OBSERVAÇÃO IMPORTANTE: as dependências: libQt5QmlModels.so.5 e o erro: /lib/x86_64-linux-gnu/libQt5Core.so.5: 
+	#version `Qt_5.15' not found não interfere diretamente no funcionamento do Cisco Packet Tracer 8.1.x ou 8.2.x
+	#no Linux Mint 20.x, essas dependências fazem parte da versão do Ubuntu >= 21.04, verifique a versão do Qt5Core 
+	#instalada no Linux Mint 20.x com o comando: sudo locate libQt5Core
 
 	#INSTALANDO AS DEPENDÊNCIAS DO CISCO PACKET TRACER NO LINUX MINT 21.x
+	#opção da contra barra (\): criar uma quebra de linha no terminal
 	sudo apt install libqt5networkauth5 libqt5script5 libqt5scripttools5 libqt5texttospeech5 libqt5positioning5 \
 	libqt5qml5 libqt5webchannel5 libqt5qmlmodels5 libqt5quick5 libqt5webenginecore5 libqt5webenginewidgets5 git \
 	vim python2 python3
@@ -130,6 +141,9 @@ MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7Xz
 	#link de download da Biblioteca do LibSSL atualizado no dia: 15/11/2023
 	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.20_amd64.deb
 	sudo dpkg -i libssl1.1_1.1.1*.deb
+
+	#filtrando as dependências não encontrado do Cisco Packet Tracer
+	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando	
 	sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
 
 #05_ Atualização para a Versão 8.2.0 do Cisco Packet Tracer
