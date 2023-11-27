@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 26/11/2023<br>
-#Versão: 0.11<br>
+#Data de atualização: 27/11/2023<br>
+#Versão: 0.12<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
@@ -21,6 +21,11 @@ Link da vídeo aula: https://www.youtube.com/watch?v=iOI6V5iR9Cw
 
 Site Oficial do Docker: https://www.docker.com/<br>
 Site Oficial do Docker Hub: https://hub.docker.com/search?q=
+
+O QUE É E PARA QUE SERVER O DOCKER CE: Docker é um conjunto de produtos de plataforma como<br>
+serviço que usam virtualização de nível de sistema operacional para entregar software em<br>
+pacotes chamados contêineres. Os contêineres são isolados uns dos outros e agrupam seus<br>
+próprios softwares, bibliotecas e arquivos de configuração
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 

@@ -28,6 +28,11 @@ Cursos Oficiais do Cisco Packet Tracer: https://www.netacad.com/pt-br/courses/pa
 Site Oficial do Dev do Cisco Packet Tracer: https://www.packettracernetwork.com/<br>
 MEGA.nz do Projeto Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7XzImP01M1SyRm2g/folder/vll2iSDI
 
+O QUE É E PARA QUE SERVER O CISCO PACKET TRACER: O Packet Tracer é um programa educacional<br>
+gratuito que permite simular uma rede de computadores, através de equipamentos e configurações<br>
+presente em situações reais. O programa apresenta uma interface gráfica simples, com suportes<br>
+multimídia que auxiliam na confecção das simulações.
+
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
 	Terminal: Ctrl + Alt + T

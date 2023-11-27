@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 26/11/2023<br>
-#Versão: 0.08<br>
+#Data de atualização: 27/11/2023<br>
+#Versão: 0.09<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
@@ -21,6 +21,10 @@ Link da vídeo aula: https://www.youtube.com/watch?v=Uv2mebfheaI
 
 Site Oficial do VMware Workstation: https://www.vmware.com/br/products/workstation-pro.html<br>
 Site Oficial do VMware Store: https://store-us.vmware.com/vmware-workstation-17-pro-5709912600.html
+
+O QUE É E PARA QUE SERVER O VMWARE WORKSTATION: O VMware Workstation é uma linha de produtos<br>
+de hypervisor de desktop que permitem aos usuários executar máquinas virtuais, contêineres e<br>
+clusters de Kubernetes.
 
 #Tecnologias de Virtualização de Processadores AMD e Intel<br>
 

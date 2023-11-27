@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 26/11/2023<br>
-#Versão: 0.17<br>
+#Data de atualização: 27/11/2023<br>
+#Versão: 0.18<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
@@ -26,6 +26,10 @@ Link da vídeo aula: https://www.youtube.com/watch?v=DU47PLFSxpA
 Site Oficial do VirtualBOX: https://www.virtualbox.org/<br>
 Lançamento da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Changelog-7.0#v02<br>
 Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Changelog-7.0#v4
+
+O QUE É E PARA QUE SERVER O VIRTUALBOX: VirtualBox é um software de virtualização de código<br>
+aberto desenvolvido pela Oracle, que permite criar e executar máquinas virtuais em um computador<br>
+físico. Assim, o software emula um computador completo, incluindo sistemas operacionais e aplicativos.
 
 #Tecnologias de Virtualização de Processadores AMD e Intel<br>
 
@@ -125,7 +129,9 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 
 #04_ Instalando o Oracle VirtualBOX no Linux Mint<br>
 
-	OBSERVAÇÃO IMPORTANTE: recomendo fazer a instalação da nova versão do VirtualBOX 7.0.x
+	#OBSERVAÇÃO IMPORTANTE: recomendo fazer a instalação da nova versão do VirtualBOX 7.0.x
+	
+	#atualizando as lista do Apt com o novo repositório do VirtualBOX
 	sudo apt update
 	
 	#OBSERVAÇÃO IMPORTANTE: UTILIZAR SOMENTE A VERSÃO DO VIRTUALBOX 6.1.X SE FOR REALMENTE
@@ -146,15 +152,16 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 	#verificando as informações de validação do host da Biblioteca LibVirt
 	sudo virt-host-validate
 
-	OBSERVAÇÃO IMPORTANTE: conforme relatos no Canal do YouTUBE do Bora para Prática, no Linux Mint versão 
-	21.x é mostrado a seguinte mensagem de falha quando você utiliza o comando: sudo virt-host-validate.
-	Conforme vários relatos nos fórum do Linux Mint e do Ubuntu esse erro está associado a versão do Cgroup
-	utilizado no Ubuntu 22.04.x que é a base do Linux Mint 21.x. 
+	#OBSERVAÇÃO IMPORTANTE: conforme relatos no Canal do YouTUBE do Bora para Prática, no Linux Mint versão 
+	#21.x é mostrado a seguinte mensagem de falha quando você utiliza o comando: sudo virt-host-validate.
+	#Conforme vários relatos nos fórum do Linux Mint e do Ubuntu esse erro está associado a versão do Cgroup
+	#utilizado no Ubuntu 22.04.x que é a base do Linux Mint 21.x. 
 	
-	LXC: Checking for cgroup 'freezer' controller support FAIL (Enable 'freezer' in kernel Kconfig file or 
-	mount/enable cgroup controller in your system)
+	#LXC: Checking for cgroup 'freezer' controller support FAIL (Enable 'freezer' in kernel Kconfig file or 
+	#mount/enable cgroup controller in your system)
 
 	#CORREÇÃO PARA O LINUX MINT 21.x REFERENTE AO ERRO DO FREEZER DO COMANDO: virt-host-validate
+	
 	#editar o arquivo de configuração do Grub
 	sudo vim /etc/default/grub
 		INSERT
@@ -174,6 +181,7 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 			#se estiver usando processadores AMD pode habilitar o IOMMU no GRUB adicionando a opção:
 			GRUB_CMDLINE_LINUX_DEFAULT="quiet splash systemd.unified_cgroup_hierarchy=0 amd_iommu=on"
 		
+		#salvar e sair do arquivo
 		ESC SHIFT :x <Enter>
 	
 	#atualizar os arquivos de GRUB e reiniciar o computador
@@ -183,42 +191,30 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 	#verificando novamente a validação da biblioteca LibVirt
 	sudo virt-host-validate
 
-#06_ Baixando e Instalando o Pacote de Extensões do Oracle VirtualBOX<br>
+#06_ Atualizando o VirtualBOX 6.1.x para a versão nova versão 7.0.x<br>
 
-	OBSERVAÇÃO IMPORTANTE: PROCEDIMENTO É IGUAL NA VERSÃO DO VIRTUALBOX 6.1 E 7.0
-	Link para download: https://www.virtualbox.org/wiki/Downloads
-		Opção: VirtualBox 7.x Oracle VM VirtualBox Extension Pack
-		Clique em: All supported platforms
+	#OBSERVAÇÃO IMPORTANTE: executar esse procedimento somente se você instalou a versão
+	#do Virtualbox-6.1.x e queira atualizar para a versão do Virtualbox-7.0.x
 
-	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
-	*Após o download do pacote, clicar duas vezes no mesmo e seguir os procedimentos na tela.
-	
-	<Instalar>
-		Descer a barra de rolagem até o final
-	<Eu Concordo>
-		Digite a senha do seu usuário clique em: <Autenticar>
-
-#07_ Atualizando o VirtualBOX 6.1.x para a versão nova versão 7.0.x<br>
-
-	OBSERVAÇÃO IMPORTANTE: executar esse procedimento somente se você instalou a versão
-	do Virtualbox-6.1.x e queira atualizar para a versão do Virtualbox-7.0.x
-
+	#atualizar as lista do Apt, atualizar o sistema e instalar a versão 7.0.x
 	sudo apt update
 	sudo apt upgrade
 	sudo apt install virtualbox-7.0 cpu-checker libvirt-clients git vim python2 python3
 
-	OBSERVAÇÃO IMPORTANTE: CASO O PROCEDIMENTO ANTERIOR NÃO FUNCIONE NO SEU LINUX MINT, 
-	RECOMENDO FAZER A REMOÇÃO AUTOMÁTICA DO VIRTUALBOX-6.1 E DEPOIS INSTALAR A VERSÃO 
-	7.0, UTILIZE OS SEGUINTES COMANDOS:
+	#OBSERVAÇÃO IMPORTANTE: CASO O PROCEDIMENTO ANTERIOR NÃO FUNCIONE NO SEU LINUX MINT, 
+	#RECOMENDO FAZER A REMOÇÃO AUTOMÁTICA DO VIRTUALBOX-6.1 E DEPOIS INSTALAR A VERSÃO 
+	37.0, UTILIZE OS SEGUINTES COMANDOS:
 	
+	#atualizar as lista do Apt, atualizar o sistema, remover a versão 6.0.x e instalar a versão 7.0.x
 	sudo apt update
 	sudo apt upgrade
 	sudo apt purge virtualbox-6.1
 	sudo apt install virtualbox-7.0 cpu-checker libvirt-clients git vim python2 python3
 
-#08_ Baixando e Instalando o Pacote de Extensões do Oracle VirtualBOX 7.0<br>
+#07_ Baixando e Instalando o Pacote de Extensões do Oracle VirtualBOX 7.0<br>
 
-	OBSERVAÇÃO: PROCEDIMENTO É IGUAL NA VERSÃO DO VIRTUALBOX 6.1.x E 7.0.x
+	OBSERVAÇÃO: PROCEDIMENTO É IGUAL NAS VERSÕES DO VIRTUALBOX 6.1.x E 7.0.x
+	
 	Link para download: https://www.virtualbox.org/wiki/Downloads
 		Opção: VirtualBox 7.x Oracle VM VirtualBox Extension Pack
 		Clique em: All supported platforms
@@ -231,7 +227,7 @@ Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Chan
 	<Eu Concordo>
 		Digite a senha do seu usuário clique em: <Autenticar>
 
-#09_ Corrigindo a Falha do VirtualBOX 7.0 em relação ao erro: Failed to enumerate host USB devices
+#08_ Corrigindo a Falha do VirtualBOX 7.0 em relação ao erro: Failed to enumerate host USB devices
 
 	#adicionando o usuário no grupo do VirtualBOX Users
 	#opções do comando usermod: -a (append), -G (groups), $USER (variável de ambiente do nome do usuário)

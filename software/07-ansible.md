@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.05<br>
+#Data de atualização: 27/11/2023<br>
+#Versão: 0.06<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
@@ -21,15 +21,22 @@ Link da vídeo aula: https://www.youtube.com/watch?v=6WD0A9PFFtc
 
 Site Oficial do Ansible: https://www.ansible.com/
 
+O QUE É E PARA QUE SERVER O ANSIBLE: Ansible é uma ferramenta de TI de código aberto para<br>
+gerenciar, automatizar, configurar servidores e, implantar aplicativos, a partir de uma<br>
+localização central. Ele inclui sua própria linguagem declarativa para descrever a configuração<br>
+do sistema.
+
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+	#verificando as versões e codinome do sistema operacional
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 
+	#modo gráfico para verificar as informações de sistema operacional e hardware
 	Menu
 		Informações do Sistema
 		
@@ -48,14 +55,17 @@ Site Oficial do Ansible: https://www.ansible.com/
 
 #02_ Instalando as Dependências do Ansible no Linux Mint<br>
 
+	#instalando as dependências do Ansible
 	sudo apt install software-properties-common git vim python2 python3
 
 #03_ Adicionando o PPA Oficial do Ansible no Linux Mint<br>
 
+	#adicionando o repositório pessoal do Ansible (PPA = Personal Package Archives)
 	sudo add-apt-repository ppa:ansible/ansible
 
 #04_ Instalando o Ansible no Linux Mint<br>
 
+	#atualizando as listas do Apt com o novo repositório e instalando o Ansible
 	sudo apt update
 	sudo apt install ansible
 
@@ -229,6 +239,7 @@ log_path=/var/log/ansible.log
 #14_ Criando um Playbook Básico para Instalar o Apache2 no Ubuntu Server 22.04<br>
 
 	sudo vim /etc/ansible/apache2.yaml
+	INSERT
 
 ```ruby
 ---
@@ -243,6 +254,8 @@ log_path=/var/log/ansible.log
       name: apache2
       state: present
 ```
+	#salvar e sair do arquivo
+	ESC SHIFT : x <Enter>
 
 	#opção do comando ansible-playbook: -i (inventory-file), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
 	ansible-playbook -i hosts apache2.yaml --syntax-check -vv

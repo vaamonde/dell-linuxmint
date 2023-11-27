@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 15/11/2023<br>
-#Versão: 0.07<br>
+#Data de atualização: 27/11/2023<br>
+#Versão: 0.08<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
@@ -23,15 +23,37 @@ Site Oficial do Terminal Tilix: https://gnunn1.github.io/tilix-web/<br>
 Site Oficial do Oh My Zsh: https://ohmyz.sh/<br>
 Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
+O QUE É E PARA QUE SERVER O TERMINAL TILIX: Terminix/Tilix é um um novo emulador de terminal<br>
+GTK3 com divisão de tela em blocos, o que permite ter vários terminais divididos horizontal e<br>
+verticalmente, e que podem ser reorganizados simplesmente usando arrastar e soltar.
+
+O QUE É E PARA QUE SERVER O ZSH: O Z-shell ou Zsh é um interpretador de comandos UNIX que, dos<br>
+shells padrão, mais se assemelha ao Korn shell; sua compatibilidade com o shell Korn de 1988<br>
+vem aumentando gradualmente.
+
+O QUE É E PARA QUE SERVER O OH MY ZSH: Oh My Zsh é um gerenciador de configuração de shell<br>
+open-source para o Zsh (um shell Unix semelhante ao Bash). Ele fornece uma estrutura de diretórios<br>
+e arquivos para organizar vários plugins e temas para o Zsh, além de incluir vários recursos<br>
+úteis, como auto-completar comandos e comandos personalizados.
+
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
-	Terminal: Ctrl + Alt + T
+Terminal: Ctrl + Alt + T
 
-	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	#verificando as versões e codinome do sistema operacional
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
 	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+
+	#OBSERVAÇÃO IMPORTANTE: outro detalhe muito importante do Linux Mint com o Ambiente Gráfico 
+	#Cinnamon é que ele possui a maioria das dependência do Qt e GTK, por causa disso que o Cisco 
+	#Packet Tracer funciona muito bem no Mint com o ambiente gráfico Cinnamon, isso não acontece 
+	#nos Ambientes Gráficos MATE ou XFCE ou na versão LMDE que não possui essas dependências.
+	
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
+	sudo cinnamon --version
 
+	#modo gráfico para verificar as informações de sistema operacional e hardware
 	Menu
 		Informações do Sistema
 		
@@ -50,20 +72,29 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 #02_ Instalando o Tilix no Linux Mint<br>
 
+	#instalando o Tilix e suas dependências
 	sudo apt install tilix unzip git vim python2 python3
 
 #03_ Instalando a Fonte Hack Nerd Fonts no Linux Mint<Br>
 
-	#criando o diretório das fontes Hack
+	#criando o diretório das fontes Hack Nerd Fonts
 	#opção do comando mkdir: -v (verbose), -p (parents), ~ (til: alias home directory)
 	mkdir -pv ~/.local/share/fonts/Hack
 	
 	#acessando o diretório das fontes Hack (link atualizado no dia 15/11/2023)
-	#opção do comando fc-cache: -f (Force up-to-date cache files), -v (Display status)
 	cd ~/.local/share/fonts/Hack
+	
+		#baixando as fontes do Github
 		wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Hack.zip
+		
+		#descompactando o arquivo zipado das fontes
 		unzip Hack.zip
+		
+		#atualizando o cache de fontes do sistema operacional com as novas fontes
+		#opção do comando fc-cache: -f (Force up-to-date cache files), -v (Display status)
 		fc-cache -f -v
+		
+		#saindo do terminal
 		exit
 
 #04_ Configurando o Tilix como Terminal Padrão no Linux Mint<br>
@@ -117,6 +148,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
 	Terminal: Ctrl + Alt + T
 
+	#atualizando as lista do Apt e instalando o ZSH
 	sudo apt update
 	sudo apt install zsh
 	
@@ -124,7 +156,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 	zsh
 		Type one of the keys in parentheses: 2
 
-	#instalando o Oh My Zsh no Linux Mint
+	#instalando o Oh My Zsh no Linux Mint via script do Github
 	#opção do comando sh: -c (Read commands from the command_string operand in‐stead of from the standard input)
 	#opções do comando curl: -f (fail), -s (silent), -S (show-error), -L (location) 
 	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -188,6 +220,7 @@ Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 		k
 	)
 
+	#salvar e sair do arquivo
 	ESC SHIFT :x <Enter>
 
 	#recomendo fechar o Terminal Tilix e abrir novamente para verificar se tudo está funcionando,
