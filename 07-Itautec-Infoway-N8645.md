@@ -197,6 +197,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 	_ EdrawMax: https://www.edrawsoft.com/pt/edraw-max/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/17-edrawmax.md)
+  		(Google Drive: https://drive.google.com/drive/folders/11Um9e0eY5KhARW_waW15X732qyllEXpI?usp=sharing)
 
 	_ Eclipse: https://www.eclipse.org/downloads/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/19-eclipse.md)
