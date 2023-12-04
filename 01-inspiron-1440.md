@@ -29,6 +29,14 @@ Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_ci
 07/01/2022 - Linux Mint 20.3 “Una” Cinnamon released! https://blog.linuxmint.com/?p=4220<br>
 Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_cinnamon.php
 
+[![Dell Inspirion 1440](http://img.youtube.com/vi/iDvxKv0ib8M/0.jpg)](https://www.youtube.com/watch?v=iDvxKv0ib8M "Dell Inspirion 1440")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=iDvxKv0ib8M
+
+[![Dell Inspirion 1440](http://img.youtube.com/vi/VHtb30NCN4I/0.jpg)](https://www.youtube.com/watch?v=VHtb30NCN4I "Dell Inspirion 1440")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=VHtb30NCN4I
+
 #Instalação do Linux Mint 64 Bits no Dell Inspiron 1440 (2009)
 
 #01_ Software para criação de Pen Drive Bootável<br>

@@ -28,6 +28,22 @@ Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_ci
 07/01/2022 - Linux Mint 20.3 “Una” Cinnamon released! https://blog.linuxmint.com/?p=4220<br>
 Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_cinnamon.php
 
+[![Apresentação do Hardware](http://img.youtube.com/vi/vS3SVAzp3QU/0.jpg)](https://www.youtube.com/watch?v=vS3SVAzp3QU "Apresentação do Hardware")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=vS3SVAzp3QU
+
+[![Desktop Gamer Xeon](http://img.youtube.com/vi/BOgTCW2EcBI/0.jpg)](https://www.youtube.com/watch?v=BOgTCW2EcBI "Desktop Gamer Xeon")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=BOgTCW2EcBI
+
+[![Desktop Gamer Xeon](http://img.youtube.com/vi/sXDqOccf1qw/0.jpg)](https://www.youtube.com/watch?v=sXDqOccf1qw "Desktop Gamer Xeon")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=sXDqOccf1qw
+
+[![Driver AMD](http://img.youtube.com/vi/AL-hNUAthT8/0.jpg)](https://www.youtube.com/watch?v=AL-hNUAthT8 "Driver AMD")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=AL-hNUAthT8
+
 #Instalação do Linux Mint 64 Bits no Desktop Huananzhi X99-F8 Xeon E5-2678 V3
 
 #01_ Software para criação de Pen Drive Bootável<br>

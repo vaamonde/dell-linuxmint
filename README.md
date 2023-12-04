@@ -314,7 +314,7 @@ Primeiro vídeo da série de atualização do meu Curso de Linux Mint, nesse ví
 
 Mais informações acesse: https://blog.linuxmint.com/?p=4077
 
-[![Dell Inspirion 1440](http://img.youtube.com/vi/iDvxKv0ib8M/0.jpg)](https://www.youtube.com/watch?v=iDvxKv0ib8M "Dell Inspirion 1440")
+[![Dell Inspiron 1440](http://img.youtube.com/vi/iDvxKv0ib8M/0.jpg)](https://www.youtube.com/watch?v=iDvxKv0ib8M "Dell Inspiron 1440")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=iDvxKv0ib8M
 
@@ -330,7 +330,7 @@ Segundo vídeo da série de atualização do meu Curso de Linux Mint, nesse víd
 
 Mais informações acesse: https://blog.linuxmint.com/?p=4077
 
-[![Dell Inspirion 1440](http://img.youtube.com/vi/VHtb30NCN4I/0.jpg)](https://www.youtube.com/watch?v=VHtb30NCN4I "Dell Inspirion 1440")
+[![Dell Inspiron 1440](http://img.youtube.com/vi/VHtb30NCN4I/0.jpg)](https://www.youtube.com/watch?v=VHtb30NCN4I "Dell Inspiron 1440")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=VHtb30NCN4I
 
