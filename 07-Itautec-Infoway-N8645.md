@@ -157,7 +157,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	_ Unigine.: https://benchmark.unigine.com/
 	_ GpuTest.: https://www.geeks3d.com/gputest/
 
-#11_ Instalação e Configuração dos Pricipais Aplicativos utilizados no Dia-a-Dia<br>
+#11_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia<br>
 
 	_ VirtualBOX: https://www.virtualbox.org/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/01-virtualbox.md)
