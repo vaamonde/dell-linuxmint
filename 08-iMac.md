@@ -45,15 +45,15 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	_ Webcam, VGA AMD Radeon RV730/M96, Ethernet Realtek RTL8111/8168, Audio Intel 5 Series/3400 e AMD
 	_ RV710/730 HDMI Radeon 4000 Series
 
-#03_ Configuração da BIOS P5214_I-SL2.1<br>
+#03_ Configuração da BIOS <br>
 
 	_ Configuração Padrão de Fábrica, Hard Disk HD em AHCI, VT-x habilitado, Audio, Wireless e 
 	_ Bluetooth habilitados segurança UEFI habilitada
 	
-#04_ Inicialização da Instalação do Linux Mint 20.1 Ulyssa, 20.2 Uma, 20.3 Una, 21 Vanessa ou 21.1 Vera<br>
+#04_ Inicialização da Instalação do Linux Mint 20.1 Ulyssa, 20.2 Uma, 20.3 Una, 21 Vanessa, 21.1 Vera ou 21.2 Victoria<br>
 
-	_ Inicialização padrão, a falha de resolução de vídeo não acontece nesse modelo de notebook 
-	_ da Itautec Infoway N8645 devido o monitor ser de 14" e atingir altas resoluções.
+	_ Inicialização padrão, a falha de resolução de vídeo não acontece nesse modelo de iMac 
+	_ da Apple devido o monitor ser de 14" e atingir altas resoluções.
 
 #05_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless)<br>
 
@@ -134,7 +134,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	#Reinicializar o Sistema
 	sudo reboot
 
-#10_ Instalação dos Drivers VGA Intel Graphics e AMD Radeon<br>
+#10_ Instalação dos Drivers VGA Intel Graphics e Nvidiabr>
 
 	#Instalação dos Drivers de vídeo
 	sudo apt update
