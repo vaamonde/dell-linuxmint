@@ -19,7 +19,10 @@ Link da vídeo aula:
 10/12/2023 - Lançamento do BETA do Linux Mint 21.3: https://blog.linuxmint.com/?p=4611<br>
 06/12/2023 - Novidades da Versão do Linux Mint 21.3: https://blog.linuxmint.com/?p=4604<br>
 26/10/2023 - Anunciado a Versão do Linux Mint 21.3: https://blog.linuxmint.com/?p=4591<br>
-02/07/2023 - Planejamento do Lançamento da Versão 21.3: https://blog.linuxmint.com/?p=4554.
+02/07/2023 - Planejamento do Lançamento da Versão 21.3: https://blog.linuxmint.com/?p=4554<br>
+
+Novos Recursos: https://www.linuxmint.com/rel_virginia_whatsnew.php<br>
+Notas de lançamento: https://www.linuxmint.com/rel_virginia.php
 
 #Tipos de Ambientes Gráficos do Linux Mint<br>
 Cinnamon: https://www.linuxmint.com/rel_vera_cinnamon.php<br>
