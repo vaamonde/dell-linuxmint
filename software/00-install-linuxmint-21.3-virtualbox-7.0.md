@@ -11,9 +11,9 @@
 #Versão: 0.01<br>
 #Testado e homologado no Linux Mint 21.3 Virginia
 
-[![Linux Mint 21.3](http://img.youtube.com/vi//0.jpg)]( "Linux Mint 21.3")
+[![Linux Mint 21.3](http://img.youtube.com/vi/Si2sw9VblkI/0.jpg)](https://www.youtube.com/watch?v=Si2sw9VblkI "Linux Mint 21.3")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=Si2sw9VblkI
 
 #Lançamentos Oficiais do Linux Mint<br>
 10/12/2023 - Lançamento do BETA do Linux Mint 21.3: https://blog.linuxmint.com/?p=4611<br>
