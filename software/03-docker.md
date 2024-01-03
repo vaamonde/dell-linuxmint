@@ -7,13 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 27/11/2023<br>
-#Versão: 0.12<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Data de atualização: 03/12/2024<br>
+#Versão: 0.13<br>
+#Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
-#Instalação do Docker CE no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do Docker CE no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Instalação do Docker no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Instalação do Docker no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![Docker CE](http://img.youtube.com/vi/iOI6V5iR9Cw/0.jpg)](https://www.youtube.com/watch?v=iOI6V5iR9Cw "Docker CE")
 
@@ -103,8 +103,8 @@ próprios softwares, bibliotecas e arquivos de configuração
 	sudo apt purge docker-compose
 	
 	#baixando o Docker Compose do Projeto do Github
-	#opção do comando curl: -S (show-error), -L (location), -o (output) (Build 2.23.3 26/11/2023)
-	sudo curl -SL https://github.com/docker/compose/releases/download/v2.23.3/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
+	#opção do comando curl: -S (show-error), -L (location), -o (output) (Build 2.24.x 11/12/2023)
+	sudo curl -SL https://github.com/docker/compose/releases/download/v2.24.0-birthday.10/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
 
 	#alterando as permissões do Binário do Docker Compose	
 	#opção do comando chmod: -v (verbose), 755 (User=RWX,Group-R-X,Other-R-X)

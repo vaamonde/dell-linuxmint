@@ -9,11 +9,11 @@
 #Data de criação: 31/05/2022<br>
 #Data de atualização: 27/11/2023<br>
 #Versão: 0.08<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
-#Instalação do Tilix no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do Tilix no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Instalação do Tilix e OhMyZSH no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Instalação do Tilix e OhMyZSH no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![Tilix](http://img.youtube.com/vi/0BrJ8jWbTko/0.jpg)](https://www.youtube.com/watch?v=0BrJ8jWbTko "Tilix")
 
@@ -43,15 +43,8 @@ Terminal: Ctrl + Alt + T
 	#verificando as versões e codinome do sistema operacional
 	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
 	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
-
-	#OBSERVAÇÃO IMPORTANTE: outro detalhe muito importante do Linux Mint com o Ambiente Gráfico 
-	#Cinnamon é que ele possui a maioria das dependência do Qt e GTK, por causa disso que o Cisco 
-	#Packet Tracer funciona muito bem no Mint com o ambiente gráfico Cinnamon, isso não acontece 
-	#nos Ambientes Gráficos MATE ou XFCE ou na versão LMDE que não possui essas dependências.
-	
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
-	sudo cinnamon --version
 
 	#modo gráfico para verificar as informações de sistema operacional e hardware
 	Menu
@@ -70,7 +63,7 @@ Terminal: Ctrl + Alt + T
 		sudo apt autoremove
 		sudo apt autoclean
 
-#02_ Instalando o Tilix no Linux Mint<br>
+#02_ Instalando o Terminal Tilix no Linux Mint<br>
 
 	#instalando o Tilix e suas dependências
 	sudo apt install tilix unzip git vim python2 python3
@@ -84,8 +77,8 @@ Terminal: Ctrl + Alt + T
 	#acessando o diretório das fontes Hack (link atualizado no dia 15/11/2023)
 	cd ~/.local/share/fonts/Hack
 	
-		#baixando as fontes do Github
-		wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Hack.zip
+		#baixando as fontes do Github (link atualizado em: 03/12/2024)
+		wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip
 		
 		#descompactando o arquivo zipado das fontes
 		unzip Hack.zip
@@ -293,11 +286,11 @@ Terminal: Ctrl + Alt + T
 
 	#caso queira reconfigurar o PowerLevel10K novamente digite o comando abaixo.
 	p10k configure
-				
+
 #11_ Configurando o Visual Studio Code com suporte a Fonte Hack Nerd Font e Terminal ZSH<br>
 
-	OBSERVAÇÃO IMPORTANTE: executar esse procedimento somente se você tem instalado
-	o Microsoft Visual Studio no seu Linux Mint
+	#OBSERVAÇÃO IMPORTANTE: executar esse procedimento somente se você tem instalado
+	#o Microsoft Visual Studio no seu Linux Mint
 	
 	Gerenciar
 		Configurações
