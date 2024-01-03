@@ -203,7 +203,7 @@ físico. Assim, o software emula um computador completo, incluindo sistemas oper
 
 	#OBSERVAÇÃO IMPORTANTE: CASO O PROCEDIMENTO ANTERIOR NÃO FUNCIONE NO SEU LINUX MINT, 
 	#RECOMENDO FAZER A REMOÇÃO AUTOMÁTICA DO VIRTUALBOX-6.1 E DEPOIS INSTALAR A VERSÃO 
-	37.0, UTILIZE OS SEGUINTES COMANDOS:
+	#7.0, UTILIZE OS SEGUINTES COMANDOS:
 	
 	#atualizar as lista do Apt, atualizar o sistema, remover a versão 6.0.x e instalar a versão 7.0.x
 	sudo apt update
