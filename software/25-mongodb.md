@@ -57,9 +57,9 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 	#opção do comando dpkg: -i (install)
 	sudo apt install git vim build-essential software-properties-common gnupg apt-transport-https ca-certificates
 	
-	OBSERVAÇÃO IMPORTANTE: o tempo todo a Biblioteca LibSSL sofre alteração de versão, antes de baixar a versão
-	acesse o site: http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/ e veja qual a versão atual, altere
-	o script e faço o download.
+	#OBSERVAÇÃO IMPORTANTE: o tempo todo a Biblioteca LibSSL sofre alteração de versão, antes de baixar a versão
+	#acesse o site: http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/ e veja qual a versão atual, altere
+	#o script e faço o download.
 
 	#opção do comando dpkg: -i (install) (link atualizado no dia: 12/11/2023)
 	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.20_amd64.deb
@@ -70,17 +70,17 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 	#opção do comando curl: -f (fail), -s (silent), -S (show-error), -L (location)
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
 	#opção do comando gpg: -o (output)
-	curl -fsSL https://www.mongodb.org/static/pgp/server-6.0.asc | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/mongodb-6.gpg
+	curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/mongodb-7.0.gpg
 
 #04_ Criando o repositório do MongoDB Server no Linux Mint<br>
 
 	#ADICIONANDO O REPOSITÓRIO DO MONGODB SERVER NO LINUX MINT 20.x
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
-	echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+	echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
 
 	#ADICIONANDO O REPOSITÓRIO DO MONGODB SERVER NO LINUX MINT 21.x
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
-	echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+	echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
 
 #05_ Atualizando as Lista do Apt com o novo Repositório do MongoDB no Linux Mint<br>
 

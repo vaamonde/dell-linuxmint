@@ -54,9 +54,9 @@ Site Oficial do NPM: https://www.npmjs.com/
 
 #03_ Instalando a Versão LTS do Node.JS no Linux Mint<br>
 
-	#OBSERVAÇÃO IMPORTANTE: o script de adicionar o Sources List do Node.JS no
-	Linux Mint já reconhece a versão que você está usando, não sendo necessário
-	informar o codinome do Ubuntu (focal ou jammy).
+	#OBSERVAÇÃO IMPORTANTE: o script de adicionar o Sources List do Node.JS no Linux Mint já 
+	#reconhece a versão que você está usando, não sendo necessário informar o codinome do 
+	#Ubuntu (focal ou jammy).
 	
 	#opção do comando curl: -f (fail), -s (silent), -S (show-error), -L (location)
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando

@@ -7,13 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.08<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Data de atualização: 03/01/2024<br>
+#Versão: 0.09<br>
+#Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
-#Instalação do HashiCorp Vagrant no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do HashiCorp Vagrant no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Instalação do HashiCorp Vagrant no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Instalação do HashiCorp Vagrant no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![Vagrant](http://img.youtube.com/vi/LTlrcoR5YQE/0.jpg)](https://www.youtube.com/watch?v=LTlrcoR5YQE "Vagrant")
 
@@ -29,16 +29,23 @@ Providers Vagrant: https://www.vagrantup.com/docs/providers<br>
 Providers (Provedores) padrão do Vagrant: VirtualBOX, Hyper-V, Docker, VMware, Virt-Manager KVM, QEMU.<br>
 Providers (Provedores) cloud do Vagrant: AWS EC2 VPS, Google GCE, Microsoft Azure.
 
+O QUE É E PARA QUE SERVER O VAGRANT: Vagrant é um software de código aberto para criar e manter <br>
+ambientes de desenvolvimento virtuais portáteis, utilizando VirtualBox, KVM, Hyper-V, Docker containers,<br>
+VMware, e AWS. Ele tenta simplificar a gerência de configuração de software das virtualizações para <br>
+aumentar a produtividade do desenvolvimento.
+
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
 	Terminal: Ctrl + Alt + T
 	
+	#verificando as versões e codinome do sistema operacional
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 	sudo localectl
 
+	#modo gráfico para verificar as informações de sistema operacional e hardware
 	Menu
 		Informações do Sistema
 		
@@ -74,14 +81,17 @@ Providers (Provedores) cloud do Vagrant: AWS EC2 VPS, Google GCE, Microsoft Azur
 
 #05_ Instalando o Vagrant e o Packer e verificando a sua versão no Linux Mint<br>
 
+	#instalando o Vagrant e suas dependências
 	sudo apt install vagrant packer vim git tree python3 python2
 
+	#verificando as versões do Vagrant e Packer
 	vagrant --version
 	packer --version
 
 #06_ Criando o diretório de Projetos do Vagrant no Linux Mint<br>
 
-	#opções do comando mkdir: -p (parents), -v (verbose), ~ (til: alias home directory)
+	#opções do comando mkdir: -p (parents), -v (verbose), 
+	#opção do comando cd: ~ (til: alias home directory)
 	mkdir -pv ~/Projetos/Ubuntu2004
 	cd ~/Projetos/Ubuntu2004
 

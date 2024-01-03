@@ -7,13 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 07/01/2023<br>
-#Versão: 0.03<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Data de atualização: 03/01/2024<br>
+#Versão: 0.04<br>
+#Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
-#Instalação do Microsoft Visual Studio Code VSCode no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do Microsoft Visual Studio Code VSCode no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Instalação do Microsoft Visual Studio Code VSCode no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Instalação do Microsoft Visual Studio Code VSCode no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![VSCode](http://img.youtube.com/vi/faS3gZgKE-A/0.jpg)](https://www.youtube.com/watch?v=faS3gZgKE-A "VSCode")
 
@@ -22,6 +22,11 @@ Link da vídeo aula: https://www.youtube.com/watch?v=faS3gZgKE-A
 Site Oficial do Visual Studio Code: https://code.visualstudio.com/<br>
 Site Oficial do Visual Studio Code Web: https://vscode.dev/<br>
 Link do Marketplace: https://marketplace.visualstudio.com/VSCode
+
+O QUE É E PARA QUE SERVER O VSCODE: O Visual Studio Code é um editor de código-fonte desenvolvido<br>
+pela Microsoft para Windows, Linux e macOS. Ele inclui suporte para depuração, controle de<br> 
+versionamento Git incorporado, realce de sintaxe, complementação inteligente de código, snippets e<br> 
+refatoração de código.
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
