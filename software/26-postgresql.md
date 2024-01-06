@@ -7,12 +7,12 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 25/02/2023<br>
-#Data de atualização: 06/12/2024<br>
+#Data de atualização: 06/01/2024<br>
 #Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
-#Instalação do PostgreSQL Server 15.x ou 16.x no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>>
+#Instalação do PostgreSQL Server 15.x ou 16.x no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do PostgreSQL Server 15.x ou 16.x no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![PostgreSQL Server](http://img.youtube.com/vi/rDh3iq8nmDg/0.jpg)](https://www.youtube.com/watch?v=rDh3iq8nmDg "PostgreSQL Server")
@@ -159,29 +159,29 @@ Site Oficial do PgAdmin: https://www.pgadmin.org/
 	#opção do comando sudo: -u (user)
 	sudo -u postgres psql
 
-	#opção do comando \l: (list databases)
-	\l
+		#opção do comando \l: (list databases)
+		\l
 
-	#opção do comando \c: (connection database)
-	\c postgres
+		#opção do comando \c: (connection database)
+		\c postgres
 
-	#opção do comando \dt: (list tables)
-	\dt
+		#opção do comando \dt: (list tables)
+		\dt
 
-	#opção do comando \db: (database tablespaces)
-	\db
+		#opção do comando \db: (database tablespaces)
+		\db
 
-	#opção do comando \dg: (database roles)
-	\dg
+		#opção do comando \dg: (database roles)
+		\dg
 
-	#opção do comando \conninfo: (database information connect)
-	\conninfo
+		#opção do comando \conninfo: (database information connect)
+		\conninfo
 
-	#opção do comando \du: (database user profile)
-	\du
+		#opção do comando \du: (database user profile)
+		\du
 
-	#opção do comando \q: (quit)
-	\q
+		#opção do comando \q: (quit)
+		\q
 
 #13_ Configurando a Senha do Usuário Admin do PostgreSQL Server no Linux Mint<br>
 
