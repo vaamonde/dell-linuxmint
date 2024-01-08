@@ -140,7 +140,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	#Reinicializar o Sistema
 	sudo reboot
 
-#10_ Instalação dos Drivers VGA Intel Graphics e Nvidiabr>
+#10_ Instalação dos Drivers VGA Intel Graphics e Nvidia<br>
 
 	#Instalação dos Drivers de vídeo
 	sudo apt update
@@ -149,9 +149,6 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	
 	#Reinicializar o Sistema
 	sudo reboot
-
-	#Instalação do Driver da Radeon (DESATIVADO - NÃO UTILIZAR ESSE PROCEDIMENTO)
-	#sudo apt install xserver-xorg-video-radeon
 	
 	#Testando o suporte ao Driver da Intel Mesa
 	sudo glxinfo | less
@@ -163,7 +160,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	_ Unigine.: https://benchmark.unigine.com/
 	_ GpuTest.: https://www.geeks3d.com/gputest/
 
-#11_ Instalação e Configuração dos Pricipais Aplicativos utilizados no Dia-a-Dia<br>
+#11_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia<br>
 
 	_ VirtualBOX: https://www.virtualbox.org/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/01-virtualbox.md)
