@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 04/12/2023<br>
-#Data de atualização: 02/01/2024<br>
-#Versão: 0.02<br>
+#Data de atualização: 11/01/2024<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
@@ -34,7 +34,7 @@ Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_ci
 07/01/2022 - Linux Mint 20.3 “Una” Cinnamon released! https://blog.linuxmint.com/?p=4220<br>
 Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_cinnamon.php
 
-#Instalação do Linux Mint 64 Bits no iMAC 
+#Instalação do Linux Mint 64 Bits no Apple iMac A1225 2008 
 
 #01_ Software para criação de Pen Drive Bootável<br>
 
@@ -45,13 +45,13 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	_ Ventoy: https://www.ventoy.net/en/index.html
 	_ Linux Live USC Creator: https://www.linuxliveusb.com/
 
-#02_ Configurações do Hardware do Notebook Itautec Infoway N8645<br>
+#02_ Configurações do Hardware do Apple iMac A1225 2008<br>
 
-	_ CPU Intel i7 M620 2.67Ghz 4MB Cache, 8GB DDR-3 1333Mhz, HD Samsung HM500JI-(S1) 500GB, LCD 15", 
-	_ Webcam, VGA AMD Radeon RV730/M96, Ethernet Realtek RTL8111/8168, Audio Intel 5 Series/3400 e AMD
+	_ Intel Core 2 Duo de 2,8 GHz (E8235) 6MB Cache, 4GB DDR-2 1066Mhz, HD Samsung HM500JI-(S1) 500GB, LCD 24", 
+	_ Webcam iSigh, VGA AMD Radeon RV730/M96, Ethernet Realtek RTL8111/8168, Audio Intel 5 Series/3400 e AMD
 	_ RV710/730 HDMI Radeon 4000 Series
 
-#03_ Configuração da BIOS <br>
+#03_ Configuração da BIOS Apple iMac A1225 2008<br>
 
 	_ Configuração Padrão de Fábrica, Hard Disk HD em AHCI, VT-x habilitado, Audio, Wireless e 
 	_ Bluetooth habilitados segurança UEFI habilitada
@@ -59,7 +59,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 #04_ Inicialização da Instalação do Linux Mint 20.1 Ulyssa, 20.2 Uma, 20.3 Una, 21 Vanessa, 21.1 Vera ou 21.2 Victoria<br>
 
 	_ Inicialização padrão, a falha de resolução de vídeo não acontece nesse modelo de iMac 
-	_ da Apple devido o monitor ser de 14" e atingir altas resoluções.
+	_ da Apple devido o monitor ser de 24" e atingir altas resoluções.
 
 #05_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless)<br>
 
