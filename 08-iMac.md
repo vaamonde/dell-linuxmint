@@ -7,12 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 04/12/2023<br>
-#Data de atualização: 11/01/2024<br>
-#Versão: 0.03<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Data de atualização: 15/01/2024<br>
+#Versão: 0.04<br>
+#Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 #Lançamentos Oficiais do Linux Mint<br>
+12/01/2024 - Lançamento Oficial do Linux Mint 21.3: https://blog.linuxmint.com/?p=4624<br>
 10/12/2023 - Lançamento do BETA do Linux Mint 21.3: https://blog.linuxmint.com/?p=4611<br>
 06/12/2023 - Novidades da Versão do Linux Mint 21.3: https://blog.linuxmint.com/?p=4604<br>
 26/10/2023 - Anunciado a Versão do Linux Mint 21.3: https://blog.linuxmint.com/?p=4591<br>
@@ -64,6 +65,9 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 #05_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless)<br>
 
 	_ Já é reconhecida no Live-CD do Mint, depois de instalado o Mint ela já está habilitada.
+
+	OBSERVAÇÃO IMPORTANTE: No Linux Mint 21.x a Placa de Rede Sem-Fio (Wi-Fi/Wireless) Broadcom BCM4321 não
+	é conhecida no boot sendo necessirário instalar o driver utilizando o Gerenciador de Drivers
 
 #06_ Hard Disk SATA HD Samsung 500GB<br>
 
@@ -129,7 +133,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 	#Instalação do software base do Linux Mint
 	sudo apt update
-	sudo apt install software-properties-common build-essential lsb-core dkms
+	sudo apt install software-properties-common build-essential lsb-core dkms lsb-release apt-transport-https
 
 	#Instalação dos software básicos de hardware e monitoramento
 	sudo apt install htop nmon psensor tlp tlp-rdw cpufrequtils cputool ipmitool ipmiutil smartmontools
@@ -142,7 +146,10 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 #10_ Instalação dos Drivers VGA Intel Graphics e Nvidia<br>
 
-	#Instalação dos Drivers de vídeo
+	OBSERVAÇÃO IMPORTANTE: O modelo da Placa de Vídeo Nvidia Serie 8 GeForce 8800M GS/GTS G92M
+	não é mais suportado no Linux Mint 21.x utilizando o Kernel na versão 6.5.
+	
+	#Instalação dos Drivers de vídeo Intel
 	sudo apt update
 	sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
 	sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5
@@ -160,7 +167,18 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	_ Unigine.: https://benchmark.unigine.com/
 	_ GpuTest.: https://www.geeks3d.com/gputest/
 
-#11_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia<br>
+#11_ Instalando o Driver Sem-Fio Broadcom BCM4321<br>
+
+	#Instalação em Modo Gráfico
+	Menu
+		Busca Indexada
+			Gerenciador de Drivers
+				Selecione: bcmwl-kernel-source
+				<Aplicar Mudanças>
+			Digite a sua senha do usuário: <Autenticar>
+			<Reiniciar>
+
+#12_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia<br>
 
 	_ VirtualBOX: https://www.virtualbox.org/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/01-virtualbox.md)
