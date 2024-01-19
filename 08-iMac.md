@@ -67,12 +67,14 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	_ Já é reconhecida no Live-CD do Mint, depois de instalado o Mint ela já está habilitada.
 
 	OBSERVAÇÃO IMPORTANTE: No Linux Mint 21.x a Placa de Rede Sem-Fio (Wi-Fi/Wireless) Broadcom BCM4321 não
-	é conhecida no boot sendo necessirário instalar o driver utilizando o Gerenciador de Drivers
+	é conhecida no boot sendo necessário instalar o driver utilizando o Gerenciador de Drivers
 
 #06_ Hard Disk SATA HD Samsung 500GB<br>
 
 	_ Modelo HM500JI, Hard Disk para a instalação do Linux Mint, sem necessidade de particionamento
 	_ (instalação padrão).
+
+	_ OBSERVAÇÃO: PARA SELECIONAR O BOOT VIA PEN DRIVER NO iMAC PRESSIONE A TECLA: ALT NA INICIALIZAÇÃO
 
 	_ OBSERVAÇÃO IMPORTANTE: sempre utilizar o software GParted para remover todas as partições
 	_ existente no disco que será feito a instalação do Linux Mint, isso deixar o sistema mais
@@ -147,7 +149,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 #10_ Instalação dos Drivers VGA Intel Graphics e Nvidia<br>
 
 	OBSERVAÇÃO IMPORTANTE: O modelo da Placa de Vídeo Nvidia Serie 8 GeForce 8800M GS/GTS G92M
-	não é mais suportado no Linux Mint 21.x utilizando o Kernel na versão 6.5.
+	não é mais suportada no Linux Mint 21.x utilizando o Kernel na versão 6.5.
 	
 	#Instalação dos Drivers de vídeo Intel
 	sudo apt update

@@ -56,6 +56,8 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 	_ Configuração Padrão de Fábrica, Hard Disk HD em AHCI, VT-x habilitado, Audio, Wireless e 
 	_ Bluetooth habilitados segurança UEFI habilitada
+
+	_ OBSERVAÇÃO: PARA ACESSAR A BIOS DO NOTEBOOK ITAUTEC INFORWAY PRESSIONE A TECLA: F2
 	
 #04_ Inicialização da Instalação do Linux Mint 20.1 Ulyssa, 20.2 Uma, 20.3 Una, 21 Vanessa ou 21.1 Vera<br>
 
@@ -71,6 +73,8 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	_ Modelo HM500JI, Hard Disk para a instalação do Linux Mint, sem necessidade de particionamento
 	_ (instalação padrão).
 
+	_ OBSERVAÇÃO: PARA ESCOLHER A SEQUÊNCIA DE BOOT NA INICIALIZAÇÃO PRESSIONE: F12
+	
 	_ OBSERVAÇÃO IMPORTANTE: sempre utilizar o software GParted para remover todas as partições
 	_ existente no disco que será feito a instalação do Linux Mint, isso deixar o sistema mais
 	_ seguro e não causa o problemas de Múltiplos Boots.
