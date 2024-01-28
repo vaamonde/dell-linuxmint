@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 27/11/2023<br>
-#Versão: 0.18<br>
+#Data de atualização: 28/01/2024<br>
+#Versão: 0.19<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
@@ -159,6 +159,10 @@ físico. Assim, o software emula um computador completo, incluindo sistemas oper
 	
 	#LXC: Checking for cgroup 'freezer' controller support FAIL (Enable 'freezer' in kernel Kconfig file or 
 	#mount/enable cgroup controller in your system)
+
+	#QEMU: Checking for secure guest support: WARN (Unknown if this platform has Secure Guest support: essa
+	#mensagem faz referência ao suporte a processadores Intel com tecnologias VT-x e VT-d, caso a sua CPU não
+	#tenha suporte ao VT-d essa mensagem e apresentada, você pode ignorar essa mensagem.
 
 	#CORREÇÃO PARA O LINUX MINT 21.x REFERENTE AO ERRO DO FREEZER DO COMANDO: virt-host-validate
 	

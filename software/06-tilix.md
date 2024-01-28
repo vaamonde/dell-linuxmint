@@ -107,8 +107,9 @@ Terminal: Ctrl + Alt + T
 	gsettings set org.cinnamon.desktop.default-applications.terminal exec /usr/bin/tilix
 	exit
 
-	#OBSERVAÇÃO IMPORTANTE: no Linux Mint 21.2 Victoria a recurso de configurar o terminal pelo
-	#Aplicativos Preferenciais voltou, recomendo fazer por ele, não utilizar o comando: gsettings
+	#OBSERVAÇÃO IMPORTANTE: no Linux Mint 21.2 Victoria e 21.3 Virginia o recurso de configurar o 
+	#terminal pelo Aplicativos Preferenciais voltou, recomendo fazer por ele, não utilizar o comando: 
+	#gsettings para essa configuração.
 
 	Menu
 		Aplicativos Preferenciais
@@ -121,6 +122,11 @@ Terminal: Ctrl + Alt + T
 	Atalho do Terminal: Ctrl + Alt + T
 
 #06_ Customização Básica do Tilix no Linux Mint<br>
+
+	#OBSERVAÇÃO IMPORTANTE: quando você executar o Tilix pela primeira vez a mensagem de Problema de
+	#Configuração detectado é apresentado, essa falha está associada ao VTE (Virtual Terminal Emulator)
+	#você pode clicar em: Não exibir esta mensagem novamente ou essa falha será corrigida depois que
+	#você instalar e configurar o ZSH e o Oh-My-ZSH.
 
 	Menu
 		Preferências
@@ -147,6 +153,7 @@ Terminal: Ctrl + Alt + T
 	
 	#Executando o Terminal ZSH
 	zsh
+		#selecione a opção 2 para a criação do arquivo: ~/.zshrc com as configurações recomendadas
 		Type one of the keys in parentheses: 2
 
 	#instalando o Oh My Zsh no Linux Mint via script do Github
@@ -196,6 +203,7 @@ Terminal: Ctrl + Alt + T
 	#editando o arquivo de configuração do ZSHRC
 	vim ~/.zshrc
 	
+	#entrar no modo de edição do Vim
 	INSERT
 
 	#Variáveis de configuração do Tema PowerLevel10K
@@ -212,6 +220,7 @@ Terminal: Ctrl + Alt + T
 		zsh-autosuggestions
 		k
 	)
+	source $ZSH/oh-my-zsh.sh
 
 	#salvar e sair do arquivo
 	ESC SHIFT :x <Enter>
