@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 25/02/2023<br>
-#Data de atualização: 06/01/2024<br>
-#Versão: 0.05<br>
+#Data de atualização: 06/03/2024<br>
+#Versão: 0.06<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
@@ -71,8 +71,8 @@ Site Oficial do PgAdmin: https://www.pgadmin.org/
 	#acesse o site: http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/ e veja qual a versão atual, altere
 	#o script e faça o download.
 
-	#opção do comando dpkg: -i (install) (link atualizado no dia: 12/11/2023)
-	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.20_amd64.deb
+	#opção do comando dpkg: -i (install) (link atualizado no dia: 06/03/2024)
+	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb
 	sudo dpkg -i libssl1.1_1.1.1*.deb
 
 #03_ Baixando e instalando a Chave GPG do PostgreSQL Server no Linux Mint<br>

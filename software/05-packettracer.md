@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 26/11/2023<br>
-#Versão: 0.12<br>
+#Data de atualização: 06/03/2024<br>
+#Versão: 0.13<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
@@ -142,8 +142,8 @@ multimídia que auxiliam na confecção das simulações.
 	#Resolvendo a falha das bibliotecas libssl.so.1.1 e libcrypto.so.1.1 no Linux Mint 21.x
 	#opção do comando dpkg: -i (install)
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
-	#link de download da Biblioteca do LibSSL atualizado no dia: 15/11/2023
-	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.20_amd64.deb
+	#link de download da Biblioteca do LibSSL atualizado no dia: 06/03/2024
+	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb
 	sudo dpkg -i libssl1.1_1.1.1*.deb
 
 	#filtrando as dependências não encontrado do Cisco Packet Tracer
