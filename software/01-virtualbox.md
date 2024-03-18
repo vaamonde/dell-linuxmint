@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 28/01/2024<br>
-#Versão: 0.19<br>
+#Data de atualização: 18/03/2024<br>
+#Versão: 0.20<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
@@ -166,27 +166,30 @@ físico. Assim, o software emula um computador completo, incluindo sistemas oper
 
 	#CORREÇÃO PARA O LINUX MINT 21.x REFERENTE AO ERRO DO FREEZER DO COMANDO: virt-host-validate
 	
+	#OBSERVAÇÃO IMPORTANTE: MUITO CUIDADO NA HORA DE ATUALIZAR OS ARQUIVOS DE CONFIGURAÇÃO DO GRUB DO LINUX
+	#MINT, QUALQUER FALHA NA DIGITAÇÃO PODE ACARRETAR A FALHA DE INICIALIZAÇÃO DO SISTEMA. CUIDADO!!!!!!!!!
+
 	#editar o arquivo de configuração do Grub
 	sudo vim /etc/default/grub
-		INSERT
+	INSERT
 
-			#alterar a linha 10 das configurações padrão do GRUB do Linux Mint de:
-			GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
-			
-			#para:
-			GRUB_CMDLINE_LINUX_DEFAULT="quiet splash systemd.unified_cgroup_hierarchy=0"
-			
-			#OBSERVAÇÃO IMPORTANTE: UTILIZAR AS OPÇÕES ABAIXO SOMENTE SE VOCÊ ESTÁ USANDO ESSES RECURSOS
-			#NO LINUX MINT E SEU HARDWARE SUPORTA TAL TECNOLOGIA.
-
-			#se estiver usando processadores Intel pode habilitar o IOMMU no GRUB adicionando a opção:
-			GRUB_CMDLINE_LINUX_DEFAULT="quiet splash systemd.unified_cgroup_hierarchy=0 intel_iommu=on"
-			
-			#se estiver usando processadores AMD pode habilitar o IOMMU no GRUB adicionando a opção:
-			GRUB_CMDLINE_LINUX_DEFAULT="quiet splash systemd.unified_cgroup_hierarchy=0 amd_iommu=on"
+		#alterar a linha: 10 das configurações padrão do GRUB do Linux Mint de:
+		GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
 		
-		#salvar e sair do arquivo
-		ESC SHIFT :x <Enter>
+		#para:
+		GRUB_CMDLINE_LINUX_DEFAULT="quiet splash systemd.unified_cgroup_hierarchy=0"
+		
+		#OBSERVAÇÃO IMPORTANTE: UTILIZAR AS OPÇÕES ABAIXO SOMENTE SE VOCÊ ESTÁ USANDO ESSES RECURSOS
+		#NO LINUX MINT E SEU HARDWARE SUPORTA TAL TECNOLOGIA.
+
+		#se estiver usando processadores Intel pode habilitar o IOMMU no GRUB adicionando a opção:
+		GRUB_CMDLINE_LINUX_DEFAULT="quiet splash systemd.unified_cgroup_hierarchy=0 intel_iommu=on"
+		
+		#se estiver usando processadores AMD pode habilitar o IOMMU no GRUB adicionando a opção:
+		GRUB_CMDLINE_LINUX_DEFAULT="quiet splash systemd.unified_cgroup_hierarchy=0 amd_iommu=on"
+	
+	#salvar e sair do arquivo
+	ESC SHIFT :x <Enter>
 	
 	#atualizar os arquivos de GRUB e reiniciar o computador
 	sudo update-grub
@@ -217,21 +220,21 @@ físico. Assim, o software emula um computador completo, incluindo sistemas oper
 
 #07_ Baixando e Instalando o Pacote de Extensões do Oracle VirtualBOX 7.0<br>
 
-	OBSERVAÇÃO: PROCEDIMENTO É IGUAL NAS VERSÕES DO VIRTUALBOX 6.1.x E 7.0.x
+	#OBSERVAÇÃO: PROCEDIMENTO É IGUAL NAS VERSÕES DO VIRTUALBOX 6.1.x E 7.0.x
 	
 	Link para download: https://www.virtualbox.org/wiki/Downloads
 		Opção: VirtualBox 7.x Oracle VM VirtualBox Extension Pack
 		Clique em: All supported platforms
 
-	*Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
-	*Após baixar o pacote, clicar duas vezes no mesmo e seguir os procedimentos na tela
+	#Recomendo fazer a instalação do Pacote de Extensões do Oracle VirtualBOX via download do site Oficial.
+	#Após baixar o pacote, clicar duas vezes no mesmo e seguir os procedimentos na tela
 	
 	<Instalar>
 		Descer a barra de rolagem até o final
 	<Eu Concordo>
 		Digite a senha do seu usuário clique em: <Autenticar>
 
-#08_ Corrigindo a Falha do VirtualBOX 7.0 em relação ao erro: Failed to enumerate host USB devices
+#08_ Corrigindo a Falha do VirtualBOX 7.0 em relação ao erro: Failed to enumerate host USB devices<br>
 
 	#adicionando o usuário no grupo do VirtualBOX Users
 	#opções do comando usermod: -a (append), -G (groups), $USER (variável de ambiente do nome do usuário)

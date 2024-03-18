@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 19/05/2023<br>
-#Data de atualização: 16/01/2024<br>
-#Versão: 0.07<br>
+#Data de atualização: 18/03/2024<br>
+#Versão: 0.08<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
@@ -61,6 +61,8 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	
 #04_ Inicialização da Instalação do Linux Mint 20.1 Ulyssa, 20.2 Uma, 20.3 Una, 21 Vanessa ou 21.1 Vera<br>
 
+	_ OBSERVAÇÃO: PARA ESCOLHER A SEQUÊNCIA DE BOOT NA INICIALIZAÇÃO PRESSIONE: F12
+
 	_ Inicialização padrão, a falha de resolução de vídeo não acontece nesse modelo de notebook 
 	_ da Itautec Infoway N8645 devido o monitor ser de 15" e atingir altas resoluções.
 
@@ -73,13 +75,14 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	_ Modelo HM500JI, Hard Disk para a instalação do Linux Mint, sem necessidade de particionamento
 	_ (instalação padrão).
 
-	_ OBSERVAÇÃO: PARA ESCOLHER A SEQUÊNCIA DE BOOT NA INICIALIZAÇÃO PRESSIONE: F12
-	
 	_ OBSERVAÇÃO IMPORTANTE: sempre utilizar o software GParted para remover todas as partições
 	_ existente no disco que será feito a instalação do Linux Mint, isso deixar o sistema mais
 	_ seguro e não causa o problemas de Múltiplos Boots.
 	
 #07_ Pós-Instalação do Linux Mint 20.1 Ulyssa, 20.2 Uma, 20.3 Una, 21 Vanessa ou 21.1 Vera<br>
+
+	#OBSERVAÇÃO IMPORTANTE: É RECOMENDADO FAZER PRIMEIRO A ATUALIZAÇÃO VIA MINTUPDATE, DEPOIS VOCÊ
+	#PODE UTILIZAR O BASH/SHELL COM O COMANDO APT PARA MANTER O DESKTOP SEMPRE ATUALIZADO.
 
 	_ Atualização do sistema utilizando o MintUpdate;
 	_ Atualização do sistema utilizando o Apt;
@@ -97,28 +100,22 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	#Reinicializar o Sistema
 	sudo reboot
 
-#08_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.15.x suportado até 2025)<br>
+#08_ Instalação do Linux Kernel OEM (Original Equipment Manufacturer - Kernel padrão 5.15.x)<br>
 
-	#INSTALAÇÃO DO KERNEL OEM LINUX MINT 20.x (KERNEL >= 5.14)
-	sudo apt install linux-oem-20.04 fdutils
-	
-	#Reinicializar o Sistema
-	sudo reboot
-	
 	#Verificando a versão do Kernel que está rodando na inicialização do Linux Mint
 	#opção do comando uname: -a (all)
 	sudo uname -a
-
+	
 	#INSTALAÇÃO DO KERNEL OEM LINUX MINT 21.x (KERNEL >= 5.14, KERNEL >= 6.0, KERNEL >= 6.1 e KERNEL >= 6.5)
 	
-	#Linux Mint Versão 21.x - Kernel >= 5.17
-	sudo apt install linux-oem-22.04a fdutils
+	#Linux Mint Versão 21.x - Kernel >= 5.17 (NÃO RECOMENDO MAIS UTILIZAR ESSA VERSÃO)
+	#sudo apt install linux-oem-22.04a fdutils
 	
-	#Linux Mint Versão 21.x - Kernel >= 6.0
-	sudo apt install linux-oem-22.04b fdutils
+	#Linux Mint Versão 21.x - Kernel >= 6.0 (NÃO RECOMENDO MAIS UTILIZAR ESSA VERSÃO)
+	#sudo apt install linux-oem-22.04b fdutils 
 	
-	#Linux Mint Versão 21.x - Kernel >= 6.1
-	sudo apt install linux-oem-22.04c fdutils
+	#Linux Mint Versão 21.x - Kernel >= 6.1 (NÃO RECOMENDO MAIS UTILIZAR ESSA VERSÃO)
+	#sudo apt install linux-oem-22.04c fdutils
 
 	#Linux Mint Versão 21.x - Kernel >= 6.5 - (TESTADO E HOMOLOGADO, RECOMENDO A SUA INSTALAÇÃO)
 	sudo apt install linux-oem-22.04d fdutils
@@ -132,7 +129,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 #09_ Instalação dos Aplicativos Básicos do Linux Mint<br>
 
-	#Instalação do software base do Linux Mint
+	#Instalação doS software base do Linux Mint
 	sudo apt update
 	sudo apt install software-properties-common build-essential lsb-core dkms lsb-release apt-transport-https
 
@@ -147,7 +144,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 #10_ Instalação dos Drivers VGA Intel Graphics e AMD Radeon<br>
 
-	#Instalação dos Drivers de vídeo da Intel
+	#Instalação dos Drivers de vídeo da Intel Mesa
 	sudo apt update
 	sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
 	sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5
@@ -155,7 +152,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	#Reinicializar o Sistema
 	sudo reboot
 
-	#Instalação do Driver da Radeon (DESATIVADO - NÃO UTILIZAR ESSE PROCEDIMENTO)
+	#Instalação do Driver da Radeon (DESATIVADO - NÃO UTILIZAR ESSE PROCEDIMENTO, FALHA NO X11)
 	#sudo apt install xserver-xorg-video-radeon
 	
 	#Testando o suporte ao Driver da Intel Mesa
@@ -170,76 +167,42 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 #11_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia<br>
 
+	#01_ Instalar e Configurar todos os procedimentos do VirtualBOX
 	_ VirtualBOX: https://www.virtualbox.org/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/01-virtualbox.md)
 
+	#02_ Instalar e Configurar todos os procedimentos do VMware Workstation
 	_ VMware Workstation: https://www.vmware.com/br/products/workstation-pro.html
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/02-vmware.md)	
 
+	#03_ Instalar e Configurar todos os procedimentos do Docker CE
 	_ Docker CE: https://www.docker.com/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/03-docker.md)
 
+	#04_ Instalar e Configurar até o procedimento: 13 Configuração das Preferências Básicas do GNS3 Gui
 	_ GNS3: https://www.gns3.com/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/04-gns3.md)
 
+	#05_ Instalar e Configurar todos os procedimentos do Packet Tracer
 	_ Packet Tracer: https://www.packettracernetwork.com/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/05-packettracer.md)
 
+	#06_ Instalar e Configurar todos os procedimentos do Tilix
 	_ Tilix: https://gnunn1.github.io/tilix-web/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/06-tilix.md)
 
-	_ Vagrant: https://www.vagrantup.com/
-		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/08-vagrant.md)
-
-	_ Powershell: https://docs.microsoft.com/pt-br/powershell/scripting/overview?view=powershell-7.2
-		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/09-powershell.md)
-
+	#07_ Instalar e Configurar todos os procedimentos do VS Code
 	_ VS Code: https://code.visualstudio.com/
 		(Link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/10-vscode.md)
 
+	#08_ Instalar e Configurar todos os procedimentos do WPS Office
 	_ WPS Office: http://linux.wps.com/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/11-wpsoffice.md)
 
-	_ Arduino: https://www.arduino.cc/
-		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/13-arduino.md)
-
+	#09_ Configurar todos os procedimentos do Swap Off
 	_ Swap Off: https://wiki.archlinux.org/title/Swap_(Portugu%C3%AAs)
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/15-swapoff.md)
 
-	_ EdrawMax: https://www.edrawsoft.com/pt/edraw-max/
-		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/17-edrawmax.md)
-  		(Google Drive: https://drive.google.com/drive/folders/11Um9e0eY5KhARW_waW15X732qyllEXpI?usp=sharing)
-
-	_ Eclipse: https://www.eclipse.org/downloads/
-		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/19-eclipse.md)
-
-	_ NotepadQQ: https://notepadqq.com/s/
-		sudo apt update && sudo apt install notepadqq
-
-	_ KolourPaint: https://kde.org/applications/en/graphics/org.kde.kolourpaint
-		sudo apt update && sudo apt install kolourpaint
-
-	_ Google Chrome: https://www.google.com/intl/pt-BR/chrome/
-
-	_ Genymotion: https://www.genymotion.com/download/
-
-	_ Kazam: https://launchpad.net/kazam
-		sudo apt update && sudo apt install kazam
-
-	_ Kdenlive: https://kdenlive.org/en/
-		(link da versão AppImage >=23.08.x: https://kdenlive.org/en/download/)
-
-	_ Audacity: https://www.audacityteam.org/
-		sudo apt update && sudo apt install audacity
-
-	_ OBS Studio: https://obsproject.com/pt-br
-		(link da versão para Linux: https://obsproject.com/pt-br/download)
-
-	_ VLC: https://www.videolan.org/vlc/index.pt-BR.html
-		sudo apt update && sudo apt install vlc
-
-	_ Redshift: http://jonls.dk/redshift/
-		(nativo no Linux Mint, versão >= 1.12)
-
-	_ Timeshift: https://github.com/teejee2008/timeshift
-		(nativo no Linux Mint, versão >= 22.06)
+	#10_ Instalar e Configurar todos os procedimentos do Arduino (CHAMAR PARA PEGAR O KIT DO ARDUINO)
+	_ Arduino: https://www.arduino.cc/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/13-arduino.md)
