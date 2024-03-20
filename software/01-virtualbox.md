@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 18/03/2024<br>
-#Versão: 0.20<br>
+#Data de atualização: 20/03/2024<br>
+#Versão: 0.21<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
@@ -101,6 +101,11 @@ físico. Assim, o software emula um computador completo, incluindo sistemas oper
 
 #02_ Adicionando o Repositório do Oracle VirtualBOX no Linux Mint<br>
 
+	#OBSERVAÇÃO IMPORTANTE: CUIDADO COM A VERSÃO DO LINUX MINT QUE VOCÊ ESTÁ USANDO,
+	#OS COMANDOS DE ADICIONAR REPOSITÓRIO NÃO MOSTRA RESULTADO NA TELA, CUIDADO PARA
+	#NÃO EXECUTAR MAIS DE UMA VEZ O COMANDO PARA NÃO ADICIONAR MÚLTIPLAS ENTRADAS NO
+	#ARQUIVO EM: /etc/apt/sources.list.d/virtualbox.list.
+
 	#ADICIONANDO O REPOSITÓRIO NO LINUX MINT 20.x
 	#opção do comando sh: -c (Read commands from the command_string operand in‐stead of from the standard input)
 	#opção do redirecionador >>: Redireciona a saída padrão, anexando
@@ -113,7 +118,11 @@ físico. Assim, o software emula um computador completo, incluindo sistemas oper
 
 #03_ Baixando e Instalando as Chaves de Autenticação GPG do Oracle VirtualBOX no Linux Mint<br>
 
-	#ADICIONANDO AS CHAVES DO REPOSITÓRIO NO LINUX MINT 20.x
+	#OBSERVAÇÃO IMPORTANTE: CUIDADO COM A VERSÃO DO LINUX MINT QUE VOCÊ ESTÁ USANDO,
+	#OS COMANDOS DE ADICIONAR OU CONVERTER AS CHAVES GPG NO LINUX MINT NÃO MOSTRA NA
+	#TELA O RESULTADO.
+
+	#ADICIONANDO AS 02 (DUAS) CHAVES DO REPOSITÓRIO NO LINUX MINT 20.x
 	#opções do comando wget: -q (quiet), -O (output-document), - (file name)
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
 	wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
@@ -121,10 +130,12 @@ físico. Assim, o software emula um computador completo, incluindo sistemas oper
 
 	#ADICIONANDO AS CHAVES DO REPOSITÓRIO NO LINUX MINT 21.x
 	#opções do comando wget: -q (quiet)
+	wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc
+	
+	#CONVERTENDO AS CHAVES DO REPOSITÓRIO NO LINUX LINUX MINT 21.X
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
 	#opção do redirecionador >: Redireciona a saída padrão (STDOUT)
 	#opção do redirecionador 2>&1: Conecta a saída de erro na saída padrão
-	wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc
 	cat oracle_vbox_2016.asc | gpg --dearmor | sudo tee /usr/share/keyrings/virtualbox.gpg > /dev/null 2>&1
 
 #04_ Instalando o Oracle VirtualBOX no Linux Mint<br>
@@ -191,8 +202,11 @@ físico. Assim, o software emula um computador completo, incluindo sistemas oper
 	#salvar e sair do arquivo
 	ESC SHIFT :x <Enter>
 	
-	#atualizar os arquivos de GRUB e reiniciar o computador
+	#atualizar os arquivos de GRUB para aplicar as mudanças
 	sudo update-grub
+	
+	#OBSERVAÇÃO IMPORTANTE: para aplicar as mudanças no GRUB e necessário reiniciar o
+	#sistema operacional e checar novamente para verificar se a correção funcionou. 
 	sudo reboot
 	
 	#verificando novamente a validação da biblioteca LibVirt
