@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 27/11/2023<br>
-#Versão: 0.08<br>
+#Data de atualização: 20/03/2023<br>
+#Versão: 0.09<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
@@ -261,7 +261,7 @@ Terminal: Ctrl + Alt + T
 			Choice [1234rq]: 3
 		
 		Prompt Heads: (1) Sharp.
-			Choice [1234rq]: 1
+			Choice [1234rq]: 3
 		
 		Prompt Tails: (1) Flat.
 			Choice [12345rq]: 1
