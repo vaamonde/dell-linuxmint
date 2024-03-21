@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 14/01/2023<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.54<br>
+#Data de atualização: 21/03/2024<br>
+#Versão: 0.55<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
@@ -69,6 +69,9 @@ Site Oficial do Java: https://www.java.com/pt-BR/
 	sudo apt install git vim openjdk-19-jdk openjdk-19-jre openjdk-19-jre-headless \
 	software-properties-common build-essential
 
+	sudo apt install git vim openjdk-21-jdk openjdk-21-jre openjdk-21-jre-headless \
+	software-properties-common build-essential
+
 #03_ Verificando as Versões do Java instalado no Linux Mint<br>
 
 	#opção do comando grep: -i (ignore-case)
@@ -89,7 +92,7 @@ Site Oficial do Java: https://www.java.com/pt-BR/
 	#recomendo utilizar a versão do Eclipse IDE Enterprise Java e Web
 	Link do download: https://www.eclipse.org/downloads/packages/
 	Versão do Eclipse: Eclipse IDE for Enterprise Java and Web Developers
-		Linux x86_64: eclipse-jee-2023-09-R-linux-gtk-x86_64.tar.gz (atualizado em 12/11/2023)
+		Linux x86_64: eclipse-jee-2024-03-R-linux-gtk-x86_64.tar.gz (atualizado em 21/03/2024)
 
 #06_ Descompactar o Arquivo Zipado do Eclipse IDE no Linux Mint<br>
 
