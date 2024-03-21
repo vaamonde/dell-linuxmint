@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 20/03/2024<br>
-#Versão: 0.21<br>
+#Data de atualização: 21/03/2024<br>
+#Versão: 0.22<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
@@ -257,5 +257,29 @@ físico. Assim, o software emula um computador completo, incluindo sistemas oper
 	#verificando se o usuário foi adicionado no grupo
 	sudo cat /etc/group | grep vbox
 	
+	#recomendo reiniciar a máquina para testar se a falha foi resolvida
+	sudo reboot
+
+#09_ Corrigindo a Falha do VirtualBOX 7.0 em relação ao erro: Kernel driver not installed (rc=-1908)<br>
+
+	#OBSERVAÇÃO IMPORTANTE: EXECUTAR ESSE PROCEDIMENTO SOMENTE SE O SEU VIRTUALBOX NA HORA DA
+	#INICIALIZAÇÃO ESTIVER APRESENTANDO ESSE MENSAGEM OU NÃO INICIANDO, NÃO EXECUTAR ESSES
+	#COMANDO SEM ANTES VERIFICAR O MOTIVIO DA FALHA.
+
+	#atualizando as listas do Apt
+	sudo apt update
+
+	#instalando os pacotes necessários para recompilar o módulo do Kernel do Virtual
+	#opção do comando apt $(uname -r): $() (Executa comandos numa subshell)
+	#opção do comando uname: -r (kernel-release)
+	sudo apt-get install build-essential module-assistant dkms linux-headers-$(uname -r)
+
+	#preparando o processo de compilação do módulos do Kernel
+	#opção do comando m-a: prepare (Tries to determine the name of the required linux-headers package)
+	sudo m-a prepare
+
+	#compilando o driver (módulos) do Virtualbox
+	sudo /etc/init.d/vboxdrv setup
+
 	#recomendo reiniciar a máquina para testar se a falha foi resolvida
 	sudo reboot

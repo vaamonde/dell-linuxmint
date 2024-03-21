@@ -46,8 +46,11 @@ multimídia que auxiliam na confecção das simulações.
 	#Packet Tracer funciona muito bem no Mint com o ambiente gráfico Cinnamon, isso não acontece 
 	#nos Ambientes Gráficos MATE ou XFCE ou na versão LMDE que não possui essas dependências.
 	
+	#verificando as versões e codinome
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
+	
+	#verificando a versão do ambiente gráfico
 	sudo cinnamon --version
 
 	#verificando informações de hardware e processador

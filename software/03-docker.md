@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 03/12/2024<br>
-#Versão: 0.13<br>
+#Data de atualização: 21/03/2024<br>
+#Versão: 0.14<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
@@ -57,7 +57,6 @@ próprios softwares, bibliotecas e arquivos de configuração
 #02_ Instalando as Dependência do Docker CE no Linux Mint<br>
 
 	#instalação das dependências básicas do Docker CE
-	#opção da contra barra (\): criar uma quebra de linha no terminal
 	sudo apt install apt-transport-https ca-certificates curl software-properties-common gnupg-agent
 
 #03_ Adicionando a Chave GPG do Docker CE no Linux Mint<br>
@@ -69,10 +68,12 @@ próprios softwares, bibliotecas e arquivos de configuração
 
 	#ADICIONANDO AS CHAVES DO REPOSITÓRIO NO LINUX MINT 21.x
 	#opções do comando wget: -q (quiet)
+	wget -q https://download.docker.com/linux/ubuntu/gpg 
+	
+	#CONVERTENDO AS CHAVES DO REPOSITÓRIO NO LINUX LINUX MINT 21.X
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
 	#opção do redirecionador >: Redireciona a saída padrão (STDOUT)
 	#opção do redirecionador 2>&1: Conecta a saída de erro na saída padrão
-	wget -q https://download.docker.com/linux/ubuntu/gpg 
 	cat gpg | gpg --dearmor | sudo tee /usr/share/keyrings/docker-ce.gpg > /dev/null 2>&1
 
 #04_ Adicionando o Repositório do Docker CE no Linux Mint<br>
@@ -103,8 +104,8 @@ próprios softwares, bibliotecas e arquivos de configuração
 	sudo apt purge docker-compose
 	
 	#baixando o Docker Compose do Projeto do Github
-	#opção do comando curl: -S (show-error), -L (location), -o (output) (Build 2.24.x 11/12/2023)
-	sudo curl -SL https://github.com/docker/compose/releases/download/v2.24.0-birthday.10/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
+	#opção do comando curl: -S (show-error), -L (location), -o (output) (Build 2.25.x 21/03/2024)
+	sudo curl -SL https://github.com/docker/compose/releases/download/v2.25.0/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
 
 	#alterando as permissões do Binário do Docker Compose	
 	#opção do comando chmod: -v (verbose), 755 (User=RWX,Group-R-X,Other-R-X)
@@ -140,10 +141,14 @@ próprios softwares, bibliotecas e arquivos de configuração
 
 #09_ Iniciando um Container de Teste do Docker CE<br>
 
-	#pesquisando e iniciando o container de Hello World do Docker CE
-	#opção do comando docker: search (Search the Docker Hub for images), run (Run a command in a new container)
+	#pesquisando o container de Hello World do Docker CE
+	#opção do comando docker: search (Search the Docker Hub for images)
 	#link de consulta do Docker Hub: https://hub.docker.com/
 	docker search hello-world
+	
+	#pesquisando e iniciando o container de Hello World do Docker CE
+	#opção do comando docker: run (Run a command in a new container)
+	#link de consulta do Docker Hub: https://hub.docker.com/
 	docker run hello-world
 
 #10_ Iniciando um Container de Teste do Ubuntu Bash no Docker CE<br>
@@ -154,7 +159,7 @@ próprios softwares, bibliotecas e arquivos de configuração
 	docker search ubuntu
 	docker run -it ubuntu bash
 		
-		#executar o comandos básicos de Linux dentro do container
+		#executar o comandos básicos de Linux dentro do container Ubuntu
 		cat /etc/os-release
 		apt update
 		apt install net-tools iputils-ping
@@ -163,8 +168,12 @@ próprios softwares, bibliotecas e arquivos de configuração
 
 #11_ Verificando as Imagens dos Container no Docker CE<br>
 
-	#opção do comando docker: images (List images container on system), ps (List containers)
+	#listando as imagens de containers no Docker
+	#opção do comando docker: images (List images container on system)
 	docker images
+	
+	#listando os container em execução no Docker
+	#opção do comando docker: ps (List containers)
 	docker ps
 
 #12_ Limpando todas as Imagens, Container, Volumes e Redes no Docker CE<br>

@@ -77,6 +77,7 @@ aumentar a produtividade do desenvolvimento.
 
 #04_ Atualizando as Lista do Apt com o novo Repositório do Vagrant no Linux Mint<br>
 
+	#atualizando as listas do Apt
 	sudo apt update
 
 #05_ Instalando o Vagrant e o Packer e verificando a sua versão no Linux Mint<br>
