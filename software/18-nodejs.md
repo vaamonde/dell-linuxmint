@@ -8,7 +8,7 @@
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 22/12/2022<br>
 #Data de atualização: 22/03/2024<br>
-#Versão: 0.08<br>
+#Versão: 0.09<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
@@ -26,8 +26,8 @@ Site Oficial do NPM: https://www.npmjs.com/
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 	sudo localectl
@@ -50,30 +50,24 @@ Site Oficial do NPM: https://www.npmjs.com/
 
 #02_ Instalando as Dependências do Node.JS no Linux Mint<br>
 
+	#instalando as dependências do Node.JS
 	sudo apt install git vim curl gcc g++ make software-properties-common build-essential ca-certificates
 
 #03_ Instalando a Versão LTS do Node.JS no Linux Mint<br>
 
 	#OBSERVAÇÃO IMPORTANTE: o script de adicionar o Sources List do Node.JS no Linux Mint já 
-	#reconhece a versão que você está usando, não sendo necessário informar o codinome do 
+	#reconhece a versão que você está usando, não sendo necessário informar o codinome do
 	#Ubuntu (focal ou jammy).
 	
-	#opção do comando curl: -f (fail), -s (silent), -S (show-error), -L (location)
-	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
-	#opção do comando sudo: -E (preserve-env)
-	sudo curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash
-	sudo apt install nodejs
-
-	##### REVISAR ########
-
-	#adicionando o repositório do Node.JS via Nodesource: https://deb.nodesource.com/
-
-	#Script de configuração do Repositório do Node.JS foi descontinuado, não é mais indicado
-	#utilizar esse script em servidores de produção.
+	#Script de configuração do Repositório do Node.JS foi DESCONTINUADO, não é mais indicado
+	#utilizar esse script em servidores de produção ou Desktop para desenvolvimento local.
 	#opção do comando curl: -f (fail), -s (silent), -S (show-error), -L (location)
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
 	#opção do comando sudo: -E (preserve-env)
 	#sudo curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash
+	
+	#instalando o Node.Js e suas dependências (DESCONTINUADO)
+	#sudo apt install nodejs
 	
 	#Adicionando a Chave GPG do Node.JS via Nodesource
 	#opção do comando curl: -f (fail), -s (silent), -S (show-error), -L (location)
@@ -81,19 +75,19 @@ Site Oficial do NPM: https://www.npmjs.com/
 	#opção do comando gpg: -o (output file)
 	curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/nodesource.gpg
 	
-	#Adicionando o Repositório do Node.JS no Ubuntu Server
+	#Adicionando o Repositório do Node.JS no Linux Mint
 	#OBSERVAÇÃO IMPORTANTE: é indicado utilizar sempre a versão LTS (Long Time Support) do
 	#Node.JS em servidores de Produção, consulte sempre a versão LTS no Site Oficial do Node 
 	#no Link: https://nodejs.org/en e no Link: https://nodejs.org/en/about/previous-releases
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
 	echo "deb [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node_20.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
 
-	#Instalando o Node.JS e NPM (Node Package Manager)
+	#atualizando o Sources List do Apt com o novo Repositório
 	sudo apt update
-	sudo apt install nodejs
-
-
-	#######################
+	
+	#Instalando o Node.JS e NPM (Node Package Manager)
+	#opção do comando apt: --install-recommends (Consider suggested packages as a dependency for installing)
+	sudo apt install --install-recommends nodejs
 
 #04_ Verificando as Versões do Node.JS e NPM no Linux Mint<br>
 
@@ -150,6 +144,9 @@ app.listen(3000, function() {
 
 #08_ Acessando o Projeto Simples do Node.JS no Linux Mint<br>
 
+	#listando a porta de conexão da aplicação
 	#opção do comando lsof: -n (network number), -P (port number), -i (list IP Address), -s (alone directs)
 	lsof -nP -iTCP:'3000' -sTCP:LISTEN
+	
+	#acessando o projeto via Navegador
 	firefox http://localhost:3000/
