@@ -66,11 +66,11 @@ próprios softwares, bibliotecas e arquivos de configuração
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
 	curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
-	#ADICIONANDO AS CHAVES DO REPOSITÓRIO NO LINUX MINT 21.x
+	#BAIXANDO A CHAVE DO REPOSITÓRIO NO LINUX MINT 21.x
 	#opções do comando wget: -q (quiet)
 	wget -q https://download.docker.com/linux/ubuntu/gpg 
 	
-	#CONVERTENDO AS CHAVES DO REPOSITÓRIO NO LINUX LINUX MINT 21.X
+	#CONVERTENDO A CHAVE DO REPOSITÓRIO NO LINUX LINUX MINT 21.X
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
 	#opção do redirecionador >: Redireciona a saída padrão (STDOUT)
 	#opção do redirecionador 2>&1: Conecta a saída de erro na saída padrão
@@ -94,10 +94,10 @@ próprios softwares, bibliotecas e arquivos de configuração
 	#instalando o Docker CE e Compose
 	sudo apt install docker-ce docker-compose git vim python2 python3
 
-	OBSERVAÇÃO IMPORTANTE: a versão do Docker-Compose utilizando o Sources List do Docker-CE está
-	desatualizada em relação ao projeto do Github: https://github.com/docker/compose, é recomendado
-	baixar o Binário do projeto e atualizar a versão no Linux Mint com o procedimento abaixo (NÃO
-	COMENTADO NO VÍDEO)
+	#OBSERVAÇÃO IMPORTANTE: a versão do Docker-Compose utilizando o Sources List do Docker-CE está
+	#desatualizada em relação ao projeto do Github: https://github.com/docker/compose, é recomendado
+	#baixar o Binário do projeto e atualizar a versão no Linux Mint com o procedimento abaixo (NÃO
+	#COMENTADO NO VÍDEO)
 
 	#removendo o Docker Compose
 	#opção do comando apt: purgue (remove --purge packages)

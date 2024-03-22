@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 12/11/2023<br>
-#Data de atualização: <br>
-#Versão: 0.03<br>
+#Data de atualização: 22/03/2024<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
@@ -26,8 +26,8 @@ Site do EdrawMax On-Line: https://www.edrawmax.com/online/pt/
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 	sudo localectl
@@ -56,13 +56,13 @@ Site do EdrawMax On-Line: https://www.edrawmax.com/online/pt/
 
 #03_ Instalando o EdrawMax no Linux Mint<br>
 
-	OBSERVAÇÃO IMPORTANTE: recomendo utilizar o Gerenciador de Instalação de Pacotes
-	do Linux Mint: Gdeb, clicando duas vezes no arquivo: edrawmax_11.5.6_en_x86_64.deb
-	Seguir os procedimentos na tela.
+	#OBSERVAÇÃO IMPORTANTE: recomendo utilizar o Gerenciador de Instalação de Pacotes
+	#do Linux Mint: Gdebi, clicando duas vezes no arquivo: edrawmax_11.5.6_en_x86_64.deb
+	#Seguir os procedimentos na tela.
 
-	OBSERVAÇÃO IMPORTANTE: teste feito no Linux Mint 21.1 Vera do instalador do pacote
-	do EdrawMax via Gerenciador de Instalação Gdeb não funcionou corretamente, sendo
-	necessário fazer a instalação via linha de comando, conforme abaixo:
+	#OBSERVAÇÃO IMPORTANTE: teste feito no Linux Mint 21.1 Vera do instalador do pacote
+	#do EdrawMax via Gerenciador de Instalação Gdebi não funcionou corretamente, sendo
+	#necessário fazer a instalação via linha de comando, conforme abaixo:
 	
 	01_ Na pasta de Download, clicar com o botão direito do mouse e selecionar: Abrir no Terminal;
 	02_ Digitar o comando: sudo dpkg -i edrawmax_11.*.deb;

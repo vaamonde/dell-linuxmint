@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 03/01/2024<br>
-#Versão: 0.09<br>
+#Data de atualização: 22/03/2024<br>
+#Versão: 0.10<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
@@ -64,6 +64,7 @@ aumentar a produtividade do desenvolvimento.
 
 #02_ Adicionando a Chave GPG do Vagrant no Linux Mint<br>
 
+	#Baixando e adicionando a Chave GPG no Linux Mint
 	#opções do comando wget: -q (quiet), -O (output file), - (file name)
 	wget -q -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp.gpg > /dev/null 2>&1
 
@@ -91,9 +92,12 @@ aumentar a produtividade do desenvolvimento.
 
 #06_ Criando o diretório de Projetos do Vagrant no Linux Mint<br>
 
+	#criando o diretório de projeto
 	#opções do comando mkdir: -p (parents), -v (verbose), 
-	#opção do comando cd: ~ (til: alias home directory)
 	mkdir -pv ~/Projetos/Ubuntu2004
+	
+	#acessando o diretório de projeto
+	#opção do comando cd: ~ (til: alias home directory)
 	cd ~/Projetos/Ubuntu2004
 
 #07_ Criando o arquivo de configuração da VM Vagrantfile do nosso projeto no Linux Mint<br>
@@ -106,6 +110,8 @@ aumentar a produtividade do desenvolvimento.
 	#Link de referência: https://www.vagrantup.com/docs/vagrantfile
 	#opções do comando ls: -l (long listing), -h (human-readable)
 	ls -lh
+	
+	#listando o conteúdo do arquivo Vagrantfile (para sair do less pressione: q (quit))
 	less Vagrantfile
 
 #08_ Iniciando o Projeto da VM do Ubuntu Server 20.04 no VirtualBOX utilizando o Vagrant<br>
@@ -185,9 +191,12 @@ aumentar a produtividade do desenvolvimento.
 	#opção do comando vagrant: init (initializes a new Vagrant environment by creating a Vagrantfile), -m (minimal Vagrantfile will be created)
 	vagrant init -m
 	
+	#editando o arquivo Vagrantfile
 	vim Vagrantfile
-		ESC dG (d=delete | G=end of file)
-		INSERT
+	
+	#deletando todo o conteúdo do arquivo
+	ESC dG (d=delete | G=end of file)
+	INSERT
 
 ```ruby
 #Início da configuração da BOX (Imagem) do Vagrant indicando a maior versão ("2")
@@ -224,8 +233,8 @@ Vagrant.configure("2") do |config|
 #Fim do Bloco de Configuração: Configure (|config|)
 end
 ```
-		#salvar e sair do arquivo
-		ESC Shift :x <Enter>
+	#salvar e sair do arquivo
+	ESC Shift :x <Enter>
 
 	#opção do comando vagrant: validade (validates your Vagrantfile)
 	vagrant validate

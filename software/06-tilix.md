@@ -71,7 +71,7 @@ Terminal: Ctrl + Alt + T
 #03_ Instalando a Fonte Hack Nerd Fonts no Linux Mint<Br>
 
 	#criando o diretório das fontes Hack Nerd Fonts
-	#opção do comando mkdir: -v (verbose), -p (parents), ~ (til: alias home directory)
+	#opção do comando mkdir: -v (verbose), -p (parents), ~ (til: alias home directory), . (files or directory hidden)
 	mkdir -pv ~/.local/share/fonts/Hack
 	
 	#acessando o diretório das fontes Hack (link atualizado no dia 15/11/2023)
@@ -123,8 +123,8 @@ Terminal: Ctrl + Alt + T
 
 #06_ Customização Básica do Tilix no Linux Mint<br>
 
-	#OBSERVAÇÃO IMPORTANTE: quando você executar o Tilix pela primeira vez a mensagem de Problema de
-	#Configuração detectado é apresentado, essa falha está associada ao VTE (Virtual Terminal Emulator)
+	#OBSERVAÇÃO IMPORTANTE: quando você executar o Tilix pela primeira vez a mensagem de: Problema de
+	#Configuração detectado é apresentada, essa falha está associada ao VTE (Virtual Terminal Emulator)
 	#você pode clicar em: Não exibir esta mensagem novamente ou essa falha será corrigida depois que
 	#você instalar e configurar o ZSH e o Oh-My-ZSH.
 

@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 27/11/2023<br>
-#Versão: 0.09<br>
+#Data de atualização: 22/03/2024<br>
+#Versão: 0.10<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
@@ -102,7 +102,7 @@ clusters de Kubernetes.
 
 	01_ Acessar o diretório de Download;
 	02_ Clicar com o Botão direito do mouse no binário do VMware-Workstation-Full-*.bundle;
-	03_ No Menu selecionar o opção: Propriedade;
+	03_ No Menu selecionar a opção: Propriedades;
 	04_ Acessar a aba: Permissões;
 	05_ Clicar na opção: Permitir execução do arquivo como um programa.
 	<Fechar>

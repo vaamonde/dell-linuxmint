@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 27/11/2023<br>
-#Versão: 0.06<br>
+#Data de atualização: 22/03/2024<br>
+#Versão: 0.07<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
 
@@ -78,6 +78,8 @@ do sistema.
 
 	#Link de referência: https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html
 	sudo vim /etc/ansible/hosts
+	
+	#deletando todo o conteúdo do arquivo
 	ESC dG (d=delete | G=end of file)
 	INSERT
 
@@ -112,6 +114,7 @@ log_path=/var/log/ansible.log
 	#Criação do arquivo de Log do Ansible
 	sudo touch /var/log/ansible.log
 	
+	#alterando as permissões do arquivo de Log do Ansible
 	#opção do comando chmod: -v (verbose), 666 (User=RW-,Group=RW-Other=RW-)
 	sudo chmod -v 666 /var/log/ansible.log
 
@@ -123,7 +126,15 @@ log_path=/var/log/ansible.log
 	
 	#Permitindo o usuário Root se logar remotamente via SSH no Ubuntu Server 22.04
 	sudo vim /etc/ssh/sshd_config
+	INSERT
+
+		#alterar a linha: 33 da variável PermitiRootLogin: de: prohibit-password para: yes
 		PermitiRootLogin yes
+	
+	#salvar e sair do arquivo
+	ESC SHIFT : x <Enter>
+
+	#reiniciar o serviço do OpenSSH
 	sudo systemctl restart ssh
 	sudo systemctl status ssh
 	
@@ -131,8 +142,11 @@ log_path=/var/log/ansible.log
 	sudo passwd root
 		New password: pti@2018
 		Retype new password: pti@2018
+	
+	#Se autenticando com o Root para testar a senha
 	su root
 		Password: pti@2018
+	exit
 
 	#Gerando o Par de Chaves Pública/Privada no Linux Mint
 	ssh-keygen

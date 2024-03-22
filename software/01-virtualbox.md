@@ -128,11 +128,11 @@ físico. Assim, o software emula um computador completo, incluindo sistemas oper
 	wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 	wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
 
-	#ADICIONANDO AS CHAVES DO REPOSITÓRIO NO LINUX MINT 21.x
+	#BAIXANDO A CHAVE DO REPOSITÓRIO NO LINUX MINT 21.x
 	#opções do comando wget: -q (quiet)
 	wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc
 	
-	#CONVERTENDO AS CHAVES DO REPOSITÓRIO NO LINUX LINUX MINT 21.X
+	#CONVERTENDO A CHAVE DO REPOSITÓRIO NO LINUX LINUX MINT 21.X
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
 	#opção do redirecionador >: Redireciona a saída padrão (STDOUT)
 	#opção do redirecionador 2>&1: Conecta a saída de erro na saída padrão

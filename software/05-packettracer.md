@@ -81,7 +81,7 @@ multimídia que auxiliam na confecção das simulações.
 	Link Oficial do Packet Tracer Network: https://www.packettracernetwork.com/
 	Link do Mega.nz do Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7XzImP01M1SyRm2g/folder/vll2iSDI
 
-	#DICA: RECOMENDO VOCÊ FAZER UMA CONTA NO NETACAD DA CISCO NO CURSO GRATUITO DO CISCO PACKET TRACER
+	DICA: RECOMENDO VOCÊ FAZER UMA CONTA NO NETACAD DA CISCO NO CURSO GRATUITO DO CISCO PACKET TRACER
 	DISPONÍVEL NA PLATAFORMA NO LINK: https://skillsforall.com/pt/learningcollections/cisco-packet-tracer?courseLang=pt-BR
 
 	PARA CRIAR UMA CONTA NO NETACAD ACESSE O LINK: https://id.cisco.com/signin/register
@@ -94,9 +94,9 @@ multimídia que auxiliam na confecção das simulações.
 	03_ Na tela: Software License Agreement clique em: <Next>
 	04_ Marque a opção: do you accept the terms of this EULA?: <Yes> clique em: <Next>
 
-	OBSERVAÇÃO IMPORTANTE: se você utilizar o Gdebi para instalar o Cisco Packet Tracer e apresentar
-	uma falha no final da instalação, recomendo utilizar o comando: dpkg para forçar a instalação em 
-	modo Terminal.
+	#OBSERVAÇÃO IMPORTANTE: se você utilizar o Gdebi para instalar o Cisco Packet Tracer e apresentar
+	#uma falha no final da instalação, recomendo utilizar o comando: dpkg para forçar a instalação em 
+	#modo Terminal. UTILIZAR ESSE PROCEDIMENTO SOMENTE SE TIVER FALHA NA INSTALAÇÃO EM MODO GRÁFICO.
 
 	Terminal: Ctrl + Alt + T
 
@@ -145,7 +145,7 @@ multimídia que auxiliam na confecção das simulações.
 	#Resolvendo a falha das bibliotecas libssl.so.1.1 e libcrypto.so.1.1 no Linux Mint 21.x
 	#opção do comando dpkg: -i (install)
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
-	#link de download da Biblioteca do LibSSL atualizado no dia: 06/03/2024
+	#link de download da Biblioteca do LibSSL (atualizado no dia: 06/03/2024)
 	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb
 	sudo dpkg -i libssl1.1_1.1.1*.deb
 
@@ -156,6 +156,7 @@ multimídia que auxiliam na confecção das simulações.
 #05_ Atualização para a Versão 8.2.0 do Cisco Packet Tracer
 
 	Atualização feita em Julho/2022 - procedimento no Linux Mint versões 20.x e 21.x continua a mesma coisa.
+	Mais informações: https://www.packettracernetwork.com/features/packettracer-81-newfeatures.html
 
 #06_ Atualização para a Versão 8.2.1 do Cisco Packet Tracer
 
