@@ -10,10 +10,10 @@
 #Data de atualização: 22/03/2024<br>
 #Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 #Instalação do Wondershare EdrawMax v11.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do Wondershare EdrawMax v11.x no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Instalação do Wondershare EdrawMax v11.x no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![EdrawMax](http://img.youtube.com/vi/ISws4p7nggk/0.jpg)](https://www.youtube.com/watch?v=ISws4p7nggk "EdrawMax")
 
