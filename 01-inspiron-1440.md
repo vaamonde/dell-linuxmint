@@ -73,8 +73,8 @@ Link da vídeo aula: https://www.youtube.com/watch?v=VHtb30NCN4I
 	_ de Modo de Compatibilidade, recomendado para equipamentos legados (inicialização em modo 
 	_ de compatibilidade e mais lento no Dell Inspiron 1440)
 
-	OBSERVAÇÃO IMPORTANTE: no Linux Mint 21.x a falha de inicialização não acontece mais no
-	Dell Inspiron 1440, a inicialização pode ser feita de forma normal.
+	_ OBSERVAÇÃO IMPORTANTE: no Linux Mint 21.x a falha de inicialização não acontece mais no
+	_ Dell Inspiron 1440, a inicialização pode ser feita de forma normal.
 
 #05_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless)<br>
 
@@ -119,8 +119,8 @@ Link da vídeo aula: https://www.youtube.com/watch?v=VHtb30NCN4I
 		sudo apt autoclean
 		sudo apt clean
 
-		#Reinicializar o Sistema
-		sudo reboot
+	#Reinicializar o Sistema
+	sudo reboot
 
 #08_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.15.x suportado até 2025)<br>
 
@@ -174,6 +174,7 @@ Link da vídeo aula: https://www.youtube.com/watch?v=VHtb30NCN4I
 
 #10_ Instalação dos Drivers VGA Intel Graphics<br>
 
+	#instalação das dependências do VGA Intel Graphics
 	sudo apt update
 	sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
 	
