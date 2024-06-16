@@ -7,13 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.05<br>
+#Data de atualização: 22/03/2024<br>
+#Versão: 0.07<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 #Instalação do Ansible no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do Ansible no LLinux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Instalação do Ansible no LLinux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![Ansible](http://img.youtube.com/vi/6WD0A9PFFtc/0.jpg)](https://www.youtube.com/watch?v=6WD0A9PFFtc "Ansible")
 
@@ -21,15 +21,22 @@ Link da vídeo aula: https://www.youtube.com/watch?v=6WD0A9PFFtc
 
 Site Oficial do Ansible: https://www.ansible.com/
 
+O QUE É E PARA QUE SERVER O ANSIBLE: Ansible é uma ferramenta de TI de código aberto para<br>
+gerenciar, automatizar, configurar servidores e, implantar aplicativos, a partir de uma<br>
+localização central. Ele inclui sua própria linguagem declarativa para descrever a configuração<br>
+do sistema.
+
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+	#verificando as versões e codinome do sistema operacional
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 
+	#modo gráfico para verificar as informações de sistema operacional e hardware
 	Menu
 		Informações do Sistema
 		
@@ -48,14 +55,17 @@ Site Oficial do Ansible: https://www.ansible.com/
 
 #02_ Instalando as Dependências do Ansible no Linux Mint<br>
 
+	#instalando as dependências do Ansible
 	sudo apt install software-properties-common git vim python2 python3
 
 #03_ Adicionando o PPA Oficial do Ansible no Linux Mint<br>
 
+	#adicionando o repositório pessoal do Ansible (PPA = Personal Package Archives)
 	sudo add-apt-repository ppa:ansible/ansible
 
 #04_ Instalando o Ansible no Linux Mint<br>
 
+	#atualizando as listas do Apt com o novo repositório e instalando o Ansible
 	sudo apt update
 	sudo apt install ansible
 
@@ -68,6 +78,8 @@ Site Oficial do Ansible: https://www.ansible.com/
 
 	#Link de referência: https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html
 	sudo vim /etc/ansible/hosts
+	
+	#deletando todo o conteúdo do arquivo
 	ESC dG (d=delete | G=end of file)
 	INSERT
 
@@ -102,6 +114,7 @@ log_path=/var/log/ansible.log
 	#Criação do arquivo de Log do Ansible
 	sudo touch /var/log/ansible.log
 	
+	#alterando as permissões do arquivo de Log do Ansible
 	#opção do comando chmod: -v (verbose), 666 (User=RW-,Group=RW-Other=RW-)
 	sudo chmod -v 666 /var/log/ansible.log
 
@@ -113,7 +126,15 @@ log_path=/var/log/ansible.log
 	
 	#Permitindo o usuário Root se logar remotamente via SSH no Ubuntu Server 22.04
 	sudo vim /etc/ssh/sshd_config
+	INSERT
+
+		#alterar a linha: 33 da variável PermitiRootLogin: de: prohibit-password para: yes
 		PermitiRootLogin yes
+	
+	#salvar e sair do arquivo
+	ESC SHIFT : x <Enter>
+
+	#reiniciar o serviço do OpenSSH
 	sudo systemctl restart ssh
 	sudo systemctl status ssh
 	
@@ -121,8 +142,11 @@ log_path=/var/log/ansible.log
 	sudo passwd root
 		New password: pti@2018
 		Retype new password: pti@2018
+	
+	#Se autenticando com o Root para testar a senha
 	su root
 		Password: pti@2018
+	exit
 
 	#Gerando o Par de Chaves Pública/Privada no Linux Mint
 	ssh-keygen
@@ -229,6 +253,7 @@ log_path=/var/log/ansible.log
 #14_ Criando um Playbook Básico para Instalar o Apache2 no Ubuntu Server 22.04<br>
 
 	sudo vim /etc/ansible/apache2.yaml
+	INSERT
 
 ```ruby
 ---
@@ -243,6 +268,8 @@ log_path=/var/log/ansible.log
       name: apache2
       state: present
 ```
+	#salvar e sair do arquivo
+	ESC SHIFT : x <Enter>
 
 	#opção do comando ansible-playbook: -i (inventory-file), -v (verbose mode -vvv for more, -vvvv to enable connection debugging)
 	ansible-playbook -i hosts apache2.yaml --syntax-check -vv

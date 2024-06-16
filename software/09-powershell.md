@@ -7,13 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 15/11/2023<br>
-#Versão: 0.05<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Data de atualização: 03/01/2024<br>
+#Versão: 0.06<br>
+#Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
-#Instalação do Microsoft Powershell no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do Microsoft Powershell no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Instalação do Microsoft Powershell no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Instalação do Microsoft Powershell no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![Powershell](http://img.youtube.com/vi/1yUXXUtvl0o/0.jpg)](https://www.youtube.com/watch?v=1yUXXUtvl0o "Powershell")
 
@@ -25,6 +25,10 @@ Site Oficial do .NET Runtime: https://docs.microsoft.com/pt-br/dotnet/framework/
 
 Documentação do PowerShell: https://docs.microsoft.com/pt-br/powershell/scripting/install/install-ubuntu?view=powershell-7.2<br>
 Documentação do .NET SDK e Runtime: https://docs.microsoft.com/pt-br/dotnet/core/install/linux-ubuntu#2004-
+
+O QUE É E PARA QUE SERVER O POWERSHELL: PowerShell é um shell de linha de comando baseado em tarefas<br>
+e linguagem de script desenvolvido no .NET. Inicialmente, apenas um componente do Windows, o PowerShell<br>
+tornou-se de código aberto e multiplataforma em 18 de agosto de 2016 com a introdução do PowerShell Core.
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 

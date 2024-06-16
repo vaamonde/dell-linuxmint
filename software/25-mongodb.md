@@ -7,13 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 30/01/2023<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.07<br>
+#Data de atualização: 22/03/2024<br>
+#Versão: 0.09<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 #Instalação do MongoDB Server 6.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do MongoDB Server 6.x no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Instalação do MongoDB Server 6.x no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![MongoDB Server](http://img.youtube.com/vi/JUWuyTHvLVY/0.jpg)](https://www.youtube.com/watch?v=JUWuyTHvLVY "MongoDB Server")
 
@@ -26,8 +26,8 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 	sudo localectl
@@ -57,12 +57,12 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 	#opção do comando dpkg: -i (install)
 	sudo apt install git vim build-essential software-properties-common gnupg apt-transport-https ca-certificates
 	
-	OBSERVAÇÃO IMPORTANTE: o tempo todo a Biblioteca LibSSL sofre alteração de versão, antes de baixar a versão
-	acesse o site: http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/ e veja qual a versão atual, altere
-	o script e faço o download.
+	#OBSERVAÇÃO IMPORTANTE: o tempo todo a Biblioteca LibSSL sofre alteração de versão, antes de baixar a versão
+	#acesse o site: http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/ e veja qual a versão atual, altere
+	#o script e faço o download.
 
-	#opção do comando dpkg: -i (install) (link atualizado no dia: 12/11/2023)
-	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.20_amd64.deb
+	#opção do comando dpkg: -i (install) (link atualizado no dia: 06/03/2024)
+	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb
 	sudo dpkg -i libssl1.1_1.1.1*.deb
 
 #03_ Baixando e instalando a Chave GPG do MongoDB Server no Linux Mint<br>
@@ -70,17 +70,17 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 	#opção do comando curl: -f (fail), -s (silent), -S (show-error), -L (location)
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
 	#opção do comando gpg: -o (output)
-	curl -fsSL https://www.mongodb.org/static/pgp/server-6.0.asc | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/mongodb-6.gpg
+	curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/mongodb-7.0.gpg
 
 #04_ Criando o repositório do MongoDB Server no Linux Mint<br>
 
 	#ADICIONANDO O REPOSITÓRIO DO MONGODB SERVER NO LINUX MINT 20.x
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
-	echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+	echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
 
 	#ADICIONANDO O REPOSITÓRIO DO MONGODB SERVER NO LINUX MINT 21.x
 	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
-	echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+	echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
 
 #05_ Atualizando as Lista do Apt com o novo Repositório do MongoDB no Linux Mint<br>
 
@@ -98,11 +98,13 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 
 #08_ Verificando o Serviço e Versão do MongoDB Server no Linux Mint<br>
 
+	#verificando o Status de Serviço do MongoDB
 	sudo systemctl status mongod
 	sudo systemctl restart mongod
 	sudo systemctl stop mongod
 	sudo systemctl start mongod
 
+	#verificando a versão MongoDB
 	mongod --version
 	mongosh --version
 
@@ -172,23 +174,25 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 
 #15_ Configurando o MongoDB Server para suportar autenticação e acesso Remoto no Linux Mint<br>
 
+	#editando o arquivo de configuração do MongoDB
 	sudo vim /etc/mongod.conf
+	INSERT
 		
-		INSERT
-			
-			#habilitando o suporte remoto do MongoDB Server
-			#alterar a linha: bindIp: 127.0.0.1 para: bindIp: 0.0.0.0
-			net:
-			  port: 27017
-			  bindIp: 0.0.0.0
-			
-			#habilitando o recurso de autenticação do MongoDB Server
-			#descomentar a linha: #security, adicionar o valor: authorization: enabled
-			security:
-			  authorization: enabled
-			
-		ESC SHIFT :x <ENTER>
+		#habilitando o suporte remoto do MongoDB Server
+		#alterar a linha: bindIp: 127.0.0.1 para: bindIp: 0.0.0.0
+		net:
+			port: 27017
+			bindIp: 0.0.0.0
+		
+		#habilitando o recurso de autenticação do MongoDB Server
+		#descomentar a linha: #security, adicionar o valor: authorization: enabled
+		security:
+			authorization: enabled
+	
+	#salvar e sair do arquivo
+	ESC SHIFT :x <ENTER>
 
+	#reiniciar o serviço do MongoDB
 	sudo systemctl restart mongod
 	sudo systemctl status mongod
 
@@ -213,8 +217,8 @@ Site Oficial do MongoDB Compass: https://www.mongodb.com/products/compass
 
 #17_ Download e Instalação do MongoDB Compass no Linux Mint<br>
 
-	#Link atualizado em: 12/11/2023
-	Link Oficial do MongoDB Compass: https://downloads.mongodb.com/compass/mongodb-compass_1.40.4_amd64.deb
+	#Link atualizado em: 22/03/2024
+	Link Oficial do MongoDB Compass: https://downloads.mongodb.com/compass/mongodb-compass_1.42.3_amd64.deb
 	
 	01_ Na pasta de Download, clicar duas vezes no Instalador do MongoDB Compass;
 	02_ Seguir os procedimentos na tela.

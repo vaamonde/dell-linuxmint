@@ -7,13 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.08<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Data de atualização: 22/03/2024<br>
+#Versão: 0.10<br>
+#Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
-#Instalação do HashiCorp Vagrant no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do HashiCorp Vagrant no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Instalação do HashiCorp Vagrant no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Instalação do HashiCorp Vagrant no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![Vagrant](http://img.youtube.com/vi/LTlrcoR5YQE/0.jpg)](https://www.youtube.com/watch?v=LTlrcoR5YQE "Vagrant")
 
@@ -29,16 +29,23 @@ Providers Vagrant: https://www.vagrantup.com/docs/providers<br>
 Providers (Provedores) padrão do Vagrant: VirtualBOX, Hyper-V, Docker, VMware, Virt-Manager KVM, QEMU.<br>
 Providers (Provedores) cloud do Vagrant: AWS EC2 VPS, Google GCE, Microsoft Azure.
 
+O QUE É E PARA QUE SERVER O VAGRANT: Vagrant é um software de código aberto para criar e manter <br>
+ambientes de desenvolvimento virtuais portáteis, utilizando VirtualBox, KVM, Hyper-V, Docker containers,<br>
+VMware, e AWS. Ele tenta simplificar a gerência de configuração de software das virtualizações para <br>
+aumentar a produtividade do desenvolvimento.
+
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
 	Terminal: Ctrl + Alt + T
 	
+	#verificando as versões e codinome do sistema operacional
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 	sudo localectl
 
+	#modo gráfico para verificar as informações de sistema operacional e hardware
 	Menu
 		Informações do Sistema
 		
@@ -57,6 +64,7 @@ Providers (Provedores) cloud do Vagrant: AWS EC2 VPS, Google GCE, Microsoft Azur
 
 #02_ Adicionando a Chave GPG do Vagrant no Linux Mint<br>
 
+	#Baixando e adicionando a Chave GPG no Linux Mint
 	#opções do comando wget: -q (quiet), -O (output file), - (file name)
 	wget -q -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp.gpg > /dev/null 2>&1
 
@@ -70,19 +78,26 @@ Providers (Provedores) cloud do Vagrant: AWS EC2 VPS, Google GCE, Microsoft Azur
 
 #04_ Atualizando as Lista do Apt com o novo Repositório do Vagrant no Linux Mint<br>
 
+	#atualizando as listas do Apt
 	sudo apt update
 
 #05_ Instalando o Vagrant e o Packer e verificando a sua versão no Linux Mint<br>
 
+	#instalando o Vagrant e suas dependências
 	sudo apt install vagrant packer vim git tree python3 python2
 
+	#verificando as versões do Vagrant e Packer
 	vagrant --version
 	packer --version
 
 #06_ Criando o diretório de Projetos do Vagrant no Linux Mint<br>
 
-	#opções do comando mkdir: -p (parents), -v (verbose), ~ (til: alias home directory)
+	#criando o diretório de projeto
+	#opções do comando mkdir: -p (parents), -v (verbose), 
 	mkdir -pv ~/Projetos/Ubuntu2004
+	
+	#acessando o diretório de projeto
+	#opção do comando cd: ~ (til: alias home directory)
 	cd ~/Projetos/Ubuntu2004
 
 #07_ Criando o arquivo de configuração da VM Vagrantfile do nosso projeto no Linux Mint<br>
@@ -95,6 +110,8 @@ Providers (Provedores) cloud do Vagrant: AWS EC2 VPS, Google GCE, Microsoft Azur
 	#Link de referência: https://www.vagrantup.com/docs/vagrantfile
 	#opções do comando ls: -l (long listing), -h (human-readable)
 	ls -lh
+	
+	#listando o conteúdo do arquivo Vagrantfile (para sair do less pressione: q (quit))
 	less Vagrantfile
 
 #08_ Iniciando o Projeto da VM do Ubuntu Server 20.04 no VirtualBOX utilizando o Vagrant<br>
@@ -174,9 +191,12 @@ Providers (Provedores) cloud do Vagrant: AWS EC2 VPS, Google GCE, Microsoft Azur
 	#opção do comando vagrant: init (initializes a new Vagrant environment by creating a Vagrantfile), -m (minimal Vagrantfile will be created)
 	vagrant init -m
 	
+	#editando o arquivo Vagrantfile
 	vim Vagrantfile
-		ESC dG (d=delete | G=end of file)
-		INSERT
+	
+	#deletando todo o conteúdo do arquivo
+	ESC dG (d=delete | G=end of file)
+	INSERT
 
 ```ruby
 #Início da configuração da BOX (Imagem) do Vagrant indicando a maior versão ("2")
@@ -213,8 +233,8 @@ Vagrant.configure("2") do |config|
 #Fim do Bloco de Configuração: Configure (|config|)
 end
 ```
-		#salvar e sair do arquivo
-		ESC Shift :x <Enter>
+	#salvar e sair do arquivo
+	ESC Shift :x <Enter>
 
 	#opção do comando vagrant: validade (validates your Vagrantfile)
 	vagrant validate

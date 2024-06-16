@@ -7,13 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 07/06/2023<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.04<br>
+#Data de atualização: 23/03/2024<br>
+#Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 #Instalação e Configuração do Azure Cli no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação e Configuração do Azure Cli no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Instalação e Configuração do Azure Cli no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![Microsoft Azure](http://img.youtube.com/vi/xrPyZuFKw2s/0.jpg)](https://www.youtube.com/watch?v=xrPyZuFKw2s "Microsoft Azure")
 
@@ -26,8 +26,8 @@ Site Oficial do Azure Cli: https://learn.microsoft.com/pt-br/cli/azure/
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 	sudo localectl
@@ -50,12 +50,12 @@ Site Oficial do Azure Cli: https://learn.microsoft.com/pt-br/cli/azure/
 
 #02_ Criando um Conta no Microsoft Azure Free (Gratuita)<br>
 
-OBSERVAÇÃO IMPORTANTE: para fazer a assinatura Gratuita do Microsoft Azure é necessário a 
-utilização de um Cartão de Crédito Internacional, na conta gratuita não será cobrado nenhum 
-valor no seu cartão, apenas se você ultrapassar os limites da conta.
+	#OBSERVAÇÃO IMPORTANTE: para fazer a assinatura Gratuita do Microsoft Azure é necessário a 
+	#utilização de um Cartão de Crédito Internacional, na conta gratuita não será cobrado nenhum 
+	#valor no seu cartão, apenas se você ultrapassar os limites da conta.
 
-OBSERVAÇÃO: para utilizar o Microsoft Azure você pode utilizar uma conta do Office 365 ou
-uma conta do Github.
+	#OBSERVAÇÃO: para utilizar o Microsoft Azure você pode utilizar uma conta do Office 365 ou
+	#uma conta do Github.
 
 	Acesse o site: https://azure.microsoft.com/pt-br/
 	Clique em: <Testar o Azure gratuitamente>
@@ -92,9 +92,9 @@ uma conta do Github.
 		Off (Disable) - Compartilhar minhas informações
 		<Avançar>
 
-	OBSERVAÇÃO IMPORTANTE: essas informações são solicitadas somente se você está usando uma conta
-	corporativa do Office 365, os dados do Perfil do Usuário já vem pré-preenchido, precisando apenas
-	validar o celular e código SMS.
+	#OBSERVAÇÃO IMPORTANTE: essas informações são solicitadas somente se você está usando uma conta
+	#corporativa do Office 365, os dados do Perfil do Usuário já vem pré-preenchido, precisando apenas
+	#validar o celular e código SMS.
 
 	Verificação de identidade por telefone
 		Código do Pais: SEU_CÓDIGO_DO_PAIS (Brasil +55)
@@ -266,11 +266,11 @@ uma conta do Github.
 		#opção do comando ssh: -i (identity_file)
 		ssh -i "/home/vaamonde/.ssh/WebServerAzure.pem" vaamonde@ENDEREÇO_IPV4_MICROSOFT_AZURE
 
-	OBSERVAÇÃO IMPORTANTE: Caso acontece a falha de: SSH Too Many Authentication Failures, digite a opção: 
-	-o IdentitiesOnly=yes depois da chave de autenticação do SSH.
+	#OBSERVAÇÃO IMPORTANTE: Caso acontece a falha de: SSH Too Many Authentication Failures, digite a opção: 
+	#-o IdentitiesOnly=yes depois da chave de autenticação do SSH.
 	
-		#opção do comando ssh: -i (identity_file), -o (options)
-		ssh -i "/home/vaamonde/.ssh/WebServerAzure.pem" -o IdentitiesOnly=yes vaamonde@ENDEREÇO_IPV4_MICROSOFT_AZURE
+	#opção do comando ssh: -i (identity_file), -o (options)
+	ssh -i "/home/vaamonde/.ssh/WebServerAzure.pem" -o IdentitiesOnly=yes vaamonde@ENDEREÇO_IPV4_MICROSOFT_AZURE
 
 #07_ Instalando o Azure-Cli no Linux Mint<br>
 
@@ -281,7 +281,7 @@ uma conta do Github.
 	sudo apt install ca-certificates curl apt-transport-https lsb-release gnupg unzip git vim python2 python3
 
 	#download e instalação do Azure-Cli
-	#opção do comando curl: -s (output file), -L ()
+	#opção do comando curl: -s (output file), -L (location)
 	curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 	
 	#verificando a versão do Azure-Cli
@@ -289,7 +289,7 @@ uma conta do Github.
 
 #08_ Autenticando o Azure Cli no Linux Mint<br>
 
-	OBSERVAÇÃO: O sistema irá redirecioná-lo para o navegador padrão. 
+	#OBSERVAÇÃO: O sistema irá redirecioná-lo para o navegador padrão. 
 	az login
 
 #09_ Comandos básicos do Azure-Cli no Linux Mint<br>

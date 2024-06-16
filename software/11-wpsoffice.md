@@ -7,13 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 24/07/2022<br>
-#Data de atualização: 07/01/2023<br>
-#Versão: 0.02<br>
+#Data de atualização: 22/03/2023<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 #Instalação do WPS Office 2019 + Pacote de Tradução e Dicionário no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do WPS Office 2019 + Pacote de Tradução e Dicionário no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Instalação do WPS Office 2019 + Pacote de Tradução e Dicionário no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![WPS Office](http://img.youtube.com/vi/PzIgNdJDdFE/0.jpg)](https://www.youtube.com/watch?v=PzIgNdJDdFE "WPS Office")
 
@@ -53,15 +53,23 @@ Github do Pacote de Tradução: https://github.com/vaamonde/pt_br-wpsoffice
 
 #02_ Download do WPS Office 2019 no Linux Mint<br>
 
+	#versão atualizado em: Feb. 21 2024 (11.1.0.11719) 
+	#mai informações acesse: https://www.wps.com/pt-BR/whatsnew/linux/
 	Site: https://www.wps.com/pt-BR/office/linux/
-		Pacote: .DEB
+		Clicar no Pacote: .DEB
 
 #03_ Instalando o WPS Office 2019 no Linux Mint<br>
 
 	01_ Na pasta de Download, clicar duas vezes no Instalador do WPS Office 2019;
-	02_ Seguir os procedimentos na tela;
-	03_ Menu, WPS Office
-	04_ End User License Agreement for WPS Office: Have read and agreed to Kingsoft Office Software: YES <I Confirm>
+		Arquivo: wps-office_*.deb,
+	02_ Na tela do Gedbi clicar em: Instalar Pacote;
+	03_ Digitar a sua senha e clicar em: <Autenticar>
+	03_ Clicar no Menu do Linux Mint, e na busca indexada digitar: WPS Office
+	04_ Na tela de: End User License Agreement for WPS Office
+		Marcar a opção: Have read and agreed to Kingsoft Office Software e clicar em: <I Confirm>
+
+	#OBSERVAÇÃO IMPORTANTE: Caso apareça a tela de: System Check referente a: Problems below are
+	#detected in the system, marque as opções: Do not report again e clique em: <Close>
 
 #04_ Instalando o pacote de Tradução e Dicionário PT-BR do WPS Office 2019 no Linux Mint<br>
 
@@ -70,6 +78,7 @@ Github do Pacote de Tradução: https://github.com/vaamonde/pt_br-wpsoffice
 
 	02_ Segunda etapa.: Instalar o software Git:
 		sudo apt update
+		sudo apt upgrade
 		sudo apt install git vim python2 python3
 
 	03_ Terceira etapa: Clonar o projeto do Github
@@ -82,7 +91,8 @@ Github do Pacote de Tradução: https://github.com/vaamonde/pt_br-wpsoffice
 		bash install.sh
 
 	06_ Sexta etapa...: Abrir o WPS Office e verificar se a tradução está funcionando
-		wps
+		Menu
+			Pesquisar: WPS
 
 	07_ Sétima etapa..: Procedimentos para corrigir a Falha de Acentuação do WPS Office
 		_ Abrir o WPS Office 2019;

@@ -7,13 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 29/05/2023<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.02<br>
+#Data de atualização: 23/03/2023<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 #Instalação e Configuração do AWS-Cli no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação e Configuração do AWS-Cli no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Instalação e Configuração do AWS-Cli no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![AWS EC2](http://img.youtube.com/vi/JIFQqC4AIrQ/0.jpg)](https://www.youtube.com/watch?v=JIFQqC4AIrQ "AWS EC2")
 
@@ -27,8 +27,8 @@ Site Oficial do AWS-Cli: https://aws.amazon.com/pt/cli/
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 	sudo localectl
@@ -51,11 +51,11 @@ Site Oficial do AWS-Cli: https://aws.amazon.com/pt/cli/
 
 #02_ Criando um Conta no Amazon AWS Free (Gratuita)<br>
 
-OBSERVAÇÃO IMPORTANTE: para fazer a assinatura Gratuita do Amazon AWS é necessário a utilização
-de um Cartão de Crédito Internacional, na conta gratuita não será cobrado nenhum valor no seu
-cartão, apenas se você ultrapassar os limites da conta.
+	#OBSERVAÇÃO IMPORTANTE: para fazer a assinatura Gratuita do Amazon AWS é necessário a utilização
+	#de um Cartão de Crédito Internacional, na conta gratuita não será cobrado nenhum valor no seu
+	#cartão, apenas se você ultrapassar os limites da conta.
 
-Mais informações acesse: https://aws.amazon.com/pt/free/
+	Mais informações acesse: https://aws.amazon.com/pt/free/
 
 	Computação:
 		Nível gratuito: 12 meses gratuitos;
@@ -155,8 +155,8 @@ Mais informações acesse: https://aws.amazon.com/pt/free/
 			Formato de arquivo de chave privada: PEM
 		<Criar par de chaves>
 
-	OBSERVAÇÃO IMPORTANTE: automaticamente o Par de Chaves criado será feito download no seu computador
-	recomendo copiar a chave para o diretório padrão de chaves do Linux Mint e alterar as suas permissões.
+	#OBSERVAÇÃO IMPORTANTE: automaticamente o Par de Chaves criado será feito download no seu computador
+	#recomendo copiar a chave para o diretório padrão de chaves do Linux Mint e alterar as suas permissões.
 
 	Clique em: Arquivos (Nemo) acesse a Pasta: Download
 	Clique como Botão Direito do Mouse e selecione: Abrir no Terminal
@@ -213,11 +213,11 @@ Mais informações acesse: https://aws.amazon.com/pt/free/
 		#opção do comando ssh: -i (identity_file)
 		ssh -i "/home/vaamonde/.ssh/WebServer.pem" ubuntu@ID_DA_SUA_VPC.amazonaws.com
 
-	OBSERVAÇÃO IMPORTANTE: Caso acontece a falha de: SSH Too Many Authentication Failures, digite a opção: 
-	-o IdentitiesOnly=yes depois da chave de autenticação do SSH.
+	#OBSERVAÇÃO IMPORTANTE: Caso acontece a falha de: SSH Too Many Authentication Failures, digite a opção: 
+	#-o IdentitiesOnly=yes depois da chave de autenticação do SSH.
 	
-		#opção do comando ssh: -i (identity_file), -o (options)
-		ssh -i "/home/vaamonde/.ssh/WebServer.pem" -o IdentitiesOnly=yes ubuntu@ID_DA_SUA_VPC.amazonaws.com
+	#opção do comando ssh: -i (identity_file), -o (options)
+	ssh -i "/home/vaamonde/.ssh/WebServer.pem" -o IdentitiesOnly=yes ubuntu@ID_DA_SUA_VPC.amazonaws.com
 
 #07_ Instalando e Configurando o AWS-Cli no Linux Mint<br>
 

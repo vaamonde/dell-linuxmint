@@ -7,13 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 21/01/2023<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.05<br>
+#Data de atualização: 22/03/2024<br>
+#Versão: 0.07<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 #Instalação do Git 2.x integrado no Github no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do Git 2.x integrado no Github no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Instalação do Git 2.x integrado no Github no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![Git e Github](http://img.youtube.com/vi/JDCYyjbrJu0/0.jpg)](https://www.youtube.com/watch?v=JDCYyjbrJu0 "Git e Github")
 
@@ -28,8 +28,8 @@ Site Oficial do Markdown Guide: https://www.markdownguide.org/
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 	sudo localectl
@@ -57,7 +57,7 @@ Site Oficial do Markdown Guide: https://www.markdownguide.org/
 
 #03_ Verificando a Versão do Git instalado no Linux Mint<br>
 
-	#opção do comando git: --vervison (version)
+	#opção do comando git: --version (version)
 	git --version
 
 #04_ Configurações Básicas do Git Localmente no Linux Mint<br>
@@ -82,7 +82,7 @@ Site Oficial do Markdown Guide: https://www.markdownguide.org/
 	git config --list
 		Q (quit) para sair
 	
-	#Localização do arquivo de configuração do Git no Linunx Mint.
+	#Localização do arquivo de configuração do Git no Linux Mint.
 	#opção do comando ls: -l (long listing), -h (human-readable), -a (all), ~ (directory home)
 	ls -lha ~/.gitconfig
 	cat ~/.gitconfig
@@ -211,6 +211,8 @@ Site Oficial do Markdown Guide: https://www.markdownguide.org/
 
 	#opção do comando ls: -l (list), -h (human-readable)
 	ls -lh
+	
+	#acessando o diretório devops clonado
 	cd devops/
 
 	#criando um arquivo dentro do Repositório Local
@@ -296,12 +298,12 @@ Site Oficial do Markdown Guide: https://www.markdownguide.org/
 		git show
 		git log
 		
-		OBSERVAÇÃO IMPORTANTE: antigamente o Github permitia fazer o comando git push se o 
-		diretório remoto não existir no Github ele fazer a criação, agora esse recurso não 
-		funciona, sendo necessário fazer a criação do repositório remoto de forma simples 
-		e depois adicionar no remoto local a referência.
-		
+		#OBSERVAÇÃO IMPORTANTE: antigamente o Github permitia fazer o comando git push se o 
+		#diretório remoto não existir no Github ele fazia a criação, agora esse recurso não 
+		#funciona, sendo necessário fazer a criação do repositório remoto de forma simples 
+		#e depois adicionar no local a referência.
 		git remote add origin https://github.com/rsvaamonde/vaamonde.git
+		
 		#opção do comando git push: -u (set-upstream)
 		git push -u origin master
 

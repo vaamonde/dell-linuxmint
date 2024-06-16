@@ -6,24 +6,23 @@
 #Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica<br>
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
-#Data de criação: 31/07/2023<br>
-#Data de atualização: 24/11/2023<br>
-#Versão: 0.04<br>
-#Testado e homologado no Linux Mint 21.2 Victoria
+#Data de criação: 19/12/2023<br>
+#Data de atualização: 19/12/2023<br>
+#Versão: 0.01<br>
+#Testado e homologado no Linux Mint 21.3 Virginia
 
-[![Linux Mint 21.2](http://img.youtube.com/vi/Ie9WblbiUu0/0.jpg)](https://www.youtube.com/watch?v=Ie9WblbiUu0 "Linux Mint 21.2")
+[![Linux Mint 21.3](http://img.youtube.com/vi/Si2sw9VblkI/0.jpg)](https://www.youtube.com/watch?v=Si2sw9VblkI "Linux Mint 21.3")
 
-Link da vídeo aula: https://www.youtube.com/watch?v=Ie9WblbiUu0
+Link da vídeo aula: https://www.youtube.com/watch?v=Si2sw9VblkI
 
 #Lançamentos Oficiais do Linux Mint<br>
-27/07/2020 - Linux Mint 20 "Ulyana" Cinnamon released: https://www.linuxmint.com/rel_ulyana_cinnamon.php<br>
-08/01/2021 - Linux Mint 20.1 "Ulyssa" Cinnamon released: https://linuxmint.com/rel_ulyssa_cinnamon.php<br>
-08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released: https://www.linuxmint.com/rel_uma_cinnamon.php<br>
-07/01/2022 - Linux Mint 20.3 “Una” Cinnamon released: https://www.linuxmint.com/rel_una_cinnamon.php<br>
-31/07/2022 - Linux Mint 21 "Vanessa" Cinnamon released: https://www.linuxmint.com/rel_vanessa_cinnamon.php<br>
-06/12/2022 - Linux Mint 21.1 "Vera" Cinnamon released: https://www.linuxmint.com/rel_vera_cinnamon.php<br>
-16/07/2023 - Lançamento da Versão Oficial do Linux Mint 21.2 Victoria: https://blog.linuxmint.com/?p=4543<br>
-21/06/2023 - Lançamento da Versão BETA do Linux Mint 21.2 Victoria: https://blog.linuxmint.com/?p=4523
+10/12/2023 - Lançamento do BETA do Linux Mint 21.3: https://blog.linuxmint.com/?p=4611<br>
+06/12/2023 - Novidades da Versão do Linux Mint 21.3: https://blog.linuxmint.com/?p=4604<br>
+26/10/2023 - Anunciado a Versão do Linux Mint 21.3: https://blog.linuxmint.com/?p=4591<br>
+02/07/2023 - Planejamento do Lançamento da Versão 21.3: https://blog.linuxmint.com/?p=4554<br>
+
+Novos Recursos: https://www.linuxmint.com/rel_virginia_whatsnew.php<br>
+Notas de lançamento: https://www.linuxmint.com/rel_virginia.php
 
 #Tipos de Ambientes Gráficos do Linux Mint<br>
 Cinnamon: https://www.linuxmint.com/rel_vera_cinnamon.php<br>
@@ -36,9 +35,9 @@ Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 
 Primeira etapa: Download da ISO do Linux Mint
 
-01. Link de download do Linux Mint 21.2 "Victoria" Cinnamon 64 Bits: https://linuxmint.com/edition.php?id=305<br>
+01. Link de download do Linux Mint 21.3 "Virginia" Cinnamon 64 Bits: https://linuxmint.com/edition.php?id=305<br>
 02. Escolher o Mirror (Espelho) no Brasil de: Federal University of Sao Carlos<br>
-03. Salvar a ISO do Linux Mint: linuxmint-21.2-cinnamon-64bit.iso no seu computador<br>
+03. Salvar a ISO do Linux Mint: linuxmint-21.3-cinnamon-64bit.iso no seu computador<br>
 
 Segunda etapa: Software para a gravação do Pen Drive Bootável
 
@@ -58,11 +57,11 @@ Quarta etapa: Criando a Máquina Virtual do Linux Mint no VirtualBox
 	_ Ferramentas;
 		<Novo>
 	_ Nome da máquina virtual e Sistema Operacional:
-		Nome: LinuxMint21.2
+		Nome: LinuxMint21.3
 		Pasta (F): (deixar o padrão do sistema) 
 		Imagem ISO:
 			Outro
-				linuxmint-21.2-cinnamon-64bit.iso
+				linuxmint-21.3-cinnamon-64bit.iso
 		Edição: (Default)
 		Tipo: Linux
 		Versão: Ubuntu (64-bit)
@@ -111,15 +110,15 @@ Quinta etapa: Personalizando a Máquina Virtual do Linux Mint no VirtualBox
 
 Sexta etapa: Iniciando a ISO do Linux Mint
 
-	_ VM LinuxMint21.2: Iniciar
+	_ VM LinuxMint21.3: Iniciar
 
 Sétima etapa: Iniciando a Instalação o Linux Mint
 
 	_ Boot Inicial do Linux Mint 10 (dez segundos) inicia a instalação padrão.
 		Parar o Boot: pressionar: Seta para Baixo para parar o Boot inicial
 	_ Opções do Boot padrão do Linux Mint
-		*Start Linux Mint 21.2 Cinnamon 64-Bit (Padrão)
-		Start Linux Mint 21.2 Cinnamon 64-Bit (compatibility mode)
+		*Start Linux Mint 21.3 Cinnamon 64-Bit (Padrão)
+		Start Linux Mint 21.3 Cinnamon 64-Bit (compatibility mode)
 		OEM install (for manufacturers)
 		Test memory
 	

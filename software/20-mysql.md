@@ -7,13 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 14/01/2023<br>
-#Data de atualização: 15/11/2023<br>
-#Versão: 0.08<br>
+#Data de atualização: 22/03/2024<br>
+#Versão: 0.10<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 #Instalação do MySQL Server e Client 8.0 no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do MySQL Server e Client 8.0 no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Instalação do MySQL Server e Client 8.0 no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![MySQL Server](http://img.youtube.com/vi/ClnoU4-x5oI/0.jpg)](https://www.youtube.com/watch?v=ClnoU4-x5oI "MySQL Server")
 
@@ -27,8 +27,8 @@ Site Oficial do Workbench: https://www.mysql.com/products/workbench/
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 	sudo localectl
@@ -69,20 +69,25 @@ Site Oficial do Workbench: https://www.mysql.com/products/workbench/
 	#opção do comando dpkg: -i (install)
 	#Link repositório do MySQL Workbench: http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/ (link atualizado em 14/01/2023)
 	wget http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/mysql-workbench-community_8.0.33-1ubuntu22.04_amd64.deb
+	
+	#instalando o MySQL Workbench
 	sudo dpkg -i mysql-workbench-community*.deb
 
 #05_ Verificando o Serviço e Versão do MySQL Server no Linux Mint<br>
 
+	#verificando os Status de Serviço do MySQL Server
 	sudo systemctl status mysql
 	sudo systemctl restart mysql
 	sudo systemctl stop mysql
 	sudo systemctl start mysql
 
+	#verificando as versões do MySQL
 	sudo mysqld --version (Server)
 	sudo mysql --version (Client)
 
 #06_ Verificando a Porta de Conexão do MySQL Server no Linux Mint<br>
 
+	#listando a porta padrão o MySQL Server
 	#opção do comando lsof: -n (network number), -P (port number), -i (list IP Address), -s (alone directs)
 	sudo lsof -nP -iTCP:'3306' -sTCP:LISTEN
 
@@ -96,30 +101,67 @@ Site Oficial do Workbench: https://www.mysql.com/products/workbench/
 
 #08_ Acesso o MySQL Server no Linux Mint<br>
 
+	#OBSERVAÇÃO IMPORTANTE: por padrão o usuário Root do MySQL Server não tem senha para
+	#se logar no MySQL Client Console.
+
 	#opções do comando mysql: -u (user), -p (password)
 	sudo mysql -u root -p
 
 #09_ Aplicando a segurança de acesso do usuário Root do MySQL Server no Linux Mint<br>
 
-	SHOW DATABASES;
-	USE mysql;
-		SHOW TABLES;
-		SELECT user,host FROM user;
-		ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pti@2018';
-		GRANT ALL ON *.* TO 'root'@'localhost';
-		FLUSH PRIVILEGES;
-		exit (ou quit)
+```sql
+
+/* visualizando as bases de dados do MySQL */
+SHOW DATABASES;
+
+/* utilizando a base de dados mysql */
+USE mysql;
+	
+/* mostrando as tabelas criadas na base de dados mysql */
+SHOW TABLES;
+
+/* selecionando o dados da tabela user, filtrando somente as colunas: user e host */
+SELECT user,host FROM user;
+
+/* alterando a senha do usuário Root Localhost */
+/* OBSERVAÇÃO: ALTERAR A SENHA DO USUÁRIO ROOT CONFORME A SUA NECESSIDADE */
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pti@2018';
+
+/* alterando as permissões do usuário Root Localhost */
+GRANT ALL ON *.* TO 'root'@'localhost';
+
+/* aplicando todas as mudanças na base de dados */
+FLUSH PRIVILEGES;
+
+/* saindo do MySQL Client Console */
+exit
+```
 
 	#opções do comando mysql: -u (user), -p (password)
 	sudo mysql -u root -p
 
 #10_ Criando um usuário DBA no MySQL Server no Linux Mint<br>
 
-	CREATE USER 'dba'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pti@2018';
-	GRANT ALL ON *.* TO 'dba'@'localhost';
-	FLUSH PRIVILEGES;
-	exit (ou quit)
+```sql
 
+/* criando o usuário DBA Localhost */
+/* OBSERVAÇÃO: ALTERAR A SENHA DO USUÁRIO DBA CONFORME A SUA NECESSIDADE */
+CREATE USER 'dba'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pti@2018';
+
+/* alterando as permissões do usuário DBA Localhost */
+GRANT ALL ON *.* TO 'dba'@'localhost';
+
+/* aplicando todas as mudanças na base de dados */
+FLUSH PRIVILEGES;
+
+/* Verificando o Usuário DBA criado no Banco de Dados MySQL Server*/
+SELECT user,host FROM mysql.user WHERE user='dba';
+
+/* saindo do MySQL Client Console */
+exit
+```
+
+	#se logando com o usuário dba para testar a conexão com o MySQL Server
 	#opções do comando mysql: -u (user), -p (password)
 	sudo mysql -u dba -p
 

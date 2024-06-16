@@ -7,13 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 07/01/2023<br>
-#Versão: 0.03<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Data de atualização: 22/03/2024<br>
+#Versão: 0.05<br>
+#Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
-#Instalação do Microsoft Visual Studio Code VSCode no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do Microsoft Visual Studio Code VSCode no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Instalação do Microsoft Visual Studio Code VSCode no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Instalação do Microsoft Visual Studio Code VSCode no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![VSCode](http://img.youtube.com/vi/faS3gZgKE-A/0.jpg)](https://www.youtube.com/watch?v=faS3gZgKE-A "VSCode")
 
@@ -23,12 +23,17 @@ Site Oficial do Visual Studio Code: https://code.visualstudio.com/<br>
 Site Oficial do Visual Studio Code Web: https://vscode.dev/<br>
 Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 
+O QUE É E PARA QUE SERVER O VSCODE: O Visual Studio Code é um editor de código-fonte desenvolvido<br>
+pela Microsoft para Windows, Linux e macOS. Ele inclui suporte para depuração, controle de<br> 
+versionamento Git incorporado, realce de sintaxe, complementação inteligente de código, snippets e<br> 
+refatoração de código.
+
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 
@@ -50,6 +55,7 @@ Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 
 #02_ Instalando as Dependências do Microsoft Visual Studio Code VSCode no Linux Mint<br>
 
+	#instalando as dependências do VSCode
 	sudo apt install vim git python2 python3 cloc
 
 #03_ Baixando o Microsoft Visual Studio Code VSCode para o Linux Mint<br>

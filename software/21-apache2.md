@@ -7,13 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 16/01/2023<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.03<br>
+#Data de atualização: 22/03/2024<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 #Instalação do Apache 2 e PHP 7.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do Apache 2 e PHP 8.x no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Instalação do Apache 2 e PHP 8.x no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![Apache2 Server](http://img.youtube.com/vi/XDURRbCpd2M/0.jpg)](https://www.youtube.com/watch?v=XDURRbCpd2M "Apache2 Server")
 
@@ -26,8 +26,8 @@ Site Oficial do PHP (7.x ou 8.x): https://www.php.net/
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 	sudo localectl
@@ -68,11 +68,13 @@ Site Oficial do PHP (7.x ou 8.x): https://www.php.net/
 
 #03_ Verificando o Serviço e Versão do Apache 2 e do PHP no Linux Mint<br>
 
+	#verificando o Status de Serviço do Apache2
 	sudo systemctl status apache2
 	sudo systemctl restart apache2
 	sudo systemctl stop apache2
 	sudo systemctl start apache2
 
+	#verificado as versões do Apache2 e PHP
 	sudo apache2 -V (Server)
 	sudo php --version (PHP)
 
@@ -105,7 +107,9 @@ Site Oficial do PHP (7.x ou 8.x): https://www.php.net/
 
 #07_ Criando um diretório de Teste do HTML e PHP no Linux Mint<br>
 
+	#acessando o diretório Document Root do Apache2
 	cd /var/www/html
+		
 		#opção do comando mkdir: -v (verbose)
 		sudo mkdir -v teste
 		
@@ -114,12 +118,14 @@ Site Oficial do PHP (7.x ou 8.x): https://www.php.net/
 		
 		#opção do comando chown: -v (verbose), root (User), . (separate), www-date (group)
 		sudo chown -v root.www-data teste/
+		
+		#acessando o diretório do site
 		cd teste
 
 #08_ Criando páginas HTML e PHP para testar o Apache2 Server no Linux Mint<br>
 
 	#OBSERVAÇÃO IMPORTANTE: nesse exemplo vamos editar os arquivos: teste.html, teste.php
-	e phpinfo.php utilizando o Microsoft Visual Studio VSCode.
+	#e phpinfo.php utilizando o Microsoft Visual Studio VSCode.
 	code .
 
 	01_ criando um novo arquivo: (Atalho) Ctrl + N

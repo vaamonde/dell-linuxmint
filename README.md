@@ -34,6 +34,34 @@ FTP  do Linux Mint: https://ftp.heanet.ie/mirrors/linuxmint.com/stable/<br>
 ## **Playlist do YouTUBE com todos os Vídeos do Linux Mint 20.x/21.x:**
 Link da Playlist: https://www.youtube.com/playlist?list=PLozhsZB1lLUOKXT6TIhjwPWBNpUoExsNF
 
+## **🎅 ÓTIMO PRESENTE DE NATAL laçamento da NOVA versão do LINUX MINT 21.3 VIRGINIA BETA Cinnamon 6.0 🐧**
+
+Vídeo mostrando os procedimentos básicos para baixar e instalar no VirtualBOX a "NOVA" Versão do Linux Mint 21.3 Virginia Cinnamon x64 Bits BETA.
+
+Com lançamento previsto para o Natal de 2023 (25 ou depois), a nova versão da Distribuição Linux Mint 21.3 Codinome Virginia traz grandes mudanças e melhorias conforme os links oficiais da distribuição.
+
+Novos Recursos: https://www.linuxmint.com/rel_virginia.php<br>
+01_ Suporte Total ao SecureBoot;<br>
+02_ Grande atualização do Hipnotix;<br>
+03_ Cinnamon versão 6.0;<br>
+04_ Wayland Experimental;<br>
+05_ Suporte a Celular no Warpinator;<br>
+06_ Novas Artes do Cinnamon;<br>
+07_ Kernel continua na versão 5.15;<br>
+08_ LTS da Versão de suporte de segurança até 2027.
+
+#Lançamentos Oficiais do Linux Mint<br>
+10/12/2023 - Lançamento do BETA do Linux Mint 21.3: https://blog.linuxmint.com/?p=4611<br>
+06/12/2023 - Novidades da Versão do Linux Mint 21.3: https://blog.linuxmint.com/?p=4604<br>
+26/10/2023 - Anunciado a Versão do Linux Mint 21.3: https://blog.linuxmint.com/?p=4591<br>
+02/07/2023 - Planejamento do Lançamento da Versão 21.3: https://blog.linuxmint.com/?p=4554
+
+[![Linux Mint 21.3](http://img.youtube.com/vi/Si2sw9VblkI/0.jpg)](https://www.youtube.com/watch?v=Si2sw9VblkI "Linux Mint 21.3")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=Si2sw9VblkI
+
+Material de apoio desse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/software/00-install-linuxmint-21.3-virtualbox-7.0.md
+
 ## **O QUE ESPERAR da NOVA versão do LINUX MINT 21.2 VICTORIA BETA Cinnamon - Instalação VirtualBOX**
 
 Vídeo mostrando os procedimentos básicos para baixar e instalar no VirtualBOX a "NOVA" Versão do Linux Mint 21.2 Victoria (Vitória) Cinnamon x64 Bits.
@@ -314,7 +342,7 @@ Primeiro vídeo da série de atualização do meu Curso de Linux Mint, nesse ví
 
 Mais informações acesse: https://blog.linuxmint.com/?p=4077
 
-[![Dell Inspirion 1440](http://img.youtube.com/vi/iDvxKv0ib8M/0.jpg)](https://www.youtube.com/watch?v=iDvxKv0ib8M "Dell Inspirion 1440")
+[![Dell Inspiron 1440](http://img.youtube.com/vi/iDvxKv0ib8M/0.jpg)](https://www.youtube.com/watch?v=iDvxKv0ib8M "Dell Inspiron 1440")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=iDvxKv0ib8M
 
@@ -330,7 +358,7 @@ Segundo vídeo da série de atualização do meu Curso de Linux Mint, nesse víd
 
 Mais informações acesse: https://blog.linuxmint.com/?p=4077
 
-[![Dell Inspirion 1440](http://img.youtube.com/vi/VHtb30NCN4I/0.jpg)](https://www.youtube.com/watch?v=VHtb30NCN4I "Dell Inspirion 1440")
+[![Dell Inspiron 1440](http://img.youtube.com/vi/VHtb30NCN4I/0.jpg)](https://www.youtube.com/watch?v=VHtb30NCN4I "Dell Inspiron 1440")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=VHtb30NCN4I
 

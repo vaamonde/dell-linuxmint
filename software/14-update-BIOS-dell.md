@@ -7,10 +7,10 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 12/09/2021<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.10<br>
+#Data de atualização: 07/04/2024<br>
+#Versão: 0.11<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![Dell BIOS Update](http://img.youtube.com/vi//0.jpg)]( "Dell BIOS Update")
 
@@ -74,7 +74,7 @@ EXECUTAR O PROCEDIMENTO DE ATUALIZAÇÃO DA BIOS.
 	_ Link de Download do FreeDOS: https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/distributions/test/
 		OBSERVAÇÃO IMPORTANTE: será utilizado a versão de Teste pois tem suporte a BIOS Intel, UEFI e Legada
 		Mais informações: https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/distributions/test/readme.txt
-	Selecionar a opção: FDT2304-FullUSB.zip (atualizada em: 01/04/2023)
+		Selecionar a opção: FDT2404-FullUSB.zip (atualizada em: 07/04/2024)
 
 #03_ Criando Pen Driver Bootável com suporte ao FreeDOS
 
@@ -83,12 +83,12 @@ EXECUTAR O PROCEDIMENTO DE ATUALIZAÇÃO DA BIOS.
 
 	#Descompactar o arquivo Zipado do FreeDOS
 	_ Acessar o diretório de Download;
-	_ Botão direito do mouse em cima do arquivo: FDT2303-FullUSB.zip
+	_ Botão direito do mouse em cima do arquivo: FDT2404-FullUSB.zip
 	_ Selecionar a opção: Extrai Aqui
-	_ Acessar o diretório criado: FDT2303-Full
-	_ Botão direito do mouse em cima do arquivo: T2304FULL.img
+	_ Acessar o diretório criado: FDT2404-Full
+	_ Botão direito do mouse em cima do arquivo: T2404FULL.img
 	_ Selecionar a opção: Criar dispositivo USB inicializável
-		Gravar imagem: T2304FULL.img para: SanDisk Cruzer Blade (/dev/sdb)
+		Gravar imagem: T2404FULL.img para: SanDisk Cruzer Blade (/dev/sdb)
 		<Detalhes>
 			<Gravar>
 

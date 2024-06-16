@@ -7,13 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 19/01/2023<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.04<br>
+#Data de atualização: 22/03/2024<br>
+#Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 #Instalação do Apache Tomcat 10.1.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do Apache Tomcat 10.1.x no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Instalação do Apache Tomcat 10.1.x no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![Tomcat Server](http://img.youtube.com/vi/ZmpQFKsMIXE/0.jpg)](https://www.youtube.com/watch?v=ZmpQFKsMIXE "Tomcat Server")
 
@@ -27,8 +27,8 @@ Site Oficial do OpenJDK: https://openjdk.org/
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 	sudo localectl
@@ -78,8 +78,8 @@ Site Oficial do OpenJDK: https://openjdk.org/
 	#opção do comando sudo: -i (login)
 	sudo -i
 	
-	#opção do comando wget: -v (verbose), -O (output file) (link atualizado em 12/11/2023)
-	wget -v -O /tmp/tomcat10.tar.gz https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.16/bin/apache-tomcat-10.1.16.tar.gz
+	#opção do comando wget: -v (verbose), -O (output file) (link atualizado em 22/03/2024)
+	wget -v -O /tmp/tomcat10.tar.gz https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.19/bin/apache-tomcat-10.1.19.tar.gz
 
 #05_ Descompactando e instalando o Apache Tomcat 10.1.x no Linux Mint<br>
 
@@ -118,11 +118,13 @@ Site Oficial do OpenJDK: https://openjdk.org/
 
 #10_ Verificando o Serviço e Versão do Apache Tomcat Server 10.1.x no Linux Mint<br>
 
+	#verificando o Status de Serviço do Apache TomCAT
 	sudo systemctl status tomcat10
 	sudo systemctl restart tomcat10
 	sudo systemctl stop tomcat10
 	sudo systemctl start tomcat10
 
+	#verificando a versão do Apache TomCAT
 	sudo bash /opt/tomcat/bin/version.sh
 
 #11_ Verificando a Porta de Conexão do Apache Tomcat Server 10.1.x no Linux Mint<br>

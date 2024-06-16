@@ -7,13 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 17/03/2023<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.04<br>
+#Data de atualização: 23/03/2024<br>
+#Versão: 0.05<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 #Instalação do NGINX 1.18.x e PHP 7.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do NGINX 1.18.x e PHP 8.x no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Instalação do NGINX 1.18.x e PHP 8.x no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![NGINX Server](http://img.youtube.com/vi/Bd_8u0UBs6U/0.jpg)](https://www.youtube.com/watch?v=Bd_8u0UBs6U "NGINX Server")
 
@@ -27,8 +27,8 @@ Site Oficial do PHP-FPM (7.x ou 8.x): https://www.php.net/manual/pt_BR/install.f
 
 	Terminal: Ctrl + Alt + T
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
+	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
 	sudo cat /etc/lsb-release
 	sudo localectl
@@ -75,16 +75,19 @@ Site Oficial do PHP-FPM (7.x ou 8.x): https://www.php.net/manual/pt_BR/install.f
 
 #04_ Verificando o Serviço e Versão do NGINX 1.18.x e do PHP-FPM no Linux Mint<br>
 
+	#verificando o status de serviço do NGINX
 	sudo systemctl status nginx
 	sudo systemctl restart nginx
 	sudo systemctl stop nginx
 	sudo systemctl start nginx
 
+	#verificando o status de serviço do PHP-FPM
 	sudo systemctl status php7.4-fpm
 	sudo systemctl restart php7.4-fpm
 	sudo systemctl stop php7.4-fpm
 	sudo systemctl start php7.4-fpm
 
+	#verificando as versões do NGINX e PHP-FPM
 	sudo nginx -v (Server)
 	sudo php --version (PHP)
 	sudo php-fpm7.4 --version (PHP-FPM)
@@ -107,64 +110,72 @@ Site Oficial do PHP-FPM (7.x ou 8.x): https://www.php.net/manual/pt_BR/install.f
 
 #07_ Habilitando o suporte ao PHP-FPM no NGINX 1.18.x Server no Linux Mint<br>
 
+	#editando o arquivo de site padrão do NGINX
 	sudo vim /etc/nginx/sites-available/default
-		
-		INSERT
+	INSERT
 
-			#adicionar o suporte a página index.php no site padrão do NGINX
-			#alterar a linha: 44 - adicionar no final da linha
-			index index.html index.htm index.nginx-debian.html index.php;
+		#adicionar o suporte a página index.php no site padrão do NGINX
+		#alterar a linha: 44 - adicionar no final da linha
+		index index.html index.htm index.nginx-debian.html index.php;
 
-			#descomentar as linhas do suporte ao FastCGI do PHP-FPM no NGINX
-				#descomentar a linha: 56
-				location ~ \.php$ {
-				
-				#descomentar a linha: 57
-				include snippets/fastcgi-php.conf;
-				
-				#descomentar a linha: 60
-				#OBSERVAÇÃO: se você estiver usando a versão 8.1.x do PHP-FPM alterar o caminho
-				fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
-				
-				#descomentar a linha: 63
-				}
+		#descomentar as linhas do suporte ao FastCGI do PHP-FPM no NGINX
+			#descomentar a linha: 56
+			location ~ \.php$ {
+			
+			#descomentar a linha: 57
+			include snippets/fastcgi-php.conf;
+			
+			#descomentar a linha: 60
+			#OBSERVAÇÃO: se você estiver usando a versão 8.1.x do PHP-FPM alterar o caminho
+			fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+			
+			#descomentar a linha: 63
+			}
 
-			#descomentar as linhas do suporte ao .htaccess do NGINX
-				#descomentar a linha: 68
-				location ~ /\.ht {
-				
-				#descomentar a linha: 69
-				deny all;
-				
-				#descomentar a linha: 70
-				}
+		#descomentar as linhas do suporte ao .htaccess do NGINX
+			#descomentar a linha: 68
+			location ~ /\.ht {
+			
+			#descomentar a linha: 69
+			deny all;
+			
+			#descomentar a linha: 70
+			}
 
-		ESC SHIFT :x <ENTER>
+	#salvar e sair do arquivo
+	ESC SHIFT :x <ENTER>
 
+	#testado as configurações do NGINX
 	#opção do comando nginx: -t (nginx checks the configuration)
 	sudo nginx -t
 	
+	#reiniciando o serviço do NGINX
 	sudo systemctl restart nginx
 	sudo systemctl status nginx
 
 #07_ Criando um diretório de Teste do HTML e PHP no Linux Mint<br>
 
+	#acessando o Documenta Root do NGINX
 	cd /var/www/html
+
+		#criando o diretório de teste de sites do NGINX
 		#opção do comando mkdir: -v (verbose)
 		sudo mkdir -v teste
 		
+		#alterando as permissões do diretório
 		#opção do comando chmod: -v (verbose), 777 (User=RWX,Group=RWX,Other=RWX)
 		#OBSERVAÇÃO IMPORTANTE: em produção não utilizar a permissão 777, recomendado a permissão
 		#775 (User=RWX,Group=RWX,Other=R-X) ou 755 (User=RWX,Group=R-X,Other=R-X)
 		sudo chmod -v 777 teste/
 
+		#acessando o diretório testes
 		cd teste
 
 #08_ Criando páginas HTML e PHP para testar o NGINX 1.18.x Server no Linux Mint<br>
 
 	#OBSERVAÇÃO IMPORTANTE: nesse exemplo vamos editar os arquivos: teste.html, teste.php
-	e phpinfo.php utilizando o Microsoft Visual Studio VSCode.
-	code .
+	#e phpinfo.php utilizando o Microsoft Visual Studio VSCode.
+	#code .
 
 	01_ criando um novo arquivo: (Atalho) Ctrl + N
 	02_ copiar e colar o código abaixo: 
@@ -227,7 +238,7 @@ Site Oficial do PHP-FPM (7.x ou 8.x): https://www.php.net/manual/pt_BR/install.f
 ?>
 ```
 
-#09_ Testando o NGINX 1.18.x Server e o PHP no navegador utilizando o Linux Mint<br>
+#09_ Testando o NGINX 1.18.x Server e o PHP-FPM no navegador utilizando o Linux Mint<br>
 
 	firefox http://localhost
 	firefox http://localhost/teste/

@@ -7,30 +7,31 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 25/02/2023<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.04<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Data de atualização: 06/03/2024<br>
+#Versão: 0.06<br>
+#Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
-#Instalação do PostgreSQL Server 15.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do PostgreSQL Server 15.x no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Instalação do PostgreSQL Server 15.x ou 16.x no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Instalação do PostgreSQL Server 15.x ou 16.x no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![PostgreSQL Server](http://img.youtube.com/vi/rDh3iq8nmDg/0.jpg)](https://www.youtube.com/watch?v=rDh3iq8nmDg "PostgreSQL Server")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=rDh3iq8nmDg
 
 OBSERVAÇÃO IMPORTANTE: LANÇADO NO MÊS SETEMBRO/2023 A VERSÃO 16 DO POSTGRESQL SERVER,<br>
-OS PROCEDIMENTOS ADOTADO NESSE VÍDEO SERVER PARA ESSE VERSÃO, MUDANDO APENAS O NÚMERO<br>
+OS PROCEDIMENTOS ADOTADOS NESSE VÍDEO SERVER PARA ESSA VERSÃO, MUDANDO APENAS O NÚMERO<br>
 DA VERSÃO DE: 15 PARA 16 NOS CAMINHOS DOS DIRETÓRIOS.
 
 Site Oficial do PostgreSQL: https://www.postgresql.org/<br>
 Site Oficial do DBeaver: https://dbeaver.io/<br>
-Site Ofickial do PgAdmin: https://www.pgadmin.org/
+Site Oficial do PgAdmin: https://www.pgadmin.org/
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 
 	Terminal: Ctrl + Alt + T
 
+	#verificando as versões e codinome do sistema operacional
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
 	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 	sudo cat /etc/os-release
@@ -66,12 +67,12 @@ Site Ofickial do PgAdmin: https://www.pgadmin.org/
 	ca-certificates libssl-dev libffi-dev libgmp3-dev virtualenv python3-pip libpq-dev python2-dev \
 	python3-dev libexpat1 ssl-cert
 	
-	OBSERVAÇÃO IMPORTANTE: o tempo todo a Biblioteca LibSSL sofre alteração de versão, antes de baixar a versão
-	acesse o site: http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/ e veja qual a versão atual, altere
-	o script e faço o download.
+	#OBSERVAÇÃO IMPORTANTE: o tempo todo a Biblioteca LibSSL sofre alteração de versão, antes de baixar a versão
+	#acesse o site: http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/ e veja qual a versão atual, altere
+	#o script e faça o download.
 
-	#opção do comando dpkg: -i (install) (link atualizado no dia: 12/11/2023)
-	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.20_amd64.deb
+	#opção do comando dpkg: -i (install) (link atualizado no dia: 06/03/2024)
+	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb
 	sudo dpkg -i libssl1.1_1.1.1*.deb
 
 #03_ Baixando e instalando a Chave GPG do PostgreSQL Server no Linux Mint<br>
@@ -93,25 +94,30 @@ Site Ofickial do PgAdmin: https://www.pgadmin.org/
 
 #05_ Atualizando as Lista do Apt com o novo Repositório do PostgreSQL Server no Linux Mint<br>
 
+	#atualizando as lista do Apt com o novo repositório do PostgreSQL Server
 	sudo apt update
 
 #06_ Instalando o PostgreSQL Server e Client no Linux Mint<br>
 
+	#instalando o PostgreSQL Server e suas dependências
 	sudo apt install postgresql postgresql-contrib postgresql-client
 
 #07_ Habilitando o Serviço do PostgreSQL Server no Linux Mint<br>
 
+	#habilitando o serviço do PostgreSQL Server
 	sudo systemctl daemon-reload
 	sudo systemctl enable postgresql
 	sudo systemctl start postgresql
 
 #08_ Verificando o Serviço e Versão do PostgreSQL Server no Linux Mint<br>
 
+	#verificando o status de serviço do PostgreSQL Server
 	sudo systemctl status postgresql
 	sudo systemctl restart postgresql
 	sudo systemctl stop postgresql
 	sudo systemctl start postgresql
 
+	#verificando a versão do PostgreSQL Server e Client
 	/usr/lib/postgresql/15/bin/postgres --version
 	psql --version
 
@@ -122,9 +128,9 @@ Site Ofickial do PgAdmin: https://www.pgadmin.org/
 
 #10_ Localização dos Arquivos de Configuração do PostgreSQL Server no Linux Mint<br>
 
-	OBSERVAÇÃO IMPORTANTE: LANÇADO NO MÊS SETEMBRO/2023 A VERSÃO 16 DO POSTGRESQL SERVER,
-	OS PROCEDIMENTOS ADOTADO NESSE VÍDEO SERVER PARA ESSE VERSÃO, MUDANDO APENAS O NÚMERO
-	DA VERSÃO DE: 15 PARA 16 NOS CAMINHOS DOS DIRETÓRIOS.
+	#OBSERVAÇÃO IMPORTANTE: LANÇADO NO MÊS SETEMBRO/2023 A VERSÃO 16 DO POSTGRESQL SERVER,
+	#OS PROCEDIMENTOS ADOTADOS NESSE VÍDEO SERVER PARA ESSE VERSÃO, MUDANDO APENAS O NÚMERO
+	#DA VERSÃO DE: 15 PARA 16 NOS CAMINHOS DOS DIRETÓRIOS.
 	
 	#localização dos arquivos do PostgreSQL Server na versão 15
 	/etc/postgresql/15/main/postgresql.conf   <-- arquivo de configuração do Servidor PostgreSQL
@@ -153,33 +159,34 @@ Site Ofickial do PgAdmin: https://www.pgadmin.org/
 	#opção do comando sudo: -u (user)
 	sudo -u postgres psql
 
-	#opção do comando \l: (list databases)
-	\l
+		#opção do comando \l: (list databases)
+		\l
 
-	#opção do comando \c: (connection database)
-	\c postgres
+		#opção do comando \c: (connection database)
+		\c postgres
 
-	#opção do comando \dt: (list tables)
-	\dt
+		#opção do comando \dt: (list tables)
+		\dt
 
-	#opção do comando \db: (database tablespaces)
-	\db
+		#opção do comando \db: (database tablespaces)
+		\db
 
-	#opção do comando \dg: (database roles)
-	\dg
+		#opção do comando \dg: (database roles)
+		\dg
 
-	#opção do comando \conninfo: (database information connect)
-	\conninfo
+		#opção do comando \conninfo: (database information connect)
+		\conninfo
 
-	#opção do comando \du: (database user profile)
-	\du
+		#opção do comando \du: (database user profile)
+		\du
 
-	#opção do comando \q: (quit)
-	\q
+		#opção do comando \q: (quit)
+		\q
 
 #13_ Configurando a Senha do Usuário Admin do PostgreSQL Server no Linux Mint<br>
 
 	#opção do comando sudo: -u (user)
+	#opção do comando psql: --command (xecute the given command string)
 	sudo -u postgres psql --command '\password postgres'
 		Enter new password for user "postgres": pti@2018
 		Enter it again: pti@2018
@@ -194,13 +201,13 @@ Site Ofickial do PgAdmin: https://www.pgadmin.org/
 	
 	#editando o arquivo de acesso remoto do PostgreSQL Server na versão 16
 	sudo vim /etc/postgresql/16/main/postgresql.conf
-
 		INSERT
 
 			#habilitando o suporte remoto do PostgreSQL Server
-			#decomentar a linha: 60 e alterar o valor de: listen_addresses = 'localhost' para: listen_addresses = '*'
+			#descomentar a linha: 60 e alterar o valor de: listen_addresses = 'localhost' para: listen_addresses = '*'
 			listen_addresses = '*'
 
+		#salvar e sair do arquiv
 		ESC SHIFT :x <ENTER>
 
 	#editando o arquivo de acesso remoto do PostgreSQL Server na versão 15
@@ -208,7 +215,6 @@ Site Ofickial do PgAdmin: https://www.pgadmin.org/
 	
 	#editando o arquivo de acesso remoto do PostgreSQL Server na versão 16
 	sudo vim /etc/postgresql/16/main/pg_hba.conf
-
 		INSERT
 
 			#liberando o acesso remoto ao Banco de Dados PostgreSQL
@@ -220,14 +226,16 @@ Site Ofickial do PgAdmin: https://www.pgadmin.org/
 			#adicionar a linha abaixo:
 			host     all             all             ::/0                    scram-sha-256
 
+		#salvar e sair do arquivo
 		ESC SHIFT :x <ENTER>
 
+	#reiniciar o serviço do PostgreSQL Server
 	sudo systemctl restart postgresql
 	sudo systemctl status postgresql
 
 #15_ Download e Instalação do DBeaver Community Edition no Linux Mint<br>
 
-	#Link atualizado em: 25/02/2023
+	#Link atualizado em: 06/01/2023 (Versão atual 23.3.1 compilada em: 24/12/2023)
 	Link Oficial do DBeaver Community: https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb
 	
 	01_ Na pasta de Download, clicar duas vezes no Instalador do DBeaver Community;

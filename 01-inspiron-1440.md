@@ -8,10 +8,17 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 31/07/2023<br>
-#Versão: 0.24<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Data de atualização: 20/03/2024<br>
+#Versão: 0.26<br>
+#Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
+
+#Lançamentos Oficiais do Linux Mint<br>
+12/01/2024 - Lançamento Oficial do Linux Mint 21.3: https://blog.linuxmint.com/?p=4624<br>
+10/12/2023 - Lançamento do BETA do Linux Mint 21.3: https://blog.linuxmint.com/?p=4611<br>
+06/12/2023 - Novidades da Versão do Linux Mint 21.3: https://blog.linuxmint.com/?p=4604<br>
+26/10/2023 - Anunciado a Versão do Linux Mint 21.3: https://blog.linuxmint.com/?p=4591<br>
+02/07/2023 - Planejamento do Lançamento da Versão 21.3: https://blog.linuxmint.com/?p=4554<br>
 
 Novos Recursos do Linux Mint 21.2 Victoria Cinnamon: https://www.linuxmint.com/rel_victoria_cinnamon_whatsnew.php<br>
 16/07/2023 - Lançamento da Versão Oficial do Linux Mint 21.2 Victoria: https://blog.linuxmint.com/?p=4543<br>
@@ -28,6 +35,14 @@ New features in Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_cinn
 Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_cinnamon.phpp<br>
 07/01/2022 - Linux Mint 20.3 “Una” Cinnamon released! https://blog.linuxmint.com/?p=4220<br>
 Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_cinnamon.php
+
+[![Dell Inspirion 1440](http://img.youtube.com/vi/iDvxKv0ib8M/0.jpg)](https://www.youtube.com/watch?v=iDvxKv0ib8M "Dell Inspirion 1440")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=iDvxKv0ib8M
+
+[![Dell Inspirion 1440](http://img.youtube.com/vi/VHtb30NCN4I/0.jpg)](https://www.youtube.com/watch?v=VHtb30NCN4I "Dell Inspirion 1440")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=VHtb30NCN4I
 
 #Instalação do Linux Mint 64 Bits no Dell Inspiron 1440 (2009)
 
@@ -58,8 +73,8 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 	_ de Modo de Compatibilidade, recomendado para equipamentos legados (inicialização em modo 
 	_ de compatibilidade e mais lento no Dell Inspiron 1440)
 
-	OBSERVAÇÃO IMPORTANTE: no Linux Mint 21.x a falha de inicialização não acontece mais no
-	Dell Inspiron 1440, a inicialização pode ser feita de forma normal.
+	_ OBSERVAÇÃO IMPORTANTE: no Linux Mint 21.x a falha de inicialização não acontece mais no
+	_ Dell Inspiron 1440, a inicialização pode ser feita de forma normal.
 
 #05_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless)<br>
 
@@ -104,87 +119,98 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 		sudo apt autoclean
 		sudo apt clean
 
-		#Reinicializar o Sistema
-		sudo reboot
+	#Reinicializar o Sistema
+	sudo reboot
 
 #08_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.15.x suportado até 2025)<br>
 
-		#INSTALAÇÃO DO KERNEL OEM LINUX MINT 20.x (KERNEL >= 5.14)
-		sudo apt install linux-oem-20.04 fdutils
-		
-		#Reinicializar o Sistema
-		sudo reboot
-		
-		#Verificando a versão do Kernel que está rodando na inicialização do Linux Mint
-		#opção do comando uname: -a (all)
-		sudo uname -a
+	#INSTALAÇÃO DO KERNEL OEM LINUX MINT 20.x (KERNEL >= 5.14)
+	sudo apt install linux-oem-20.04 fdutils
+	
+	#Reinicializar o Sistema
+	sudo reboot
+	
+	#Verificando a versão do Kernel que está rodando na inicialização do Linux Mint
+	#opção do comando uname: -a (all)
+	sudo uname -a
 
-		#INSTALAÇÃO DO KERNEL OEM LINUX MINT 21.x (KERNEL >= 5.14, KERNEL >= 6.0 e KERNEL >= 6.1)
-		
-		#Linux Mint Versão 21.x - Kernel >= 5.17
-		sudo apt install linux-oem-22.04a fdutils
-		
-		#Linux Mint Versão 21.x - Kernel >= 6.0
-		sudo apt install linux-oem-22.04b fdutils
-		
-		#Linux Mint Versão 21.x - Kernel >= 6.1 - TESTADO E HOMOLOGADO, RECOMENDO A SUA INSTALAÇÃO
-		sudo apt install linux-oem-22.04c fdutils
+	#INSTALAÇÃO DO KERNEL OEM LINUX MINT 21.x (KERNEL >= 5.14, KERNEL >= 6.0 e KERNEL >= 6.1)
+	
+	#Linux Mint Versão 21.x - Kernel >= 5.17
+	sudo apt install linux-oem-22.04a fdutils
+	
+	#Linux Mint Versão 21.x - Kernel >= 6.0
+	sudo apt install linux-oem-22.04b fdutils
+	
+	#Linux Mint Versão 21.x - Kernel >= 6.1
+	sudo apt install linux-oem-22.04c fdutils
 
-		#Reinicializar o Sistema
-		sudo reboot 
+	#Linux Mint Versão 21.x - Kernel >= 6.5 - TESTADO E HOMOLOGADO, RECOMENDO A SUA INSTALAÇÃO
+	sudo apt install linux-oem-22.04d fdutils
 
-		#Verificando a versão do Kernel que está rodando na inicialização do Linux Mint
-		#opção do comando uname: -a (all)
-		sudo uname -a
+	#Reinicializar o Sistema
+	sudo reboot 
+
+	#Verificando a versão do Kernel que está rodando na inicialização do Linux Mint
+	#opção do comando uname: -a (all)
+	sudo uname -a
 
 #09_ Instalação dos Aplicativos Básicos<br>
 
-		sudo apt update
-		sudo apt install software-properties-common build-essential lsb-core dkms
-		sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool ipmitool ipmiutil smartmontools
-		sudo apt install ttf-mscorefonts-installer cheese guvcview v4l-utils cairo-dock vim git p7zip-full p7zip-rar
+	#atualizando as lista do Apt
+	sudo apt update
 
-		#Reinicializar o Sistema
-		sudo reboot
+	#instalação dos software base do Linux Mint
+	sudo apt install software-properties-common build-essential lsb-core dkms lsb-release apt-transport-https module-assistant
+	
+	#instalação dos software de hardware e monitoramento
+	sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool ipmitool ipmiutil smartmontools
+	
+	#instalação dos software de produtividade e aplicativos básicos
+	sudo apt install ttf-mscorefonts-installer cheese guvcview v4l-utils cairo-dock vim git p7zip-full p7zip-rar
+
+	#Reinicializar o Sistema
+	sudo reboot
 
 #10_ Instalação dos Drivers VGA Intel Graphics<br>
 
-		sudo apt update
-		sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
-		
-		#INSTALAÇÃO DOS DRIVERS VGA DA INTEL GRAPHICS NO LINUX MINT 20.x
-		sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5 beignet-opencl-icd
-		
-		#INSTALAÇÃO DOS DRIVERS VGA DA INTEL GRAPHICS NO LINUX MINT 21.x
-		sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5
-		
-		#Reinicializar o Sistema
-		sudo reboot
+	#instalação das dependências do VGA Intel Graphics
+	sudo apt update
+	sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
+	
+	#INSTALAÇÃO DOS DRIVERS VGA DA INTEL GRAPHICS NO LINUX MINT 20.x
+	sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5 beignet-opencl-icd
+	
+	#INSTALAÇÃO DOS DRIVERS VGA DA INTEL GRAPHICS NO LINUX MINT 21.x
+	sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5
+	
+	#Reinicializar o Sistema
+	sudo reboot
 
 #11_ Instalação dos Drivers Sem-Fio (Wi-Fi/Wireless) Broadcom BCM-4312<br>
 
-		OBSERVAÇÃO IMPORTANTE: Na versão do Linux Mint 20.2 Uma, ele reconhece a Placa de Rede Sem-Fio
-		no Gerenciador de Driver, mais o Driver padrão: bcmwl-kernel-source não funciona corretamente
-		no Kernel padrão e no Kernel OEM, no vídeo fiz a remoção do driver depois de instalar os novos,
-		recomendo marcar a opção: Não usar esse dispositivo primeiro, Aplicar as Mudanças, reiniciar o
-		Desktop/Notebook e depois instalar os Drivers abaixo.
+	OBSERVAÇÃO IMPORTANTE: Na versão do Linux Mint 20.2 Uma, ele reconhece a Placa de Rede Sem-Fio
+	no Gerenciador de Driver, mais o Driver padrão: bcmwl-kernel-source não funciona corretamente
+	no Kernel padrão e no Kernel OEM, no vídeo fiz a remoção do driver depois de instalar os novos,
+	recomendo marcar a opção: Não usar esse dispositivo primeiro, Aplicar as Mudanças, reiniciar o
+	Desktop/Notebook e depois instalar os Drivers abaixo.
 
-		OBSERVAÇÃO IMPORTANTE: Na versão do Linux Mint 20.3 Una, ele reconhece a Placa de Rede Sem-Fio
-		no Gerenciador de Driver, o Driver já está funcionando Perfeitamente mesmo depois de instalar
-		o Kernel OEM.
+	OBSERVAÇÃO IMPORTANTE: Na versão do Linux Mint 20.3 Una, ele reconhece a Placa de Rede Sem-Fio
+	no Gerenciador de Driver, o Driver já está funcionando Perfeitamente mesmo depois de instalar
+	o Kernel OEM.
 
-		OBSERVAÇÃO IMPORTANTE: Na versão do Linux Mint 21 Vanessa e 21.1 Vera, ele reconhecer a Rede
-		Sem-Fio no Gerenciador de Driver, mais o Driver padrão: bcmwl-kernel-source não funciona 
-		corretamente no Kernel padrão e no Kernel OEM, recomendo marcar a opção: Não usar esse 
-		dispositivo primeiro, Aplicar as Mudanças, reiniciar o Desktop/Notebook e depois instalar os 
-		Drivers abaixo.
+	OBSERVAÇÃO IMPORTANTE: Na versão do Linux Mint 21 Vanessa e 21.1 Vera, ele reconhecer a Rede
+	Sem-Fio no Gerenciador de Driver, mais o Driver padrão: bcmwl-kernel-source não funciona 
+	corretamente no Kernel padrão e no Kernel OEM, recomendo marcar a opção: Não usar esse 
+	dispositivo primeiro, Aplicar as Mudanças, reiniciar o Desktop/Notebook e depois instalar os 
+	Drivers abaixo.
 
-		OBSERVAÇÃO IMPORTANTE: só usar esse comando se for realmente necessário.
-		sudo apt update
-		sudo apt install firmware-b43-installer firmware-b43legacy-installer
-		
-		#Reinicializar o Sistema
-		sudo reboot
+	OBSERVAÇÃO IMPORTANTE: só usar esse comando se for realmente necessário.
+	sudo apt update
+	sudo apt install firmware-b43-installer firmware-b43legacy-installer
+	
+	#Reinicializar o Sistema
+	sudo reboot
 
 OBSERVAÇÃO IMPORTANTE: NO VÍDEO DE CONFIGURAÇÃO DO DELL INSPIRON 1440 EU NÃO FIZ MENÇÃO AO SWAPFILE
 QUE É CRIADO AUTOMATICAMENTE NA INSTALAÇÃO DO LINUX MINT, QUANDO VOCÊ ESTÁ UTILIZANDO SSD, M.2 OU 

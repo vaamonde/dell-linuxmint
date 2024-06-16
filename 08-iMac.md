@@ -6,13 +6,14 @@
 #Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica<br>
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
-#Data de criação: 13/08/2021<br>
-#Data de atualização: 02/01/2024<br>
-#Versão: 0.25<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Data de criação: 04/12/2023<br>
+#Data de atualização: 15/01/2024<br>
+#Versão: 0.04<br>
+#Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 #Lançamentos Oficiais do Linux Mint<br>
+12/01/2024 - Lançamento Oficial do Linux Mint 21.3: https://blog.linuxmint.com/?p=4624<br>
 10/12/2023 - Lançamento do BETA do Linux Mint 21.3: https://blog.linuxmint.com/?p=4611<br>
 06/12/2023 - Novidades da Versão do Linux Mint 21.3: https://blog.linuxmint.com/?p=4604<br>
 26/10/2023 - Anunciado a Versão do Linux Mint 21.3: https://blog.linuxmint.com/?p=4591<br>
@@ -34,15 +35,7 @@ Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_ci
 07/01/2022 - Linux Mint 20.3 “Una” Cinnamon released! https://blog.linuxmint.com/?p=4220<br>
 Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_cinnamon.php
 
-[![Positivo Master N4340](http://img.youtube.com/vi/BfmDbHepmXY/0.jpg)](https://www.youtube.com/watch?v=BfmDbHepmXY "Positivo Master N4340")
-
-Link da vídeo aula: https://www.youtube.com/watch?v=BfmDbHepmXY
-
-[![Positivo Master N4340](http://img.youtube.com/vi/v28ycVnVwRs/0.jpg)](https://www.youtube.com/watch?v=v28ycVnVwRs "Positivo Master N4340")
-
-Link da vídeo aula: https://www.youtube.com/watch?v=v28ycVnVwRI
-
-#Instalação do Linux Mint 64 Bits no Notebook Positivo N4340
+#Instalação do Linux Mint 64 Bits no Apple iMac A1225 2008 
 
 #01_ Software para criação de Pen Drive Bootável<br>
 
@@ -53,30 +46,35 @@ Link da vídeo aula: https://www.youtube.com/watch?v=v28ycVnVwRI
 	_ Ventoy: https://www.ventoy.net/en/index.html
 	_ Linux Live USC Creator: https://www.linuxliveusb.com/
 
-#02_ Configurações do Hardware do Notebook Positivo N4340<br>
+#02_ Configurações do Hardware do Apple iMac A1225 2008<br>
 
-	_ CPU Intel i3 10110U 2.10Ghz 2/4 L2 4MB, 8GB DDR-4 2666Mhz, SSD M.2 CVB-8D256 - 256GB, 
-	_ LCD 14", Webcam, VGA, Ethernet Realtek RTL-8111, Wireless Intel AC 9462, Intel UHD Graphics 
-	_ CLEVO/KAPOK, Audio Intel CLEVO/KAPOK
+	_ Intel Core 2 Duo de 2,8 GHz (E8235) 6MB Cache, 4GB DDR-2 1066Mhz, HD Samsung HM500JI-(S1) 500GB, LCD 24", 
+	_ Webcam iSigh, VGA AMD Radeon RV730/M96, Ethernet Realtek RTL8111/8168, Audio Intel 5 Series/3400 e AMD
+	_ RV710/730 HDMI Radeon 4000 Series
 
-#03_ Configuração da BIOS UEFI insyde 0111.x<br>
+#03_ Configuração da BIOS Apple iMac A1225 2008<br>
 
-	_ Configuração Padrão de Fábrica, Hard Disk SSD em AHCI, VT-x habilitado, Audio, Wireless e 
+	_ Configuração Padrão de Fábrica, Hard Disk HD em AHCI, VT-x habilitado, Audio, Wireless e 
 	_ Bluetooth habilitados segurança UEFI habilitada
 	
-#04_ Inicialização da Instalação do Linux Mint 20.1 Ulyssa, 20.2 Uma, 20.3 Una, 21 Vanessa ou 21.1 Vera<br>
+#04_ Inicialização da Instalação do Linux Mint 20.1 Ulyssa, 20.2 Uma, 20.3 Una, 21 Vanessa, 21.1 Vera ou 21.2 Victoria<br>
 
-	_ Inicialização padrão, a falha de resolução de vídeo não acontece nesse modelo de notebook 
-	_ da Positivo N4340 devido o monitor ser de 14" e atingir altas resoluções.
+	_ Inicialização padrão, a falha de resolução de vídeo não acontece nesse modelo de iMac 
+	_ da Apple devido o monitor ser de 24" e atingir altas resoluções.
 
 #05_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless)<br>
 
 	_ Já é reconhecida no Live-CD do Mint, depois de instalado o Mint ela já está habilitada.
 
-#06_ Hard Disk SATA SSD M.2 256GB<br>
+	OBSERVAÇÃO IMPORTANTE: No Linux Mint 21.x a Placa de Rede Sem-Fio (Wi-Fi/Wireless) Broadcom BCM4321 não
+	é conhecida no boot sendo necessário instalar o driver utilizando o Gerenciador de Drivers
 
-	_ Modelo CVB-8D256, Hard Disk para a instalação do Linux Mint, sem necessidade de particionamento
+#06_ Hard Disk SATA HD Samsung 500GB<br>
+
+	_ Modelo HM500JI, Hard Disk para a instalação do Linux Mint, sem necessidade de particionamento
 	_ (instalação padrão).
+
+	_ OBSERVAÇÃO: PARA SELECIONAR O BOOT VIA PEN DRIVER NO iMAC PRESSIONE A TECLA: ALT NA INICIALIZAÇÃO
 
 	_ OBSERVAÇÃO IMPORTANTE: sempre utilizar o software GParted para remover todas as partições
 	_ existente no disco que será feito a instalação do Linux Mint, isso deixar o sistema mais
@@ -86,103 +84,103 @@ Link da vídeo aula: https://www.youtube.com/watch?v=v28ycVnVwRI
 
 	_ Atualização do sistema utilizando o MintUpdate;
 	_ Atualização do sistema utilizando o Apt;
-		sudo apt update
-		sudo apt upgrade
-		sudo apt full-upgrade
-		sudo apt dist-upgrade
-		sudo apt autoremove
-		sudo apt autoclean
-		sudo apt clean
-		
-		#Reinicializar o Sistema
-		sudo reboot
+
+	#Atualização utilizando o comando Apt no Terminal
+	Terminal Atalho: Ctrl + Alt + T
+	sudo apt update
+	sudo apt upgrade
+	sudo apt full-upgrade
+	sudo apt dist-upgrade
+	sudo apt autoremove
+	sudo apt autoclean
+	sudo apt clean
+	
+	#Reinicializar o Sistema
+	sudo reboot
 
 #08_ Instalação do Linux Kernel OEM (versão do Kernel instalada >= 5.15.x suportado até 2025)<br>
 
-		#INSTALAÇÃO DO KERNEL OEM LINUX MINT 20.x (KERNEL >= 5.14)
-		sudo apt install linux-oem-20.04 fdutils
-		
-		#Reinicializar o Sistema
-		sudo reboot
-		
-		#Verificando a versão do Kernel que está rodando na inicialização do Linux Mint
-		#opção do comando uname: -a (all)
-		sudo uname -a
-
-		#INSTALAÇÃO DO KERNEL OEM LINUX MINT 21.x (KERNEL >= 5.14, KERNEL >= 6.0 e KERNEL >= 6.1)
-		
-		#Linux Mint Versão 21.x - Kernel >= 5.17
-		sudo apt install linux-oem-22.04a fdutils
-		
-		#Linux Mint Versão 21.x - Kernel >= 6.0
-		sudo apt install linux-oem-22.04b fdutils
-		
-		#Linux Mint Versão 21.x - Kernel >= 6.1 - TESTADO E HOMOLOGADO, RECOMENDO A SUA INSTALAÇÃO
-		sudo apt install linux-oem-22.04c fdutils
-
-		#Reinicializar o Sistema
-		sudo reboot 
-
-		#Verificando a versão do Kernel que está rodando na inicialização do Linux Mint
-		#opção do comando uname: -a (all)
-		sudo uname -a
-
-#09_ Instalação dos Aplicativos Básicos<br>
-
-		sudo apt update
-		sudo apt install software-properties-common build-essential lsb-core dkms
-		sudo apt install htop nmon psensor tlp tlp-rdw cpufrequtils cputool ipmitool ipmiutil smartmontools
-		sudo apt install ttf-mscorefonts-installer cheese guvcview v4l-utils cairo-dock vim git p7zip-full p7zip-rar
-
-		#Reinicializar o Sistema
-		sudo reboot
-
-#10_ Instalação dos Drivers VGA Intel Graphics<br>
-
-		sudo apt update
-		sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
-		sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5 beignet-opencl-icd
-
-		#Reinicializar o Sistema
-		sudo reboot
+	#INSTALAÇÃO DO KERNEL OEM LINUX MINT 20.x (KERNEL >= 5.14)
+	sudo apt install linux-oem-20.04 fdutils
 	
-	_ Testando o suporte ao Driver da Intel Mesa
-		sudo glxinfo | less
-		sudo glxgears
+	#Reinicializar o Sistema
+	sudo reboot
 	
-	_ Software de Benchmark para GNU/Linux
-		_ PassMark: https://www.passmark.com/products/pt_linux/index.php
-		_ Hardinfo: https://github.com/lpereira/hardinfo
-		_ Unigine: https://benchmark.unigine.com/
-		_ GpuTest: https://www.geeks3d.com/gputest/
+	#Verificando a versão do Kernel que está rodando na inicialização do Linux Mint
+	#opção do comando uname: -a (all)
+	sudo uname -a
 
-OBSERVAÇÃO IMPORTANTE: NO VÍDEO DE CONFIGURAÇÃO DO POSITIVO N4340 EU NÃO FIZ MENÇÃO AO SWAPFILE
-QUE É CRIADO AUTOMATICAMENTE NA INSTALAÇÃO DO LINUX MINT, QUANDO VOCÊ ESTÁ UTILIZANDO SSD, M.2 OU 
-NVME É RECOMENDADO DESATIVAR O SUPORTE AO SWAPFILE PARA AUMENTAR O TEMPO DE VIDA DO SSD. TRIM É UM 
-COMANDO QUE INFORMA QUAIS PÁGINAS OU BLOCOS ESTÃO REALMENTE EM USO EM SEU SSD. ESSA FUNÇÃO AUMENTA 
-O DESEMPENHO DO DISPOSITIVO, GERA MAIS ESPAÇO LIVRE E AINDA AUXILIA A PROLONGAR SUA VIDA ÚTIL.
+	#INSTALAÇÃO DO KERNEL OEM LINUX MINT 21.x (KERNEL >= 5.14, KERNEL >= 6.0, KERNEL >= 6.1 e KERNEL >= 6.5)
+	
+	#Linux Mint Versão 21.x - Kernel >= 5.17
+	sudo apt install linux-oem-22.04a fdutils
+	
+	#Linux Mint Versão 21.x - Kernel >= 6.0
+	sudo apt install linux-oem-22.04b fdutils
+	
+	#Linux Mint Versão 21.x - Kernel >= 6.1
+	sudo apt install linux-oem-22.04c fdutils
 
-	_ Executar os procedimentos no Terminal (Ctrl + Alt + T)
-		#opção do comando swapoff: -v (verbose)
-		#opção do comando rm: -v (verbose)
-		sudo swapon --show
-		sudo swapoff -v /swapfile
-		sudo vim /etc/fstab
-			INSERT
-				#Comentar a linha 12 (doze) do Swapfile (salvar e sair: Esc Shift: x)
-				#swapfile	none	swap	sw	0	0
-			ESC SHIFT :x <Enter>
-		sudo rm -v /swapfile
-		
-		#Reinicializar o Sistema
-		sudo reboot
+	#Linux Mint Versão 21.x - Kernel >= 6.5 - (TESTADO E HOMOLOGADO, RECOMENDO A SUA INSTALAÇÃO)
+	sudo apt install linux-oem-22.04d fdutils
 
-	_ Executar os procedimentos no Terminal (Ctrl + Alt + T)
-		sudo swapon --show
-		sudo systemctl status fstrim.service
-		sudo systemctl status fstrim.timer
+	#Reinicializar o Sistema
+	sudo reboot 
 
-#11_ Instalação e Configuração dos Aplicativos utilizados no meu Dia-a-Dia<br>
+	#Verificando a versão do Kernel que está rodando na inicialização do Linux Mint
+	#opção do comando uname: -a (all)
+	sudo uname -a
+
+#09_ Instalação dos Aplicativos Básicos do Linux Mint<br>
+
+	#Instalação do software base do Linux Mint
+	sudo apt update
+	sudo apt install software-properties-common build-essential lsb-core dkms lsb-release apt-transport-https
+
+	#Instalação dos software básicos de hardware e monitoramento
+	sudo apt install htop nmon psensor tlp tlp-rdw cpufrequtils cputool ipmitool ipmiutil smartmontools
+	
+	#Instalação dos software básicos de produtividade e facilidade
+	sudo apt install ttf-mscorefonts-installer cheese guvcview v4l-utils cairo-dock vim git p7zip-full p7zip-rar
+	
+	#Reinicializar o Sistema
+	sudo reboot
+
+#10_ Instalação dos Drivers VGA Intel Graphics e Nvidia<br>
+
+	OBSERVAÇÃO IMPORTANTE: O modelo da Placa de Vídeo Nvidia Serie 8 GeForce 8800M GS/GTS G92M
+	não é mais suportada no Linux Mint 21.x utilizando o Kernel na versão 6.5.
+	
+	#Instalação dos Drivers de vídeo Intel
+	sudo apt update
+	sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
+	sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5
+	
+	#Reinicializar o Sistema
+	sudo reboot
+	
+	#Testando o suporte ao Driver da Intel Mesa
+	sudo glxinfo | less
+	sudo glxgears
+
+	#Software de Benchmark para GNU/Linux para Testar Desempenho
+	_ PassMark: https://www.passmark.com/products/pt_linux/index.php
+	_ Hardinfo: https://github.com/lpereira/hardinfo
+	_ Unigine.: https://benchmark.unigine.com/
+	_ GpuTest.: https://www.geeks3d.com/gputest/
+
+#11_ Instalando o Driver Sem-Fio Broadcom BCM4321<br>
+
+	#Instalação em Modo Gráfico
+	Menu
+		Busca Indexada
+			Gerenciador de Drivers
+				Selecione: bcmwl-kernel-source
+				<Aplicar Mudanças>
+			Digite a sua senha do usuário: <Autenticar>
+			<Reiniciar>
+
+#12_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia<br>
 
 	_ VirtualBOX: https://www.virtualbox.org/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/01-virtualbox.md)
@@ -202,9 +200,6 @@ O DESEMPENHO DO DISPOSITIVO, GERA MAIS ESPAÇO LIVRE E AINDA AUXILIA A PROLONGAR
 	_ Tilix: https://gnunn1.github.io/tilix-web/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/06-tilix.md)
 
-	_ Ansible: https://www.ansible.com/
-		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/07-ansible.md)
-
 	_ Vagrant: https://www.vagrantup.com/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/08-vagrant.md)
 
@@ -216,6 +211,18 @@ O DESEMPENHO DO DISPOSITIVO, GERA MAIS ESPAÇO LIVRE E AINDA AUXILIA A PROLONGAR
 
 	_ WPS Office: http://linux.wps.com/
 		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/11-wpsoffice.md)
+
+	_ Arduino: https://www.arduino.cc/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/13-arduino.md)
+
+	_ Swap Off: https://wiki.archlinux.org/title/Swap_(Portugu%C3%AAs)
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/15-swapoff.md)
+
+	_ EdrawMax: https://www.edrawsoft.com/pt/edraw-max/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/17-edrawmax.md)
+
+	_ Eclipse: https://www.eclipse.org/downloads/
+		(link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/19-eclipse.md)
 
 	_ NotepadQQ: https://notepadqq.com/s/
 		sudo apt update && sudo apt install notepadqq
@@ -231,28 +238,19 @@ O DESEMPENHO DO DISPOSITIVO, GERA MAIS ESPAÇO LIVRE E AINDA AUXILIA A PROLONGAR
 		sudo apt update && sudo apt install kazam
 
 	_ Kdenlive: https://kdenlive.org/en/
-		(link da versão AppImage >=20.08.2: https://kdenlive.org/en/download/)
+		(link da versão AppImage >=23.08.x: https://kdenlive.org/en/download/)
 
 	_ Audacity: https://www.audacityteam.org/
 		sudo apt update && sudo apt install audacity
 
 	_ OBS Studio: https://obsproject.com/pt-br
 		(link da versão para Linux: https://obsproject.com/pt-br/download)
-		
-	_ Mega: https://mega.nz/
-		(link da versão >=: https://mega.nz/sync)
-
-	_ Teams: https://www.microsoft.com/pt-br/microsoft-365/microsoft-teams/download-app
-		(link da versão >=1.3.00: https://www.microsoft.com/pt-br/microsoft-365/microsoft-teams/download-app#desktopAppDownloadregion)
 
 	_ VLC: https://www.videolan.org/vlc/index.pt-BR.html
 		sudo apt update && sudo apt install vlc
-
-	_ Skype: https://www.skype.com/pt-br/
-		(link da versão >=8.66.0.74: https://www.skype.com/pt-br/get-skype/)<br>
 
 	_ Redshift: http://jonls.dk/redshift/
 		(nativo no Linux Mint, versão >= 1.12)
 
 	_ Timeshift: https://github.com/teejee2008/timeshift
-		(nativo no Linux Mint, versão >= 20.03)
+		(nativo no Linux Mint, versão >= 22.06)

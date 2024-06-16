@@ -7,13 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 14/01/2023<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.54<br>
+#Data de atualização: 22/03/2024<br>
+#Versão: 0.56<br>
 #Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 #Instalação do Eclipse IDE e OpenJDK/JRE 17.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do Eclipse IDE e OpenJDK/JRE 17.x no Linux Mint 21 Vanessa, 21.1 Vera e 21.2 Victoria x64
+#Instalação do Eclipse IDE e OpenJDK/JRE 17.x no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
 
 [![Eclipse IDE](http://img.youtube.com/vi/OQ-Hb4OOSJA/0.jpg)](https://www.youtube.com/watch?v=OQ-Hb4OOSJA "Eclipse IDE")
 
@@ -59,14 +59,17 @@ Site Oficial do Java: https://www.java.com/pt-BR/
 	sudo apt install git vim openjdk-17-jdk openjdk-17-jre openjdk-17-jre-headless \
 	software-properties-common build-essential
 
-	#OBSERVAÇÃO IMPORTANTE: USAR OUTRAS VERSÕES DO JAVA PODE ACARRETAR EM FALHAS DE PROJETO
-	#DE SOFTWARE, CUIDADO COM A VERSÃO DO JAVA UTILIZADO EM SEU PROJETO.
+	#OBSERVAÇÃO IMPORTANTE: USAR OUTRAS VERSÕES DO JAVA (OPENJDK) PODE ACARRETAR FALHAS NO 
+	#PROJETO DE SOFTWARE, CUIDADO COM A VERSÃO DO JAVA UTILIZADO EM SEU PROJETO.
 
 	#CASO QUEIRA UTILIZAR OUTRAS VERSÕES DO JAVA NO LINUX 21.x (EXECUTAR SOMENTE SE NECESSÁRIO)
 	sudo apt install git vim openjdk-18-jdk openjdk-18-jre openjdk-18-jre-headless \
 	software-properties-common build-essential
 	
 	sudo apt install git vim openjdk-19-jdk openjdk-19-jre openjdk-19-jre-headless \
+	software-properties-common build-essential
+
+	sudo apt install git vim openjdk-21-jdk openjdk-21-jre openjdk-21-jre-headless \
 	software-properties-common build-essential
 
 #03_ Verificando as Versões do Java instalado no Linux Mint<br>
@@ -79,9 +82,9 @@ Site Oficial do Java: https://www.java.com/pt-BR/
 
 #04_ Configurando o Versão do Java Padrão no Linux Mint<br>
 
-	#OBSERVAÇÃO IMPORTANTE: cuidado com a versão do Java que você for utilizar no seu projeto, 
-	versões diferentes pode causar falha de abertura do projeto ou erro na hora de executar a 
-	compilação e criação do arquivo WAN ou JAR.
+	#OBSERVAÇÃO IMPORTANTE: cuidado com a versão do Java que você está utilizando no seu projeto, 
+	#versões diferentes pode causar falhas de abertura do projeto ou erros na hora de executar a 
+	#compilação e criação do arquivo WAN ou JAR.
 	sudo update-alternatives --config java
 
 #05_ Download do Eclipse IDE no Linux Mint<br>
@@ -89,7 +92,7 @@ Site Oficial do Java: https://www.java.com/pt-BR/
 	#recomendo utilizar a versão do Eclipse IDE Enterprise Java e Web
 	Link do download: https://www.eclipse.org/downloads/packages/
 	Versão do Eclipse: Eclipse IDE for Enterprise Java and Web Developers
-		Linux x86_64: eclipse-jee-2023-09-R-linux-gtk-x86_64.tar.gz (atualizado em 12/11/2023)
+		Linux x86_64: eclipse-jee-2024-03-R-linux-gtk-x86_64.tar.gz (atualizado em 21/03/2024)
 
 #06_ Descompactar o Arquivo Zipado do Eclipse IDE no Linux Mint<br>
 
@@ -108,9 +111,9 @@ Site Oficial do Java: https://www.java.com/pt-BR/
 
 #08_ Configuração Básica do Eclipse IDE no Linux Mint<br>
 
-	OBSERVAÇÃO IMPORTANTE: devido ao Tema Black/Dark do Linux Mint o Eclipse IDE fica com 
-	uma aparência que os ícones/botões não aparece corretamente, para resolver esse problema 
-	recomendo utilizar o Tema Dark do Eclipse IDE.
+	#OBSERVAÇÃO IMPORTANTE: devido ao Tema Black/Dark do Linux Mint o Eclipse IDE fica com 
+	#uma aparência que os ícones/botões não aparece corretamente, para resolver esse problema 
+	#recomendo utilizar o Tema Dark do Eclipse IDE.
 
 	Windows
 		Preferences
@@ -124,6 +127,7 @@ Site Oficial do Java: https://www.java.com/pt-BR/
 
 	Terminal: Ctrl + Alt + T
 
+	#acessando o diretório de Workspace e clocando o projeto
 	cd eclipse-workspace/
 		git clone https://github.com/vaamonde/javaimc
 
