@@ -19,8 +19,9 @@
 
 Link da vídeo aula: https://www.youtube.com/watch?v=Uv2mebfheaI
 
-Site Oficial do VMware Workstation: https://www.vmware.com/br/products/workstation-pro.html<br>
-Site Oficial do VMware Store: https://store-us.vmware.com/vmware-workstation-17-pro-5709912600.html
+## Aviso
+#### Nas últimas semanas, a VMware passou por várias mudanças.<br>O VMware Workstation Pro 17.0 agora é gratuito, porém é necessário se registrar no site da Broadcom, que é a empresa desenvolvedora do software.
+Site Oficial do VMware Workstation: https://www.broadcom.com/<br>
 
 O QUE É E PARA QUE SERVER O VMWARE WORKSTATION: O VMware Workstation é uma linha de produtos<br>
 de hypervisor de desktop que permitem aos usuários executar máquinas virtuais, contêineres e<br>
@@ -92,13 +93,18 @@ clusters de Kubernetes.
 		sudo apt dist-upgrade
 		sudo apt autoremove
 		sudo apt autoclean
+#02_ Registre-se no site<br>
 
-#02_ Download do VMware Workstation Pro 17 (Build 17.5.0 26/11/2023)<br>
+	Link: https://profile.broadcom.com/web/registration
+	- Clique em 'Register' no canto superior direito se ainda não for registrado/a, ou Login.
+	- Siga as etapas de cadastro
+	
+#03_ Download do VMware Workstation Pro 17 (Build 17.5.2 10/05/2024)<br>
 
-	Link: https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html
+	Link: https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Workstation+Pro
 	Versão: Workstation 17 Pro for Linux
 
-#03_ Alterando as Permissões de Execução do Binário do VMware Workstation Pro<br>
+#04_ Alterando as Permissões de Execução do Binário do VMware Workstation Pro<br>
 
 	01_ Acessar o diretório de Download;
 	02_ Clicar com o Botão direito do mouse no binário do VMware-Workstation-Full-*.bundle;
@@ -107,13 +113,13 @@ clusters de Kubernetes.
 	05_ Clicar na opção: Permitir execução do arquivo como um programa.
 	<Fechar>
 
-#04_ Instalando o VMware Workstation Pro no Linux Mint<br>
+#05_ Instalando o VMware Workstation Pro no Linux Mint<br>
 
 	01_ Na pasta de Download, clicar com o botão direito do mouse e selecionar: Abrir no Terminal;
 	02_ Digitar o comando: sudo ./VMware-Workstation-Full-*.bundle
 	03_ Digitar a senha do seu usuário e aguardar a finalização da instalação.
 
-#05_ Configuração básica do VMware Workstation Pro no Linux Mint<br>
+#06_ Configuração básica do VMware Workstation Pro no Linux Mint<br>
 
 	01_ Na tela de License do VMware Workstation marque a opção: I accept the terms in the license agreement. <Next>
 	02_ Na tela de License do VMware Workstation marque a opção: I accept the terms in the license agreement. <Next>
