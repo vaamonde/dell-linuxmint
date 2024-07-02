@@ -7,7 +7,7 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 22/03/2024<br>
+#Data de atualização: 01/07/2024<br>
 #Versão: 0.10<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
@@ -25,6 +25,18 @@ Site Oficial do VMware Store: https://store-us.vmware.com/vmware-workstation-17-
 O QUE É E PARA QUE SERVER O VMWARE WORKSTATION: O VMware Workstation é uma linha de produtos<br>
 de hypervisor de desktop que permitem aos usuários executar máquinas virtuais, contêineres e<br>
 clusters de Kubernetes.
+
+OBSERVAÇÃO IMPORTANTE: A fabricante de chips Broadcom finalizou sua aquisição de US$ 69 bilhões<br>
+da VMware, fabricante de software em nuvem. O acordo foi finalmente concluído, apesar dos<br>
+obstáculos de aprovação regulatória impostos pela China.
+
+A empresa combinada se concentrará em ajudar as empresas a criar e modernizar seus ambientes<br>
+de nuvem privada e híbrida. Todavia, a VMware continuará a oferecer seu catálogo de software<br>
+para nuvem e Edge.
+
+23/11/2023 - Mais informações acesse: https://www.datacenterdynamics.com/br/not%C3%ADcias/broadcom-conclui-a-aquisicao-de-us-69-bilhoes-da-vmware/<br>
+23/11/2023 - Mais informações acesse: https://inforchannel.com.br/2023/11/23/broadcom-conclui-compra-da-vmware-e-acoes-deixam-de-ser-negociadas/<br>
+27/11/2023 - Mais informações acesse: https://www.cisoadvisor.com.br/broadcom-deve-concluir-compra-da-vmware-por-us-69-bi-na-quarta/
 
 #Tecnologias de Virtualização de Processadores AMD e Intel<br>
 
@@ -122,3 +134,91 @@ clusters de Kubernetes.
 	05_ Na tela de License Key marque a opção: I want to try VMware Workstation 16 for 30 days: <Finish>
 	06_ Na tela de autenticação, digite a senha do seu usuário e clique em: <Autenticar>
 	07_ Na tela de Information, clique em: <OK>
+
+#06_ Desinstalando o VMware Workstation Pro no Linux Mint<br>
+
+	OBSERVAÇÃO IMPORTANTE: No dia 13/05/2023 a VMware by Broadcom anunciou a versão do VMware
+	Workstation Pro 17 e VMware Fusion Pro 13 Free para uso pessoal no seu site oficial, agora
+	você pode baixar as versões e solicitar a chave de ativação no site da Broadcom.
+
+	Mas informações acesse: https://blogs.vmware.com/workstation/2024/05/vmware-workstation-pro-now-available-free-for-personal-use.html
+
+	Site para download da nova versão do VMWare Workstation Pro Free by Broadcom
+	Link VMware Workstation Pro Download: https://access.broadcom.com/default/ui/v1/signin/
+
+	A) Criando uma conta na Broadcom (User Registration)
+		Site: https://profile.broadcom.com/web/registration
+		
+		User Registration
+		Email Address: SEU_EMAIL
+		Caption: SEU_CAPTION
+		<Next>
+
+		Verify your Email Address
+		Code Number: CÓDIGO_DE_VERIFICAÇÃO
+		<Verify & Continue>
+
+		Complete your Registration
+		First Name: SEU_PRIMEIRO_NOME
+		Last Name: SEU_SOBRENOME
+		Country: Brazil
+		Job Title: SEU_TRABALHO
+		Password: SUA_SENHA
+		Confirm Password: CONFIRMA_SUA_SENHA
+		(ON) I accept the Terms of Use .Your privacy is important to us. Please see our 
+		Privacy Policy for more information.
+		<Create Account>
+		<I'll do it later>
+	
+	OBSERVAÇÃO IMPORTANTE: ANTES DE CLICAR NO LINK RECOMENDADO DEIXAR AUTENTICADO NO
+	SITE DA BROADCOM O SEU USUÁRIO PARA FACILITAR O DOWNLOAD DO VMWARE WORKSTATION.
+
+	B) Acessando o Link de Download do VMware Workstation Pro
+		Site: https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Workstation+Pro
+
+		Clique em: VMware Workstation Pro 17 for Personal Use (Linux)
+		Clique em: 17.5.2 (atualizado em: 01/07/2024)
+		Clique em: (ON) I agree toTerms and Conditions
+		Clique em: Ícone de Download (Screening Required)
+		
+		Prior to downloading this file, additional verification is required. Proceed? (YES)
+
+		Trade Compliance Verification: CONFIRME_SEU_DADOS 
+		(ON) I Agree <SUBMIT>
+
+		VMware Workstation Pro for Personal Use (For Linux) 17.5.2
+		Clique em: Ícone de Download (HTTPS Download)
+		Binário com cerca de: 511MB
+
+	C) Instalando o VMware Workstation Pro 17 for Personal Use (Linux)
+
+		Acesse o diretório downloads;
+		Clique com o botão direito do mouse em cima do binário: VMware-Workstation-Full*.bundle
+		Selecione: Propriedades
+		Clique na aba: Segurança
+		Marque a opção: Permitir execução do arquivo como um programa
+		<Fechar>
+
+		Clique com o botão direito do mouse na área de download
+		Selecione: Abrir no Terminal
+		Digite o comando: sudo ./VMware-Workstation-Full*.bundle
+
+	D) Welcome to VMware Workstation
+
+		I accept the therms in the license agreement: <Next>
+		I accept the therms in the license agreement: <Next>
+		Would you like to check for product update on startup? (YES) <Next>
+		Join the VMware Customer Experience Improvement Program (CEIP)? (YES) <Next>
+		I want to license VMware Workstation 17 for Personal Use: <Finish>
+			<DIGITE A SENHA DO SEU USUÁRIO COM DIREITOS A ROOT>
+		Thank you for using VMware Workstation 17! <OK>
+	
+	E) Verificando a Licença do VMWare Workstation Pro 17 for Personal Use
+
+		Help, About VMware Workstation 17 Pro.
+		License Information:
+			Status: Not Licensed
+			Type: Personal Use Only
+			Expiration: Not Applicable
+			Notes: For Commercial Use, purchase a license
+		
