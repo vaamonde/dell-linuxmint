@@ -137,6 +137,11 @@ para nuvem e Edge.
 
 #06_ Desinstalando o VMware Workstation Pro no Linux Mint<br>
 
+	#removendo o VMware Workstation Pro doo Linux Mint
+	#opções do comando vmware-installer: -l (list-products), -u (uninstall-product)
+	vmware-installer -l
+	vmware-installer -u
+
 	OBSERVAÇÃO IMPORTANTE: No dia 13/05/2023 a VMware by Broadcom anunciou a versão do VMware
 	Workstation Pro 17 e VMware Fusion Pro 13 Free para uso pessoal no seu site oficial, agora
 	você pode baixar as versões e solicitar a chave de ativação no site da Broadcom.
@@ -221,4 +226,46 @@ para nuvem e Edge.
 			Type: Personal Use Only
 			Expiration: Not Applicable
 			Notes: For Commercial Use, purchase a license
+	
+	F) Criando uma máquina Virtual do Ubuntu Server
+
+		Home VMware Workstation
+			Create a New Virtual Machine
 		
+		Virtual Machine Configuration
+			(ON) Custom (advanced): <Next>
+		Virtual Machine Hardware Compatibility
+			Hardware compatibility: Workstation 17.5.x: <Next>
+		Install operating system from
+			Use ISO image: <Browse> <Next>
+		Guest Operating System
+			(ON) 2. Linux
+			Version: Ubuntu <Next>
+		Virtual Machine Name
+			Name: wsvaamonde
+			Location: DEFAULT <Next>
+		Processors
+			Number of processors: 2
+			Number  fo cores per processor: 1
+			Total processor cores: 2 <Next>
+		Memory
+			Memory for this virtual machine: 4096MB <Next>
+		Network Connection
+			(ON) Use bridged networking <Next>
+		I/O Controller Types
+			SCI controller: LSI Logic (Recommended) <Next>
+		Virtual Disk type
+			SCSI (Recommended) <Next>
+		Disk
+			Create a new virtual disk <Next>
+		Disk Size
+			Maximum disk size (in GB): 50GB <Next>
+		Disk File
+			File name: wsvaamonde.vmdk <Next>
+		<Finish>
+		<Close>
+
+	G) Iniciando a Máquina Virtual do Ubuntu Server
+
+		Library: wsvaamonde <Play/Star up>
+
