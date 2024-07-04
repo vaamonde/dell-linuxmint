@@ -137,14 +137,14 @@ para nuvem e Edge.
 
 #06_ Desinstalando o VMware Workstation Pro no Linux Mint<br>
 
-	#removendo o VMware Workstation Pro doo Linux Mint
+	#removendo o VMware Workstation Pro do Linux Mint
 	#opções do comando vmware-installer: -l (list-products), -u (uninstall-product)
-	vmware-installer -l
-	vmware-installer -u
+	sudo vmware-installer -l
+	sudo vmware-installer -u
 
 	OBSERVAÇÃO IMPORTANTE: No dia 13/05/2023 a VMware by Broadcom anunciou a versão do VMware
 	Workstation Pro 17 e VMware Fusion Pro 13 Free para uso pessoal no seu site oficial, agora
-	você pode baixar as versões e solicitar a chave de ativação no site da Broadcom.
+	você pode baixar as versões no site da Broadcom.
 
 	Mas informações acesse: https://blogs.vmware.com/workstation/2024/05/vmware-workstation-pro-now-available-free-for-personal-use.html
 
