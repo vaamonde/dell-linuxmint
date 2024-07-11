@@ -7,9 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 02/07/2024<br>
-#Data de atualização: 02/07/2024<br>
-#Versão: 0.01<br>
+#Data de atualização: 11/07/2024<br>
+#Versão: 0.02<br>
 #Testado e homologado no Linux Mint 22 Wilma
+
+[![Linux Mint 22](http://img.youtube.com/vi/N3VOFyWKsM/0.jpg)](https://www.youtube.com/watch?v=NN3VOFyWKsM "Linux Mint 22")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=NN3VOFyWKsM
 
 #Lançamentos Oficiais do Linux Mint
 
