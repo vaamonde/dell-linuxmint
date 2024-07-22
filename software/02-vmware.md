@@ -118,11 +118,11 @@ sudo apt clean
 ```
 
 #02_ Download do VMware Workstation Pro 17 (Build 17.5.0 26/11/2023)<br>
-```bash
-#download do VMWare Workstation do site oficial
-Link: https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html
-Versão: Workstation 17 Pro for Linux
-```
+
+	#download do VMWare Workstation do site oficial
+	Link: https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html
+	Versão: Workstation 17 Pro for Linux
+
 
 #03_ Alterando as Permissões de Execução do Binário do VMware Workstation Pro<br>
 ```bash
@@ -165,16 +165,18 @@ sudo vmware-installer -u
 #OBSERVAÇÃO IMPORTANTE: No dia 13/05/2023 a VMware by Broadcom anunciou a versão do VMware
 #Workstation Pro 17 e VMware Fusion Pro 13 Free para uso pessoal no seu site oficial, agora
 #você pode baixar as versões no site da Broadcom.
-
-#link sobre informações da versão Pro Free do VMware Workstation
-Mas informações acesse: https://blogs.vmware.com/workstation/2024/05/vmware-workstation-pro-now-available-free-for-personal-use.html
 ```
 
-#07_ Baixando a Nova Versão PRO FREE do VMware Workstation do site da Broadcom<br>
-```bash
-#Site para cadastro no site da Broadcom
-Link VMware Workstation Pro Download: https://access.broadcom.com/default/ui/v1/signin/
+	#link sobre informações da versão Pro Free do VMware Workstation
+	Mas informações acesse: https://blogs.vmware.com/workstation/2024/05/vmware-workstation-pro-now-available-free-for-personal-use.html
 
+
+#07_ Baixando a Nova Versão PRO FREE do VMware Workstation do site da Broadcom<br>
+
+	#Site para cadastro no site da Broadcom
+	Link VMware Workstation Pro Download: https://access.broadcom.com/default/ui/v1/signin/
+
+```bash
 A) Criando uma conta na Broadcom (User Registration)
 	Site: https://profile.broadcom.com/web/registration
 	

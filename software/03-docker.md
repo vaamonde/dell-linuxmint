@@ -15,7 +15,7 @@
 
 #Instalação do Docker CE no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do Docker CE no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
-#Instalação do Docker CE Linux Mint 22 Wilma x64<br>
+#Instalação do Docker CE no Linux Mint 22 Wilma x64<br>
 
 [![Docker CE](http://img.youtube.com/vi/iOI6V5iR9Cw/0.jpg)](https://www.youtube.com/watch?v=iOI6V5iR9Cw "Docker CE")
 

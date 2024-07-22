@@ -7,13 +7,15 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 20/03/2024<br>
-#Versão: 0.14<br>
+#Data de atualização: 22/07/2024<br>
+#Versão: 0.15<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
+#Testado e homologado no Linux Mint 22 Wilma x64<br>
 
 #Instalação do Packet Tracer no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do Packet Tracer no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
+#Instalação do Packet Tracer no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
+#Instalação do Packet Tracer no Linux Mint 22 Wilma x64<br>
 
 [![Packet Tracer 8.1.x](http://img.youtube.com/vi/yFS2d93-hbw/0.jpg)](https://www.youtube.com/watch?v=yFS2d93-hbw "Packet Tracer 8.1.x")
 
@@ -34,46 +36,49 @@ presente em situações reais. O programa apresenta uma interface gráfica simpl
 multimídia que auxiliam na confecção das simulações.
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
-
-	Terminal: Ctrl + Alt + T
-
-	#verificando as versões e codinome do sistema operacional
-	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
-	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
-
-	#OBSERVAÇÃO IMPORTANTE: outro detalhe muito importante do Linux Mint com o Ambiente Gráfico 
-	#Cinnamon é que ele possui a maioria das dependência do Qt e GTK, por causa disso que o Cisco 
-	#Packet Tracer funciona muito bem no Mint com o ambiente gráfico Cinnamon, isso não acontece 
-	#nos Ambientes Gráficos MATE ou XFCE ou na versão LMDE que não possui essas dependências.
+```bash
+#atalho para acessar o Terminal
+Terminal: Ctrl + Alt + T
 	
-	#verificando as versões e codinome
-	sudo cat /etc/os-release
-	sudo cat /etc/lsb-release
+#verificando as versões e codinome do sistema operacional
+#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
+#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+#OBSERVAÇÃO IMPORTANTE: Linux Mint 22.x é derivado do Ubuntu Desktop 24.04.x Noble Numbat
+sudo cat /etc/os-release
+sudo cat /etc/lsb-release
 	
-	#verificando a versão do ambiente gráfico
-	sudo cinnamon --version
+#verificando a versão do ambiente gráfico
+sudo cinnamon --version
 
-	#verificando informações de hardware e processador
-	#opções do comando inxi: -C (cpu), -M (machine), -S (system), -f (flags), -xxx (extra 3)
-	sudo inxi -CMSfxxx
-	sudo lscpu
+#verificando informações de hardware e processador
+#opções do comando inxi: -C (cpu), -M (machine), -S (system), -f (flags), -xxx (extra 3)
+sudo inxi -CMSfxxx
+sudo lscpu
 
-	#modo gráfico para verificar as informações de sistema operacional e hardware
-	Menu
-		Informações do Sistema
-		
+#modo gráfico para verificar as informações de sistema operacional e hardware
+Menu
+	Informações do Sistema
+```
+
 #01_ Atualização do Sistema Operacional Linux Mint<br>
+```bash
+#atualizando o sistema operacional via MintUpdate (Recomendado)
+_ Atualização do sistema utilizando o MintUpdate;
+_ Atualização do sistema utilizando o Apt;
 
-	_ Atualização do sistema utilizando o MintUpdate;
-	_ Atualização do sistema utilizando o Apt;
+#atualizando o sistema operacional via Terminal
+#atalho para acessar o Terminal
+Terminal: Ctrl + Alt + T
 
-	Terminal: Ctrl + Alt + T
-		sudo apt update
-		sudo apt upgrade
-		sudo apt full-upgrade
-		sudo apt dist-upgrade
-		sudo apt autoremove
-		sudo apt autoclean
+#recomendo utilizando o comando: apt - o comando: apt-get e considerado obsoleto
+sudo apt update
+sudo apt upgrade
+sudo apt full-upgrade
+sudo apt dist-upgrade
+sudo apt autoremove
+sudo apt autoclean
+sudo apt clean
+```
 
 #02_ Download do Cisco Packet Tracer para Linux<br>
 
@@ -87,78 +92,88 @@ multimídia que auxiliam na confecção das simulações.
 	PARA CRIAR UMA CONTA NO NETACAD ACESSE O LINK: https://id.cisco.com/signin/register
 
 #03_ Instalando o Cisco Packet Tracer no Linux Mint<br>
+```bash
+#instalar o Cisco Packet Tracer em modo Gráfico
+01_ Na pasta de Download, clicar duas vezes no Instalador do Cisco Packet Tracer;
+02_ Na tela do Gdebi clique em: <Instalar Pacote>.
+	(Digite a sua senha para instalar o pacote)
+03_ Na tela: Software License Agreement clique em: <Next>
+04_ Marque a opção: do you accept the terms of this EULA?: <Yes> clique em: <Next>
 
-	01_ Na pasta de Download, clicar duas vezes no Instalador do Cisco Packet Tracer;
-	02_ Na tela do Gdebi clique em: <Instalar Pacote>.
-		(Digite a sua senha para instalar o pacote)
-	03_ Na tela: Software License Agreement clique em: <Next>
-	04_ Marque a opção: do you accept the terms of this EULA?: <Yes> clique em: <Next>
+#OBSERVAÇÃO IMPORTANTE: se você utilizar o Gdebi para instalar o Cisco Packet Tracer e apresentar
+#uma falha no final da instalação, recomendo utilizar o comando: dpkg para forçar a instalação em 
+#modo Terminal. UTILIZAR ESSE PROCEDIMENTO SOMENTE SE TIVER FALHA NA INSTALAÇÃO EM MODO GRÁFICO.
 
-	#OBSERVAÇÃO IMPORTANTE: se você utilizar o Gdebi para instalar o Cisco Packet Tracer e apresentar
-	#uma falha no final da instalação, recomendo utilizar o comando: dpkg para forçar a instalação em 
-	#modo Terminal. UTILIZAR ESSE PROCEDIMENTO SOMENTE SE TIVER FALHA NA INSTALAÇÃO EM MODO GRÁFICO.
+#atalho para acessar o Terminal
+Terminal: Ctrl + Alt + T
 
-	Terminal: Ctrl + Alt + T
-
-	#instalando o Cisco Packet Tracer via linha de comando
-	#opção do comando dpkg: -i (install)
-	sudo dpkg -i CiscoPacketTracer*.deb
-		Na tela de: Configurando PacketTracer pressione Enter em: <OK>
-		Na tela de: Do you accept the terms of this EULA? selecione: <Sim> e <Enter>
+#instalando o Cisco Packet Tracer via linha de comando
+#opção do comando dpkg: -i (install)
+sudo dpkg -i CiscoPacketTracer*.deb
+	Na tela de: Configurando PacketTracer pressione Enter em: <OK>
+	Na tela de: Do you accept the terms of this EULA? selecione: <Sim> e <Enter>
+```
 
 #04_ Verificando se todas as Bibliotecas do Cisco Packet foram instaladas no Linux Mint<br>
+```bash
+#atalho para acessar o Terminal
+Terminal: Ctrl + Alt + T
 
-	Terminal: Ctrl + Alt + T
+#verificando as dependência do binário do Cisco Packet Tracer
+#opção do comando ldd: -v (verbose)
+sudo ldd -v /opt/pt/bin/PacketTracer
 
-	#verificando as dependência do binário do Cisco Packet Tracer
-	#opção do comando ldd: -v (verbose)
-	sudo ldd -v /opt/pt/bin/PacketTracer
+#filtrando as dependências não encontrado do Cisco Packet Tracer
+#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
+sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
 
-	#filtrando as dependências não encontrado do Cisco Packet Tracer
-	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
-	sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
+#INSTALANDO AS DEPENDÊNCIAS DO CISCO PACKET TRACER NO LINUX MINT 20.x
+#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
+#opção da contra barra (\): criar uma quebra de linha no terminal
+sudo apt install libqt5networkauth5 libqt5script5 libqt5scripttools5 git vim python2 python3
 
-	#INSTALANDO AS DEPENDÊNCIAS DO CISCO PACKET TRACER NO LINUX MINT 20.x
-	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
-	#opção da contra barra (\): criar uma quebra de linha no terminal
-	sudo apt install libqt5networkauth5 libqt5script5 libqt5scripttools5 git vim python2 python3
-	
-	#filtrando as dependências não encontrado do Cisco Packet Tracer
-	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
-	sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
+#filtrando as dependências não encontrado do Cisco Packet Tracer
+#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
+sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
 
-	#OBSERVAÇÃO IMPORTANTE: as dependências: libQt5QmlModels.so.5 e o erro: /lib/x86_64-linux-gnu/libQt5Core.so.5: 
-	#version `Qt_5.15' not found não interfere diretamente no funcionamento do Cisco Packet Tracer 8.1.x ou 8.2.x
-	#no Linux Mint 20.x, essas dependências fazem parte da versão do Ubuntu >= 21.04, verifique a versão do Qt5Core 
-	#instalada no Linux Mint 20.x com o comando: sudo locate libQt5Core
+#OBSERVAÇÃO IMPORTANTE: as dependências: libQt5QmlModels.so.5 e o erro: /lib/x86_64-linux-gnu/libQt5Core.so.5: 
+#version `Qt_5.15' not found não interfere diretamente no funcionamento do Cisco Packet Tracer 8.1.x ou 8.2.x
+#no Linux Mint 20.x, essas dependências fazem parte da versão do Ubuntu >= 21.04, verifique a versão do Qt5Core 
+#instalada no Linux Mint 20.x com o comando: sudo locate libQt5Core
 
-	#INSTALANDO AS DEPENDÊNCIAS DO CISCO PACKET TRACER NO LINUX MINT 21.x
-	#opção da contra barra (\): criar uma quebra de linha no terminal
-	sudo apt install libqt5networkauth5 libqt5script5 libqt5scripttools5 libqt5texttospeech5 libqt5positioning5 \
-	libqt5qml5 libqt5webchannel5 libqt5qmlmodels5 libqt5quick5 libqt5webenginecore5 libqt5webenginewidgets5 git \
-	vim python2 python3 libqt5websockets5 libqt5multimedia5 
+#INSTALANDO AS DEPENDÊNCIAS DO CISCO PACKET TRACER NO LINUX MINT 21.x
+#opção da contra barra (\): criar uma quebra de linha no terminal
+sudo apt install libqt5networkauth5 libqt5script5 libqt5scripttools5 libqt5texttospeech5 libqt5positioning5 \
+libqt5qml5 libqt5webchannel5 libqt5qmlmodels5 libqt5quick5 libqt5webenginecore5 libqt5webenginewidgets5 git \
+vim python2 python3 libqt5websockets5 libqt5multimedia5 
 
-	OBSERVAÇÃO IMPORTANTE: o tempo todo a Biblioteca LibSSL sofre alteração de versão, antes de baixar a versão
-	acesse o site: http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/ e veja qual a versão atual, altere
-	o script e faça o download.
+#OBSERVAÇÃO IMPORTANTE: o tempo todo a Biblioteca LibSSL sofre alteração de versão, antes de baixar a versão
+#acesse o site: http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/ e veja qual a versão atual, altere
+#o script e faça o download.
 
-	#Resolvendo a falha das bibliotecas libssl.so.1.1 e libcrypto.so.1.1 no Linux Mint 21.x
-	#opção do comando dpkg: -i (install)
-	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
-	#link de download da Biblioteca do LibSSL (atualizado no dia: 06/03/2024)
-	wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb
-	sudo dpkg -i libssl1.1_1.1.1*.deb
+#Resolvendo a falha das bibliotecas libssl.so.1.1 e libcrypto.so.1.1 no Linux Mint 21.x
+#opção do comando dpkg: -i (install)
+#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
+#link de download da Biblioteca do LibSSL (atualizado no dia: 06/03/2024)
+wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb
+sudo dpkg -i libssl1.1_1.1.1*.deb
 
-	#filtrando as dependências não encontrado do Cisco Packet Tracer
-	#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando	
-	sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
+#filtrando as dependências não encontrado do Cisco Packet Tracer
+#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando	
+sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
+```
 
 #05_ Atualização para a Versão 8.2.0 do Cisco Packet Tracer
 
-	Atualização feita em Julho/2022 - procedimento no Linux Mint versões 20.x e 21.x continua a mesma coisa.
+	Atualização feita em Julho/2022 - procedimento no Linux Mint versões 20.x,21.x e 22.x continua a mesma coisa.
 	Mais informações: https://www.packettracernetwork.com/features/packettracer-81-newfeatures.html
 
 #06_ Atualização para a Versão 8.2.1 do Cisco Packet Tracer
 
-	Atualização feita em Março/2023 - procedimento no Linux Mint versões 20.x e 21.x continua a mesma coisa.
+	Atualização feita em Março/2023 - procedimento no Linux Mint versões 20.x, 21.x e 22.x continua a mesma coisa.
 	Mais informações: https://www.packettracernetwork.com/features/packettracer-82-newfeatures.html
+
+#07_ Atualização para a Versão 8.2.2 do Cisco Packet Tracer
+
+	Atualização feita em Março/2023 - procedimento no Linux Mint versões 20.x, 21.x e 22.x continua a mesma coisa.
+	Mais informações: https://www.packettracernetwork.com/download/download-packet-tracer.html
