@@ -81,15 +81,17 @@ sudo apt clean
 ```
 
 #02_ Download do Cisco Packet Tracer para Linux<br>
+```bash
+Link Oficial do Netacad: https://www.netacad.com/pt-br/courses/packet-tracer
+Link Oficial do Packet Tracer Network: https://www.packettracernetwork.com/
+Link do Mega.nz do Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7XzImP01M1SyRm2g/folder/vll2iSDI
 
-	Link Oficial do Netacad: https://www.netacad.com/pt-br/courses/packet-tracer
-	Link Oficial do Packet Tracer Network: https://www.packettracernetwork.com/
-	Link do Mega.nz do Bora para Prática: https://mega.nz/folder/Co9GHIyK#2kzNnN7XzImP01M1SyRm2g/folder/vll2iSDI
+DICA: RECOMENDO VOCÊ FAZER UMA CONTA NO NETACAD DA CISCO NO CURSO GRATUITO DO CISCO PACKET
+TRACER DISPONÍVEL NA PLATAFORMA NO LINK: 
+https://skillsforall.com/pt/learningcollections/cisco-packet-tracer?courseLang=pt-BR
 
-	DICA: RECOMENDO VOCÊ FAZER UMA CONTA NO NETACAD DA CISCO NO CURSO GRATUITO DO CISCO PACKET TRACER
-	DISPONÍVEL NA PLATAFORMA NO LINK: https://skillsforall.com/pt/learningcollections/cisco-packet-tracer?courseLang=pt-BR
-
-	PARA CRIAR UMA CONTA NO NETACAD ACESSE O LINK: https://id.cisco.com/signin/register
+PARA CRIAR UMA CONTA NO NETACAD ACESSE O LINK: https://id.cisco.com/signin/register
+```
 
 #03_ Instalando o Cisco Packet Tracer no Linux Mint<br>
 ```bash
@@ -164,16 +166,19 @@ sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
 ```
 
 #05_ Atualização para a Versão 8.2.0 do Cisco Packet Tracer
-
-	Atualização feita em Julho/2022 - procedimento no Linux Mint versões 20.x,21.x e 22.x continua a mesma coisa.
-	Mais informações: https://www.packettracernetwork.com/features/packettracer-81-newfeatures.html
+```bash
+Atualização feita em Julho/2022 - procedimento no Linux Mint versões 20.x,21.x e 22.x continua a mesma coisa.
+Mais informações: https://www.packettracernetwork.com/features/packettracer-81-newfeatures.html
+```
 
 #06_ Atualização para a Versão 8.2.1 do Cisco Packet Tracer
-
-	Atualização feita em Março/2023 - procedimento no Linux Mint versões 20.x, 21.x e 22.x continua a mesma coisa.
-	Mais informações: https://www.packettracernetwork.com/features/packettracer-82-newfeatures.html
+```bash
+Atualização feita em Março/2023 - procedimento no Linux Mint versões 20.x, 21.x e 22.x continua a mesma coisa.
+Mais informações: https://www.packettracernetwork.com/features/packettracer-82-newfeatures.html
+```
 
 #07_ Atualização para a Versão 8.2.2 do Cisco Packet Tracer
-
-	Atualização feita em Março/2023 - procedimento no Linux Mint versões 20.x, 21.x e 22.x continua a mesma coisa.
-	Mais informações: https://www.packettracernetwork.com/download/download-packet-tracer.html
+```bash
+Atualização feita em Março/2023 - procedimento no Linux Mint versões 20.x, 21.x e 22.x continua a mesma coisa.
+Mais informações: https://www.packettracernetwork.com/download/download-packet-tracer.html
+```

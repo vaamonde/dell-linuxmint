@@ -90,18 +90,18 @@ mkdir -pv ~/.local/share/fonts/Hack
 #acessando o diretório das fontes Hack (link atualizado no dia 15/11/2023)
 cd ~/.local/share/fonts/Hack
 
-	#baixando as fontes do Github (link atualizado em: 03/12/2024)
-	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip
-	
-	#descompactando o arquivo zipado das fontes
-	unzip Hack.zip
-	
-	#atualizando o cache de fontes do sistema operacional com as novas fontes
-	#opção do comando fc-cache: -f (Force up-to-date cache files), -v (Display status)
-	fc-cache -f -v
-	
-	#saindo do terminal
-	exit
+#baixando as fontes do Github (link atualizado em: 03/12/2024)
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip
+
+#descompactando o arquivo zipado das fontes
+unzip Hack.zip
+
+#atualizando o cache de fontes do sistema operacional com as novas fontes
+#opção do comando fc-cache: -f (Force up-to-date cache files), -v (Display status)
+fc-cache -f -v
+
+#saindo do terminal
+exit
 ```
 
 #04_ Configurando o Tilix como Terminal Padrão no Linux Mint<br>

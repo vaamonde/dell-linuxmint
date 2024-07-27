@@ -7,13 +7,15 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 15/08/2022<br>
-#Data de atualização: 12/11/2023<br>
-#Versão: 0.07<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x644
+#Data de atualização: 27/07/2024<br>
+#Versão: 0.08<br>
+#Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
+#Testado e homologado no Linux Mint 22 Wilma x64<br>
 
 #Instalação do Arduino IDE 2.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do Arduino IDE 2.x no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
+#Instalação do Arduino IDE 2.x no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
+#Instalação do Arduino IDE 2.x no Linux Mint 22 Wilma<br>
 
 [![Arduino 2.x](http://img.youtube.com/vi/ByK8ADwI2mY/0.jpg)](https://www.youtube.com/watch?v=ByK8ADwI2mY "Arduino 2.x")
 
@@ -28,74 +30,110 @@ Site Oficial do Arduino Profile: https://id.arduino.cc/<br>
 Site Oficial do Fritzing: https://fritzing.org/
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
+```bash
+#atalho para acessar o Terminal
+Terminal: Ctrl + Alt + T
 
-	Terminal: Ctrl + Alt + T
+#verificando as versões e codinome do sistema operacional
+#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
+#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+#OBSERVAÇÃO IMPORTANTE: Linux Mint 22.x é derivado do Ubuntu Desktop 24.04.x Noble Numbat
+sudo cat /etc/os-release
+sudo cat /etc/lsb-release
 
-	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
-	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
-	sudo cat /etc/os-release
-	sudo cat /etc/lsb-release
-	sudo localectl
-
-	Menu
-		Informações do Sistema
+#modo gráfico para verificar as informações de sistema operacional e hardware
+Menu
+	Informações do Sistema
+```
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
+```bash
+#atualizando o sistema operacional via MintUpdate (Recomendado)
+_ Atualização do sistema utilizando o MintUpdate;
+_ Atualização do sistema utilizando o Apt;
 
-	_ Atualização do sistema utilizando o MintUpdate;
-	_ Atualização do sistema utilizando o Apt;
+#atualizando o sistema operacional via Terminal
+#atalho para acessar o Terminal
+Terminal: Ctrl + Alt + T
 
-	Terminal: Ctrl + Alt + T
-		sudo apt update
-		sudo apt upgrade
-		sudo apt full-upgrade
-		sudo apt dist-upgrade
-		sudo apt autoremove
-		sudo apt autoclean
+#recomendo utilizando o comando: apt - o comando: apt-get e considerado obsoleto
+sudo apt update
+sudo apt upgrade
+sudo apt full-upgrade
+sudo apt dist-upgrade
+sudo apt autoremove
+sudo apt autoclean
+sudo apt clean
+```
 
 #02_ Plugar o Arduino na porta USB no Linux Mint<br>
+```bash
+#OBERVAÇÃO: verificar se os LED's de indicação do Arduino começa a piscar
+```
 
-	#OBERVAÇÃO: verificar se os LED's de indicação do Arduino começa a piscar
+#03_ Instalando as Dependências desse procedimento no Linux Mint<br>
+```bash
+#instalação das dependências desse procedimento
+sudo apt install git vim python2 python3 pip
+```
 
-#03_ Clonar o Projeto do Github<br>
+#04_ Clonar o Repositório do Projeto do Github<br>
+```bash
+#clocando o projeto do Github
+git clone https://github.com/vaamonde/arduino
+```
 
-	git clone https://github.com/vaamonde/arduino
+#05_ Acessando o diretório clocando do Arduino<br>
+```bash
+#acessando o repositório clonado
+cd arduino/
+```
 
-#04_ Acessando o diretório clocando do Arduino<br>
+#06_ Executando o script de Instalação do Arduino IDE 2.x no Linux Mint<br>
+```bash
+#INSTALAÇÃO DO ARDUINO IDE NO LINUX MINT 20.x
+bash install20.sh
 
-	cd arduino/
+#INSTALAÇÃO DO ARDUINO IDE NO LINUX MINT 21.x
+bash install21.sh
 
-#05_ Executando o script de Instalação do Arduino IDE 2.x no Linux Mint<br>
+#INSTALAÇÃO DO ARDUINO IDE NO LINUX MINT 22.x
+bash install22.sh
+```
 
-	#INSTALAÇÃO DO ARDUINO IDE NO LINUX MINT 20.x
-	bash install20.sh
+#07_ Executando o Arduino IDE 2.x no Linux Mint<br>
+```bash
+#executando o binário do arquivo no Linux Mint
+arduino-20
+```
 
-	#INSTALAÇÃO DO ARDUINO IDE NO LINUX MINT 21.x
-	bash install21.sh
+#08_ Verificando as Informações do Hardware do Arduino no Linux Mint<br>
+```bash
+#configuração básica da IDE do Arduino
+Arduino IDE 2.2.x
+	Tools
+		Board "Arduino Uno"
+		Port: "/dev/ttyACM0"
+		Get Board Info
+```
 
-#06_ Executando o Arduino IDE 2.x no Linux Mint<br>
+#09_ Executando um projeto básico do Arduino IDE no Linux Mint<br>
+```bash
+#iniciando um script de teste do Arduino
+File
+	Examples
+		01. Basics
+			Blink
+				Upload
+```
 
-	arduino-20
+#10_ Verificando as Informações do Hardware do Arduino utilizando o Arduino-Cli<br>
+```bash
+#atalho para acessar o Terminal
+Terminal: Ctrl + Alt + T
 
-#07_ Verificando as Informações do Hardware do Arduino no Linux Mint<br>
-
-	Arduino IDE 2.2.x
-		Tools
-			Board "Arduino Uno"
-			Port: "/dev/ttyACM0"
-			Get Board Info
-
-#08_ Executando um projeto básico do Arduino IDE no Linux Mint<br>
-
-	File
-		Examples
-			01. Basics
-				Blink
-					Upload
-
-#09_ Verificando as Informações do Hardware do Arduino utilizando o Arduino-Cli<br>
-
-	Terminal (Ctrl + Alt + T)
-		arduino-cli
-		arduino-cli version
-		arduino-cli board list
+#utilizar o Arduino CLI para verificar informações do hardware
+arduino-cli
+arduino-cli version
+arduino-cli board list
+```

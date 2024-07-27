@@ -7,13 +7,15 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 08/11/2022<br>
-#Data de atualização: 22/03/2024<br>
-#Versão: 0.06<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
+#Data de atualização: 27/07/2024<br>
+#Versão: 0.07<br>
+#Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
+#Testado e homologado no Linux Mint 22 Wilma x64<br>
 
 #Instalação do Unifi Network Application (Antigo Unifi Controller) no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do Unifi Network Application (Antigo Unifi Controller) no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
+#Instalação do Unifi Network Application (Antigo Unifi Controller) no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
+#Instalação do Unifi Network Application (Antigo Unifi Controller) no Linux Mint 22 Wilma x64<br>
 
 [![Unifi Network](http://img.youtube.com/vi/yLnSGN_hmkg/0.jpg)](https://www.youtube.com/watch?v=yLnSGN_hmkg "Unifi Network")
 
@@ -33,142 +35,168 @@ Site do SpeedTest: https://www.speedtest.net/pt<br>
 Site do Fast: https://fast.com/pt/
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
+```bash
+#atalho para acessar o Terminal
+Terminal: Ctrl + Alt + T
 
-	Terminal: Ctrl + Alt + T
+#verificando as versões e codinome do sistema operacional
+#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
+#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+#OBSERVAÇÃO IMPORTANTE: Linux Mint 22.x é derivado do Ubuntu Desktop 24.04.x Noble Numbat
+sudo cat /etc/os-release
+sudo cat /etc/lsb-release
 
-	#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
-	#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
-	sudo cat /etc/os-release
-	sudo cat /etc/lsb-release
-	sudo localectl
+#verificando informações de localidade
+sudo localectl
 
-	Menu
-		Informações do Sistema
+#modo gráfico para verificar as informações de sistema operacional e hardware
+Menu
+	Informações do Sistema
+```
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
+```bash
+#atualizando o sistema operacional via MintUpdate (Recomendado)
+_ Atualização do sistema utilizando o MintUpdate;
+_ Atualização do sistema utilizando o Apt;
 
-	_ Atualização do sistema utilizando o MintUpdate;
-	_ Atualização do sistema utilizando o Apt;
+#atualizando o sistema operacional via Terminal
+#atalho para acessar o Terminal
+Terminal: Ctrl + Alt + T
 
-	Terminal: Ctrl + Alt + T
-		sudo apt update
-		sudo apt upgrade
-		sudo apt full-upgrade
-		sudo apt dist-upgrade
-		sudo apt autoremove
-		sudo apt autoclean
+#recomendo utilizando o comando: apt - o comando: apt-get e considerado obsoleto
+sudo apt update
+sudo apt upgrade
+sudo apt full-upgrade
+sudo apt dist-upgrade
+sudo apt autoremove
+sudo apt autoclean
+sudo
+```
 
 #02_ Ligar os Access Point Ubiquiti Unifi no Ejetor PoE ou no Switch PoE<br>
-
-	#OBERVAÇÃO IMPORTANTE: verificar se os LED's de indicação do Unifi estão na cor: Ambar 
-	#(laranja) ou Branco que significa que ainda não foram adotados.
+```bash
+#OBERVAÇÃO IMPORTANTE: verificar se os LED's de indicação do Unifi estão na cor: Ambar 
+#(laranja) ou Branco que significa que ainda não foram adotados.
+```
 
 #03_ Instalar as dependências desse script no Linux Mint<br>
-
-	Terminal: Ctrl + Alt + T
+```bash
+#atalho para acessar o Terminal
+Terminal: Ctrl + Alt + T
 	
-	#instalando as dependências do script
-	sudo apt update
-	sudo apt install git vim nmap python2 python3
+#instalando as dependências do script
+sudo apt update
+sudo apt install git vim nmap python2 python3 pip
+```
 
 #04_ Verificando os Dispositivos Ubiquiti Unifi conectados na rede no Linux Mint<br>
+```bash
+#atalho para acessar o Terminal
+Terminal: Ctrl + Alt + T
 
-	Terminal: Ctrl + Alt + T
-	
-	#utilizar o software nmap para escanear a rede
-	sudo nmap 192.168.0.0/24
+#utilizar o software nmap para escanear a rede
+sudo nmap 192.168.0.0/24
 
-	#utilização de Software Gráficos
-	Wifiman AppImage
-	Wifiman Google Chrome
+#utilização de Software Gráficos
+Wifiman AppImage
+Wifiman Google Chrome
+```
 
 #05_ Clonar o Projeto do Github do script do Ubiquiti Unifi para Linux Mint<br>
+```bash
+#atalho para acessar o Terminal
+Terminal: Ctrl + Alt + T
 
-	Terminal: Ctrl + Alt + T
+#OBSERVAÇÃO IMPORTANTE: recomendo utilizar o Script de Instalação no perfil do usuário
+#Root para facilitar o procedimento.
 
-	#OBSERVAÇÃO IMPORTANTE: recomendo utilizar o Script de Instalação no perfil do usuário
-	#Root para facilitar o procedimento.
+#mudando para o usuário Root	
+#opção do comando sudo: -i (login)
+sudo -i
 
-	#mudando para o usuário Root	
-	#opção do comando sudo: -i (login)
-	sudo -i
-
-	#clocando o projeto do Github
-	git clone https://github.com/vaamonde/ubiquiti-unifi
+#clocando o projeto do Github
+git clone https://github.com/vaamonde/ubiquiti-unifi
+```
 
 #06_ Acessando o diretório clocando do Ubiquiti Unifi no Linux Mint<br>
+```bash
+#listando o diretório clonado
+#opção do comando ls: -l (list), -h (human-readable)
+ls -lh
 
-	#listando o diretório clonado
-	#opção do comando ls: -l (list), -h (human-readable)
-	ls -lh
-
-	#acessando o diretório clonado
-	cd ubiquiti-unifi/
+#acessando o diretório de scripts clonado
+cd ubiquiti-unifi/scripts
+```
 
 #07_ Executando o script de Instalação do Ubiquiti Unifi Network no Linux Mint<br>
+```bash
+#INSTALANDO O UNIFI CONTROLLER NO LINUX MINT 20.x
+bash unifi-mint20.sh
 
-	#INSTALANDO O UNIFI CONTROLLER NO LINUX MINT 20.x
-	bash unifi-mint20.sh
+#acessando o diretório de Log do Linux Mint
+cd /var/log/
 
-	#acessando o diretório de Log do Linux Mint
-	cd /var/log/
-	
-	#listando o arquivo de Log
-	#opção do comando ls: -l (list), -h (human-readable)
-	ls -lh unifi-mint-20.sh
+#listando o arquivo de Log
+#opção do comando ls: -l (list), -h (human-readable)
+ls -lh unifi-mint-20.sh
 
-	#INSTALANDO O UNIFI CONTROLLER NO LINUX MINT 21.x
-	bash unifi-mint21.sh
+#INSTALANDO O UNIFI CONTROLLER NO LINUX MINT 21.x
+bash unifi-mint21.sh
 
-	#acessando o diretório de Log do Linux Mint
-	cd /var/log/
-	
-	#listando o arquivo de Log
-	#opção do comando ls: -l (list), -h (human-readable)
-	ls -lh unifi-mint-21.sh
+#acessando o diretório de Log do Linux Mint
+cd /var/log/
+
+#listando o arquivo de Log
+#opção do comando ls: -l (list), -h (human-readable)
+ls -lh unifi-mint-21.sh
+```
 
 #08_ Acessar o Unifi Network utilizando o Navegador Google Chrome no Linux Mint<br>
+```bash
+#OBSERVAÇÃO: a comunidade do Ubiquiti Unifi recomendo utilizar o navegador Google Chrome
+#para a configuração e administração do Unifi Network devido a compatibilidade do Java e
+#recursos integrados no sistema que funciona perfeitamente nesse navegador, é recomendado
+#utilizar a conexão HTTPS para que o usuário e senha do Account Ui funcione corretamente.
 
-	#OBSERVAÇÃO: a comunidade do Ubiquiti Unifi recomendo utilizar o navegador Google Chrome
-	#para a configuração e administração do Unifi Network devido a compatibilidade do Java e
-	#recursos integrados no sistema que funciona perfeitamente nesse navegador, é recomendado
-	#utilizar a conexão HTTPS para que o usuário e senha do Account Ui funcione corretamente.
-
-	chrome https://localhost:8443
+#acessar o Unifi Network via navegador
+chrome https://localhost:8443
+```
 
 #09_ Configurações Básicas do Unifi Network no Linux Mint<br>
+```bash
+Step 1 of 6:
+	Name Your Controller
+		Controller Name: Vaamonde
+		By selecting this you are agreeing to end user license agreement and the terms of service: ON 
+	<Next>
 
-	Step 1 of 6:
-		Name Your Controller
-			Controller Name: Vaamonde
-			By selecting this you are agreeing to end user license agreement and the terms of service: ON 
-		<Next>
+Step 2 of 6:
+	Sign in with your Ubiquiti Account
+		Username: usuário Id-SSO https://account.ui.com
+		Password: senha usuário ID-SSO 
+	<Next>
 
-	Step 2 of 6:
-		Sign in with your Ubiquiti Account
-			Username: usuário Id-SSO https://account.ui.com
-			Password: senha usuário ID-SSO 
-		<Next>
+Step 3 of 6:
+	UniFi Network Setup
+		Automatically optimize my network: ON
+		Enable Auto Backup: 
+	<Next>
 
-	Step 3 of 6:
-		UniFi Network Setup
-			Automatically optimize my network: ON
-			Enable Auto Backup: 
-		<Next>
+Step 4 of 6:
+	Devices Setup: 
+	<Next>
 
-	Step 4 of 6:
-		Devices Setup: 
-		<Next>
+Step 5 of 6:
+	WiFi Setup: 
+	<Skip>
 
-	Step 5 of 6:
-		WiFi Setup: 
-		<Skip>
+Step 6 of 6:
+	Review Configuration:
+		Country or territory: Brazil
+		Timezone: (UTC-03:00)America/Sao_Paulo 
+	<Next>
 
-	Step 6 of 6:
-		Review Configuration:
-			Country or territory: Brazil
-			Timezone: (UTC-03:00)America/Sao_Paulo 
-		<Next>
-
-	Security & Analytics
-		Send to Ubiquiti
+Security & Analytics
+	Send to Ubiquiti
+```
