@@ -7,13 +7,15 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 14/01/2023<br>
-#Data de atualização: 22/03/2024<br>
-#Versão: 0.56<br>
-#Testado e homologado no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
+#Data de atualização: 28/07/2024<br>
+#Versão: 0.57<br>
+#Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
+#Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
+#Testado e homologado no Linux Mint 22 Wilma x64<br>
 
 #Instalação do Eclipse IDE e OpenJDK/JRE 17.x no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
-#Instalação do Eclipse IDE e OpenJDK/JRE 17.x no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
+#Instalação do Eclipse IDE e OpenJDK/JRE 17.x no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
+#Instalação do Eclipse IDE e OpenJDK/JRE 17.x no Linux Mint 22 Wilma<br>
 
 [![Eclipse IDE](http://img.youtube.com/vi/OQ-Hb4OOSJA/0.jpg)](https://www.youtube.com/watch?v=OQ-Hb4OOSJA "Eclipse IDE")
 
@@ -23,134 +25,168 @@ Site Oficial do Eclipse: https://www.eclipse.org/downloads/<br>
 Site Oficial do OpenJDK: https://openjdk.org/<br>
 Site Oficial do Java: https://www.java.com/pt-BR/
 
+O QUE É E PARA QUE SERVER O JAVA: Java é uma linguagem de programação orientada a objetos<br>
+desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na<br>
+empresa Sun Microsystems, que em 2008 foi adquirido pela empresa Oracle Corporation.
+
+O QUE É E PARA QUE SERVER O ECLIPSE: Eclipse é uma IDE para desenvolvimento Java, porém suporta<br>
+várias outras linguagens a partir de plugins como C/C++, PHP, ColdFusion, Python, Scala e Kotlin.<br>
+Ele foi feito em Java e segue o modelo open source de desenvolvimento de software.
+
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
+```bash
+#atalho para acessar o Terminal
+Terminal: Ctrl + Alt + T
 
-	Terminal: Ctrl + Alt + T
+#verificando as versões e codinome do sistema operacional
+#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
+#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
+#OBSERVAÇÃO IMPORTANTE: Linux Mint 22.x é derivado do Ubuntu Desktop 24.04.x Noble Numbat
+sudo cat /etc/os-release
+sudo cat /etc/lsb-release
 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa 
-	OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
-	sudo cat /etc/os-release
-	sudo cat /etc/lsb-release
-	sudo localectl
-
-	Menu
-		Informações do Sistema
+#modo gráfico para verificar as informações de sistema operacional e hardware
+Menu
+	Informações do Sistema
+```
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
+```bash
+#atualizando o sistema operacional via MintUpdate (Recomendado)
+_ Atualização do sistema utilizando o MintUpdate;
+_ Atualização do sistema utilizando o Apt;
 
-	Atualização do sistema utilizando o MintUpdate;
-	Atualização do sistema utilizando o Apt;
+#atualizando o sistema operacional via Terminal
+#atalho para acessar o Terminal
+Terminal: Ctrl + Alt + T
 
-	Terminal: Ctrl + Alt + T
-		sudo apt update
-		sudo apt upgrade
-		sudo apt full-upgrade
-		sudo apt dist-upgrade
-		sudo apt autoremove
-		sudo apt autoclean
+#recomendo utilizando o comando: apt - o comando: apt-get e considerado obsoleto
+sudo apt update
+sudo apt upgrade
+sudo apt full-upgrade
+sudo apt dist-upgrade
+sudo apt autoremove
+sudo apt autoclean
+sudo
+```
 
 #02_ Instalando as Dependências do Eclipse IDE no Linux Mint<br>
+```bash
+#INSTALANDO O ECLIPSE IDE NO LINUX MINT 20.x
+sudo apt install git vim openjdk-17-jdk openjdk-17-jre openjdk-17-jre-headless \
+software-properties-common build-essential
 
-	#INSTALANDO O ECLIPSE IDE NO LINUX MINT 20.x
-	sudo apt install git vim openjdk-17-jdk openjdk-17-jre openjdk-17-jre-headless \
-	software-properties-common build-essential
+#INSTALANDO O ECLIPSE IDE NO LINUX MINT 21.x (RECOMENDADO UTILIZAR A VERSÃO 17)
+sudo apt install git vim openjdk-17-jdk openjdk-17-jre openjdk-17-jre-headless \
+software-properties-common build-essential
 
-	#INSTALANDO O ECLIPSE IDE NO LINUX MINT 21.x (RECOMENDADO UTILIZAR A VERSÃO 17)
-	sudo apt install git vim openjdk-17-jdk openjdk-17-jre openjdk-17-jre-headless \
-	software-properties-common build-essential
+#OBSERVAÇÃO IMPORTANTE: USAR OUTRAS VERSÕES DO JAVA (OPENJDK) PODE ACARRETAR FALHAS NO 
+#PROJETO DE SOFTWARE, CUIDADO COM A VERSÃO DO JAVA UTILIZADO EM SEU PROJETO.
 
-	#OBSERVAÇÃO IMPORTANTE: USAR OUTRAS VERSÕES DO JAVA (OPENJDK) PODE ACARRETAR FALHAS NO 
-	#PROJETO DE SOFTWARE, CUIDADO COM A VERSÃO DO JAVA UTILIZADO EM SEU PROJETO.
+#CASO QUEIRA UTILIZAR OUTRAS VERSÕES DO JAVA NO LINUX 21.x (EXECUTAR SOMENTE SE NECESSÁRIO)
+sudo apt install git vim openjdk-18-jdk openjdk-18-jre openjdk-18-jre-headless \
+software-properties-common build-essential
 
-	#CASO QUEIRA UTILIZAR OUTRAS VERSÕES DO JAVA NO LINUX 21.x (EXECUTAR SOMENTE SE NECESSÁRIO)
-	sudo apt install git vim openjdk-18-jdk openjdk-18-jre openjdk-18-jre-headless \
-	software-properties-common build-essential
-	
-	sudo apt install git vim openjdk-19-jdk openjdk-19-jre openjdk-19-jre-headless \
-	software-properties-common build-essential
+sudo apt install git vim openjdk-19-jdk openjdk-19-jre openjdk-19-jre-headless \
+software-properties-common build-essential
 
-	sudo apt install git vim openjdk-21-jdk openjdk-21-jre openjdk-21-jre-headless \
-	software-properties-common build-essential
+sudo apt install git vim openjdk-21-jdk openjdk-21-jre openjdk-21-jre-headless \
+software-properties-common build-essential
+```
 
 #03_ Verificando as Versões do Java instalado no Linux Mint<br>
-
-	#opção do comando grep: -i (ignore-case)
-	sudo java -version
-	sudo apt list --installed | grep -i openjdk
-	sudo update-alternatives --list java
-	sudo update-java-alternatives --list
+```bash
+#opção do comando grep: -i (ignore-case)
+#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
+sudo java -version
+sudo apt list --installed | grep -i openjdk
+sudo update-alternatives --list java
+sudo update-java-alternatives --list
+```
 
 #04_ Configurando o Versão do Java Padrão no Linux Mint<br>
-
-	#OBSERVAÇÃO IMPORTANTE: cuidado com a versão do Java que você está utilizando no seu projeto, 
-	#versões diferentes pode causar falhas de abertura do projeto ou erros na hora de executar a 
-	#compilação e criação do arquivo WAN ou JAR.
-	sudo update-alternatives --config java
+```bash
+#OBSERVAÇÃO IMPORTANTE: cuidado com a versão do Java que você está utilizando no seu projeto, 
+#versões diferentes pode causar falhas de abertura do projeto ou erros na hora de executar a 
+#compilação e criação do arquivo WAN ou JAR.
+sudo update-alternatives --config java
+```
 
 #05_ Download do Eclipse IDE no Linux Mint<br>
-
-	#recomendo utilizar a versão do Eclipse IDE Enterprise Java e Web
-	Link do download: https://www.eclipse.org/downloads/packages/
-	Versão do Eclipse: Eclipse IDE for Enterprise Java and Web Developers
-		Linux x86_64: eclipse-jee-2024-03-R-linux-gtk-x86_64.tar.gz (atualizado em 21/03/2024)
+```bash
+#recomendo utilizar a versão do Eclipse IDE Enterprise Java e Web
+Link do download: https://www.eclipse.org/downloads/packages/
+Versão do Eclipse: Eclipse IDE for Enterprise Java and Web Developers
+	Linux x86_64: eclipse-jee-2024-06-R-linux-gtk-x86_64.tar.gz  (atualizado em 28/07/2024)
+```
 
 #06_ Descompactar o Arquivo Zipado do Eclipse IDE no Linux Mint<br>
-
-	_01 acessar o diretório: Download;
-	_02 clicar com o botão direito do mouse no arquivo: eclipse-jee-*.tar.gz
-	_03 selecionar a opção: Extrair aqui
+```bash
+01) acessar o diretório: Download;
+02) clicar com o botão direito do mouse no arquivo: eclipse-jee-*.tar.gz
+03) selecionar a opção: Extrair aqui
+```
 
 #07_ Executando o Eclipse IDE no Linux Mint<br>
-
-	_01 acessar o diretório: eclipse
-	_02 executar o aplicativo (clicando duas vezes): eclipse
-	_03 na tela de Eclipse IDE Launcher deixar o padrão do Workspace:
-		Workspace: /home/seu_usuário/eclipse-workspace/
-	_04 marque a opção: use this default and do not ask again
-	_05 clique em: <Launch>
+```bash
+01) acessar o diretório: eclipse
+02) executar o aplicativo (clicando duas vezes): eclipse
+03) na tela de Eclipse IDE Launcher deixar o padrão do Workspace:
+	Workspace: /home/seu_usuário/eclipse-workspace/
+04) marque a opção: use this default and do not ask again
+05) clique em: <Launch>
+```
 
 #08_ Configuração Básica do Eclipse IDE no Linux Mint<br>
+```bash
+#OBSERVAÇÃO IMPORTANTE: devido ao Tema Black/Dark do Linux Mint o Eclipse IDE fica com 
+#uma aparência que os ícones/botões não aparece corretamente, para resolver esse problema 
+#recomendo utilizar o Tema Dark do Eclipse IDE.
 
-	#OBSERVAÇÃO IMPORTANTE: devido ao Tema Black/Dark do Linux Mint o Eclipse IDE fica com 
-	#uma aparência que os ícones/botões não aparece corretamente, para resolver esse problema 
-	#recomendo utilizar o Tema Dark do Eclipse IDE.
-
-	Windows
-		Preferences
-			General
-				Appearance
-					Theme: Dark
-	<Apply and Close>
-	<Restart>
+#configuração básica do Eclipse IDE
+Windows
+	Preferences
+		General
+			Appearance
+				Theme: Dark
+<Apply and Close>
+<Restart>
+```
 
 #09_ Clocando um Projeto Desenvolvido em JAVA no Workspace do Eclipse IDE no Linux Mint<br>
+```bash
+#atalho para acessar o Terminal
+Terminal: Ctrl + Alt + T
 
-	Terminal: Ctrl + Alt + T
-
-	#acessando o diretório de Workspace e clocando o projeto
-	cd eclipse-workspace/
-		git clone https://github.com/vaamonde/javaimc
+#acessando o diretório de Workspace e clocando o projeto
+cd eclipse-workspace/
+	git clone https://github.com/vaamonde/javaimc
+```
 
 #10_ Importando o Projeto Desenvolvido em JAVA utilizando Eclipse IDE no Linux Mint<br>
-
-	File
-		Import
-			Select
-				General
-					Existing Projects into Workspace
-			<Next>
-			Import Projects
-				Select root directory: <Browse>
-					/home/seu_usuário/eclipse-workspace/
-				Project
-					javaimc
-			<Finish>
+```bash
+#importando o projeto no Eclipse IDE
+File
+	Import
+		Select
+			General
+				Existing Projects into Workspace
+		<Next>
+		Import Projects
+			Select root directory: <Browse>
+				/home/seu_usuário/eclipse-workspace/
+			Project
+				javaimc
+		<Finish>
+```
 
 #11_ Executando o Projeto Desenvolvido em JAVA utilizando Eclipse IDE no Linux Mint<br>
-
-	Project Explorer
-		javaimc
-			src
-				view
-				TelaIMC.java
-	<Run TelaIMC> (atalho: Ctrl+3 - selecionar: Run)
+```bash
+#executando o projeto no Eclipse
+Project Explorer
+	javaimc
+		src
+			view
+			TelaIMC.java
+<Run TelaIMC> (atalho: Ctrl+3 - selecionar: Run)
+```

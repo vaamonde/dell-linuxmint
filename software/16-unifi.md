@@ -34,6 +34,11 @@ Site do SIMET: https://beta.simet.nic.br/<br>
 Site do SpeedTest: https://www.speedtest.net/pt<br>
 Site do Fast: https://fast.com/pt/
 
+O QUE É E PARA QUE SERVER UNIFI NETWORK: Ubiquiti Inc. é uma empresa de tecnologia americana<br>
+fundada em San Jose, Califórnia, em 2003. Agora com sede em Nova York, a Ubiquiti fabrica e<br>
+vende produtos de comunicação de dados sem fio e produtos com fio para empresas e residências<br>
+sob várias marcas.
+
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 ```bash
 #atalho para acessar o Terminal

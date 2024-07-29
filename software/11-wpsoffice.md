@@ -27,6 +27,11 @@ AppImage do WPS Office (não oficial): https://apprepo.de/appimage/wps-office<br
 Flatpack (Flathub) WPS Office: https://flathub.org/apps/details/com.wps.Office<br>
 Github do Pacote de Tradução: https://github.com/vaamonde/pt_br-wpsoffice
 
+O QUE É E PARA QUE SERVER O WPS OFFICE: WPS Office é uma suíte de escritório escrito em C++<br>
+que roda em plataformas Windows, Linux, Android e iOS. Desenvolvido pelo desenvolvedor de<br>
+software chinês em Zhuhai, a Kingsoft. O WPS Office é um conjunto de softwares que é composto<br>
+de três componentes principais: WPS Writer, WPS Presentation e WPS Spreadsheet.
+
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 ```bash
 #atalho para acessar o Terminal

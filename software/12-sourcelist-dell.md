@@ -40,6 +40,12 @@ D) Dell G3 3590 2019 (Codename: ???) - Homologado pela Canonical.
 #Link do Sources List do Ubuntu OEM: http://oem.archive.canonical.com/updates/dists/<br>
 #Verificar o Service TAG no Linux: sudo dmidecode -s system-serial-number
 
+O QUE É E PARA QUE SERVER O DELL SOURCES LIST: A ferramenta de pacote avançada, é uma interface<br>
+de usuário de software livre que funciona com bibliotecas centrais para lidar com a instalação<br>
+e remoção de software no Debian e em distribuições Linux baseadas nele. Há várias maneiras de<br>
+configurar o repositório Dell Linux. Se você sempre quiser a versão mais recente e melhor das<br>
+atualizações, vá para o repositório mais recente e siga as instruções lá.
+
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 ```bash
 #atalho para acessar o Terminal

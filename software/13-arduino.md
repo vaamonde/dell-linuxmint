@@ -27,7 +27,22 @@ Site Oficial do Arduino Cloud: https://cloud.arduino.cc/<br>
 Site Oficial do Arduino Web Editor: https://create.arduino.cc<br>
 Site Oficial do Arduino IoT: https://create.arduino.cc/iot/things<br>
 Site Oficial do Arduino Profile: https://id.arduino.cc/<br>
-Site Oficial do Fritzing: https://fritzing.org/
+Site Oficial do Fritzing: https://fritzing.org/<br>
+Site Oficial do Tinkercad: https://www.tinkercad.com/
+
+O QUE É E PARA QUE SERVER O ARDUINO: Arduino é uma plataforma programável de prototipagem<br>
+eletrônica de placa única e hardware livre, que permite aos usuários criar objetos eletrônicos<br>
+interativos e independentes, usando o microcontrolador Atmel AVR ou ARM com suporte de entrada<br>
+saída embutido, uma linguagem de programação padrão, essencialmente C/C++.
+
+O QUE É E PARA QUE SERVER O FRITZING: Fritzing é uma iniciativa de código aberto para desenvolver<br>
+um software tipo CAD amador para design de hardware eletrônico, para apoiar designers e artistas<br>
+prontos para deixar de experimentar um protótipo e construir um circuito mais permanente com uma<br>
+Placa de Circuito Impresso.
+
+O QUE É E PARA QUE SERVER O TINKERCAD: O Tinkercad é um programa didático e versátil que possui<br>
+uma coleção online gratuita de ferramentas de software que ajudam as pessoas de todo o mundo a<br>
+pensar, criar e produzir.
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 ```bash
