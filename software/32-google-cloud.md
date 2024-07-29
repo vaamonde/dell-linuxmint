@@ -103,7 +103,7 @@ OBSERVAÇÃO: para utilizar o Google Cloud é indicado utilizar uma conta do Gma
 	
 	#instalando as principais dependências do Gcloud Cli
 	sudo apt update
-	sudo apt install ca-certificates curl apt-transport-https lsb-release gnupg unzip git vim python2 python3
+	sudo apt install ca-certificates curl apt-transport-https lsb-release gnupg unzip git vim python2 python3 pip
 
 #08_ Autenticando o Gcloud Cli no Linux Mint<br>
 
