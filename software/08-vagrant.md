@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 27/07/2024<br>
-#Versão: 0.11<br>
+#Data de atualização: 04/08/2024<br>
+#Versão: 0.12<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -59,8 +59,8 @@ Menu
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 ```bash
 #atualizando o sistema operacional via MintUpdate (Recomendado)
-_ Atualização do sistema utilizando o MintUpdate;
-_ Atualização do sistema utilizando o Apt;
+01) Atualização do sistema utilizando o MintUpdate;
+02) Atualização do sistema utilizando o Apt;
 
 #atualizando o sistema operacional via Terminal
 #atalho para acessar o Terminal
@@ -90,18 +90,24 @@ echo "deb [signed-by=/usr/share/keyrings/hashicorp.gpg] https://apt.releases.has
 
 #ADICIONANDO O REPOSITÓRIO NO LINUX MINT 21.x
 echo "deb [signed-by=/usr/share/keyrings/hashicorp.gpg] https://apt.releases.hashicorp.com jammy main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+
+#ADICIONANDO O REPOSITÓRIO NO LINUX MINT 22.x
+echo "deb [signed-by=/usr/share/keyrings/hashicorp.gpg] https://apt.releases.hashicorp.com noble main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
 ```
 
 #04_ Atualizando as Lista do Apt com o novo Repositório do Vagrant no Linux Mint<br>
 ```bash
-	#atualizando as listas do Apt
-	sudo apt update
+#atualizando as listas do Apt
+sudo apt update
 ```
 
 #05_ Instalando o Vagrant e o Packer e verificando a sua versão no Linux Mint<br>
 ```bash
-#instalando o Vagrant e suas dependências
+#instalando o Vagrant e suas dependências no Linux Mint 20.x e 21.x
 sudo apt install vagrant packer vim git tree python3 python2 pip
+
+#instalando o Vagrant e suas dependências no Linux Mint 22
+sudo apt install vagrant packer vim git tree python3 python3-pip
 
 #verificando as versões do Vagrant e Packer
 vagrant --version

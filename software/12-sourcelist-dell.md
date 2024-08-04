@@ -120,14 +120,17 @@ sudo add-apt-repository restricted (Restrito - Drivers proprietários para dispo
 
 #04_ Adicionando o repositório da Dell no Linux Mint<br>	
 ```bash
-#instalando as dependências básicas no Linux Mint
+#instalando as dependências básicas no Linux Mint 20.x e 21.x
 sudo apt update && sudo apt install vim git python3 python2 pip
+
+#instalando as dependências básicas no Linux Mint 22.x
+sudo apt update && sudo apt install vim git python3 python3-pip
 
 #Criando o arquivo do Sources List da Dell no Linux Mint 20.x
 sudo vim /etc/apt/sources.list.d/dell.list
 INSERT
 
-#ADICIONANDO OS REPOSITÓRIOS DA DELL NO LINUX MINT 20.x	
+#ADICIONANDO OS REPOSITÓRIOS DA DELL NO LINUX MINT 20.x
 deb http://dell.archive.canonical.com/updates/ focal-dell public
 deb http://dell.archive.canonical.com/updates/ focal-oem public
 deb http://dell.archive.canonical.com/updates/ focal-somerville public

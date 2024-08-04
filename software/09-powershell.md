@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 27/07/2024<br>
-#Versão: 0.07<br>
+#Data de atualização: 04/08/2024<br>
+#Versão: 0.08<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -80,6 +80,11 @@ libgssapi-krb5-2 libicu66 libssl1.1 libstdc++6 zlib1g vim git python2 python3
 #opção da contra barra (\): criar uma quebra de linha no terminal
 sudo apt install apt-transport-https software-properties-common libc6 libgcc-s1 \
 libgssapi-krb5-2 libicu70 libssl3 libstdc++6 zlib1g vim git python2 python3
+
+#INSTALANDO AS DEPENDÊNCIAS DO POWERSHELL NO LINUX MINT 22.x
+#opção da contra barra (\): criar uma quebra de linha no terminal
+sudo apt install apt-transport-https software-properties-common libc6 libgcc-s1 \
+libgssapi-krb5-2 libicu74 libssl3t64 libstdc++6 zlib1g vim git python3 python3-pip
 ```
 
 #03_ Baixando o repositório oficial do PowerShell, .NET SDK e Runtime no Linux Mint<br>
@@ -91,6 +96,10 @@ wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-pr
 #ADICIONANDO O REPOSITÓRIO DO POWERSHELL NO LINUX MINT 21.x
 #opção do comando wget: -q (quiet)
 wget -q https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb
+
+#ADICIONANDO O REPOSITÓRIO DO POWERSHELL NO LINUX MINT 22.x
+#opção do comando wget: -q (quiet)
+wget -q https://packages.microsoft.com/config/ubuntu/24.04/packages-microsoft-prod.deb
 ```
 
 #04_ Instalando o repositório oficial do PowerShell, .NET SDK e Runtime no Linux Mint<br>
@@ -107,8 +116,22 @@ sudo apt update
 
 #06_ Instalando o PowerShell, .NET SDK e Runtime no Linux Mint<br>
 ```bash
-#instalando o Powershell e suas dependências
+#instalando o Powershell e suas dependências no Linux Mint 20.x e 21.x
 sudo apt install powershell dotnet-sdk-8.0 aspnetcore-runtime-8.0
+
+#OBSERVAÇÃO IMPORTANTE: A PARTIR DA VERSÃO DO UBUNTU 24.04.x E DO LINUX MINT 22.x O REPOSITÓRIO
+#OFICIAL DA MICROSOFT NÃO FORNECE MAIS O POWERSHELL POR PADRÃO, SENDO NECESSÁRIO BAIXAD DO GITHUB
+#A VERSÃO MAIS NOVA E FAZER A INSTALAÇÃO MANUALMENTE
+
+#instalando as dependências do Powershell no Linux Mint 22.x
+sudo apt install dotnet-sdk-8.0 aspnetcore-runtime-8.0
+
+#baixando o a última versão do Powershell no Github (link atualizando em 04/08/2024)
+wget https://github.com/PowerShell/PowerShell/releases/download/v7.4.4/powershell_7.4.4-1.deb_amd64.deb
+
+#instalando manualmente o Powershell no Linux Mint 22.x
+#opções do comando dpkg: -i (install), ignore-depends (Ignore dependency-checking)
+sudo dpkg -i --ignore-depends=libicu72 powershell*.deb
 ```
 
 #07_ Rodando o PowerShell no Linux Mint<br>
