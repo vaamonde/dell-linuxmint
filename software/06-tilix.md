@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 22/07/2023<br>
-#Versão: 0.10<br>
+#Data de atualização: 04/08/2023<br>
+#Versão: 0.11<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -77,8 +77,11 @@ sudo apt clean
 
 #02_ Instalando o Terminal Tilix no Linux Mint<br>
 ```bash
-#instalando o Tilix e suas dependências
+#instalando o Tilix e suas dependências no Linux Mint 20.x e 21.x
 sudo apt install tilix unzip git vim python2 python3
+
+#instalando o Tilix e suas dependências no Linux Mint 22.x
+sudo apt install tilix unzip git vim python3
 ```
 
 #03_ Instalando as Fontes Hack Nerd Fonts no Linux Mint<Br>
@@ -87,11 +90,12 @@ sudo apt install tilix unzip git vim python2 python3
 #opção do comando mkdir: -v (verbose), -p (parents), ~ (til: alias home directory), . (files or directory hidden)
 mkdir -pv ~/.local/share/fonts/Hack
 
-#acessando o diretório das fontes Hack (link atualizado no dia 15/11/2023)
+#acessando o diretório das fontes Hack (link atualizado no dia 04/08/2024)
+#opção do comando cd: ~ (til: alias home directory)
 cd ~/.local/share/fonts/Hack
 
-#baixando as fontes do Github (link atualizado em: 03/12/2024)
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip
+#baixando as fontes do Github (link atualizado em: 04/08/2024)
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Hack.zip
 
 #descompactando o arquivo zipado das fontes
 unzip Hack.zip
@@ -121,9 +125,9 @@ Menu
 gsettings set org.cinnamon.desktop.default-applications.terminal exec /usr/bin/tilix
 exit
 
-#OBSERVAÇÃO IMPORTANTE: no Linux Mint 21.2 Victoria e 21.3 Virginia o recurso de configurar o 
-#terminal pelo Aplicativos Preferenciais voltou, recomendo fazer por ele, não utilizar o comando: 
-#gsettings para essa configuração.
+#OBSERVAÇÃO IMPORTANTE: no Linux Mint 21.2 Victoria e 21.3 Virginia e na nova Versão 22 Wilma o 
+#recurso de configurar o terminal pelo Aplicativos Preferenciais voltou, recomendo fazer por ele, 
+#não utilizar o comando: gsettings para essa configuração.
 
 Menu
 	Aplicativos Preferenciais
@@ -219,6 +223,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 #Executando o instalador do Plugin FSF do ZSH
+#opção do comando: ~ (til: alias home directory)
 ~/.fzf/install
 	Do you want to enable fuzzy auto-completion? ([y]/n) y <Enter>
 	Do you want to enable key bindings? ([y]/n) y <Enter>
@@ -228,6 +233,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 09_ Editando o arquivo de configuração do ZSHRC no Linux Mint<br>
 ```bash
 #editando o arquivo de configuração do ZSHRC
+#opção do comando vim: ~ (til: alias home directory)
 vim ~/.zshrc
 
 #entrar no modo de edição do Vim
@@ -254,6 +260,7 @@ ESC SHIFT :x <Enter>
 
 #recomendo fechar o Terminal Tilix e abrir novamente para verificar se tudo está funcionando,
 #deverá iniciar automaticamente a customização do Tema PowerLevel10K utilizando o Wizard padrão.
+exit
 ```
 
 #10_ Personalizando o Tema PowerLevel10K no Linux Mint<br>
@@ -261,65 +268,71 @@ ESC SHIFT :x <Enter>
 #abrir um novo terminal para iniciar as configurações do PowerLevel10K
 Terminal: Ctrl + Alt + T
 
-	Does this look like a diamond (rotated square)?
-		Choice [ynrq]: y
-	
-	Does this look like a lock?
-		Choice [ynrq]: y
-	
-	Does this look like an upwards arrow?
-		Choice [ynrq]: y
+01) Does this look like a diamond (rotated square)?
+	Choice [ynrq]: y
 
-	Do all these icons fit between the crosses?
-		Choice [ynrq]: y
+02) Does this look like a lock?
+	Choice [ynrq]: y
 
-	Prompt Style: (2) Classic.
-		Choice [1234rq]: 2
-	
-	Character Set: (1) Unicode.
-		Choice [12rq]: 1
-	
-	Prompt Color: (4) Darkest.
-		Choice [1234rq]: 4
-	
-	Show current time?: (2) 24-hour format.
-		Choice [n12rq]: 2
-	
-	Prompt Separators: (3) Slanted.
-		Choice [1234rq]: 3
-	
-	Prompt Heads: (1) Sharp.
-		Choice [1234rq]: 3
-	
-	Prompt Tails: (1) Flat.
-		Choice [12345rq]: 1
-	
-	Prompt Height: (2) Two lines.
-		Choice [12rq]: 2
-	
-	Prompt Connection: (1) Disconnected.
-		Choice [123rq]: 1
-	
-	Prompt Frame: (1) No frame.
-		Choice [1234rq]: 1
-	
-	Prompt Spacing: (2) Sparse.
-		Choice [12rq]: 2
-	
-	Icons: (2) Many icons.
-		Choice [12rq]: 2
-	
-	Prompt Flow: (2) Fluent.
-		Choice [12rq]: 2
-	
-	Enable Transient Prompt? (n) No.
-		Choice [ynrq]: n
-	
-	Instant Prompt Mode: (1) Verbose (recommended).
-		Choice [123rq]: 1
-	
-	Apply changes to ~/.zshrc?: (y) Yes (recommended).
-		Choice [ynrq]: y
+03) Does this look like an upwards arrow?
+	Choice [ynrq]: y
+
+04) What digit is the downwards arrow pointing at?
+	Choice [1234rq]: 2
+
+05) Does this look like an upwards arrow?
+	Choice [ynrq]: y
+
+06) Do all these icons fit between the crosses?
+	Choice [ynrq]: y
+
+07) Prompt Style: (2) Classic.
+	Choice [1234rq]: 2
+
+08) Character Set: (1) Unicode.
+	Choice [12rq]: 1
+
+09) Prompt Color: (4) Darkest.
+	Choice [1234rq]: 4
+
+10) Show current time?: (2) 24-hour format.
+	Choice [n12rq]: 2
+
+11) Prompt Separators: (3) Slanted.
+	Choice [1234rq]: 3
+
+12) Prompt Heads: (1) Sharp.
+	Choice [1234rq]: 3
+
+13) Prompt Tails: (1) Flat.
+	Choice [12345rq]: 1
+
+14) Prompt Height: (2) Two lines.
+	Choice [12rq]: 2
+
+15) Prompt Connection: (1) Disconnected.
+	Choice [123rq]: 1
+
+16) Prompt Frame: (1) No frame.
+	Choice [1234rq]: 1
+
+17) Prompt Spacing: (2) Sparse.
+	Choice [12rq]: 2
+
+18) Icons: (2) Many icons.
+	Choice [12rq]: 2
+
+19) Prompt Flow: (2) Fluent.
+	Choice [12rq]: 2
+
+20) Enable Transient Prompt? (n) No.
+	Choice [ynrq]: n
+
+21) Instant Prompt Mode: (1) Verbose (recommended).
+	Choice [123rq]: 1
+
+22) Apply changes to ~/.zshrc?: (y) Yes (recommended).
+	Choice [ynrq]: y
 
 #caso queira reconfigurar o PowerLevel10K novamente digite o comando abaixo.
 p10k configure

@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 22/07/2024<br>
-#Versão: 0.15<br>
+#Data de atualização: 04/08/2024<br>
+#Versão: 0.16<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -95,12 +95,12 @@ PARA CRIAR UMA CONTA NO NETACAD ACESSE O LINK: https://id.cisco.com/signin/regis
 
 #03_ Instalando o Cisco Packet Tracer no Linux Mint<br>
 ```bash
-#instalar o Cisco Packet Tracer em modo Gráfico
-01_ Na pasta de Download, clicar duas vezes no Instalador do Cisco Packet Tracer;
-02_ Na tela do Gdebi clique em: <Instalar Pacote>.
+#instalar o Cisco Packet Tracer em modo Gráfico no Linux Mint 20.x e 21.x
+01) Na pasta de Download, clicar duas vezes no Instalador do Cisco Packet Tracer;
+02) Na tela do Gdebi clique em: <Instalar Pacote>.
 	(Digite a sua senha para instalar o pacote)
-03_ Na tela: Software License Agreement clique em: <Next>
-04_ Marque a opção: do you accept the terms of this EULA?: <Yes> clique em: <Next>
+03) Na tela: Software License Agreement clique em: <Next>
+04) Marque a opção: do you accept the terms of this EULA?: <Yes> clique em: <Next>
 
 #OBSERVAÇÃO IMPORTANTE: se você utilizar o Gdebi para instalar o Cisco Packet Tracer e apresentar
 #uma falha no final da instalação, recomendo utilizar o comando: dpkg para forçar a instalação em 
@@ -109,11 +109,22 @@ PARA CRIAR UMA CONTA NO NETACAD ACESSE O LINK: https://id.cisco.com/signin/regis
 #atalho para acessar o Terminal
 Terminal: Ctrl + Alt + T
 
-#instalando o Cisco Packet Tracer via linha de comando
+#instalando o Cisco Packet Tracer via linha de comando no Linux Mint 20.x e 21.x
 #opção do comando dpkg: -i (install)
 sudo dpkg -i CiscoPacketTracer*.deb
 	Na tela de: Configurando PacketTracer pressione Enter em: <OK>
 	Na tela de: Do you accept the terms of this EULA? selecione: <Sim> e <Enter>
+
+#OBSERVAÇÃO IMPORTANTE: NO LINUX MINT 22.x QUE É BASEADO NO UBUNTU 24.04.x A BIBLIOTECA DO MESA:
+#libgl1-mesa-glx FOI DESCONTINUADA, SENDO NECESSÁRIO FAZER SUA INSTALAÇÃO MANUAL PARA ATENDER AS
+#DEPENDÊNCIAS DO CISCO PACKET TRACER VERSÃO 8.2.x
+
+#download da Biblioteca Libgl1-Mesa-GLX no Linux Mint 22.x (Link atualizado em: 04/08/2024)
+wget http://mirrors.kernel.org/ubuntu/pool/universe/m/mesa/libgl1-mesa-glx_22.0.1-1ubuntu2_amd64.deb
+
+#instalando a Biblioteca Libgl1-Mesa-GLX
+#opção do comando dpkg: -i (install)
+sudo dpkg -i libgl1-mesa-glx*.deb
 ```
 
 #04_ Verificando se todas as Bibliotecas do Cisco Packet foram instaladas no Linux Mint<br>
@@ -156,8 +167,29 @@ vim python2 python3 libqt5websockets5 libqt5multimedia5
 #Resolvendo a falha das bibliotecas libssl.so.1.1 e libcrypto.so.1.1 no Linux Mint 21.x
 #opção do comando dpkg: -i (install)
 #opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
-#link de download da Biblioteca do LibSSL (atualizado no dia: 06/03/2024)
-wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb
+#link de download da Biblioteca do LibSSL (atualizado no dia: 04/08/2024)
+wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.23_amd64.deb
+sudo dpkg -i libssl1.1_1.1.1*.deb
+
+#filtrando as dependências não encontrado do Cisco Packet Tracer
+#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando	
+sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
+
+#INSTALANDO AS DEPENDÊNCIAS DO CISCO PACKET TRACER NO LINUX MINT 22.x
+#opção da contra barra (\): criar uma quebra de linha no terminal
+sudo apt install libqt5networkauth5 libqt5script5 libqt5scripttools5 libqt5texttospeech5 libqt5positioning5 \
+libqt5qml5 libqt5webchannel5 libqt5qmlmodels5 libqt5quick5 libqt5webenginecore5 libqt5webenginewidgets5 git \
+vim python3 libqt5websockets5 libqt5multimedia5
+
+#OBSERVAÇÃO IMPORTANTE: o tempo todo a Biblioteca LibSSL sofre alteração de versão, antes de baixar a versão
+#acesse o site: http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/ e veja qual a versão atual, altere
+#o script e faça o download.
+
+#Resolvendo a falha das bibliotecas libssl.so.1.1 e libcrypto.so.1.1 no Linux Mint 22.x
+#opção do comando dpkg: -i (install)
+#opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
+#link de download da Biblioteca do LibSSL (atualizado no dia: 04/08/2024)
+wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.23_amd64.deb
 sudo dpkg -i libssl1.1_1.1.1*.deb
 
 #filtrando as dependências não encontrado do Cisco Packet Tracer
@@ -167,7 +199,7 @@ sudo ldd /opt/pt/bin/PacketTracer | grep "not found"
 
 #05_ Atualização para a Versão 8.2.0 do Cisco Packet Tracer
 ```bash
-Atualização feita em Julho/2022 - procedimento no Linux Mint versões 20.x,21.x e 22.x continua a mesma coisa.
+Atualização feita em Julho/2022 - procedimento no Linux Mint versões 20.x, 21.x e 22.x continua a mesma coisa.
 Mais informações: https://www.packettracernetwork.com/features/packettracer-81-newfeatures.html
 ```
 
