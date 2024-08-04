@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 22/07/2024<br>
-#Versão: 0.23<br>
+#Data de atualização: 04/08/2024<br>
+#Versão: 0.24<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -34,39 +34,38 @@ aberto desenvolvido pela Oracle, que permite criar e executar máquinas virtuais
 físico. Assim, o software emula um computador completo, incluindo sistemas operacionais e aplicativos.
 
 #Tecnologias de Virtualização de Processadores AMD e Intel<br>
+```bash
+#Tecnologias de Virtualização Intel e AMD
+1) vmx...: Intel VT-x, suporte a virtualização ativada na BIOS.
+2) svm...: AMD SVM, suporte a virtualização ativada na BIOS.
 
-	vmx....: Intel VT-x, suporte a virtualização ativada na BIOS.
-	svm....: AMD SVM, suporte a virtualização ativada na BIOS.
+#AES dos Processadores da AMD e Intel
+01) aes...: Aplicativos que executam criptografia e descriptografia usando o Advanced
+    Encryption Standard em processadores Intel e AMD.
 
-#AES dos Processadores da AMD e Intel<br>
+#Flags dos Processadores da Intel
+01) ept.....: Suporte de tabela de páginas estendidas da Intel habilitado para tornar
+    mais rápida a emulação de tabelas de páginas de convidados.
+02) vpid....: ID do processador virtual da Intel. Faça descargas de TLB caras
+    desnecessárias quando alternar o contexto entre os convidados.
+03) vnmi....: O Intel Virtual NMI ajuda com eventos de interrupção selecionados em 
+    convidados.
+04) tpr_shadow e flexpriority..: Recurso da Intel que reduz as chamadas para o hypervisor 
+    ao acessar o Registro de prioridade de tarefas, o que ajuda na execução de determinados 
+    tipos de convidados do SMP.
 
-	aes....: Aplicativos que executam criptografia e descriptografia usando o Advanced
-	Encryption Standard em processadores Intel e AMD.
-
-#Flags dos Processadores da Intel<br>
-
-	ept.....: Suporte de tabela de páginas estendidas da Intel habilitado para tornar
-	mais rápida a emulação de tabelas de páginas de convidados.
-	vpid....: ID do processador virtual da Intel. Faça descargas de TLB caras
-	desnecessárias quando alternar o contexto entre os convidados.
-	vnmi....: O Intel Virtual NMI ajuda com eventos de interrupção selecionados em 
-	convidados.
-	tpr_shadow e flexpriority..: Recurso da Intel que reduz as chamadas para o
-	hypervisor ao acessar o Registro de prioridade de tarefas, o que ajuda na execução
-	de determinados tipos de convidados do SMP.
-
-#Flags dos Processadores da AMD<br>
-
-	npt...........: Tabelas de Páginas Aninhadas AMD, semelhantes ao Intel EPT.
-	lbrv..........: Suporte de virtualização da AMD LBR.
-	svm_lock......: MSR de bloqueio AMD SVM.
-	nrip_save.....: AMD SVM next_rip salvar.
-	tsc_scale.....: Suporte de dimensionamento do AMD TSC.
-	vmcb_clean....: Suporte para bits limpos AMD VMCB.
-	flushbyasid...: Suporte para AMD flush-by-ASID.
-	decodeassists.: AMD Decode Assistir ao suporte.
-	pausefilter...: Interrupção de pausa filtrada AMD.
-	pfthreshold...: AMD pausa o limite do filtro.
+#Flags dos Processadores da AMD
+01) npt...........: Tabelas de Páginas Aninhadas AMD, semelhantes ao Intel EPT.
+02) lbrv..........: Suporte de virtualização da AMD LBR.
+03) svm_lock......: MSR de bloqueio AMD SVM.
+04) nrip_save.....: AMD SVM next_rip salvar.
+05) tsc_scale.....: Suporte de dimensionamento do AMD TSC.
+06) vmcb_clean....: Suporte para bits limpos AMD VMCB.
+07) flushbyasid...: Suporte para AMD flush-by-ASID.
+08) decodeassists.: AMD Decode Assistir ao suporte.
+09) pausefilter...: Interrupção de pausa filtrada AMD.
+10) pfthreshold...: AMD pausa o limite do filtro.
+```
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 ```bash
@@ -168,10 +167,16 @@ sudo apt update
 #OPERACIONAL OBSOLETOS, HOJE EM DIA NÃO É MAIS INDICADO USAR ESSA VERSÃO.
 
 #INSTALANDO O VIRTUALBOX VERSÃO 6.1.x (NÃO RECOMENDADO MAIS A SUA INSTALAÇÃO)
+#procedimento de instalação no Linux Mint 20.x e 21.x
 sudo apt install virtualbox-6.1 cpu-checker libvirt-clients git vim python2 python3
 
 #INSTALANDO O VIRTUALBOX VERSÃO 7.0.x (RECOMENDADO A SUA INSTALAÇÃO)
+#procedimento de instalação no Linux Mint 20.x e 21.x
 sudo apt install virtualbox-7.0 cpu-checker libvirt-clients git vim python2 python3
+
+#INSTALANDO O VIRTUALBOX VERSÃO 7.0.x (RECOMENDADO A SUA INSTALAÇÃO)
+#procedimento de instalação no Linux Mint 22.x
+sudo apt install virtualbox-7.0 cpu-checker libvirt-clients git vim python3
 ```
 
 #05_ Verificando as Informações do suporte a Virtualização no Linux Mint<br>
@@ -185,7 +190,7 @@ sudo virt-host-validate
 #OBSERVAÇÃO IMPORTANTE: conforme relatos no Canal do YouTUBE do Bora para Prática, no Linux Mint versão 
 #21.x é mostrado a seguinte mensagem de falha quando você utiliza o comando: sudo virt-host-validate.
 #Conforme vários relatos nos fórum do Linux Mint e do Ubuntu esse erro está associado a versão do Cgroup
-#utilizado no Ubuntu 22.04.x que é a base do Linux Mint 21.x. 
+#utilizado no Ubuntu 22.04.x que é a base do Linux Mint 21.x. e do Ubuntu 24.04.x que é a base do 22.x
 
 #LXC: Checking for cgroup 'freezer' controller support FAIL (Enable 'freezer' in kernel Kconfig file or 
 #mount/enable cgroup controller in your system)
@@ -194,7 +199,7 @@ sudo virt-host-validate
 #mensagem faz referência ao suporte a processadores Intel com tecnologias VT-x e VT-d, caso a sua CPU não
 #tenha suporte ao VT-d essa mensagem e apresentada, você pode ignorar essa mensagem.
 
-#CORREÇÃO PARA O LINUX MINT 21.x REFERENTE AO ERRO DO FREEZER DO COMANDO: virt-host-validate
+#CORREÇÃO PARA O LINUX MINT 21.x e 22.x REFERENTE AO ERRO DO FREEZER DO COMANDO: sudo virt-host-validate
 
 #OBSERVAÇÃO IMPORTANTE: MUITO CUIDADO NA HORA DE ATUALIZAR OS ARQUIVOS DE CONFIGURAÇÃO DO GRUB DO LINUX
 #MINT, QUALQUER FALHA NA DIGITAÇÃO PODE ACARRETAR A FALHA DE INICIALIZAÇÃO DO SISTEMA. CUIDADO!!!!!!!!!

@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 22/07/2024<br>
-#Versão: 0.15<br>
+#Data de atualização: 04/08/2024<br>
+#Versão: 0.16<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -104,8 +104,11 @@ cat gpg | gpg --dearmor | sudo tee /usr/share/keyrings/docker-ce.gpg > /dev/null
 #ADICIONANDO O REPOSITÓRIO NO LINUX MINT 20.x
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 
-#ADICIONANDO O REPOSITÓRIO NO LINUX MINT 21.x E 22.x
+#ADICIONANDO O REPOSITÓRIO NO LINUX MINT 21.x
 sudo add-apt-repository "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-ce.gpg] https://download.docker.com/linux/ubuntu jammy stable"
+
+#ADICIONANDO O REPOSITÓRIO NO LINUX MINT 22.x
+sudo add-apt-repository "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-ce.gpg] https://download.docker.com/linux/ubuntu noble stable"
 ```
 
 #05_ Atualizando as Lista do Apt com o novo Repositório do Docker CE no Linux Mint<br>
@@ -116,8 +119,11 @@ sudo apt update
 
 #06_ Instalando o Docker CE e suas Dependências no Linux Mint<br>
 ```bash
-#instalando o Docker CE e Compose
+#instalando o Docker CE e Compose no Linux Mint 20.x e 21.x
 sudo apt install docker-ce docker-compose git vim python2 python3
+
+#instalando o Docker CE e Compose no Linux Mint 22.x
+sudo apt install docker-ce docker-compose git vim python3
 
 #OBSERVAÇÃO IMPORTANTE: a versão do Docker-Compose utilizando o Sources List do Docker-CE está
 #desatualizada em relação ao projeto do Github: https://github.com/docker/compose, é recomendado
@@ -129,8 +135,8 @@ sudo apt install docker-ce docker-compose git vim python2 python3
 sudo apt purge docker-compose
 
 #baixando o Docker Compose do Projeto do Github
-#opção do comando curl: -S (show-error), -L (location), -o (output) (Build 2.29.x 22/07/2024)
-sudo curl -SL https://github.com/docker/compose/releases/download/v2.29.0/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
+#opção do comando curl: -S (show-error), -L (location), -o (output) (Build 2.29.x 04/08/2024)
+sudo curl -SL https://github.com/docker/compose/releases/download/v2.29.1/docker-compose-linux-x86_64-o /usr/bin/docker-compose
 
 #alterando as permissões do Binário do Docker Compose	
 #opção do comando chmod: -v (verbose), 755 (User=RWX,Group-R-X,Other-R-X)
