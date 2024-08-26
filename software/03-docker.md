@@ -136,7 +136,7 @@ sudo apt purge docker-compose
 
 #baixando o Docker Compose do Projeto do Github
 #opção do comando curl: -S (show-error), -L (location), -o (output) (Build 2.29.x 04/08/2024)
-sudo curl -SL https://github.com/docker/compose/releases/download/v2.29.1/docker-compose-linux-x86_64-o /usr/bin/docker-compose
+sudo curl -SL https://github.com/docker/compose/releases/download/v2.29.1/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
 
 #alterando as permissões do Binário do Docker Compose	
 #opção do comando chmod: -v (verbose), 755 (User=RWX,Group-R-X,Other-R-X)
