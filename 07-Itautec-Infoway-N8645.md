@@ -286,28 +286,33 @@ Site Cisco Packet Tracer: https://www.packettracernetwork.com/
 Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/05-packettracer.md
 OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 09.
 
-#05_ Instalar e Configurar todos os procedimentos do Editor de Texto e IDE VSCode
+#05_ Instalar e Configurar todos os procedimentos do Powershell
+Site Microsoft Powershell: https://learn.microsoft.com/pt-br/powershell/scripting/overview?view=powershell-7.4
+Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/09-powershell.md
+OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 08.
+
+#06_ Instalar e Configurar todos os procedimentos do Editor de Texto e IDE VSCode
 Site Microsoft Visual Studio Code: https://code.visualstudio.com/
 Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/10-vscode.md
 OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 11.
 
-#06_ Instalar e Configurar todos os procedimentos do Terminal Tilix e ZSH
+#07_ Instalar e Configurar todos os procedimentos do Terminal Tilix e ZSH
 Site do Terminal Tilix: https://gnunn1.github.io/tilix-web/
 Site do Oh My ZSH: https://ohmyz.sh/
 Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/06-tilix.md
 OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 11.
 
-#07_ Instalar e Configurar todos os procedimentos do da Suite WPS Office
+#08_ Instalar e Configurar todos os procedimentos da Suite do WPS Office
 Site WPS Office: http://linux.wps.com/
 Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/11-wpsoffice.md
 OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 04.
 
-#08_ Configurar todos os procedimentos do Swap Off
+#09_ Configurar todos os procedimentos do Swap Off
 Site Swap Off: https://wiki.archlinux.org/title/Swap_(Portugu%C3%AAs)
 Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/15-swapoff.md
 OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 05.
 
-#09_ Instalar e Configurar todos os procedimentos da IDE do Arduino (CHAMAR PARA PEGAR O KIT DO ARDUINO)
+#10_ Instalar e Configurar todos os procedimentos da IDE do Arduino (CHAMAR PARA PEGAR O KIT DO ARDUINO)
 Site Arduino: https://www.arduino.cc/
 Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/13-arduino.md
 OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 10.

@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 04/08/2024<br>
-#Versão: 0.08<br>
+#Data de atualização: 23/10/2024<br>
+#Versão: 0.09<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -28,11 +28,9 @@ Site Oficial do .NET Runtime: https://docs.microsoft.com/pt-br/dotnet/framework/
 Documentação do PowerShell: https://docs.microsoft.com/pt-br/powershell/scripting/install/install-ubuntu?view=powershell-7.2<br>
 Documentação do .NET SDK e Runtime: https://docs.microsoft.com/pt-br/dotnet/core/install/linux-ubuntu#2004-
 
-O QUE É E PARA QUE SERVER O POWERSHELL: PowerShell é um shell de linha de comando baseado em tarefas<br>
-e linguagem de script desenvolvido no .NET. Inicialmente, apenas um componente do Windows, o PowerShell<br>
-tornou-se de código aberto e multiplataforma em 18 de agosto de 2016 com a introdução do PowerShell Core.
+O QUE É E PARA QUE SERVER O POWERSHELL: PowerShell é um shell de linha de comando baseado em tarefas e linguagem de script desenvolvido no .NET. Inicialmente, apenas um componente do Windows, o PowerShell tornou-se de código aberto e multiplataforma em 18 de agosto de 2016 com a introdução do PowerShell Core.
 
-#00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
+#00_ Verificando as Informações do Sistema Operacional do Linux Mint<br>
 ```bash
 #atalho para acessar o Terminal
 Terminal: Ctrl + Alt + T
@@ -46,14 +44,14 @@ sudo cat /etc/lsb-release
 
 #modo gráfico para verificar as informações de sistema operacional e hardware
 Menu
-	Informações do Sistema
+  Informações do Sistema
 ```
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 ```bash
 #atualizando o sistema operacional via MintUpdate (Recomendado)
-_ Atualização do sistema utilizando o MintUpdate;
-_ Atualização do sistema utilizando o Apt;
+A) Atualização do sistema utilizando o MintUpdate;
+B) Atualização do sistema utilizando o Apt;
 
 #atualizando o sistema operacional via Terminal
 #atalho para acessar o Terminal
@@ -104,6 +102,7 @@ wget -q https://packages.microsoft.com/config/ubuntu/24.04/packages-microsoft-pr
 
 #04_ Instalando o repositório oficial do PowerShell, .NET SDK e Runtime no Linux Mint<br>
 ```bash
+#instalando o repositório da Microsoft no Linux Mint
 #opção do comando dpkg: -i (install packet)
 sudo dpkg -i packages-microsoft-prod.deb
 ```
@@ -119,15 +118,15 @@ sudo apt update
 #instalando o Powershell e suas dependências no Linux Mint 20.x e 21.x
 sudo apt install powershell dotnet-sdk-8.0 aspnetcore-runtime-8.0
 
-#OBSERVAÇÃO IMPORTANTE: A PARTIR DA VERSÃO DO UBUNTU 24.04.x E DO LINUX MINT 22.x O REPOSITÓRIO
-#OFICIAL DA MICROSOFT NÃO FORNECE MAIS O POWERSHELL POR PADRÃO, SENDO NECESSÁRIO BAIXAD DO GITHUB
-#A VERSÃO MAIS NOVA E FAZER A INSTALAÇÃO MANUALMENTE
+#OBSERVAÇÃO IMPORTANTE: A PARTIR DA VERSÃO DO UBUNTU 24.04.x E DO LINUX MINT 22.x O 
+#REPOSITÓRIO OFICIAL DA MICROSOFT NÃO FORNECE MAIS O POWERSHELL POR PADRÃO, SENDO 
+#NECESSÁRIO BAIXAR DO GITHUB A VERSÃO MAIS NOVA E FAZER A INSTALAÇÃO MANUALMENTE
 
 #instalando as dependências do Powershell no Linux Mint 22.x
 sudo apt install dotnet-sdk-8.0 aspnetcore-runtime-8.0
 
-#baixando o a última versão do Powershell no Github (link atualizando em 04/08/2024)
-wget https://github.com/PowerShell/PowerShell/releases/download/v7.4.4/powershell_7.4.4-1.deb_amd64.deb
+#baixando o a última versão do Powershell no Github (link atualizando em 23/10/2024)
+wget https://github.com/PowerShell/PowerShell/releases/download/v7.4.6/powershell-lts_7.4.6-1.deb_amd64.deb
 
 #instalando manualmente o Powershell no Linux Mint 22.x
 #opções do comando dpkg: -i (install), ignore-depends (Ignore dependency-checking)
@@ -143,6 +142,7 @@ pwsh
 #08_ Utilizando os comandos Básicos do PowerShell no Linux Mint<br>
 ```bash
 #principais comandos do Powershell no Linux Mint
+#Site de referências dos comandos do Powershell: https://ss64.com/ps/
 Get-Date        - informações de data e hora do linux
 Get-Host        - informações detalhadas do PowerShell
 Get-Location    - informações da localização (Path)
