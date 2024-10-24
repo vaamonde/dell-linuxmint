@@ -155,7 +155,9 @@ Terminal: Ctrl + Alt + T
 
 #acessando o diretório de Workspace e clocando o projeto
 cd eclipse-workspace/
-  git clone https://github.com/vaamonde/javaimc
+
+#clonando o projeto do Repositório do Github
+git clone https://github.com/vaamonde/javaimc
 ```
 
 #10_ Importando o Projeto Desenvolvido em JAVA utilizando Eclipse IDE no Linux Mint<br>
