@@ -7,13 +7,13 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 19/05/2023<br>
-#Data de atualização: 23/10/2024<br>
-#Versão: 0.09<br>
+#Data de atualização: 24/10/2024<br>
+#Versão: 0.10<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
 
-#Lançamentos Oficiais do Linux Mint 22.3<br>
+#Lançamentos Oficiais do Linux Mint 22<br>
 31/01/2024 - Anúncio o Linux Mint 22 "Wilma" https://blog.linuxmint.com/?p=4639<br>
 01/04/2024 - Primeiras novidades do Linux Mint 22 "Wilma" https://blog.linuxmint.com/?p=4660<br>
 09/04/2024 - Repositório no Github do Linux Mint 22 "Wilma" https://blog.linuxmint.com/?p=4671<br>
@@ -90,7 +90,7 @@ e Bluetooth habilitados segurança UEFI habilitada
 #OBSERVAÇÃO IMPORTANTE: PARA ESCOLHER A SEQUÊNCIA DE BOOT NA INICIALIZAÇÃO PRESSIONE: F12
 
 Inicialização padrão, a falha de resolução de vídeo não acontece nesse modelo de notebook
-da Itautec Infoway N8645 devido o monitor ser de 15" e atingir altas resoluções.
+da Itautec Infoway N8645 devido o monitor ser de 15 polegadas e atingir altas resoluções.
 ```
 
 #05_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless) no Notebook Itautec Infoway N8645<br>
@@ -137,6 +137,12 @@ sudo reboot
 ```bash
 #OBSERVAÇÃO IMPORTANTE: CUIDADO COM A VERSÃO DO LINUX MINT QUE VOCÊ ESTÁ USANDO, VERIFIQUE
 #A VERSÃO E ESCOLHA OS PROCEDIMENTOS CORRESPONDENTE A SUA VERSÃO.
+
+#verificando a versão e codinome do sistema operacional
+#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa (focal)
+#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish (jammy)
+#OBSERVAÇÃO IMPORTANTE: Linux Mint 22.x é derivado do Ubuntu Desktop 24.04.x Noble Numbat (noble)
+sudo cat /etc/os-release
 
 #INSTALAÇÃO DO KERNEL OEM LINUX MINT 20.x (KERNEL >= 5.15)
 
@@ -199,7 +205,7 @@ sudo uname -a
 #09_ Instalação dos Aplicativos Básicos do Linux Mint no Notebook Itautec Infoway N8645<br>
 ```bash
 #OBSERVAÇÃO IMPORTANTE: CUIDADO COM A VERSÃO DO LINUX MINT QUE VOCÊ ESTÁ USANDO, VERIFIQUE
-#A VERSÃO E ESCOLHA OS PROCEDIMENTOS CORRESPONDENTE A SUA VERSÃO.
+#A VERSÃO E ESCOLHA OS PROCEDIMENTOS CORRESPONDENTE DE CADA VERSÃO.
 
 #atualizando as listas do Apt
 sudo apt update
@@ -219,7 +225,7 @@ apt-transport-https module-assistant
 sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool ipmitool \
 ipmiutil smartmontools
 
-#instalação dos software de aplicativos básicos do Linux Mint 20.x, 21.x
+#instalação dos software e aplicativos básicos do Linux Mint 20.x, 21.x
 #opção da contra barra (\): criar uma quebra de linha no terminal
 sudo apt install ttf-mscorefonts-installer cheese guvcview v4l-utils cairo-dock vim git \
 p7zip-full p7zip-rar
@@ -256,7 +262,7 @@ sudo reboot
 sudo glxinfo | less
 sudo glxgears
 
-#Software de Benchmark para GNU/Linux para Testar Desempenho
+#Software de Benchmark para GNU/Linux para Testar Desempenho Gráfico
 A) PassMark: https://www.passmark.com/products/pt_linux/index.php
 B) Hardinfo: https://github.com/lpereira/hardinfo
 C) Unigine.: https://benchmark.unigine.com/
@@ -316,3 +322,14 @@ OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 05.
 Site Arduino: https://www.arduino.cc/
 Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/13-arduino.md
 OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 10.
+
+#11_ Instalar e Configurar todos os procedimentos do Node.JS
+Site Node.JS: https://nodejs.org/en
+Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/18-nodejs.md
+OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 08.
+
+#12_ Instalar e Configurar todos os procedimentos do Java Eclipse
+Site Eclipse: https://eclipseide.org/
+Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/19-eclipse.md
+OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 11.
+```
