@@ -268,7 +268,7 @@ libgl1-mesa-glx libgles2-mesa libassimp5
 
 #Reinicializar o Sistema
 sudo reboot
-	
+
 #Testando o suporte ao Driver da Intel Mesa
 sudo glxgears
 ```
