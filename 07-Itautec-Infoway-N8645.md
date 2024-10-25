@@ -55,13 +55,14 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 #01_ Indicação de Software para a criação do Pen Drive Bootável do Linux Mint<br>
 
-A) Rufus: https://rufus.ie/pt_BR/ (Indicado em Microsoft)
-B) YUMI: https://www.pendrivelinux.com/yumi-multiboot-usb-creator/
-C) Etcher: https://www.balena.io/etcher/
-D) UNetbootin: https://unetbootin.github.io/
-E) Ventoy: https://www.ventoy.net/en/index.html (Indicado para fazer Múltiplos Boot)
-F) Linux Live USC Creator: https://www.linuxliveusb.com/
-G) Popsicle: https://github.com/pop-os/popsicle
+A) Recomendações de Software para Pen Drive
+  01) Rufus: https://rufus.ie/pt_BR/ (Indicado em Microsoft)
+  02) YUMI: https://www.pendrivelinux.com/yumi-multiboot-usb-creator/
+  03) Etcher: https://www.balena.io/etcher/
+  04) UNetbootin: https://unetbootin.github.io/
+  05) Ventoy: https://www.ventoy.net/en/index.html (Indicado para fazer Múltiplos Boot)
+  06) Linux Live USC Creator: https://www.linuxliveusb.com/
+  07) Popsicle: https://github.com/pop-os/popsicle
 
 #02_ Configurações do Hardware do Notebook Itautec Infoway N8645<br>
 ```bash
