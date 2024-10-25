@@ -144,7 +144,7 @@ sudo reboot
 #OBSERVAÇÃO IMPORTANTE: Linux Mint 22.x é derivado do Ubuntu Desktop 24.04.x Noble Numbat (noble)
 sudo cat /etc/os-release
 
-#INSTALAÇÃO DO KERNEL OEM LINUX MINT 20.x (KERNEL >= 5.15)
+#INSTALAÇÃO DO KERNEL OEM NO LINUX MINT 20.x (KERNEL >= 5.15)
 
 #Linux Mint Versão 20.x - Kernel >= 5.15 (NÃO RECOMENDADO MAIS O SEU USO)
 sudo apt install linux-oem-20.04 fdutils
@@ -165,7 +165,7 @@ sudo reboot
 #opção do comando uname: -a (all)
 sudo uname -a
 
-#INSTALAÇÃO DO KERNEL OEM LINUX MINT 21.x (KERNEL >= 5.17, KERNEL >= 6.0, KERNEL >= 6.1 e KERNEL >= 6.5)
+#INSTALAÇÃO DO KERNEL OEM NO LINUX MINT 21.x (KERNEL >= 5.17, KERNEL >= 6.0, KERNEL >= 6.1 e KERNEL >= 6.5)
 
 #Linux Mint Versão 21.x - Kernel >= 5.17 (NÃO RECOMENDADO MAIS O SEU USO)
 sudo apt install linux-oem-22.04a fdutils
@@ -186,7 +186,7 @@ sudo reboot
 #opção do comando uname: -a (all)
 sudo uname -a
 
-#INSTALAÇÃO DO KERNEL OEM LINUX MINT 22.x (KERNEL >= 6.8)
+#INSTALAÇÃO DO KERNEL OEM NO LINUX MINT 22.x (KERNEL >= 6.8)
 
 #Linux Mint Versão 22.x - Kernel >= 6.8 (NÃO RECOMENDADO MAIS O SEU USO)
 sudo apt install linux-oem-24.04 fdutils
@@ -255,7 +255,7 @@ sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5
 sudo reboot
 
 #Instalação do Driver de Vídeo da Radeon (DESATIVADO - NÃO UTILIZAR ESSE PROCEDIMENTO,
-#FALHA NO X11, Driver DESCONTINUADO)
+#FALHA NA INICIALIZAÇÃO DO X11, DRIVER FOI DESCONTINUADO)
 #sudo apt install xserver-xorg-video-radeon
 
 #Testando o suporte ao Driver da Intel Mesa
@@ -269,66 +269,65 @@ C) Unigine.: https://benchmark.unigine.com/
 D) GpuTest.: https://www.geeks3d.com/gputest/
 ```
 
-#11_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia<br>
-```bash
-#01_ Instalar e Configurar todos os procedimentos do Oracle VirtualBOX
-Site: VirtualBOX: https://www.virtualbox.org/
-Procedimento: https://github.com/vaamonde/dell-linuxmint/blob/master/software/01-virtualbox.md
-OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 05 - Pular a etapa: 06 - Continuar
-nas etapas: 07 até 08 - Pular a etapa: 09.
+#11_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint<br>
 
-#02_ Instalar e Configurar todos os procedimentos do Docker-CE Community
+A) Instalar e Configurar todos os procedimentos do Oracle VirtualBOX
+  01) Site: VirtualBOX: https://www.virtualbox.org/
+  02) Procedimento: https://github.com/vaamonde/dell-linuxmint/blob/master/software/01-virtualbox.md
+  03) OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 05 - Pular a etapa: 06 - Continuar nas etapas: 07 até 08 - Pular a etapa: 09.
+
+B) Instalar e Configurar todos os procedimentos do Docker-CE Community
 Site: Docker CE: https://www.docker.com/
 Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/03-docker.md
 OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 12.
 
-#03_ Instalar e Configurar todos os procedimentos do Emulador GNS3
+C) Instalar e Configurar todos os procedimentos do Emulador GNS3
 Site GNS3: https://www.gns3.com/
 Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/04-gns3.md
 OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 13.
 
-#04_ Instalar e Configurar todos os procedimentos do Simulador Cisco Packet Tracer
+D) Instalar e Configurar todos os procedimentos do Simulador Cisco Packet Tracer
 Site Cisco Packet Tracer: https://www.packettracernetwork.com/
 Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/05-packettracer.md
 OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 09.
 
-#05_ Instalar e Configurar todos os procedimentos do Powershell
+E) Instalar e Configurar todos os procedimentos do Powershell
 Site Microsoft Powershell: https://learn.microsoft.com/pt-br/powershell/scripting/overview?view=powershell-7.4
 Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/09-powershell.md
 OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 08.
 
-#06_ Instalar e Configurar todos os procedimentos do Editor de Texto e IDE VSCode
+F) Instalar e Configurar todos os procedimentos do Editor de Texto e IDE VSCode
 Site Microsoft Visual Studio Code: https://code.visualstudio.com/
 Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/10-vscode.md
 OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 11.
 
-#07_ Instalar e Configurar todos os procedimentos do Terminal Tilix e ZSH
+G) Instalar e Configurar todos os procedimentos do Terminal Tilix e ZSH
 Site do Terminal Tilix: https://gnunn1.github.io/tilix-web/
 Site do Oh My ZSH: https://ohmyz.sh/
 Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/06-tilix.md
 OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 11.
 
-#08_ Instalar e Configurar todos os procedimentos da Suite do WPS Office
+H) Instalar e Configurar todos os procedimentos da Suite do WPS Office
 Site WPS Office: http://linux.wps.com/
 Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/11-wpsoffice.md
 OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 04.
 
-#09_ Configurar todos os procedimentos do Swap Off
+I)  Configurar todos os procedimentos do Swap Off
 Site Swap Off: https://wiki.archlinux.org/title/Swap_(Portugu%C3%AAs)
 Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/15-swapoff.md
 OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 05.
 
-#10_ Instalar e Configurar todos os procedimentos da IDE do Arduino (CHAMAR PARA PEGAR O KIT DO ARDUINO)
+J) Instalar e Configurar todos os procedimentos da IDE do Arduino (CHAMAR PARA PEGAR O KIT DO ARDUINO)
 Site Arduino: https://www.arduino.cc/
 Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/13-arduino.md
 OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 10.
 
-#11_ Instalar e Configurar todos os procedimentos do Node.JS
+L) Instalar e Configurar todos os procedimentos do Node.JS
 Site Node.JS: https://nodejs.org/en
 Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/18-nodejs.md
 OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 08.
 
-#12_ Instalar e Configurar todos os procedimentos do Java Eclipse
+M) Instalar e Configurar todos os procedimentos do Java Eclipse
 Site Eclipse: https://eclipseide.org/
 Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/19-eclipse.md
 OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 11.
