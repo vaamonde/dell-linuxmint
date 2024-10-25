@@ -54,7 +54,7 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 #Instalação do Linux Mint 64 Bits no Notebook Itautec Infoway N8645
 
 #01_ Indicação de Software para a criação do Pen Drive Bootável do Linux Mint<br>
-```bash
+
 A) Rufus: https://rufus.ie/pt_BR/ (Indicado em Microsoft)
 B) YUMI: https://www.pendrivelinux.com/yumi-multiboot-usb-creator/
 C) Etcher: https://www.balena.io/etcher/
@@ -62,7 +62,6 @@ D) UNetbootin: https://unetbootin.github.io/
 E) Ventoy: https://www.ventoy.net/en/index.html (Indicado para fazer Múltiplos Boot)
 F) Linux Live USC Creator: https://www.linuxliveusb.com/
 G) Popsicle: https://github.com/pop-os/popsicle
-```
 
 #02_ Configurações do Hardware do Notebook Itautec Infoway N8645<br>
 ```bash
@@ -262,11 +261,11 @@ sudo reboot
 sudo glxinfo | less
 sudo glxgears
 ```
-#Software de Benchmark para GNU/Linux para Testar Desempenho Gráfico
-A) PassMark: https://www.passmark.com/products/pt_linux/index.php
-B) Hardinfo: https://github.com/lpereira/hardinfo
-C) Unigine.: https://benchmark.unigine.com/
-D) GpuTest.: https://www.geeks3d.com/gputest/
+A) Software de Benchmark para GNU/Linux para Testar Desempenho Gráfico
+  01) PassMark: https://www.passmark.com/products/pt_linux/index.php
+  02) Hardinfo: https://github.com/lpereira/hardinfo
+  03) Unigine.: https://benchmark.unigine.com/
+  04) GpuTest.: https://www.geeks3d.com/gputest/
 
 #11_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint<br>
 
