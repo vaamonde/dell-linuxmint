@@ -330,78 +330,78 @@ A) Software de Benchmark para GNU/Linux para Testar Desempenho Gráfico
 
 #13_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint<br>
 
-01) Instalação dos principais navegadores de Internet (DEIXAR OS ÍCONES NO DESKTOP)
-  A) Google Chrome: https://www.google.com/intl/pt-BR/chrome/
-  B) Opera: https://www.opera.com/pt-br
-  C) Microsoft Edge: https://www.microsoft.com/pt-br/edge/?form=MA13FJ
-  D) Vivaldi: https://vivaldi.com/pt-br/
-  E) Brave: https://brave.com/pt-br/
+A) Instalação dos principais navegadores de Internet (DEIXAR OS ÍCONES NO DESKTOP)
+  01) Google Chrome: https://www.google.com/intl/pt-BR/chrome/
+  02) Opera: https://www.opera.com/pt-br
+  03) Microsoft Edge: https://www.microsoft.com/pt-br/edge/?form=MA13FJ
+  04) Vivaldi: https://vivaldi.com/pt-br/
+  05) Brave: https://brave.com/pt-br/
 
-02) Instalação dos principais softwares de Produtividade (DEIXAR OS ÍCONES NO DESKTOP)
-  A) KolourPaint: https://apps.kde.org/pt-br/kolourpaint/
-  B) NotepadQQ: https://notepadqq.com/s/
-  C) VLC: https://www.videolan.org/vlc/
-  D) Audacity: https://www.audacityteam.org/
-  E) Kdenlive: https://kdenlive.org/en/
-  F) Kazam: https://launchpad.net/kazam
+B) Instalação dos principais softwares de Produtividade (DEIXAR OS ÍCONES NO DESKTOP)
+  01) KolourPaint: https://apps.kde.org/pt-br/kolourpaint/
+  02) NotepadQQ: https://notepadqq.com/s/
+  03) VLC: https://www.videolan.org/vlc/
+  04) Audacity: https://www.audacityteam.org/
+  05) Kdenlive: https://kdenlive.org/en/
+  06) Kazam: https://launchpad.net/kazam
 
-A) Instalar e Configurar todos os procedimentos do Oracle VirtualBOX (DEIXAR O ÍCONE NO DESKTOP)
+C) Instalar e Configurar todos os procedimentos do Oracle VirtualBOX (DEIXAR O ÍCONE NO DESKTOP)
   01) Site: VirtualBOX: https://www.virtualbox.org/
   02) Procedimento: https://github.com/vaamonde/dell-linuxmint/blob/master/software/01-virtualbox.md
   03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 05 - Pular a etapa: 06 - Continuar nas etapas: 07 até 08 - Pular a etapa: 09.
 
-B) Instalar e Configurar todos os procedimentos do Docker-CE Community (SEM ÍCONE NO DESKTOP)
+D) Instalar e Configurar todos os procedimentos do Docker-CE Community (SEM ÍCONE NO DESKTOP)
   01) Site: Docker CE: https://www.docker.com/
   03) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/03-docker.md
   03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 12.
 
-C) Instalar e Configurar todos os procedimentos do Emulador GNS3 (DEIXAR O ÍCONE NO DESKTOP)
+E) Instalar e Configurar todos os procedimentos do Emulador GNS3 (DEIXAR O ÍCONE NO DESKTOP)
   01) Site GNS3: https://www.gns3.com/
   02) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/04-gns3.md
   03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 13.
 
-D) Instalar e Configurar todos os procedimentos do Simulador Cisco Packet Tracer (DEIXAR O ÍCONE NO DESKTOP)
+F) Instalar e Configurar todos os procedimentos do Simulador Cisco Packet Tracer (DEIXAR O ÍCONE NO DESKTOP)
   01) Site Cisco Packet Tracer: https://www.packettracernetwork.com/
   02) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/05-packettracer.md
   03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 09.
 
-E) Instalar e Configurar todos os procedimentos do Powershell (SEM ÍCONE NO DESKTOP)
+G) Instalar e Configurar todos os procedimentos do Powershell (SEM ÍCONE NO DESKTOP)
   01) Site Microsoft Powershell: https://learn.microsoft.com/pt-br/powershell/scripting/overview?view=powershell-7.4
   02) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/09-powershell.md
   03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 08.
 
-F) Instalar e Configurar todos os procedimentos do Editor de Texto e IDE VSCode (DEIXAR O ÍCONE NO DESKTOP)
+H) Instalar e Configurar todos os procedimentos do Editor de Texto e IDE VSCode (DEIXAR O ÍCONE NO DESKTOP)
   01) Site Microsoft Visual Studio Code: https://code.visualstudio.com/
   02) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/10-vscode.md
   03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 11.
 
-G) Instalar e Configurar todos os procedimentos do Terminal Tilix e ZSH (SEM ÍCONE NO DESKTOP)
+I) Instalar e Configurar todos os procedimentos do Terminal Tilix e ZSH (SEM ÍCONE NO DESKTOP)
   01) Site do Terminal Tilix: https://gnunn1.github.io/tilix-web/
   02) Site do Oh My ZSH: https://ohmyz.sh/
   03) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/06-tilix.md
   04) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 11.
 
-H) Instalar e Configurar todos os procedimentos da Suite do WPS Office (DEIXAR O ÍCONE NO DESKTOP)
+J) Instalar e Configurar todos os procedimentos da Suite do WPS Office (DEIXAR O ÍCONE NO DESKTOP)
   01) Site WPS Office: http://linux.wps.com/
   02) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/11-wpsoffice.md
   03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 04.
 
-I) Configurar todos os procedimentos do Swap Off (SEM ÍCONE NO DESKTOP)
+K) Configurar todos os procedimentos do Swap Off (SEM ÍCONE NO DESKTOP)
   01) Site Swap Off: https://wiki.archlinux.org/title/Swap_(Portugu%C3%AAs)
   02) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/15-swapoff.md
   03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 05.
 
-J) Instalar e Configurar todos os procedimentos da IDE do Arduino (CHAMAR PARA PEGAR O KIT DO ARDUINO) (DEIXAR O ÍCONE NO DESKTOP)
+L) Instalar e Configurar todos os procedimentos da IDE do Arduino (CHAMAR PARA PEGAR O KIT DO ARDUINO) (DEIXAR O ÍCONE NO DESKTOP)
   01) Site Arduino: https://www.arduino.cc/
   02) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/13-arduino.md
   03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 10.
 
-L) Instalar e Configurar todos os procedimentos do Node.JS (SEM ÍCONE NO DESKTOP)
+M) Instalar e Configurar todos os procedimentos do Node.JS (SEM ÍCONE NO DESKTOP)
   01) Site Node.JS: https://nodejs.org/en
   02) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/18-nodejs.md
   03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 08.
 
-M) Instalar e Configurar todos os procedimentos do Java Eclipse (DEIXAR O ÍCONE NO DESKTOP)
+N) Instalar e Configurar todos os procedimentos do Java Eclipse (DEIXAR O ÍCONE NO DESKTOP)
   01) Site Eclipse: https://eclipseide.org/
   02) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/19-eclipse.md
   03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 11.
