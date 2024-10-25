@@ -261,74 +261,73 @@ sudo reboot
 #Testando o suporte ao Driver da Intel Mesa
 sudo glxinfo | less
 sudo glxgears
-
+```
 #Software de Benchmark para GNU/Linux para Testar Desempenho Gráfico
 A) PassMark: https://www.passmark.com/products/pt_linux/index.php
 B) Hardinfo: https://github.com/lpereira/hardinfo
 C) Unigine.: https://benchmark.unigine.com/
 D) GpuTest.: https://www.geeks3d.com/gputest/
-```
 
 #11_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint<br>
 
 A) Instalar e Configurar todos os procedimentos do Oracle VirtualBOX
   01) Site: VirtualBOX: https://www.virtualbox.org/
   02) Procedimento: https://github.com/vaamonde/dell-linuxmint/blob/master/software/01-virtualbox.md
-  03) OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 05 - Pular a etapa: 06 - Continuar nas etapas: 07 até 08 - Pular a etapa: 09.
+  03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 05 - Pular a etapa: 06 - Continuar nas etapas: 07 até 08 - Pular a etapa: 09.
 
 B) Instalar e Configurar todos os procedimentos do Docker-CE Community
-Site: Docker CE: https://www.docker.com/
-Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/03-docker.md
-OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 12.
+  01) Site: Docker CE: https://www.docker.com/
+  03) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/03-docker.md
+  03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 12.
 
 C) Instalar e Configurar todos os procedimentos do Emulador GNS3
-Site GNS3: https://www.gns3.com/
-Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/04-gns3.md
-OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 13.
+  01) Site GNS3: https://www.gns3.com/
+  02) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/04-gns3.md
+  03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 13.
 
 D) Instalar e Configurar todos os procedimentos do Simulador Cisco Packet Tracer
-Site Cisco Packet Tracer: https://www.packettracernetwork.com/
-Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/05-packettracer.md
-OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 09.
+  01) Site Cisco Packet Tracer: https://www.packettracernetwork.com/
+  02) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/05-packettracer.md
+  03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 09.
 
 E) Instalar e Configurar todos os procedimentos do Powershell
-Site Microsoft Powershell: https://learn.microsoft.com/pt-br/powershell/scripting/overview?view=powershell-7.4
-Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/09-powershell.md
-OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 08.
+  01) Site Microsoft Powershell: https://learn.microsoft.com/pt-br/powershell/scripting/overview?view=powershell-7.4
+  02) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/09-powershell.md
+  03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 08.
 
 F) Instalar e Configurar todos os procedimentos do Editor de Texto e IDE VSCode
-Site Microsoft Visual Studio Code: https://code.visualstudio.com/
-Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/10-vscode.md
-OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 11.
+  01) Site Microsoft Visual Studio Code: https://code.visualstudio.com/
+  02) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/10-vscode.md
+  03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 11.
 
 G) Instalar e Configurar todos os procedimentos do Terminal Tilix e ZSH
-Site do Terminal Tilix: https://gnunn1.github.io/tilix-web/
-Site do Oh My ZSH: https://ohmyz.sh/
-Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/06-tilix.md
-OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 11.
+  01) Site do Terminal Tilix: https://gnunn1.github.io/tilix-web/
+  02) Site do Oh My ZSH: https://ohmyz.sh/
+  03) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/06-tilix.md
+  04) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 11.
 
 H) Instalar e Configurar todos os procedimentos da Suite do WPS Office
-Site WPS Office: http://linux.wps.com/
-Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/11-wpsoffice.md
-OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 04.
+  01) Site WPS Office: http://linux.wps.com/
+  02) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/11-wpsoffice.md
+  03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 04.
 
-I)  Configurar todos os procedimentos do Swap Off
-Site Swap Off: https://wiki.archlinux.org/title/Swap_(Portugu%C3%AAs)
-Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/15-swapoff.md
-OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 05.
+I) Configurar todos os procedimentos do Swap Off
+  01) Site Swap Off: https://wiki.archlinux.org/title/Swap_(Portugu%C3%AAs)
+  02) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/15-swapoff.md
+  03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 05.
 
 J) Instalar e Configurar todos os procedimentos da IDE do Arduino (CHAMAR PARA PEGAR O KIT DO ARDUINO)
-Site Arduino: https://www.arduino.cc/
-Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/13-arduino.md
-OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 10.
+  01) Site Arduino: https://www.arduino.cc/
+  02) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/13-arduino.md
+  03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 10.
 
 L) Instalar e Configurar todos os procedimentos do Node.JS
-Site Node.JS: https://nodejs.org/en
-Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/18-nodejs.md
-OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 08.
+  01) Site Node.JS: https://nodejs.org/en
+  02) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/18-nodejs.md
+  03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 08.
 
 M) Instalar e Configurar todos os procedimentos do Java Eclipse
-Site Eclipse: https://eclipseide.org/
-Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/19-eclipse.md
-OBSERVAÇÃO IMPORTANTE: Executar todas as etapas de: 00 até 11.
+  01) Site Eclipse: https://eclipseide.org/
+  02) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/19-eclipse.md
+  03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 11.
 ```
