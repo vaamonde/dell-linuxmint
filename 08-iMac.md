@@ -113,7 +113,57 @@ Modelo HM500JI, Hard Disk para a instalação do Linux Mint, sem necessidade de 
 #seguro e não causa o problemas de Múltiplos Boots.
 ```
 
-#07_ Pós-Instalação do Linux Mint 20.x, 21.x ou 22.x no Apple iMac A1225 2008<br>
+#07_ Instalando o Linux Mint 20.x, 21.x ou 22.x no Notebook Itautec Infoway N8645<br>
+```bash
+01) Boot Inicial do Linux Mint 10 (dez segundos) inicia a instalação padrão.
+    a) Parar o Boot: pressionar: Seta para Baixo para parar o Boot inicial
+
+02) Opções do Boot padrão do Linux Mint
+    a) *Start Linux Mint 22 Cinnamon 64-Bit (Padrão)
+    b) Start Linux Mint 22 Cinnamon 64-Bit (compatibility mode)
+    c) OEM install (for manufacturers)
+    d) Test memory
+
+03) Limpeza das Partições utilizando o Gparted
+    a) Clique no menu e na busca indexada digite: gparted
+    b) Selecione o disco para fazer a limpeza
+    c) Selecione as partições e pressione: Del (Delete)
+    d) Clique em: Aplicar todas as opções (Save)
+
+04) Ícone Install Linux Mint no Desktop
+    a) Welcome
+        Português do Brasil
+    <Continuar>
+    b) Layout do teclado
+        Selecione o layout de seu teclado:
+        Portuguese (Brazil)
+    <Continuar>
+    c) Codecs Multimídia
+        Instalar codecs multimídia: ON (Habilitar)
+    <Continuar>
+    d) Tipo de instalação
+        Apagar disco e reinstalar o Linux Mint: ON (Selecionado)
+        <Instalar agora>
+    <Continuar>
+    e) Onde você está?
+        Sao Paulo
+    <Continuar>
+    e) Quem é você?
+        Seu nome: NOME E SOBRENOME
+        Nome do seu computador: seunome
+        Escolha um nome de usuário: SEU_USUÁRIO
+        Escolha uma senha: SUA_SENHA
+        Confirme sua senha: CONFIRMA_SUA_SENHA
+        Solicitar minha senha para entrar: ON (Selecionado)
+    <Continuar>
+<Reiniciar agora>
+
+Please remove the installation medium, then press <ENTER>
+
+#OBSERVAÇÃO: Aguardar a reinicialização do sistema para se logar no Linux Mint.
+```
+
+#08_ Pós-Instalação do Linux Mint 20.x, 21.x ou 22.x no Apple iMac A1225 2008<br>
 ```bash
 #OBSERVAÇÃO IMPORTANTE: É RECOMENDADO FAZER PRIMEIRO A ATUALIZAÇÃO VIA MINTUPDATE, DEPOIS VOCÊ
 #PODE UTILIZAR O BASH/SHELL COM O COMANDO APT PARA MANTER O DESKTOP SEMPRE ATUALIZADO.
@@ -138,7 +188,7 @@ sudo apt clean
 sudo reboot
 ```
 
-#08_ Instalação do Linux Kernel OEM (Original Equipment Manufacturer) no Apple iMac A1225 2008<br>
+#09_ Instalação do Linux Kernel OEM (Original Equipment Manufacturer) no Apple iMac A1225 2008<br>
 ```bash
 #OBSERVAÇÃO IMPORTANTE: CUIDADO COM A VERSÃO DO LINUX MINT QUE VOCÊ ESTÁ USANDO, VERIFIQUE
 #A VERSÃO E ESCOLHA OS PROCEDIMENTOS CORRESPONDENTE A SUA VERSÃO.
@@ -207,7 +257,7 @@ sudo reboot
 sudo uname -a
 ```
 
-#09_ Instalação dos Aplicativos Básicos do Linux Mint no Apple iMac A1225 2008<br>
+#10_ Instalação dos Aplicativos Básicos do Linux Mint no Apple iMac A1225 2008<br>
 ```bash
 #OBSERVAÇÃO IMPORTANTE: CUIDADO COM A VERSÃO DO LINUX MINT QUE VOCÊ ESTÁ USANDO, VERIFIQUE
 #A VERSÃO E ESCOLHA OS PROCEDIMENTOS CORRESPONDENTE DE CADA VERSÃO.
@@ -244,7 +294,7 @@ p7zip-rar
 sudo reboot
 ```
 
-#10_ Instalando o Driver Sem-Fio Broadcom BCM4321 no Apple iMac A1225 2008<br>
+#11_ Instalando o Driver Sem-Fio Broadcom BCM4321 no Apple iMac A1225 2008<br>
 ```bash
 #Instalação em Modo Gráfico (Mais Fácil e Rápido)
 Menu
@@ -256,7 +306,7 @@ Menu
     <Reiniciar>
 ```
 
-#11_ Instalação dos Drivers VGA Intel Graphics e Nvidia no Apple iMac A1225 2008<br>
+#12_ Instalação dos Drivers VGA Intel Graphics e Nvidia no Apple iMac A1225 2008<br>
 ```bash
 #OBSERVAÇÃO IMPORTANTE: O modelo da Placa de Vídeo Nvidia Serie 8 GeForce 8800M GS/GTS G92M
 #não é mais suportada no Linux Mint 21.x e 22.x utilizando o Kernel nas versões >= 6.5.
@@ -278,7 +328,7 @@ A) Software de Benchmark para GNU/Linux para Testar Desempenho Gráfico
   03) Unigine.: https://benchmark.unigine.com/
   04) GpuTest.: https://www.geeks3d.com/gputest/
 
-#12_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint<br>
+#13_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint<br>
 
 01) Instalação dos principais navegadores de Internet (DEIXAR OS ÍCONES NO DESKTOP)
   A) Google Chrome: https://www.google.com/intl/pt-BR/chrome/
