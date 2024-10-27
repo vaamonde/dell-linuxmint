@@ -114,7 +114,7 @@ bash install22.sh
 #07_ Executando o Arduino IDE 2.x no Linux Mint<br>
 ```bash
 #executando o binário do arquivo no Linux Mint
-arduino-20
+arduino-ide
 ```
 
 #08_ Verificando as Informações do Hardware do Arduino no Linux Mint<br>
