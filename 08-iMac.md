@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 04/12/2023<br>
-#Data de atualização: 25/10/2024<br>
-#Versão: 0.05<br>
+#Data de atualização: 28/10/2024<br>
+#Versão: 0.06<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -328,7 +328,15 @@ A) Software de Benchmark para GNU/Linux para Testar Desempenho Gráfico
   03) Unigine.: https://benchmark.unigine.com/
   04) GpuTest.: https://www.geeks3d.com/gputest/
 
-#13_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint<br>
+#13_ Personalização do Ambiente Gráfico Cinnamon do Linux Mint<br>
+
+A) Personalizar a Área de Trabalho;
+B) Personalizar a Barra de Tarefas (Painel);
+C) Personalizar o Tema (Aparência);
+D) Personalizar a Janela de Início de Sessão (Tela de Login);
+E) Pesquisar sobre: Extensões, Desklets, Applets, Temas (Windows), Plano de Fundo.
+
+#14_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint<br>
 
 A) Instalação dos principais navegadores de Internet (DEIXAR OS ÍCONES NO DESKTOP)
   01) Google Chrome: https://www.google.com/intl/pt-BR/chrome/
