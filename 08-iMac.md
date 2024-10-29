@@ -330,11 +330,11 @@ A) Software de Benchmark para GNU/Linux para Testar Desempenho Gráfico
 
 #13_ Personalização do Ambiente Gráfico Cinnamon do Linux Mint<br>
 
-A) Personalizar a Área de Trabalho;
-B) Personalizar a Barra de Tarefas (Painel);
-C) Personalizar o Tema (Aparência);
-D) Personalizar a Janela de Início de Sessão (Tela de Login);
-E) Pesquisar sobre: Extensões, Desklets, Applets, Temas (Windows), Plano de Fundo.
+  A) Personalizar a Área de Trabalho;
+  B) Personalizar a Barra de Tarefas (Painel);
+  C) Personalizar o Tema (Aparência);
+  D) Personalizar a Janela de Início de Sessão (Tela de Login);
+  E) Pesquisar sobre: Extensões, Desklets, Applets, Temas (Windows), Plano de Fundo.
 
 #14_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint<br>
 
