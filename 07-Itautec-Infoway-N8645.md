@@ -194,6 +194,9 @@ sudo reboot
 #OBSERVAÇÃO IMPORTANTE: Linux Mint 22.x é derivado do Ubuntu Desktop 24.04.x Noble Numbat (noble)
 sudo cat /etc/os-release
 
+#atualizando as listas do Apt
+sudo apt update
+
 #INSTALAÇÃO DO KERNEL OEM NO LINUX MINT 20.x (KERNEL >= 5.15)
 
 #Linux Mint Versão 20.x - Kernel >= 5.15 (NÃO RECOMENDADO MAIS O SEU USO)
