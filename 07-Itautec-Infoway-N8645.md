@@ -273,7 +273,7 @@ apt-transport-https module-assistant
 #instalação dos software de hardware e monitoramento do Linux Mint 20.x, 21.x e 22.x
 #opção da contra barra (\): criar uma quebra de linha no terminal
 sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool ipmitool \
-ipmiutil smartmontools
+ipmiutil smartmontools btop
 
 #instalação dos software e aplicativos básicos do Linux Mint 20.x, 21.x
 #opção da contra barra (\): criar uma quebra de linha no terminal
