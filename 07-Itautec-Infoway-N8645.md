@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 19/05/2023<br>
-#Data de atualização: 28/10/2024<br>
-#Versão: 0.12<br>
+#Data de atualização: 31/10/2024<br>
+#Versão: 0.13<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -263,14 +263,9 @@ sudo uname -a
 #atualizando as listas do Apt
 sudo apt update
 
-#instalação dos software base do Linux Mint 20.x e 21.x
+#instalação dos software base do Linux Mint 20.x, 21.x e 22.x
 #opção da contra barra (\): criar uma quebra de linha no terminal
 sudo apt install software-properties-common build-essential lsb-core dkms lsb-release \
-apt-transport-https module-assistant
-
-#instalação dos software base do Linux Mint 22.x
-#opção da contra barra (\): criar uma quebra de linha no terminal
-sudo apt install software-properties-common build-essential lsb-base dkms lsb-release \
 apt-transport-https module-assistant
 
 #instalação dos software de hardware e monitoramento do Linux Mint 20.x, 21.x e 22.x
@@ -278,15 +273,10 @@ apt-transport-https module-assistant
 sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool ipmitool \
 ipmiutil smartmontools btop
 
-#instalação dos software e aplicativos básicos do Linux Mint 20.x, 21.x
+#instalação dos software e aplicativos básicos do Linux Mint 20.x, 21.x e 22.x
 #opção da contra barra (\): criar uma quebra de linha no terminal
 sudo apt install ttf-mscorefonts-installer cheese guvcview v4l-utils cairo-dock vim git \
 p7zip-full p7zip-rar
-
-#instalação dos software de aplicativos básicos do Linux Mint 22.x
-#opção da contra barra (\): criar uma quebra de linha no terminal
-sudo apt install ttf-mscorefonts-installer cheese guvcview v4l-utils vim git p7zip-full \
-p7zip-rar
 
 #reinicializar o Sistema
 sudo reboot
