@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 21/01/2023<br>
-#Data de atualização: 28/07/2024<br>
-#Versão: 0.05<br>
+#Data de atualização: 31/10/2024<br>
+#Versão: 0.06<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -25,9 +25,7 @@ Site Oficial do Vim: https://www.vim.org/<br>
 Site Oficial do Aurelio.net: https://aurelio.net/vim/<br>
 Site Oficial do Vimbook: https://cassiobotaro.dev/vimbook/
 
-O QUE É E PARA QUE SERVER O EDITOR VIM: Vim é um clone do programa editor de textos vi para<br>
-Unix de Bill Joy. Foi escrito por Bram Moolenaar baseado na fonte para um porte do editor<br>
-Stevie para o Amiga com a primeiro lançamento público em 1991.
+O QUE É E PARA QUE SERVER O EDITOR VIM: Vim é um clone do programa editor de textos vi para Unix de Bill Joy. Foi escrito por Bram Moolenaar baseado na fonte para um porte do editor Stevie para o Amiga com a primeiro lançamento público em 1991.
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 ```bash
@@ -43,14 +41,14 @@ sudo cat /etc/lsb-release
 
 #modo gráfico para verificar as informações de sistema operacional e hardware
 Menu
-	Informações do Sistema
+  Informações do Sistema
 ```
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 ```bash
 #atualizando o sistema operacional via MintUpdate (Recomendado)
-_ Atualização do sistema utilizando o MintUpdate;
-_ Atualização do sistema utilizando o Apt;
+A) Atualização do sistema utilizando o MintUpdate;
+B) Atualização do sistema utilizando o Apt;
 
 #atualizando o sistema operacional via Terminal
 #atalho para acessar o Terminal
@@ -63,7 +61,7 @@ sudo apt full-upgrade
 sudo apt dist-upgrade
 sudo apt autoremove
 sudo apt autoclean
-sudo
+sudo apt clean
 ```
 
 #02_ Instalando o Vim e suas Dependências no Linux Mint<br>
@@ -96,65 +94,65 @@ de Reposição         <ESC> SHIFT R ou INSERT/INSERT  -- SUBSTITUIÇÃO --  Ins
 ```bash
 #manual básico do editor VIM
 man vim
-	q (quit)
+  q (quit)
 vim --help
 
 #tutorial do editor VIM
 vimtutor
-	<ESC> SHIFT :q <Enter>
+  <ESC> SHIFT :q <Enter>
 
 #ajuda e sair do editor VIM
 vim
-	<ESC> SHIFT :help <Enter>
-	<ESC> SHIFT :q <Enter>
+  <ESC> SHIFT :help <Enter>
+  <ESC> SHIFT :q <Enter>
 
-	<ESC> F1
-	<ESC> SHIFT :q <Enter>
+  <ESC> F1
+  <ESC> SHIFT :q <Enter>
 ```
 
 #06_ Saindo do editor de Texto VIM (q = quit | a = all | ! = force)
 ```bash
 #entrando e saindo do Editor VIM
 vim
-	<ESC> SHIFT :q <Enter>
+  <ESC> SHIFT :q <Enter>
 
 #entrando e saindo sem salvar do Editor VIM
 vim
-	<INSERT>
-		Robson Vaamonde
-	<ESC> SHIFT :q <Enter>
-	<ESC> SHIFT :q! <Enter>
+  <INSERT>
+    Robson Vaamonde
+  <ESC> SHIFT :q <Enter>
+  <ESC> SHIFT :q! <Enter>
 
 #entrando e saindo sem salvar tudo do Editor VIM
 vim
-	<INSERT>
-		Robson Vaamonde
-	<ESC> SHIFT :qa! <Enter>
+  <INSERT>
+    Robson Vaamonde
+  <ESC> SHIFT :qa! <Enter>
 ```
 
 #07_ Salvando arquivo no editor de Texto VIM (w = write | wq = write/quit | x = write/quit)
 ```bash
 #entrando e salvando um novo arquivo no Editor VIM
 vim
-	<ESC> SHIFT :w teste01.txt <Enter>
-	<ESC> SHIFT :q <Enter>
+  <ESC> SHIFT :w teste01.txt <Enter>
+  <ESC> SHIFT :q <Enter>
 
 #editando um arquivo, salvando e saindo do Editor VIM
 vim teste01.txt
-	<ESC> SHIFT :wq <Enter>
+  <ESC> SHIFT :wq <Enter>
 
 #ditando um arquivo, salvando e saindo do Editor VIM
 vim teste01.txt
-	<ESC> SHIFT :x <Enter>
+  <ESC> SHIFT :x <Enter>
 ```
 
 #08_ Criando um novo arquivo no editor de Texto VIM (enew = new file | w! = write/force | sav = save as)
 ```bash
 #editando um arquivo, criando um novo e salvando Editor VIM
 vim teste01.txt
-	<ESC> SHIFT :enew <Enter>
-	<ESC> SHIFT :w! teste01.txt <Enter>
-	<ESC> SHIFT :sav teste02.txt <Enter>
+  <ESC> SHIFT :enew <Enter>
+  <ESC> SHIFT :w! teste01.txt <Enter>
+  <ESC> SHIFT :sav teste02.txt <Enter>
 ```
 
 #09_ Abrindo um arquivo no editor de Texto VIM (e = explorer | o TAB funciona)
@@ -229,7 +227,7 @@ vim teste01.txt
 ```bash
 #localizando palavras no Editor VIM
 <ESC> /palavra <Enter>
-	n     <-- localiza a próxima ocorrência
+  n     <-- localiza a próxima ocorrência
 ```
 
 #18_ Formatação de alinhamento no editor de Texto VIM
@@ -244,23 +242,23 @@ vim teste01.txt
 ```bash
 #dividindo a tela horizontalmente Editor VIM
 <ESC> SHIFT :split <Enter>
-	Ctrl W
+  Ctrl W
 ```
 
 #20_ Dividindo a tela verticalmente no editor de Texto VIM (vsplit = dividir tela vertical)
 ```bash
 #dividindo a tela verticalmente
 <ESC> SHIFT :vsplit <Enter>
-	Ctrl W
+  Ctrl W
 ```
 
 #21_ Início e Fim de um arquivo movendo o cursor para uma Linha específica
 ```bash
 #editando o arquivo e movendo o curso para o início e fim do arquivo
 vim /etc/services
-	<ESC> SHIFT :$ <Enter>
-	<ESC> SHIFT :0 <Enter>
-	<ESC> SHIFT :110 <Enter>
+  <ESC> SHIFT :$ <Enter>
+  <ESC> SHIFT :0 <Enter>
+  <ESC> SHIFT :110 <Enter>
 
 #editando o arquivo e movendo o curso para a linha 100
 vim +100 /etc/services
