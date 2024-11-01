@@ -23,7 +23,7 @@ Link da vídeo aula: https://www.youtube.com/watch?v=KknZSuFsfmk
 
 Site Oficial do Vim: https://www.vim.org/<br>
 Site Oficial do Aurelio.net: https://aurelio.net/vim/<br>
-Site Oficial do Vimbook: https://cassiobotaro.dev/vimbook/
+Site Oficial do Vimbook: https://vimbook.site/
 
 O QUE É E PARA QUE SERVER O EDITOR VIM: Vim é um clone do programa editor de textos vi para Unix de Bill Joy. Foi escrito por Bram Moolenaar baseado na fonte para um porte do editor Stevie para o Amiga com a primeiro lançamento público em 1991.
 
