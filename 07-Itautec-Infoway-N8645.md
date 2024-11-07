@@ -292,7 +292,7 @@ sudo apt update
 sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
 
 #instalação dos drivers e recursos do Mesa
-sudo apt install libles1-mesa-dev libgl1-mesa-glx libgles2-mesa-dev libassimp5
+sudo apt install libgl1-mesa-dev libgles2-mesa-dev libassimp5 libgles2-mesa-dev
 
 #Reinicializar o Sistema
 sudo reboot
