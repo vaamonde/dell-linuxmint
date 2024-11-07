@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 19/05/2023<br>
-#Data de atualização: 06/11/2024<br>
-#Versão: 0.14<br>
+#Data de atualização: 07/11/2024<br>
+#Versão: 0.15<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -292,7 +292,7 @@ sudo apt update
 sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
 
 #instalação dos drivers e recursos do Mesa
-sudo apt install libles1-mesa-dev libgl1-mesa-glx libgles2-mesa-dev libassimp5
+sudo apt install libgl1-mesa-dev libgles2-mesa-dev libassimp5 libgles2-mesa-dev
 
 #Reinicializar o Sistema
 sudo reboot
