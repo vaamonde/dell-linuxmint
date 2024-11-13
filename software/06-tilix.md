@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 23/10/2023<br>
-#Versão: 0.12<br>
+#Data de atualização: 13/11/2023<br>
+#Versão: 0.13<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -35,7 +35,7 @@ O QUE É E PARA QUE SERVER O OH MY ZSH: Oh My Zsh é um gerenciador de configura
 ```bash
 #atalho para acessar o Terminal
 Terminal: Ctrl + Alt + T
-	
+
 #verificando as versões e codinome do sistema operacional
 #OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
 #OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
@@ -87,7 +87,7 @@ mkdir -pv ~/.local/share/fonts/Hack
 #opção do comando cd: ~ (til: alias home directory)
 cd ~/.local/share/fonts/Hack
 
-#baixando as fontes do Github (link atualizado em: 23/10/2024)
+#baixando as fontes do Github (link atualizado em: 13/11/2024)
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Hack.zip
 
 #descompactando o arquivo zipado das fontes
@@ -161,7 +161,7 @@ Menu
 #abrir o terminal do Tilix
 Terminal: Ctrl + Alt + T
 
-#atualizando as lista do Apt e instalar o ZSH
+#atualizando as lista do Apt e instalando o ZSH
 sudo apt update
 sudo apt install zsh
 
@@ -232,7 +232,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 #opção do comando vim: ~ (til: alias home directory)
 vim ~/.zshrc
 
-#entrar no modo de edição do Vim
+#entrando no modo de edição do editor de texto VIM
 INSERT
 
 #Variáveis de configuração do Tema PowerLevel10K

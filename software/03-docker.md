@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 23/10/2024<br>
-#Versão: 0.17<br>
+#Data de atualização: 13/11/2024<br>
+#Versão: 0.18<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -136,8 +136,8 @@ docker-compose-plugin cgroup-lite
 #COMENTADO NO VÍDEO)
 
 #baixando o Docker Compose do Projeto do Github
-#opção do comando curl: -S (show-error), -L (location), -o (output) (Build 2.29.x 23/10/2024)
-sudo curl -SL https://github.com/docker/compose/releases/download/v2.29.7/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
+#opção do comando curl: -S (show-error), -L (location), -o (output) (Build 2.30.x 13/11/2024)
+sudo curl -SL https://github.com/docker/compose/releases/download/v2.30.3/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
 
 #alterando as permissões do Binário do Docker Compose	
 #opção do comando chmod: -v (verbose), 755 (User=RWX,Group-R-X,Other-R-X)

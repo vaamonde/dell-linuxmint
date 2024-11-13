@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 04/07/2021<br>
-#Data de atualização: 27/07/2024<br>
-#Versão: 0.13<br>
+#Data de atualização: 13/11/2024<br>
+#Versão: 0.14<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br
@@ -40,11 +40,7 @@ D) Dell G3 3590 2019 (Codename: ???) - Homologado pela Canonical.
 #Link do Sources List do Ubuntu OEM: http://oem.archive.canonical.com/updates/dists/<br>
 #Verificar o Service TAG no Linux: sudo dmidecode -s system-serial-number
 
-O QUE É E PARA QUE SERVER O DELL SOURCES LIST: A ferramenta de pacote avançada, é uma interface<br>
-de usuário de software livre que funciona com bibliotecas centrais para lidar com a instalação<br>
-e remoção de software no Debian e em distribuições Linux baseadas nele. Há várias maneiras de<br>
-configurar o repositório Dell Linux. Se você sempre quiser a versão mais recente e melhor das<br>
-atualizações, vá para o repositório mais recente e siga as instruções lá.
+O QUE É E PARA QUE SERVER O DELL SOURCES LIST: A ferramenta de pacote avançada, é uma interface de usuário de software livre que funciona com bibliotecas centrais para lidar com a instalação e remoção de software no Debian e em distribuições Linux baseadas nele. Há várias maneiras de configurar o repositório Dell Linux. Se você sempre quiser a versão mais recente e melhor das atualizações, vá para o repositório mais recente e siga as instruções lá.
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 ```bash
@@ -60,14 +56,14 @@ sudo cat /etc/lsb-release
 
 #modo gráfico para verificar as informações de sistema operacional e hardware
 Menu
-	Informações do Sistema
+  Informações do Sistema
 ```
 
 #01_ Atualização do Sistema Operacional<br>
 ```bash
 #atualizando o sistema operacional via MintUpdate (Recomendado)
-_ Atualização do sistema utilizando o MintUpdate;
-_ Atualização do sistema utilizando o Apt;
+A) Atualização do sistema utilizando o MintUpdate;
+B) Atualização do sistema utilizando o Apt;
 
 #atualizando o sistema operacional via Terminal
 #atalho para acessar o Terminal
@@ -128,6 +124,8 @@ sudo apt update && sudo apt install vim git python3 python3-pip
 
 #Criando o arquivo do Sources List da Dell no Linux Mint 20.x
 sudo vim /etc/apt/sources.list.d/dell.list
+
+#entrando no modo de edição do editor de texto VIM
 INSERT
 
 #ADICIONANDO OS REPOSITÓRIOS DA DELL NO LINUX MINT 20.x
@@ -155,6 +153,8 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys D4D1EAED36962F69
 
 #Criando o arquivo do Sources List da Dell no Linux Mint 21.x
 sudo vim /etc/apt/sources.list.d/dell.list
+
+#entrando no modo de edição do editor de texto VIM
 INSERT
 
 #ADICIONANDO OS REPOSITÓRIOS DA DELL NO LINUX MINT 21.x	
@@ -178,26 +178,30 @@ sudo apt-key export D4D1EAED36962F69 | sudo gpg --dearmour -o /etc/apt/trusted.g
 #INSTALANDO OS PRINCIPAIS PACOTES DA DELL NO LINUX MINT 20.x
 sudo apt update
 sudo apt install oem-somerville-melisa-meta oem-somerville-meta libfprint-2-tod1-goodix tlp-config
-sudo reboot (Reinicializar o Sistema)
+
+#reiniciar o sistema após a instalação
+sudo reboot 
 
 #INSTALANDO OS PRINCIPAIS PACOTES DA DELL NO LINUX MINT 21.x
 sudo apt update
 sudo apt install oem-somerville-meta oem-stella-meta libfprint-2-tod1 tlp tlp-rdw
-sudo reboot (Reinicializar o Sistema)
+
+#reiniciar o sistema após a instalação
+sudo reboot
 ```
 
 #06_ Verificando o Driver da Dell no Gerenciador de Drivers do Linux Mint
 ```bash
 #verificação de drivers no Gerenciador de Driver do Linux Mint
 Menu
-	Pesquisa Indexada
-		Driver
+  Pesquisa Indexada
+    Driver
 ```
 
 07_ Verificando os Aplicativos de Drivers da Dell no Gerenciador de Aplicativos do Linux Mint
 ```bash
 #verificando os aplicativos da Dell no Gerenciador de Aplicativos do Linux Mint
 Menu
-	Gerenciador de Aplicativos
-		Pesquisar: Dell
+  Gerenciador de Aplicativos
+    Pesquisar: Dell
 ```

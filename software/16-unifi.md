@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 08/11/2022<br>
-#Data de atualização: 27/07/2024<br>
-#Versão: 0.07<br>
+#Data de atualização: 13/11/2024<br>
+#Versão: 0.08<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -34,10 +34,7 @@ Site do SIMET: https://beta.simet.nic.br/<br>
 Site do SpeedTest: https://www.speedtest.net/pt<br>
 Site do Fast: https://fast.com/pt/
 
-O QUE É E PARA QUE SERVER UNIFI NETWORK: Ubiquiti Inc. é uma empresa de tecnologia americana<br>
-fundada em San Jose, Califórnia, em 2003. Agora com sede em Nova York, a Ubiquiti fabrica e<br>
-vende produtos de comunicação de dados sem fio e produtos com fio para empresas e residências<br>
-sob várias marcas.
+O QUE É E PARA QUE SERVER UNIFI NETWORK: Ubiquiti Inc. é uma empresa de tecnologia americana fundada em San Jose, Califórnia, em 2003. Agora com sede em Nova York, a Ubiquiti fabrica e vende produtos de comunicação de dados sem fio e produtos com fio para empresas e residências sob várias marcas.
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 ```bash
@@ -56,14 +53,14 @@ sudo localectl
 
 #modo gráfico para verificar as informações de sistema operacional e hardware
 Menu
-	Informações do Sistema
+  Informações do Sistema
 ```
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 ```bash
 #atualizando o sistema operacional via MintUpdate (Recomendado)
-_ Atualização do sistema utilizando o MintUpdate;
-_ Atualização do sistema utilizando o Apt;
+A) Atualização do sistema utilizando o MintUpdate;
+B) Atualização do sistema utilizando o Apt;
 
 #atualizando o sistema operacional via Terminal
 #atalho para acessar o Terminal
@@ -76,7 +73,7 @@ sudo apt full-upgrade
 sudo apt dist-upgrade
 sudo apt autoremove
 sudo apt autoclean
-sudo
+sudo apt clean
 ```
 
 #02_ Ligar os Access Point Ubiquiti Unifi no Ejetor PoE ou no Switch PoE<br>
@@ -89,10 +86,15 @@ sudo
 ```bash
 #atalho para acessar o Terminal
 Terminal: Ctrl + Alt + T
-	
-#instalando as dependências do script
+
+#atualizando as lista do sources.list do Apt
 sudo apt update
+
+#instalando as dependências do script no Linux Mint 20.x e 21.x
 sudo apt install git vim nmap python2 python3 pip
+
+#instalando as dependências do script no Linux Mint 22.x
+sudo apt install git vim nmap python3 python3-pip
 ```
 
 #04_ Verificando os Dispositivos Ubiquiti Unifi conectados na rede no Linux Mint<br>
@@ -155,6 +157,16 @@ cd /var/log/
 #listando o arquivo de Log
 #opção do comando ls: -l (list), -h (human-readable)
 ls -lh unifi-mint-21.sh
+
+#INSTALANDO O UNIFI CONTROLLER NO LINUX MINT 22.x
+bash unifi-mint22.sh
+
+#acessando o diretório de Log do Linux Mint
+cd /var/log/
+
+#listando o arquivo de Log
+#opção do comando ls: -l (list), -h (human-readable)
+ls -lh unifi-mint-22.sh
 ```
 
 #08_ Acessar o Unifi Network utilizando o Navegador Google Chrome no Linux Mint<br>
@@ -171,37 +183,37 @@ chrome https://localhost:8443
 #09_ Configurações Básicas do Unifi Network no Linux Mint<br>
 ```bash
 Step 1 of 6:
-	Name Your Controller
-		Controller Name: Vaamonde
-		By selecting this you are agreeing to end user license agreement and the terms of service: ON 
-	<Next>
+  Name Your Controller
+    Controller Name: Vaamonde
+    By selecting this you are agreeing to end user license agreement and the terms of service: ON 
+  <Next>
 
 Step 2 of 6:
-	Sign in with your Ubiquiti Account
-		Username: usuário Id-SSO https://account.ui.com
-		Password: senha usuário ID-SSO 
-	<Next>
+  Sign in with your Ubiquiti Account
+    Username: usuário Id-SSO https://account.ui.com
+    Password: senha usuário ID-SSO 
+  <Next>
 
 Step 3 of 6:
-	UniFi Network Setup
-		Automatically optimize my network: ON
-		Enable Auto Backup: 
-	<Next>
+  UniFi Network Setup
+    Automatically optimize my network: ON
+    Enable Auto Backup: 
+  <Next>
 
 Step 4 of 6:
-	Devices Setup: 
-	<Next>
+  Devices Setup: 
+  <Next>
 
 Step 5 of 6:
-	WiFi Setup: 
-	<Skip>
+  WiFi Setup: 
+  <Skip>
 
 Step 6 of 6:
-	Review Configuration:
-		Country or territory: Brazil
-		Timezone: (UTC-03:00)America/Sao_Paulo 
-	<Next>
+  Review Configuration:
+    Country or territory: Brazil
+    Timezone: (UTC-03:00)America/Sao_Paulo 
+  <Next>
 
 Security & Analytics
-	Send to Ubiquiti
+  Send to Ubiquiti
 ```

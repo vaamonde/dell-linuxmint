@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 04/08/2024<br>
-#Versão: 0.12<br>
+#Data de atualização:13/11/2024<br>
+#Versão: 0.13<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -78,14 +78,14 @@ para nuvem e Edge.
 ```bash
 #atalho para acessar o Terminal
 Terminal: Ctrl + Alt + T
-	
+
 #verificando as versões e codinome do sistema operacional
 #OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
 #OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
 #OBSERVAÇÃO IMPORTANTE: Linux Mint 22.x é derivado do Ubuntu Desktop 24.04.x Noble Numbat
 sudo cat /etc/os-release
 sudo cat /etc/lsb-release
-	
+
 #verificando informações de hardware e processador
 #opções do comando inxi: -C (cpu), -M (machine), -S (system), -f (flags), -xxx (extra 3)
 sudo inxi -CMSfxxx
@@ -93,14 +93,14 @@ sudo lscpu
 
 #modo gráfico para verificar as informações de sistema operacional e hardware
 Menu
-	Informações do Sistema
+  Informações do Sistema
 ```
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 ```bash
 #atualizando o sistema operacional via MintUpdate (Recomendado)
-_ Atualização do sistema utilizando o MintUpdate;
-_ Atualização do sistema utilizando o Apt;
+A) Atualização do sistema utilizando o MintUpdate;
+B) Atualização do sistema utilizando o Apt;
 
 #atualizando o sistema operacional via Terminal
 #atalho para acessar o Terminal
@@ -120,7 +120,7 @@ sudo apt clean
 ```bash
 #download do VMWare Workstation do site oficial
 Link: https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html
-	Versão: Workstation 17 Pro for Linux
+  Versão: Workstation 17 Pro for Linux
 ```
 
 #03_ Alterando as Permissões de Execução do Binário do VMware Workstation Pro<br>
@@ -175,28 +175,28 @@ Mas informações acesse: https://blogs.vmware.com/workstation/2024/05/vmware-wo
 Link VMware Workstation Pro Download: https://access.broadcom.com/default/ui/v1/signin/
 
 A) Criando uma conta na Broadcom (User Registration)
-	Site: https://profile.broadcom.com/web/registration
-	
-	User Registration
-	Email Address: SEU_EMAIL
-	Caption: SEU_CAPTION
-	<Next>
+  Site: https://profile.broadcom.com/web/registration
 
-	Verify your Email Address
-	Code Number: CÓDIGO_DE_VERIFICAÇÃO
-	<Verify & Continue>
+  User Registration
+  Email Address: SEU_EMAIL
+  Caption: SEU_CAPTION
+  <Next>
 
-	Complete your Registration
-	First Name: SEU_PRIMEIRO_NOME
-	Last Name: SEU_SOBRENOME
-	Country: Brazil
-	Job Title: SEU_TRABALHO
-	Password: SUA_SENHA
-	Confirm Password: CONFIRMA_SUA_SENHA
-	(ON) I accept the Terms of Use .Your privacy is important to us. Please see our 
-	Privacy Policy for more information.
-	<Create Account>
-	<Ill do it later>
+  Verify your Email Address
+  Code Number: CÓDIGO_DE_VERIFICAÇÃO
+  <Verify & Continue>
+
+  Complete your Registration
+  First Name: SEU_PRIMEIRO_NOME
+  Last Name: SEU_SOBRENOME
+  Country: Brazil
+  Job Title: SEU_TRABALHO
+  Password: SUA_SENHA
+  Confirm Password: CONFIRMA_SUA_SENHA
+  (ON) I accept the Terms of Use .Your privacy is important to us. Please see our 
+  Privacy Policy for more information.
+  <Create Account>
+  <Ill do it later>
 
 #OBSERVAÇÃO IMPORTANTE: ANTES DE CLICAR NO LINK RECOMENDADO DEIXAR AUTENTICADO NO
 #SITE DA BROADCOM O SEU USUÁRIO PARA FACILITAR O DOWNLOAD DO VMWARE WORKSTATION.
@@ -205,91 +205,91 @@ B) Acessando o Link de Download do VMware Workstation Pro
 #Site para download da nova versão do VMWare Workstation Pro Free by Broadcom
 Site: https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Workstation+Pro
 
-	Clique em: VMware Workstation Pro 17 for Personal Use (Linux)
-	Clique em: 17.5.2 (atualizado em: 01/07/2024)
-	Clique em: (ON) I agree toTerms and Conditions
-	Clique em: Ícone de Download (Screening Required)
-	
-	Prior to downloading this file, additional verification is required. Proceed? (YES)
+  Clique em: VMware Workstation Pro 17 for Personal Use (Linux)
+  Clique em: 17.5.2 (atualizado em: 01/07/2024)
+  Clique em: (ON) I agree toTerms and Conditions
+  Clique em: Ícone de Download (Screening Required)
 
-	Trade Compliance Verification: CONFIRME_SEU_DADOS 
-	(ON) I Agree <SUBMIT>
+  Prior to downloading this file, additional verification is required. Proceed? (YES)
 
-	VMware Workstation Pro for Personal Use (For Linux) 17.5.2
-	Clique em: Ícone de Download (HTTPS Download)
-	Binário com cerca de: 511MB
+  Trade Compliance Verification: CONFIRME_SEU_DADOS 
+  (ON) I Agree <SUBMIT>
+
+  VMware Workstation Pro for Personal Use (For Linux) 17.5.2
+  Clique em: Ícone de Download (HTTPS Download)
+  Binário com cerca de: 511MB
 
 C) Instalando o VMware Workstation Pro 17 for Personal Use (Linux)
 
-	Acesse o diretório downloads;
-	Clique com o botão direito do mouse em cima do binário: VMware-Workstation-Full*.bundle
-	Selecione: Propriedades
-	Clique na aba: Segurança
-	Marque a opção: Permitir execução do arquivo como um programa
-	<Fechar>
+  Acesse o diretório downloads;
+  Clique com o botão direito do mouse em cima do binário: VMware-Workstation-Full*.bundle
+  Selecione: Propriedades
+  Clique na aba: Segurança
+  Marque a opção: Permitir execução do arquivo como um programa
+  <Fechar>
 
-	Clique com o botão direito do mouse na área de download
-	Selecione: Abrir no Terminal
-	Digite o comando: sudo ./VMware-Workstation-Full*.bundle
+  Clique com o botão direito do mouse na área de download
+  Selecione: Abrir no Terminal
+  Digite o comando: sudo ./VMware-Workstation-Full*.bundle
 
 D) Welcome to VMware Workstation
 
-	I accept the therms in the license agreement: <Next>
-	I accept the therms in the license agreement: <Next>
-	Would you like to check for product update on startup? (YES) <Next>
-	Join the VMware Customer Experience Improvement Program (CEIP)? (YES) <Next>
-	I want to license VMware Workstation 17 for Personal Use: <Finish>
-		<DIGITE A SENHA DO SEU USUÁRIO COM DIREITOS A ROOT>
-	Thank you for using VMware Workstation 17! <OK>
+  I accept the therms in the license agreement: <Next>
+  I accept the therms in the license agreement: <Next>
+  Would you like to check for product update on startup? (YES) <Next>
+  Join the VMware Customer Experience Improvement Program (CEIP)? (YES) <Next>
+  I want to license VMware Workstation 17 for Personal Use: <Finish>
+    <DIGITE A SENHA DO SEU USUÁRIO COM DIREITOS A ROOT>
+  Thank you for using VMware Workstation 17! <OK>
 
 E) Verificando a Licença do VMWare Workstation Pro 17 for Personal Use
 
-	Help, About VMware Workstation 17 Pro.
-	License Information:
-		Status: Not Licensed
-		Type: Personal Use Only
-		Expiration: Not Applicable
-		Notes: For Commercial Use, purchase a license
+  Help, About VMware Workstation 17 Pro.
+  License Information:
+    Status: Not Licensed
+    Type: Personal Use Only
+    Expiration: Not Applicable
+    Notes: For Commercial Use, purchase a license
 
 F) Criando uma máquina Virtual do Ubuntu Server
 
-	Home VMware Workstation
-		Create a New Virtual Machine
-	
-	Virtual Machine Configuration
-		(ON) Custom (advanced): <Next>
-	Virtual Machine Hardware Compatibility
-		Hardware compatibility: Workstation 17.5.x: <Next>
-	Install operating system from
-		Use ISO image: <Browse> <Next>
-	Guest Operating System
-		(ON) 2. Linux
-		Version: Ubuntu <Next>
-	Virtual Machine Name
-		Name: wsvaamonde
-		Location: DEFAULT <Next>
-	Processors
-		Number of processors: 2
-		Number  fo cores per processor: 1
-		Total processor cores: 2 <Next>
-	Memory
-		Memory for this virtual machine: 4096MB <Next>
-	Network Connection
-		(ON) Use bridged networking <Next>
-	I/O Controller Types
-		SCI controller: LSI Logic (Recommended) <Next>
-	Virtual Disk type
-		SCSI (Recommended) <Next>
-	Disk
-		Create a new virtual disk <Next>
-	Disk Size
-		Maximum disk size (in GB): 50GB <Next>
-	Disk File
-		File name: wsvaamonde.vmdk <Next>
-	<Finish>
-	<Close>
+  Home VMware Workstation
+    Create a New Virtual Machine
+
+  Virtual Machine Configuration
+    (ON) Custom (advanced): <Next>
+  Virtual Machine Hardware Compatibility
+    Hardware compatibility: Workstation 17.5.x: <Next>
+  Install operating system from
+    Use ISO image: <Browse> <Next>
+  Guest Operating System
+    (ON) 2. Linux
+    Version: Ubuntu <Next>
+  Virtual Machine Name
+    Name: wsvaamonde
+    Location: DEFAULT <Next>
+  Processors
+    Number of processors: 2
+    Number  fo cores per processor: 1
+    Total processor cores: 2 <Next>
+  Memory
+    Memory for this virtual machine: 4096MB <Next>
+  Network Connection
+    (ON) Use bridged networking <Next>
+  I/O Controller Types
+    SCI controller: LSI Logic (Recommended) <Next>
+  Virtual Disk type
+    SCSI (Recommended) <Next>
+  Disk
+    Create a new virtual disk <Next>
+  Disk Size
+    Maximum disk size (in GB): 50GB <Next>
+  Disk File
+    File name: wsvaamonde.vmdk <Next>
+  <Finish>
+  <Close>
 
 G) Iniciando a Máquina Virtual do Ubuntu Server
 
-	Library: wsvaamonde <Play/Star up>
+  Library: wsvaamonde <Play/Star up>
 ```

@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 09/10/2021<br>
-#Data de atualização: 27/07/2024<br>
-#Versão: 0.15<br>
+#Data de atualização: 13/11/2024<br>
+#Versão: 0.16<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -40,7 +40,7 @@ sudo cat /etc/lsb-release
 
 #modo gráfico para verificar as informações de sistema operacional e hardware
 Menu
-	Informações do Sistema
+  Informações do Sistema
 ```
 
 #01_ Verificando a quantidade de memória RAM no Linux Mint
@@ -89,10 +89,12 @@ sudo apt install vim smartmontools
 
 #editar o arquivo de configuração do FSTAB
 sudo vim /etc/fstab
+
+#entrando no modo de edição do editor de texto VIM
 INSERT
 
-	#Comentar a linha: 12 do Swapfile
-	#swapfile	none	swap	sw	0	0
+  #Comentar a linha: 12 do Swapfile
+  #swapfile	none	swap	sw	0	0
 
 #salvar e sair do arquivo
 ESC SHIFT :x <Enter>

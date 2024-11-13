@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 14/01/2023<br>
-#Data de atualização: 28/07/2024<br>
-#Versão: 0.11<br>
+#Data de atualização: 13/11/2024<br>
+#Versão: 0.12<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -25,10 +25,7 @@ Site Oficial do MySQL: https://www.mysql.com/<br>
 Site Oficial do MariaDB: https://mariadb.org/<br>
 Site Oficial do Workbench: https://www.mysql.com/products/workbench/
 
-O QUE É E PARA QUE SERVER O MYSQL: O MySQL é um sistema de gerenciamento de banco de dados,<br>
-que utiliza a linguagem SQL como interface. É atualmente um dos sistemas de gerenciamento de<br>
-bancos de dados mais populares da Oracle Corporation, com mais de 10 milhões de instalações<br>
-pelo mundo.
+O QUE É E PARA QUE SERVER O MYSQL: O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface. É atualmente um dos sistemas de gerenciamento de bancos de dados mais populares da Oracle Corporation, com mais de 10 milhões de instalações pelo mundo.
 
 #00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
 ```bash
@@ -44,14 +41,14 @@ sudo cat /etc/lsb-release
 
 #modo gráfico para verificar as informações de sistema operacional e hardware
 Menu
-	Informações do Sistema
+  Informações do Sistema
 ```
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 ```bash
 #atualizando o sistema operacional via MintUpdate (Recomendado)
-_ Atualização do sistema utilizando o MintUpdate;
-_ Atualização do sistema utilizando o Apt;
+A) Atualização do sistema utilizando o MintUpdate;
+B) Atualização do sistema utilizando o Apt;
 
 #atualizando o sistema operacional via Terminal
 #atalho para acessar o Terminal
@@ -64,7 +61,7 @@ sudo apt full-upgrade
 sudo apt dist-upgrade
 sudo apt autoremove
 sudo apt autoclean
-sudo
+sudo apt clean
 ```
 
 #02_ Instalando o MySQL Server e Client 8.0 no Linux Mint<br>
@@ -72,7 +69,7 @@ sudo
 #INSTALANDO O MYSQL SERVER E CLIENT NO LINUX MINT 20.x
 sudo apt install git vim libproj15 proj-data mysql-server-8.0 mysql-client-8.0 
 
-#INSTALANDO O MYSQL SERVER E CLIENT NO LINUX MINT 21.x
+#INSTALANDO O MYSQL SERVER E CLIENT NO LINUX MINT 21.x e 22.x
 sudo apt install git vim libmysqlclient21 libpcrecpp0v5 libproj22 proj-data mysql-server-8.0 mysql-client-8.0 
 ```
 
@@ -88,6 +85,14 @@ sudo dpkg -i mysql-workbench-community*.deb
 #opção do comando dpkg: -i (install)
 #Link repositório do MySQL Workbench: http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/ (link atualizado em 14/01/2023)
 wget http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/mysql-workbench-community_8.0.33-1ubuntu22.04_amd64.deb
+
+#instalando o MySQL Workbench
+sudo dpkg -i mysql-workbench-community*.deb
+
+#INSTALANDO O MYSQL WORKBENCH NO LINUX MINT 22.x
+#opção do comando dpkg: -i (install)
+#Link repositório do MySQL Workbench: http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/ (link atualizado em 13/11/2024)
+wget http://repo.mysql.com/apt/ubuntu/pool/mysql-tools/m/mysql-workbench-community/mysql-workbench-community_8.0.33-1ubuntu23.04_amd64.deb
 
 #instalando o MySQL Workbench
 sudo dpkg -i mysql-workbench-community*.deb
@@ -205,51 +210,51 @@ mysql -u dba -p
 ```bash
 #executando o MySQL Workbench
 Menu
-	Pesquisa Indexada
-		MySQL Workbench
+  Pesquisa Indexada
+    MySQL Workbench
 
 #conectando com o usuário root do MySQL no Workbench
 MySQL Connections
-	Local instance 3306
-		root
-		localhost
-	
+  Local instance 3306
+    root
+    localhost
+
 #conectando com o usuário dba do MySQL no Workbench
 MySQL Connections: +
-	Connection Name: LinuxMint
-	Connection Method: Standard (TCP/IP)
-	Parameters:
-		Hostname: 127.0.0.1 (ou localhost)
-		Port: 3306
-		Username: dba
-		Password:
-			Store in Keychain
-				Password: pti@2018
-			<OK>
-	<Test Connection>
-		<OK>
-	<OK>
+  Connection Name: LinuxMint
+  Connection Method: Standard (TCP/IP)
+  Parameters:
+    Hostname: 127.0.0.1 (ou localhost)
+    Port: 3306
+    Username: dba
+    Password:
+      Store in Keychain
+        Password: pti@2018
+      <OK>
+  <Test Connection>
+    <OK>
+  <OK>
 ```
 
 #13_ Integrando o MySQL Server com o Visual Studio Code VSCode<br>
 ```bash
 #instalando a Extensão do MySQL Server
 VSCode
-	Extensões
-		Pesquisar
-			MySQL (Database manager for MySQL/MariaDB, PostgreSQL, SQLite, Redis and ElasticSearch)
-				Instalar
+  Extensões
+    Pesquisar
+      MySQL (Database manager for MySQL/MariaDB, PostgreSQL, SQLite, Redis and ElasticSearch)
+        Instalar
 
 #configurando a conexão com o MySQL Server
 VSCode
-	Database
-		<Create Connection>
-			Name: LinuxMint
-			Server Type:
-				MySQL
-					Host: 127.0.0.1 (ou localhost)
-					Port: 3306
-					Username: root
-					Password: pti@2018
-			<Save>
+  Database
+    <Create Connection>
+      Name: LinuxMint
+      Server Type:
+        MySQL
+          Host: 127.0.0.1 (ou localhost)
+          Port: 3306
+          Username: root
+          Password: pti@2018
+      <Save>
 ```

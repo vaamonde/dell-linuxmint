@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 04/08/2024<br>
-#Versão: 0.09<br>
+#Data de atualização: 13/11/2024<br>
+#Versão: 0.10<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -32,7 +32,7 @@ do sistema.
 ```bash
 #atalho para acessar o Terminal
 Terminal: Ctrl + Alt + T
-	
+
 #verificando as versões e codinome do sistema operacional
 #OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
 #OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
@@ -42,14 +42,14 @@ sudo cat /etc/lsb-release
 
 #modo gráfico para verificar as informações de sistema operacional e hardware
 Menu
-	Informações do Sistema
+  Informações do Sistema
 ```
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
 ```bash
 #atualizando o sistema operacional via MintUpdate (Recomendado)
-_ Atualização do sistema utilizando o MintUpdate;
-_ Atualização do sistema utilizando o Apt;
+A) Atualização do sistema utilizando o MintUpdate;
+B) Atualização do sistema utilizando o Apt;
 
 #atualizando o sistema operacional via Terminal
 #atalho para acessar o Terminal
@@ -100,6 +100,8 @@ sudo vim /etc/ansible/hosts
 
 #deletando todo o conteúdo do arquivo
 ESC dG (d=delete | G=end of file)
+
+#entrando no modo de edição do editor de texto VIM
 INSERT
 ```
 ```ruby
@@ -125,6 +127,8 @@ ansible-inventory --list --yaml
 #Link de referência: https://docs.ansible.com/ansible/latest/reference_appendices/config.html
 sudo vim /etc/ansible/ansible.cfg
 ESC dG (d=delete | G=end of file)
+
+#entrando no modo de edição do editor de texto VIM
 INSERT
 ```
 ```ruby
@@ -148,14 +152,16 @@ sudo chmod -v 666 /var/log/ansible.log
 ```bash
 #Acessando remotamente o servidor Ubuntu Server 22.04
 ssh vaamonde@192.168.0.250
-	Are you sure you want to continue connecting (yes/no/[fingerprint])? yes <Enter>
+  Are you sure you want to continue connecting (yes/no/[fingerprint])? yes <Enter>
 
 #Permitindo o usuário Root se logar remotamente via SSH no Ubuntu Server 22.04
 sudo vim /etc/ssh/sshd_config
+
+#entrando no modo de edição do editor de texto VIM
 INSERT
 
-	#alterar a linha: 33 da variável PermitiRootLogin: de: prohibit-password para: yes
-	PermitiRootLogin yes
+  #alterar a linha: 33 da variável PermitiRootLogin: de: prohibit-password para: yes
+  PermitiRootLogin yes
 
 #salvar e sair do arquivo
 ESC SHIFT : x <Enter>
@@ -166,19 +172,19 @@ sudo systemctl status ssh
 
 #Permitindo o usuário Root se logar via Terminal e Remotamente via SSH no Ubuntu Server 22.04
 sudo passwd root
-	New password: pti@2018
-	Retype new password: pti@2018
+  New password: pti@2018
+  Retype new password: pti@2018
 
 #Se autenticando com o Root para testar a senha
 su root
-	Password: pti@2018
+  Password: pti@2018
 exit
 
 #Gerando o Par de Chaves Pública/Privada no Linux Mint
 ssh-keygen
-	Enter file in which to save the key (/home/vaamonde/.ssh/id_rsa): <Enter>
-	Enter passphrase (empty for no passphrase): <Enter>
-	Enter same passphrase again: <Enter>
+  Enter file in which to save the key (/home/vaamonde/.ssh/id_rsa): <Enter>
+  Enter passphrase (empty for no passphrase): <Enter>
+  Enter same passphrase again: <Enter>
 
 #Copiando a Chave Pública para o Usuário Root do Ubuntu Server 22.04
 ssh-copy-id root@192.168.0.250
@@ -290,6 +296,8 @@ ansible-playbook -i hosts update.yaml -vvv
 ```bash
 #criando o arquivo do Playbook de instalação do Apache2
 sudo vim /etc/ansible/apache2.yaml
+
+#entrando no modo de edição do editor de texto VIM
 INSERT
 ```
 ```ruby

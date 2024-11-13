@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 23/10/2024<br>
-#Versão: 0.25<br>
+#Data de atualização: 13/11/2024<br>
+#Versão: 0.26<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -69,7 +69,7 @@ O QUE É E PARA QUE SERVER O ORACLE VIRTUALBOX: VirtualBox é um software de vir
 ```bash
 #atalho para acessar o Terminal
 Terminal: Ctrl + Alt + T
-	
+
 #verificando as versões e codinome do sistema operacional
 #OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
 #OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
@@ -208,6 +208,8 @@ sudo virt-host-validate
 
 #editar o arquivo de configuração do Grub
 sudo vim /etc/default/grub
+
+#entrando no modo de edição do editor de texto VIM
 INSERT
 
   #alterar a linha: 10 das configurações padrão do GRUB do Linux Mint de:
@@ -247,7 +249,7 @@ sudo virt-host-validate
 #atualizar as lista do Apt, atualizar o sistema e instalar a versão 7.1.x
 sudo apt update
 sudo apt upgrade
-sudo apt install virtualbox-7.1 cpu-checker libvirt-clients git vim python2 python3
+sudo apt install virtualbox-7.1 cpu-checker libvirt-clients git vim python3
 
 #OBSERVAÇÃO IMPORTANTE: CASO O PROCEDIMENTO ANTERIOR NÃO FUNCIONE NO SEU LINUX MINT, 
 #RECOMENDO FAZER A REMOÇÃO AUTOMÁTICA DO VIRTUALBOX-6.1 E DEPOIS INSTALAR A VERSÃO 
@@ -258,7 +260,7 @@ sudo apt install virtualbox-7.1 cpu-checker libvirt-clients git vim python2 pyth
 sudo apt update
 sudo apt upgrade
 sudo apt purge virtualbox-6.1
-sudo apt install virtualbox-7.1 cpu-checker libvirt-clients git vim python2 python3
+sudo apt install virtualbox-7.1 cpu-checker libvirt-clients git vim python3
 ```
 
 #07_ Baixando e Instalando o Pacote de Extensões do Oracle VirtualBOX 7.1<br>

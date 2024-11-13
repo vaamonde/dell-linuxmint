@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 24/07/2022<br>
-#Data de atualização: 23/10/2024<br>
-#Versão: 0.06<br>
+#Data de atualização: 13/11/2024<br>
+#Versão: 0.07<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -68,7 +68,7 @@ sudo apt clean
 
 #02_ Download do WPS Office 2019 no Linux Mint<br>
 ```bash
-#versão atualizado em: Oct. 10 2024 (11.1.0.11723) 
+#versão atualizado em: Jul. 29 2024 (11.1.0.11723) 
 #mai informações acesse: https://www.wps.com/pt-BR/whatsnew/linux/
 Site: https://www.wps.com/pt-BR/office/linux/
   WPS Office 2019 For Linux

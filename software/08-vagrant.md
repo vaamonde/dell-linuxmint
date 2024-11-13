@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 04/08/2024<br>
-#Versão: 0.12<br>
+#Data de atualização: 13/11/2024<br>
+#Versão: 0.13<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -40,7 +40,7 @@ aumentar a produtividade do desenvolvimento.
 ```bash
 #atalho para acessar o Terminal
 Terminal: Ctrl + Alt + T
-	
+
 #verificando as versões e codinome do sistema operacional
 #OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
 #OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
@@ -53,7 +53,7 @@ sudo localectl
 
 #modo gráfico para verificar as informações de sistema operacional e hardware
 Menu
-	Informações do Sistema
+  Informações do Sistema
 ```
 
 #01_ Atualização do Sistema Operacional Linux Mint<br>
@@ -189,7 +189,7 @@ vagrant global-status
 #Link de referência: https://www.vagrantup.com/docs/cli/global-status
 #opção do comando vagrant: destroy (stops and deletes all traces of the vagrant machine)
 vagrant destroy
-	default: Are you sure you want to destroy the 'default' VM? [y/N]
+  default: Are you sure you want to destroy the 'default' VM? [y/N]
 vagrant global-status
 ```
 
@@ -229,6 +229,8 @@ vim Vagrantfile
 
 #deletando todo o conteúdo do arquivo
 ESC dG (d=delete | G=end of file)
+
+#entrando no modo de edição do editor de texto VIM
 INSERT
 ```
 ```ruby
