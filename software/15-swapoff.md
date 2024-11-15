@@ -82,6 +82,9 @@ sudo inxi -DPxxx
 #desligando o Swapfile
 #opção do comando swapoff: -v (verbose)
 sudo swapoff -v /swapfile
+
+#verificando o status da Swapfile
+#opção do comando swapon: --show (Display a definable table of swap areas)
 sudo swapon --show
 
 #Opção-01: Comentar a linha de configuração do Swapfile no arquivo fstab
@@ -108,9 +111,12 @@ ESC SHIFT :x <Enter>
 #opção do comando sed: -i (in-place), /^\ (início da lista + escape), /d (delete)
 sudo sed -i ′/^\/swapfile/d′ /etc/fstab
 
-#listando e removendo o arquivo de Swapfile
-#opção do comando rm: -v (verbose)
+#listando o arquivo de Swapfile
+#opção do comando ls: -l (list long format), -h (humman-read)
 sudo ls -lh /swapfile
+
+#removendo o arquivo de Swapfile
+#opção do comando rm: -v (verbose)
 sudo rm -v /swapfile
 
 #Reiniciar o Linux Mint para verificar se o Swapfile foi removido.
@@ -125,7 +131,7 @@ sudo df -h
 #opção do comando inxi: -Duxxx -D (disk), -u (uuid), -xxx (extra data levels)
 sudo inxi -Duxxx
 
-#OPÇÃO DO INXI PARA O LINUX MINT 21.x
+#OPÇÃO DO INXI PARA O LINUX MINT 21.x e 22.x
 #opção do comando inxi: -Duxxx -D (disk), -P (Partition), -xxx (extra data levels)
 sudo inxi -DPxxx
 ```
@@ -136,13 +142,17 @@ sudo inxi -DPxxx
 #de estado sólido quais blocos de dados não são mais considerados 'em uso' e, portanto, podem ser 
 #apagados internamente. O Trim foi introduzido logo após a introdução dos SSDs.
 
-#verificando as informações de partições e discos
+#verificando as informações de partições e discos com o fdisk
 #opção do comando fdisk: -l (list)
-#opção do comando smartctl: -a (all)
-#opção do comando fstrim: -v (verbose)
 sudo fdisk -l
-sudo smartctl -a /dev/nvme0n1
-sudo fstrim -v /home/vaamonde
+
+#verificando as informações de partições e discos com o smartctl
+#opção do comando smartctl: -a (all)
+sudo smartctl -a /dev/MUDAR_PARA_SEU_HD (VEJA A LINHA: Disco do comando fdisk)
+
+#verificando as informações do TRIM no diretório com o comando fstrim
+#opção do comando fstrim: -v (verbose)
+sudo fstrim -v /home/MUDAR_PARA_O_SEU_USUÁRIO
 
 #verificando o status do serviço do FSTRIM (padrão desativado: Active: inactive (dead))
 sudo systemctl status fstrim
