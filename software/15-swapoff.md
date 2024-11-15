@@ -75,11 +75,7 @@ sudo df -h
 #opção do comando inxi: -Duxxx -D (disk), -u (uuid), -xxx (extra data levels)
 sudo inxi -Duxxx
 
-#OPÇÃO DO INXI PARA O LINUX MINT 21.x
-#opção do comando inxi: -Duxxx -D (disk), -P (Partition), -xxx (extra data levels)
-sudo inxi -DPxxx
-
-#OPÇÃO DO INXI PARA O LINUX MINT 22.x
+#OPÇÃO DO INXI PARA O LINUX MINT 21.x E 22.X
 #opção do comando inxi: -Duxxx -D (disk), -P (Partition), -xxx (extra data levels)
 sudo inxi -DPxxx
 
