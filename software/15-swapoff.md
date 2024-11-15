@@ -79,6 +79,10 @@ sudo inxi -Duxxx
 #opção do comando inxi: -Duxxx -D (disk), -P (Partition), -xxx (extra data levels)
 sudo inxi -DPxxx
 
+#OPÇÃO DO INXI PARA O LINUX MINT 22.x
+#opção do comando inxi: -Duxxx -D (disk), -P (Partition), -xxx (extra data levels)
+sudo inxi -DPxxx
+
 #desligando o Swapfile
 #opção do comando swapoff: -v (verbose)
 sudo swapoff -v /swapfile
