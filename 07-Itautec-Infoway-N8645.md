@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 19/05/2023<br>
-#Data de atualização: 07/11/2024<br>
-#Versão: 0.15<br>
+#Data de atualização: 09/12/2024<br>
+#Versão: 0.16<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma x64<br>
@@ -197,52 +197,7 @@ sudo cat /etc/os-release
 #atualizando as listas do Apt
 sudo apt update
 
-#INSTALAÇÃO DO KERNEL OEM NO LINUX MINT 20.x (KERNEL >= 5.15)
-
-#Linux Mint Versão 20.x - Kernel >= 5.15 (NÃO RECOMENDADO MAIS O SEU USO)
-sudo apt install linux-oem-20.04 fdutils
-
-#Linux Mint Versão 20.x - Kernel >= 5.15 (NÃO RECOMENDADO MAIS O SEU USO)
-sudo apt install linux-oem-20.04b fdutils
-
-#Linux Mint Versão 20.x - Kernel >= 5.15 (NÃO RECOMENDADO MAIS O SEU USO)
-sudo apt install linux-oem-20.04c fdutils
-
-#Linux Mint Versão 20.x - Kernel >= 5.15 (TESTADO E HOMOLOGADO, RECOMENDO A SUA INSTALAÇÃO)
-sudo apt install linux-oem-20.04d fdutils
-
-#Reinicializar o Sistema
-sudo reboot
-
-#Verificando a versão do Kernel que está rodando na inicialização do Linux Mint
-#opção do comando uname: -a (all)
-sudo uname -a
-
-#INSTALAÇÃO DO KERNEL OEM NO LINUX MINT 21.x (KERNEL >= 5.17, KERNEL >= 6.0, KERNEL >= 6.1 e KERNEL >= 6.5)
-
-#Linux Mint Versão 21.x - Kernel >= 5.17 (NÃO RECOMENDADO MAIS O SEU USO)
-sudo apt install linux-oem-22.04a fdutils
-
-#Linux Mint Versão 21.x - Kernel >= 6.0 (NÃO RECOMENDADO MAIS O SEU USO)
-sudo apt install linux-oem-22.04b fdutils
-
-#Linux Mint Versão 21.x - Kernel >= 6.1 (NÃO RECOMENDADO MAIS O SEU USO)
-sudo apt install linux-oem-22.04c fdutils
-
-#Linux Mint Versão 21.x - Kernel >= 6.5 (TESTADO E HOMOLOGADO, RECOMENDO A SUA INSTALAÇÃO)
-sudo apt install linux-oem-22.04d fdutils
-
-#Reinicializar o Sistema
-sudo reboot 
-
-#Verificando a versão do Kernel que está rodando na inicialização do Linux Mint
-#opção do comando uname: -a (all)
-sudo uname -a
-
 #INSTALAÇÃO DO KERNEL OEM NO LINUX MINT 22.x (KERNEL >= 6.8)
-
-#Linux Mint Versão 22.x - Kernel >= 6.8 (NÃO RECOMENDADO MAIS O SEU USO)
-sudo apt install linux-oem-24.04 fdutils
 
 #Linux Mint Versão 22.x - Kernel >= 6.8 (TESTADO E HOMOLOGADO, RECOMENDO A SUA INSTALAÇÃO)
 sudo apt install linux-oem-24.04a fdutils
@@ -322,11 +277,11 @@ A) Software de Benchmark para GNU/Linux para Testar Desempenho Gráfico
 
 A) Instalação dos principais navegadores de Internet (DEIXAR OS ÍCONES NO DESKTOP)
   DICA: BAIXAR TODOS OS APLICATIVOS DO SITE OFICIAL DOS DESENVOLVEDORES
-  01) Google Chrome: https://www.google.com/intl/pt-BR/chrome/
-  02) Opera: https://www.opera.com/pt-br
-  03) Microsoft Edge: https://www.microsoft.com/pt-br/edge/?form=MA13FJ
-  04) Vivaldi: https://vivaldi.com/pt-br/
-  05) Brave: https://brave.com/pt-br/
+  01) Google Chrome: https://www.google.com/intl/pt-BR/chrome/            DICA: instalar via site Oficial
+  02) Opera: https://www.opera.com/pt-br                                  DICA: instalar via site Oficial
+  03) Microsoft Edge: https://www.microsoft.com/pt-br/edge/?form=MA13FJ   DICA: instalar via site Oficial
+  04) Vivaldi: https://vivaldi.com/pt-br/                                 DICA: instalar via site Oficial
+  05) Brave: https://brave.com/pt-br/                                     DICA: instalar via site Oficial
 
 B) Instalação dos principais softwares de Produtividade (DEIXAR OS ÍCONES NO DESKTOP)
   01) KolourPaint: https://apps.kde.org/pt-br/kolourpaint/  DICA: instalar via apt
