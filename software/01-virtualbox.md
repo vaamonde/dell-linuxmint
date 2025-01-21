@@ -7,15 +7,15 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 13/11/2024<br>
-#Versão: 0.26<br>
+#Data de atualização: 21/01/2025<br>
+#Versão: 0.27<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
-#Testado e homologado no Linux Mint 22 Wilma x64<br>
+#Testado e homologado no Linux Mint 22 Wilma e 22.1 Xia x64<br>
 
 #Instalação do VirtualBOX no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do VirtualBOX no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
-#Instalação do VirtualBOX no Linux Mint 22 Wilma x64<br>
+#Instalação do VirtualBOX no Linux Mint 22 Wilma e 22.1 Xia x64<br>
 
 [![VirtualBOX 6.x](http://img.youtube.com/vi/yTihvAaaxpU/0.jpg)](https://www.youtube.com/watch?v=yTihvAaaxpU "VirtualBOX 6.x")
 
@@ -26,6 +26,7 @@ Link da vídeo aula: https://www.youtube.com/watch?v=yTihvAaaxpU
 Link da vídeo aula: https://www.youtube.com/watch?v=DU47PLFSxpA
 
 Site Oficial do VirtualBOX: https://www.virtualbox.org/<br>
+Lançamento da versão 7.1 do VirtualBOX: https://www.virtualbox.org/wiki/Changelog-7.1<br>
 Lançamento da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Changelog-7.0#v02<br>
 Atualização da versão 7.0 do VirtualBOX: https://www.virtualbox.org/wiki/Changelog-7.0#v4
 
