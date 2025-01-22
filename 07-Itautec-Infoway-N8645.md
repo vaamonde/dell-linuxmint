@@ -7,11 +7,17 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 19/05/2023<br>
-#Data de atualização: 09/12/2024<br>
-#Versão: 0.16<br>
+#Data de atualização: 22/01/2025<br>
+#Versão: 0.17<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
-#Testado e homologado no Linux Mint 22 Wilma x64<br>
+#Testado e homologado no Linux Mint 22 Wilma e 22.1 Xia x64<br>
+
+#Lançamentos Oficiais do Linux Mint 22.1<br>
+18/01/2025 - Como atualizar para o Linux Mint 22.1 "Xia" https://blog.linuxmint.com/?p=4797<br>
+16/01/2025 - Lançamento do Linux Mint 22.1 "Xia" https://blog.linuxmint.com/?p=4793<br>
+11/01/2025 - Novidades do Linux Mint 22.1 "Xia" https://blog.linuxmint.com/?p=4790<br>
+16/12/2024 - Lançamento do BETA dp Linux Mint 22.1 "Xia" https://blog.linuxmint.com/?p=4787<br>
 
 #Lançamentos Oficiais do Linux Mint 22<br>
 31/01/2024 - Anúncio o Linux Mint 22 "Wilma" https://blog.linuxmint.com/?p=4639<br>
@@ -275,20 +281,22 @@ A) Software de Benchmark para GNU/Linux para Testar Desempenho Gráfico
 
 #13_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint<br>
 
-A) Instalação dos principais navegadores de Internet (DEIXAR OS ÍCONES NO DESKTOP)
+A) Instalação dos principais Navegadores de Internet (DEIXAR OS ÍCONES NO DESKTOP)
   DICA: BAIXAR TODOS OS APLICATIVOS DO SITE OFICIAL DOS DESENVOLVEDORES
   01) Google Chrome: https://www.google.com/intl/pt-BR/chrome/            DICA: instalar via site Oficial
   02) Opera: https://www.opera.com/pt-br                                  DICA: instalar via site Oficial
   03) Microsoft Edge: https://www.microsoft.com/pt-br/edge/?form=MA13FJ   DICA: instalar via site Oficial
   04) Vivaldi: https://vivaldi.com/pt-br/                                 DICA: instalar via site Oficial
   05) Brave: https://brave.com/pt-br/                                     DICA: instalar via site Oficial
+  06) Slimjet: https://www.slimjet.com/pt/                                DICA: instalar via site Oficial
+  07) Midori: https://astian.org/midori-browser/                          DICA: instalar via site Oficial
 
-B) Instalação dos principais softwares de Produtividade (DEIXAR OS ÍCONES NO DESKTOP)
+B) Instalação dos principais Softwares de Produtividade (DEIXAR OS ÍCONES NO DESKTOP)
   01) KolourPaint: https://apps.kde.org/pt-br/kolourpaint/  DICA: instalar via apt
   02) NotepadQQ: https://notepadqq.com/s/                   DICA: instalar via apt
   03) VLC: https://www.videolan.org/vlc/                    DICA: instalar via apt
   04) Audacity: https://www.audacityteam.org/               DICA: instalar via apt
-  05) Kdenlive: https://kdenlive.org/en/                    DICA: usar imagens AppImage
+  05) Kdenlive: https://kdenlive.org/en/                    DICA: usar imagens AppImage via site Oficial
   06) Kazam: https://launchpad.net/kazam                    DICA: instalar via apt
 
 C) Instalar e Configurar todos os procedimentos do Oracle VirtualBOX (DEIXAR O ÍCONE NO DESKTOP)
