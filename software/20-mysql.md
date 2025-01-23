@@ -69,7 +69,10 @@ sudo apt clean
 #INSTALANDO O MYSQL SERVER E CLIENT NO LINUX MINT 20.x
 sudo apt install git vim libproj15 proj-data mysql-server-8.0 mysql-client-8.0 
 
-#INSTALANDO O MYSQL SERVER E CLIENT NO LINUX MINT 21.x e 22.x
+#INSTALANDO O MYSQL SERVER E CLIENT NO LINUX MINT 21.x
+sudo apt install git vim libmysqlclient21 libpcrecpp0v5 libproj22 proj-data mysql-server-8.0 mysql-client-8.0 
+
+#INSTALANDO O MYSQL SERVER E CLIENT NO LINUX MINT 22.x
 sudo apt install git vim libmysqlclient21 libpcrecpp0v5 libproj25 proj-data mysql-server-8.0 mysql-client-8.0 
 ```
 
