@@ -7,15 +7,15 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 14/01/2023<br>
-#Data de atualização: 13/11/2024<br>
-#Versão: 0.12<br>
+#Data de atualização: 23/01/2025<br>
+#Versão: 0.13<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
-#Testado e homologado no Linux Mint 22 Wilma x64<br>
+#Testado e homologado no Linux Mint 22 Wilma e 22.1 Xia x64<br>
 
 #Instalação do MySQL Server e Client 8.0 no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do MySQL Server e Client 8.0 no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
-#Instalação do MySQL Server e Client 8.0 no Linux Mint 22 Wilma x64<br>
+#Instalação do MySQL Server e Client 8.0 no Linux Mint 22 Wilma e 22.1 Xia x64<br>
 
 [![MySQL Server](http://img.youtube.com/vi/ClnoU4-x5oI/0.jpg)](https://www.youtube.com/watch?v=ClnoU4-x5oI "MySQL Server")
 
@@ -70,7 +70,7 @@ sudo apt clean
 sudo apt install git vim libproj15 proj-data mysql-server-8.0 mysql-client-8.0 
 
 #INSTALANDO O MYSQL SERVER E CLIENT NO LINUX MINT 21.x e 22.x
-sudo apt install git vim libmysqlclient21 libpcrecpp0v5 libproj22 proj-data mysql-server-8.0 mysql-client-8.0 
+sudo apt install git vim libmysqlclient21 libpcrecpp0v5 libproj25 proj-data mysql-server-8.0 mysql-client-8.0 
 ```
 
 #03_ Instalando o MySQL Workbench no Linux Mint<br>
