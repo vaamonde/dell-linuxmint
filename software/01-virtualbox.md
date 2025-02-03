@@ -257,7 +257,7 @@ sudo apt install virtualbox-7.1 cpu-checker libvirt-clients git vim python3
 #7.1, UTILIZE OS SEGUINTES COMANDOS:
 
 #atualizar as lista do Apt, atualizar o sistema, remover a versão 6.0.x e instalar 
-#a versão 7.0.x
+#a versão 7.1.x
 sudo apt update
 sudo apt upgrade
 sudo apt purge virtualbox-6.1
