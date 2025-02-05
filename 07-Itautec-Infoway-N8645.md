@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 19/05/2023<br>
-#Data de atualização: 22/01/2025<br>
-#Versão: 0.17<br>
+#Data de atualização: 05/02/2025<br>
+#Versão: 0.18<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma e 22.1 Xia x64<br>
@@ -72,15 +72,15 @@ A) Recomendações de Software para Pen Drive
 
 #02_ Configurações do Hardware do Notebook Itautec Infoway N8645<br>
 ```bash
-A) CPU Intel i7 M620 2.67Ghz 4MB Cache;
-B) RAM 8GB DDR-3 1333Mhz;
-C) HD Samsung HM500JI-(S1) 500GB;
-D) VÍDEO Monitor LCD 15;
-E) WEBCAM Integrada; 
-F) VGA AMD Radeon RV730/M96;
-G) NETWORK Ethernet Realtek RTL8111/8168;
-H) Audio Intel 5 Series/3400 e AMD;
-I) VGA RV710/730 HDMI Radeon 4000 Series.
+A) CPU......: Intel i7 M620 2.67Ghz 4MB Cache;
+B) RAM......: 8GB DDR-3 1333Mhz;
+C) HD.......: Samsung HM500JI-(S1) 500GB;
+D) VÍDEO....: Monitor LCD 15;
+E) WEBCAM...: Integrada; 
+F) VGA......: AMD Radeon RV730/M96;
+G) NETWORK..: Ethernet Realtek RTL8111/8168;
+H) AUDIO....: Intel 5 Series/3400 e AMD;
+I) VGA......: RV710/730 HDMI Radeon 4000 Series.
 ```
 
 #03_ Configuração da BIOS do Notebook Itautec Infoway N8645 P5214_I-SL2.1<br>
@@ -236,8 +236,8 @@ ipmiutil smartmontools btop
 
 #instalação dos software e aplicativos básicos do Linux Mint 20.x, 21.x e 22.x
 #opção da contra barra (\): criar uma quebra de linha no terminal
-sudo apt install ttf-mscorefonts-installer cheese guvcview v4l-utils cairo-dock vim git \
-p7zip-full p7zip-rar pulseaudio
+sudo apt install ttf-mscorefonts-installer cheese guvcview v4l-utils vim git p7zip-full \
+p7zip-rar
 
 #reinicializar o Sistema
 sudo reboot
