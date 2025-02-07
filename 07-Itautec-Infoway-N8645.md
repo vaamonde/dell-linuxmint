@@ -206,7 +206,7 @@ sudo apt update
 #INSTALAÇÃO DO KERNEL OEM NO LINUX MINT 22.x (KERNEL >= 6.8)
 
 #Linux Mint Versão 22.x - Kernel >= 6.8 (TESTADO E HOMOLOGADO, RECOMENDO A SUA INSTALAÇÃO)
-sudo apt install linux-oem-24.04a fdutils
+sudo apt install linux-oem-24.04b fdutils
 
 #Reinicializar o Sistema
 sudo reboot 
