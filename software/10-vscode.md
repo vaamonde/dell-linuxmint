@@ -148,12 +148,6 @@ Manter selecionado a extensão: Brazilian Portuguese - Code Spell Checker
         File Types and Programming Languages
           shellscript, python, markdown, etc...
 
-Code Spell Checker
-  (Sem necessidade de configuração)
-
-Bats (Bash Automated Testing System)
-  (Sem necessidade de configuração)
-
 Bash Beautify
   (Sem necessidade de configuração)
 
