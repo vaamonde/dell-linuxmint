@@ -65,15 +65,15 @@ Link da vídeo aula: https://www.youtube.com/watch?v=VHtb30NCN4I
 ## Instalação do Linux Mint 64 Bits no Dell Inspiron 1440 (2009)
 
 ### 01_ Software para criação de Pen Drive Bootável do Linux Mint 20.x, 21.x ou 22.x x64
-```bash
-01) Rufus (Microsoft): https://rufus.ie/pt_BR/
-02) YUMI: https://www.pendrivelinux.com/yumi-multiboot-usb-creator/
-03) Etcher: https://www.balena.io/etcher/
-04) UNetbootin: https://unetbootin.github.io/
-05) Ventoy: https://www.ventoy.net/en/index.html
-06) Linux Live USC Creator: https://www.linuxliveusb.com/
-07) Popsicle: https://github.com/pop-os/popsicle
-```
+
+01) Rufus (Microsoft): https://rufus.ie/pt_BR/<br>
+02) YUMI: https://www.pendrivelinux.com/yumi-multiboot-usb-creator/<br>
+03) Etcher: https://www.balena.io/etcher/<br>
+04) UNetbootin: https://unetbootin.github.io/<br>
+05) Ventoy: https://www.ventoy.net/en/index.html<br>
+06) Linux Live USC Creator: https://www.linuxliveusb.com/<br>
+07) Popsicle: https://github.com/pop-os/popsicle<br>
+
 
 ### 02_ Configurações do Hardware do Dell Inspiron 1440
 ```bash
