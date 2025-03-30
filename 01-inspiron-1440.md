@@ -88,11 +88,11 @@ Link da vídeo aula: https://www.youtube.com/watch?v=VHtb30NCN4I
 
 ### 03_ Configuração da BIOS (versão A12) do Dell Inspiron 1440
 ```bash
-01) Configuração Padrão de Fábrica, 
-02) Hard Disk SATA em AHCI, 
-03) VT-x habilitado, 
-04) Audio habilitado, 
-05) Wireless habilitado,
+01) Configuração Padrão de Fábrica;
+02) Hard Disk SATA em AHCI;
+03) VT-x habilitado;
+04) Audio habilitado;
+05) Wireless habilitado;
 06) Bluetooth habilitado.
 ```
 
