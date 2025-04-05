@@ -8,8 +8,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/10/2020<br>
-#Data de atualização: 30/03/2025<br>
-#Versão: 0.29<br>
+#Data de atualização: 05/04/2025<br>
+#Versão: 0.30<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma e 22.1 Xia x64<br>
@@ -98,7 +98,7 @@ Link da vídeo aula: https://www.youtube.com/watch?v=VHtb30NCN4I
 
 ### 04_ Inicialização da Instalação do Linux Mint no Dell Inspiron 1440
 
-**OBSERVAÇÃO IMPORTANTE:** Para não ter falhas de inicialização da instalação do *Linux Mint 20.x*, utilizei o recurso de __` Modo de Compatibilidade `__, recomendado para equipamentos legados (inicialização em modo de compatibilidade e mais lento no Dell Inspiron 1440)
+**OBSERVAÇÃO IMPORTANTE:** Para não ter falhas de inicialização da instalação do *Linux Mint 20.x*, utilizei o recurso de __`Modo de Compatibilidade`__, recomendado para equipamentos legados (inicialização em modo de compatibilidade e mais lento no Dell Inspiron 1440)
 
 A) Atalho para a escolha do Boot (Boot Options) na inicialização: F12
 
@@ -107,15 +107,15 @@ A) Atalho para a escolha do Boot (Boot Options) na inicialização: F12
 
 ### 05_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless) no Dell Inspiron 1440
 
-**Modelo Broadcom BCM-4312**, por padrão não é reconhecida no *Linux Mint 20.x* sendo necessário instalar o Driver Proprietário pelo __` Gerenciador de Drivers do Linux Mint `__ ou por linha de comando.
+**Modelo Broadcom BCM-4312**, por padrão não é reconhecida no *Linux Mint 20.x* sendo necessário instalar o Driver Proprietário pelo __`Gerenciador de Drivers do Linux Mint`__ ou por linha de comando.
 
-**OBSERVAÇÃO IMPORTANTE:** se você utilizar o *Kernel OEM >= 5.6* a instalação do Driver da Broadcom via Gerenciador de Driver não funciona corretamente, sendo necessário instalar o Firmware e Driver manualmente por linha de comando.
+**OBSERVAÇÃO IMPORTANTE:** se você utilizar o *Kernel OEM >= 5.6* a instalação do Driver da Broadcom via Gerenciador de Driver não funciona corretamente, sendo necessário instalar o *Firmware e Driver* manualmente por linha de comando.
 
-**OBSERVAÇÃO IMPORTANTE:** na versão do *Linux Mint 20.3 Una* não é mais necessário instalar o Driver da Placa de Rede Sem-Fio Broadcom, ela é reconhecida no Live-CD, depois de instalado o Linux Mint já está funcionando, mesmo depois de instalar o *Kernel OEM >= 5.10*.
+**OBSERVAÇÃO IMPORTANTE:** na versão do *Linux Mint 20.3 Una* não é mais necessário instalar o Driver da Placa de Rede Sem-Fio Broadcom, ela já é reconhecida no Live-CD, depois de instalado o Linux Mint já está funcionando, mesmo depois de instalar o *Kernel OEM >= 5.10*.
 
-**OBSERVAÇÃO IMPORTANTE:** nas versões do *Linux Mint 21, 21.1, 21.2 e 21.3* o driver da Broadcom não é reconhecido por padrão, sendo necessário instalar o Driver Proprietário pelo __` Gerenciador de Drivers do Linux Mint `__ ou por linha de comando.
+**OBSERVAÇÃO IMPORTANTE:** nas versões do *Linux Mint 21, 21.1, 21.2 e 21.3* o driver da Broadcom não é mais reconhecido por padrão, sendo necessário instalar o Driver Proprietário pelo __`Gerenciador de Drivers do Linux Mint`__ ou por linha de comando.
 
-**OBSERVAÇÃO IMPORTANTE:* nas versões do *Linux Mint 22 e 22.1* utilizando o *Kernel padrão >= 6.8* o driver da Broadcom não é reconhecido por padrão, sendo necessário instalar o Driver Proprietário pelo __` Gerenciador de Drivers do Linux Mint `__ ou por linha de comando.
+**OBSERVAÇÃO IMPORTANTE:** nas versões do *Linux Mint 22 e 22.1* utilizando o *Kernel padrão >= 6.8* o driver da Broadcom não é reconhecido por padrão, sendo necessário instalar o Driver Proprietário pelo __`Gerenciador de Drivers do Linux Mint`__ ou por linha de comando.
 
 
 ### 06_ Hard Disk SATA SSD 60GB e SATA 500GB 7200rpm no Dell Inspiron 1440
@@ -124,7 +124,7 @@ A) Modelo Corsair Force 3, Hard Disk utilizado para a instalação do Linux Mint
 
 B) Hard Disk WD usado para armazenamento de arquivos e backup (case Akasa AK-OA2SSA-BKV2 2,5).
 
-**OBSERVAÇÃO IMPORTANTE:** sempre utilizar o software *GParted* para remover todas as partições existente no disco que será feito a instalação do Linux Mint, isso deixar o sistema mais seguro e não causa o problemas de Múltiplos Boots.
+**OBSERVAÇÃO IMPORTANTE:** sempre utilizar o software *GParted* para remover todas as partições existente no disco que será feito a instalação do Linux Mint, isso deixar o sistema mais seguro e não causa os problemas de Múltiplos Boots.
 
 
 ### 07_ Pós-Instalação do Linux Mint no Dell Inspiron 1440
@@ -209,7 +209,7 @@ apt-transport-https module-assistant
 sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool ipmitool \
 ipmiutil smartmontools
 
-#instalação dos software de aplicativos básicos do Linux Mint 20.x, 21.x
+#instalação dos software de aplicativos básicos do Linux Mint 20.x e 21.x
 #opção da contra barra (\): criar uma quebra de linha no terminal
 sudo apt install ttf-mscorefonts-installer cheese guvcview v4l-utils cairo-dock vim git \
 p7zip-full p7zip-rar
@@ -226,16 +226,12 @@ sudo reboot
 ### 10_ Instalação dos Drivers VGA Intel Graphics do Linux Mint no Dell Inspiron 1440
 ```bash
 #instalação das dependências do VGA Intel Graphics
-sudo apt update
 sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
 
 #INSTALAÇÃO DOS DRIVERS VGA DA INTEL GRAPHICS NO LINUX MINT 20.x
 sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5 beignet-opencl-icd
 
-#INSTALAÇÃO DOS DRIVERS VGA DA INTEL GRAPHICS NO LINUX MINT 21.x
-sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5
-
-#INSTALAÇÃO DOS DRIVERS VGA DA INTEL GRAPHICS NO LINUX MINT 22.x
+#INSTALAÇÃO DOS DRIVERS VGA DA INTEL GRAPHICS NO LINUX MINT 21.x e 22.x
 sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5
 
 #Reinicializar o Sistema
@@ -244,15 +240,14 @@ sudo reboot
 
 ### 11_ Instalação dos Drivers Sem-Fio (Wi-Fi/Wireless) Broadcom BCM-4312 do Linux Mint no Dell Inspiron 1440
 
-**OBSERVAÇÃO IMPORTANTE:** Na versão do *Linux Mint 20.2 Uma*, ele reconhece a Placa de Rede Sem-Fio no Gerenciador de Driver, mais o Driver padrão: __` bcmwl-kernel-source `__ não funciona corretamente no *Kernel padrão* e no *Kernel OEM*, no vídeo fiz a remoção do driver e depois instalei novamente, recomendo marcar a opção: *Não usar esse dispositivo primeiro*, Aplicar as Mudanças, reiniciar o Desktop/Notebook e depois instalar os Drivers abaixo.
+**OBSERVAÇÃO IMPORTANTE:** Na versão do *Linux Mint 20.2 Uma*, ele reconhece a Placa de Rede Sem-Fio no Gerenciador de Driver, mais o Driver padrão: __`bcmwl-kernel-source`__ não funciona corretamente no *Kernel padrão* e no *Kernel OEM*, no vídeo fiz a remoção do driver e depois instalei novamente, recomendo marcar a opção: *Não usar esse dispositivo primeiro*, Aplicar as Mudanças, reiniciar o Desktop/Notebook e depois instalar os Drivers abaixo.
 
-**OBSERVAÇÃO IMPORTANTE:** Na versão do *Linux Mint 20.3 Una*, ele reconhece a Placa de Rede Sem-Fio no Gerenciador de Driver, o Driver já está funcionando Perfeitamente mesmo depois de instalar o Kernel OEM.
+**OBSERVAÇÃO IMPORTANTE:** Na versão do *Linux Mint 20.3 Una*, ele reconhece a Placa de Rede Sem-Fio no Gerenciador de Driver, o Driver já está funcionando Perfeitamente mesmo depois de instalar o *Kernel OEM*.
 
-**OBSERVAÇÃO IMPORTANTE:** Nas versões do *Linux Mint 21, 21.1, 21.2 e 21.3*, ele reconhecer a Rede Sem-Fio no Gerenciador de Driver, mais o Driver padrão: __` bcmwl-kernel-source `__ não funciona corretamente no *Kernel padrão* e no *Kernel OEM*, recomendo marcar a opção: *Não usar esse dispositivo primeiro*, Aplicar as Mudanças, reiniciar o Desktop/Notebook e depois instalar os Drivers abaixo.
+**OBSERVAÇÃO IMPORTANTE:** Nas versões do *Linux Mint 21, 21.1, 21.2 e 21.3*, ele reconhecer a Rede Sem-Fio no Gerenciador de Driver, mais o Driver padrão: __`bcmwl-kernel-source`__ não funciona corretamente no *Kernel padrão* e no *Kernel OEM*, recomendo marcar a opção: *Não usar esse dispositivo primeiro*, Aplicar as Mudanças, reiniciar o Desktop/Notebook e depois instalar os Drivers abaixo.
 
 ```bash
 #OBSERVAÇÃO IMPORTANTE: só usar esse comando se for realmente necessário.
-sudo apt update
 sudo apt install firmware-b43-installer firmware-b43legacy-installer
 
 #Reinicializar o Sistema
@@ -261,15 +256,16 @@ sudo reboot
 
 ### 12_ Desativando o Swapfile do Linux Mint no Dell Inspiron 1440
 
-**OBSERVAÇÃO IMPORTANTE:** NO VÍDEO DE CONFIGURAÇÃO DO DELL INSPIRON 1440 EU NÃO FIZ MENÇÃO AO SWAPFILE QUE É CRIADO AUTOMATICAMENTE NA INSTALAÇÃO DO LINUX MINT, QUANDO VOCÊ ESTÁ UTILIZANDO: *SSD, M.2 OU NVME* É RECOMENDADO DESATIVAR O SUPORTE AO *SWAPFILE* PARA AUMENTAR O TEMPO DE VIDA DO SSD. **TRIM** É UM COMANDO QUE INFORMA QUAIS PÁGINAS OU BLOCOS ESTÃO REALMENTE EM USO EM SEU SSD. ESSA FUNÇÃO AUMENTA O DESEMPENHO DO DISPOSITIVO, GERA MAIS ESPAÇO LIVRE E AINDA AUXILIA A PROLONGAR SUA VIDA ÚTIL DO SSD.
+**OBSERVAÇÃO IMPORTANTE:** NO VÍDEO DE CONFIGURAÇÃO DO DELL INSPIRON 1440 EU NÃO FIZ MENÇÃO AO SWAPFILE QUE É CRIADO AUTOMATICAMENTE NA INSTALAÇÃO DO LINUX MINT, QUANDO VOCÊ ESTÁ UTILIZANDO: *SSD, M.2 OU NVME* É RECOMENDADO DESATIVAR O SUPORTE AO *SWAPFILE* PARA AUMENTAR O TEMPO DE VIDA DO SSD. **TRIM** É UM COMANDO QUE INFORMA QUAIS PÁGINAS OU BLOCOS ESTÃO REALMENTE EM USO EM SEU **SSD**. ESSA FUNÇÃO AUMENTA O DESEMPENHO DO DISPOSITIVO, GERA MAIS ESPAÇO LIVRE E AINDA AUXILIA A PROLONGAR SUA VIDA ÚTIL DO SSD.
 
 ```bash
 01) Executar os procedimentos no Terminal (Ctrl + Alt + T)
 
+#visualizando o arquivo do Swapfile
+sudo swapon --show
+
 #desativando o arquivo de Swapfile
 #opção do comando swapoff: -v (verbose)
-#opção do comando rm: -v (verbose)
-sudo swapon --show
 sudo swapoff -v /swapfile
 
 #editando o arquivo de tabela de sistema de arquivo
@@ -281,6 +277,7 @@ INSERT
 ESC SHIFT : x <Enter>
 
 #remover o arquivo de Swapfile
+#opção do comando rm: -v (verbose)
 sudo rm -v /swapfile
 
 #reinicializar o Sistema
