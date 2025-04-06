@@ -7,40 +7,35 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização:13/11/2024<br>
-#Versão: 0.13<br>
+#Data de atualização: 06/04/2025<br>
+#Versão: 0.14<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
-#Testado e homologado no Linux Mint 22 Wilma x64<br>
+#Testado e homologado no Linux Mint 22 Wilma e 22.1 Xia x64<br>
 
 #Instalação do VMware Workstation no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do VMware Workstation no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
-#Instalação do VMware Workstation no Linux Mint 22 Wilma x64<br>
+#Instalação do VMware Workstation no Linux Mint 22 Wilma e 22.1 Xia x64<br>
 
 [![VMware Workstation](http://img.youtube.com/vi/Uv2mebfheaI/0.jpg)](https://www.youtube.com/watch?v=Uv2mebfheaI "VMware Workstation")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=Uv2mebfheaI
 
 Site Oficial do VMware Workstation: https://www.vmware.com/br/products/workstation-pro.html<br>
-Site Oficial do VMware Store: https://store-us.vmware.com/vmware-workstation-17-pro-5709912600.html
+Site Oficial do VMware Store: https://store-us.vmware.com/vmware-workstation-17-pro-5709912600.html<br>
+Site Oficial da Broadcom VMWare: https://www.broadcom.com/info/vmware<br>
 
-O QUE É E PARA QUE SERVER O VMWARE WORKSTATION: O VMware Workstation é uma linha de produtos<br>
-de hypervisor de desktop que permitem aos usuários executar máquinas virtuais, contêineres e<br>
-clusters de Kubernetes.
+**O QUE É E PARA QUE SERVER O VMWARE WORKSTATION:** O VMware Workstation é uma linha de produtos de *hypervisor* de desktop que permitem aos usuários executar **Máquinas Virtuais**, contêineres e clusters de Kubernetes.
 
-OBSERVAÇÃO IMPORTANTE: A fabricante de chips Broadcom finalizou sua aquisição de US$ 69 bilhões<br>
-da VMware, fabricante de software em nuvem. O acordo foi finalmente concluído, apesar dos<br>
-obstáculos de aprovação regulatória impostos pela China.
+**OBSERVAÇÃO IMPORTANTE:** A fabricante de chips **Broadcom** finalizou sua aquisição de *US$ 69 bilhões da VMware*, fabricante de software em nuvem. O acordo foi finalmente concluído, apesar dos obstáculos de aprovação regulatória impostos pela China.
 
-A empresa combinada se concentrará em ajudar as empresas a criar e modernizar seus ambientes<br>
-de nuvem privada e híbrida. Todavia, a VMware continuará a oferecer seu catálogo de software<br>
-para nuvem e Edge.
+A empresa combinada se concentrará em ajudar as empresas a criar e modernizar seus ambientes de nuvem privada e híbrida. Todavia, a VMware continuará a oferecer seu catálogo de software para nuvem e Edge.
 
 23/11/2023 - Mais informações acesse: https://www.datacenterdynamics.com/br/not%C3%ADcias/broadcom-conclui-a-aquisicao-de-us-69-bilhoes-da-vmware/<br>
 23/11/2023 - Mais informações acesse: https://inforchannel.com.br/2023/11/23/broadcom-conclui-compra-da-vmware-e-acoes-deixam-de-ser-negociadas/<br>
 27/11/2023 - Mais informações acesse: https://www.cisoadvisor.com.br/broadcom-deve-concluir-compra-da-vmware-por-us-69-bi-na-quarta/
 
-#Tecnologias de Virtualização de Processadores AMD e Intel<br>
+## Tecnologias de Virtualização dos Processadores AMD e Intel
 ```bash
 #Tecnologias de Virtualização Intel e AMD
 1) vmx...: Intel VT-x, suporte a virtualização ativada na BIOS.
@@ -48,18 +43,18 @@ para nuvem e Edge.
 
 #AES dos Processadores da AMD e Intel
 01) aes...: Aplicativos que executam criptografia e descriptografia usando o Advanced
-    Encryption Standard em processadores Intel e AMD.
+            Encryption Standard em processadores Intel e AMD.
 
 #Flags dos Processadores da Intel
 01) ept.....: Suporte de tabela de páginas estendidas da Intel habilitado para tornar
-    mais rápida a emulação de tabelas de páginas de convidados.
+              mais rápida a emulação de tabelas de páginas de convidados.
 02) vpid....: ID do processador virtual da Intel. Faça descargas de TLB caras
-    desnecessárias quando alternar o contexto entre os convidados.
+              desnecessárias quando alternar o contexto entre os convidados.
 03) vnmi....: O Intel Virtual NMI ajuda com eventos de interrupção selecionados em 
-    convidados.
+              convidados.
 04) tpr_shadow e flexpriority..: Recurso da Intel que reduz as chamadas para o hypervisor 
-    ao acessar o Registro de prioridade de tarefas, o que ajuda na execução de determinados 
-    tipos de convidados do SMP.
+                                 ao acessar o Registro de prioridade de tarefas, o que ajuda 
+                                 na execução de determinados tipos de convidados do SMP.
 
 #Flags dos Processadores da AMD
 01) npt...........: Tabelas de Páginas Aninhadas AMD, semelhantes ao Intel EPT.
@@ -74,21 +69,27 @@ para nuvem e Edge.
 10) pfthreshold...: AMD pausa o limite do filtro.
 ```
 
-#00_ Verificando as Informações do Sistema Operacional Linux Mint<br>
+### 00_ Verificando as Informações do Sistema Operacional do Linux Mint
+
+**OBSERVAÇÃO IMPORTANTE:** Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa<br>
+**OBSERVAÇÃO IMPORTANTE:** Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish<br>
+**OBSERVAÇÃO IMPORTANTE:** Linux Mint 22.x é derivado do Ubuntu Desktop 24.04.x Noble Numbat<br>
+
 ```bash
 #atalho para acessar o Terminal
 Terminal: Ctrl + Alt + T
 
-#verificando as versões e codinome do sistema operacional
-#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
-#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
-#OBSERVAÇÃO IMPORTANTE: Linux Mint 22.x é derivado do Ubuntu Desktop 24.04.x Noble Numbat
+#verificando as informações do sistema operacional em execução
 sudo cat /etc/os-release
+
+#verificando as informações de identificação do sistema operacional
 sudo cat /etc/lsb-release
 
-#verificando informações de hardware e processador
+#verificando as informações de hardware e processador
 #opções do comando inxi: -C (cpu), -M (machine), -S (system), -f (flags), -xxx (extra 3)
 sudo inxi -CMSfxxx
+
+#listando as informações do processador
 sudo lscpu
 
 #modo gráfico para verificar as informações de sistema operacional e hardware
@@ -96,7 +97,7 @@ Menu
   Informações do Sistema
 ```
 
-#01_ Atualização do Sistema Operacional Linux Mint<br>
+### 01_ Atualização do Sistema Operacional Linux Mint
 ```bash
 #atualizando o sistema operacional via MintUpdate (Recomendado)
 A) Atualização do sistema utilizando o MintUpdate;
@@ -116,14 +117,17 @@ sudo apt autoclean
 sudo apt clean
 ```
 
-#02_ Download do VMware Workstation Pro 17 (Build 17.5.0 26/11/2023)<br>
+### 02_ Download do VMware Workstation Pro 17 (Build 17.5.0 26/11/2023)
+
+**OBSERVAÇÃO IMPORTANTE:** DEPOIS DA COMPRA DA VMWARE PELA BROADCOM, O PROCEDIMENTO DE DOWNLOAD E INSTALAÇÃO DO VMWARE WORKSTATION QUE AGORA É FREE PARA USO PESSOAL MUDOU, PRECISANDO FAZER UM CADASTRO E GERAR UMA CHAVE DE ACESSO PARA O SEU DOWNLOAD, VEJA OS PROCEDIMENTOS A PARTIR DE ETAPA: 06.
+
 ```bash
 #download do VMWare Workstation do site oficial
 Link: https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html
   Versão: Workstation 17 Pro for Linux
 ```
 
-#03_ Alterando as Permissões de Execução do Binário do VMware Workstation Pro<br>
+### 03_ Alterando as Permissões de Execução do Binário do VMware Workstation Pro
 ```bash
 #executar os procedimentos em modo gráfico (gerenciador de arquivos Nemo)
 01) Acessar o diretório de Download;
@@ -134,7 +138,7 @@ Link: https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation
 <Fechar>
 ```
 
-#04_ Instalando o VMware Workstation Pro no Linux Mint<br>
+### 04_ Instalando o VMware Workstation Pro no Linux Mint
 ```bash
 #iniciar a instalar em modo gráfico e executar o script de instalação no Terminal
 01) Na pasta de Download, clicar com o botão direito do mouse e selecionar: Abrir no Terminal;
@@ -142,7 +146,7 @@ Link: https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation
 03) Digitar a senha do seu usuário e aguardar a finalização da instalação.
 ```
 
-#05_ Configuração básica do VMware Workstation Pro no Linux Mint<br>
+### 05_ Configuração básica do VMware Workstation Pro no Linux Mint
 ```bash
 #telas de configuração da instalação do VMware Workstation
 01) Na tela de License do VMware Workstation marque a opção: I accept the terms in the license agreement. <Next>
@@ -154,26 +158,26 @@ Link: https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation
 07) Na tela de Information, clique em: <OK>
 ```
 
-#06_ Desinstalando o VMware Workstation Pro no Linux Mint<br>
+### 06_ Desinstalando o VMware Workstation Pro no Linux Mint
 ```bash
-#removendo o VMware Workstation Pro do Linux Mint
-#opções do comando vmware-installer: -l (list-products), -u (uninstall-product)
+#listando a versão do VMware Workstation Pro instalado no Linux Mint
+#opções do comando vmware-installer: -l (list-products)
 sudo vmware-installer -l
+
+#removendo o VMware Workstation Pro do Linux Mint
+#opções do comando vmware-installer: -u (uninstall-product)
 sudo vmware-installer -u
-
-#OBSERVAÇÃO IMPORTANTE: No dia 13/05/2023 a VMware by Broadcom anunciou a versão do VMware
-#Workstation Pro 17 e VMware Fusion Pro 13 Free para uso pessoal no seu site oficial, agora
-#você pode baixar as versões no site da Broadcom.
-
-#link sobre informações da versão Pro Free do VMware Workstation
-Mas informações acesse: https://blogs.vmware.com/workstation/2024/05/vmware-workstation-pro-now-available-free-for-personal-use.html
 ```
 
-#07_ Baixando a Nova Versão PRO FREE do VMware Workstation do site da Broadcom<br>
-```bash
-#Site para cadastro no site da Broadcom
-Link VMware Workstation Pro Download: https://access.broadcom.com/default/ui/v1/signin/
+**OBSERVAÇÃO IMPORTANTE:** No dia *13/05/2023* a VMware by Broadcom anunciou a versão do **VMware Workstation Pro 17 e VMware Fusion Pro 13 Free** para uso *pessoal* no seu site oficial, agora você pode baixar as versões no site da Broadcom é utilizar gratuitamente para testes e estudos.
 
+Link sobre informações da versão Pro Free do VMware Workstation, mas informações acesse: https://blogs.vmware.com/workstation/2024/05/vmware-workstation-pro-now-available-free-for-personal-use.html
+
+### 07_ Baixando a Nova Versão PRO FREE do VMware Workstation do site da Broadcom
+
+Site da Broadcom para o cadastro de acesso ao download do VMware Workstation, link VMware Workstation Pro Download: https://access.broadcom.com/default/ui/v1/signin/
+
+```bash
 A) Criando uma conta na Broadcom (User Registration)
   Site: https://profile.broadcom.com/web/registration
 
@@ -197,10 +201,11 @@ A) Criando uma conta na Broadcom (User Registration)
   Privacy Policy for more information.
   <Create Account>
   <Ill do it later>
+```
 
-#OBSERVAÇÃO IMPORTANTE: ANTES DE CLICAR NO LINK RECOMENDADO DEIXAR AUTENTICADO NO
-#SITE DA BROADCOM O SEU USUÁRIO PARA FACILITAR O DOWNLOAD DO VMWARE WORKSTATION.
+**OBSERVAÇÃO IMPORTANTE:** ANTES DE CLICAR NO LINK RECOMENDADO DEIXAR AUTENTICADO NO SITE DA BROADCOM O SEU USUÁRIO PARA FACILITAR O DOWNLOAD DO VMWARE WORKSTATION.
 
+```bash
 B) Acessando o Link de Download do VMware Workstation Pro
 #Site para download da nova versão do VMWare Workstation Pro Free by Broadcom
 Site: https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Workstation+Pro

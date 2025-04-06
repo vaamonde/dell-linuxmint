@@ -11,11 +11,11 @@
 #Versão: 0.18<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
-#Testado e homologado no Linux Mint 22 Wilma x64<br>
+#Testado e homologado no Linux Mint 22 Wilma e 22.1 Xia x64<br>
 
 #Instalação do Docker CE no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do Docker CE no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64
-#Instalação do Docker CE no Linux Mint 22 Wilma x64<br>
+#Instalação do Docker CE no Linux Mint 22 Wilma e 22.1 Xia x64<br>
 
 [![Docker CE](http://img.youtube.com/vi/iOI6V5iR9Cw/0.jpg)](https://www.youtube.com/watch?v=iOI6V5iR9Cw "Docker CE")
 
@@ -24,26 +24,37 @@ Link da vídeo aula: https://www.youtube.com/watch?v=iOI6V5iR9Cw
 Site Oficial do Docker: https://www.docker.com/<br>
 Site Oficial do Docker Hub: https://hub.docker.com/search?q=
 
-O QUE É E PARA QUE SERVER O DOCKER CE: Docker é um conjunto de produtos de plataforma como serviço que usam virtualização de nível de sistema operacional para entregar software em pacotes chamados contêineres. Os contêineres são isolados uns dos outros e agrupam seus próprios softwares, bibliotecas e arquivos de configuração
+**O QUE É E PARA QUE SERVER O DOCKER CE:** Docker é um conjunto de produtos de plataforma como serviço que usam virtualização de nível de sistema operacional para entregar software em pacotes chamados *contêineres*. Os contêineres são isolados uns dos outros e agrupam seus próprios softwares, bibliotecas e arquivos de configuração
 
-#00_ Verificando as Informações do Sistema Operacional do Linux Mint<br>
+### 00_ Verificando as Informações do Sistema Operacional do Linux Mint
+
+**OBSERVAÇÃO IMPORTANTE:** Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa<br>
+**OBSERVAÇÃO IMPORTANTE:** Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish<br>
+**OBSERVAÇÃO IMPORTANTE:** Linux Mint 22.x é derivado do Ubuntu Desktop 24.04.x Noble Numbat<br>
+
 ```bash
 #atalho para acessar o Terminal
 Terminal: Ctrl + Alt + T
 
-#verificando as versões e codinome do sistema operacional
-#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
-#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
-#OBSERVAÇÃO IMPORTANTE: Linux Mint 22.x é derivado do Ubuntu Desktop 24.04.x Noble Numbat
+#verificando as informações do sistema operacional em execução
 sudo cat /etc/os-release
+
+#verificando as informações de identificação do sistema operacional
 sudo cat /etc/lsb-release
+
+#verificando as informações de hardware e processador
+#opções do comando inxi: -C (cpu), -M (machine), -S (system), -f (flags), -xxx (extra 3)
+sudo inxi -CMSfxxx
+
+#listando as informações do processador
+sudo lscpu
 
 #modo gráfico para verificar as informações de sistema operacional e hardware
 Menu
   Informações do Sistema
 ```
 
-#01_ Atualização do Sistema Operacional Linux Mint<br>
+### 01_ Atualização do Sistema Operacional Linux Mint
 ```bash
 #atualizando o sistema operacional via MintUpdate (Recomendado)
 A) Atualização do sistema utilizando o MintUpdate;
@@ -63,7 +74,7 @@ sudo apt autoclean
 sudo apt clean
 ```
 
-#02_ Instalando as Dependência do Docker-CE Community no Linux Mint<br>
+### 02_ Instalando as Dependência do Docker-CE Community no Linux Mint
 ```bash
 #instalação das dependências básicas do Docker CE
 #opção da contra barra (\): criar uma quebra de linha no terminal
@@ -71,17 +82,17 @@ sudo apt install vim git python3 python3-pip apt-transport-https ca-certificates
 software-properties-common linux-image-generic linux-image-extra-virtual lsof jq
 ```
 
-#03_ Adicionando a Chave GPG do Docker CE no Linux Mint<br>
-```bash
-#OBSERVAÇÃO IMPORTANTE: CUIDADO COM A VERSÃO DO LINUX MINT QUE VOCÊ ESTÁ USANDO,
-#OS COMANDOS DE ADICIONAR OU CONVERTER AS CHAVES GPG NO LINUX MINT NÃO MOSTRA NA
-#TELA O RESULTADO.
+### 03_ Adicionando a Chave GPG do Docker CE no Linux Mint
 
+**OBSERVAÇÃO IMPORTANTE:** CUIDADO COM A VERSÃO DO LINUX MINT QUE VOCÊ ESTÁ USANDO, OS COMANDOS DE ADICIONAR OU CONVERTER AS CHAVES GPG NO LINUX MINT NÃO MOSTRA NA TELA O RESULTADO DA CONVERSÃO OU CHAVE ADICIONADA.
+
+```bash
 #ADICIONANDO AS CHAVES DO REPOSITÓRIO DO DOCKER-CE NO LINUX MINT 20.x
 #opções do comando curl: -f (fail), -s (silent), -S (show-error), -L (location)
 #opção do redirecionador |: Conecta a saída padrão com a entrada padrão de outro comando
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-
+```
+```bash
 #BAIXANDO A CHAVE DO REPOSITÓRIO DO DOCKER-CE NO LINUX MINT 21.x E 22.x
 #opções do comando wget: -q (quiet)
 wget -q https://download.docker.com/linux/ubuntu/gpg 
@@ -93,13 +104,11 @@ wget -q https://download.docker.com/linux/ubuntu/gpg
 cat gpg | gpg --dearmor | sudo tee /usr/share/keyrings/docker-ce.gpg > /dev/null 2>&1
 ```
 
-#04_ Adicionando o Repositório do Docker-CE Community no Linux Mint<br>
-```bash
-#OBSERVAÇÃO IMPORTANTE: CUIDADO COM A VERSÃO DO LINUX MINT QUE VOCÊ ESTÁ USANDO,
-#OS COMANDOS DE ADICIONAR REPOSITÓRIO NÃO MOSTRA RESULTADO NA TELA, CUIDADO PARA
-#NÃO EXECUTAR MAIS DE UMA VEZ O COMANDO PARA NÃO ADICIONAR MÚLTIPLAS ENTRADAS NO
-#ARQUIVO EM: /etc/apt/sources.list.d/additional-repositories.list.
+### 04_ Adicionando o Repositório do Docker-CE Community no Linux Mint
 
+**OBSERVAÇÃO IMPORTANTE:** CUIDADO COM A VERSÃO DO LINUX MINT QUE VOCÊ ESTÁ USANDO, OS COMANDOS DE ADICIONAR REPOSITÓRIO NÃO MOSTRA RESULTADO NA TELA, CUIDADO PARA NÃO EXECUTAR MAIS DE UMA VEZ O COMANDO PARA NÃO ADICIONAR MÚLTIPLAS ENTRADAS NO ARQUIVO EM: */etc/apt/sources.list.d/additional-repositories.list*.
+
+```bash
 #ADICIONANDO O REPOSITÓRIO DO DOCKER-CE NO LINUX MINT 20.x
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 
@@ -110,31 +119,31 @@ sudo add-apt-repository "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-ce
 sudo add-apt-repository "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-ce.gpg] https://download.docker.com/linux/ubuntu noble stable"
 ```
 
-#05_ Atualizando as Lista do Apt com o novo Repositório do Docker-CE Community no Linux Mint<br>
+### 05_ Atualizando as Lista do Apt com o novo Repositório do Docker-CE Community no Linux Mint
 ```bash
 #atualizando as lista do apt com o novo repositório do Docker-CE
 sudo apt update
 ```
 
-#06_ Instalando o Docker-CE Community e suas Dependências no Linux Mint<br>
+### 06_ Instalando o Docker-CE Community e suas Dependências no Linux Mint
 ```bash
 #instalando o Docker-CE no Linux Mint 20.x e 21.x
 #opção do comando apt: --install-recommends (Consider suggested packages as a dependency for installing)
 #opção da contra barra (\): criar uma quebra de linha no terminal
 sudo apt install --install-recommends docker-ce docker-ce-cli containerd.io docker-buildx-plugin \
 docker-compose-plugin cgroup-lite
-
+```
+```bash
 #instalando o Docker-CE no Linux Mint 22.x
 #opção do comando apt: --install-recommends (Consider suggested packages as a dependency for installing)
 #opção da contra barra (\): criar uma quebra de linha no terminal
 sudo apt install --install-recommends docker-ce docker-ce-cli containerd.io docker-buildx-plugin \
 docker-compose-plugin cgroup-lite
+```
 
-#OBSERVAÇÃO IMPORTANTE: a versão do Docker-Compose utilizando o Sources List do Docker-CE está
-#desatualizada em relação ao projeto do Github: https://github.com/docker/compose, é recomendado
-#baixar o Binário do projeto e atualizar a versão no Linux Mint com o procedimento abaixo (NÃO
-#COMENTADO NO VÍDEO)
+**OBSERVAÇÃO IMPORTANTE:** a versão do *Docker-Compose* utilizando o Sources List do Docker-CE está desatualizada em relação ao projeto do Github: https://github.com/docker/compose, é recomendado baixar o Binário do projeto e atualizar a versão no Linux Mint com o procedimento abaixo (NÃO COMENTADO NO VÍDEO)
 
+```bash
 #baixando o Docker Compose do Projeto do Github
 #opção do comando curl: -S (show-error), -L (location), -o (output) (Build 2.30.x 13/11/2024)
 sudo curl -SL https://github.com/docker/compose/releases/download/v2.30.3/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
@@ -144,7 +153,7 @@ sudo curl -SL https://github.com/docker/compose/releases/download/v2.30.3/docker
 sudo chmod -v 755 /usr/bin/docker-compose
 ```
 
-#07_ Adicionando o Usuário Local no Grupo do Docker-CE Community no Linux Mint<br>
+### 07_ Adicionando o Usuário Local no Grupo do Docker-CE Community no Linux Mint
 ```bash
 #adicionando o seu usuário no grupo do Docker-CE
 #opções do comando usermod: -a (append), -G (groups), $USER (environment variable)
@@ -163,7 +172,7 @@ sudo getent group docker
 sudo reboot
 ```
 
-#08_ Verificando o status do serviço, Versões e Informações do Docker-CE no Linux Mint<br>
+### 08_ Verificando o status do serviço, Versões e Informações do Docker-CE no Linux Mint
 ```bash
 #verificando o status do serviço do Docker-CE
 sudo systemctl status docker
@@ -178,7 +187,7 @@ docker-compose version
 docker system info
 ```
 
-#09_ Iniciando um Container de Teste do Docker-CE<br>
+### 09_ Iniciando um Container de Teste do Docker-CE
 ```bash
 #pesquisando o container de Hello World do Docker-CE
 #link de consulta do Docker Hub: https://hub.docker.com/
@@ -192,7 +201,7 @@ docker search hello-world
 docker run hello-world
 ```
 
-#10_ Iniciando um Container de Teste do Ubuntu no Docker-CE<br>
+### 10_ Iniciando um Container de Teste do Ubuntu no Docker-CE
 ```bash
 #pesquisando o container do Ubuntu do Docker-CE
 #link de consulta do Docker Hub: https://hub.docker.com/
@@ -222,7 +231,7 @@ traceroute 8.8.8.8                              #traçando a rota do endereço d
 exit
 ```
 
-#11_ Verificando as Imagens e Containers no Docker-CE<br>
+### 11_ Verificando as Imagens e Containers no Docker-CE
 ```bash
 #listando todas as imagens de containers no Docker-CE
 #Documentação do Docker-CE: https://docs.docker.com/reference/cli/docker/image/
@@ -238,7 +247,7 @@ docker image ls
 docker container ls -a
 ```
 
-#12_ Limpando todas as Imagens, Container, Volumes e Redes no Docker CE<br>
+### 12_ Limpando todas as Imagens, Container, Volumes e Redes no Docker CE
 ```bash
 #limpando todos os containers no Docker-CE
 #Documentação do Docker-CE: https://docs.docker.com/reference/cli/docker/container/

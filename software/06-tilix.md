@@ -7,15 +7,15 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 13/11/2023<br>
-#Versão: 0.13<br>
+#Data de atualização: 06/04/2025<br>
+#Versão: 0.14<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
-#Testado e homologado no Linux Mint 22 Wilma x64<br>
+#Testado e homologado no Linux Mint 22 Wilma e 22.1 Xia x64<br>
 
 #Instalação do Tilix e OhMyZSH no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do Tilix e OhMyZSH no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
-#Instalação do Tilix e OhMyZSH no Linux Mint 22 Wilma x64<br>
+#Instalação do Tilix e OhMyZSH no Linux Mint 22 Wilma e 22.1 Xia x64<br>
 
 [![Tilix](http://img.youtube.com/vi/0BrJ8jWbTko/0.jpg)](https://www.youtube.com/watch?v=0BrJ8jWbTko "Tilix")
 
@@ -25,30 +25,41 @@ Site Oficial do Terminal Tilix: https://gnunn1.github.io/tilix-web/<br>
 Site Oficial do Oh My Zsh: https://ohmyz.sh/<br>
 Site Oficial das Fontes Nerd Fonts: https://www.nerdfonts.com/font-downloads
 
-O QUE É E PARA QUE SERVER O TERMINAL TILIX: Terminix/Tilix é um um novo emulador de terminal GTK3 com divisão de tela em blocos, o que permite ter vários terminais divididos horizontal e verticalmente, e que podem ser reorganizados simplesmente usando arrastar e soltar.
+**O QUE É E PARA QUE SERVER O TERMINAL TILIX:** O Terminix/Tilix é um um novo emulador de terminal GTK3 com divisão de tela em blocos, o que permite ter vários terminais divididos horizontal e verticalmente, e que podem ser reorganizados simplesmente usando arrastar e soltar.
 
-O QUE É E PARA QUE SERVER O ZSH: O Z-shell ou Zsh é um interpretador de comandos UNIX que, dos shells padrão, mais se assemelha ao Korn shell; sua compatibilidade com o shell Korn de 1988 vem aumentando gradualmente.
+**O QUE É E PARA QUE SERVER O ZSH:** O Z-shell ou Zsh é um interpretador de comandos UNIX que, dos shells padrão, mais se assemelha ao Korn shell; sua compatibilidade com o shell Korn de 1988 vem aumentando gradualmente.
 
-O QUE É E PARA QUE SERVER O OH MY ZSH: Oh My Zsh é um gerenciador de configuração de shell open-source para o Zsh (um shell Unix semelhante ao Bash). Ele fornece uma estrutura de diretórios e arquivos para organizar vários plugins e temas para o Zsh, além de incluir vários recursos úteis, como auto-completar comandos e comandos personalizados.
+**O QUE É E PARA QUE SERVER O OH MY ZSH:** Oh My Zsh é um gerenciador de configuração de shell open-source para o Zsh (um shell Unix semelhante ao Bash). Ele fornece uma estrutura de diretórios e arquivos para organizar vários plugins e temas para o Zsh, além de incluir vários recursos úteis, como auto-completar comandos e comandos personalizados.
 
-#00_ Verificando as Informações do Sistema Operacional do Linux Mint<br>
+### 00_ Verificando as Informações do Sistema Operacional do Linux Mint
+
+**OBSERVAÇÃO IMPORTANTE:** Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa<br>
+**OBSERVAÇÃO IMPORTANTE:** Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish<br>
+**OBSERVAÇÃO IMPORTANTE:** Linux Mint 22.x é derivado do Ubuntu Desktop 24.04.x Noble Numbat<br>
+
 ```bash
 #atalho para acessar o Terminal
 Terminal: Ctrl + Alt + T
 
-#verificando as versões e codinome do sistema operacional
-#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
-#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
-#OBSERVAÇÃO IMPORTANTE: Linux Mint 22.x é derivado do Ubuntu Desktop 24.04.x Noble Numbat
+#verificando as informações do sistema operacional em execução
 sudo cat /etc/os-release
+
+#verificando as informações de identificação do sistema operacional
 sudo cat /etc/lsb-release
+
+#verificando as informações de hardware e processador
+#opções do comando inxi: -C (cpu), -M (machine), -S (system), -f (flags), -xxx (extra 3)
+sudo inxi -CMSfxxx
+
+#listando as informações do processador
+sudo lscpu
 
 #modo gráfico para verificar as informações de sistema operacional e hardware
 Menu
   Informações do Sistema
 ```
 
-#01_ Atualização do Sistema Operacional Linux Mint<br>
+### 01_ Atualização do Sistema Operacional Linux Mint
 ```bash
 #atualizando o sistema operacional via MintUpdate (Recomendado)
 A) Atualização do sistema utilizando o MintUpdate;
@@ -68,16 +79,17 @@ sudo apt autoclean
 sudo apt clean
 ```
 
-#02_ Instalando o Terminal Tilix no Linux Mint<br>
+### 02_ Instalando o Terminal Tilix no Linux Mint
 ```bash
 #instalando o Tilix e suas dependências no Linux Mint 20.x e 21.x
 sudo apt install tilix unzip git vim python2 python3
-
+```
+```bash
 #instalando o Tilix e suas dependências no Linux Mint 22.x
 sudo apt install tilix unzip git vim python3
 ```
 
-#03_ Instalando as Fontes Hack Nerd Fonts no Linux Mint<Br>
+### 03_ Instalando as Fontes Hack Nerd Fonts no Linux Mint
 ```bash
 #criando o diretório das fontes Hack Nerd Fonts
 #opção do comando mkdir: -v (verbose), -p (parents), ~ (til: alias home directory), . (files or directory hidden)
@@ -87,8 +99,11 @@ mkdir -pv ~/.local/share/fonts/Hack
 #opção do comando cd: ~ (til: alias home directory)
 cd ~/.local/share/fonts/Hack
 
-#baixando as fontes do Github (link atualizado em: 13/11/2024)
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Hack.zip
+#baixando as fontes do Github (link atualizado em: 06/04/2025)
+#OBSERVAÇÃO IMPORTANTE: o tempo todo as fontes Nerd sobre alteração, acessar primeiro
+#o projeto no Github: https://github.com/ryanoasis/nerd-fonts/releases/ antes de baixar
+#o pacote compactado.
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Hack.zip
 
 #descompactando o arquivo zipado das fontes
 unzip Hack.zip
@@ -101,27 +116,29 @@ fc-cache -f -v
 exit
 ```
 
-#04_ Configurando o Tilix como Terminal Padrão no Linux Mint<br>
+### 04_ Configurando o Tilix como Terminal Padrão no Linux Mint
+
+**OBSERVAÇÃO IMPORTANTE:** no *Linux Mint 20.x* a mudança do Terminal padrão é feita utilizando o recurso das Configurações do Sistema em Aplicativos Preferenciais
+
 ```bash
-#OBSERVAÇÃO IMPORTANTE: no Linux Mint 20.x a mudança do Terminal padrão é feita utilizando
-#o recurso das Configurações do Sistema em Aplicativos Preferenciais
 Menu
   Aplicativos Preferenciais
     Terminal
       Tilix
+```
 
-#OBSERVAÇÃO IMPORTANTE: no Linux Mint 21 e 21.1 a mudança do Terminal padrão não é mais feita
-#utilizando o recurso das Configurações do Sistema em Aplicativos Preferenciais, essa opção
-#foi retirada da ferramenta, sendo necessário alterar via linha de comando:
+**OBSERVAÇÃO IMPORTANTE:** no *Linux Mint 21 Vanessa e 21.1 Vera* a mudança do Terminal padrão **NÃO** é mais feita utilizando o recurso das Configurações do Sistema em Aplicativos Preferenciais, essa opção foi retirada da ferramenta, sendo necessário alterar via linha de comando:
 
+```bash
 #UTILIZAR O COMANDO ABAIXO SOMENTE SE VOCÊ ESTÁ USANDO A VERSÃO 21 OU 21.1
 #opção do comando gsettings: set (Sets the value of KEY to VALUE)
 gsettings set org.cinnamon.desktop.default-applications.terminal exec /usr/bin/tilix
 exit
+```
 
-#OBSERVAÇÃO IMPORTANTE: no Linux Mint 21.2 Victoria e 21.3 Virginia e na nova Versão 22 Wilma
-#o recurso de configurar o terminal pelo Aplicativos Preferenciais voltou, recomendo fazer por
-#ele, não utilizar o comando: gsettings para essa configuração.
+**OBSERVAÇÃO IMPORTANTE:** no *Linux Mint 21.2 Victoria e 21.3 Virginia* e na nova *Versão 22 Wilma* o recurso de configurar o terminal pelo Aplicativos Preferenciais voltou, recomendo fazer por ele, **NÃO** utilizar o comando: *gsettings* para essa configuração.
+
+```bash
 Menu
   Aplicativos Preferenciais
     Sistema
@@ -129,18 +146,17 @@ Menu
         Tilix
 ```
 
-#05_ Executando o Terminal Tilix no Linux Mint<br>
+### 05_ Executando o Terminal Tilix no Linux Mint
 ```bash
 #atalho para abrir o Tilix no lugar do Bash padrão do Linux Mint
 Atalho do Terminal: Ctrl + Alt + T
 ```
 
-#06_ Customização Básica do Tilix no Linux Mint<br>
+### 06_ Customização Básica do Tilix no Linux Mint
+
+**OBSERVAÇÃO IMPORTANTE:** quando você executar o Tilix pela primeira vez a mensagem de: *Problema de Configuração detectado* é apresentada, essa falha está associada ao **VTE (Virtual Terminal Emulator)** você pode clicar em: *Não exibir esta mensagem novamente* ou essa falha será corrigida depois que você instalar e configurar o **ZSH** e o **Oh-My-ZSH**.
+
 ```bash
-#OBSERVAÇÃO IMPORTANTE: quando você executar o Tilix pela primeira vez a mensagem de: 
-#Problema de Configuração detectado é apresentada, essa falha está associada ao VTE 
-#(Virtual Terminal Emulator) você pode clicar em: Não exibir esta mensagem novamente 
-#ou essa falha será corrigida depois que você instalar e configurar o ZSH e o Oh-My-ZSH.
 Menu
   Preferências
     Aparência
@@ -156,14 +172,14 @@ Menu
         Transparência: Aumentar um Pouco
 <Fechar>
 ```
-#07_ Instalando o ZSH (Z Shell) e Oh My Zsh no Linux Mint<br>
+
+### 07_ Instalando o ZSH (Z Shell) e Oh My Zsh no Linux Mint
 ```bash
 #abrir o terminal do Tilix
 Terminal: Ctrl + Alt + T
 
 #atualizando as lista do Apt e instalando o ZSH
-sudo apt update
-sudo apt install zsh
+sudo apt update && sudo apt install zsh
 
 #Executando o Terminal ZSH
 zsh
@@ -185,17 +201,16 @@ exit
 exit
 ```
 
-#08_ Instalação dos Plugins e Temas do ZSH e do Oh My Zsh no Linux Mint<br>
+### 08_ Instalação dos Plugins e Temas do ZSH e do Oh My Zsh no Linux Mint
+
+Link de referência do ZSH Syntax Highlighting: https://github.com/zsh-users/zsh-syntax-highlighting<br>
+Link de referência do FZF: https://github.com/junegunn/fzf.git
+
+**OBSERVAÇÃO IMPORTANTE:** PARA O CORRETO FUNCIONAMENTO DO *ZSH* E DO *OH MY ZSH* SERÁ NECESSÁRIO INSTALAR E CONFIGURAR: **05 (CINCO) PLUGINS/TEMAS**, SEGUIR A SEQUÊNCIA ABAIXO PARA O CORRETO FUNCIONAMENTO, NÃO PULAR ETAPA.
+
 ```bash
 #abrir o terminal do Tilix
 Terminal: Ctrl + Alt + T
-
-Link de referência: https://github.com/zsh-users/zsh-syntax-highlighting
-Link de referência FZF: https://github.com/junegunn/fzf.git
-
-#OBSERVAÇÃO IMPORTANTE: PARA O CORRETO FUNCIONAMENTO DO ZSH E DO OH MY ZSH SERÁ NECESSÁRIO
-#INSTALAR E CONFIGURAR 05 (CINCO) PLUGINS/TEMAS, SEGUIR A SEQUÊNCIA ABAIXO PARA O CORRETO
-#FUNCIONAMENTO, NÃO PULAR ETAPA.
 
 #01-PRIMEIRO: Instalação do Plugin Highlighting do ZSH
 #opção d variável de ambiente ${}: opção não ambígua
@@ -226,7 +241,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
   Do you want to update your shell configuration files? ([y]/n) y <Enter>
 ```
 
-09_ Editando o arquivo de configuração do ZSHRC no Linux Mint<br>
+### 09_ Editando o arquivo de configuração do ZSHRC no Linux Mint
 ```bash
 #editando o arquivo de configuração do ZSHRC
 #opção do comando vim: ~ (til: alias home directory)
@@ -259,7 +274,7 @@ ESC SHIFT :x <Enter>
 exit
 ```
 
-#10_ Personalizando o Tema PowerLevel10K no Linux Mint<br>
+### 10_ Personalizando o Tema PowerLevel10K no Linux Mint
 ```bash
 #abrir um novo terminal para iniciar as configurações do PowerLevel10K
 Terminal: Ctrl + Alt + T
@@ -334,10 +349,11 @@ Terminal: Ctrl + Alt + T
 p10k configure
 ```
 
-#11_ Configurando o Visual Studio Code com suporte a Fonte Hack Nerd Font e Terminal ZSH<br>
+### 11_ Configurando o Visual Studio Code com suporte a Fonte Hack Nerd Font e Terminal ZSH
+
+**OBSERVAÇÃO IMPORTANTE:** executar esse procedimento somente se você tem instalado o *Microsoft Visual Studio* no seu Linux Mint
+
 ```bash
-#OBSERVAÇÃO IMPORTANTE: executar esse procedimento somente se você tem instalado o 
-#Microsoft Visual Studio no seu Linux Mint
 Gerenciar
   Configurações
     terminal.integrated.fontFamily

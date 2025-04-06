@@ -7,9 +7,9 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 21/01/2025<br>
-#Data de atualização: 21/01/2025<br>
-#Versão: 0.01<br>
-#Testado e homologado no Linux Mint 22.1 Xia
+#Data de atualização: 06/04/2025<br>
+#Versão: 0.02<br>
+#Testado e homologado no Linux Mint 22.1 Xia x64
 
 [![Linux Mint 22.1](http://img.youtube.com/vi//0.jpg)]( "Linux Mint 22.1")
 
@@ -63,28 +63,32 @@ Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa<br>
 Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish<br>
 Linux Mint 22.x e derivado do Ubuntu Desktop 24.04.x Noble Numbat
 
-Primeira etapa: Download da ISO do Linux Mint
+## Instalação do Linux Mint 64 Bits no Oracle VirtualBOX
 
-01. Link de download do Linux Mint 22.1 "Xia" Cinnamon 64 Bits BETA:<BR>
-Link direto: https://mirror.ufscar.br/mint-cd/stable/22.1/linuxmint-22.1-cinnamon-64bit.iso<br>
-Mirror: https://mirror.ufscar.br/mint-cd/stable/22.1/
+### Primeira etapa: Download da ISO do Linux Mint 22.1 x64
 
-Segunda etapa: Software para a gravação do Pen Drive Bootável
+Link de download do Linux Mint 22.1 "Xia" Cinnamon 64 Bits
 
-_ Rufus: https://rufus.ie/pt_BR/<br>
-_ YUMI: https://www.pendrivelinux.com/yumi-multiboot-usb-creator/<br>
-_ Etcher: https://www.balena.io/etcher/<br>
-_ UNetbootin: https://unetbootin.github.io/<br>
-_ Ventoy: https://www.ventoy.net/en/index.html<br>
-_ Linux Live USC Creator: https://www.linuxliveusb.com/<br>
-_ Popsicle: https://github.com/pop-os/popsicle
+01. Link direto: https://mirror.ufscar.br/mint-cd/stable/22.1/linuxmint-22.1-cinnamon-64bit.iso<br>
+02. Mirror.....: https://mirror.ufscar.br/mint-cd/stable/22.1/
 
-Terceira etapa: Criação e Configuração da Máquina Virtual no Oracle VirtualBOX 7.1.x<br>
+### Segunda etapa: Software para criação de Pen Drive Bootável do Linux Mint 22.x x64
+
+01) Rufus (Microsoft): https://rufus.ie/pt_BR/<br>
+02) YUMI: https://www.pendrivelinux.com/yumi-multiboot-usb-creator/<br>
+03) Etcher: https://www.balena.io/etcher/<br>
+04) UNetbootin: https://unetbootin.github.io/<br>
+05) Ventoy: https://www.ventoy.net/en/index.html<br>
+06) Linux Live USC Creator: https://www.linuxliveusb.com/<br>
+07) Popsicle: https://github.com/pop-os/popsicle<br>
+
+### Terceira etapa: Criação e Configuração da Máquina Virtual no Oracle VirtualBOX 7.1.x
+
 Link de download do Oracle VirtualBOX: https://www.virtualbox.org/wiki/Downloads
 
-Quarta etapa: Criando a Máquina Virtual do Linux Mint no VirtualBox
+### Quarta etapa: Criando a Máquina Virtual do Linux Mint no VirtualBox
 
-	_ Ferramentas;
+_ Ferramentas;
 		<Novo>
 	_ Nome da máquina virtual e Sistema Operacional:
 		Nome: LinuxMint22.1
