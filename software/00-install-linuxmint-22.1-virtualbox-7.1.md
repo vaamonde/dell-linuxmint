@@ -8,7 +8,7 @@
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 21/01/2025<br>
 #Data de atualização: 06/04/2025<br>
-#Versão: 0.02<br>
+#Versão: 0.03<br>
 #Testado e homologado no Linux Mint 22.1 Xia x64 Bits
 
 **O QUE É E PARA QUE SERVER O GNU:** O GNU (pronuncia-se "g-n-u", e não "gnu") é um projeto de software livre iniciado em 1983 por Richard Stallman, com o objetivo de criar um sistema operacional completo, livre e gratuito, semelhante ao Unix, mas sem usar nenhum código proprietário. A sigla GNU significa: “GNU's Not Unix” — (GNU Não é Unix). É uma brincadeira dos desenvolvedores com siglas recursivas, muito comuns no meio da tecnologia.
@@ -294,21 +294,20 @@ Na tela da Máquina Virtual do VitualBOX
 
 ### Décima Quarta etapa: Configuração da Integração da Área de Transferência Compartilhada
 ```bash
-#Acessar o TErminal (BASH/SHELL) do Linux Mint
+#Acessar o Terminal (BASH/SHELL) do Linux Mint
 Atalho do Terminal: Ctrl + Alt + T
 
 #Atualizando as Listas (Sources.List) do Apt
 #opção do comando apt: update (is used to download package information from all configured sources)
 sudo apt update
 
-#Instalando os Aplicativos (Softwares) necessários para essa integração
-#opção do comando apt: install (This option is followed by one or more packages desired for installation)
-#opção do comando uname: -r (kernel-release)
-sudo apt install dkms build-essential linux-headers-generic linux-headers-$(uname -r)
-
 #Adicionando o seu usuário local do grupo do VirtualBOX
 #opções do comando usermod: -a (append), -G (groups), $USER (variável de ambiente do nome do usuário)
 sudo usermod -aG vboxsf $USER
+
+#Verificando se o usuário local foi adicionado no Grupo do VirtualBOX
+#opções do comando getent: group (group database), vboxsf (enumerate the group)
+sudo getent group vboxsf
 
 #Reiniciando o Linux Mint para aplicar as mudanças
 sudo reboot
