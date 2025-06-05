@@ -7,19 +7,32 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 19/05/2023<br>
-#Data de atualização: 05/02/2025<br>
-#Versão: 0.18<br>
+#Data de atualização: 05/06/2025<br>
+#Versão: 0.19<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
 #Testado e homologado no Linux Mint 22 Wilma e 22.1 Xia x64<br>
 
-#Lançamentos Oficiais do Linux Mint 22.1<br>
+**O QUE É E PARA QUE SERVER O GNU:** O GNU (pronuncia-se "g-n-u", e não "gnu") é um projeto de software livre iniciado em 1983 por Richard Stallman, com o objetivo de criar um sistema operacional completo, livre e gratuito, semelhante ao Unix, mas sem usar nenhum código proprietário. A sigla GNU significa: “GNU's Not Unix” — (GNU Não é Unix). É uma brincadeira dos desenvolvedores com siglas recursivas, muito comuns no meio da tecnologia.
+
+**O QUE É E PARA QUE SERVER O LINUX:** O Linux é um sistema operacional de código aberto, baseado no núcleo (kernel) Linux, criado por Linus Torvalds em 1991. Assim como o Windows e o macOS, o Linux permite que você interaja com o hardware do computador e execute programas. 
+
+**O QUE É E PARA QUE SERVER O DEBIAN:** O Debian é uma distribuição Linux (ou distro) extremamente estável, robusta e de código aberto. Ele é desenvolvido por uma comunidade de voluntários e existe desde 1993, sendo uma das distribuições mais antigas e respeitadas no mundo Linux. O Debian é a base para várias outras distribuições famosas, como o Ubuntu, o Kali Linux, o Raspbian (para Raspberry Pi) e muitos outros.
+
+**O QUE É E PARA QUE SERVER O UBUNTU:** O Ubuntu é uma distribuição Linux baseada no Debian, criada pela empresa sul-africana Canonical em 2004. É uma das distribuições Linux mais populares do mundo, conhecida por ser fácil de usar, amigável para iniciantes e bastante estável. O nome "Ubuntu" vem de uma filosofia africana que significa "humanidade para com os outros", refletindo a ideia de software livre, acessível e colaborativo.
+
+**O QUE É E PARA QUE SERVER O LINUX MINT:** O Linux Mint é uma distribuição Linux baseada no Ubuntu (e indiretamente no Debian). Foi criada para ser fácil, leve, rápida e muito amigável, especialmente para quem está migrando do Windows. Ele tem uma aparência bem parecida com o Windows, o que facilita muito a adaptação de quem nunca usou Linux antes.
+
+Conteúdo estudado nessa instalação:<br>
+#01_
+
+### Lançamentos Oficiais do Linux Mint 22.1
 18/01/2025 - Como atualizar para o Linux Mint 22.1 "Xia" https://blog.linuxmint.com/?p=4797<br>
 16/01/2025 - Lançamento do Linux Mint 22.1 "Xia" https://blog.linuxmint.com/?p=4793<br>
 11/01/2025 - Novidades do Linux Mint 22.1 "Xia" https://blog.linuxmint.com/?p=4790<br>
 16/12/2024 - Lançamento do BETA dp Linux Mint 22.1 "Xia" https://blog.linuxmint.com/?p=4787<br>
 
-#Lançamentos Oficiais do Linux Mint 22<br>
+### Lançamentos Oficiais do Linux Mint 22
 31/01/2024 - Anúncio o Linux Mint 22 "Wilma" https://blog.linuxmint.com/?p=4639<br>
 01/04/2024 - Primeiras novidades do Linux Mint 22 "Wilma" https://blog.linuxmint.com/?p=4660<br>
 09/04/2024 - Repositório no Github do Linux Mint 22 "Wilma" https://blog.linuxmint.com/?p=4671<br>
@@ -31,25 +44,25 @@
 Novos Recursos do Linux Mint 22 "Wilma" https://www.linuxmint.com/rel_wilma_whatsnew.php<br>
 Informações da Versão do Linux Mint 22 "Wilma" https://www.linuxmint.com/rel_wilma.php<br>
 
-#Lançamentos Oficiais do Linux Mint 21.3<br>
+### Lançamentos Oficiais do Linux Mint 21.3
 12/01/2024 - Lançamento Oficial do Linux Mint 21.3: https://blog.linuxmint.com/?p=4624<br>
 10/12/2023 - Lançamento do BETA do Linux Mint 21.3: https://blog.linuxmint.com/?p=4611<br>
 06/12/2023 - Novidades da Versão do Linux Mint 21.3: https://blog.linuxmint.com/?p=4604<br>
 26/10/2023 - Anunciado a Versão do Linux Mint 21.3: https://blog.linuxmint.com/?p=4591<br>
 02/07/2023 - Planejamento do Lançamento da Versão 21.3: https://blog.linuxmint.com/?p=4554<br>
 
-#Lançamentos Oficiais do Linux Mint 21.2<br>
+### Lançamentos Oficiais do Linux Mint 21.2
 Novos Recursos do Linux Mint 21.2 Victoria Cinnamon: https://www.linuxmint.com/rel_victoria_cinnamon_whatsnew.php<br>
 16/07/2023 - Lançamento da Versão Oficial do Linux Mint 21.2 Victoria: https://blog.linuxmint.com/?p=4543<br>
 21/06/2023 - Lançamento da Versão BETA do Linux Mint 21.2 Victoria: https://blog.linuxmint.com/?p=4523
 
-#Lançamentos Oficiais do Linux Mint 21.1<br>
+### Lançamentos Oficiais do Linux Mint 21.1
 Novos Recursos do Linux Mint 21.1 Vera Cinnamon: https://www.linuxmint.com/rel_vera_cinnamon_whatsnew.php<br>
 Informações da Nova Versão do Linux Mint 21.1 Vera: https://www.linuxmint.com/rel_vera_cinnamon.php<br>
 06/12/2022 - Lançamento da Versão BETA do Linux Mint 21.1 Vera Cinnamon: https://blog.linuxmint.com/?p=4442<br>
 03/12/2022 - Lançamento das Versões "BETA" do Linux Mint 21.1 Vera: https://blog.linuxmint.com/?p=4438
 
-#Lançamentos Oficiais do Linux Mint 20.x<br>
+### Lançamentos Oficiais do Linux Mint 20.x
 08/07/2021 - Linux Mint 20.2 “Uma” Cinnamon released!: https://blog.linuxmint.com/?p=4102<br>
 08/07/2021 - How to upgrade to Linux Mint 20.2: https://blog.linuxmint.com/?p=4111<br>
 New features in Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_cinnamon_whatsnew.php<br>
@@ -57,20 +70,27 @@ Release Notes for Linux Mint 20.2 Cinnamon: https://www.linuxmint.com/rel_uma_ci
 07/01/2022 - Linux Mint 20.3 “Una” Cinnamon released! https://blog.linuxmint.com/?p=4220<br>
 Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_cinnamon.php
 
-#Instalação do Linux Mint 64 Bits no Notebook Itautec Infoway N8645
+## Instalação do Linux Mint 64 Bits no Notebook Itautec Infoway N8645
 
-#01_ Indicação de Software para a criação do Pen Drive Bootável do Linux Mint<br>
+### 01_ Download da ISO do Linux Mint 22.1 x64 do Site Oficial
 
-A) Recomendações de Software para Pen Drive
-  01) Rufus: https://rufus.ie/pt_BR/ (Indicado em Microsoft)
-  02) YUMI: https://www.pendrivelinux.com/yumi-multiboot-usb-creator/
-  03) Etcher: https://www.balena.io/etcher/
-  04) UNetbootin: https://unetbootin.github.io/
-  05) Ventoy: https://www.ventoy.net/en/index.html (Indicado para fazer Múltiplos Boot)
-  06) Linux Live USC Creator: https://www.linuxliveusb.com/
-  07) Popsicle: https://github.com/pop-os/popsicle
+Link de download do Linux Mint 22.1 "Xia" Cinnamon 64 Bits
 
-#02_ Configurações do Hardware do Notebook Itautec Infoway N8645<br>
+01. Site Oficial: https://linuxmint.com/download.php<br>
+02. Mirror......: https://pub.linuxmint.io/stable/22.1/<br>
+03. Link direto.: https://pub.linuxmint.io/stable/22.1/linuxmint-22.1-cinnamon-64bit.iso<br>
+
+### 02_ Indicação de Software para a criação do Pen Drive Bootável do Linux Mint
+
+01) Rufus (Microsoft): https://rufus.ie/pt_BR/<br>
+02) YUMI: https://www.pendrivelinux.com/yumi-multiboot-usb-creator/<br>
+03) Etcher: https://www.balena.io/etcher/<br>
+04) UNetbootin: https://unetbootin.github.io/<br>
+05) Ventoy: https://www.ventoy.net/en/index.html<br>
+06) Linux Live USC Creator: https://www.linuxliveusb.com/<br>
+07) Popsicle: https://github.com/pop-os/popsicle<br>
+
+### 03_ Configurações do Hardware do Notebook Itautec Infoway N8645
 ```bash
 A) CPU......: Intel i7 M620 2.67Ghz 4MB Cache;
 B) RAM......: 8GB DDR-3 1333Mhz;
@@ -83,127 +103,173 @@ H) AUDIO....: Intel 5 Series/3400 e AMD;
 I) VGA......: RV710/730 HDMI Radeon 4000 Series.
 ```
 
-#03_ Configuração da BIOS do Notebook Itautec Infoway N8645 P5214_I-SL2.1<br>
-```bash
-Configuração Padrão de Fábrica, Hard Disk HD em AHCI, VT-x habilitado, Audio, Wireless
-e Bluetooth habilitados segurança UEFI habilitada
+### 04_ Configuração da BIOS do Notebook Itautec Infoway N8645 P5214_I-SL2.1
 
-#OBSERVAÇÃO IMPORTANTE: PARA ACESSAR A BIOS DO NOTEBOOK ITAUTEC INFORWAY PRESSIONE A TECLA: F2
+**OBSERVAÇÃO IMPORTANTE:** PARA ACESSAR A *BIOS* DO NOTEBOOK ITAUTEC INFORWAY PRESSIONE A TECLA: __`F2`__
+
+01) Configuração Padrão de Fábrica, Hard Disk HD em AHCI, VT-x habilitado, Audio, Wireless e Bluetooth habilitados segurança UEFI habilitada
+
+### 05_ Inicialização da Instalação do Linux Mint 20.x, 21.x ou 22.x no Notebook Itautec Infoway N8645
+
+**OBSERVAÇÃO IMPORTANTE:** PARA ESCOLHER A SEQUÊNCIA DE BOOT NA INICIALIZAÇÃO PRESSIONE: __`F12`__
+
+01) Inicialização padrão, a falha de resolução de vídeo não acontece nesse modelo de notebook da Itautec Infoway N8645 devido o monitor ser de 15 polegadas e atingir altas resoluções.
+
+### 06_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless) no Notebook Itautec Infoway N8645
+
+01) Já é reconhecida no Live-CD do Mint, depois de instalado o Linux Mint ela já está habilitada.
+
+### 07_ Hard Disk SATA HD Samsung 500GB do Notebook Itautec Infoway N8645
+
+**OBSERVAÇÃO IMPORTANTE:** sempre utilizar o software: __`GParted`__ para remover todas as partições existente no disco que será feito a instalação do *Linux Mint*, isso deixar o sistema mais seguro e não causa problemas de Múltiplos Boots.
+
+01) Modelo HM500JI, Hard Disk para a instalação do Linux Mint, sem necessidade de particionamento (instalação padrão).
+
+### 08_ Instalando o Linux Mint 20.x, 21.x ou 22.x no Notebook Itautec Infoway N8645
+
+01) Conecte o: __`PEN DRIVER BOOTÁVEL`__ do Linux Mint na Porta: __`USB`__ do Notebook (RECOMENDADO COM O NOTEBOOK DESLIGADO), após ligar o equipamento pressione: __`F12`__ para solicitar a Média de Boot.
+
+**OBSERVAÇÃO IMPORTANTE:** O Boot Inicial do Linux Mint demora cerca de: 10 (dez segundos) para iniciar a instalação padrão caso você não altere as opções de Boot.
+
+**OBSERVAÇÃO:** Para parar o Boot Inicial do Linux Mint pressione: <Seta para Baixo>.
+
+**DICA:** Entendendo as opções de inicialização do Linux Mint<br>
+| Opção | Explicação | 
+|-------|------------|
+| *Start Linux Mint 22.1 Cinnamon 64-Bit (Padrão) | Carrega o sistema na memória sem alterar nada no HD/SSD. |
+| Start Linux Mint 22.1 Cinnamon 64-Bit (compatibility mode) | Inicia o sistema com drivers genéricos, desativa recursos avançados de vídeo, rede e hardware, além de opções como ACPI, gráficos 3D ou som.
+| OEM install (for manufacturers) | Permite que fabricantes, vendedores ou técnicos instalem o sistema, configurem drivers, atualizem pacotes e personalizem o sistema.
+| Hardware Detection | Inicia uma sessão especial que varre e mostra informações detalhadas do hardware do computador | 
+| Boot from local drive | Inicializa o sistema operacional que já está instalado no HD/SSD.
+| Memory test (memtest86+) | Verifica se há erros na memória RAM, algo muito importante para diagnosticar travamentos, telas azuis (no Windows), congelamentos ou reinicializações aleatórias.
+
+```bash
+Na tela inicial do Boot Load GRUB do Linux Mint
+  Welcome to Linux Mint 22.1 64-Bit
+    *Start Linux Mint 22.1 Cinnamon 64-Bit (Padrão) <-- ESCOLHER ESSA OPÇÃO E PRESSIONAR: <ENTER>
+    Start Linux Mint 22.1 Cinnamon 64-Bit (compatibility mode)
+    OEM install (for manufacturers)
+    Hardware Detection
+    Boot from local drive
+    Memory test
 ```
 
-#04_ Inicialização da Instalação do Linux Mint 20.x, 21.x ou 22.x no Notebook Itautec Infoway N8645<br>
-```bash
-#OBSERVAÇÃO IMPORTANTE: PARA ESCOLHER A SEQUÊNCIA DE BOOT NA INICIALIZAÇÃO PRESSIONE: F12
+**OBSERVAÇÃO IMPORTANTE:** ANTES DE INICIAR A INSTALAÇÃO E CONFIGURAÇÃO DO LINUX MINT NO NOTEBOOK, RECOMENDO REMOVER TODAS AS PARTIÇÕES EXISTENTE COM O SOFTWARE: __`GPARTED`__
 
-Inicialização padrão, a falha de resolução de vídeo não acontece nesse modelo de notebook
-da Itautec Infoway N8645 devido o monitor ser de 15 polegadas e atingir altas resoluções.
+```bash
+#Removendo todas as partições existente no Notebook
+Clique no menu do Linux Mint
+  01) Na busca indexada digite: gparted
+    A) Selecione o disco para fazer a limpeza: /dev/sd??? (500GB)
+    B) Selecione as partições e pressione: Del (Delete)
+    D) Clique em: Aplicar todas as opções (Save)
+  <Fechar>
 ```
-
-#05_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless) no Notebook Itautec Infoway N8645<br>
 ```bash
-Já é reconhecida no Live-CD do Mint, depois de instalado o Linux Mint ela já está habilitada.
-```
-
-#06_ Hard Disk SATA HD Samsung 500GB do Notebook Itautec Infoway N8645<br>
-```bash
-Modelo HM500JI, Hard Disk para a instalação do Linux Mint, sem necessidade de particionamento
-(instalação padrão).
-
-#OBSERVAÇÃO IMPORTANTE: sempre utilizar o software GParted para remover todas as partições
-#existente no disco que será feito a instalação do Linux Mint, isso deixar o sistema mais
-#seguro e não causa o problemas de Múltiplos Boots.
-```
-
-#07_ Instalando o Linux Mint 20.x, 21.x ou 22.x no Notebook Itautec Infoway N8645<br>
-```bash
-01) Boot Inicial do Linux Mint 10 (dez segundos) inicia a instalação padrão.
-    a) Parar o Boot: pressionar: Seta para Baixo para parar o Boot inicial
-
-02) Opções do Boot padrão do Linux Mint
-    a) *Start Linux Mint 22 Cinnamon 64-Bit (Padrão)
-    b) Start Linux Mint 22 Cinnamon 64-Bit (compatibility mode)
-    c) OEM install (for manufacturers)
-    d) Test memory
-
-03) Limpeza das Partições utilizando o Gparted
-    a) Clique no menu e na busca indexada digite: gparted
-    b) Selecione o disco para fazer a limpeza
-    c) Selecione as partições e pressione: Del (Delete)
-    d) Clique em: Aplicar todas as opções (Save)
-
-04) Ícone Install Linux Mint no Desktop
-    a) Welcome
-        Português do Brasil
+#Iniciando a instalação do Linux Mint no Notebook
+No Desktop do Linux Mint
+  Clique no Ícone de: Install Linux Mint
+    01) Na tela de: Welcome
+      Selecione: Português do Brasil
     <Continuar>
-    b) Layout do teclado
-        Selecione o layout de seu teclado:
-        Portuguese (Brazil)
+    02) Na tela de: Layout do teclado
+      Selecione o layout de seu teclado: Portuguese (Brazil)
+      Portuguese (Brazil)
+      Digite aqui para testar o seu teclado: /\|ç
     <Continuar>
-    c) Codecs Multimídia
-        Instalar codecs multimídia: ON (Habilitar)
+    03) Na tela de: Codecs Multimídia
+      Instalar codecs multimídia: ON (Habilitar)
     <Continuar>
-    d) Tipo de instalação
-        Apagar disco e reinstalar o Linux Mint: ON (Selecionado)
-        <Instalar agora>
+    04) Na tela de: Tipo de instalação
+      Apagar disco e reinstalar o Linux Mint: ON (Selecionado)
+      <Instalar agora>
     <Continuar>
-    e) Onde você está?
-        Sao Paulo
+    05) Na tela de: Onde você está?
+      Selecione: Brasil / São Paulo (Fuso Horário UTC/GMT -03:00)
     <Continuar>
-    f) Quem é você?
-        Seu nome: NOME E SOBRENOME
-        Nome do seu computador: seunome
-        Escolha um nome de usuário: SEU_USUÁRIO
-        Escolha uma senha: SUA_SENHA
-        Confirme sua senha: CONFIRMA_SUA_SENHA
-        Solicitar minha senha para entrar: ON (Selecionado)
+    06) Na tela de: Quem é você?
+      Seu nome: Seu Nome e Sobrenome
+      Nome do seu computador: VirtualBox
+      Escolha um nome de usuário: seu_usuário
+      Escolha uma senha: sua_senha
+      Confirme sua senha: sua_senha
+      Solicitar minha senha para entrar: ON (Selecionado)
     <Continuar>
-<Reiniciar agora>
-
+  Instalação Concluída: <Reiniciar agora>
+#OBSERVAÇÃO: REMOVER A MÉDIA DE INSTALAÇÃO ANTES DE PRESSIONAR: <ENTER>
 Please remove the installation medium, then press <ENTER>
+```
+**OBSERVAÇÃO:** Aguardar a reinicialização total do sistema para se logar no Linux Mint.
 
-#OBSERVAÇÃO: Aguardar a reinicialização do sistema para se logar no Linux Mint.
+**DICA:** Se você quiser ver toda a inicialização detalhada do Linux Mint, no Boot Load do Ícone do Linux Mint pressione: <Esc>.
+
+### 09_ Se logando pela primeira vez no Linux Mint
+```bash
+Na tela de Login do Linux Mint
+  Selecionar o usuário: Seu Nome e Sobrenome
+    Digitar a senha do usuário: sua_senha pressionar: <Enter> ou clique no ícone: >
+    Aguardar a criação do perfil do usuário
 ```
 
-#08_ Pós-Instalação do Linux Mint 20.x, 21.x ou 22.x no Notebook Itautec Infoway N8645<br>
+### 10_ Personalização Básica do Linux Mint
 ```bash
-#OBSERVAÇÃO IMPORTANTE: É RECOMENDADO FAZER PRIMEIRO A ATUALIZAÇÃO VIA MINTUPDATE, DEPOIS VOCÊ
-#PODE UTILIZAR O BASH/SHELL COM O COMANDO APT PARA MANTER O DESKTOP SEMPRE ATUALIZADO.
+Na tela de Bem-Vindo(a) ao Linux Mint
+  Clique em: Primeiros Passos
+    Selecione: Cores da Área de Trabalho: <Iniciar>
+      Na tela de Temas selecione em Aparência: <Escuro>
+      <Fechar>
+    Desmarque a opção: (OFF) Mostre essa tela de boas-vindas ao iniciar o Linux Mint
+<Fechar>
+```
 
-A) Atualização do sistema utilizando o MintUpdate;
-B) Atualização do sistema utilizando o Apt;
+### 11_ Pós-Instalação do Linux Mint 20.x, 21.x ou 22.x no Notebook Itautec Infoway N8645
 
-#Atualização utilizando o comando Apt no Terminal
+**OBSERVAÇÃO IMPORTANTE:** É RECOMENDADO FAZER PRIMEIRO A ATUALIZAÇÃO VIA MINTUPDATE, DEPOIS VOCÊ PODE UTILIZAR O BASH/SHELL COM O COMANDO APT PARA MANTER O DESKTOP SEMPRE ATUALIZADO.
+
+```bash
+01) Atualização do sistema utilizando o MintUpdate;
+    Clique no Ícone na Barra de Tarefas: Gerenciador de Atualizações
+    OBSERVAÇÃO: RECOMENDADO UTILIZAR PRIMEIRO O MINTUPDATE E DEPOIS ATUALIZAR VIA TERMINAL
+      01) Na tela de Bem-vindo ao Gerenciador de Atualizações clique em: <OK>
+      02) Na tela de Uma nova versão do Gerenciador de Atualizações está disponível clique em: <Aplicar atualização>
+      03) Na tela de Autenticação Obrigatório digite a senha do seu usuário e clique em: <Autenticar>
+      04) Na Aba Azul Você quer mudar para um repositório regional clique em: <Não>
+      05) Atualize as Lista de Aplicativos clicando em: <Atualizar>
+      06) Atualize os Aplicativos (software) clicando em: <Instalar Atualizações>
+          Na tela de Autenticação Obrigatório digite a senha do seu usuário e clique em: <Autenticar>
+          Após a atualização clique em Fechar o MintUpdate
+      07) Reinicie o Linux Mint para aplicar as atualizações
+          Na barra de Tarefas clique no Ícone do Linux Mint
+          Clique em: <Desligar>
+            Clique em: <Reiniciar>
+    AGUARDE A REINICIALIZAÇÃO TOTAL DO LINUX MINT PARA APLICAR AS NOVAS ATUALIZAÇÕES.
+```
+
+### 12_ Instalação do Linux Kernel OEM (Original Equipment Manufacturer) no Notebook Itautec Infoway N8645
+
+**OBSERVAÇÃO IMPORTANTE:** CUIDADO COM A VERSÃO DO LINUX MINT QUE VOCÊ ESTÁ USANDO, VERIFIQUE A VERSÃO E ESCOLHA OS PROCEDIMENTOS CORRESPONDENTE A SUA VERSÃO.
+
+**Versões do Linux Mint baseadas na Distribuição Ubuntu**<br>
+Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa<br>
+Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish<br>
+Linux Mint 22.x e derivado do Ubuntu Desktop 24.04.x Noble Numbat
+
+```bash
 #atalho para acessar o Terminal
 Terminal: Ctrl + Alt + T
 
-#Recomendo utilizando o comando: apt - o comando: apt-get e considerado obsoleto
-sudo apt update
-sudo apt upgrade
-sudo apt full-upgrade
-sudo apt dist-upgrade
-sudo apt autoremove
-sudo apt autoclean
-sudo apt clean
-
-#Reinicializar o Sistema após Atualizar
-sudo reboot
-```
-
-#09_ Instalação do Linux Kernel OEM (Original Equipment Manufacturer) no Notebook Itautec Infoway N8645 <br>
-```bash
-#OBSERVAÇÃO IMPORTANTE: CUIDADO COM A VERSÃO DO LINUX MINT QUE VOCÊ ESTÁ USANDO, VERIFIQUE
-#A VERSÃO E ESCOLHA OS PROCEDIMENTOS CORRESPONDENTE A SUA VERSÃO.
-
-#verificando a versão e codinome do sistema operacional
-#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa (focal)
-#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish (jammy)
-#OBSERVAÇÃO IMPORTANTE: Linux Mint 22.x é derivado do Ubuntu Desktop 24.04.x Noble Numbat (noble)
+#verificando as versões e codinome do sistema operacional
 sudo cat /etc/os-release
 
+#verificando as informações do Linux Standard Base
+sudo cat /etc/lsb-release
+```
+
+**INSTALAÇÃO DO KERNEL OEM NO LINUX MINT 22.x (KERNEL >= 6.8)**
+
+```bash
 #atualizando as listas do Apt
 sudo apt update
-
-#INSTALAÇÃO DO KERNEL OEM NO LINUX MINT 22.x (KERNEL >= 6.8)
 
 #Linux Mint Versão 22.x - Kernel >= 6.8 (TESTADO E HOMOLOGADO, RECOMENDO A SUA INSTALAÇÃO)
 sudo apt install linux-oem-24.04b fdutils
@@ -216,10 +282,13 @@ sudo reboot
 sudo uname -a
 ```
 
-#10_ Instalação dos Aplicativos Básicos do Linux Mint no Notebook Itautec Infoway N8645<br>
+#### 13_ Instalação dos Aplicativos Básicos do Linux Mint no Notebook Itautec Infoway N8645
+
+**OBSERVAÇÃO IMPORTANTE:** CUIDADO COM A VERSÃO DO LINUX MINT QUE VOCÊ ESTÁ USANDO, VERIFIQUE A VERSÃO E ESCOLHA OS PROCEDIMENTOS CORRESPONDENTE DE CADA VERSÃO.
+
 ```bash
-#OBSERVAÇÃO IMPORTANTE: CUIDADO COM A VERSÃO DO LINUX MINT QUE VOCÊ ESTÁ USANDO, VERIFIQUE
-#A VERSÃO E ESCOLHA OS PROCEDIMENTOS CORRESPONDENTE DE CADA VERSÃO.
+#atalho para acessar o Terminal
+Terminal: Ctrl + Alt + T
 
 #atualizando as listas do Apt
 sudo apt update
@@ -229,7 +298,7 @@ sudo apt update
 sudo apt install software-properties-common build-essential lsb-base dkms lsb-release \
 apt-transport-https module-assistant
 
-#instalação dos software de hardware e monitoramento do Linux Mint 20.x, 21.x e 22.x
+#instalação dos software de hardware do Linux Mint 20.x, 21.x e 22.x
 #opção da contra barra (\): criar uma quebra de linha no terminal
 sudo apt install htop nmon i8kutils psensor tlp tlp-rdw cpufrequtils cputool ipmitool \
 ipmiutil smartmontools btop
@@ -243,43 +312,42 @@ p7zip-rar
 sudo reboot
 ```
 
-#11_ Instalação dos Drivers VGA Intel Graphics e AMD Radeon do Linux Mint no Notebook Itautec Infoway N8645<br>
+### 14_ Instalação dos Drivers VGA Intel Graphics e AMD Radeon do Linux Mint no Notebook Itautec Infoway N8645
 ```bash
-#Instalação dos Drivers de vídeo da Intel Mesa
-#atualizando as listas do Apt
+#Atalho para acessar o Terminal
+Terminal: Ctrl + Alt + T
+
+#Atualizando as listas do Apt
 sudo apt update
 
-#instalação dos drivers de vídeo da Intel
+#Instalação dos drivers de vídeo da Intel do Linux Mint 20.x, 21.x e 22.x
 sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
 
-#instalação dos drivers e recursos do Mesa
+#Instalação dos drivers e recursos do Mesa da Intel do Linux Mint 20.x, 21.x e 22.x
 sudo apt install libgl1-mesa-dev libgles2-mesa-dev libassimp5 libgles2-mesa-dev
 
 #Reinicializar o Sistema
 sudo reboot
 
-#Instalação do Driver de Vídeo da Radeon (PROCEDIMENTO DESATIVADO - NÃO UTILIZAR ESSE PROCEDIMENTO,
-#FALHA NA INICIALIZAÇÃO DO GERENCIADOR DE AMBIENTE GRÁFICO X11, ESSE DRIVER FOI DESCONTINUADO)
-#sudo apt install xserver-xorg-video-radeon
-
-#Testando o suporte ao Driver da Intel Mesa
+#Testando o suporte ao Driver da Intel Mesa do Linux Mint 20.x, 21.x e 22.x
 sudo glxgears
 ```
-A) Software de Benchmark para GNU/Linux para Testar Desempenho Gráfico
-  01) PassMark: https://www.passmark.com/products/pt_linux/index.php
-  02) Hardinfo: https://github.com/lpereira/hardinfo
-  03) Unigine.: https://benchmark.unigine.com/
-  04) GpuTest.: https://www.geeks3d.com/gputest/
 
-#12_ Personalização do Ambiente Gráfico Cinnamon do Linux Mint<br>
+**Software de Benchmark para GNU/Linux para Testar o Desempenho Gráfico**<br>
+01) PassMark: https://www.passmark.com/products/pt_linux/index.php<br>
+02) Hardinfo: https://github.com/lpereira/hardinfo<br>
+03) Unigine.: https://benchmark.unigine.com/<br>
+04) GpuTest.: https://www.geeks3d.com/gputest/<br>
 
-  01) Personalizar a Área de Trabalho;
-  02) Personalizar a Barra de Tarefas (Painel);
-  03) Personalizar o Tema (Aparência);
-  04) Personalizar a Janela de Início de Sessão (Tela de Login);
-  05) Pesquisar sobre: Extensões, Desklets, Applets, Temas (Windows), Plano de Fundo.
+### 15_ Personalização do Ambiente Gráfico Cinnamon do Linux Mint
 
-#13_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint<br>
+01) Personalizar a Área de Trabalho;<br>
+02) Personalizar a Barra de Tarefas (Painel);<br>
+03) Personalizar o Tema (Aparência);<br>
+04) Personalizar a Janela de Início de Sessão (Tela de Login);<br>
+05) Pesquisar sobre: Extensões, Desklets, Applets, Temas (Windows), Plano de Fundo.<br>
+
+### 16_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint
 
 A) Instalação dos principais Navegadores de Internet (DEIXAR OS ÍCONES NO DESKTOP)
   DICA: BAIXAR TODOS OS APLICATIVOS DO SITE OFICIAL DOS DESENVOLVEDORES
