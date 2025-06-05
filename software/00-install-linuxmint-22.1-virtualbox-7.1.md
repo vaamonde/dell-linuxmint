@@ -9,68 +9,55 @@
 #Data de criação: 21/01/2025<br>
 #Data de atualização: 06/04/2025<br>
 #Versão: 0.02<br>
-#Testado e homologado no Linux Mint 22.1 Xia x64
+#Testado e homologado no Linux Mint 22.1 Xia x64 Bits
+
+**O QUE É E PARA QUE SERVER O GNU:** O GNU (pronuncia-se "g-n-u", e não "gnu") é um projeto de software livre iniciado em 1983 por Richard Stallman, com o objetivo de criar um sistema operacional completo, livre e gratuito, semelhante ao Unix, mas sem usar nenhum código proprietário. A sigla GNU significa: “GNU's Not Unix” — (GNU Não é Unix). É uma brincadeira dos desenvolvedores com siglas recursivas, muito comuns no meio da tecnologia.
+
+**O QUE É E PARA QUE SERVER O LINUX:** O Linux é um sistema operacional de código aberto, baseado no núcleo (kernel) Linux, criado por Linus Torvalds em 1991. Assim como o Windows e o macOS, o Linux permite que você interaja com o hardware do computador e execute programas. 
+
+**O QUE É E PARA QUE SERVER O DEBIAN:** O Debian é uma distribuição Linux (ou distro) extremamente estável, robusta e de código aberto. Ele é desenvolvido por uma comunidade de voluntários e existe desde 1993, sendo uma das distribuições mais antigas e respeitadas no mundo Linux. O Debian é a base para várias outras distribuições famosas, como o Ubuntu, o Kali Linux, o Raspbian (para Raspberry Pi) e muitos outros.
+
+**O QUE É E PARA QUE SERVER O UBUNTU:** O Ubuntu é uma distribuição Linux baseada no Debian, criada pela empresa sul-africana Canonical em 2004. É uma das distribuições Linux mais populares do mundo, conhecida por ser fácil de usar, amigável para iniciantes e bastante estável. O nome "Ubuntu" vem de uma filosofia africana que significa "humanidade para com os outros", refletindo a ideia de software livre, acessível e colaborativo.
+
+**O QUE É E PARA QUE SERVER O LINUX MINT:** O Linux Mint é uma distribuição Linux baseada no Ubuntu (e indiretamente no Debian). Foi criada para ser fácil, leve, rápida e muito amigável, especialmente para quem está migrando do Windows. Ele tem uma aparência bem parecida com o Windows, o que facilita muito a adaptação de quem nunca usou Linux antes.
 
 [![Linux Mint 22.1](http://img.youtube.com/vi//0.jpg)]( "Linux Mint 22.1")
 
 Link da vídeo aula: 
 
-#Lançamentos Oficiais do Linux Mint
+### Lançamentos Oficiais do Linux Mint
+18/01/2025 - Como atualizar para o Linux Mint 22.1 "Xia" - https://blog.linuxmint.com/?p=4797<br>
+16/01/2025 - Lançamento do Linux Mint 22.1 "Xia" - https://blog.linuxmint.com/?p=4793<br>
+11/01/2025 - Novidades do Linux Mint 22.1 "Xia" - https://blog.linuxmint.com/?p=4790<br>
+16/12/2024 - Lançamento do BETA dp Linux Mint 22.1 "Xia" - https://blog.linuxmint.com/?p=4787<br>
+31/01/2024 - Anúncio o Linux Mint 22 "Wilma" - https://blog.linuxmint.com/?p=4639<br>
+01/04/2024 - Primeiras novidades do Linux Mint 22 "Wilma" - https://blog.linuxmint.com/?p=4660<br>
+09/04/2024 - Repositório no Github do Linux Mint 22 "Wilma" - https://blog.linuxmint.com/?p=4671<br>
+30/04/2024 - Primeiros Recursos do Linux Mnt 22 "Wilma" - https://blog.linuxmint.com/?p=4675<br>
+03/06/2024 - Atualização dos Repositórios do Linux Mint 22 "Wilma" - https://blog.linuxmint.com/?p=4719<br>
+01/07/2024 - Liberação do BETA do Linux Mint 22 "Wilma" - https://blog.linuxmint.com/?paged=3<br>
+Novos Recursos do Linux Mint 22 "Wilma" - https://www.linuxmint.com/rel_wilma_whatsnew.php<br>
+Informações da Versão do Linux Mint 22 "Wilma" - https://www.linuxmint.com/rel_wilma.php<br>
 
-18/01/2025 - Como atualizar para o Linux Mint 22.1 "Xia"<br>
-https://blog.linuxmint.com/?p=4797
-
-16/01/2025 - Lançamento do Linux Mint 22.1 "Xia"<br>
-https://blog.linuxmint.com/?p=4793
-
-11/01/2025 - Novidades do Linux Mint 22.1 "Xia"<br>
-https://blog.linuxmint.com/?p=4790
-
-16/12/2024 - Lançamento do BETA dp Linux Mint 22.1 "Xia"<br>
-https://blog.linuxmint.com/?p=4787
-
-31/01/2024 - Anúncio o Linux Mint 22 "Wilma"<br>
-https://blog.linuxmint.com/?p=4639
-
-01/04/2024 - Primeiras novidades do Linux Mint 22 "Wilma"<br>
-https://blog.linuxmint.com/?p=4660
-
-09/04/2024 - Repositório no Github do Linux Mint 22 "Wilma"<br>
-https://blog.linuxmint.com/?p=4671
-
-30/04/2024 - Primeiros Recursos do Linux Mnt 22 "Wilma"<br>
-https://blog.linuxmint.com/?p=4675
-
-03/06/2024 - Atualização dos Repositórios do Linux Mint 22 "Wilma"<br>
-https://blog.linuxmint.com/?p=4719
-
-01/07/2024 - Liberação do BETA do Linux Mint 22 "Wilma"<br>
-https://blog.linuxmint.com/?paged=3
-
-Novos Recursos do Linux Mint 22 "Wilma"<br>
-https://www.linuxmint.com/rel_wilma_whatsnew.php
-
-Informações da Versão do Linux Mint 22 "Wilma"<br>
-https://www.linuxmint.com/rel_wilma.php
-
-#Tipos de Ambientes Gráficos do Linux Mint<br>
+### Tipos de Ambientes Gráficos utilizados no Linux Mint
 Cinnamon: https://www.linuxmint.com/rel_vera_cinnamon.php<br>
 Mate: https://www.linuxmint.com/rel_vera_mate.php<br>
 XFCE: https://www.linuxmint.com/rel_vera_xfce.php.
 
-#Versões baseadas da Distribuição Ubuntu<br>
+### Versões do Linux Mint baseadas na Distribuição Ubuntu
 Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa<br>
 Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish<br>
 Linux Mint 22.x e derivado do Ubuntu Desktop 24.04.x Noble Numbat
 
-## Instalação do Linux Mint 64 Bits no Oracle VirtualBOX
+## Instalação do Linux Mint 22.1 x64 Bits no Oracle VirtualBOX
 
 ### Primeira etapa: Download da ISO do Linux Mint 22.1 x64
 
 Link de download do Linux Mint 22.1 "Xia" Cinnamon 64 Bits
 
-01. Link direto: https://mirror.ufscar.br/mint-cd/stable/22.1/linuxmint-22.1-cinnamon-64bit.iso<br>
-02. Mirror.....: https://mirror.ufscar.br/mint-cd/stable/22.1/
+01. Site Oficial: https://linuxmint.com/download.php<br>
+02. Mirror......: https://pub.linuxmint.io/stable/22.1/<br>
+03. Link direto.: https://pub.linuxmint.io/stable/22.1/linuxmint-22.1-cinnamon-64bit.iso<br>
 
 ### Segunda etapa: Software para criação de Pen Drive Bootável do Linux Mint 22.x x64
 
@@ -87,156 +74,216 @@ Link de download do Linux Mint 22.1 "Xia" Cinnamon 64 Bits
 Link de download do Oracle VirtualBOX: https://www.virtualbox.org/wiki/Downloads
 
 ### Quarta etapa: Criando a Máquina Virtual do Linux Mint no VirtualBox
+```bash
+Abrir o Oracle VirtualBOX
+  Selecione: Ferramentas
+    Clique em: <Novo>
+      Nome da máquina virtual e Sistema Operacional:
+        Nome: LinuxMint22.1
+        Pasta (F): (deixar o padrão do sistema ou alterar conforme necessidade) 
+        Imagem ISO: <não selecionado>
+        Edição: (Default)
+        Tipo: Linux
+        Versão: Ubuntu (64-bit)
+        Pular Instalação Desassistida: OFF (Desabilitado)
+      <Próximo (N)>
+      Hardware:
+        Memória Base: 4096MB
+        Processadores: 2 CPU
+        Habilitar EFI (SOs especiais apenas): OFF (Desabilitado)
+      <Próximo (N)>
+      Disco Rígido Virtual:
+        Criar um novo disco rígido virtual agora
+          Tamanho do Disco: 50GB (alterar conforme necessidade)
+          Pré-alocar Tamanho Total (F): OFF (Desabilitado)
+        Utilizar um disco rígido virtual existente: OFF (Default)
+        Não Acrescentar um Disco Rígido Virtual: OFF (Default)
+      <Próximo (N)>
+    Sumário
+  <Finalizar>
+```
 
-_ Ferramentas;
-		<Novo>
-	_ Nome da máquina virtual e Sistema Operacional:
-		Nome: LinuxMint22.1
-		Pasta (F): (deixar o padrão do sistema) 
-		Imagem ISO:
-			Outro
-				/home/vaamonde/ISO/linuxmint-22.1-cinnamon-64bit-beta.iso
-		Edição: (Default)
-		Tipo: Linux
-		Versão: Ubuntu (64-bit)
-		Pular Instalação Desassistida: ON (Enable)
-		<Próximo>
-	_ Hardware:
-		Memória Base: 4096MB
-		Processadores: 2 CPU
-		Habilitar EFI (SOs especiais apenas): OFF (Default)
-		<Próximo>
-	_ Disco Rígido Virtual:
-		Criar um novo disco rígido virtual agora
-			Tamanho do Disco: 50GB
-		Pré-alocar Tamanho Total (F): Off (Default)
-		Utilizar um disco rígido virtual existente: Off (Default)
-		Não Acrescentar um Disco Rígido Virtual: Off (Default)
-		<Próximo>
-	_ Sumário
-		<Finalizar>
+### Quinta etapa: Personalizando a Máquina Virtual do Linux Mint no VirtualBox
+```bash
+No Oracle VirtualBOX
+  Selecione a Máquina Virtual: LinuxMint22.1
+    Clique em: Configurações da Máquina Virtual Linux (Propriedades/Configurações)
+      Opção: Geral
+        Guia: Avançado
+          Área de Transferência Compartilhada: Bi-direcional (Configurar)
+          Arrastar e Soltar: Bi-direcional (Configurar)
+      Opção: Sistema
+        Guia: Placa-Mãe
+          Relógio da máquina retorna hora UTC: OFF (Desabilitado) 
+        Guia: Processador
+          Processadores: 02 CPUs
+          Recursos Estendidos:
+            Habilitar PAE/NX: ON (Habilitado)
+            Habilitar VT-x/AMD-V Aninhado: ON (Habilitado)
+      Opção: Monitor
+        Guia: Tela
+          Memória de Vídeo: 128MB (Configurar)
+          Aceleração: Habilitar Aceleração 3D ON (Habilitado)
+      Opção: Rede
+        Guia: Adaptador 1
+          Habilitar Placa de Rede ON (Habilitado)
+          Conectado a: Placa em Modo Bridge (Configurar)
+          Nome: (Interface padrão de acesso a Internet e Rede Local do Hospedeiro)
+  <OK>
+```
 
-Quinta etapa: Personalizando a Máquina Virtual do Linux Mint no VirtualBox
+### Sexta etapa: Iniciando a ISO do Linux Mint
+```bash
+No Oracle VirtualBOX
+  Selecione a Máquina Virtual: LinuxMint22.1
+    Clique em: <Iniciar (T)>
+      Na tela de: VirtualBoxVM
+        DVD: <não selecionado> - Clique em: <Outro...>
+        Selecione a ISO do: Linux Mint 22.1 - Clique em: <Abrir (O)>
+      <Montar e Tentar Novo Boot>
+```
 
-	_ Configurações da Máquina Virtual Linux (Propriedades/Configurações)
-		_ Geral
-			Avançado
-				Área de Transferência Compartilhada: Bi-direcional
-				Arrastar e Soltar: Bi-direcional
-		_ Sistema
-			Placa-Mãe
-				Relógio da máquina retorna hora UTC: OFF (Desabilitado) 
-			Processador
-				Processadores: 02 CPUs
-				Recursos Estendidos:
-					Habilitar PAE/NX: ON (Habilitado)
-					Habilitar VT-x/AMD-V Aninhado: ON (Habilitado)
-		_ Monitor
-			Tela
-				Memória de Vídeo: 128MB
-				Aceleração: Habilitar Aceleração 3D
-		_ Rede
-			Adaptador 1
-				Habilitar Placa de Rede
-				Conectado a: Placa em Modo Bridge
-				Nome: (Interface padrão de acesso a Internet e Rede Local do Hospedeiro)
-		<OK>
+### Sétima etapa: Iniciando o Boot Load GRUB do Linux Mint
 
-Sexta etapa: Iniciando a ISO do Linux Mint
+**OBSERVAÇÃO IMPORTANTE:** O Boot Inicial do Linux Mint demora cerca de: 10 (dez segundos) para iniciar a instalação padrão caso você não altere as opções de Boot.
 
-	_ VM LinuxMint22.1: Iniciar
+**OBSERVAÇÃO:** Para parar o Boot Inicial do Linux Mint pressione: <Seta para Baixo>.
 
-Sétima etapa: Iniciando a Instalação o Linux Mint
+```bash
+Na tela inicial do Boot Load GRUB do Linux Mint
+  Welcome to Linux Mint 22.1 64-Bit
+    *Start Linux Mint 22.1 Cinnamon 64-Bit (Padrão)
+    Start Linux Mint 22.1 Cinnamon 64-Bit (compatibility mode)
+    OEM install (for manufacturers)
+    Hardware Detection
+    Boot from local drive
+    Memory test
+```
 
-	_ Boot Inicial do Linux Mint 10 (dez segundos) inicia a instalação padrão.
-		Parar o Boot: pressionar: Seta para Baixo para parar o Boot inicial
-	_ Opções do Boot padrão do Linux Mint
-		*Start Linux Mint 22.1 Cinnamon 64-Bit (Padrão)
-		Start Linux Mint 22.1 Cinnamon 64-Bit (compatibility mode)
-		OEM install (for manufacturers)
-		Test memory
-	
-	_ Ícone Install Linux Mint
-		Welcome
-			Português do Brasil
-			<Continuar>
-		Layout do teclado
-			Selecione o layout de seu teclado:
-				Portuguese (Brazil)
-			<Continuar>
-		Codecs Multimídia
-			Instalar codecs multimídia: ON (Habilitar)
-			<Continuar>
-		Tipo de instalação
-			Apagar disco e reinstalar o Linux Mint: ON (Selecionado)
-			<Instalar agora>
-			<Continuar>
-		Onde você está?
-			Sao Paulo
-			<Continuar>
-		Quem é você?
-			Seu nome: Robson Vaamonde
-			Nome do seu computador: VirtualBox
-			Escolha um nome de usuário: vaamonde
-			Escolha uma senha: pti@2018
-			Confirme sua senha: pti@2018
-			Solicitar minha senha para entrar: ON (Selecionado)
-			<Continuar>
-	_ <Reiniciar agora>
+### Oitava etapa: Iniciando o LiveCD do Linux Mint em Memória RAM
+```bash
+Na tela inicial do Boot Load GRUB do Linux Mint
+  Welcome to Linux Mint 22.1 64-Bit
+    *Start Linux Mint 22.1 Cinnamon 64-Bit (Padrão) <Enter>
+```
 
-	Please remove the installation medium, then press <ENTER>:
-	Observação: Aguardar a reinicialização do sistema para se logar no Linux Mint.
+### Nona etapa: Iniciando a Instalação do Linux Mint no Hard Disk
+```bash
+No Desktop do Linux Mint
+  Clique no Ícone de: Install Linux Mint
+    Na tela de: Welcome
+      Selecione: Português do Brasil
+    <Continuar>
+    Na tela de: Layout do teclado
+      Selecione o layout de seu teclado: Portuguese (Brazil)
+      Portuguese (Brazil)
+      Digite aqui para testar o seu teclado: /\|ç
+    <Continuar>
+    Na tela de: Codecs Multimídia
+      Instalar codecs multimídia: ON (Habilitar)
+    <Continuar>
+    Na tela de: Tipo de instalação
+      Apagar disco e reinstalar o Linux Mint: ON (Selecionado)
+      <Instalar agora>
+    <Continuar>
+    Na tela de: Onde você está?
+      Selecione: Brasil / São Paulo (Fuso Horário UTC/GMT -03:00)
+    <Continuar>
+    Na tela de: Quem é você?
+      Seu nome: Seu Nome e Sobrenome
+      Nome do seu computador: VirtualBox
+      Escolha um nome de usuário: seu_usuário
+      Escolha uma senha: sua_senha
+      Confirme sua senha: sua_senha
+      Solicitar minha senha para entrar: ON (Selecionado)
+    <Continuar>
+  Instalação Concluída: <Reiniciar agora>
+Please remove the installation medium, then press <ENTER>
+```
 
-Oitava etapa: Se logando pela primeira vez no Linux Mint
+**OBSERVAÇÃO:** Aguardar a reinicialização total do sistema para se logar no Linux Mint.
 
-	_ Após a inicialização do Linux Mint, selecionar o usuário: Robson Vaamonde
-	_ Digitar a senha do usuário: pti@2018 pressionar: <Enter>
-	_ Aguardar a criação do perfil do usuário
+**DICA:** Se você quiser ver toda a inicialização detalhada do Linux Mint, no Boot Load do Ícone do Linux Mint pressione: <Esc>.
 
-Nona etapa: Atualização do Sistema Operacional Linux Mint
+### Décima etapa: Se logando pela primeira vez no Linux Mint
+```bash
+Na tela de Login do Linux Mint
+  Selecionar o usuário: Seu Nome e Sobrenome
+    Digitar a senha do usuário: sua_senha pressionar: <Enter> ou clique no ícone: >
+    Aguardar a criação do perfil do usuário
+```
 
-	_ Atualização do sistema utilizando o Relatório do Sistema;
-		Instalar pacotes de idiomas.
-	_ Atualização do sistema utilizando o MintUpdate.
-		RECOMENDADO UTILIZAR PRIMEIRO O MINTUPDATE DEPOIS PARA SER FEITO VIA TERMINAL
-	
-	_ Atualização do sistema utilizando o Apt;
-		Atalho do Terminal: Ctrl + Alt + T
-		sudo apt update
-		sudo apt upgrade
-		sudo apt full-upgrade
-		sudo apt dist-upgrade
-		sudo apt autoremove
-		sudo apt autoclean
-		sudo apt clean
+### Décima Primeira etapa: Personalização Básica do Linux Mint
+```bash
+Na tela de Bem-Vindo(a) ao Linux Mint
+  Clique em: Primeiros Passos
+    Selecione: Cores da Área de Trabalho: <Iniciar>
+      Na tela de Temas selecione em Aparência: <Escuro>
+      <Fechar>
+    Desmarque a opção: (OFF) Mostre essa tela de boas-vindas ao iniciar o Linux Mint
+<Fechar>
+```
 
-		#Reinicializar o Sistema
-		sudo reboot
+### Décima Segunda etapa: Atualizando do Sistema Operacional Linux Mint
+```bash
+01) Atualização do sistema utilizando o Relatório do Sistema;
+    Clique no Ícone da Barra de Tarefas: Relatórios do Sistema
+      Instalar pacotes de idiomas.
+    <Fechar>
 
-Décima etapa: Instalação dos Convidados do VirtualBOX no Linux Mint
+02) Atualização do sistema utilizando o MintUpdate;
+    Clique no Ícone na Barra de Tarefas: Gerenciador de Atualizações
+    OBSERVAÇÃO: RECOMENDADO UTILIZAR PRIMEIRO O MINTUPDATE E DEPOIS ATUALIZAR VIA TERMINAL
+      01) Na tela de Bem-vindo ao Gerenciador de Atualizações clique em: <OK>
+      02) Na tela de Uma nova versão do Gerenciador de Atualizações está disponível clique em: <Aplicar atualização>
+      03) Na tela de Autenticação Obrigatório digite a senha do seu usuário e clique em: <Autenticar>
+      04) Na Aba Azul Você quer mudar para um repositório regional clique em: <Não>
+      05) Atualize as Lista de Aplicativos clicando em: <Atualizar>
+      06) Atualize os Aplicativos (software) clicando em: <Instalar Atualizações>
+          Na tela de Autenticação Obrigatório digite a senha do seu usuário e clique em: <Autenticar>
+          Após a atualização clique em Fechar o MintUpdate
+      07) Reinicie o Linux Mint para aplicar as atualizações
+          Na barra de Tarefas clique no Ícone do Linux Mint
+          Clique em: <Desligar>
+            Clique em: <Reiniciar>
+    AGUARDE A REINICIALIZAÇÃO TOTAL DO LINUX MINT PARA APLICAR AS NOVAS ATUALIZAÇÕES.
+```
 
-	_ Após a atualização do Linux Mint, clicar nas opções do VirtualBOX:
-		Dispositivos
-			Inserir imagem de CD dos Adicionais de Convidados
-	_ Na mensagem de: Está mídia contém um software de inicialização automática.
-		Clique em: <Executar>
-	_ Na tela de: A autenticação é necessária para executar /bin/sh como o superusuário
-		Digite a sua senha e clique em: <Autenticar>
-	_ Na mensagem: Press Return to close this Windows...
-		Pressione: <Enter>
-	_ Após a instalação dos convidados clique em:
-		Menu
-			Sair
-				Reiniciar
+### Décima Terceira etapa: Instalação dos Convidados do VirtualBOX no Linux Mint
+```bash
+Na tela da Máquina Virtual do VitualBOX
+  Clique no menu em: Dispositivos
+    Selecione a opção: Inserir imagem de CD dos Adicionais para Convidados
+    Na mensagem de: Está mídia contém um software de inicialização automática.
+      Clique em: <Executar>
+      Na tela de Autenticação Obrigatório digite a senha do seu usuário e clique em: <Autenticar>
+      OBSERVAÇÃO: AGUARDE A INSTALAÇÃO DOS CONVIDADOS DO VIRTUALBOX
+    Na mensagem de: Press Return to close this Windows... pressione: <Enter>
+    Após a instalação dos convidados reinicie novamente o Linux Mint para aplicar as mudanças
+      Na barra de Tarefas clique no Ícone do Linux Mint
+        Clique em: <Desligar>
+          Clique em: <Reiniciar>
+    AGUARDE A REINICIALIZAÇÃO TOTAL DO LINUX MINT PARA APLICAR AS MUDANÇAS.
+```
 
-Décima primeira etapa: Configuração da integração da Área de Transferência Compartilhada
+### Décima Quarta etapa: Configuração da Integração da Área de Transferência Compartilhada
+```bash
+#Acessar o TErminal (BASH/SHELL) do Linux Mint
+Atalho do Terminal: Ctrl + Alt + T
 
-	_ Após a reinicialização do Linux Mint teste a opção de Maximizar do VirtualBOX
+#Atualizando as Listas (Sources.List) do Apt
+#opção do comando apt: update (is used to download package information from all configured sources)
+sudo apt update
 
-	_ Atalho do Terminal: Ctrl + Alt + T
-		#opção do comando uname: -r (kernel-release)
-		#opções do comando usermod: -a (append), -G (groups), $USER (variável de ambiente do nome do usuário)
-		sudo apt update
-		sudo apt install dkms build-essential linux-headers-generic linux-headers-$(uname -r)
-		sudo usermod -aG vboxsf $USER
-		sudo reboot
+#Instalando os Aplicativos (Softwares) necessários para essa integração
+#opção do comando apt: install (This option is followed by one or more packages desired for installation)
+#opção do comando uname: -r (kernel-release)
+sudo apt install dkms build-essential linux-headers-generic linux-headers-$(uname -r)
+
+#Adicionando o seu usuário local do grupo do VirtualBOX
+#opções do comando usermod: -a (append), -G (groups), $USER (variável de ambiente do nome do usuário)
+sudo usermod -aG vboxsf $USER
+
+#Reiniciando o Linux Mint para aplicar as mudanças
+sudo reboot
+```
