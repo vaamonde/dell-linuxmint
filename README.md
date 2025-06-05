@@ -1,4 +1,4 @@
-# Curso GRÁTIS de Linux Mint 20.x/21.x em Notebook Dell (Inspiron, XPS, Vostro e G3), Notebook Positivo (N4340) e Desktop Gamer Xeon
+# Curso GRÁTIS de Linux Mint 20.x/21.x/22.x em Notebook Dell (Inspiron, XPS, Vostro e G3), Notebook Positivo (N4340) e Desktop Gamer Xeon
 
 ## 💰 Ajude o projeto Bora para Prática a continuar fazendo vídeos e materiais gratuitos para o Canal do YouTUBE
 ## 💰 Chave PIX do projeto: robsonvaamonde@gmail.com
@@ -31,8 +31,31 @@ Site do Linux Mint: https://www.linuxmint.com/​<br>
 Blog do Linux Mint: https://blog.linuxmint.com/​<br>
 FTP  do Linux Mint: https://ftp.heanet.ie/mirrors/linuxmint.com/stable/<br>
 
-## **Playlist do YouTUBE com todos os Vídeos do Linux Mint 20.x/21.x:**
+## **Playlist do YouTUBE com todos os Vídeos do Linux Mint 20.x/21.x/22.x:**
 Link da Playlist: https://www.youtube.com/playlist?list=PLozhsZB1lLUOKXT6TIhjwPWBNpUoExsNF
+
+## **🎁 LINUX MINT 22 WILMA BETA Cinnamon - Primeiras Impressões e Instalação no VirtualBOX 🐧**
+
+Vídeo mostrando os procedimentos básicos para baixar e instalar no VirtualBOX a "NOVA" Versão do Linux Mint 22 Wilma Cinnamon x64 Bits BETA.
+
+Com lançamento previsto para o Julho 2024 (ou depois), a nova versão da Distribuição Linux Mint 22 Codinome Wilma traz grandes mudanças e melhorias conforme os links oficiais da distribuição.
+
+31/01/2024 - Anúncio o Linux Mint 22 "Wilma" - https://blog.linuxmint.com/?p=4639<br>
+01/04/2024 - Primeiras novidades do Linux Mint 22 "Wilma" - https://blog.linuxmint.com/?p=4660<br>
+09/04/2024 - Repositório no Github do Linux Mint 22 "Wilma" - https://blog.linuxmint.com/?p=4671<br>
+30/04/2024 - Primeiros Recursos do Linux Mnt 22 "Wilma" - https://blog.linuxmint.com/?p=4675<br>
+03/06/2024 - Atualização dos Repositórios do Linux Mint 22 "Wilma" - https://blog.linuxmint.com/?p=4719<br>
+01/07/2024 - Liberação do BETA do Linux Mint 22 "Wilma" - https://blog.linuxmint.com/?paged=3<br>
+Novos Recursos do Linux Mint 22 "Wilma" - https://www.linuxmint.com/rel_wilma_whatsnew.php<br>
+Informações da Versão do Linux Mint 22 "Wilma" - https://www.linuxmint.com/rel_wilma.php<br>
+
+[![Linux Mint 22](http://img.youtube.com/vi/NN3VOFyWKsM/0.jpg)](https://www.youtube.com/watch?v=NN3VOFyWKsM "Linux Mint 22")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=NN3VOFyWKsM
+
+Material de apoio desse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/software/00-install-linuxmint-22-virtualbox-7.0.md
+
+Material de apoio desse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/software/00-install-linuxmint-22.1-virtualbox-7.1.md
 
 ## **🎅 ÓTIMO PRESENTE DE NATAL laçamento da NOVA versão do LINUX MINT 21.3 VIRGINIA BETA Cinnamon 6.0 🐧**
 
