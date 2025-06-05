@@ -21,9 +21,25 @@
 
 **O QUE É E PARA QUE SERVER O LINUX MINT:** O Linux Mint é uma distribuição Linux baseada no Ubuntu (e indiretamente no Debian). Foi criada para ser fácil, leve, rápida e muito amigável, especialmente para quem está migrando do Windows. Ele tem uma aparência bem parecida com o Windows, o que facilita muito a adaptação de quem nunca usou Linux antes.
 
-[![Linux Mint 22.1](http://img.youtube.com/vi//0.jpg)]( "Linux Mint 22.1")
+Conteúdo estudado nessa instalação:<br>
+#01_ Download da ISO do Linux Mint 22.1 x64<br>
+#02_ Software para criação de Pen Drive Bootável do Linux Mint 22.x x64<br>
+#03_ Criação e Configuração da Máquina Virtual no Oracle VirtualBOX 7.1.x<br>
+#04_ Criando a Máquina Virtual do Linux Mint no VirtualBox<br>
+#05_ Personalizando a Máquina Virtual do Linux Mint no VirtualBox<br>
+#06_ Iniciando a ISO do Linux Mint<br>
+#07_ Iniciando o Boot Load GRUB do Linux Mint<br>
+#08_ Iniciando o LiveCD do Linux Mint em Memória RAM<br>
+#09_ Iniciando a Instalação do Linux Mint no Hard Disk<br>
+#10_ Se logando pela primeira vez no Linux Mint<br>
+#11_ Personalização Básica do Linux Mint<br>
+#12_ Atualizando do Sistema Operacional Linux Mint<br>
+#13_ Instalação dos Convidados do VirtualBOX no Linux Mint<br>
+#14_ Configuração da Integração da Área de Transferência Compartilhada<br>
 
-Link da vídeo aula: 
+[![Linux Mint 22.1](http://img.youtube.com/vi/NN3VOFyWKsM/0.jpg)](https://www.youtube.com/watch?v=NN3VOFyWKsM "Linux Mint 22.1")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=NN3VOFyWKsM
 
 ### Lançamentos Oficiais do Linux Mint
 18/01/2025 - Como atualizar para o Linux Mint 22.1 "Xia" - https://blog.linuxmint.com/?p=4797<br>
@@ -78,7 +94,7 @@ Link de download do Oracle VirtualBOX: https://www.virtualbox.org/wiki/Downloads
 Abrir o Oracle VirtualBOX
   Selecione: Ferramentas
     Clique em: <Novo>
-      Nome da máquina virtual e Sistema Operacional:
+      01) Nome da máquina virtual e Sistema Operacional:
         Nome: LinuxMint22.1
         Pasta (F): (deixar o padrão do sistema ou alterar conforme necessidade) 
         Imagem ISO: <não selecionado>
@@ -87,12 +103,12 @@ Abrir o Oracle VirtualBOX
         Versão: Ubuntu (64-bit)
         Pular Instalação Desassistida: OFF (Desabilitado)
       <Próximo (N)>
-      Hardware:
-        Memória Base: 4096MB
+      02) Hardware:
+        Memória Base: 4096MB (4.0GB RAM)
         Processadores: 2 CPU
         Habilitar EFI (SOs especiais apenas): OFF (Desabilitado)
       <Próximo (N)>
-      Disco Rígido Virtual:
+      03) Disco Rígido Virtual:
         Criar um novo disco rígido virtual agora
           Tamanho do Disco: 50GB (alterar conforme necessidade)
           Pré-alocar Tamanho Total (F): OFF (Desabilitado)
@@ -108,11 +124,11 @@ Abrir o Oracle VirtualBOX
 No Oracle VirtualBOX
   Selecione a Máquina Virtual: LinuxMint22.1
     Clique em: Configurações da Máquina Virtual Linux (Propriedades/Configurações)
-      Opção: Geral
+      01) Opção: Geral
         Guia: Avançado
           Área de Transferência Compartilhada: Bi-direcional (Configurar)
           Arrastar e Soltar: Bi-direcional (Configurar)
-      Opção: Sistema
+      02) Opção: Sistema
         Guia: Placa-Mãe
           Relógio da máquina retorna hora UTC: OFF (Desabilitado) 
         Guia: Processador
@@ -120,11 +136,11 @@ No Oracle VirtualBOX
           Recursos Estendidos:
             Habilitar PAE/NX: ON (Habilitado)
             Habilitar VT-x/AMD-V Aninhado: ON (Habilitado)
-      Opção: Monitor
+      03) Opção: Monitor
         Guia: Tela
           Memória de Vídeo: 128MB (Configurar)
           Aceleração: Habilitar Aceleração 3D ON (Habilitado)
-      Opção: Rede
+      04) Opção: Rede
         Guia: Adaptador 1
           Habilitar Placa de Rede ON (Habilitado)
           Conectado a: Placa em Modo Bridge (Configurar)
@@ -149,6 +165,16 @@ No Oracle VirtualBOX
 
 **OBSERVAÇÃO:** Para parar o Boot Inicial do Linux Mint pressione: <Seta para Baixo>.
 
+**DICA:** Entendendo as opções de inicialização do Linux Mint<br>
+| Opção | Explicação | 
+|-------|------------|
+| *Start Linux Mint 22.1 Cinnamon 64-Bit (Padrão) | Carrega o sistema na memória sem alterar nada no HD/SSD. |
+| Start Linux Mint 22.1 Cinnamon 64-Bit (compatibility mode) | Inicia o sistema com drivers genéricos, desativa recursos avançados de vídeo, rede e hardware, além de opções como ACPI, gráficos 3D ou som.
+| OEM install (for manufacturers) | Permite que fabricantes, vendedores ou técnicos instalem o sistema, configurem drivers, atualizem pacotes e personalizem o sistema.
+| Hardware Detection | Inicia uma sessão especial que varre e mostra informações detalhadas do hardware do computador | 
+| Boot from local drive | Inicializa o sistema operacional que já está instalado no HD/SSD.
+| Memory test (memtest86+) | Verifica se há erros na memória RAM, algo muito importante para diagnosticar travamentos, telas azuis (no Windows), congelamentos ou reinicializações aleatórias.
+
 ```bash
 Na tela inicial do Boot Load GRUB do Linux Mint
   Welcome to Linux Mint 22.1 64-Bit
@@ -171,25 +197,25 @@ Na tela inicial do Boot Load GRUB do Linux Mint
 ```bash
 No Desktop do Linux Mint
   Clique no Ícone de: Install Linux Mint
-    Na tela de: Welcome
+    01) Na tela de: Welcome
       Selecione: Português do Brasil
     <Continuar>
-    Na tela de: Layout do teclado
+    02) Na tela de: Layout do teclado
       Selecione o layout de seu teclado: Portuguese (Brazil)
       Portuguese (Brazil)
       Digite aqui para testar o seu teclado: /\|ç
     <Continuar>
-    Na tela de: Codecs Multimídia
+    03) Na tela de: Codecs Multimídia
       Instalar codecs multimídia: ON (Habilitar)
     <Continuar>
-    Na tela de: Tipo de instalação
+    04) Na tela de: Tipo de instalação
       Apagar disco e reinstalar o Linux Mint: ON (Selecionado)
       <Instalar agora>
     <Continuar>
-    Na tela de: Onde você está?
+    05) Na tela de: Onde você está?
       Selecione: Brasil / São Paulo (Fuso Horário UTC/GMT -03:00)
     <Continuar>
-    Na tela de: Quem é você?
+    06) Na tela de: Quem é você?
       Seu nome: Seu Nome e Sobrenome
       Nome do seu computador: VirtualBox
       Escolha um nome de usuário: seu_usuário
@@ -254,12 +280,12 @@ Na tela de Bem-Vindo(a) ao Linux Mint
 Na tela da Máquina Virtual do VitualBOX
   Clique no menu em: Dispositivos
     Selecione a opção: Inserir imagem de CD dos Adicionais para Convidados
-    Na mensagem de: Está mídia contém um software de inicialização automática.
+    01) Na mensagem de: Está mídia contém um software de inicialização automática.
       Clique em: <Executar>
       Na tela de Autenticação Obrigatório digite a senha do seu usuário e clique em: <Autenticar>
       OBSERVAÇÃO: AGUARDE A INSTALAÇÃO DOS CONVIDADOS DO VIRTUALBOX
-    Na mensagem de: Press Return to close this Windows... pressione: <Enter>
-    Após a instalação dos convidados reinicie novamente o Linux Mint para aplicar as mudanças
+    02) Na mensagem de: Press Return to close this Windows... pressione: <Enter>
+    03) Após a instalação dos convidados reinicie novamente o Linux Mint para aplicar as mudanças
       Na barra de Tarefas clique no Ícone do Linux Mint
         Clique em: <Desligar>
           Clique em: <Reiniciar>
