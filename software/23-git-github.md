@@ -7,15 +7,15 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 21/01/2023<br>
-#Data de atualização: 28/10/2024<br>
-#Versão: 0.09<br>
+#Data de atualização: 05/06/2025<br>
+#Versão: 0.10<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
-#Testado e homologado no Linux Mint 22 Wilma x64<br>
+#Testado e homologado no Linux Mint 22 Wilma e 22.1 Xia x64<br>
 
 #Instalação do Git 2.x integrado no Github no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do Git 2.x integrado no Github no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
-#Instalação do Git 2.x integrado no Github no Linux Mint 22 Wilma x64<br>
+#Instalação do Git 2.x integrado no Github no Linux Mint 22 Wilma w 22.1 Xia x64<br>
 
 [![Git e Github](http://img.youtube.com/vi/JDCYyjbrJu0/0.jpg)](https://www.youtube.com/watch?v=JDCYyjbrJu0 "Git e Github")
 
@@ -26,20 +26,24 @@ Site Oficial do Github: https://github.com/<br>
 Site Oficial do Gitlab: https://about.gitlab.com/<br>
 Site Oficial do Markdown Guide: https://www.markdownguide.org/
 
-O QUE É E PARA QUE SERVER O GIT: Git (ou em inglês britânico) é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo. 
+**O QUE É E PARA QUE SERVER O GIT:** O Git (ou em inglês britânico) é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo. 
 
-O QUE É E PARA QUE SERVER O GITHUB: GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo.
+**O QUE É E PARA QUE SERVER O GITHUB:** O GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo.
 
-#00_ Verificando as Informações do Sistema Operacional do Linux Mint<br>
+### 00_ Verificando as Informações do Sistema Operacional do Linux Mint
+
+**OBSERVAÇÃO IMPORTANTE:** Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa<br>
+**OBSERVAÇÃO IMPORTANTE:** Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish<br>
+**OBSERVAÇÃO IMPORTANTE:** Linux Mint 22.x é derivado do Ubuntu Desktop 24.04.x Noble Numbat<br>
+
 ```bash
 #atalho para acessar o Terminal
 Terminal: Ctrl + Alt + T
 
 #verificando as versões e codinome do sistema operacional
-#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
-#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
-#OBSERVAÇÃO IMPORTANTE: Linux Mint 22.x é derivado do Ubuntu Desktop 24.04.x Noble Numbat
 sudo cat /etc/os-release
+
+#verificando as informações do Linux Standard Base
 sudo cat /etc/lsb-release
 
 #modo gráfico para verificar as informações de sistema operacional e hardware
@@ -47,16 +51,16 @@ Menu
   Informações do Sistema
 ```
 
-#01_ Atualização do Sistema Operacional do Linux Mint<br>
+### 01_ Atualização do Sistema Operacional do Linux Mint
 ```bash
 #atualizando o sistema operacional via MintUpdate (Recomendado)
 A) Atualização do sistema utilizando o MintUpdate;
 B) Atualização do sistema utilizando o Apt;
 
-#atualizando o sistema operacional via Terminal
 #atalho para acessar o Terminal
 Terminal: Ctrl + Alt + T
 
+#atualizando o sistema operacional via Terminal
 #recomendo utilizando o comando: apt - o comando: apt-get e considerado obsoleto
 sudo apt update
 sudo apt upgrade
@@ -66,8 +70,11 @@ sudo apt autoremove
 sudo apt autoclean
 ```
 
-#02_ Instalando o Git e suas Dependências no Linux Mint<br>
+### 02_ Instalando o Git e suas Dependências no Linux Mint
 ```bash
+#atalho para acessar o Terminal
+Terminal: Ctrl + Alt + T
+
 #atualizando as listas do apt
 sudo apt update
 
@@ -78,28 +85,39 @@ sudo apt install git vim python2 python3 pip
 sudo apt install git vim python3 pip
 ```
 
-#03_ Verificando a Versão do Git instalado no Linux Mint<br>
+### 03_ Verificando a Versão do Git instalado no Linux Mint
 ```bash
-#opção do comando git: --version (version)
+#atalho para acessar o Terminal
+Terminal: Ctrl + Alt + T
+
+#verificando a versão do Git
 #Documentação oficial do Git: https://git-scm.com/docs/git
+#opção do comando git: --version (version)
 git --version
 ```
 
-#04_ Configurações Básicas do Git Localmente no Linux Mint<br>
+### 04_ Configurações Básicas do Git Localmente no Linux Mint
 ```bash
+#atalho para acessar o Terminal
+Terminal: Ctrl + Alt + T
+
+#Configuração o usuário padrão dos commits do Git
 #Seu nome completo que vai ser utilizado em qualquer commit (confirmação) recém-criado.
 #Documentação oficial do Git: https://git-scm.com/docs/git-config
 git config --global user.name "Robson Vaamonde"
 
+#Configurando o endereço de email do usuário padrão dos commits do Git
 #Seu endereço de e-mail que vai ser utilizado em qualquer commit (confirmação) recém-criado.
 #DICA: recomendo você usar o seu endereço de email utilizado na autenticação do Github
 #Documentação oficial do Git: https://git-scm.com/docs/git-config
 git config --global user.email boraparapratica@gmail.com
 
+#Configurando o editor de texto por linha de comando padrão do Git
 #Seu editor de texto padrão para todos os commit (confirmação) e tags.
 #Documentação oficial do Git: https://git-scm.com/docs/git-config
 git config --global core.editor vim
 
+#Configurando o software de mesclagem por linha de comando padrão do Git
 #Seu software de mesclagem que vai ser utilizado pelo git-mergetool para comparar arquivos.
 #Documentação oficial do Git: https://git-scm.com/docs/git-config
 git config --global merge.tool vimdiff
@@ -114,39 +132,35 @@ git config --list
   Q (quit) para sair
 
 #Localização do arquivo de configuração do Git no Linux Mint.
-#opção do comando ls: -l (long listing), -h (human-readable), -a (all), ~ (directory home)
+#opção do comando ls: -l (long listing), -h (human-readable), -a (all), ~ (directory home), . (oculte file)
 ls -lha ~/.gitconfig
 
-#listando o conteúdo do arquivo gitconfig
+#Listando todo o conteúdo do arquivo de configuração do gitconfig
 cat ~/.gitconfig
 ```
 
-#05_ Criando uma conta de acesso ao Github<br>
-```bash
+### 05_ Criando uma conta de acesso ao Github
+
 Link Oficial do Projeto do Github: https://github.com
 
-01) no canto superior direito do site clique em: Sing up;
-02) no campo: Enter your email - digite o seu email para o cadastro e clique em: <Continue>
-03) no campo: Create a password - digite a sua senha e clique em: <Continue>
-04) no campo: Enter a username - digite o nome do seu usuário do Github <Continue>
+Criando uma conta no Github<br>
+01) no canto superior direito do site clique em: Sing up;<br>
+02) no campo: Enter your email - digite o seu email para o cadastro e clique em: <Continue><br>
+03) no campo: Create a password - digite a sua senha e clique em: <Continue><br>
+04) no campo: Enter a username - digite o nome do seu usuário do Github <Continue><br>
 
-#OBSERVAÇÃO IMPORTANTE: o nome de usuário no Github será utilizado como Repositório Base, 
-#por exemplo o Repositório Base do Projeto Bora para Prática é: https://github.com/vaamonde
-#(vaamonde), recomendo sempre criar o seu usuário tudo em minúscula, sem acentuação, sem
-#espaço, nome que seja legível, fácil entendimento pois esse usuário será utilizado como 
-#referência para o seu projeto.
+**OBSERVAÇÃO IMPORTANTE:** o nome de usuário no Github será utilizado como Repositório Base, por exemplo o Repositório Base do Projeto Bora para Prática é: https://github.com/vaamonde (vaamonde), recomendo sempre criar o seu usuário tudo em minúscula, sem acentuação, sem espaço, nome que seja legível, fácil entendimento pois esse usuário será utilizado como referência para o seu projeto.
 
-05) no campo: Would you like to receive product updates and announcements via emails? - digite n e clique em? <Continue>
-06) na tela de: Verify your account: clique em: <Verificar>
-07) selecione depois nos quadros os dois objetivos idênticos e clique em: <Create account>
-08) no campo: You are almost done! digite no campo: Enter code o código enviado para o seu email.
-09) na tela de: Welcome to Github clique em: <Skip personalization>
-```
+05) no campo: Would you like to receive product updates and announcements via emails? - digite n e clique em? <Continue><br>
+06) na tela de: Verify your account: clique em: <Verificar><br>
+07) selecione depois nos quadros os dois objetivos idênticos e clique em: <Create account><br>
+08) no campo: You are almost done! digite no campo: Enter code o código enviado para o seu email.<br>
+09) na tela de: Welcome to Github clique em: <Skip personalization><br>
 
-#06_ Criando nosso primeiro Repositório Remoto no Github<br>
+### 06_ Criando nosso primeiro Repositório Remoto no Github
 ```bash
 New Repository
-  Owner: rsvaamonde
+  Owner: seu_usuário
   Repository name: devops
   Description: Básico de DevOps com Git e Github no Linux Mint
   Check: Public
@@ -158,7 +172,7 @@ New Repository
 <Create repository>
 ```
 
-#07_ Personalizando o nosso primeiro Repositório Remoto no Github<br>
+### 07_ Personalizando o nosso primeiro Repositório Remoto no Github
 ```bash
 About
   Edit repository details
@@ -172,7 +186,7 @@ About
 <Save changes>
 ```
 
-#08_ Criando um arquivo de Shell Script no Repositório Remoto do Github<br>
+### 08_ Criando um arquivo de Shell Script no Repositório Remoto do Github
 ```bash
 <Add file>
   Create new file
@@ -187,7 +201,7 @@ About
 <Commit new file>
 ```
 
-#09_ Enviando um arquivo de Shell Script no Repositório Remoto do Github<br>
+### 09_ Enviando um arquivo de Shell Script no Repositório Remoto do Github
 ```bash
 <Add file>
   Upload files
@@ -199,7 +213,7 @@ About
 <Commit changes>
 ```
 
-#10_ Enviando um diretório de Shell Script no Repositório Remoto do Github<br>
+### 10_ Enviando um diretório de Shell Script no Repositório Remoto do Github
 ```bash
 <Add file>
   Upload files
@@ -211,7 +225,7 @@ About
 <Commit changes>
 ```
 
-#11_ Criando um diretório e arquivo de Shell Script no Repositório Remoto do Github<br
+### 11_ Criando um diretório e arquivo de Shell Script no Repositório Remoto do Github
 ```bash
 <Add file>
   Create new file
@@ -227,10 +241,11 @@ About
 <Commit new file>
 ```
 
-#12_ Criando um Token para acesso remoto utilizando o comando Git no Repositório Remoto do Github<br
-```bash
+### 12_ Criando um Token para acesso remoto utilizando o comando Git no Repositório Remoto do Github
+
 Link da geração do Token: https://github.com/settings/tokens
 
+```bash
 Settings
   Developer settings
     Personal access tokens
@@ -238,7 +253,7 @@ Settings
         Generate new token (classic)
           Confirm access: <Confirm>
         New personal access token (classic)
-          Note: rsvaamonde
+          Note: seu_usuário
           Expiration: No expiration
           Select scopes
             Select All Options
@@ -246,11 +261,14 @@ Settings
       Copiar o Token no ícone: copiar para área de transferência e salvar.
 ```
 
-#13_ Utilizando o comando Git no no Linux Mint e sincronizando com o nosso Repositório Remoto no Github<br>
+### 13_ Utilizando o comando Git no no Linux Mint e sincronizando com o nosso Repositório Remoto no Github
 ```bash
+#atalho para acessar o Terminal
+Terminal: Ctrl + Alt + T
+
 #clonando um Repositório Remoto do Github Localmente
 #Documentação oficial do Git: https://git-scm.com/docs/git-clone
-git clone https://github.com/rsvaamonde/devops
+git clone https://github.com/seu_usuário/devops
 
 #listando o conteúdo do repositório clonado
 #opção do comando ls: -l (list), -h (human-readable)
@@ -341,11 +359,11 @@ cd vaamonde
 #opção do comando ls: -l (list), -h (human-readable), -a (all files and directory)
 git init
 ls -lha
+```
 
-#OBSERVAÇÃO IMPORTANTE: não foi comentado no vídeo, mais por padrão no Linux Mint
-#todo repositório novo criado está no Branch: MASTER, muitas vezes recomendamos que
-#o Branch padrão seja o: MAIN
+**OBSERVAÇÃO IMPORTANTE:** não foi comentado no vídeo, mais por padrão no Linux Mint todo repositório novo criado está no Branch: __`MASTER`__, muitas vezes recomendamos que o Branch padrão seja o: __`MAIN`__
 
+```bash
 #Troque de ramificação ou restaure os arquivos da árvore de trabalho
 #opção do comando git checkout: -b (new_branch)
 #Documentação oficial do Git: https://git-scm.com/docs/git-checkout
@@ -368,7 +386,7 @@ git log
 #funciona, sendo necessário fazer a criação do repositório remoto de forma simples 
 #e depois adicionar no local a referência.
 #Documentação oficial do Git: https://git-scm.com/docs/git-remote
-git remote add origin https://github.com/rsvaamonde/vaamonde.git
+git remote add origin https://github.com/seu_usuário/vaamonde.git
 
 #opção do comando git push: -u (set-upstream)
 git push -u origin master

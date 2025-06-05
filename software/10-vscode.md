@@ -7,15 +7,15 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 13/11/2024<br>
-#Versão: 0.09<br>
+#Data de atualização: 05/06/2025<br>
+#Versão: 0.10<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
-#Testado e homologado no Linux Mint 22 Wilma x64<br>
+#Testado e homologado no Linux Mint 22 Wilma e 22.1 Xia x64<br>
 
 #Instalação do Microsoft Visual Studio Code VSCode no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do Microsoft Visual Studio Code VSCode no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
-#Instalação do Microsoft Visual Studio Code VSCode no Linux Mint 22 Wilma<br>
+#Instalação do Microsoft Visual Studio Code VSCode no Linux Mint 22 Wilma e 22.1 Xia x64<br>
 
 [![VSCode](http://img.youtube.com/vi/faS3gZgKE-A/0.jpg)](https://www.youtube.com/watch?v=faS3gZgKE-A "VSCode")
 
@@ -25,18 +25,22 @@ Site Oficial do Visual Studio Code: https://code.visualstudio.com/<br>
 Site Oficial do Visual Studio Code Web: https://vscode.dev/<br>
 Link do Marketplace: https://marketplace.visualstudio.com/VSCode
 
-O QUE É E PARA QUE SERVER O VSCODE: O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. Ele inclui suporte para depuração, controle de versionamento Git incorporado, realce de sintaxe, complementação inteligente de código, snippets e refatoração de código.
+**O QUE É E PARA QUE SERVER O VSCODE:** O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. Ele inclui suporte para depuração, controle de versionamento Git incorporado, realce de sintaxe, complementação inteligente de código, snippets e refatoração de código.
 
-#00_ Verificando as Informações do Sistema Operacional do Linux Mint<br>
+### 00_ Verificando as Informações do Sistema Operacional Linux Mint
+
+**OBSERVAÇÃO IMPORTANTE:** Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa<br>
+**OBSERVAÇÃO IMPORTANTE:** Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish<br>
+**OBSERVAÇÃO IMPORTANTE:** Linux Mint 22.x é derivado do Ubuntu Desktop 24.04.x Noble Numbat<br>
+
 ```bash
 #atalho para acessar o Terminal
 Terminal: Ctrl + Alt + T
 
 #verificando as versões e codinome do sistema operacional
-#OBSERVAÇÃO IMPORTANTE: Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa
-#OBSERVAÇÃO IMPORTANTE: Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish
-#OBSERVAÇÃO IMPORTANTE: Linux Mint 22.x é derivado do Ubuntu Desktop 24.04.x Noble Numbat
 sudo cat /etc/os-release
+
+#verificando as informações do Linux Standard Base
 sudo cat /etc/lsb-release
 
 #modo gráfico para verificar as informações de sistema operacional e hardware
@@ -44,16 +48,16 @@ Menu
   Informações do Sistema
 ```
 
-#01_ Atualização do Sistema Operacional Linux Mint<br>
+### 01_ Atualização do Sistema Operacional Linux Mint
 ```bash
 #atualizando o sistema operacional via MintUpdate (Recomendado)
 A) Atualização do sistema utilizando o MintUpdate;
 B) Atualização do sistema utilizando o Apt;
 
-#atualizando o sistema operacional via Terminal
 #atalho para acessar o Terminal
 Terminal: Ctrl + Alt + T
 
+#atualizando o sistema operacional via Terminal
 #recomendo utilizando o comando: apt - o comando: apt-get e considerado obsoleto
 sudo apt update
 sudo apt upgrade
@@ -61,10 +65,9 @@ sudo apt full-upgrade
 sudo apt dist-upgrade
 sudo apt autoremove
 sudo apt autoclean
-sudo apt clean
 ```
 
-#02_ Instalando as Dependências do Microsoft Visual Studio Code VSCode no Linux Mint<br>
+### 02_ Instalando as Dependências do Microsoft Visual Studio Code VSCode no Linux Mint
 ```bash
 #instalando as dependências do VSCode no Linux Mint 20.x e 21.x
 sudo apt install vim git python2 python3 pip cloc
@@ -73,27 +76,26 @@ sudo apt install vim git python2 python3 pip cloc
 sudo apt install vim git python3 python3-pip cloc
 ```
 
-#03_ Baixando o Microsoft Visual Studio Code VSCode para o Linux Mint<br>
-```bash
-#link de download oficial do VSCode
-Link de download: https://code.visualstudio.com/download
-  Versão: .deb (Debian, Ubuntu 64 Bits)
-    Salvar aquivo
-```
+### 03_ Baixando o Microsoft Visual Studio Code VSCode para o Linux Mint
 
-#04_ Instalando o Microsoft Visual Studio Code VSCode utilizando o Gdebi-Gtk no Linux Mint<br>
+Link de download: https://code.visualstudio.com/download
+
+01) Selecione a Versão: .deb (Debian, Ubuntu 64 Bits)<br>
+02) Salvar o aquivo em: Downloads<br>
+
+### 04_ Instalando o Microsoft Visual Studio Code VSCode utilizando o Gdebi-Gtk no Linux Mint
 ```bash
-#instalação em modo gráfico (indicado)
-Arquivos
+#instalação do VSCode em Modo Gráfico (Indicado)
+Gerenciador de Arquivos
   Download
-    code_1.*_amd64
+    Clicar duas vezes no executável: code_1.*_amd64
       Instalar Pacote
     <Fechar>
 ```
 
-#05_ Verificando o novo repositório do Microsoft Visual Studio Code VSCode no MintUpdate<br>
+### 05_ Verificando o novo repositório do Microsoft Visual Studio Code VSCode no MintUpdate
 ```bash
-#verificando o novo repositório no Linux Mint
+#verificando o novo repositório no Linux Mint (Modo Gráfico)
 Menu
   MintUpdate
     Editar
@@ -107,9 +109,9 @@ Menu
   <Fechar>
 ```
 
-#06_ Iniciando o Microsoft Visual Studio Code VSCode no Linux Mint<br>
+### 06_ Iniciando o Microsoft Visual Studio Code VSCode no Linux Mint
 ```bash
-#iniciando o VSCode no Linux Mint
+#iniciando o VSCode no Linux Mint (Modo Gráfico)
 Menu
   Busca Indexada
     vscode
@@ -118,18 +120,18 @@ Menu
       Disable: Mostrar página inicial na inicialização
 ```
 
-#07_ Configurando o Microsoft Visual Studio Code VSCode como Aplicativo de Preferência no Linux Mint<br>
+### 07_ Configurando o Microsoft Visual Studio Code VSCode como Aplicativo de Preferência no Linux Mint
 ```bash
-#configuração básica do VSCode no Linux Mint
+#configuração básica do VSCode no Linux Mint (Modo Gráfico)
 Menu
   Busca Indexada
-    Aplicativos de Preferencias
+    Aplicativos Preferencias
       Texto puro: Visual Studio Code
       Código fonte: Visual Studio Code
     <Fechar>
 ```
 
-#08_ Instalando e Configurando as Principais Extensões Microsoft Visual Studio Code VSCode<br>
+### 08_ Instalando e Configurando as Principais Extensões Microsoft Visual Studio Code VSCode
 ```bash
 #Instalação das Extensões Básicas do VSCode
 Portuguese (Brazil) Language Pack for Visual Studio Code
@@ -194,7 +196,7 @@ NoSQL
   (Sem necessidade de configuração)
 ```
 
-#09_ Configurações básicas do Microsoft Visual Studio Code VSCode para funcionar perfeitamente no Linux Mint<br>
+### 09_ Configurações básicas do Microsoft Visual Studio Code VSCode para funcionar perfeitamente no Linux Mint
 ```bash
 #Configurações Básicas de Produtividade do VSCode no Linux Mint
 Gerenciar
@@ -212,9 +214,12 @@ Gerenciar
       Render Whitespace: All
     Files
       Files: Eol: \n (LF)
+```
 
-#OBSERVAÇÃO IMPORTANTE: executar essa configuração abaixo somente se você fez a instalação
-#do ZSH, das Fontes Hack e do Oh My ZSH no Linux Mint.
+**OBSERVAÇÃO IMPORTANTE:** executar essa configuração abaixo somente se você fez a instalação do ZSH, das Fontes Hack e do Oh My ZSH no Linux Mint.
+
+```bash
+#Configuração das Fontes do ZSH do VSCODE
 Font
   Integrated: Font Family
     Hack Nerd Font
