@@ -297,10 +297,6 @@ Na tela da Máquina Virtual do VitualBOX
 #Acessar o Terminal (BASH/SHELL) do Linux Mint
 Atalho do Terminal: Ctrl + Alt + T
 
-#Atualizando as Listas (Sources.List) do Apt
-#opção do comando apt: update (is used to download package information from all configured sources)
-sudo apt update
-
 #Adicionando o seu usuário local do grupo do VirtualBOX
 #opções do comando usermod: -a (append), -G (groups), $USER (variável de ambiente do nome do usuário)
 sudo usermod -aG vboxsf $USER
