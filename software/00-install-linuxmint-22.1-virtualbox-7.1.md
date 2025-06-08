@@ -208,7 +208,7 @@ No Oracle VirtualBOX
 
 **OBSERVAÇÃO IMPORTANTE:** O Boot Inicial do Linux Mint demora cerca de: 10 (dez segundos) para iniciar a instalação padrão caso você não altere as opções de Boot.
 
-**OBSERVAÇÃO:** Para parar o Boot Inicial do Linux Mint pressione: <Seta para Baixo>.
+**OBSERVAÇÃO:** Para parar o Boot Inicial do Linux Mint pressione: Seta para Baixo.
 
 **DICA:** Entendendo as opções de inicialização do Linux Mint<br>
 
