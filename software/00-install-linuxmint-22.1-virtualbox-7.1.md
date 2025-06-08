@@ -77,6 +77,16 @@ Broadcom VMWare Workstation Pro (PROFISSIONAL): https://www.vmware.com/products/
 Virt-Manager Virtual Machine Manager (SOMENTE LINUX): https://virt-manager.org/<br>
 GNOME Boxes (SOMENTE LINUX): https://apps.gnome.org/pt-BR/Boxes/<br>
 
+📊 **Comparativo Rápido das principais ferramentas de Virtualização:**<br>
+| Ferramenta         | Sistema Host         | Tipo   | Fácil de Usar | Recomendado Para          |
+| ------------------ | -------------------- | ------ | ------------- | ------------------------- |
+| VirtualBox         | Windows, Linux       | Tipo 2 | ✅✅✅        | Estudo geral e testes     |
+| VMware Workstation | Windows, Linux       | Tipo 2 | ✅✅✅        | Estudo e uso profissional |
+| Proxmox VE         | Bare metal (Linux)   | Tipo 1 | ✅✅          | Laboratório e servidor    |
+| KVM/QEMU + GUI     | Linux                | Tipo 1 | ✅✅          | Usuários Linux avançados  |
+| Hyper-V            | Windows Pro+         | Tipo 1 | ✅✅          | Ambientes Microsoft       |
+| GNOME Boxes        | Linux (Ubuntu, etc.) | Tipo 1 | ✅✅✅        | Iniciantes no Linux       |
+
 **Sites de IA (Inteligência Artificial) indicados para os Desafios**<br>
 OpenAI ChatGPT (MAIS SIMPLES): https://chatgpt.com<br>
 Microsoft Copilot: https://copilot.microsoft.com<br>
