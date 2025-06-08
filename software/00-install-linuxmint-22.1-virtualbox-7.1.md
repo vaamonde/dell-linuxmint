@@ -49,11 +49,11 @@ Link da vídeo aula: https://www.youtube.com/watch?v=NN3VOFyWKsM
 18/01/2025 - Como atualizar para o Linux Mint 22.1 "Xia" - https://blog.linuxmint.com/?p=4797<br>
 16/01/2025 - Lançamento do Linux Mint 22.1 "Xia" - https://blog.linuxmint.com/?p=4793<br>
 11/01/2025 - Novidades do Linux Mint 22.1 "Xia" - https://blog.linuxmint.com/?p=4790<br>
-16/12/2024 - Lançamento do BETA dp Linux Mint 22.1 "Xia" - https://blog.linuxmint.com/?p=4787<br>
+16/12/2024 - Lançamento do BETA do Linux Mint 22.1 "Xia" - https://blog.linuxmint.com/?p=4787<br>
 31/01/2024 - Anúncio o Linux Mint 22 "Wilma" - https://blog.linuxmint.com/?p=4639<br>
 01/04/2024 - Primeiras novidades do Linux Mint 22 "Wilma" - https://blog.linuxmint.com/?p=4660<br>
 09/04/2024 - Repositório no Github do Linux Mint 22 "Wilma" - https://blog.linuxmint.com/?p=4671<br>
-30/04/2024 - Primeiros Recursos do Linux Mnt 22 "Wilma" - https://blog.linuxmint.com/?p=4675<br>
+30/04/2024 - Primeiros Recursos do Linux Mint 22 "Wilma" - https://blog.linuxmint.com/?p=4675<br>
 03/06/2024 - Atualização dos Repositórios do Linux Mint 22 "Wilma" - https://blog.linuxmint.com/?p=4719<br>
 01/07/2024 - Liberação do BETA do Linux Mint 22 "Wilma" - https://blog.linuxmint.com/?paged=3<br>
 Novos Recursos do Linux Mint 22 "Wilma" - https://www.linuxmint.com/rel_wilma_whatsnew.php<br>
