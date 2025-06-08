@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 21/01/2025<br>
-#Data de atualização: 06/04/2025<br>
-#Versão: 0.03<br>
+#Data de atualização: 08/06/2025<br>
+#Versão: 0.04<br>
 #Testado e homologado no Linux Mint 22.1 Xia x64 Bits
 
 **O QUE É E PARA QUE SERVER O GNU:** O GNU (pronuncia-se "g-n-u", e não "gnu") é um projeto de software livre iniciado em 1983 por Richard Stallman, com o objetivo de criar um sistema operacional completo, livre e gratuito, semelhante ao Unix, mas sem usar nenhum código proprietário. A sigla GNU significa: “GNU's Not Unix” — (GNU Não é Unix). É uma brincadeira dos desenvolvedores com siglas recursivas, muito comuns no meio da tecnologia.
@@ -20,6 +20,10 @@
 **O QUE É E PARA QUE SERVER O UBUNTU:** O Ubuntu é uma distribuição Linux baseada no Debian, criada pela empresa sul-africana Canonical em 2004. É uma das distribuições Linux mais populares do mundo, conhecida por ser fácil de usar, amigável para iniciantes e bastante estável. O nome "Ubuntu" vem de uma filosofia africana que significa "humanidade para com os outros", refletindo a ideia de software livre, acessível e colaborativo.
 
 **O QUE É E PARA QUE SERVER O LINUX MINT:** O Linux Mint é uma distribuição Linux baseada no Ubuntu (e indiretamente no Debian). Foi criada para ser fácil, leve, rápida e muito amigável, especialmente para quem está migrando do Windows. Ele tem uma aparência bem parecida com o Windows, o que facilita muito a adaptação de quem nunca usou Linux antes.
+
+**O QUE É E PARA QUE SERVER VIRTUALIZAÇÃO:** A virtualização é uma tecnologia que permite criar versões virtuais de recursos físicos, como servidores, sistemas operacionais, armazenamento e redes. Em vez de utilizar diretamente o hardware físico, a virtualização permite que vários sistemas operacionais ou aplicações sejam executados em máquinas virtuais (VMs) sobre um mesmo hardware físico.
+
+**O QUE É E PARA QUE SERVER O ORACLE VIRTUALBOX:** O Oracle VirtualBox é um software de virtualização gratuito e de código aberto que permite criar e executar máquinas virtuais (VMs) no seu computador. Com ele, você pode instalar e usar vários sistemas operacionais (como Windows, Linux, macOS, etc.) dentro do seu sistema atual, como se fossem computadores separados.
 
 Conteúdo estudado nessa instalação:<br>
 #01_ Download da ISO do Linux Mint 22.1 x64<br>
@@ -55,15 +59,30 @@ Link da vídeo aula: https://www.youtube.com/watch?v=NN3VOFyWKsM
 Novos Recursos do Linux Mint 22 "Wilma" - https://www.linuxmint.com/rel_wilma_whatsnew.php<br>
 Informações da Versão do Linux Mint 22 "Wilma" - https://www.linuxmint.com/rel_wilma.php<br>
 
-### Tipos de Ambientes Gráficos utilizados no Linux Mint
-Cinnamon: https://www.linuxmint.com/rel_vera_cinnamon.php<br>
-Mate: https://www.linuxmint.com/rel_vera_mate.php<br>
-XFCE: https://www.linuxmint.com/rel_vera_xfce.php.
+### Tipos de Ambientes Gráficos utilizados no Linux Mint Desktop
+Ambiente Gráfico Cinnamon (DEFAULT): https://www.linuxmint.com/rel_vera_cinnamon.php<br>
+Ambiente Gráfico Mate (INTERMEDIÁRIO): https://www.linuxmint.com/rel_vera_mate.php<br>
+Ambiente Gráfico XFCE (MAIS LEVE): https://www.linuxmint.com/rel_vera_xfce.php.<br>
 
-### Versões do Linux Mint baseadas na Distribuição Ubuntu
-Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa<br>
-Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish<br>
-Linux Mint 22.x e derivado do Ubuntu Desktop 24.04.x Noble Numbat
+### Versões do Linux Mint baseadas na Distribuição Ubuntu Desktop
+Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa: https://releases.ubuntu.com/focal/<br>
+Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish: https://releases.ubuntu.com/jammy/<br>
+Linux Mint 22.x e derivado do Ubuntu Desktop 24.04.x Noble Numbat: https://releases.ubuntu.com/noble/<br>
+
+### Sistemas de Virtualização Indicados para o Linux Mint Desktop
+Oracle VirtualBOX (MAIS INDICADO): https://www.virtualbox.org/<br>
+QEMU Quick Emulator (SOMENTE LINUX): https://www.qemu.org/<br>
+KVM Kernel Virtual Machine (SOMENTE LINUX): https://linux-kvm.org/page/Main_Page<br>
+Broadcom VMWare Workstation Pro (PROFISSIONAL): https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion<br>
+Virt-Manager Virtual Machine Manager (SOMENTE LINUX): https://virt-manager.org/<br>
+GNOME Boxes (SOMENTE LINUX): https://apps.gnome.org/pt-BR/Boxes/<br>
+
+**Sites de IA (Inteligência Artificial) indicados para os Desafios**<br>
+OpenAI ChatGPT (MAIS SIMPLES): https://chatgpt.com<br>
+Microsoft Copilot: https://copilot.microsoft.com<br>
+Google Gemini: https://gemini.google.com<br>
+DeepSeek: https://chat.deepseek.com/<br>
+x.AI Grok: https://grok.com/<br>
 
 ## Instalação do Linux Mint 22.1 x64 Bits no Oracle VirtualBOX
 
@@ -81,7 +100,7 @@ Link de download do Linux Mint 22.1 "Xia" Cinnamon 64 Bits
 02) YUMI: https://www.pendrivelinux.com/yumi-multiboot-usb-creator/<br>
 03) Etcher: https://www.balena.io/etcher/<br>
 04) UNetbootin: https://unetbootin.github.io/<br>
-05) Ventoy: https://www.ventoy.net/en/index.html<br>
+05) Ventoy (Indicado): https://www.ventoy.net/en/index.html<br>
 06) Linux Live USC Creator: https://www.linuxliveusb.com/<br>
 07) Popsicle: https://github.com/pop-os/popsicle<br>
 
@@ -166,6 +185,7 @@ No Oracle VirtualBOX
 **OBSERVAÇÃO:** Para parar o Boot Inicial do Linux Mint pressione: <Seta para Baixo>.
 
 **DICA:** Entendendo as opções de inicialização do Linux Mint<br>
+
 | Opção | Explicação | 
 |-------|------------|
 | *Start Linux Mint 22.1 Cinnamon 64-Bit (Padrão) | Carrega o sistema na memória sem alterar nada no HD/SSD. |
@@ -289,22 +309,21 @@ Na tela da Máquina Virtual do VitualBOX
       Na barra de Tarefas clique no Ícone do Linux Mint
         Clique em: <Desligar>
           Clique em: <Reiniciar>
-    AGUARDE A REINICIALIZAÇÃO TOTAL DO LINUX MINT PARA APLICAR AS MUDANÇAS.
+AGUARDE A REINICIALIZAÇÃO TOTAL DO LINUX MINT PARA APLICAR AS MUDANÇAS.
 ```
 
 ### Décima Quarta etapa: Configuração da Integração da Área de Transferência Compartilhada
 ```bash
-#Acessar o Terminal (BASH/SHELL) do Linux Mint
-Atalho do Terminal: Ctrl + Alt + T
-
-#Adicionando o seu usuário local do grupo do VirtualBOX
-#opções do comando usermod: -a (append), -G (groups), $USER (variável de ambiente do nome do usuário)
-sudo usermod -aG vboxsf $USER
-
-#Verificando se o usuário local foi adicionado no Grupo do VirtualBOX
-#opções do comando getent: group (group database), vboxsf (enumerate the group)
-sudo getent group vboxsf
-
-#Reiniciando o Linux Mint para aplicar as mudanças
-sudo reboot
+Na barra de Tarefas clique no Ícone do Linux Mint
+  Na barra de Pesquisa Indexada digite: Usuários e Grupos
+    Clique em: Usuários e Grupos
+      01) Na tela de Autenticação Obrigatório digite a senha do seu usuário e clique em: <Autenticar>
+      02) Selecione o seu usuário na Guia: Usuários
+      03) Clique nos Grupos na opção: Grupos
+      04) Selecione o Grupo: vboxsf - clique em: <OK>
+      05) Feche a tela de Usuários e Grupos
+  Na barra de Tarefas clique no Ícone do Linux Mint
+    Clique em: <Desligar>
+      Clique em: <Reiniciar>
+AGUARDE A REINICIALIZAÇÃO TOTAL DO LINUX MINT PARA APLICAR AS MUDANÇAS.
 ```
