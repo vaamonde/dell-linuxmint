@@ -8,7 +8,7 @@
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 21/01/2025<br>
 #Data de atualização: 08/06/2025<br>
-#Versão: 0.04<br>
+#Versão: 0.05<br>
 #Testado e homologado no Linux Mint 22.1 Xia x64 Bits
 
 **O QUE É E PARA QUE SERVER O GNU:** O GNU (pronuncia-se "g-n-u", e não "gnu") é um projeto de software livre iniciado em 1983 por Richard Stallman, com o objetivo de criar um sistema operacional completo, livre e gratuito, semelhante ao Unix, mas sem usar nenhum código proprietário. A sigla GNU significa: “GNU's Not Unix” — (GNU Não é Unix). É uma brincadeira dos desenvolvedores com siglas recursivas, muito comuns no meio da tecnologia.
@@ -59,15 +59,22 @@ Link da vídeo aula: https://www.youtube.com/watch?v=NN3VOFyWKsM
 Novos Recursos do Linux Mint 22 "Wilma" - https://www.linuxmint.com/rel_wilma_whatsnew.php<br>
 Informações da Versão do Linux Mint 22 "Wilma" - https://www.linuxmint.com/rel_wilma.php<br>
 
+### Versões do Linux Mint baseadas na Distribuição Ubuntu Desktop
+Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa: https://releases.ubuntu.com/focal/<br>
+Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish: https://releases.ubuntu.com/jammy/<br>
+Linux Mint 22.x e derivado do Ubuntu Desktop 24.04.x Noble Numbat: https://releases.ubuntu.com/noble/<br>
+
 ### Tipos de Ambientes Gráficos utilizados no Linux Mint Desktop
 Ambiente Gráfico Cinnamon (DEFAULT): https://www.linuxmint.com/rel_vera_cinnamon.php<br>
 Ambiente Gráfico Mate (INTERMEDIÁRIO): https://www.linuxmint.com/rel_vera_mate.php<br>
 Ambiente Gráfico XFCE (MAIS LEVE): https://www.linuxmint.com/rel_vera_xfce.php.<br>
 
-### Versões do Linux Mint baseadas na Distribuição Ubuntu Desktop
-Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa: https://releases.ubuntu.com/focal/<br>
-Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish: https://releases.ubuntu.com/jammy/<br>
-Linux Mint 22.x e derivado do Ubuntu Desktop 24.04.x Noble Numbat: https://releases.ubuntu.com/noble/<br>
+🖥️ **Comparativo dos Ambientes Gráficos: Cinnamon vs MATE vs XFCE:**<br>
+| Ambiente Gráfico | Base Tecnológica   | Consumo de Recursos        | Aparência / Interface            | Desempenho      | Indicado Para                          | Personalização | Padrão no Linux Mint |
+| ---------------- | ------------------ | -------------------------- | -------------------------------- | --------------- | -------------------------------------- | -------------- | -------------------- |
+| **Cinnamon**     | GNOME 3 (fork)     | Médio (\~500–800 MB)       | Moderna, parecida com Windows 10 | Razoável/Rápido | Usuários iniciantes, desktops modernos | Alta           | ✅ Sim (padrão)       |
+| **MATE**         | GNOME 2 (fork)     | Baixo (\~400–600 MB)       | Clássica, leve e estável         | Rápido          | PCs antigos, usuários tradicionais     | Média          | Opcional             |
+| **XFCE**         | Independente (GTK) | Muito baixo (\~300–500 MB) | Minimalista, eficiente           | Muito rápido    | Máquinas antigas, VMs, desempenho      | Alta           | Opcional             |
 
 ### Sistemas de Virtualização Indicados para o Linux Mint Desktop
 Oracle VirtualBOX (MAIS INDICADO): https://www.virtualbox.org/<br>
@@ -93,6 +100,15 @@ Microsoft Copilot: https://copilot.microsoft.com<br>
 Google Gemini: https://gemini.google.com<br>
 DeepSeek: https://chat.deepseek.com/<br>
 x.AI Grok: https://grok.com/<br>
+
+📊 **Comparativo dos Principais Sites de IA (AI) – Atualizado em 2025:**<br>
+| Plataforma            | Desenvolvedora         | Interface                  | Base de IA (modelo)               | Recurso Grátis           | Destaques Principais                                                              |
+| --------------------- | ---------------------- | -------------------------- | --------------------------------- | ------------------------ | --------------------------------------------------------------------------------- |
+| **ChatGPT**           | OpenAI (com Microsoft) | Web, App, VS Code          | GPT-3.5 (grátis) / GPT-4.5 (Plus) | ✅ (com GPT-3.5)          | Chat inteligente, geração de código, explicações técnicas, plugins, código Python |
+| **Microsoft Copilot** | Microsoft              | Word, Excel, Edge, VS Code | GPT-4 / GPT-4 Turbo da OpenAI     | ⚠️ Limitado (conta MS)   | Integrado ao Office 365, ajuda com planilhas, e-mails, reuniões                   |
+| **Google Gemini**     | Google DeepMind        | Web, App Android           | Gemini 1.5 Pro                    | ✅ (com limites)          | Integração com Google Docs, Gmail, pesquisa multimodal (imagem, texto, áudio)     |
+| **DeepSeek Chat**     | DeepSeek (China)       | Web                        | DeepSeek-V2 / MoE                 | ✅ Ilimitado              | IA multilingue com foco técnico, ótimo para programação, muito rápida             |
+| **Grok (X AI)**       | xAI (Elon Musk)        | X (Twitter)                | Grok-1.5                          | ⚠️ Pago (via X Premium+) | Integrado à rede social X, com humor e foco em atualidades                        |
 
 ## Instalação do Linux Mint 22.1 x64 Bits no Oracle VirtualBOX
 
