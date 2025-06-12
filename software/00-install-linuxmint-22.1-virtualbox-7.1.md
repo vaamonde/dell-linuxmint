@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 21/01/2025<br>
-#Data de atualização: 08/06/2025<br>
-#Versão: 0.05<br>
+#Data de atualização: 12/06/2025<br>
+#Versão: 0.06<br>
 #Testado e homologado no Linux Mint 22.1 Xia x64 Bits
 
 **O QUE É E PARA QUE SERVER O GNU:** O GNU (pronuncia-se "g-n-u", e não "gnu") é um projeto de software livre iniciado em 1983 por Richard Stallman, com o objetivo de criar um sistema operacional completo, livre e gratuito, semelhante ao Unix, mas sem usar nenhum código proprietário. A sigla GNU significa: “GNU's Not Unix” — (GNU Não é Unix). É uma brincadeira dos desenvolvedores com siglas recursivas, muito comuns no meio da tecnologia.
@@ -94,6 +94,20 @@ GNOME Boxes (SOMENTE LINUX): https://apps.gnome.org/pt-BR/Boxes/<br>
 | Hyper-V            | Windows Pro+         | Tipo 1 | ✅✅          | Ambientes Microsoft       |
 | GNOME Boxes        | Linux (Ubuntu, etc.) | Tipo 1 | ✅✅✅        | Iniciantes no Linux       |
 
+📊 **Comparativo Rápido dos Tipos de Virtualização:**<br>
+| Característica                   | Virtualização Tipo 1                                    | Virtualização Tipo 2                        |
+| -------------------------------- | ------------------------------------------------------- | ------------------------------------------- |
+| **Nome**                         | Hypervisor Nativo ou Bare-metal                         | Hypervisor Hospedado                        |
+| **Execução**                     | Roda diretamente sobre o Hardware                       | Roda sobre um Sistema Operacional           |
+| **Desempenho**                   | Alto desempenho (menos overhead)                        | Desempenho inferior (mais overhead)         |
+| **Exemplos**                     | VMware ESXi, Microsoft Hyper-V (bare-metal), KVM, Xen   | VMware Workstation, VirtualBox, Parallels   |
+| **Indicado para**                | Ambientes de produção e data centers                    | Testes, desenvolvimento, uso pessoal        |
+| **Dependência do SO hospedeiro** | Não depende de um sistema operacional                   | Depende de um sistema operacional instalado |
+| **Acesso ao hardware**           | Acesso direto ao hardware                               | Acesso indireto via sistema operacional     |
+| **Segurança**                    | Mais seguro (menor superfície de ataque)                | Menos seguro (herda vulnerabilidades do SO) |
+| **Instalação**                   | Instalação direta no servidor                           | Instalação como aplicativo no sistema       |
+| **Gerenciamento**                | Geralmente via interface web ou ferramentas específicas | Via interface do SO hospedeiro              |
+
 **Sites de IA (Inteligência Artificial) indicados para os Desafios**<br>
 OpenAI ChatGPT (MAIS SIMPLES): https://chatgpt.com<br>
 Microsoft Copilot: https://copilot.microsoft.com<br>
@@ -122,7 +136,7 @@ Link de download do Linux Mint 22.1 "Xia" Cinnamon 64 Bits
 
 ### Segunda etapa: Software para criação de Pen Drive Bootável do Linux Mint 22.x x64
 
-01) Rufus (Microsoft): https://rufus.ie/pt_BR/<br>
+01) Rufus (Somente Microsoft): https://rufus.ie/pt_BR/<br>
 02) YUMI: https://www.pendrivelinux.com/yumi-multiboot-usb-creator/<br>
 03) Etcher: https://www.balena.io/etcher/<br>
 04) UNetbootin: https://unetbootin.github.io/<br>
@@ -134,7 +148,9 @@ Link de download do Linux Mint 22.1 "Xia" Cinnamon 64 Bits
 
 Link de download do Oracle VirtualBOX: https://www.virtualbox.org/wiki/Downloads
 
-### Quarta etapa: Criando a Máquina Virtual do Linux Mint no VirtualBox
+**OBSERVAÇÃO IMPORTANTE:** PARA ESSA INSTALAÇÃO O ORACLE VIRTUALBOX DEVERÁ ESTÁ INSTALADO NO SEU SISTEMA OPERACIONAL: __`MICROSOFT WINDOWS OU GNU/LINUX`__, DÚVIDAS VEJA A DOCUMENTAÇÃO DA INSTALAÇÃO NO LINUX MINT: https://github.com/vaamonde/dell-linuxmint/blob/master/software/01-virtualbox.md
+
+### Quarta etapa: Criando a Máquina Virtual do Linux Mint no Oracle VirtualBOX 7.1.x
 ```bash
 Abrir o Oracle VirtualBOX
   Selecione: Ferramentas
@@ -164,7 +180,7 @@ Abrir o Oracle VirtualBOX
   <Finalizar>
 ```
 
-### Quinta etapa: Personalizando a Máquina Virtual do Linux Mint no VirtualBox
+### Quinta etapa: Personalizando a Máquina Virtual do Linux Mint no Oracle VirtualBOX 7.1.x
 ```bash
 No Oracle VirtualBOX
   Selecione a Máquina Virtual: LinuxMint22.1
@@ -193,7 +209,7 @@ No Oracle VirtualBOX
   <OK>
 ```
 
-### Sexta etapa: Iniciando a ISO do Linux Mint
+### Sexta etapa: Iniciando a ISO do Linux Mint no Oracle VirtualBOX 7.1.x
 ```bash
 No Oracle VirtualBOX
   Selecione a Máquina Virtual: LinuxMint22.1
@@ -204,9 +220,9 @@ No Oracle VirtualBOX
       <Montar e Tentar Novo Boot>
 ```
 
-### Sétima etapa: Iniciando o Boot Load GRUB do Linux Mint
+### Sétima etapa: Iniciando o Boot Load GRUB do Linux Mint no Oracle VirtualBOX 7.1.x
 
-**OBSERVAÇÃO IMPORTANTE:** O Boot Inicial do Linux Mint demora cerca de: 10 (dez segundos) para iniciar a instalação padrão caso você não altere as opções de Boot.
+**OBSERVAÇÃO IMPORTANTE:** O Boot Inicial do Linux Mint demora cerca de: __`10 (dez segundos)`__ para iniciar a instalação padrão caso você não altere as opções de Boot.
 
 **OBSERVAÇÃO:** Para parar o Boot Inicial do Linux Mint pressione: __`<Seta para Baixo>`__.
 
@@ -232,14 +248,14 @@ Na tela inicial do Boot Load GRUB do Linux Mint
     Memory test
 ```
 
-### Oitava etapa: Iniciando o LiveCD do Linux Mint em Memória RAM
+### Oitava etapa: Iniciando o LiveCD do Linux Mint em Memória RAM (Random Access Memory)
 ```bash
 Na tela inicial do Boot Load GRUB do Linux Mint
   Welcome to Linux Mint 22.1 64-Bit
     *Start Linux Mint 22.1 Cinnamon 64-Bit (Padrão) <Enter>
 ```
 
-### Nona etapa: Iniciando a Instalação do Linux Mint no Hard Disk
+### Nona etapa: Iniciando a Instalação do Linux Mint no HD (Hard Disk)
 ```bash
 No Desktop do Linux Mint
   Clique no Ícone de: Install Linux Mint
@@ -259,6 +275,8 @@ No Desktop do Linux Mint
       <Instalar agora>
     <Continuar>
     05) Na tela de: Onde você está?
+      #UTC = Tempo Universal Coordenado (Coordinated Universal Time)
+      #GMT = Tempo Médio de Greenwich (Greenwich Mean Time)
       Selecione: Brasil / São Paulo (Fuso Horário UTC/GMT -03:00)
     <Continuar>
     06) Na tela de: Quem é você?
@@ -305,7 +323,7 @@ Na tela de Bem-Vindo(a) ao Linux Mint
 
 02) Atualização do sistema utilizando o MintUpdate;
     Clique no Ícone na Barra de Tarefas: Gerenciador de Atualizações
-    OBSERVAÇÃO: RECOMENDADO UTILIZAR PRIMEIRO O MINTUPDATE E DEPOIS ATUALIZAR VIA TERMINAL
+    #OBSERVAÇÃO: RECOMENDADO UTILIZAR PRIMEIRO O MINTUPDATE E DEPOIS ATUALIZAR VIA TERMINAL
       01) Na tela de Bem-vindo ao Gerenciador de Atualizações clique em: <OK>
       02) Na tela de Uma nova versão do Gerenciador de Atualizações está disponível clique em: <Aplicar atualização>
       03) Na tela de Autenticação Obrigatório digite a senha do seu usuário e clique em: <Autenticar>
@@ -329,7 +347,7 @@ Na tela da Máquina Virtual do VitualBOX
     01) Na mensagem de: Está mídia contém um software de inicialização automática.
       Clique em: <Executar>
       Na tela de Autenticação Obrigatório digite a senha do seu usuário e clique em: <Autenticar>
-      OBSERVAÇÃO: AGUARDE A INSTALAÇÃO DOS CONVIDADOS DO VIRTUALBOX
+      #OBSERVAÇÃO: AGUARDE A INSTALAÇÃO DOS CONVIDADOS DO VIRTUALBOX
     02) Na mensagem de: Press Return to close this Windows... pressione: <Enter>
     03) Após a instalação dos convidados reinicie novamente o Linux Mint para aplicar as mudanças
       Na barra de Tarefas clique no Ícone do Linux Mint
