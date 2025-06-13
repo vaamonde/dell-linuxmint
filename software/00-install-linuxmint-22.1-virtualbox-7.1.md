@@ -60,14 +60,14 @@ Novos Recursos do Linux Mint 22 "Wilma" - https://www.linuxmint.com/rel_wilma_wh
 Informações da Versão do Linux Mint 22 "Wilma" - https://www.linuxmint.com/rel_wilma.php<br>
 
 ### Versões do Linux Mint baseadas na Distribuição Ubuntu Desktop
-Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa: https://releases.ubuntu.com/focal/<br>
-Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish: https://releases.ubuntu.com/jammy/<br>
-Linux Mint 22.x e derivado do Ubuntu Desktop 24.04.x Noble Numbat: https://releases.ubuntu.com/noble/<br>
+01) Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa: https://releases.ubuntu.com/focal/<br>
+02) Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish: https://releases.ubuntu.com/jammy/<br>
+03) Linux Mint 22.x e derivado do Ubuntu Desktop 24.04.x Noble Numbat: https://releases.ubuntu.com/noble/<br>
 
 ### Tipos de Ambientes Gráficos utilizados no Linux Mint Desktop
-Ambiente Gráfico Cinnamon (DEFAULT): https://www.linuxmint.com/rel_vera_cinnamon.php<br>
-Ambiente Gráfico Mate (INTERMEDIÁRIO): https://www.linuxmint.com/rel_vera_mate.php<br>
-Ambiente Gráfico XFCE (MAIS LEVE): https://www.linuxmint.com/rel_vera_xfce.php.<br>
+01) Ambiente Gráfico Cinnamon (DEFAULT): https://www.linuxmint.com/rel_vera_cinnamon.php<br>
+02) Ambiente Gráfico Mate (INTERMEDIÁRIO): https://www.linuxmint.com/rel_vera_mate.php<br>
+03) Ambiente Gráfico XFCE (MAIS LEVE): https://www.linuxmint.com/rel_vera_xfce.php.<br>
 
 🖥️ **Comparativo dos Ambientes Gráficos: Cinnamon vs MATE vs XFCE:**<br>
 | Ambiente Gráfico | Base Tecnológica   | Consumo de Recursos        | Aparência / Interface            | Desempenho      | Indicado Para                          | Personalização | Padrão no Linux Mint |
@@ -77,12 +77,12 @@ Ambiente Gráfico XFCE (MAIS LEVE): https://www.linuxmint.com/rel_vera_xfce.php.
 | **XFCE**         | Independente (GTK) | Muito baixo (\~300–500 MB) | Minimalista, eficiente           | Muito rápido    | Máquinas antigas, VMs, desempenho      | Alta           | Opcional             |
 
 ### Sistemas de Virtualização Indicados para o Linux Mint Desktop
-Oracle VirtualBOX (MAIS INDICADO): https://www.virtualbox.org/<br>
-QEMU Quick Emulator (SOMENTE LINUX): https://www.qemu.org/<br>
-KVM Kernel Virtual Machine (SOMENTE LINUX): https://linux-kvm.org/page/Main_Page<br>
-Broadcom VMWare Workstation Pro (PROFISSIONAL): https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion<br>
-Virt-Manager Virtual Machine Manager (SOMENTE LINUX): https://virt-manager.org/<br>
-GNOME Boxes (SOMENTE LINUX): https://apps.gnome.org/pt-BR/Boxes/<br>
+01) Oracle VirtualBOX (MAIS INDICADO/WINDOWS E LINUX): https://www.virtualbox.org/<br>
+02) QEMU Quick Emulator (SOMENTE LINUX): https://www.qemu.org/<br>
+03) KVM Kernel Virtual Machine (SOMENTE LINUX): https://linux-kvm.org/page/Main_Page<br>
+04) Broadcom VMWare Workstation Pro (PROFISSIONAL/WINDOWS E LINUX): https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion<br>
+05) Virt-Manager Virtual Machine Manager (SOMENTE LINUX): https://virt-manager.org/<br>
+06) GNOME Boxes (SOMENTE LINUX): https://apps.gnome.org/pt-BR/Boxes/<br>
 
 📊 **Comparativo Rápido das principais ferramentas de Virtualização:**<br>
 | Ferramenta         | Sistema Host         | Tipo   | Fácil de Usar | Recomendado Para          |
@@ -109,11 +109,11 @@ GNOME Boxes (SOMENTE LINUX): https://apps.gnome.org/pt-BR/Boxes/<br>
 | **Gerenciamento**                | Geralmente via interface web ou ferramentas específicas | Via interface do SO hospedeiro              |
 
 **Sites de IA (Inteligência Artificial) indicados para os Desafios**<br>
-OpenAI ChatGPT (MAIS SIMPLES): https://chatgpt.com<br>
-Microsoft Copilot: https://copilot.microsoft.com<br>
-Google Gemini: https://gemini.google.com<br>
-DeepSeek: https://chat.deepseek.com/<br>
-x.AI Grok: https://grok.com/<br>
+01) OpenAI ChatGPT (MAIS SIMPLES): https://chatgpt.com<br>
+02) Microsoft Copilot: https://copilot.microsoft.com<br>
+03) Google Gemini: https://gemini.google.com<br>
+04) DeepSeek: https://chat.deepseek.com/<br>
+05) x.AI Grok: https://grok.com/<br>
 
 📊 **Comparativo dos Principais Sites de IA (AI) – Atualizado em 2025:**<br>
 | Plataforma            | Desenvolvedora         | Interface                  | Base de IA (modelo)               | Recurso Grátis           | Destaques Principais                                                              |
@@ -130,9 +130,9 @@ x.AI Grok: https://grok.com/<br>
 
 Link de download do Linux Mint 22.1 "Xia" Cinnamon 64 Bits
 
-01. Site Oficial: https://linuxmint.com/download.php<br>
-02. Mirror......: https://pub.linuxmint.io/stable/22.1/<br>
-03. Link direto.: https://pub.linuxmint.io/stable/22.1/linuxmint-22.1-cinnamon-64bit.iso<br>
+01) Site Oficial: https://linuxmint.com/download.php<br>
+02) Mirror......: https://pub.linuxmint.io/stable/22.1/<br>
+03) Link direto.: https://pub.linuxmint.io/stable/22.1/linuxmint-22.1-cinnamon-64bit.iso<br>
 
 ### Segunda etapa: Software para criação de Pen Drive Bootável do Linux Mint 22.x x64
 
@@ -156,7 +156,7 @@ Abrir o Oracle VirtualBOX
   Selecione: Ferramentas
     Clique em: <Novo>
       01) Nome da máquina virtual e Sistema Operacional:
-        Nome: LinuxMint22.1
+        Nome: LinuxMint22.1 (altere conforme sua necessidade)
         Pasta (F): (deixar o padrão do sistema ou alterar conforme necessidade) 
         Imagem ISO: <não selecionado>
         Edição: (Default)
@@ -165,7 +165,7 @@ Abrir o Oracle VirtualBOX
         Pular Instalação Desassistida: OFF (Desabilitado)
       <Próximo (N)>
       02) Hardware:
-        Memória Base: 4096MB (4.0GB RAM)
+        Memória Base: 4096MB (4.0GB RAM altere conforme sua necessidade)
         Processadores: 2 CPU
         Habilitar EFI (SOs especiais apenas): OFF (Desabilitado)
       <Próximo (N)>
@@ -224,7 +224,7 @@ No Oracle VirtualBOX
 
 **OBSERVAÇÃO IMPORTANTE:** O Boot Inicial do Linux Mint demora cerca de: __`10 (dez segundos)`__ para iniciar a instalação padrão caso você não altere as opções de Boot.
 
-**OBSERVAÇÃO:** Para parar o Boot Inicial do Linux Mint pressione: __`<Seta para Baixo>`__.
+**OBSERVAÇÃO:** Para parar o *Boot Inicial do Linux Mint* pressione: __`<Seta para Baixo>`__.
 
 **DICA:** Entendendo as opções de inicialização do Linux Mint<br>
 
@@ -280,11 +280,11 @@ No Desktop do Linux Mint
       Selecione: Brasil / São Paulo (Fuso Horário UTC/GMT -03:00)
     <Continuar>
     06) Na tela de: Quem é você?
-      Seu nome: Seu Nome e Sobrenome
-      Nome do seu computador: VirtualBox
-      Escolha um nome de usuário: seu_usuário
-      Escolha uma senha: sua_senha
-      Confirme sua senha: sua_senha
+      Seu nome: Seu Nome e Sobrenome (altere conforme necessidade)
+      Nome do seu computador: VirtualBox (altere conforme necessidade)
+      Escolha um nome de usuário: seu_usuário (altere conforme necessidade)
+      Escolha uma senha: sua_senha (altere conforme necessidade)
+      Confirme sua senha: sua_senha (altere conforme necessidade)
       Solicitar minha senha para entrar: ON (Selecionado)
     <Continuar>
   Instalação Concluída: <Reiniciar agora>
