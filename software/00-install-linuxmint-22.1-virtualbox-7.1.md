@@ -267,7 +267,7 @@ No Desktop do Linux Mint
       Portuguese (Brazil)
       Digite aqui para testar o seu teclado: /\|ç
     <Continuar>
-    03) Na tela de: Codecs Multimídia
+    03) Na tela de: Codecs Multimídia 
       Instalar codecs multimídia: ON (Habilitar)
     <Continuar>
     04) Na tela de: Tipo de instalação
