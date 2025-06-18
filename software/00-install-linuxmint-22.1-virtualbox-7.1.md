@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 21/01/2025<br>
-#Data de atualização: 12/06/2025<br>
-#Versão: 0.06<br>
+#Data de atualização: 18/06/2025<br>
+#Versão: 0.07<br>
 #Testado e homologado no Linux Mint 22.1 Xia x64 Bits
 
 **O QUE É E PARA QUE SERVER O GNU:** O GNU (pronuncia-se "g-n-u", e não "gnu") é um projeto de software livre iniciado em 1983 por Richard Stallman, com o objetivo de criar um sistema operacional completo, livre e gratuito, semelhante ao Unix, mas sem usar nenhum código proprietário. A sigla GNU significa: “GNU's Not Unix” — (GNU Não é Unix). É uma brincadeira dos desenvolvedores com siglas recursivas, muito comuns no meio da tecnologia.
@@ -336,12 +336,12 @@ Na tela de Bem-Vindo(a) ao Linux Mint
           Na barra de Tarefas clique no Ícone do Linux Mint
           Clique em: <Desligar>
             Clique em: <Reiniciar>
-    AGUARDE A REINICIALIZAÇÃO TOTAL DO LINUX MINT PARA APLICAR AS NOVAS ATUALIZAÇÕES.
+#OBSERVAÇÃO: AGUARDE A REINICIALIZAÇÃO TOTAL DO LINUX MINT PARA APLICAR AS NOVAS ATUALIZAÇÕES.
 ```
 
 ### Décima Terceira etapa: Instalação dos Convidados do VirtualBOX no Linux Mint
 ```bash
-Na tela da Máquina Virtual do VitualBOX
+Na tela da Máquina Virtual do VirtualBOX
   Clique no menu em: Dispositivos
     Selecione a opção: Inserir imagem de CD dos Adicionais para Convidados
     01) Na mensagem de: Está mídia contém um software de inicialização automática.
@@ -353,7 +353,7 @@ Na tela da Máquina Virtual do VitualBOX
       Na barra de Tarefas clique no Ícone do Linux Mint
         Clique em: <Desligar>
           Clique em: <Reiniciar>
-AGUARDE A REINICIALIZAÇÃO TOTAL DO LINUX MINT PARA APLICAR AS MUDANÇAS.
+#OBSERVAÇÃO: AGUARDE A REINICIALIZAÇÃO TOTAL DO LINUX MINT PARA APLICAR AS MUDANÇAS.
 ```
 
 ### Décima Quarta etapa: Configuração da Integração da Área de Transferência Compartilhada
@@ -369,5 +369,5 @@ Na barra de Tarefas clique no Ícone do Linux Mint
   Na barra de Tarefas clique no Ícone do Linux Mint
     Clique em: <Desligar>
       Clique em: <Reiniciar>
-AGUARDE A REINICIALIZAÇÃO TOTAL DO LINUX MINT PARA APLICAR AS MUDANÇAS.
+#OBSERVAÇÃO: AGUARDE A REINICIALIZAÇÃO TOTAL DO LINUX MINT PARA APLICAR AS MUDANÇAS.
 ```
