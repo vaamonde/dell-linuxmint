@@ -349,7 +349,7 @@ sudo glxgears
 ```
 
 **Software de Benchmark para GNU/Linux para Testar o Desempenho Gráfico**<br>
-01) PassMark: https://www.passmark.com/products/pt_linux/index.php<br>
+01) PassMark: https://www.passmark.com/products/pt_linux/index.php (SEM SUPORTE AO LINUX MINT 22.X)<br>
 02) Hardinfo: https://github.com/lpereira/hardinfo<br>
 03) Unigine.: https://benchmark.unigine.com/<br>
 04) GpuTest.: https://www.geeks3d.com/gputest/<br>
