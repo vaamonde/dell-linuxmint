@@ -121,7 +121,7 @@ Link de download do Linux Mint 22.1 "Zara" Cinnamon 64 Bits
 
 01) Site Oficial: https://linuxmint.com/download.php<br>
 02) Mirror......: https://pub.linuxmint.io/stable/22.2/<br>
-03) Link direto.: https://pub.linuxmint.io/stable/22.2/linuxmint-22.1-cinnamon-64bit.iso<br>
+03) Link direto.: https://pub.linuxmint.io/stable/22.2/linuxmint-22.2-cinnamon-64bit.iso<br>
 
 ### Segunda etapa: Software para criação de Pen Drive Bootável do Linux Mint 22.x x64
 
