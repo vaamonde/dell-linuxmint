@@ -47,7 +47,6 @@ Link da vídeo aula: https://www.youtube.com/watch?v=NN3VOFyWKsM
 
 ### Lançamentos Oficiais do Linux Mint
 
-
 ### Versões do Linux Mint baseadas na Distribuição Ubuntu Desktop
 01) Linux Mint 20.x é derivado do Ubuntu Desktop 20.04.x Focal Fossa: https://releases.ubuntu.com/focal/<br>
 02) Linux Mint 21.x é derivado do Ubuntu Desktop 22.04.x Jammy Jellyfish: https://releases.ubuntu.com/jammy/<br>

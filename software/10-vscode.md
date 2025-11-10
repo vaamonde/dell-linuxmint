@@ -7,15 +7,15 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 31/05/2022<br>
-#Data de atualização: 05/06/2025<br>
-#Versão: 0.10<br>
+#Data de atualização: 10/11/2025<br>
+#Versão: 0.11<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
-#Testado e homologado no Linux Mint 22 Wilma e 22.1 Xia x64<br>
+#Testado e homologado no Linux Mint 22 Wilma, 22.1 Xia e 22.2 Zara x64<br>
 
 #Instalação do Microsoft Visual Studio Code VSCode no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do Microsoft Visual Studio Code VSCode no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
-#Instalação do Microsoft Visual Studio Code VSCode no Linux Mint 22 Wilma e 22.1 Xia x64<br>
+#Instalação do Microsoft Visual Studio Code VSCode no Linux Mint 22 Wilma, 22.1 Xia e 22.2 Zara x64<br>
 
 [![VSCode](http://img.youtube.com/vi/faS3gZgKE-A/0.jpg)](https://www.youtube.com/watch?v=faS3gZgKE-A "VSCode")
 
@@ -73,7 +73,7 @@ sudo apt autoclean
 sudo apt install vim git python2 python3 pip cloc
 
 #instalando as dependências do VSCode no Linux Mint 22.x
-sudo apt install vim git python3 python3-pip cloc
+sudo apt install vim git python3 python3-pip pip cloc
 ```
 
 ### 03_ Baixando o Microsoft Visual Studio Code VSCode para o Linux Mint

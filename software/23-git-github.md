@@ -7,15 +7,15 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 21/01/2023<br>
-#Data de atualização: 05/06/2025<br>
-#Versão: 0.10<br>
+#Data de atualização: 10/11/2025<br>
+#Versão: 0.11<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
-#Testado e homologado no Linux Mint 22 Wilma e 22.1 Xia x64<br>
+#Testado e homologado no Linux Mint 22 Wilma, 22.1 Xia e 22.2 Zara x64<br>
 
 #Instalação do Git 2.x integrado no Github no Linux Mint 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Instalação do Git 2.x integrado no Github no Linux Mint 21 Vanessa, 21.1 Vera, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
-#Instalação do Git 2.x integrado no Github no Linux Mint 22 Wilma w 22.1 Xia x64<br>
+#Instalação do Git 2.x integrado no Github no Linux Mint 22 Wilma, 22.1 Xia e 22.2 Zara x64<br>
 
 [![Git e Github](http://img.youtube.com/vi/JDCYyjbrJu0/0.jpg)](https://www.youtube.com/watch?v=JDCYyjbrJu0 "Git e Github")
 
@@ -104,13 +104,13 @@ Terminal: Ctrl + Alt + T
 #Configuração o usuário padrão dos commits do Git
 #Seu nome completo que vai ser utilizado em qualquer commit (confirmação) recém-criado.
 #Documentação oficial do Git: https://git-scm.com/docs/git-config
-git config --global user.name "Robson Vaamonde"
+git config --global user.name "Seu Nome e Sobrenome"
 
 #Configurando o endereço de email do usuário padrão dos commits do Git
 #Seu endereço de e-mail que vai ser utilizado em qualquer commit (confirmação) recém-criado.
 #DICA: recomendo você usar o seu endereço de email utilizado na autenticação do Github
 #Documentação oficial do Git: https://git-scm.com/docs/git-config
-git config --global user.email boraparapratica@gmail.com
+git config --global user.email seu_email@seu_domínio.com
 
 #Configurando o editor de texto por linha de comando padrão do Git
 #Seu editor de texto padrão para todos os commit (confirmação) e tags.
@@ -361,7 +361,7 @@ git init
 ls -lha
 ```
 
-**OBSERVAÇÃO IMPORTANTE:** não foi comentado no vídeo, mais por padrão no Linux Mint todo repositório novo criado está no Branch: __`MASTER`__, muitas vezes recomendamos que o Branch padrão seja o: __`MAIN`__
+**OBSERVAÇÃO IMPORTANTE:** não foi comentado no vídeo, por padrão no Linux Mint todo repositório novo criado está no Branch: __`MASTER`__, muitas vezes recomendamos que o Branch padrão seja o: __`MAIN`__
 
 ```bash
 #Troque de ramificação ou restaure os arquivos da árvore de trabalho
