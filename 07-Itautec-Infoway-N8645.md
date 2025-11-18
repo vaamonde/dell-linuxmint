@@ -7,11 +7,11 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 19/05/2023<br>
-#Data de atualização: 05/06/2025<br>
-#Versão: 0.19<br>
+#Data de atualização: 18/11/2025<br>
+#Versão: 0.20<br>
 #Testado e homologado no Linux Mint 20 Ulyana, 20.1 Ulyssa, 20.2 Uma e 20.3 Una x64<br>
 #Testado e homologado no Linux Mint 21 Vanessa, 21.1 Vera, 21.2 Victoria e 21.3 Virginia x64<br>
-#Testado e homologado no Linux Mint 22 Wilma e 22.1 Xia x64<br>
+#Testado e homologado no Linux Mint 22 Wilma, 22.1 Xia, 22.2 Zara x64<br>
 
 **O QUE É E PARA QUE SERVER O GNU:** O GNU (pronuncia-se "g-n-u", e não "gnu") é um projeto de software livre iniciado em 1983 por Richard Stallman, com o objetivo de criar um sistema operacional completo, livre e gratuito, semelhante ao Unix, mas sem usar nenhum código proprietário. A sigla GNU significa: “GNU's Not Unix” — (GNU Não é Unix). É uma brincadeira dos desenvolvedores com siglas recursivas, muito comuns no meio da tecnologia.
 
@@ -24,22 +24,25 @@
 **O QUE É E PARA QUE SERVER O LINUX MINT:** O Linux Mint é uma distribuição Linux baseada no Ubuntu (e indiretamente no Debian). Foi criada para ser fácil, leve, rápida e muito amigável, especialmente para quem está migrando do Windows. Ele tem uma aparência bem parecida com o Windows, o que facilita muito a adaptação de quem nunca usou Linux antes.
 
 Conteúdo estudado nessa instalação:<br>
-#01_ 01_ Download da ISO do Linux Mint 22.1 x64 do Site Oficial<br>
+#01_ 01_ Download da ISO do Linux Mint 22.2 x64 do Site Oficial<br>
 #02_ Indicação de Software para a criação do Pen Drive Bootável do Linux Mint<br>
 #03_ Configurações do Hardware do Notebook Itautec Infoway N8645<br>
 #04_ Configuração da BIOS do Notebook Itautec Infoway N8645 P5214_I-SL2.1<br>
-#05_ Inicialização da Instalação do Linux Mint 22.1 x64 no Notebook Itautec Infoway N8645<br>
+#05_ Inicialização da Instalação do Linux Mint 22.2 x64 no Notebook Itautec Infoway N8645<br>
 #06_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless) no Notebook Itautec Infoway N8645<br>
 #07_ Hard Disk SATA HD Samsung 500GB do Notebook Itautec Infoway N8645<br>
-#08_ Instalando o Linux Mint 22.1 x64 no Notebook Itautec Infoway N8645<br>
-#09_ Se logando pela primeira vez no Linux Mint 22.1 x64<br>
-#10_ Personalização Básica do Linux Mint 22.1 x64<br>
-#11_ Pós-Instalação do Linux Mint 22.1 x64 no Notebook Itautec Infoway N8645<br>
+#08_ Instalando o Linux Mint 22.2 x64 no Notebook Itautec Infoway N8645<br>
+#09_ Se logando pela primeira vez no Linux Mint 22.2 x64<br>
+#10_ Personalização Básica do Linux Mint 22.2 x64<br>
+#11_ Pós-Instalação do Linux Mint 22.2 x64 no Notebook Itautec Infoway N8645<br>
 #12_ Instalação do Linux Kernel OEM (Original Equipment Manufacturer) no Notebook Itautec Infoway N8645<br>
 #13_ Instalação dos Aplicativos Básicos do Linux Mint no Notebook Itautec Infoway N8645<br>
 #14_ Instalação dos Drivers VGA Intel Graphics e AMD Radeon do Linux Mint no Notebook Itautec Infoway N8645<br>
-#15_ Personalização do Ambiente Gráfico Cinnamon do Linux Mint 22.1 x64<br>
-#16_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint 22.1 x64<br>
+#15_ Personalização do Ambiente Gráfico Cinnamon do Linux Mint 22.2 x64<br>
+#16_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint 22.2 x64<br>
+
+### Lançamentos Oficiais do Linux Mint 22.2
+04/11/2025 - Lançamento do Linux Mint 22.2 “Zara” - https://blog.linuxmint.com/?p=4881
 
 ### Lançamentos Oficiais do Linux Mint 22.1
 18/01/2025 - Como atualizar para o Linux Mint 22.1 "Xia" https://blog.linuxmint.com/?p=4797<br>
@@ -87,13 +90,13 @@ Release Notes for Linux Mint 20.3 Cinnamon: https://www.linuxmint.com/rel_una_ci
 
 ## Instalação do Linux Mint 64 Bits no Notebook Itautec Infoway N8645
 
-### 01_ Download da ISO do Linux Mint 22.1 x64 do Site Oficial
+### 01_ Download da ISO do Linux Mint 22.2 x64 do Site Oficial
 
-Link de download do Linux Mint 22.1 "Xia" Cinnamon 64 Bits
+Link de download do Linux Mint 22.2 "Zara" Cinnamon 64 Bits
 
 01. Site Oficial: https://linuxmint.com/download.php<br>
-02. Mirror......: https://pub.linuxmint.io/stable/22.1/<br>
-03. Link direto.: https://pub.linuxmint.io/stable/22.1/linuxmint-22.1-cinnamon-64bit.iso<br>
+02. Mirror......: https://pub.linuxmint.io/stable/22.2/<br>
+03. Link direto.: https://pub.linuxmint.io/stable/22.2/linuxmint-22.2-cinnamon-64bit.iso<br>
 
 ### 02_ Indicação de Software para a criação do Pen Drive Bootável do Linux Mint
 
@@ -124,7 +127,7 @@ I) VGA......: RV710/730 HDMI Radeon 4000 Series.
 
 01) Configuração Padrão de Fábrica, Hard Disk HD em AHCI, VT-x habilitado, Audio, Wireless e Bluetooth habilitados segurança UEFI habilitada
 
-### 05_ Inicialização da Instalação do Linux Mint 22.1 no Notebook Itautec Infoway N8645
+### 05_ Inicialização da Instalação do Linux Mint 22.2 no Notebook Itautec Infoway N8645
 
 **OBSERVAÇÃO IMPORTANTE:** PARA ESCOLHER A SEQUÊNCIA DE BOOT NA INICIALIZAÇÃO PRESSIONE: __`F12`__
 
@@ -140,7 +143,7 @@ I) VGA......: RV710/730 HDMI Radeon 4000 Series.
 
 01) Modelo HM500JI, Hard Disk para a instalação do Linux Mint, sem necessidade de particionamento (instalação padrão).
 
-### 08_ Instalando o Linux Mint 22.1 no Notebook Itautec Infoway N8645
+### 08_ Instalando o Linux Mint 22.2 no Notebook Itautec Infoway N8645
 
 01) Conecte o: __`PEN DRIVER BOOTÁVEL`__ do Linux Mint na Porta: __`USB`__ do Notebook (RECOMENDADO COM O NOTEBOOK DESLIGADO), após ligar o equipamento pressione: __`F12`__ para solicitar a Média de Boot.
 
@@ -160,9 +163,9 @@ I) VGA......: RV710/730 HDMI Radeon 4000 Series.
 
 ```bash
 Na tela inicial do Boot Load GRUB do Linux Mint
-  Welcome to Linux Mint 22.1 64-Bit
-    *Start Linux Mint 22.1 Cinnamon 64-Bit (Padrão) <-- ESCOLHER ESSA OPÇÃO E PRESSIONAR: <ENTER>
-    Start Linux Mint 22.1 Cinnamon 64-Bit (compatibility mode)
+  Welcome to Linux Mint 22.2 64-Bit
+    *Start Linux Mint 22.2 Cinnamon 64-Bit (Padrão) <-- ESCOLHER ESSA OPÇÃO E PRESSIONAR: <ENTER>
+    Start Linux Mint 22.2 Cinnamon 64-Bit (compatibility mode)
     OEM install (for manufacturers)
     Hardware Detection
     Boot from local drive
@@ -218,7 +221,7 @@ Please remove the installation medium, then press <ENTER>
 
 **DICA:** Se você quiser ver toda a inicialização detalhada do Linux Mint, no Boot Load do Ícone do Linux Mint pressione: <Esc>.
 
-### 09_ Se logando pela primeira vez no Linux Mint
+### 09_ Se logando pela primeira vez no Linux Mint 22.2 x64
 ```bash
 Na tela de Login do Linux Mint
   Selecionar o usuário: Seu Nome e Sobrenome
@@ -226,7 +229,7 @@ Na tela de Login do Linux Mint
     Aguardar a criação do perfil do usuário
 ```
 
-### 10_ Personalização Básica do Linux Mint
+### 10_ Personalização Básica do Linux Mint 22.2 x64
 ```bash
 Na tela de Bem-Vindo(a) ao Linux Mint
   Clique em: Primeiros Passos
@@ -237,7 +240,7 @@ Na tela de Bem-Vindo(a) ao Linux Mint
 <Fechar>
 ```
 
-### 11_ Pós-Instalação do Linux Mint 22.1 x64 no Notebook Itautec Infoway N8645
+### 11_ Pós-Instalação do Linux Mint 22.2 x64 no Notebook Itautec Infoway N8645
 
 **OBSERVAÇÃO IMPORTANTE:** É RECOMENDADO FAZER PRIMEIRO A ATUALIZAÇÃO VIA MINTUPDATE, DEPOIS VOCÊ PODE UTILIZAR O BASH/SHELL COM O COMANDO APT PARA MANTER O DESKTOP SEMPRE ATUALIZADO.
 
@@ -280,14 +283,14 @@ sudo cat /etc/os-release
 sudo cat /etc/lsb-release
 ```
 
-**INSTALAÇÃO DO KERNEL OEM NO LINUX MINT 22.x (KERNEL >= 6.8)**
+**INSTALAÇÃO DO KERNEL OEM NO LINUX MINT 22.x x64 (KERNEL >= 6.17)**
 
 ```bash
 #atualizando as listas do Apt
 sudo apt update
 
-#Linux Mint Versão 22.x - Kernel >= 6.8 (TESTADO E HOMOLOGADO, RECOMENDO A SUA INSTALAÇÃO)
-sudo apt install linux-oem-24.04b fdutils
+#Linux Mint Versão 22.x - Kernel >= 6.17 (TESTADO E HOMOLOGADO, RECOMENDO A SUA INSTALAÇÃO)
+sudo apt install linux-oem-24.04d fdutils
 
 #Reinicializar o Sistema
 sudo reboot 
@@ -297,7 +300,7 @@ sudo reboot
 sudo uname -a
 ```
 
-### 13_ Instalação dos Aplicativos Básicos do Linux Mint no Notebook Itautec Infoway N8645
+### 13_ Instalação dos Aplicativos Básicos do Linux Mint 22.2 x64 no Notebook Itautec Infoway N8645
 
 **OBSERVAÇÃO IMPORTANTE:** CUIDADO COM A VERSÃO DO LINUX MINT QUE VOCÊ ESTÁ USANDO, VERIFIQUE A VERSÃO E ESCOLHA OS PROCEDIMENTOS CORRESPONDENTE DE CADA VERSÃO.
 
@@ -354,7 +357,7 @@ sudo glxgears
 03) Unigine.: https://benchmark.unigine.com/<br>
 04) GpuTest.: https://www.geeks3d.com/gputest/<br>
 
-### 15_ Personalização do Ambiente Gráfico Cinnamon do Linux Mint
+### 15_ Personalização do Ambiente Gráfico Cinnamon do Linux Mint 22.2 x64
 
 01) Personalizar a Área de Trabalho;<br>
 02) Personalizar a Barra de Tarefas (Painel);<br>
@@ -362,7 +365,7 @@ sudo glxgears
 04) Personalizar a Janela de Início de Sessão (Tela de Login);<br>
 05) Pesquisar sobre: Extensões, Desklets, Applets, Temas (Windows), Plano de Fundo.<br>
 
-### 16_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint
+### 16_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint 22.2 x64
 
 A) Instalação dos principais Navegadores de Internet (DEIXAR OS ÍCONES NO DESKTOP)
   DICA: BAIXAR TODOS OS APLICATIVOS DO SITE OFICIAL DOS DESENVOLVEDORES
