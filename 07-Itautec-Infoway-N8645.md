@@ -24,7 +24,7 @@
 **O QUE É E PARA QUE SERVER O LINUX MINT:** O Linux Mint é uma distribuição Linux baseada no Ubuntu (e indiretamente no Debian). Foi criada para ser fácil, leve, rápida e muito amigável, especialmente para quem está migrando do Windows. Ele tem uma aparência bem parecida com o Windows, o que facilita muito a adaptação de quem nunca usou Linux antes.
 
 Conteúdo estudado nessa instalação do Linux Mint 22.x:<br>
-#01_ 01_ Download da ISO do Linux Mint 22.2 x64 do Site Oficial<br>
+#01_ Download da ISO do Linux Mint 22.2 x64 do Site Oficial<br>
 #02_ Indicação de Software para a criação do Pen Drive Bootável do Linux Mint<br>
 #03_ Configurações do Hardware do Notebook Itautec Infoway N8645<br>
 #04_ Configuração da BIOS do Notebook Itautec Infoway N8645 P5214_I-SL2.1<br>
