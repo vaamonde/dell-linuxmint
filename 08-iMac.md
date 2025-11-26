@@ -310,25 +310,13 @@ sudo reboot
 sudo glxgears
 ```
 
-### 15_ Instalação do Driver Driver Sem-Fio Broadcom do Linux Mint no Apple iMac
-```bash
-#Instalação em Modo Gráfico (Mais Fácil e Rápido)
-Menu
-  Busca Indexada
-    Gerenciador de Drivers
-      Selecione: bcmwl-kernel-source
-      <Aplicar Mudanças>
-    Digite a sua senha do usuário: <Autenticar>
-    <Reiniciar>
-```
-
 **Software de Benchmark para GNU/Linux para Testar o Desempenho Gráfico**<br>
 01) PassMark: https://www.passmark.com/products/pt_linux/index.php (SEM SUPORTE AO LINUX MINT 22.X)<br>
 02) Hardinfo: https://github.com/lpereira/hardinfo<br>
 03) Unigine.: https://benchmark.unigine.com/<br>
 04) GpuTest.: https://www.geeks3d.com/gputest/<br>
 
-### 16_ Personalização do Ambiente Gráfico Cinnamon do Linux Mint 22.2 x64
+### 15_ Personalização do Ambiente Gráfico Cinnamon do Linux Mint 22.2 x64
 
 01) Personalizar a Área de Trabalho;<br>
 02) Personalizar a Barra de Tarefas (Painel);<br>
@@ -336,7 +324,7 @@ Menu
 04) Personalizar a Janela de Início de Sessão (Tela de Login);<br>
 05) Pesquisar sobre: Extensões, Desklets, Applets, Temas (Windows), Plano de Fundo.<br>
 
-### 17_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint 22.2 x64
+### 16_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint 22.2 x64
 
 A) Instalação dos principais Navegadores de Internet (DEIXAR OS ÍCONES NO DESKTOP)
   DICA: BAIXAR TODOS OS APLICATIVOS DO SITE OFICIAL DOS DESENVOLVEDORES
