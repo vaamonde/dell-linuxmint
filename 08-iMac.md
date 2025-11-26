@@ -180,7 +180,7 @@ Please remove the installation medium, then press <ENTER>
 
 **DICA:** Se você quiser ver toda a inicialização detalhada do Linux Mint, no Boot Load do Ícone do Linux Mint pressione: <Esc>.
 
-### 09_ Se logando pela primeira vez no Linux Mint 22.2 x64
+### 08_ Se logando pela primeira vez no Linux Mint 22.2 x64
 ```bash
 Na tela de Login do Linux Mint
   Selecionar o usuário: Seu Nome e Sobrenome
@@ -188,7 +188,7 @@ Na tela de Login do Linux Mint
     Aguardar a criação do perfil do usuário
 ```
 
-### 10_ Personalização Básica do Linux Mint 22.2 x64
+### 09_ Personalização Básica do Linux Mint 22.2 x64
 ```bash
 Na tela de Bem-Vindo(a) ao Linux Mint
   Clique em: Primeiros Passos
@@ -199,7 +199,7 @@ Na tela de Bem-Vindo(a) ao Linux Mint
 <Fechar>
 ```
 
-### 11_ Pós-Instalação do Linux Mint 22.2 x64 no Apple iMac
+### 10_ Pós-Instalação do Linux Mint 22.2 x64 no Apple iMac
 
 **OBSERVAÇÃO IMPORTANTE:** É RECOMENDADO FAZER PRIMEIRO A ATUALIZAÇÃO VIA MINTUPDATE, DEPOIS VOCÊ PODE UTILIZAR O BASH/SHELL COM O COMANDO APT PARA MANTER O DESKTOP SEMPRE ATUALIZADO.
 
@@ -222,7 +222,7 @@ Na tela de Bem-Vindo(a) ao Linux Mint
     AGUARDE A REINICIALIZAÇÃO TOTAL DO LINUX MINT PARA APLICAR AS NOVAS ATUALIZAÇÕES.
 ```
 
-### 12_ Instalação do Linux Kernel OEM (Original Equipment Manufacturer) no Apple iMac
+### 11_ Instalação do Linux Kernel OEM (Original Equipment Manufacturer) no Apple iMac
 
 **OBSERVAÇÃO IMPORTANTE:** CUIDADO COM A VERSÃO DO LINUX MINT QUE VOCÊ ESTÁ USANDO, VERIFIQUE A VERSÃO E ESCOLHA OS PROCEDIMENTOS CORRESPONDENTE A SUA VERSÃO.
 
@@ -259,7 +259,7 @@ sudo reboot
 sudo uname -a
 ```
 
-### 13_ Instalação dos Aplicativos Básicos do Linux Mint 22.2 x64 no Apple iMac
+### 12_ Instalação dos Aplicativos Básicos do Linux Mint 22.2 x64 no Apple iMac
 
 **OBSERVAÇÃO IMPORTANTE:** CUIDADO COM A VERSÃO DO LINUX MINT QUE VOCÊ ESTÁ USANDO, VERIFIQUE A VERSÃO E ESCOLHA OS PROCEDIMENTOS CORRESPONDENTE DE CADA VERSÃO.
 
@@ -289,7 +289,7 @@ p7zip-rar
 sudo reboot
 ```
 
-### 14_ Instalação dos Drivers VGA Intel Graphics do Linux Mint no Apple iMac
+### 13_ Instalação dos Drivers VGA Intel Graphics do Linux Mint no Apple iMac
 ```bash
 #Atalho para acessar o Terminal
 Terminal: Ctrl + Alt + T
@@ -310,13 +310,7 @@ sudo reboot
 sudo glxgears
 ```
 
-**Software de Benchmark para GNU/Linux para Testar o Desempenho Gráfico**<br>
-01) PassMark: https://www.passmark.com/products/pt_linux/index.php (SEM SUPORTE AO LINUX MINT 22.X)<br>
-02) Hardinfo: https://github.com/lpereira/hardinfo<br>
-03) Unigine.: https://benchmark.unigine.com/<br>
-04) GpuTest.: https://www.geeks3d.com/gputest/<br>
-
-### 15_ Personalização do Ambiente Gráfico Cinnamon do Linux Mint 22.2 x64
+### 14_ Personalização do Ambiente Gráfico Cinnamon do Linux Mint 22.2 x64
 
 01) Personalizar a Área de Trabalho;<br>
 02) Personalizar a Barra de Tarefas (Painel);<br>
@@ -324,9 +318,9 @@ sudo glxgears
 04) Personalizar a Janela de Início de Sessão (Tela de Login);<br>
 05) Pesquisar sobre: Extensões, Desklets, Applets, Temas (Windows), Plano de Fundo.<br>
 
-### 16_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint 22.2 x64
+### 15_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint 22.2 x64
 
-A) Instalação dos principais Navegadores de Internet (DEIXAR OS ÍCONES NO DESKTOP)
+A) Instalação dos principais Navegadores de Internet (INSTALAR TODOS OS NAVEGADORES E DEIXAR OS ÍCONES NO DESKTOP)
   DICA: BAIXAR TODOS OS APLICATIVOS DO SITE OFICIAL DOS DESENVOLVEDORES
   01) Google Chrome: https://www.google.com/intl/pt-BR/chrome/            DICA: instalar via site Oficial
   02) Opera: https://www.opera.com/pt-br                                  DICA: instalar via site Oficial
@@ -336,7 +330,7 @@ A) Instalação dos principais Navegadores de Internet (DEIXAR OS ÍCONES NO DES
   06) Slimjet: https://www.slimjet.com/pt/                                DICA: instalar via site Oficial
   07) Midori: https://astian.org/midori-browser/                          DICA: instalar via site Oficial
 
-B) Instalação dos principais Softwares de Produtividade (DEIXAR OS ÍCONES NO DESKTOP)
+B) Instalação dos principais Softwares de Produtividade (INSTALAR TODOS OS APLICATIVOS E DEIXAR OS ÍCONES NO DESKTOP)
   01) KolourPaint: https://apps.kde.org/pt-br/kolourpaint/  DICA: instalar via apt
   02) NotepadQQ: https://notepadqq.com/s/                   DICA: instalar via apt
   03) VLC: https://www.videolan.org/vlc/                    DICA: instalar via apt
@@ -346,13 +340,9 @@ B) Instalação dos principais Softwares de Produtividade (DEIXAR OS ÍCONES NO 
 
 C) Instalar e Configurar todos os procedimentos do Oracle VirtualBOX (DEIXAR O ÍCONE NO DESKTOP)
   01) Site: VirtualBOX: https://www.virtualbox.org/
-  02) Procedimento: https://github.com/vaamonde/dell-linuxmint/blob/master/software/01-virtualbox.md
-  03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 05 - Pular a etapa: 06 - Continuar nas etapas: 07 até 08 - Pular a etapa: 09.
 
 D) Instalar e Configurar todos os procedimentos do Editor de Texto e IDE VSCode (DEIXAR O ÍCONE NO DESKTOP)
   01) Site Microsoft Visual Studio Code: https://code.visualstudio.com/
-  02) Procedimentos: https://github.com/vaamonde/dell-linuxmint/blob/master/software/10-vscode.md
-  03) **OBSERVAÇÃO IMPORTANTE**: Executar todas as etapas de: 00 até 11.
 
 E) Instalar e Configurar todos os procedimentos da Suite do WPS Office (DEIXAR O ÍCONE NO DESKTOP)
   01) Site WPS Office: http://linux.wps.com/
