@@ -24,23 +24,22 @@
 **O QUE É E PARA QUE SERVER O LINUX MINT:** O Linux Mint é uma distribuição Linux baseada no Ubuntu (e indiretamente no Debian). Foi criada para ser fácil, leve, rápida e muito amigável, especialmente para quem está migrando do Windows. Ele tem uma aparência bem parecida com o Windows, o que facilita muito a adaptação de quem nunca usou Linux antes.
 
 Conteúdo estudado nessa instalação do Linux Mint 22.x:<br>
-#01_ Download da ISO do Linux Mint 22.2 x64 do Site Oficial<br>
-#02_ Indicação de Software para a criação do Pen Drive Bootável do Linux Mint<br>
-#03_ Configurações do Hardware do Apple iMac<br>
-#04_ Configuração da BIOS Apple iMac<br>
-#05_ Inicialização da Instalação do Linux Mint 22.2 no no Apple iMac<br>
-#06_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless) no Apple iMac<br>
-#07_ Hard Disk SATA HDD do Apple iMac<br>
-#08_ Instalando o Linux Mint 22.2 no Apple iMac<br>
-#09_ Se logando pela primeira vez no Linux Mint 22.2 x64<br>
-#10_ Personalização Básica do Linux Mint 22.2 x64<br>
-#11_ Pós-Instalação do Linux Mint 22.2 x64 no Apple iMac<br>
-#12_ Instalação do Linux Kernel OEM (Original Equipment Manufacturer) no Apple iMac<br>
-#13_ Instalação dos Aplicativos Básicos do Linux Mint 22.2 x64 no Apple iMac<br>
-#14_ Instalação dos Drivers VGA Intel Graphics do Linux Mint no Apple iMac<br>
-#15_ Instalação do Driver Driver Sem-Fio Broadcom do Linux Mint no Apple iMac<br>
-#16_ Personalização do Ambiente Gráfico Cinnamon do Linux Mint 22.2 x64<br>
-#17_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint 22.2 x64<br>
+01_ Download da ISO do Linux Mint 22.2 x64 do Site Oficial
+02_ Indicação de Software para a criação do Pen Drive Bootável do Linux Mint
+03_ Configurações do Hardware do Apple iMac
+04_ Configuração da BIOS Apple iMac
+05_ Inicialização da Instalação do Linux Mint 22.2 no no Apple iMac
+06_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless) no Apple iMac
+07_ Hard Disk SATA HDDD do Apple iMac
+08_ Instalando o Linux Mint 22.2 no Apple iMac
+09_ Se logando pela primeira vez no Linux Mint 22.2 x64
+10_ Personalização Básica do Linux Mint 22.2 x64
+11_ Pós-Instalação do Linux Mint 22.2 x64 no Apple iMac
+12_ Instalação do Linux Kernel OEM (Original Equipment Manufacturer) no Apple iMac
+13_ Instalação dos Aplicativos Básicos do Linux Mint 22.2 x64 no Apple iMac
+14_ Instalação dos Drivers VGA Intel Graphics do Linux Mint no Apple iMac
+15_ Personalização do Ambiente Gráfico Cinnamon do Linux Mint 22.2 x64
+16_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint 22.2 x64
 
 ### Lançamentos Oficiais do Linux Mint 22.2
 04/11/2025 - Lançamento do Linux Mint 22.2 “Zara” - https://blog.linuxmint.com/?p=4881
@@ -78,15 +77,15 @@ H) SOM Audio Intel 5 Series/3400 e AMD
 I) VGA RV710/730 HDMI Radeon 4000 Series
 ```
 
-### 04_ Configuração da BIOS Apple iMac<br>
+### 04_ Configuração da BIOS Apple iMac
 
-01) Por padrão o Apple iMac não possui BIOS, somente o sistema de Boot Load.
+01) Por padrão o Apple iMac não possui __`BIOS`__, somente o sistema de Boot Load.
 
 ### 05_ Inicialização da Instalação do Linux Mint 22.2 no no Apple iMac
 
 **OBSERVAÇÃO IMPORTANTE:** EQUIPAMENTOS DA APPLE NÃO POSSUI AS RECURSOS BÁSICOS DE BIOS DOS PC NORMAIS, PARA ESCOLHER O BOOT NO MOMENTO DE LIGAR O iMAC MANTENHA PRESSIONADO A TECLA: __`ALT`__
 
-01) Inicialização padrão, a falha de resolução de vídeo não acontece nesse modelo de Apple iMac A1225 2008 devido o monitor ser de 27 polegadas e atingir altas resoluções.
+01) Inicialização padrão, a falha de resolução de vídeo não acontece nesse modelo de Apple iMac devido o monitor ser de 27 polegadas e atingir altas resoluções.
 
 ### 06_ Driver da Placa de Rede Sem-Fio (Wi-Fi/Wireless) no Apple iMac
 
@@ -180,7 +179,7 @@ Please remove the installation medium, then press <ENTER>
 
 **DICA:** Se você quiser ver toda a inicialização detalhada do Linux Mint, no Boot Load do Ícone do Linux Mint pressione: <Esc>.
 
-### 08_ Se logando pela primeira vez no Linux Mint 22.2 x64
+### 09_ Se logando pela primeira vez no Linux Mint 22.2 x64
 ```bash
 Na tela de Login do Linux Mint
   Selecionar o usuário: Seu Nome e Sobrenome
@@ -188,7 +187,7 @@ Na tela de Login do Linux Mint
     Aguardar a criação do perfil do usuário
 ```
 
-### 09_ Personalização Básica do Linux Mint 22.2 x64
+### 10_ Personalização Básica do Linux Mint 22.2 x64
 ```bash
 Na tela de Bem-Vindo(a) ao Linux Mint
   Clique em: Primeiros Passos
@@ -199,14 +198,13 @@ Na tela de Bem-Vindo(a) ao Linux Mint
 <Fechar>
 ```
 
-### 10_ Pós-Instalação do Linux Mint 22.2 x64 no Apple iMac
+### 11_ Pós-Instalação do Linux Mint 22.2 x64 no Apple iMac
 
 **OBSERVAÇÃO IMPORTANTE:** É RECOMENDADO FAZER PRIMEIRO A ATUALIZAÇÃO VIA MINTUPDATE, DEPOIS VOCÊ PODE UTILIZAR O BASH/SHELL COM O COMANDO APT PARA MANTER O DESKTOP SEMPRE ATUALIZADO.
 
 ```bash
 01) Atualização do sistema utilizando o MintUpdate;
     Clique no Ícone na Barra de Tarefas: Gerenciador de Atualizações
-    OBSERVAÇÃO: RECOMENDADO UTILIZAR PRIMEIRO O MINTUPDATE E DEPOIS ATUALIZAR VIA TERMINAL
       01) Na tela de Bem-vindo ao Gerenciador de Atualizações clique em: <OK>
       02) Na tela de Uma nova versão do Gerenciador de Atualizações está disponível clique em: <Aplicar atualização>
       03) Na tela de Autenticação Obrigatório digite a senha do seu usuário e clique em: <Autenticar>
@@ -222,7 +220,7 @@ Na tela de Bem-Vindo(a) ao Linux Mint
     AGUARDE A REINICIALIZAÇÃO TOTAL DO LINUX MINT PARA APLICAR AS NOVAS ATUALIZAÇÕES.
 ```
 
-### 11_ Instalação do Linux Kernel OEM (Original Equipment Manufacturer) no Apple iMac
+### 12_ Instalação do Linux Kernel OEM (Original Equipment Manufacturer) no Apple iMac
 
 **OBSERVAÇÃO IMPORTANTE:** CUIDADO COM A VERSÃO DO LINUX MINT QUE VOCÊ ESTÁ USANDO, VERIFIQUE A VERSÃO E ESCOLHA OS PROCEDIMENTOS CORRESPONDENTE A SUA VERSÃO.
 
@@ -259,7 +257,7 @@ sudo reboot
 sudo uname -a
 ```
 
-### 12_ Instalação dos Aplicativos Básicos do Linux Mint 22.2 x64 no Apple iMac
+### 13_ Instalação dos Aplicativos Básicos do Linux Mint 22.2 x64 no Apple iMac
 
 **OBSERVAÇÃO IMPORTANTE:** CUIDADO COM A VERSÃO DO LINUX MINT QUE VOCÊ ESTÁ USANDO, VERIFIQUE A VERSÃO E ESCOLHA OS PROCEDIMENTOS CORRESPONDENTE DE CADA VERSÃO.
 
@@ -289,7 +287,7 @@ p7zip-rar
 sudo reboot
 ```
 
-### 13_ Instalação dos Drivers VGA Intel Graphics do Linux Mint no Apple iMac
+### 14_ Instalação dos Drivers VGA Intel Graphics do Linux Mint no Apple iMac
 ```bash
 #Atalho para acessar o Terminal
 Terminal: Ctrl + Alt + T
@@ -310,7 +308,7 @@ sudo reboot
 sudo glxgears
 ```
 
-### 14_ Personalização do Ambiente Gráfico Cinnamon do Linux Mint 22.2 x64
+### 15_ Personalização do Ambiente Gráfico Cinnamon do Linux Mint 22.2 x64
 
 01) Personalizar a Área de Trabalho;<br>
 02) Personalizar a Barra de Tarefas (Painel);<br>
@@ -318,10 +316,9 @@ sudo glxgears
 04) Personalizar a Janela de Início de Sessão (Tela de Login);<br>
 05) Pesquisar sobre: Extensões, Desklets, Applets, Temas (Windows), Plano de Fundo.<br>
 
-### 15_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint 22.2 x64
+### 16_ Instalação e Configuração dos Principais Aplicativos utilizados no Dia-a-Dia do Linux Mint 22.2 x64
 
 A) Instalação dos principais Navegadores de Internet (INSTALAR TODOS OS NAVEGADORES E DEIXAR OS ÍCONES NO DESKTOP)
-  DICA: BAIXAR TODOS OS APLICATIVOS DO SITE OFICIAL DOS DESENVOLVEDORES
   01) Google Chrome: https://www.google.com/intl/pt-BR/chrome/            DICA: instalar via site Oficial
   02) Opera: https://www.opera.com/pt-br                                  DICA: instalar via site Oficial
   03) Microsoft Edge: https://www.microsoft.com/pt-br/edge/?form=MA13FJ   DICA: instalar via site Oficial
@@ -331,12 +328,12 @@ A) Instalação dos principais Navegadores de Internet (INSTALAR TODOS OS NAVEGA
   07) Midori: https://astian.org/midori-browser/                          DICA: instalar via site Oficial
 
 B) Instalação dos principais Softwares de Produtividade (INSTALAR TODOS OS APLICATIVOS E DEIXAR OS ÍCONES NO DESKTOP)
-  01) KolourPaint: https://apps.kde.org/pt-br/kolourpaint/  DICA: instalar via apt
-  02) NotepadQQ: https://notepadqq.com/s/                   DICA: instalar via apt
-  03) VLC: https://www.videolan.org/vlc/                    DICA: instalar via apt
-  04) Audacity: https://www.audacityteam.org/               DICA: instalar via apt
-  05) Kdenlive: https://kdenlive.org/en/                    DICA: usar imagens AppImage via site Oficial
-  06) Kazam: https://launchpad.net/kazam                    DICA: instalar via apt
+  01) KolourPaint: https://apps.kde.org/pt-br/kolourpaint/   DICA: instalar via apt
+  02) NotepadQQ: https://notepadqq.com/s/                    DICA: instalar via apt
+  03) VLC: https://www.videolan.org/vlc/                     DICA: instalar via apt
+  04) Audacity: https://www.audacityteam.org/                DICA: instalar via apt
+  05) Kdenlive: https://kdenlive.org/en/                     DICA: usar imagens AppImage via site Oficial
+  06) Kazam: https://launchpad.net/kazam                     DICA: instalar via apt
 
 C) Instalar e Configurar todos os procedimentos do Oracle VirtualBOX (DEIXAR O ÍCONE NO DESKTOP)
   01) Site: VirtualBOX: https://www.virtualbox.org/
