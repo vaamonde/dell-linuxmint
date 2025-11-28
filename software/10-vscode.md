@@ -70,7 +70,7 @@ sudo apt autoclean
 ### 02_ Instalando as Dependências do Microsoft Visual Studio Code VSCode no Linux Mint
 ```bash
 #instalando as dependências do VSCode no Linux Mint 20.x e 21.x
-sudo apt install vim git python2 python3 pip cloc
+sudo apt install vim git python3 pip cloc
 
 #instalando as dependências do VSCode no Linux Mint 22.x
 sudo apt install vim git python3 python3-pip pip cloc
